@@ -244,6 +244,12 @@
   }
   @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.35; } }
   .ticker-item[title] { cursor: help; }
+  .ticker-item.live .name::before {
+    content: ''; display: inline-block;
+    width: 5px; height: 5px; border-radius: 50%;
+    background: #7df0a6; margin-right: 6px; vertical-align: middle;
+    animation: pulse 1.8s ease-in-out infinite;
+  }
   .ticker-track {
     display: flex;
     gap: 22px;
@@ -608,6 +614,24 @@
   .evergreen-list a:hover { border-color: var(--accent); color: var(--accent); }
   .evergreen-list a .arrow { color: var(--text-muted); }
 
+  /* ---------- tasas CDT ---------- */
+  .cdt-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+  .cdt-card {
+    background: var(--bg-raised);
+    border: 1px solid var(--line);
+    border-top: 3px solid var(--accent);
+    border-radius: 6px;
+    padding: 22px;
+  }
+  .cdt-card.featured { border-top-color: var(--yellow); box-shadow: inset 0 0 0 1px var(--yellow); }
+  .cdt-term { font-family: var(--font-display); font-size: 15px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-muted); }
+  .cdt-rate { font-family: var(--font-display); font-size: 40px; font-weight: 700; color: var(--accent); line-height: 1.05; margin: 6px 0 2px; letter-spacing: 0.01em; font-variant-numeric: tabular-nums; }
+  .cdt-rate span { font-size: 14px; font-weight: 600; color: var(--text-muted); margin-left: 6px; }
+  .cdt-sub { font-size: 12.5px; color: var(--text-soft); margin-bottom: 12px; }
+  .cdt-list { list-style: none; margin: 0; padding: 12px 0 0; display: flex; flex-direction: column; gap: 6px; border-top: 1px solid var(--line); }
+  .cdt-list li { font-size: 13px; color: var(--text-soft); font-variant-numeric: tabular-nums; }
+  .cdt-disclaimer { margin-top: 18px; font-size: 11.5px; color: var(--text-muted); line-height: 1.6; }
+
   /* ---------- footer ---------- */
   footer { border-top: 4px solid var(--accent); padding: 44px 0 30px; background: var(--bg-sunken); position: relative; }
   footer::before {
@@ -705,7 +729,13 @@
     <div class="ticker">
       <span class="ticker-label">Mercados hoy <span class="live-badge" id="trm-live"><span class="dot"></span>EN VIVO</span></span>
       <div class="ticker-track">
-        <span class="ticker-item" title="TRM oficial (Tasa de Cambio Representativa del Mercado). Fuente: datos.gov.co — Superfinanciera. Se actualiza en cada visita."><span class="name">USD/COP</span><span class="val" id="trm-val">$3.210,56</span><span class="delta flat" id="trm-delta">TRM oficial</span></span>
+        <span class="ticker-item live" title="TRM oficial (Tasa de Cambio Representativa del Mercado). Fuente: datos.gov.co — Superfinanciera. Se actualiza en cada visita."><span class="name">USD/COP</span><span class="val" id="trm-val">$3.210,56</span><span class="delta flat" id="trm-delta">TRM oficial</span></span>
+        <span class="ticker-item" title="Precio interno de referencia de la carga de 125 kg de café pergamino seco. Fuente: Federación Nacional de Cafeteros, 24 jul 2026."><span class="name">Café (carga)</span><span class="val">$2.160.000</span><span class="delta flat">24 jul</span></span>
+        <span class="ticker-item" title="Petróleo Brent, referencia internacional (USD/barril). Cierre del 24 jul 2026."><span class="name">Brent</span><span class="val">US$98,31</span><span class="delta flat">24 jul</span></span>
+        <span class="ticker-item live" title="Oro (aprox.) — referencia en vivo vía PAXG/CoinGecko, token 1:1 con una onza troy de oro (USD/oz)."><span class="name">Oro</span><span class="val" id="oro-val">US$4.050</span><span class="delta flat" id="oro-delta">≈ oz</span></span>
+        <span class="ticker-item" title="Índice MSCI COLCAP de la Bolsa de Valores de Colombia (puntos). Cierre del 25 jul 2026."><span class="name">COLCAP</span><span class="val">2.274,53</span><span class="delta down">▼ 0,38%</span></span>
+        <span class="ticker-item" title="Índice S&amp;P 500 (EE. UU.), en puntos. Referencia del 16 jul 2026."><span class="name">S&amp;P 500</span><span class="val">7.533,77</span><span class="delta flat">16 jul</span></span>
+        <span class="ticker-item live" title="Bitcoin (BTC/USD). Fuente: CoinGecko, en vivo con variación de 24 h."><span class="name">Bitcoin</span><span class="val" id="btc-val">US$64.300</span><span class="delta flat" id="btc-delta">cripto</span></span>
         <span class="ticker-item" title="Valor aproximado de la UVR al 25 de julio de 2026. Fuente: Banco de la República."><span class="name">UVR</span><span class="val">$416,19</span><span class="delta flat">al 25 jul</span></span>
         <span class="ticker-item" title="IPC — variación anual de junio de 2026. Fuente: DANE."><span class="name">Inflación anual (jun)</span><span class="val">6,14%</span><span class="delta up">▲ 0,30 pp</span></span>
         <span class="ticker-item" title="Tasa de intervención de política monetaria, vigente desde el 3 de julio de 2026. Fuente: Banco de la República."><span class="name">Tasa BanRep</span><span class="val">12,00%</span><span class="delta up">▲ 0,75 pp</span></span>
@@ -877,6 +907,45 @@
     </div>
   </section>
 
+  <section class="section-block wrap">
+    <div class="section-head">
+      <h2>Tasas de CDT</h2>
+      <span class="sub">Mejores rendimientos por plazo · referencia julio 2026</span>
+    </div>
+    <div class="cdt-grid">
+      <div class="cdt-card">
+        <div class="cdt-term">90 días</div>
+        <div class="cdt-rate">13,00%<span>E.A.</span></div>
+        <p class="cdt-sub">Corto plazo · rango del mercado 9% – 14%</p>
+        <ul class="cdt-list">
+          <li>Ideal para liquidez de corto plazo</li>
+          <li>Renovación trimestral</li>
+        </ul>
+      </div>
+      <div class="cdt-card featured">
+        <div class="cdt-term">180 días</div>
+        <div class="cdt-rate">12,60%<span>E.A.</span></div>
+        <p class="cdt-sub">Mediano plazo · destacados</p>
+        <ul class="cdt-list">
+          <li>Credifamilia · 12,60%</li>
+          <li>Banco Pichincha · 11,90%</li>
+          <li>KOA · 11,55%</li>
+        </ul>
+      </div>
+      <div class="cdt-card">
+        <div class="cdt-term">360 días</div>
+        <div class="cdt-rate">14,25%<span>E.A.</span></div>
+        <p class="cdt-sub">Largo plazo · las tasas más altas</p>
+        <ul class="cdt-list">
+          <li>Corficolombiana · 14,25%</li>
+          <li>Banco de Occidente · 13,45%</li>
+          <li>BBVA · 13,31%</li>
+        </ul>
+      </div>
+    </div>
+    <p class="cdt-disclaimer">Tasas efectivas anuales (E.A.) de referencia para julio de 2026; varían según entidad, monto y plazo, y están ligadas a la tasa del Banco de la República (12,00%). Sujetas a retención en la fuente del 4% sobre los intereses. Compara siempre en la entidad antes de invertir. · Ejemplos recopilados de prensa económica (El Colombiano, La República, Infobae).</p>
+  </section>
+
   <section class="opinion-block">
     <div class="wrap opinion-inner">
       <span class="tag">Opinión · Más allá del dato</span>
@@ -962,7 +1031,7 @@
     </div>
     <div class="footer-fine">
       economiasantander.com (dominio pendiente de verificación en registrador) · Marca independiente, sin afiliación con Banco Santander S.A. ni con el Atlético Bucaramanga; los colores verde y amarillo se usan como identidad regional. · Optimizado para SEO técnico: HTTPS, sitemap XML, datos estructurados NewsArticle/Person, diseño mobile-first.<br>
-      * USD/COP: TRM oficial actualizada en vivo desde datos.gov.co en cada visita. UVR, inflación (DANE) y tasa del Banco de la República: últimos valores oficiales publicados, con fecha de referencia (se actualizan periódicamente).
+      * En vivo (se actualizan en cada visita): USD/COP (TRM oficial, datos.gov.co), Oro (aprox. vía PAXG) y Bitcoin (CoinGecko). Valores oficiales con fecha de referencia: café (Fedecafé), Brent, COLCAP, S&amp;P 500, UVR, inflación (DANE) y tasa del Banco de la República — se actualizan periódicamente. Cifras de CDT de referencia, varían por entidad.
     </div>
   </div>
 </footer>
@@ -1003,6 +1072,27 @@
         if (elLive) elLive.classList.add('on');
       })
       .catch(function () { /* sin conexión o API caída: se queda el valor de respaldo */ });
+
+    // 3) Bitcoin y Oro en vivo (CoinGecko, con variación de 24 h)
+    function setCrypto(id, price, chg) {
+      var v = document.getElementById(id + '-val');
+      var d = document.getElementById(id + '-delta');
+      if (v && !isNaN(price)) v.textContent = 'US$' + Math.round(price).toLocaleString('es-CO');
+      if (d && chg != null && !isNaN(chg)) {
+        var up = chg >= 0;
+        d.textContent = (up ? '▲ ' : '▼ ') + Math.abs(chg).toLocaleString('es-CO', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '%';
+        d.className = 'delta ' + (up ? 'up' : 'down');
+      }
+    }
+    var cg = 'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,pax-gold&vs_currencies=usd&include_24hr_change=true';
+    fetch(cg)
+      .then(function (r) { return r.ok ? r.json() : Promise.reject(); })
+      .then(function (j) {
+        if (j.bitcoin) setCrypto('btc', parseFloat(j.bitcoin.usd), parseFloat(j.bitcoin.usd_24h_change));
+        if (j['pax-gold']) setCrypto('oro', parseFloat(j['pax-gold'].usd), parseFloat(j['pax-gold'].usd_24h_change));
+        if (elLive) elLive.classList.add('on');
+      })
+      .catch(function () { /* respaldo estático */ });
   })();
 </script>
 
