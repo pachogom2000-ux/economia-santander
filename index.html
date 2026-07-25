@@ -1,4 +1,35 @@
-<title>Economía Santander — Maqueta de portada</title>
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Economía Santander | Noticias de economía en Santander</title>
+<meta name="description" content="Noticias económicas de Santander, Colombia: inversión, empleo, construcción, agro e indicadores. Análisis y reportería con más de 20 años de experiencia.">
+<link rel="canonical" href="https://economiasantander.com/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="Economía Santander">
+<meta name="theme-color" content="#b24b29" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#17130e" media="(prefers-color-scheme: dark)">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Economía Santander">
+<meta property="og:title" content="Economía Santander | Noticias de economía en Santander">
+<meta property="og:description" content="Noticias económicas de Santander, Colombia: inversión, empleo, construcción, agro e indicadores, con más de 20 años de reportería especializada.">
+<meta property="og:url" content="https://economiasantander.com/">
+<meta property="og:locale" content="es_CO">
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Economía Santander | Noticias de economía en Santander">
+<meta name="twitter:description" content="Noticias económicas de Santander, Colombia: inversión, empleo, construcción, agro e indicadores, con más de 20 años de reportería especializada.">
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX', { anonymize_ip: true });
+</script>
+
 <style>
   @font-face {
     font-family: 'Newsreader';
@@ -378,6 +409,8 @@
   .hero-headline a { text-decoration: none; }
   .hero-headline a:hover { color: var(--accent-strong); }
   .hero-dek { font-size: 16.5px; color: var(--text-soft); max-width: 62ch; margin-bottom: 14px; }
+  .hero-dek a { color: var(--accent-strong); text-decoration: underline; text-underline-offset: 2px; }
+  .hero-dek strong { color: var(--text); font-weight: 700; }
   .byline { font-size: 12.5px; color: var(--text-muted); }
   .byline b { color: var(--text-soft); font-weight: 600; }
 
@@ -524,6 +557,60 @@
     .masthead h1 { font-size: 34px; }
   }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://economiasantander.com/#website",
+      "url": "https://economiasantander.com/",
+      "name": "Economía Santander",
+      "description": "Portal de noticias económicas del departamento de Santander, Colombia.",
+      "inLanguage": "es-CO",
+      "publisher": { "@id": "https://economiasantander.com/#organization" },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://economiasantander.com/?s={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "NewsMediaOrganization",
+      "@id": "https://economiasantander.com/#organization",
+      "name": "Economía Santander",
+      "url": "https://economiasantander.com/",
+      "description": "Medio nativo digital especializado en la economía del departamento de Santander, Colombia.",
+      "foundingDate": "2026",
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Santander, Colombia"
+      },
+      "knowsAbout": ["Economía regional", "Inversión", "Empleo", "Construcción", "Industria", "Agroindustria", "Finanzas personales"],
+      "founder": { "@id": "https://economiasantander.com/#periodista" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://economiasantander.com/#periodista",
+      "name": "NOMBRE DEL PERIODISTA (reemplazar)",
+      "jobTitle": "Periodista económico",
+      "description": "Periodista económico con más de 20 años cubriendo la economía del oriente colombiano.",
+      "url": "https://economiasantander.com/autor/",
+      "worksFor": { "@id": "https://economiasantander.com/#organization" },
+      "sameAs": [
+        "https://www.linkedin.com/in/USUARIO-LINKEDIN-reemplazar"
+      ]
+    }
+  ]
+}
+</script>
+
+</head>
+<body>
+
 
 <div class="mockup-ribbon">Maqueta de portada — Economía Santander · vista de escritorio, adaptable a móvil</div>
 
@@ -599,7 +686,7 @@
           <span class="chip propio">Redacción propia</span>
         </div>
         <h2 class="hero-headline"><a href="#">Bucaramanga lidera la creación de empleo formal en el oriente colombiano durante el primer semestre</a></h2>
-        <p class="hero-dek">Datos del DANE muestran un repunte en construcción y servicios, mientras el comercio sigue rezagado frente a 2025. Los gremios piden cautela ante la desaceleración nacional.</p>
+        <p class="hero-dek">Datos del <a href="https://www.dane.gov.co" target="_blank" rel="noopener noreferrer">DANE</a> muestran un repunte en <strong>construcción y servicios</strong>, mientras el comercio sigue rezagado frente a <strong>2025</strong>. Los gremios piden cautela ante la desaceleración nacional.</p>
         <p class="byline">Por <b>[Nombre del periodista]</b> · 12 min de lectura · Actualizado hoy</p>
       </div>
     </div>
@@ -794,3 +881,6 @@
     </div>
   </div>
 </footer>
+
+</body>
+</html>

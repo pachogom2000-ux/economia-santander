@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Bloquear parámetros de búsqueda interna para no gastar crawl budget
+Disallow: /*?s=
+
+Sitemap: https://economiasantander.com/sitemap.xml
