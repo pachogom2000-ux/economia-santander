@@ -729,7 +729,7 @@
     <div class="ticker">
       <span class="ticker-label">Mercados hoy <span class="live-badge" id="trm-live"><span class="dot"></span>EN VIVO</span></span>
       <div class="ticker-track">
-        <span class="ticker-item live" title="TRM oficial (Tasa de Cambio Representativa del Mercado). Fuente: datos.gov.co — Superfinanciera. Se actualiza en cada visita."><span class="name">USD/COP</span><span class="val" id="trm-val">$3.210,56</span><span class="delta flat" id="trm-delta">TRM oficial</span></span>
+        <span class="ticker-item" title="Precio de cierre del dólar spot en Colombia (plataforma SetFX). Último cierre publicado: 24 de julio de 2026. SetFX no ofrece un feed público gratuito, por lo que se actualiza con cada cierre."><span class="name">USD/COP</span><span class="val">$3.214,62</span><span class="delta flat">cierre 24 jul · SetFX</span></span>
         <span class="ticker-item" title="Precio interno de referencia de la carga de 125 kg de café pergamino seco. Fuente: Federación Nacional de Cafeteros, 24 jul 2026."><span class="name">Café (carga)</span><span class="val">$2.160.000</span><span class="delta flat">24 jul</span></span>
         <span class="ticker-item" title="Petróleo Brent, referencia internacional (USD/barril). Cierre del 24 jul 2026."><span class="name">Brent</span><span class="val">US$98,31</span><span class="delta flat">24 jul</span></span>
         <span class="ticker-item live" title="Oro (aprox.) — referencia en vivo vía PAXG/CoinGecko, token 1:1 con una onza troy de oro (USD/oz)."><span class="name">Oro</span><span class="val" id="oro-val">US$4.050</span><span class="delta flat" id="oro-delta">≈ oz</span></span>
@@ -1031,7 +1031,7 @@
     </div>
     <div class="footer-fine">
       economiasantander.com (dominio pendiente de verificación en registrador) · Marca independiente, sin afiliación con Banco Santander S.A. ni con el Atlético Bucaramanga; los colores verde y amarillo se usan como identidad regional. · Optimizado para SEO técnico: HTTPS, sitemap XML, datos estructurados NewsArticle/Person, diseño mobile-first.<br>
-      * En vivo (se actualizan en cada visita): USD/COP (TRM oficial, datos.gov.co), Oro (aprox. vía PAXG) y Bitcoin (CoinGecko). Valores oficiales con fecha de referencia: café (Fedecafé), Brent, COLCAP, S&amp;P 500, UVR, inflación (DANE) y tasa del Banco de la República — se actualizan periódicamente. Cifras de CDT de referencia, varían por entidad.
+      * En vivo (se actualizan en cada visita): Oro (aprox. vía PAXG) y Bitcoin (CoinGecko). USD/COP: último precio de cierre del dólar spot en Colombia (SetFX), con fecha de referencia — SetFX no ofrece un feed público, se actualiza con cada cierre. Valores oficiales con fecha: café (Fedecafé), Brent, COLCAP, S&amp;P 500, UVR, inflación (DANE) y tasa del Banco de la República — se actualizan periódicamente. Cifras de CDT de referencia, varían por entidad.
     </div>
   </div>
 </footer>
@@ -1050,28 +1050,8 @@
       if (elFecha) elFecha.textContent = 'Bucaramanga, Colombia · ' + hoy;
     } catch (e) { /* deja el texto de respaldo */ }
 
-    // 2) TRM oficial en vivo (Tasa de Cambio Representativa del Mercado)
-    var elVal = document.getElementById('trm-val');
-    var elDelta = document.getElementById('trm-delta');
+    // 2) Referencia del distintivo "EN VIVO" (lo activan las fuentes en vivo de abajo)
     var elLive = document.getElementById('trm-live');
-    var url = 'https://www.datos.gov.co/resource/32sa-8pi3.json?$limit=2&$order=vigenciadesde%20DESC';
-    fetch(url)
-      .then(function (r) { return r.ok ? r.json() : Promise.reject(); })
-      .then(function (rows) {
-        if (!rows || !rows.length) return;
-        var cur = parseFloat(rows[0].valor);
-        if (isNaN(cur)) return;
-        if (elVal) elVal.textContent = '$' + cur.toLocaleString('es-CO', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-        var prev = rows[1] ? parseFloat(rows[1].valor) : null;
-        if (elDelta && prev && !isNaN(prev) && prev !== 0) {
-          var pct = ((cur - prev) / prev) * 100;
-          var up = pct >= 0;
-          elDelta.textContent = (up ? '▲ ' : '▼ ') + Math.abs(pct).toLocaleString('es-CO', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '%';
-          elDelta.className = 'delta ' + (up ? 'up' : 'down');
-        }
-        if (elLive) elLive.classList.add('on');
-      })
-      .catch(function () { /* sin conexión o API caída: se queda el valor de respaldo */ });
 
     // 3) Bitcoin y Oro en vivo (CoinGecko, con variación de 24 h)
     function setCrypto(id, price, chg) {
