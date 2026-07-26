@@ -7,6 +7,8 @@ chipTipo: "propio"
 chipLabel: "Redacción propia"
 excerpt: "Datos del DANE muestran un repunte en construcción y servicios, mientras el comercio sigue rezagado frente a 2025. Los gremios piden cautela ante la desaceleración nacional."
 autor: "[Nombre del periodista]"
+imagen: "/assets/uploads/bucaramanga-panoramica.jpg"
+imagenAlt: "Vista panorámica de Bucaramanga al atardecer, con edificios de gran altura, el viaducto de acceso a la ciudad y zona verde en primer plano"
 tags: noticias
 ---
 Datos del [DANE](https://www.dane.gov.co) muestran un repunte en **construcción y servicios**, mientras el comercio sigue rezagado frente a **2025**. Los gremios piden cautela ante la desaceleración nacional.
