@@ -469,7 +469,7 @@
   }
 
   /* ---------- masthead ---------- */
-  .masthead { padding: 30px 0 20px; text-align: center; border-bottom: 4px solid var(--accent); position: relative; }
+  .masthead { padding: 15px 0 12px; text-align: center; border-bottom: 4px solid var(--accent); position: relative; }
   .masthead::after {
     content: '';
     position: absolute;
@@ -480,18 +480,18 @@
   .masthead .kicker {
     display: inline-block;
     font-family: var(--font-body);
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 700;
     letter-spacing: 0.18em;
     text-transform: uppercase;
     color: var(--accent-strong);
     background: var(--yellow);
-    padding: 4px 12px;
+    padding: 3px 10px;
     border-radius: 3px;
-    margin: 0 0 14px;
+    margin: 0 0 8px;
   }
   .masthead h1 {
-    font-size: clamp(40px, 7vw, 78px);
+    font-size: clamp(28px, 4.2vw, 48px);
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.01em;
@@ -500,10 +500,10 @@
   }
   .masthead h1 .leo { color: var(--gold); }
   .masthead .tagline {
-    margin-top: 12px;
-    font-size: 14.5px;
+    margin-top: 6px;
+    font-size: 13px;
     color: var(--text-soft);
-    max-width: 52ch;
+    max-width: 68ch;
     margin-left: auto;
     margin-right: auto;
   }
@@ -572,67 +572,6 @@
   .nav-toggle[aria-expanded="true"] .nav-burger::before { top: 0; transform: rotate(45deg); }
   .nav-toggle[aria-expanded="true"] .nav-burger::after { top: 0; transform: rotate(-45deg); }
   .nav-toggle .nav-toggle-hint { margin-left: auto; font-size: 11px; letter-spacing: 0.06em; color: var(--text-muted); }
-
-  /* ---------- editorial policy strip ---------- */
-  .policy {
-    background: var(--bg-raised);
-    border-bottom: 1px solid var(--line);
-    padding: 26px 0;
-  }
-  .policy-grid {
-    display: grid;
-    grid-template-columns: 1.1fr 1fr;
-    gap: 40px;
-    align-items: center;
-  }
-  .policy h2 {
-    font-size: 22px;
-    text-transform: uppercase;
-    letter-spacing: 0.02em;
-    margin-bottom: 8px;
-  }
-  .policy p {
-    font-size: 14px;
-    color: var(--text-soft);
-    max-width: 56ch;
-  }
-  .propbar {
-    display: flex;
-    height: 24px;
-    border-radius: 4px;
-    overflow: hidden;
-    gap: 2px;
-    background: var(--bg-sunken);
-  }
-  .propbar .seg {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: var(--font-display);
-    font-size: 12px;
-    font-weight: 700;
-  }
-  .propbar .seg.propio {
-    width: 80%;
-    background: var(--accent);
-    color: #fff;
-  }
-  .propbar .seg.recirc {
-    width: 20%;
-    background: var(--yellow);
-    color: #2a2205;
-  }
-  .propbar-legend {
-    display: flex;
-    gap: 20px;
-    margin-top: 10px;
-    flex-wrap: wrap;
-  }
-  .propbar-legend .item { display: flex; align-items: center; gap: 7px; font-size: 12.5px; color: var(--text-soft); }
-  .propbar-legend .swatch { width: 11px; height: 11px; border-radius: 3px; flex-shrink: 0; }
-  .propbar-legend .swatch.propio { background: var(--accent); }
-  .propbar-legend .swatch.recirc { background: var(--yellow); }
-  .policy-caption { margin-top: 10px; font-size: 11.5px; color: var(--text-muted); }
 
   /* ---------- origin chip ---------- */
   .chip {
@@ -972,10 +911,9 @@
   .footer-col ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 9px; }
   .footer-col a { font-size: 13px; color: var(--text-soft); text-decoration: none; }
   .footer-col a:hover { color: var(--accent); }
-  .footer-fine { border-top: 1px solid var(--line); padding-top: 20px; font-size: 11.5px; color: var(--text-muted); line-height: 1.7; }
 
   @media (max-width: 860px) {
-    .policy-grid, .hero-grid, .evergreen-block { grid-template-columns: 1fr; }
+    .hero-grid, .evergreen-block { grid-template-columns: 1fr; }
     .footer-grid { grid-template-columns: 1fr 1fr; }
   }
 
@@ -1018,9 +956,9 @@
 
   @media (max-width: 560px) {
     .footer-grid { grid-template-columns: 1fr; }
-    .masthead { padding: 24px 0 16px; }
-    .masthead h1 { font-size: 40px; }
-    .masthead .tagline { font-size: 13.5px; }
+    .masthead { padding: 12px 0 10px; }
+    .masthead h1 { font-size: 28px; }
+    .masthead .tagline { font-size: 12.5px; }
     .opinion-block { padding: 36px 0; }
     .section-block { padding: 34px 0; }
     .evergreen-block { padding: 22px 20px; }
@@ -1189,26 +1127,6 @@
     </div>
   </div>
 </div>
-
-<section class="policy">
-  <div class="wrap policy-grid">
-    <div>
-      <h2>Cómo trabajamos</h2>
-      <p>Cada semana publicamos periodismo propio sobre la economía de Santander: reportería de campo, entrevistas y análisis firmado. Cuando una cifra o decisión nacional es relevante para la región, la recirculamos con atribución clara a la fuente — nunca como si fuera propia.</p>
-    </div>
-    <div class="policy-stat">
-      <div class="propbar">
-        <div class="seg propio">80%</div>
-        <div class="seg recirc">20%</div>
-      </div>
-      <div class="propbar-legend">
-        <span class="item"><span class="swatch propio"></span>Redacción propia</span>
-        <span class="item"><span class="swatch recirc"></span>Recirculado, con atribución</span>
-      </div>
-      <p class="policy-caption">Proporción editorial objetivo, revisada cada trimestre.</p>
-    </div>
-  </div>
-</section>
 
 <main>
   <section class="hero-section wrap">
@@ -1683,10 +1601,6 @@
           <li><a href="#">Boletín por correo</a></li>
         </ul>
       </div>
-    </div>
-    <div class="footer-fine">
-      economiasantander.com (dominio pendiente de verificación en registrador) · Marca independiente, sin afiliación con Banco Santander S.A. ni con el Atlético Bucaramanga; los colores verde y amarillo se usan como identidad regional. · Optimizado para SEO técnico: HTTPS, sitemap XML, datos estructurados NewsArticle/Person, diseño mobile-first.<br>
-      * En vivo, actualizados en cada visita: USD/COP (último cierre del dólar spot en Colombia, SetFX vía dolarapi.com), Oro (aprox. vía PAXG) y Bitcoin (CoinGecko). Con fecha de referencia, actualizados periódicamente: acciones de la BVC y Tecnoglass (NYSE) al cierre del 24 de julio de 2026, café (Fedecafé), Brent, COLCAP, S&amp;P 500, TES, tasa de usura (Superfinanciera), UVR, inflación (DANE) y tasa del Banco de la República. Bancolombia cotiza bajo su holding <strong>Grupo Cibest</strong>; <strong>Isagén no cotiza en la BVC desde 2017</strong>, por lo que en su lugar se muestra Celsia, del mismo sector. Las tasas de CDT, tarjeta de crédito y crédito hipotecario son de referencia y cambian según entidad, monto, plazo y perfil del cliente. El pico y placa se calcula con la rotación vigente en cada ciudad (Bucaramanga desde el 6 de julio de 2026); verifica siempre con la autoridad de tránsito local.
     </div>
   </div>
 </footer>
