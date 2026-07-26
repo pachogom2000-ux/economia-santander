@@ -345,6 +345,107 @@
   .ad-wrap { padding: 26px 0; }
   .ad-wrap.tight { padding: 0 0 26px; }
 
+  /* ---------- anuncios vendidos ---------- */
+  .ad-unit { position: relative; border-radius: 8px; overflow: hidden; }
+  .ad-unit .ad-tag {
+    position: absolute;
+    top: 10px; right: 12px;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 3px;
+    z-index: 3;
+  }
+  .ad-body { display: flex; align-items: center; gap: 26px; padding: 26px 28px; flex-wrap: wrap; }
+  .ad-brand { font-family: var(--font-display); font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; }
+  .ad-headline { font-family: var(--font-display); font-size: clamp(24px, 3vw, 34px); font-weight: 700; line-height: 1.05; text-transform: uppercase; letter-spacing: 0.01em; margin: 6px 0 8px; }
+  .ad-text { font-size: 14px; max-width: 46ch; }
+  .ad-actions { display: flex; gap: 12px; margin-top: 16px; flex-wrap: wrap; }
+  .ad-cta {
+    display: inline-block;
+    font-family: var(--font-display);
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid transparent;
+  }
+
+  /* Tienda Sin Estrés — café */
+  .ad-cafe { background: linear-gradient(120deg, #2a1a10 0%, #3d2617 55%, #5a3a20 100%); color: #f6ece0; }
+  .ad-cafe .ad-tag { background: rgba(246,236,224,0.18); color: #f6ece0; }
+  .ad-cafe .ad-brand { color: #f0b96a; }
+  .ad-cafe .ad-headline { color: #fff8ef; }
+  .ad-cafe .ad-text { color: rgba(246,236,224,0.82); }
+  .ad-cafe .ad-cta.primary { background: #f0b96a; color: #2a1a10; }
+  .ad-cafe .ad-cta.primary:hover { background: #ffd196; }
+  .ad-cafe .ad-cta.ghost { background: transparent; color: #f6ece0; border-color: rgba(246,236,224,0.45); font-family: var(--font-display); }
+  .ad-cafe .ad-cta.ghost:hover { border-color: #f0b96a; color: #f0b96a; }
+  .ad-copy { flex: 1 1 320px; min-width: 0; }
+
+  .ad-coupon {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #fffaf3;
+    color: #2a1a10;
+    border-radius: 8px;
+    padding: 14px 16px;
+    flex: 0 1 330px;
+  }
+  .ad-coupon[hidden] { display: none; }
+  .ad-coupon img { width: 108px; height: 108px; border-radius: 4px; flex-shrink: 0; }
+  .coupon-title { font-family: var(--font-display); font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #7a4a1e; }
+  .coupon-code {
+    font-family: var(--font-display);
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    margin: 3px 0;
+    font-variant-numeric: tabular-nums;
+  }
+  .coupon-valid { font-size: 11.5px; color: #6b5341; line-height: 1.45; }
+
+  /* Pirotecnia El Vaquero — nocturno */
+  .ad-piro {
+    background:
+      radial-gradient(circle at 16% 26%, rgba(255,214,120,0.5) 0 2px, transparent 3px),
+      radial-gradient(circle at 24% 16%, rgba(255,150,120,0.45) 0 2px, transparent 3px),
+      radial-gradient(circle at 82% 30%, rgba(140,205,255,0.45) 0 2px, transparent 3px),
+      radial-gradient(circle at 90% 62%, rgba(255,214,120,0.4) 0 2px, transparent 3px),
+      radial-gradient(circle at 70% 18%, rgba(255,255,255,0.35) 0 1.5px, transparent 3px),
+      radial-gradient(circle at 40% 78%, rgba(255,180,110,0.3) 0 2px, transparent 3px),
+      radial-gradient(ellipse at 20% 20%, rgba(255,170,80,0.22), transparent 55%),
+      radial-gradient(ellipse at 85% 45%, rgba(90,170,255,0.20), transparent 55%),
+      linear-gradient(120deg, #0a1024 0%, #131c3a 60%, #1d1436 100%);
+    color: #eef2ff;
+    text-decoration: none;
+    display: block;
+  }
+  .ad-piro .ad-tag { background: rgba(238,242,255,0.16); color: #eef2ff; }
+  .ad-piro .ad-body { padding: 22px 28px; gap: 20px; }
+  .ad-piro .ad-brand { color: #ffd166; }
+  .ad-piro .ad-headline { color: #fff; font-size: clamp(21px, 2.6vw, 29px); }
+  .ad-piro .ad-text { color: rgba(238,242,255,0.8); }
+  .ad-piro .ad-cta { background: #ffd166; color: #16112b; margin-top: 4px; }
+  .ad-piro:hover .ad-cta { background: #ffe1a0; }
+  .ad-piro .ad-copy { flex: 1 1 340px; }
+  .ad-piro-side { display: flex; flex-direction: column; gap: 4px; text-align: right; margin-left: auto; }
+  .ad-piro-side .site { font-family: var(--font-display); font-size: 17px; font-weight: 600; color: #ffd166; letter-spacing: 0.03em; }
+  .ad-piro-side .note { font-size: 11.5px; color: rgba(238,242,255,0.6); }
+
+  @media (max-width: 640px) {
+    .ad-body { padding: 20px; gap: 18px; }
+    .ad-coupon { flex-basis: 100%; }
+    .ad-piro-side { text-align: left; margin-left: 0; }
+  }
+
   /* ---------- masthead ---------- */
   .masthead { padding: 30px 0 20px; text-align: center; border-bottom: 4px solid var(--accent); position: relative; }
   .masthead::after {
@@ -1037,12 +1138,30 @@
   </div>
 </nav>
 
-<!-- Espacio publicitario: billboard superior. Pega aquí el código de Google AdSense / Ad Manager. -->
+<!-- Anuncio vendido: Tienda Sin Estrés (billboard superior) -->
 <div class="wrap ad-wrap">
-  <div class="ad-slot ad-billboard">
-    <span class="ad-label">Espacio publicitario</span>
-    <span class="ad-size">Billboard · 970 × 250</span>
-    <span class="ad-hint">Se adapta a 320 × 100 en móvil · compatible con Google AdSense y Ad Manager</span>
+  <div class="ad-unit ad-cafe">
+    <span class="ad-tag">Publicidad</span>
+    <div class="ad-body">
+      <div class="ad-copy">
+        <p class="ad-brand">Tienda Sin Estrés · Bucaramanga</p>
+        <h3 class="ad-headline">Tu tinto va por la casa</h3>
+        <p class="ad-text">Genera tu cupón, muéstralo en caja y reclama un tinto gratis. Uno por persona, mientras dure la promoción.</p>
+        <div class="ad-actions">
+          <button type="button" class="ad-cta primary" id="btn-cupon">Generar mi cupón</button>
+          <a class="ad-cta ghost" id="link-sinestres" href="https://www.google.com/maps/search/?api=1&amp;query=Tienda+Sin+Estres+Bucaramanga" target="_blank" rel="noopener sponsored">Cómo llegar →</a>
+        </div>
+      </div>
+      <div class="ad-coupon" id="cupon-tinto" hidden>
+        <img id="qr-tinto" width="108" height="108" alt="Código QR con la ubicación de Tienda Sin Estrés en Google Maps"
+             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeAAAAHgAQMAAABHGizWAAAABlBMVEX///8PFxKopGGdAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADQ0lEQVR4nO2cS7KjMAxFRWXAkCVkKSwNlsZSvIQMM6BQ2/r4w0t1vUloU301SYN1/CaWIl8pTQSDwWCwuxlnW4mWF9EkD9ujLLhreXUABnwNHHwlwdFzOugZYaL5Lc+2/24uySbAgG8BDxYI6yheMTZoEDjHQXQJj+ICGPD9YDn4gyT1mOHfsv6SwAgaO4AB/0N40rx90LyXs52e6RdnGzDgzmD9dFiiYig1ScrjTy1T/lrQAAbcHZztR2BE+C1JP9ckboABXwNXNrIUIALr8zp6CZ3gnwRgwB3DVpMwW1Lm12CpfNZ6m/U6SEXGAwz4FrDYI8l0McMvFgW+n3lavU3JRfYHDPgiONfD6XjHmoT8IEfnmLrFJ29mx/0ADLh/WN7t8s9SgFCqt8l0DdHwnnt6pYFxug4CBtwrfMgKW3fQaxINlHzXDN5RcTUEMOAL4JS0gydpVpi1BhkNFDcvW1oDDLhf2O5+dtd76XVQmyrFSWuS3VTnT0NHgAH3B/PposgibVj9rWVJlvEW+x4ADPgiOEjqNk8923qQfXOxIDXJOp4KGsCAO4ZtZfcOis3EZUl5Yu8Okil9RcYDDLhruJ66mNyZuXwPNDLewtx+YwAG/E1YTc62DWbQ4PWy3ghDJc7JnwAM+AawdFB8uDOupKT85CYwKqVP9y8GGHDPMKeCQ3WMtXpv+1kHRWU8orYmAQz4u3C5DrIOZugv+Hgvv+Cz/rbZWcYDDLhbuNXovN4+97N9lnklwIBvAjcFh8GyMrtkXaJiLSU5YMCXwGp6lm0mbrDrYUzlBd5UiWtmmQED7hgO5J3rk4Q8+0+kqsCwv3cABnwTWGyRdcvo8+6vymY+yg8Y8HWwJOk56xxak8TnbTRlLu0ZvOGXmteV1AEYcLdwZVZMs6XybTT/tPZkHwltNEDAgPuFOdtq+rO3ube6861Sx/ph6Agw4C/CQT8f9f8CoHNDevebfNQ+bubKHAEGfAdYJ4werUY3n+Y9S/i0gQEY8D1g5mroaGZ9ZhuoO+8PGPC18Eqn5nWeG7K8TfkZMOD+Yf2sZ5lZiu0Ik94IP+wPGHD/cDZdMefNA8FkPK6a4x8vooABfwGGwWAw2H9ifwAdqBP8yZB8xgAAAABJRU5ErkJggg==">
+        <div>
+          <p class="coupon-title">Cupón · Tinto gratis</p>
+          <p class="coupon-code" id="cupon-codigo">TINTO-0000</p>
+          <p class="coupon-valid" id="cupon-vigencia">Escanea el QR para llegar a la tienda.</p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -1106,13 +1225,23 @@
     </div>
   </section>
 
-  <!-- Espacio publicitario: banner tras las noticias destacadas. -->
+  <!-- Anuncio vendido: Pirotecnia El Vaquero (leaderboard) -->
   <div class="wrap ad-wrap tight">
-    <div class="ad-slot ad-leaderboard">
-      <span class="ad-label">Espacio publicitario</span>
-      <span class="ad-size">Leaderboard · 728 × 90</span>
-      <span class="ad-hint">Alta visibilidad: primer scroll de la portada</span>
-    </div>
+    <a class="ad-unit ad-piro" href="https://vaquerobucara.com" target="_blank" rel="noopener sponsored">
+      <span class="ad-tag">Publicidad</span>
+      <div class="ad-body">
+        <div class="ad-copy">
+          <p class="ad-brand">Pirotecnia El Vaquero</p>
+          <h3 class="ad-headline">Que la fiesta se vea desde lejos</h3>
+          <p class="ad-text">Pólvora de bajo ruido, espectáculos con manejo profesional y parqueadero propio en Bucaramanga.</p>
+          <span class="ad-cta">Ver el catálogo →</span>
+        </div>
+        <div class="ad-piro-side">
+          <span class="site">vaquerobucara.com</span>
+          <span class="note">Venta segura y asesorada</span>
+        </div>
+      </div>
+    </a>
   </div>
 
   <section class="section-block wrap">
@@ -1706,7 +1835,43 @@
       });
     })();
 
-    // ---------- 7) Tarjetas flip ----------
+    // ---------- 7) Cupón del anunciante (tinto gratis) ----------
+    (function () {
+      var btn = document.getElementById('btn-cupon');
+      var caja = document.getElementById('cupon-tinto');
+      if (!btn || !caja) return;
+      btn.addEventListener('click', function () {
+        // Código legible, distinto en cada generación
+        var abc = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+        var cod = '';
+        var rnd = new Uint32Array(4);
+        if (window.crypto && window.crypto.getRandomValues) {
+          window.crypto.getRandomValues(rnd);
+          for (var i = 0; i < 4; i++) { cod += abc.charAt(rnd[i] % abc.length); }
+        } else {
+          for (var j = 0; j < 4; j++) { cod += abc.charAt(Math.floor(Math.random() * abc.length)); }
+        }
+        var elCod = document.getElementById('cupon-codigo');
+        if (elCod) elCod.textContent = 'TINTO-' + cod;
+
+        var elVig = document.getElementById('cupon-vigencia');
+        if (elVig) {
+          var fecha = '';
+          try {
+            fecha = new Intl.DateTimeFormat('es-CO', {
+              day: 'numeric', month: 'long', year: 'numeric', timeZone: 'America/Bogota'
+            }).format(new Date());
+          } catch (e) {}
+          elVig.textContent = 'Válido hoy' + (fecha ? ', ' + fecha : '') + '. Muéstralo en caja. Escanea el QR para llegar a la tienda.';
+        }
+        caja.hidden = false;
+        btn.textContent = 'Generar otro cupón';
+        caja.setAttribute('tabindex', '-1');
+        caja.focus();
+      });
+    })();
+
+    // ---------- 8) Tarjetas flip ----------
     each('.flip-btn', function (btn) {
       btn.addEventListener('click', function () {
         var card = btn.closest('.flip-card');
