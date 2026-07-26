@@ -325,7 +325,26 @@
     border-radius: 3px;
     z-index: 3;
   }
-  .ad-body { display: flex; align-items: center; gap: 26px; padding: 26px 28px; flex-wrap: wrap; }
+  .ad-body { display: flex; align-items: center; gap: 26px; padding: 26px 28px; flex-wrap: wrap; position: relative; z-index: 2; }
+
+  /* Foto del anunciante. Capa absoluta: se funde con el degradado del aviso
+     mediante mask-image y no participa del layout, así el alto no cambia. */
+  .ad-media {
+    position: absolute;
+    top: 0; right: 0; bottom: 0;
+    width: 46%;
+    overflow: hidden;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .ad-media img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.3) 28%, rgba(0,0,0,0.82) 66%, #000 100%);
+    mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.3) 28%, rgba(0,0,0,0.82) 66%, #000 100%);
+  }
   .ad-brand { font-family: var(--font-display); font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; }
   .ad-headline { font-family: var(--font-display); font-size: clamp(24px, 3vw, 34px); font-weight: 700; line-height: 1.05; text-transform: uppercase; letter-spacing: 0.01em; margin: 6px 0 8px; }
   .ad-text { font-size: 14px; max-width: 46ch; }
@@ -411,6 +430,9 @@
     .ad-body { padding: 20px; gap: 18px; }
     .ad-coupon { flex-basis: 100%; }
     .ad-piro-side { text-align: left; margin-left: 0; }
+    /* En móvil el texto ocupa todo el ancho: la foto baja de intensidad
+       para no competir con la lectura. */
+    .ad-media { width: 62%; opacity: 0.5; }
   }
 
   /* ---------- masthead ---------- */
