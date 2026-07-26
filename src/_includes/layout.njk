@@ -142,7 +142,13 @@
 <header class="masthead">
   <div class="wrap">
     <p class="kicker">Periodismo económico regional</p>
+    {# El H1 debe ser único por página: en la portada lo es el nombre del medio;
+       en una noticia, el H1 es el titular, así que aquí baja a <p>. #}
+    {% if page.url == "/" %}
     <h1><a href="/" style="color:inherit; text-decoration:none;">Economía <span class="leo">Santander</span></a></h1>
+    {% else %}
+    <p class="marca"><a href="/" style="color:inherit; text-decoration:none;">Economía <span class="leo">Santander</span></a></p>
+    {% endif %}
     <p class="tagline">Inversión, empleo y desarrollo del oriente colombiano, con veinte años de reportería económica detrás de cada historia.</p>
   </div>
 </header>
