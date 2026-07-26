@@ -20,11 +20,15 @@
 <meta property="og:description" content="{{ pageDescription }}">
 <meta property="og:url" content="https://economiasantander.com{{ page.url }}">
 <meta property="og:locale" content="es_CO">
-{% if imagen %}<meta property="og:image" content="{{ imagen }}">{% endif %}
+{% set ogImagen = imagen or "/assets/img/empleo-formal-bucaramanga-area-metropolitana-2026.jpg" %}
+<meta property="og:image" content="https://economiasantander.com{{ ogImagen }}">
+{% if imagenAlt %}<meta property="og:image:alt" content="{{ imagenAlt }}">{% endif %}
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ pageTitle }}">
 <meta name="twitter:description" content="{{ pageDescription }}">
+<meta name="twitter:image" content="https://economiasantander.com{{ ogImagen }}">
+{% if imagen %}<link rel="preload" as="image" href="{{ imagen }}" fetchpriority="high">{% endif %}
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HVC4Z011SY"></script>
 <script>
@@ -167,7 +171,7 @@
   </div>
 </nav>
 
-<!-- Anuncio vendido: Tienda Sin Estrés (billboard superior) -->
+<!-- Anuncio vendido: Tienda Sinestrés (billboard superior) -->
 <div class="wrap ad-wrap">
   <div class="ad-unit ad-cafe">
     <span class="ad-tag">Publicidad</span>
@@ -176,16 +180,16 @@
     </div>
     <div class="ad-body">
       <div class="ad-copy">
-        <p class="ad-brand">Tienda Sin Estrés · Bucaramanga</p>
+        <p class="ad-brand">Tienda Sinestrés · Bucaramanga</p>
         <h3 class="ad-headline">Tu tinto va por la casa</h3>
-        <p class="ad-text">Genera tu cupón, muéstralo en caja y reclama un tinto gratis. Uno por persona, mientras dure la promoción.</p>
+        <p class="ad-text">Genera tu cupón, muéstralo en caja y reclama un tinto gratis. <strong>Solo 100 cupones</strong>, uno por dispositivo.</p>
         <div class="ad-actions">
           <button type="button" class="ad-cta primary" id="btn-cupon">Generar mi cupón</button>
           <a class="ad-cta ghost" id="link-sinestres" href="https://maps.app.goo.gl/8Lopf2Nfjzwn2ymj7" target="_blank" rel="noopener sponsored">Cómo llegar →</a>
         </div>
       </div>
       <div class="ad-coupon" id="cupon-tinto" hidden>
-        <img id="qr-tinto" width="108" height="108" alt="Código QR que abre la ubicación de Tienda sinestres en Google Maps"
+        <img id="qr-tinto" width="108" height="108" alt="Código QR que abre la ubicación de Tienda Sinestrés en Google Maps"
              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeAAAAHgAQMAAABHGizWAAAABlBMVEX///8PFxKopGGdAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACT0lEQVR4nO3cPXKDMBCG4WVcpPQROIqPho/mo3CElC48VkC7K1Ya/DMxpMi8X5EhwCNXO0grbBFCCCHkn+crhYzTiXSzK+k+/TnqhZsfaC5gMHg3/G1H0/UxDihduur/Xcaj39eDweBX+ORVN8owH3wto7QX0zQgGAz+Q5zPjfM5f0qeRQQMBn+ADyk5LhPTt0sSDAZ/ji0B5xVf5wd+0QIGg1/gEMNadbkk53o9d292aMBg8Me4SZ64SsSiS8R3AgaD55S5p5bklENud55CBYZtheS9UDAYvAuu0k8X7SmZtFUzPxGHuy0RQ7GDweCnuC5J7XuKWPmFued57QPBYPC2+OjdGGvVeIcmPxyrkYdq9w8MBq9ja7LczaRqg8+WgzpKP5VkaieuYDB4a/ytNx6sG1OP0sRGuYDB4Ldw02SJr2wmb4A+LEkwGLwJlnyjTVLLtkNowpxmcbOL4mtFMBj8FNv0MmwY9MmeiEfte4qszj3BYPDWuNpW7721WfbcLf4mi/hrLmAw+AXO0bcyU8g1NkV7x0vAYPAe2Pbw5gyq8ijh5TJfDko9cQWDwQ+wRXfGU5ledrEkNWX3DwwG74ObDHrTvMG3jNwUOxgMfoqrPbyxOafbCqn5ausSMBi8Pa6Wg4Ov+Eo9G54zJKkDBoMf4LrqbrkkL/6rfJcXE1cwGLwrltKE0XZnaN+UpigYDP4FPqXSZBmWDb6cUQQMBu+ILeHHjMILZ7mefYMvtV8XAoPBKzjE5p6GPWfJX1zo9eC6fAAYDN4cE0IIIWQtP+3oa/m3wKcJAAAAAElFTkSuQmCC">
         <div>
           <p class="coupon-title">Cupón · Tinto gratis</p>
@@ -423,43 +427,93 @@
       });
     })();
 
-    // ---------- 7) Cupón del anunciante (tinto gratis) ----------
+    // ---------- 7) Cupón del anunciante: uno por dispositivo, 100 disponibles ----------
     (function () {
       var btn = document.getElementById('btn-cupon');
       var caja = document.getElementById('cupon-tinto');
       if (!btn || !caja) return;
-      btn.addEventListener('click', function () {
-        // Código legible, distinto en cada generación
-        var abc = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
-        var cod = '';
-        var rnd = new Uint32Array(4);
-        if (window.crypto && window.crypto.getRandomValues) {
-          window.crypto.getRandomValues(rnd);
-          for (var i = 0; i < 4; i++) { cod += abc.charAt(rnd[i] % abc.length); }
-        } else {
-          for (var j = 0; j < 4; j++) { cod += abc.charAt(Math.floor(Math.random() * abc.length)); }
-        }
-        var elCod = document.getElementById('cupon-codigo');
-        if (elCod) elCod.textContent = 'TINTO-' + cod;
 
+      var LLAVE = 'sinestres-tinto-2026';
+      var TOTAL = 100;
+
+      function guardado() {
+        try { return JSON.parse(window.localStorage.getItem(LLAVE) || 'null'); }
+        catch (e) { return null; }
+      }
+      function guardar(dato) {
+        try { window.localStorage.setItem(LLAVE, JSON.stringify(dato)); } catch (e) {}
+      }
+      function numeroAleatorio() {
+        if (window.crypto && window.crypto.getRandomValues) {
+          var a = new Uint32Array(1);
+          window.crypto.getRandomValues(a);
+          return (a[0] % TOTAL) + 1;
+        }
+        return Math.floor(Math.random() * TOTAL) + 1;
+      }
+      function fechaLarga(iso) {
+        try {
+          return new Intl.DateTimeFormat('es-CO', {
+            day: 'numeric', month: 'long', year: 'numeric', timeZone: 'America/Bogota'
+          }).format(iso ? new Date(iso) : new Date());
+        } catch (e) { return ''; }
+      }
+      function pintar(dato) {
+        var elCod = document.getElementById('cupon-codigo');
         var elVig = document.getElementById('cupon-vigencia');
+        if (elCod) elCod.textContent = 'TINTO-' + ('00' + dato.n).slice(-3);
         if (elVig) {
-          var fecha = '';
-          try {
-            fecha = new Intl.DateTimeFormat('es-CO', {
-              day: 'numeric', month: 'long', year: 'numeric', timeZone: 'America/Bogota'
-            }).format(new Date());
-          } catch (e) {}
-          elVig.textContent = 'Válido hoy' + (fecha ? ', ' + fecha : '') + '. Muéstralo en caja. Escanea el QR para llegar a la tienda.';
+          elVig.textContent = 'Cupón ' + dato.n + ' de ' + TOTAL + '. Emitido el ' + fechaLarga(dato.fecha)
+            + '. Uno por dispositivo: muéstralo en caja y escanea el QR para llegar a la tienda.';
         }
         caja.hidden = false;
-        btn.textContent = 'Generar otro cupón';
+        btn.textContent = 'Ver mi cupón';
+        btn.setAttribute('aria-disabled', 'true');
+      }
+
+      var previo = guardado();
+      if (previo && previo.n) { pintar(previo); }
+
+      btn.addEventListener('click', function () {
+        var actual = guardado();
+        if (!actual || !actual.n) {
+          actual = { n: numeroAleatorio(), fecha: new Date().toISOString() };
+          guardar(actual);
+        }
+        pintar(actual);
         caja.setAttribute('tabindex', '-1');
         caja.focus();
       });
     })();
 
-    // ---------- 8) Tarjetas flip ----------
+    // ---------- 8) Pestañas de tasas ----------
+    (function () {
+      var tabs = document.querySelectorAll('.tab-btn');
+      if (!tabs.length) return;
+      function activar(tab) {
+        for (var i = 0; i < tabs.length; i++) {
+          var t = tabs[i];
+          var sel = (t === tab);
+          t.setAttribute('aria-selected', sel ? 'true' : 'false');
+          t.tabIndex = sel ? 0 : -1;
+          var panel = document.getElementById(t.getAttribute('aria-controls'));
+          if (panel) panel.hidden = !sel;
+        }
+      }
+      for (var i = 0; i < tabs.length; i++) {
+        tabs[i].addEventListener('click', function () { activar(this); });
+        tabs[i].addEventListener('keydown', function (e) {
+          var lista = Array.prototype.slice.call(tabs);
+          var pos = lista.indexOf(this);
+          var sig = null;
+          if (e.key === 'ArrowRight') { sig = lista[(pos + 1) % lista.length]; }
+          if (e.key === 'ArrowLeft') { sig = lista[(pos - 1 + lista.length) % lista.length]; }
+          if (sig) { e.preventDefault(); activar(sig); sig.focus(); }
+        });
+      }
+    })();
+
+    // ---------- 9) Tarjetas flip ----------
     each('.flip-btn', function (btn) {
       btn.addEventListener('click', function () {
         var card = btn.closest('.flip-card');
