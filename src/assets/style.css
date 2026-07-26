@@ -1,4 +1,3 @@
-
   @font-face {
     font-family: 'Oswald';
     font-style: normal;
@@ -141,18 +140,42 @@
     * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
   }
 
-  /* ---------- mockup ribbon ---------- */
-  .mockup-ribbon {
-    background: var(--text);
-    color: var(--bg);
-    font-family: var(--font-body);
-    font-size: 11.5px;
-    font-weight: 600;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 7px 12px;
+  /* ---------- franja de pico y placa ---------- */
+  .pico-ribbon {
+    background: #0f1712;
+    color: #e9f0e8;
   }
+  .pico-inner {
+    display: flex;
+    align-items: center;
+    gap: 8px 20px;
+    padding: 8px 0;
+    flex-wrap: wrap;
+  }
+  .pico-title {
+    font-family: var(--font-display);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--yellow);
+    white-space: nowrap;
+  }
+  .pico-cities { display: flex; gap: 8px 20px; flex-wrap: wrap; align-items: center; }
+  .pico-city { display: flex; align-items: baseline; gap: 7px; font-size: 12.5px; white-space: nowrap; }
+  .pico-city b { color: #fff; font-weight: 700; }
+  .pico-digits {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 14px;
+    color: #16220f;
+    background: var(--yellow);
+    padding: 1px 8px;
+    border-radius: 3px;
+    letter-spacing: 0.03em;
+  }
+  .pico-digits.libre { background: rgba(255,255,255,0.14); color: #cfe0cd; }
+  .pico-time { color: rgba(233,240,232,0.6); font-size: 11.5px; }
 
   /* ---------- utility bar ---------- */
   .utility-bar {
@@ -260,42 +283,135 @@
     .ticker-track::-webkit-scrollbar { display: none; }
   }
 
-  /* ---------- pico y placa ---------- */
-  .pico-bar {
+  /* ---------- espacios publicitarios ---------- */
+  .ad-slot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
     background: var(--bg-sunken);
-    border-bottom: 1px solid var(--line);
+    border: 1px dashed var(--line);
+    border-radius: 6px;
+    padding: 16px;
+    text-align: center;
   }
-  .pico-inner {
+  .ad-label {
+    font-family: var(--font-body);
+    font-size: 9.5px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+  .ad-size { font-family: var(--font-display); font-size: 13px; font-weight: 600; color: var(--text-soft); letter-spacing: 0.04em; }
+  .ad-hint { font-size: 11px; color: var(--text-muted); }
+  .ad-billboard { min-height: 132px; }
+  .ad-leaderboard { min-height: 106px; }
+  .ad-rectangle { min-height: 258px; }
+  .ad-wrap { padding: 26px 0; }
+  .ad-wrap.tight { padding: 0 0 26px; }
+
+  /* ---------- anuncios vendidos ---------- */
+  .ad-unit { position: relative; border-radius: 8px; overflow: hidden; }
+  .ad-unit .ad-tag {
+    position: absolute;
+    top: 10px; right: 12px;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 3px;
+    z-index: 3;
+  }
+  .ad-body { display: flex; align-items: center; gap: 26px; padding: 26px 28px; flex-wrap: wrap; }
+  .ad-brand { font-family: var(--font-display); font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; }
+  .ad-headline { font-family: var(--font-display); font-size: clamp(24px, 3vw, 34px); font-weight: 700; line-height: 1.05; text-transform: uppercase; letter-spacing: 0.01em; margin: 6px 0 8px; }
+  .ad-text { font-size: 14px; max-width: 46ch; }
+  .ad-actions { display: flex; gap: 12px; margin-top: 16px; flex-wrap: wrap; }
+  .ad-cta {
+    display: inline-block;
+    font-family: var(--font-display);
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid transparent;
+  }
+
+  /* Tienda Sin Estrés — café */
+  .ad-cafe { background: linear-gradient(120deg, #2a1a10 0%, #3d2617 55%, #5a3a20 100%); color: #f6ece0; }
+  .ad-cafe .ad-tag { background: rgba(246,236,224,0.18); color: #f6ece0; }
+  .ad-cafe .ad-brand { color: #f0b96a; }
+  .ad-cafe .ad-headline { color: #fff8ef; }
+  .ad-cafe .ad-text { color: rgba(246,236,224,0.82); }
+  .ad-cafe .ad-cta.primary { background: #f0b96a; color: #2a1a10; }
+  .ad-cafe .ad-cta.primary:hover { background: #ffd196; }
+  .ad-cafe .ad-cta.ghost { background: transparent; color: #f6ece0; border-color: rgba(246,236,224,0.45); font-family: var(--font-display); }
+  .ad-cafe .ad-cta.ghost:hover { border-color: #f0b96a; color: #f0b96a; }
+  .ad-copy { flex: 1 1 320px; min-width: 0; }
+
+  .ad-coupon {
     display: flex;
     align-items: center;
-    gap: 10px 22px;
-    padding: 9px 0;
-    flex-wrap: wrap;
+    gap: 16px;
+    background: #fffaf3;
+    color: #2a1a10;
+    border-radius: 8px;
+    padding: 14px 16px;
+    flex: 0 1 330px;
   }
-  .pico-title {
+  .ad-coupon[hidden] { display: none; }
+  .ad-coupon img { width: 108px; height: 108px; border-radius: 4px; flex-shrink: 0; }
+  .coupon-title { font-family: var(--font-display); font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #7a4a1e; }
+  .coupon-code {
     font-family: var(--font-display);
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
-    color: var(--accent);
-    white-space: nowrap;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    margin: 3px 0;
+    font-variant-numeric: tabular-nums;
   }
-  .pico-cities { display: flex; gap: 10px 22px; flex-wrap: wrap; align-items: center; }
-  .pico-city { display: flex; align-items: baseline; gap: 7px; font-size: 12.5px; white-space: nowrap; }
-  .pico-city b { color: var(--text); font-weight: 700; }
-  .pico-digits {
-    font-family: var(--font-display);
-    font-weight: 600;
-    font-size: 14px;
-    color: #fff;
-    background: var(--accent);
-    padding: 1px 8px;
-    border-radius: 3px;
-    letter-spacing: 0.03em;
+  .coupon-valid { font-size: 11.5px; color: #6b5341; line-height: 1.45; }
+
+  /* Pirotecnia El Vaquero — nocturno */
+  .ad-piro {
+    background:
+      radial-gradient(circle at 16% 26%, rgba(255,214,120,0.5) 0 2px, transparent 3px),
+      radial-gradient(circle at 24% 16%, rgba(255,150,120,0.45) 0 2px, transparent 3px),
+      radial-gradient(circle at 82% 30%, rgba(140,205,255,0.45) 0 2px, transparent 3px),
+      radial-gradient(circle at 90% 62%, rgba(255,214,120,0.4) 0 2px, transparent 3px),
+      radial-gradient(circle at 70% 18%, rgba(255,255,255,0.35) 0 1.5px, transparent 3px),
+      radial-gradient(circle at 40% 78%, rgba(255,180,110,0.3) 0 2px, transparent 3px),
+      radial-gradient(ellipse at 20% 20%, rgba(255,170,80,0.22), transparent 55%),
+      radial-gradient(ellipse at 85% 45%, rgba(90,170,255,0.20), transparent 55%),
+      linear-gradient(120deg, #0a1024 0%, #131c3a 60%, #1d1436 100%);
+    color: #eef2ff;
+    text-decoration: none;
+    display: block;
   }
-  .pico-digits.libre { background: var(--gold-tint); color: var(--gold); }
-  .pico-time { color: var(--text-muted); font-size: 11.5px; }
+  .ad-piro .ad-tag { background: rgba(238,242,255,0.16); color: #eef2ff; }
+  .ad-piro .ad-body { padding: 22px 28px; gap: 20px; }
+  .ad-piro .ad-brand { color: #ffd166; }
+  .ad-piro .ad-headline { color: #fff; font-size: clamp(21px, 2.6vw, 29px); }
+  .ad-piro .ad-text { color: rgba(238,242,255,0.8); }
+  .ad-piro .ad-cta { background: #ffd166; color: #16112b; margin-top: 4px; }
+  .ad-piro:hover .ad-cta { background: #ffe1a0; }
+  .ad-piro .ad-copy { flex: 1 1 340px; }
+  .ad-piro-side { display: flex; flex-direction: column; gap: 4px; text-align: right; margin-left: auto; }
+  .ad-piro-side .site { font-family: var(--font-display); font-size: 17px; font-weight: 600; color: #ffd166; letter-spacing: 0.03em; }
+  .ad-piro-side .note { font-size: 11.5px; color: rgba(238,242,255,0.6); }
+
+  @media (max-width: 640px) {
+    .ad-body { padding: 20px; gap: 18px; }
+    .ad-coupon { flex-basis: 100%; }
+    .ad-piro-side { text-align: left; margin-left: 0; }
+  }
 
   /* ---------- masthead ---------- */
   .masthead { padding: 30px 0 20px; text-align: center; border-bottom: 4px solid var(--accent); position: relative; }
@@ -368,6 +484,39 @@
   .nav-inner a:hover, .nav-inner a:focus-visible { color: var(--accent); border-bottom-color: var(--yellow); }
   .nav-inner a.current { color: var(--accent); border-bottom-color: var(--accent); }
   a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  .nav-toggle {
+    display: none;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    font-family: var(--font-display);
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--text);
+    background: none;
+    border: none;
+    padding: 13px 0;
+    cursor: pointer;
+  }
+  .nav-burger { position: relative; width: 20px; height: 2px; background: var(--accent); flex-shrink: 0; transition: background 0.2s; }
+  .nav-burger::before, .nav-burger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background: var(--accent);
+    transition: transform 0.25s ease, top 0.25s ease;
+  }
+  .nav-burger::before { top: -6px; }
+  .nav-burger::after { top: 6px; }
+  .nav-toggle[aria-expanded="true"] .nav-burger { background: transparent; }
+  .nav-toggle[aria-expanded="true"] .nav-burger::before { top: 0; transform: rotate(45deg); }
+  .nav-toggle[aria-expanded="true"] .nav-burger::after { top: 0; transform: rotate(-45deg); }
+  .nav-toggle .nav-toggle-hint { margin-left: auto; font-size: 11px; letter-spacing: 0.06em; color: var(--text-muted); }
 
   /* ---------- editorial policy strip ---------- */
   .policy {
@@ -774,7 +923,51 @@
     .policy-grid, .hero-grid, .evergreen-block { grid-template-columns: 1fr; }
     .footer-grid { grid-template-columns: 1fr 1fr; }
   }
+
+  /* ---------- menú hamburguesa ---------- */
+  @media (max-width: 780px) {
+    .nav-toggle { display: flex; }
+    .nav-inner {
+      display: none;
+      flex-direction: column;
+      overflow: visible;
+      padding-bottom: 10px;
+    }
+    .nav-inner.is-open { display: flex; }
+    .nav-inner a {
+      padding: 12px 4px;
+      border-bottom: 1px solid var(--line);
+      border-left: 3px solid transparent;
+      font-size: 16px;
+    }
+    .nav-inner a:hover, .nav-inner a:focus-visible { border-bottom-color: var(--line); border-left-color: var(--yellow); }
+    .nav-inner a.current { border-bottom-color: var(--line); border-left-color: var(--accent); }
+    nav.primary { position: static; }
+  }
+
+  @media (max-width: 640px) {
+    .utility-inner { gap: 4px 14px; padding: 8px 0; }
+    .utility-date { font-size: 12px; white-space: normal; }
+    .ticker-track { font-size: 12px; animation-duration: 90s; }
+    .ticker-item { padding: 8px 14px; }
+    .pico-inner { gap: 6px 14px; }
+    .pico-cities { gap: 6px 14px; }
+    .pico-city { font-size: 12px; }
+    .pico-time { display: none; }
+    .section-head h2 { font-size: 23px; }
+    .hero-headline { font-size: 27px; }
+    .flip-card, .flip-inner { min-height: 348px; }
+    .flip-rate { font-size: 36px; }
+    .ad-wrap { padding: 20px 0; }
+  }
+
   @media (max-width: 560px) {
     .footer-grid { grid-template-columns: 1fr; }
-    .masthead h1 { font-size: 44px; }
+    .masthead { padding: 24px 0 16px; }
+    .masthead h1 { font-size: 40px; }
+    .masthead .tagline { font-size: 13.5px; }
+    .opinion-block { padding: 36px 0; }
+    .section-block { padding: 34px 0; }
+    .evergreen-block { padding: 22px 20px; }
+    .interview-card, .core-card { padding: 18px; }
   }

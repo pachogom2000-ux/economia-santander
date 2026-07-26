@@ -31,7 +31,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-HVC4Z011SY');
 </script>
 
@@ -90,7 +89,16 @@
 <body>
 
 
-<div class="mockup-ribbon">Maqueta de portada — Economía Santander · identidad inspirada en los colores del Atlético Bucaramanga (verde y amarillo)</div>
+<div class="pico-ribbon">
+  <div class="wrap pico-inner">
+    <span class="pico-title">Pico y placa hoy</span>
+    <div class="pico-cities" id="pico-cities">
+      <span class="pico-city"><b>Bucaramanga</b> <span class="pico-digits">—</span></span>
+      <span class="pico-city"><b>Bogotá</b> <span class="pico-digits">—</span></span>
+      <span class="pico-city"><b>Medellín</b> <span class="pico-digits">—</span></span>
+    </div>
+  </div>
+</div>
 
 <div class="utility-bar">
   <div class="wrap utility-inner">
@@ -127,17 +135,6 @@
   </div>
 </div>
 
-<div class="pico-bar">
-  <div class="wrap pico-inner">
-    <span class="pico-title">Pico y placa hoy</span>
-    <div class="pico-cities" id="pico-cities">
-      <span class="pico-city"><b>Bucaramanga</b> <span class="pico-digits">—</span></span>
-      <span class="pico-city"><b>Bogotá</b> <span class="pico-digits">—</span></span>
-      <span class="pico-city"><b>Medellín</b> <span class="pico-digits">—</span></span>
-    </div>
-  </div>
-</div>
-
 <header class="masthead">
   <div class="wrap">
     <p class="kicker">Periodismo económico regional</p>
@@ -147,7 +144,13 @@
 </header>
 
 <nav class="primary">
-  <div class="wrap nav-inner">
+  <div class="wrap">
+    <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+      <span class="nav-burger" aria-hidden="true"></span>
+      Secciones
+      <span class="nav-toggle-hint">Ver todas</span>
+    </button>
+    <div class="nav-inner" id="nav-menu">
     <a href="/" class="current">Portada</a>
     <a href="#">Inversión</a>
     <a href="#">Finanzas personales</a>
@@ -160,8 +163,36 @@
     <a href="#">Opinión</a>
     <a href="#">Entrevistas</a>
     <a href="#">Glosario</a>
+    </div>
   </div>
 </nav>
+
+<!-- Anuncio vendido: Tienda Sin Estrés (billboard superior) -->
+<div class="wrap ad-wrap">
+  <div class="ad-unit ad-cafe">
+    <span class="ad-tag">Publicidad</span>
+    <div class="ad-body">
+      <div class="ad-copy">
+        <p class="ad-brand">Tienda Sin Estrés · Bucaramanga</p>
+        <h3 class="ad-headline">Tu tinto va por la casa</h3>
+        <p class="ad-text">Genera tu cupón, muéstralo en caja y reclama un tinto gratis. Uno por persona, mientras dure la promoción.</p>
+        <div class="ad-actions">
+          <button type="button" class="ad-cta primary" id="btn-cupon">Generar mi cupón</button>
+          <a class="ad-cta ghost" id="link-sinestres" href="https://maps.app.goo.gl/8Lopf2Nfjzwn2ymj7" target="_blank" rel="noopener sponsored">Cómo llegar →</a>
+        </div>
+      </div>
+      <div class="ad-coupon" id="cupon-tinto" hidden>
+        <img id="qr-tinto" width="108" height="108" alt="Código QR que abre la ubicación de Tienda sinestres en Google Maps"
+             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeAAAAHgAQMAAABHGizWAAAABlBMVEX///8PFxKopGGdAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACT0lEQVR4nO3cPXKDMBCG4WVcpPQROIqPho/mo3CElC48VkC7K1Ya/DMxpMi8X5EhwCNXO0grbBFCCCHkn+crhYzTiXSzK+k+/TnqhZsfaC5gMHg3/G1H0/UxDihduur/Xcaj39eDweBX+ORVN8owH3wto7QX0zQgGAz+Q5zPjfM5f0qeRQQMBn+ADyk5LhPTt0sSDAZ/ji0B5xVf5wd+0QIGg1/gEMNadbkk53o9d292aMBg8Me4SZ64SsSiS8R3AgaD55S5p5bklENud55CBYZtheS9UDAYvAuu0k8X7SmZtFUzPxGHuy0RQ7GDweCnuC5J7XuKWPmFued57QPBYPC2+OjdGGvVeIcmPxyrkYdq9w8MBq9ja7LczaRqg8+WgzpKP5VkaieuYDB4a/ytNx6sG1OP0sRGuYDB4Ldw02SJr2wmb4A+LEkwGLwJlnyjTVLLtkNowpxmcbOL4mtFMBj8FNv0MmwY9MmeiEfte4qszj3BYPDWuNpW7721WfbcLf4mi/hrLmAw+AXO0bcyU8g1NkV7x0vAYPAe2Pbw5gyq8ijh5TJfDko9cQWDwQ+wRXfGU5ledrEkNWX3DwwG74ObDHrTvMG3jNwUOxgMfoqrPbyxOafbCqn5ausSMBi8Pa6Wg4Ov+Eo9G54zJKkDBoMf4LrqbrkkL/6rfJcXE1cwGLwrltKE0XZnaN+UpigYDP4FPqXSZBmWDb6cUQQMBu+ILeHHjMILZ7mefYMvtV8XAoPBKzjE5p6GPWfJX1zo9eC6fAAYDN4cE0IIIWQtP+3oa/m3wKcJAAAAAElFTkSuQmCC">
+        <div>
+          <p class="coupon-title">Cupón · Tinto gratis</p>
+          <p class="coupon-code" id="cupon-codigo">TINTO-0000</p>
+          <p class="coupon-valid" id="cupon-vigencia">Escanea el QR para llegar a la tienda.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <section class="policy">
   <div class="wrap policy-grid">
@@ -389,7 +420,67 @@
       })
       .catch(function () {});
 
-    // ---------- 6) Tarjetas flip ----------
+    // ---------- 6) Menú de secciones en móvil ----------
+    (function () {
+      var btn = document.getElementById('nav-toggle');
+      var menu = document.getElementById('nav-menu');
+      if (!btn || !menu) return;
+      btn.addEventListener('click', function () {
+        var abierto = menu.classList.toggle('is-open');
+        btn.setAttribute('aria-expanded', abierto ? 'true' : 'false');
+        var hint = btn.querySelector('.nav-toggle-hint');
+        if (hint) hint.textContent = abierto ? 'Cerrar' : 'Ver todas';
+      });
+      // Al elegir una sección, cerrar el menú
+      each('#nav-menu a', function (a) {
+        a.addEventListener('click', function () {
+          if (menu.classList.contains('is-open')) {
+            menu.classList.remove('is-open');
+            btn.setAttribute('aria-expanded', 'false');
+            var h = btn.querySelector('.nav-toggle-hint');
+            if (h) h.textContent = 'Ver todas';
+          }
+        });
+      });
+    })();
+
+    // ---------- 7) Cupón del anunciante (tinto gratis) ----------
+    (function () {
+      var btn = document.getElementById('btn-cupon');
+      var caja = document.getElementById('cupon-tinto');
+      if (!btn || !caja) return;
+      btn.addEventListener('click', function () {
+        // Código legible, distinto en cada generación
+        var abc = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+        var cod = '';
+        var rnd = new Uint32Array(4);
+        if (window.crypto && window.crypto.getRandomValues) {
+          window.crypto.getRandomValues(rnd);
+          for (var i = 0; i < 4; i++) { cod += abc.charAt(rnd[i] % abc.length); }
+        } else {
+          for (var j = 0; j < 4; j++) { cod += abc.charAt(Math.floor(Math.random() * abc.length)); }
+        }
+        var elCod = document.getElementById('cupon-codigo');
+        if (elCod) elCod.textContent = 'TINTO-' + cod;
+
+        var elVig = document.getElementById('cupon-vigencia');
+        if (elVig) {
+          var fecha = '';
+          try {
+            fecha = new Intl.DateTimeFormat('es-CO', {
+              day: 'numeric', month: 'long', year: 'numeric', timeZone: 'America/Bogota'
+            }).format(new Date());
+          } catch (e) {}
+          elVig.textContent = 'Válido hoy' + (fecha ? ', ' + fecha : '') + '. Muéstralo en caja. Escanea el QR para llegar a la tienda.';
+        }
+        caja.hidden = false;
+        btn.textContent = 'Generar otro cupón';
+        caja.setAttribute('tabindex', '-1');
+        caja.focus();
+      });
+    })();
+
+    // ---------- 8) Tarjetas flip ----------
     each('.flip-btn', function (btn) {
       btn.addEventListener('click', function () {
         var card = btn.closest('.flip-card');
