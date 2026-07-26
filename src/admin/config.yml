@@ -27,6 +27,7 @@ collections:
           - "Finanzas personales"
           - "Construcción"
           - "Industria"
+          - "Comercio"
           - "Agro"
           - "Nacional"
       - label: "Tipo de contenido"
