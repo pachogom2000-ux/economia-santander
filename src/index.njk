@@ -10,14 +10,21 @@ ogType: website
   {% if hero %}
   <section class="hero-section wrap">
     <div class="hero-grid">
+      {% if hero.data.imagen %}
+      <figure class="hero-figure">
+        <img class="hero-art-img" src="{{ hero.data.imagen }}"
+             width="1440" height="900"
+             fetchpriority="high" decoding="async"
+             alt="{{ hero.data.imagenAlt or hero.data.title }}"
+             title="{{ hero.data.imagenTitle or hero.data.title }}">
+        <figcaption class="hero-art-credit">{{ hero.data.imagenPie or hero.data.excerpt }} <span>{{ hero.data.imagenCredito or 'Foto: Economía Santander' }}</span></figcaption>
+      </figure>
+      {% else %}
       <div>
-        {% if hero.data.imagen %}
-        <img class="hero-art-img" src="{{ hero.data.imagen }}" alt="{{ hero.data.imagenAlt or hero.data.title }}" style="width:100%; border-radius:6px;">
-        {% else %}
         <div class="hero-art" role="img" aria-label="Ilustración con los colores verde y amarillo, motivo de leopardo"></div>
-        {% endif %}
-        <p class="hero-art-credit">Ilustración — motivo cromático regional (imagen de referencia para la maqueta)</p>
+        <p class="hero-art-credit">Imagen de referencia — pendiente la foto de la nota.</p>
       </div>
+      {% endif %}
       <div>
         <div class="hero-eyebrow">
           <span class="tag">Portada · {{ hero.data.categoria }}</span>
@@ -42,22 +49,22 @@ ogType: website
   </section>
   {% endif %}
 
-  <!-- Anuncio vendido: Pirotecnia El Vaquero (leaderboard) -->
+  <!-- Anuncio vendido: Central de Pirotecnia (leaderboard) -->
   <div class="wrap ad-wrap tight">
-    <a class="ad-unit ad-piro" href="https://vaquerobucara.com" target="_blank" rel="noopener sponsored">
+    <a class="ad-unit ad-piro" href="https://centraldepirotecnia.com" target="_blank" rel="noopener sponsored">
       <span class="ad-tag">Publicidad</span>
       <div class="ad-media" aria-hidden="true">
         <img src="/assets/ad-pirotecnia.jpg" alt="" loading="lazy" decoding="async" width="960" height="640">
       </div>
       <div class="ad-body">
         <div class="ad-copy">
-          <p class="ad-brand">Pirotecnia El Vaquero</p>
+          <p class="ad-brand">Central de Pirotecnia</p>
           <h3 class="ad-headline">Que la fiesta se vea desde lejos</h3>
           <p class="ad-text">Pólvora de bajo ruido, espectáculos con manejo profesional y parqueadero propio en Bucaramanga.</p>
           <span class="ad-cta">Ver el catálogo →</span>
         </div>
         <div class="ad-piro-side">
-          <span class="site">vaquerobucara.com</span>
+          <span class="site">centraldepirotecnia.com</span>
           <span class="note">Venta segura y asesorada</span>
         </div>
       </div>
@@ -152,237 +159,269 @@ ogType: website
     </div>
   </div>
 
-  <section class="section-block wrap">
+  <section class="section-block wrap" id="tasas">
     <div class="section-head">
-      <h2>Dónde rinde más tu plata: CDT</h2>
-      <span class="sub">Mejor tasa por plazo · gira la tarjeta para ver todas las entidades</span>
+      <h2>Tasas y rendimientos</h2>
+      <span class="sub">Dónde rinde más tu plata y dónde el crédito cuesta menos · gira cada tarjeta para ver el listado</span>
     </div>
-    <div class="flip-grid">
-      <div class="flip-card">
-        <div class="flip-inner">
-          <div class="flip-face flip-front">
-            <span class="flip-term">90 días</span>
-            <span class="flip-rate">hasta 14,00%<i>E.A.</i></span>
-            <span class="flip-entity">Corto plazo</span>
-            <p class="flip-note">El rango del mercado va de 9% a 14% E.A. Las mejores tasas suelen estar en bancos digitales y compañías de financiamiento.</p>
-            <button type="button" class="flip-btn" aria-expanded="false">Ver entidades →</button>
-          </div>
-          <div class="flip-face flip-back">
-            <span class="flip-back-title">CDT y CDAT a corto plazo</span>
-            <ul class="flip-list">
-              <li>Rango del mercado <b>9,00% – 14,00%</b></li>
-              <li>Banco Pichincha <b>~11,90%</b></li>
-              <li>KOA <b>~11,55%</b></li>
-              <li>Banco de Bogotá <b>~10,00%</b></li>
-              <li>GNB Sudameris <b>~10,00%</b></li>
-            </ul>
-            <p class="flip-note" style="margin-top:10px;">El <strong>CDAT</strong> (depósito de ahorro a término) es más flexible y de plazos más cortos que el CDT, pero suele pagar menos.</p>
-            <button type="button" class="flip-btn" aria-expanded="true">← Volver</button>
-          </div>
-        </div>
-      </div>
-      <div class="flip-card">
-        <div class="flip-inner">
-          <div class="flip-face flip-front">
-            <span class="flip-term">180 días</span>
-            <span class="flip-rate">hasta 12,60%<i>E.A.</i></span>
-            <span class="flip-entity">Credifamilia</span>
-            <p class="flip-note">Mediano plazo. Equilibrio entre disponibilidad del dinero y rentabilidad.</p>
-            <button type="button" class="flip-btn" aria-expanded="false">Ver entidades →</button>
-          </div>
-          <div class="flip-face flip-back">
-            <span class="flip-back-title">Otras entidades · 180 días</span>
-            <ul class="flip-list">
-              <li>Credifamilia <b>12,60%</b></li>
-              <li>Banco Pichincha <b>11,90%</b></li>
-              <li>KOA <b>11,55%</b></li>
-              <li>Banco de Bogotá <b>10,00%</b></li>
-              <li>GNB Sudameris <b>10,00%</b></li>
-            </ul>
-            <button type="button" class="flip-btn" aria-expanded="true">← Volver</button>
-          </div>
-        </div>
-      </div>
-      <div class="flip-card best">
-        <div class="flip-inner">
-          <div class="flip-face flip-front">
-            <span class="flip-badge">La más alta</span>
-            <span class="flip-term">360 días</span>
-            <span class="flip-rate">hasta 14,25%<i>E.A.</i></span>
-            <span class="flip-entity">Corficolombiana</span>
-            <p class="flip-note">Largo plazo. Con la inflación en 6,14%, esta tasa deja un rendimiento real cercano a 8 puntos.</p>
-            <button type="button" class="flip-btn" aria-expanded="false">Ver entidades →</button>
-          </div>
-          <div class="flip-face flip-back">
-            <span class="flip-back-title">Otras entidades · 360 días</span>
-            <ul class="flip-list">
-              <li>Corficolombiana <b>14,25%</b></li>
-              <li>Banco de Occidente <b>13,45%</b></li>
-              <li>Mibanco <b>13,42%</b></li>
-              <li>BBVA <b>13,31%</b></li>
-              <li>Bancolombia <b>11,51%</b></li>
-            </ul>
-            <button type="button" class="flip-btn" aria-expanded="true">← Volver</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <p class="rate-disclaimer">Tasas efectivas anuales (E.A.) de referencia para julio de 2026; varían según entidad, monto y plazo, y siguen la tasa del Banco de la República (12,00%). Los intereses están sujetos a retención en la fuente del 4%. Confirma la tasa vigente en la entidad antes de invertir. · Recopilado de prensa económica (El Colombiano, La República, Infobae).</p>
-  </section>
 
-  <section class="section-block wrap">
-    <div class="section-head">
-      <h2>Tarjeta de crédito: cuánto te cuesta</h2>
-      <span class="sub">Aquí la mejor tasa es la más baja · gira la tarjeta para ver el detalle</span>
+    <div class="tabs" role="tablist" aria-label="Tipo de tasa">
+      <button type="button" class="tab-btn" role="tab" id="tab-cdt" aria-controls="panel-cdt" aria-selected="true">CDT</button>
+      <button type="button" class="tab-btn" role="tab" id="tab-tarjeta" aria-controls="panel-tarjeta" aria-selected="false" tabindex="-1">Tarjeta de crédito</button>
+      <button type="button" class="tab-btn" role="tab" id="tab-vivienda" aria-controls="panel-vivienda" aria-selected="false" tabindex="-1">Vivienda</button>
     </div>
-    <div class="flip-grid">
-      <div class="flip-card best">
-        <div class="flip-inner">
-          <div class="flip-face flip-front">
-            <span class="flip-badge">La más baja</span>
-            <span class="flip-term">Tasa más baja</span>
-            <span class="flip-rate">desde 14,00%<i>E.A.</i></span>
-            <span class="flip-entity">Itaú Colombia</span>
-            <p class="flip-note">Una de las tasas más bajas del sistema financiero colombiano para tarjeta de crédito.</p>
-            <button type="button" class="flip-btn" aria-expanded="false">Ver entidades →</button>
-          </div>
-          <div class="flip-face flip-back">
-            <span class="flip-back-title">Bancos con tasas más bajas</span>
-            <ul class="flip-list">
-              <li>Itaú Colombia <b>~14,00%</b></li>
-              <li>Banco Falabella <b>~14,60%</b></li>
-              <li>Banco Pichincha <b>~14,90%</b></li>
-              <li>Davivienda <b>según perfil</b></li>
-              <li>AV Villas <b>según perfil</b></li>
-            </ul>
-            <p class="flip-note" style="margin-top:10px;">La tasa final depende de tu perfil de riesgo, el tipo de tarjeta y tu historial crediticio.</p>
-            <button type="button" class="flip-btn" aria-expanded="true">← Volver</button>
-          </div>
-        </div>
-      </div>
-      <div class="flip-card">
-        <div class="flip-inner">
-          <div class="flip-face flip-front">
-            <span class="flip-term">Promedio del mercado</span>
-            <span class="flip-rate">19,19%<i>E.A.</i></span>
-            <span class="flip-entity">Interés bancario corriente</span>
-            <p class="flip-note">Es el promedio que cobran los bancos, certificado por la Superintendencia Financiera. Si te ofrecen más que esto, hay margen para negociar.</p>
-            <button type="button" class="flip-btn" aria-expanded="false">Qué significa →</button>
-          </div>
-          <div class="flip-face flip-back">
-            <span class="flip-back-title">Interés bancario corriente</span>
-            <ul class="flip-list plain">
-              <li>Lo certifica la <strong>Superintendencia Financiera</strong> cada mes.</li>
-              <li>Se calcula con lo que reportan los bancos sobre crédito de consumo y ordinario.</li>
-              <li>Para julio de 2026 quedó en <strong>19,19% E.A.</strong>, sin cambio frente a junio.</li>
-              <li>De esta cifra sale el tope de usura: es el interés corriente aumentado en la mitad.</li>
-            </ul>
-            <button type="button" class="flip-btn" aria-expanded="true">← Volver</button>
-          </div>
-        </div>
-      </div>
-      <div class="flip-card">
-        <div class="flip-inner">
-          <div class="flip-face flip-front">
-            <span class="flip-term">Techo legal</span>
-            <span class="flip-rate">28,79%<i>E.A.</i></span>
-            <span class="flip-entity">Tasa de usura</span>
-            <p class="flip-note">Ninguna entidad puede cobrarte más que esto en consumo y ordinario. Cobrar por encima es un delito.</p>
-            <button type="button" class="flip-btn" aria-expanded="false">Ver modalidades →</button>
-          </div>
-          <div class="flip-face flip-back">
-            <span class="flip-back-title">Usura por modalidad · julio 2026</span>
-            <ul class="flip-list">
-              <li>Consumo y ordinario <b>28,79%</b></li>
-              <li>Consumo de bajo monto <b>62,10%</b></li>
-              <li>Productivo de mayor monto <b>41,27%</b></li>
-              <li>Productivo rural <b>32,75%</b></li>
-            </ul>
-            <p class="flip-note" style="margin-top:10px;">Si detectas un cobro por encima del tope, puedes denunciarlo ante la Superintendencia Financiera.</p>
-            <button type="button" class="flip-btn" aria-expanded="true">← Volver</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <p class="rate-disclaimer">Tasas efectivas anuales de referencia para julio de 2026, certificadas por la Superintendencia Financiera. La tasa que te aprueben depende de tu perfil crediticio, el producto y el monto. · Recopilado de prensa económica (La República, Infobae, LA FM).</p>
-  </section>
 
-  <section class="section-block wrap">
-    <div class="section-head">
-      <h2>Crédito hipotecario: quién presta más barato</h2>
-      <span class="sub">Por tipo de vivienda · gira la tarjeta para comparar bancos</span>
+    <!-- ===== CDT ===== -->
+    <div class="tab-panel" id="panel-cdt" role="tabpanel" aria-labelledby="tab-cdt" tabindex="0">
+      <div class="flip-grid">
+        <div class="flip-card">
+          <div class="flip-inner">
+            <div class="flip-face flip-front">
+              <span class="flip-term">90 días</span>
+              <span class="flip-rate">hasta 11,90%<i>E.A.<span class="flip-ast">*</span></i></span>
+              <span class="flip-entity">Banco Pichincha</span>
+              <p class="flip-note">Corto plazo. Buena opción si necesitas el dinero disponible pronto.</p>
+              <button type="button" class="flip-btn" aria-expanded="false">Ver 6 entidades →</button>
+              <p class="flip-source"><span class="flip-ast">*</span> Tasas publicadas por las entidades, julio de 2026.</p>
+            </div>
+            <div class="flip-face flip-back">
+              <span class="flip-back-title">Ranking · 90 días</span>
+              <ul class="flip-list">
+                <li>Banco Pichincha <b>11,90%</b></li>
+                <li>Bold <b>11,20%</b></li>
+                <li>Bancamía <b>10,35%</b></li>
+                <li>Banca tradicional <b>de 9,00% a 11,00%</b></li>
+                <li>Pibank <b>competitivo</b></li>
+                <li>Lulo Bank <b>alta liquidez</b></li>
+              </ul>
+              <p class="flip-source"><span class="flip-ast">*</span> Fuente: tasas publicadas por cada entidad, recopiladas por LA FM, Noticias RCN y Rankia · julio de 2026. Bancamía a 3 meses, monto mínimo $50.000.</p>
+              <button type="button" class="flip-btn" aria-expanded="true">← Volver</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-inner">
+            <div class="flip-face flip-front">
+              <span class="flip-term">180 días</span>
+              <span class="flip-rate">hasta 12,60%<i>E.A.<span class="flip-ast">*</span></i></span>
+              <span class="flip-entity">Credifamilia</span>
+              <p class="flip-note">Mediano plazo. Equilibrio entre rentabilidad y disponibilidad del dinero.</p>
+              <button type="button" class="flip-btn" aria-expanded="false">Ver 6 entidades →</button>
+              <p class="flip-source"><span class="flip-ast">*</span> Tasas publicadas por las entidades, julio de 2026.</p>
+            </div>
+            <div class="flip-face flip-back">
+              <span class="flip-back-title">Ranking · 180 días</span>
+              <ul class="flip-list">
+                <li>Credifamilia <b>12,60%</b></li>
+                <li>Banco Pichincha <b>11,90%</b></li>
+                <li>KOA <b>11,55%</b></li>
+                <li>Banco de Bogotá <b>más de 10,00%</b></li>
+                <li>GNB Sudameris <b>más de 10,00%</b></li>
+                <li>Bancoomeva <b>tasas premio</b></li>
+              </ul>
+              <p class="flip-source"><span class="flip-ast">*</span> Fuente: tasas publicadas por cada entidad, recopiladas por LA FM, Noticias RCN y Rankia · julio de 2026.</p>
+              <button type="button" class="flip-btn" aria-expanded="true">← Volver</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card best">
+          <div class="flip-inner">
+            <div class="flip-face flip-front">
+              <span class="flip-badge">La más alta</span>
+              <span class="flip-term">360 días o más</span>
+              <span class="flip-rate">hasta 14,25%<i>E.A.<span class="flip-ast">*</span></i></span>
+              <span class="flip-entity">Corficolombiana</span>
+              <p class="flip-note">Con la inflación en 6,14%, deja un rendimiento real cercano a 8 puntos.</p>
+              <button type="button" class="flip-btn" aria-expanded="false">Ver 10 entidades →</button>
+              <p class="flip-source"><span class="flip-ast">*</span> Tasas publicadas por las entidades, julio de 2026.</p>
+            </div>
+            <div class="flip-face flip-back">
+              <span class="flip-back-title">Ranking · 360 días o más</span>
+              <ul class="flip-list">
+                <li>Corficolombiana <b>14,25%</b></li>
+                <li>KOA · 18 meses <b>13,51%</b></li>
+                <li>Banco de Occidente <b>13,45%</b></li>
+                <li>Mibanco <b>13,42%</b></li>
+                <li>BBVA <b>13,31%</b></li>
+                <li>Credifamilia · 18 meses <b>12,65%</b></li>
+                <li>IRIS · 12 meses <b>12,50%</b></li>
+                <li>Ban100 · 18 meses <b>12,50%</b></li>
+                <li>KOA · 12 meses <b>12,40%</b></li>
+                <li>Bancolombia <b>11,51%</b></li>
+              </ul>
+              <p class="flip-source"><span class="flip-ast">*</span> Fuente: tasas publicadas por cada entidad, recopiladas por LA FM, Noticias RCN, El Colombiano y Rankia · julio de 2026. Montos mínimos: KOA y Ban100 $250.000, IRIS $100.000, Credifamilia $1.000.000.</p>
+              <button type="button" class="flip-btn" aria-expanded="true">← Volver</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="rate-disclaimer">Tasas efectivas anuales (E.A.) de referencia; cambian según entidad, monto y plazo, y siguen la tasa del Banco de la República (12,00%). Los intereses están sujetos a retención en la fuente del 4%. Confirma la tasa vigente en la entidad antes de invertir.</p>
     </div>
-    <div class="flip-grid">
-      <div class="flip-card best">
-        <div class="flip-inner">
-          <div class="flip-face flip-front">
-            <span class="flip-badge">La más barata</span>
-            <span class="flip-term">Vivienda VIS</span>
-            <span class="flip-rate">desde 10,79%<i>E.A.</i></span>
-            <span class="flip-entity">Fondo Nacional del Ahorro</span>
-            <p class="flip-note">Vivienda de interés social. El FNA es hoy la entidad que presta más barato para este segmento.</p>
-            <button type="button" class="flip-btn" aria-expanded="false">Ver bancos →</button>
+
+    <!-- ===== TARJETA DE CRÉDITO ===== -->
+    <div class="tab-panel" id="panel-tarjeta" role="tabpanel" aria-labelledby="tab-tarjeta" tabindex="0" hidden>
+      <div class="flip-grid">
+        <div class="flip-card best">
+          <div class="flip-inner">
+            <div class="flip-face flip-front">
+              <span class="flip-badge">La más baja</span>
+              <span class="flip-term">Tasa más baja</span>
+              <span class="flip-rate">desde 14,00%<i>E.A.<span class="flip-ast">*</span></i></span>
+              <span class="flip-entity">Itaú Colombia</span>
+              <p class="flip-note">Aquí la mejor tasa es la más baja: una de las menores del sistema financiero.</p>
+              <button type="button" class="flip-btn" aria-expanded="false">Ver 6 entidades →</button>
+              <p class="flip-source"><span class="flip-ast">*</span> Tarifas publicadas por las entidades, julio de 2026.</p>
+            </div>
+            <div class="flip-face flip-back">
+              <span class="flip-back-title">Bancos con tasas más bajas</span>
+              <ul class="flip-list">
+                <li>Itaú Colombia <b>14,00%</b></li>
+                <li>Banco Falabella <b>14,60%</b></li>
+                <li>Banco Pichincha <b>14,90%</b></li>
+                <li>Davivienda <b>según perfil</b></li>
+                <li>AV Villas <b>según perfil</b></li>
+                <li>Rango del mercado <b>de 18,37% a 28,77%</b></li>
+              </ul>
+              <p class="flip-source"><span class="flip-ast">*</span> Fuente: tarifas publicadas por cada entidad, recopiladas por La República, Infobae y LA FM · julio de 2026. La tasa aprobada depende de tu perfil de riesgo, el tipo de tarjeta y tu historial crediticio.</p>
+              <button type="button" class="flip-btn" aria-expanded="true">← Volver</button>
+            </div>
           </div>
-          <div class="flip-face flip-back">
-            <span class="flip-back-title">Comparativo · vivienda VIS</span>
-            <ul class="flip-list">
-              <li>Fondo Nacional del Ahorro <b>10,79%</b></li>
-              <li>Banagrario <b>11,85%</b></li>
-              <li>Banco Caja Social <b>12,39%</b></li>
-              <li>BBVA Colombia <b>12,59%</b></li>
-              <li>Banco de Occidente <b>16,11%</b></li>
-              <li>La Hipotecaria <b>16,45%</b></li>
-            </ul>
-            <button type="button" class="flip-btn" aria-expanded="true">← Volver</button>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-inner">
+            <div class="flip-face flip-front">
+              <span class="flip-term">Promedio del mercado</span>
+              <span class="flip-rate">19,19%<i>E.A.<span class="flip-ast">*</span></i></span>
+              <span class="flip-entity">Interés bancario corriente</span>
+              <p class="flip-note">El promedio que cobran los bancos. Si te ofrecen más, hay margen para negociar.</p>
+              <button type="button" class="flip-btn" aria-expanded="false">Qué significa →</button>
+              <p class="flip-source"><span class="flip-ast">*</span> Certificado por la Superintendencia Financiera, julio de 2026.</p>
+            </div>
+            <div class="flip-face flip-back">
+              <span class="flip-back-title">Interés bancario corriente</span>
+              <ul class="flip-list plain">
+                <li>Lo certifica la <strong>Superintendencia Financiera</strong> cada mes.</li>
+                <li>Se calcula con lo que reportan los bancos sobre crédito de consumo y ordinario.</li>
+                <li>Para julio de 2026 quedó en <strong>19,19% E.A.</strong>, sin cambio frente a junio.</li>
+                <li>De esta cifra sale el tope de usura: el interés corriente aumentado en la mitad.</li>
+              </ul>
+              <p class="flip-source"><span class="flip-ast">*</span> Fuente oficial: Superintendencia Financiera de Colombia, certificación vigente para julio de 2026.</p>
+              <button type="button" class="flip-btn" aria-expanded="true">← Volver</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-inner">
+            <div class="flip-face flip-front">
+              <span class="flip-term">Techo legal</span>
+              <span class="flip-rate">28,79%<i>E.A.<span class="flip-ast">*</span></i></span>
+              <span class="flip-entity">Tasa de usura</span>
+              <p class="flip-note">Ninguna entidad puede cobrarte más en consumo y ordinario. Hacerlo es un delito.</p>
+              <button type="button" class="flip-btn" aria-expanded="false">Ver modalidades →</button>
+              <p class="flip-source"><span class="flip-ast">*</span> Certificada por la Superintendencia Financiera, julio de 2026.</p>
+            </div>
+            <div class="flip-face flip-back">
+              <span class="flip-back-title">Usura por modalidad</span>
+              <ul class="flip-list">
+                <li>Consumo y ordinario <b>28,79%</b></li>
+                <li>Consumo de bajo monto <b>62,10%</b></li>
+                <li>Productivo de mayor monto <b>41,27%</b></li>
+                <li>Productivo rural <b>32,75%</b></li>
+              </ul>
+              <p class="flip-source"><span class="flip-ast">*</span> Fuente oficial: Superintendencia Financiera de Colombia, certificación vigente para julio de 2026. Si detectas un cobro por encima del tope, puedes denunciarlo ante la Superfinanciera.</p>
+              <button type="button" class="flip-btn" aria-expanded="true">← Volver</button>
+            </div>
           </div>
         </div>
       </div>
-      <div class="flip-card">
-        <div class="flip-inner">
-          <div class="flip-face flip-front">
-            <span class="flip-term">Vivienda No VIS</span>
-            <span class="flip-rate">desde 10,00%<i>E.A.</i></span>
-            <span class="flip-entity">Bancos del Grupo Aval</span>
-            <p class="flip-note">Promoción vigente desde el 10 de julio de 2026. El promedio del mercado ronda el 13% E.A.</p>
-            <button type="button" class="flip-btn" aria-expanded="false">Ver bancos →</button>
-          </div>
-          <div class="flip-face flip-back">
-            <span class="flip-back-title">Comparativo · vivienda No VIS</span>
-            <ul class="flip-list">
-              <li>Banco de Bogotá <b>desde 10,00%</b></li>
-              <li>Banco Popular <b>desde 10,00%</b></li>
-              <li>AV Villas <b>desde 10,00%</b></li>
-              <li>Banco de Occidente <b>desde 10,00%</b></li>
-              <li>Promedio del mercado <b>~13,00%</b></li>
-            </ul>
-            <p class="flip-note" style="margin-top:10px;">En un crédito a 15 o 20 años, un solo punto de tasa son millones de pesos. Pide al menos tres cotizaciones.</p>
-            <button type="button" class="flip-btn" aria-expanded="true">← Volver</button>
-          </div>
-        </div>
-      </div>
-      <div class="flip-card">
-        <div class="flip-inner">
-          <div class="flip-face flip-front">
-            <span class="flip-term">Leasing habitacional</span>
-            <span class="flip-rate">desde 9,50%<i>E.A.</i></span>
-            <span class="flip-entity">Bancos del Grupo Aval</span>
-            <p class="flip-note">La alternativa más barata del momento: el banco compra la vivienda y tú pagas un canon con opción de compra.</p>
-            <button type="button" class="flip-btn" aria-expanded="false">Cómo funciona →</button>
-          </div>
-          <div class="flip-face flip-back">
-            <span class="flip-back-title">Leasing habitacional</span>
-            <ul class="flip-list plain">
-              <li>El banco es el dueño de la vivienda mientras tú pagas un canon mensual.</li>
-              <li>Al final ejerces la opción de compra, normalmente entre el 1% y el 30% del valor.</li>
-              <li>Puede financiar hasta el 100% del inmueble, más que un crédito tradicional.</li>
-              <li>Tasas <strong>desde 9,50% E.A.</strong> en los bancos del Grupo Aval desde el 10 de julio de 2026.</li>
-            </ul>
-            <button type="button" class="flip-btn" aria-expanded="true">← Volver</button>
-          </div>
-        </div>
-      </div>
+      <p class="rate-disclaimer">Tasas efectivas anuales de referencia para julio de 2026. La tasa que te aprueben depende de tu perfil crediticio, el producto y el monto.</p>
     </div>
-    <p class="rate-disclaimer">Tasas efectivas anuales de referencia para julio de 2026. Las tasas hipotecarias en pesos y en UVR se comportan distinto: la UVR se ajusta con la inflación, hoy en 6,14%. Confirma condiciones, seguros y costos asociados con cada entidad. · Recopilado de prensa económica y datos de la Superintendencia Financiera.</p>
+
+    <!-- ===== VIVIENDA ===== -->
+    <div class="tab-panel" id="panel-vivienda" role="tabpanel" aria-labelledby="tab-vivienda" tabindex="0" hidden>
+      <div class="flip-grid">
+        <div class="flip-card best">
+          <div class="flip-inner">
+            <div class="flip-face flip-front">
+              <span class="flip-badge">La más barata</span>
+              <span class="flip-term">Vivienda VIS</span>
+              <span class="flip-rate">desde 10,79%<i>E.A.<span class="flip-ast">*</span></i></span>
+              <span class="flip-entity">Fondo Nacional del Ahorro</span>
+              <p class="flip-note">Vivienda de interés social. Hoy el FNA es quien presta más barato en este segmento.</p>
+              <button type="button" class="flip-btn" aria-expanded="false">Ver 6 entidades →</button>
+              <p class="flip-source"><span class="flip-ast">*</span> Superintendencia Financiera y tarifas de las entidades, 2026.</p>
+            </div>
+            <div class="flip-face flip-back">
+              <span class="flip-back-title">Comparativo · vivienda VIS</span>
+              <ul class="flip-list">
+                <li>Fondo Nacional del Ahorro <b>10,79%</b></li>
+                <li>Banagrario <b>11,85%</b></li>
+                <li>Banco Caja Social <b>12,39%</b></li>
+                <li>BBVA Colombia <b>12,59%</b></li>
+                <li>Banco de Occidente <b>16,11%</b></li>
+                <li>La Hipotecaria <b>16,45%</b></li>
+              </ul>
+              <p class="flip-source"><span class="flip-ast">*</span> Fuente: Superintendencia Financiera de Colombia y tarifas publicadas por cada entidad, recopiladas por Vivienda.com.co y Hepacom · 2026.</p>
+              <button type="button" class="flip-btn" aria-expanded="true">← Volver</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-inner">
+            <div class="flip-face flip-front">
+              <span class="flip-term">Vivienda No VIS</span>
+              <span class="flip-rate">desde 10,00%<i>E.A.<span class="flip-ast">*</span></i></span>
+              <span class="flip-entity">Bancos del Grupo Aval</span>
+              <p class="flip-note">Promoción vigente desde el 10 de julio de 2026. El promedio del mercado ronda el 13%.</p>
+              <button type="button" class="flip-btn" aria-expanded="false">Ver 5 entidades →</button>
+              <p class="flip-source"><span class="flip-ast">*</span> Superintendencia Financiera y anuncios de las entidades, 2026.</p>
+            </div>
+            <div class="flip-face flip-back">
+              <span class="flip-back-title">Comparativo · vivienda No VIS</span>
+              <ul class="flip-list">
+                <li>Banco de Bogotá <b>desde 10,00%</b></li>
+                <li>Banco Popular <b>desde 10,00%</b></li>
+                <li>AV Villas <b>desde 10,00%</b></li>
+                <li>Banco de Occidente <b>desde 10,00%</b></li>
+                <li>Promedio del mercado <b>cerca de 13,00%</b></li>
+              </ul>
+              <p class="flip-source"><span class="flip-ast">*</span> Fuente: promedio de la Superintendencia Financiera (corte mayo de 2026) y anuncio del Grupo Aval del 10 de julio de 2026. En un crédito a 15 o 20 años, un punto de tasa son millones de pesos: pide al menos tres cotizaciones.</p>
+              <button type="button" class="flip-btn" aria-expanded="true">← Volver</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-inner">
+            <div class="flip-face flip-front">
+              <span class="flip-term">Leasing habitacional</span>
+              <span class="flip-rate">desde 9,50%<i>E.A.<span class="flip-ast">*</span></i></span>
+              <span class="flip-entity">Bancos del Grupo Aval</span>
+              <p class="flip-note">La alternativa más barata hoy: el banco compra la vivienda y tú pagas un canon.</p>
+              <button type="button" class="flip-btn" aria-expanded="false">Cómo funciona →</button>
+              <p class="flip-source"><span class="flip-ast">*</span> Anuncio del Grupo Aval, julio de 2026.</p>
+            </div>
+            <div class="flip-face flip-back">
+              <span class="flip-back-title">Leasing habitacional</span>
+              <ul class="flip-list plain">
+                <li>El banco es el dueño de la vivienda mientras tú pagas un canon mensual.</li>
+                <li>Al final ejerces la opción de compra, normalmente entre el 1% y el 30% del valor.</li>
+                <li>Puede financiar hasta el 100% del inmueble, más que un crédito tradicional.</li>
+                <li>Tasas <strong>desde 9,50% E.A.</strong> en los bancos del Grupo Aval.</li>
+              </ul>
+              <p class="flip-source"><span class="flip-ast">*</span> Fuente: anuncio de los bancos del Grupo Aval (Bogotá, Popular, AV Villas y Occidente), vigente desde el 10 de julio de 2026.</p>
+              <button type="button" class="flip-btn" aria-expanded="true">← Volver</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="rate-disclaimer">Tasas efectivas anuales de referencia para 2026. Las tasas en pesos y en UVR se comportan distinto: la UVR se ajusta con la inflación, hoy en 6,14%. Confirma condiciones, seguros y costos asociados con cada entidad.</p>
+    </div>
   </section>
 
   <section class="opinion-block">
