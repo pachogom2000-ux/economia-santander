@@ -27,7 +27,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-HVC4Z011SY');
 </script>
 
@@ -174,18 +173,42 @@
     * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
   }
 
-  /* ---------- mockup ribbon ---------- */
-  .mockup-ribbon {
-    background: var(--text);
-    color: var(--bg);
-    font-family: var(--font-body);
-    font-size: 11.5px;
-    font-weight: 600;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 7px 12px;
+  /* ---------- franja de pico y placa ---------- */
+  .pico-ribbon {
+    background: #0f1712;
+    color: #e9f0e8;
   }
+  .pico-inner {
+    display: flex;
+    align-items: center;
+    gap: 8px 20px;
+    padding: 8px 0;
+    flex-wrap: wrap;
+  }
+  .pico-title {
+    font-family: var(--font-display);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--yellow);
+    white-space: nowrap;
+  }
+  .pico-cities { display: flex; gap: 8px 20px; flex-wrap: wrap; align-items: center; }
+  .pico-city { display: flex; align-items: baseline; gap: 7px; font-size: 12.5px; white-space: nowrap; }
+  .pico-city b { color: #fff; font-weight: 700; }
+  .pico-digits {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 14px;
+    color: #16220f;
+    background: var(--yellow);
+    padding: 1px 8px;
+    border-radius: 3px;
+    letter-spacing: 0.03em;
+  }
+  .pico-digits.libre { background: rgba(255,255,255,0.14); color: #cfe0cd; }
+  .pico-time { color: rgba(233,240,232,0.6); font-size: 11.5px; }
 
   /* ---------- utility bar ---------- */
   .utility-bar {
@@ -293,42 +316,34 @@
     .ticker-track::-webkit-scrollbar { display: none; }
   }
 
-  /* ---------- pico y placa ---------- */
-  .pico-bar {
-    background: var(--bg-sunken);
-    border-bottom: 1px solid var(--line);
-  }
-  .pico-inner {
+  /* ---------- espacios publicitarios ---------- */
+  .ad-slot {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 10px 22px;
-    padding: 9px 0;
-    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+    background: var(--bg-sunken);
+    border: 1px dashed var(--line);
+    border-radius: 6px;
+    padding: 16px;
+    text-align: center;
   }
-  .pico-title {
-    font-family: var(--font-display);
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.07em;
+  .ad-label {
+    font-family: var(--font-body);
+    font-size: 9.5px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: var(--accent);
-    white-space: nowrap;
+    color: var(--text-muted);
   }
-  .pico-cities { display: flex; gap: 10px 22px; flex-wrap: wrap; align-items: center; }
-  .pico-city { display: flex; align-items: baseline; gap: 7px; font-size: 12.5px; white-space: nowrap; }
-  .pico-city b { color: var(--text); font-weight: 700; }
-  .pico-digits {
-    font-family: var(--font-display);
-    font-weight: 600;
-    font-size: 14px;
-    color: #fff;
-    background: var(--accent);
-    padding: 1px 8px;
-    border-radius: 3px;
-    letter-spacing: 0.03em;
-  }
-  .pico-digits.libre { background: var(--gold-tint); color: var(--gold); }
-  .pico-time { color: var(--text-muted); font-size: 11.5px; }
+  .ad-size { font-family: var(--font-display); font-size: 13px; font-weight: 600; color: var(--text-soft); letter-spacing: 0.04em; }
+  .ad-hint { font-size: 11px; color: var(--text-muted); }
+  .ad-billboard { min-height: 132px; }
+  .ad-leaderboard { min-height: 106px; }
+  .ad-rectangle { min-height: 258px; }
+  .ad-wrap { padding: 26px 0; }
+  .ad-wrap.tight { padding: 0 0 26px; }
 
   /* ---------- masthead ---------- */
   .masthead { padding: 30px 0 20px; text-align: center; border-bottom: 4px solid var(--accent); position: relative; }
@@ -401,6 +416,39 @@
   .nav-inner a:hover, .nav-inner a:focus-visible { color: var(--accent); border-bottom-color: var(--yellow); }
   .nav-inner a.current { color: var(--accent); border-bottom-color: var(--accent); }
   a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  .nav-toggle {
+    display: none;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    font-family: var(--font-display);
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--text);
+    background: none;
+    border: none;
+    padding: 13px 0;
+    cursor: pointer;
+  }
+  .nav-burger { position: relative; width: 20px; height: 2px; background: var(--accent); flex-shrink: 0; transition: background 0.2s; }
+  .nav-burger::before, .nav-burger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background: var(--accent);
+    transition: transform 0.25s ease, top 0.25s ease;
+  }
+  .nav-burger::before { top: -6px; }
+  .nav-burger::after { top: 6px; }
+  .nav-toggle[aria-expanded="true"] .nav-burger { background: transparent; }
+  .nav-toggle[aria-expanded="true"] .nav-burger::before { top: 0; transform: rotate(45deg); }
+  .nav-toggle[aria-expanded="true"] .nav-burger::after { top: 0; transform: rotate(-45deg); }
+  .nav-toggle .nav-toggle-hint { margin-left: auto; font-size: 11px; letter-spacing: 0.06em; color: var(--text-muted); }
 
   /* ---------- editorial policy strip ---------- */
   .policy {
@@ -807,9 +855,53 @@
     .policy-grid, .hero-grid, .evergreen-block { grid-template-columns: 1fr; }
     .footer-grid { grid-template-columns: 1fr 1fr; }
   }
+
+  /* ---------- menú hamburguesa ---------- */
+  @media (max-width: 780px) {
+    .nav-toggle { display: flex; }
+    .nav-inner {
+      display: none;
+      flex-direction: column;
+      overflow: visible;
+      padding-bottom: 10px;
+    }
+    .nav-inner.is-open { display: flex; }
+    .nav-inner a {
+      padding: 12px 4px;
+      border-bottom: 1px solid var(--line);
+      border-left: 3px solid transparent;
+      font-size: 16px;
+    }
+    .nav-inner a:hover, .nav-inner a:focus-visible { border-bottom-color: var(--line); border-left-color: var(--yellow); }
+    .nav-inner a.current { border-bottom-color: var(--line); border-left-color: var(--accent); }
+    nav.primary { position: static; }
+  }
+
+  @media (max-width: 640px) {
+    .utility-inner { gap: 4px 14px; padding: 8px 0; }
+    .utility-date { font-size: 12px; white-space: normal; }
+    .ticker-track { font-size: 12px; animation-duration: 90s; }
+    .ticker-item { padding: 8px 14px; }
+    .pico-inner { gap: 6px 14px; }
+    .pico-cities { gap: 6px 14px; }
+    .pico-city { font-size: 12px; }
+    .pico-time { display: none; }
+    .section-head h2 { font-size: 23px; }
+    .hero-headline { font-size: 27px; }
+    .flip-card, .flip-inner { min-height: 348px; }
+    .flip-rate { font-size: 36px; }
+    .ad-wrap { padding: 20px 0; }
+  }
+
   @media (max-width: 560px) {
     .footer-grid { grid-template-columns: 1fr; }
-    .masthead h1 { font-size: 44px; }
+    .masthead { padding: 24px 0 16px; }
+    .masthead h1 { font-size: 40px; }
+    .masthead .tagline { font-size: 13.5px; }
+    .opinion-block { padding: 36px 0; }
+    .section-block { padding: 34px 0; }
+    .evergreen-block { padding: 22px 20px; }
+    .interview-card, .core-card { padding: 18px; }
   }
 </style>
 <script type="application/ld+json">
@@ -867,7 +959,16 @@
 <body>
 
 
-<div class="mockup-ribbon">Maqueta de portada — Economía Santander · identidad inspirada en los colores del Atlético Bucaramanga (verde y amarillo)</div>
+<div class="pico-ribbon">
+  <div class="wrap pico-inner">
+    <span class="pico-title">Pico y placa hoy</span>
+    <div class="pico-cities" id="pico-cities">
+      <span class="pico-city"><b>Bucaramanga</b> <span class="pico-digits">—</span></span>
+      <span class="pico-city"><b>Bogotá</b> <span class="pico-digits">—</span></span>
+      <span class="pico-city"><b>Medellín</b> <span class="pico-digits">—</span></span>
+    </div>
+  </div>
+</div>
 
 <div class="utility-bar">
   <div class="wrap utility-inner">
@@ -904,17 +1005,6 @@
   </div>
 </div>
 
-<div class="pico-bar">
-  <div class="wrap pico-inner">
-    <span class="pico-title">Pico y placa hoy</span>
-    <div class="pico-cities" id="pico-cities">
-      <span class="pico-city"><b>Bucaramanga</b> <span class="pico-digits">—</span></span>
-      <span class="pico-city"><b>Bogotá</b> <span class="pico-digits">—</span></span>
-      <span class="pico-city"><b>Medellín</b> <span class="pico-digits">—</span></span>
-    </div>
-  </div>
-</div>
-
 <header class="masthead">
   <div class="wrap">
     <p class="kicker">Periodismo económico regional</p>
@@ -924,7 +1014,13 @@
 </header>
 
 <nav class="primary">
-  <div class="wrap nav-inner">
+  <div class="wrap">
+    <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+      <span class="nav-burger" aria-hidden="true"></span>
+      Secciones
+      <span class="nav-toggle-hint">Ver todas</span>
+    </button>
+    <div class="nav-inner" id="nav-menu">
     <a href="#" class="current">Portada</a>
     <a href="#">Inversión</a>
     <a href="#">Finanzas personales</a>
@@ -937,8 +1033,18 @@
     <a href="#">Opinión</a>
     <a href="#">Entrevistas</a>
     <a href="#">Glosario</a>
+    </div>
   </div>
 </nav>
+
+<!-- Espacio publicitario: billboard superior. Pega aquí el código de Google AdSense / Ad Manager. -->
+<div class="wrap ad-wrap">
+  <div class="ad-slot ad-billboard">
+    <span class="ad-label">Espacio publicitario</span>
+    <span class="ad-size">Billboard · 970 × 250</span>
+    <span class="ad-hint">Se adapta a 320 × 100 en móvil · compatible con Google AdSense y Ad Manager</span>
+  </div>
+</div>
 
 <section class="policy">
   <div class="wrap policy-grid">
@@ -999,6 +1105,15 @@
       </article>
     </div>
   </section>
+
+  <!-- Espacio publicitario: banner tras las noticias destacadas. -->
+  <div class="wrap ad-wrap tight">
+    <div class="ad-slot ad-leaderboard">
+      <span class="ad-label">Espacio publicitario</span>
+      <span class="ad-size">Leaderboard · 728 × 90</span>
+      <span class="ad-hint">Alta visibilidad: primer scroll de la portada</span>
+    </div>
+  </div>
 
   <section class="section-block wrap">
     <div class="section-head">
@@ -1078,6 +1193,15 @@
       <a href="#">Indicadores económicos</a>
     </div>
   </section>
+
+  <!-- Espacio publicitario: rectángulo. Ideal para patrocinio del bloque de tasas (bancos, fiduciarias, fintech). -->
+  <div class="wrap ad-wrap">
+    <div class="ad-slot ad-rectangle">
+      <span class="ad-label">Espacio publicitario · patrocinio de sección</span>
+      <span class="ad-size">Rectángulo · 300 × 250 o 336 × 280</span>
+      <span class="ad-hint">Contexto financiero: bancos, fiduciarias, fintech y constructoras</span>
+    </div>
+  </div>
 
   <section class="section-block wrap">
     <div class="section-head">
@@ -1356,6 +1480,14 @@
       </div>
     </div>
   </section>
+  <!-- Espacio publicitario: banner de cierre, antes del pie de página. -->
+  <div class="wrap ad-wrap">
+    <div class="ad-slot ad-billboard">
+      <span class="ad-label">Espacio publicitario</span>
+      <span class="ad-size">Billboard de cierre · 970 × 250</span>
+      <span class="ad-hint">Último impacto antes del pie de página</span>
+    </div>
+  </div>
 </main>
 
 <footer>
@@ -1550,7 +1682,31 @@
       })
       .catch(function () {});
 
-    // ---------- 6) Tarjetas flip ----------
+    // ---------- 6) Menú de secciones en móvil ----------
+    (function () {
+      var btn = document.getElementById('nav-toggle');
+      var menu = document.getElementById('nav-menu');
+      if (!btn || !menu) return;
+      btn.addEventListener('click', function () {
+        var abierto = menu.classList.toggle('is-open');
+        btn.setAttribute('aria-expanded', abierto ? 'true' : 'false');
+        var hint = btn.querySelector('.nav-toggle-hint');
+        if (hint) hint.textContent = abierto ? 'Cerrar' : 'Ver todas';
+      });
+      // Al elegir una sección, cerrar el menú
+      each('#nav-menu a', function (a) {
+        a.addEventListener('click', function () {
+          if (menu.classList.contains('is-open')) {
+            menu.classList.remove('is-open');
+            btn.setAttribute('aria-expanded', 'false');
+            var h = btn.querySelector('.nav-toggle-hint');
+            if (h) h.textContent = 'Ver todas';
+          }
+        });
+      });
+    })();
+
+    // ---------- 7) Tarjetas flip ----------
     each('.flip-btn', function (btn) {
       btn.addEventListener('click', function () {
         var card = btn.closest('.flip-card');
