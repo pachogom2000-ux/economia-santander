@@ -1,0 +1,400 @@
+---
+layout: layout.njk
+title: Economía Santander | Noticias de economía en Santander
+ogType: website
+---
+{% set noticias = collections.noticias | reverse %}
+{% set hero = noticias[0] %}
+{% set secundarias = noticias.slice(1, 5) %}
+
+  {% if hero %}
+  <section class="hero-section wrap">
+    <div class="hero-grid">
+      <div>
+        {% if hero.data.imagen %}
+        <img class="hero-art-img" src="{{ hero.data.imagen }}" alt="{{ hero.data.imagenAlt or hero.data.title }}" style="width:100%; border-radius:6px;">
+        {% else %}
+        <div class="hero-art" role="img" aria-label="Ilustración con los colores verde y amarillo, motivo de leopardo"></div>
+        {% endif %}
+        <p class="hero-art-credit">Ilustración — motivo cromático regional (imagen de referencia para la maqueta)</p>
+      </div>
+      <div>
+        <div class="hero-eyebrow">
+          <span class="tag">Portada · {{ hero.data.categoria }}</span>
+          <span class="chip {{ hero.data.chipTipo or 'propio' }}">{{ hero.data.chipLabel or 'Redacción propia' }}</span>
+        </div>
+        <h2 class="hero-headline"><a href="{{ hero.url }}">{{ hero.data.title }}</a></h2>
+        <p class="hero-dek">{{ hero.data.excerpt }}</p>
+        <p class="byline">Por <b>{{ hero.data.autor or '[Nombre del periodista]' }}</b> · Actualizado el {{ hero.data.date | readableDate }}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap" style="padding-bottom: 30px;">
+    <div class="secondary-list">
+      {% for n in secundarias %}
+      <article class="secondary-item">
+        <div class="secondary-eyebrow"><span class="tag">{{ n.data.categoria }}</span><span class="chip {{ n.data.chipTipo or 'propio' }}">{{ n.data.chipLabel or 'Propia' }}</span></div>
+        <h3><a href="{{ n.url }}">{{ n.data.title }}</a></h3>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  <section class="section-block wrap">
+    <div class="section-head">
+      <h2>Secciones principales</h2>
+      <span class="sub">Los siete núcleos temáticos del portal</span>
+    </div>
+    <div class="core-grid">
+      <div class="core-card">
+        <h3>Inversión</h3>
+        <p class="desc">Dónde y cómo invierten los santandereanos, de finca raíz a fondos de capital.</p>
+        <div class="headlines">
+          <div class="row"><span class="chip propio">Propia</span><a href="#">Tres fondos inmobiliarios ponen la mira en Bucaramanga</a></div>
+          <div class="row"><span class="chip propio">Propia</span><a href="#">Guía: cómo evaluar un proyecto de vivienda en preventa</a></div>
+        </div>
+      </div>
+      <div class="core-card">
+        <h3>Educación financiera</h3>
+        <p class="desc">Herramientas prácticas para tomar mejores decisiones con el dinero.</p>
+        <div class="headlines">
+          <div class="row"><span class="chip propio">Propia</span><a href="#">Qué es el UVR y cómo afecta tu crédito hipotecario</a></div>
+          <div class="row"><span class="chip propio">Propia</span><a href="#">Cinco errores comunes al declarar renta como independiente</a></div>
+        </div>
+      </div>
+      <div class="core-card">
+        <h3>Empleo</h3>
+        <p class="desc">El mercado laboral formal e informal en el área metropolitana de Bucaramanga.</p>
+        <div class="headlines">
+          <div class="row"><span class="chip propio">Propia</span><a href="#">Bucaramanga lidera la creación de empleo formal</a></div>
+          <div class="row"><span class="chip propio">Propia</span><a href="#">Los sectores que más contratarán en el segundo semestre</a></div>
+        </div>
+      </div>
+      <div class="core-card">
+        <h3>Finanzas personales</h3>
+        <p class="desc">Presupuesto, ahorro y crédito para hogares santandereanos.</p>
+        <div class="headlines">
+          <div class="row"><span class="chip propio">Propia</span><a href="#">Cómo armar un fondo de emergencia con salario mínimo</a></div>
+          <div class="row"><span class="chip recirc">Fuente: BanRep</span><a href="#">Bancos ajustan tasas de crédito de consumo tras decisión del Emisor</a></div>
+        </div>
+      </div>
+      <div class="core-card">
+        <h3>Construcción</h3>
+        <p class="desc">El pulso del sector edificador en Santander.</p>
+        <div class="headlines">
+          <div class="row"><span class="chip propio">Propia</span><a href="#">Licencias de construcción crecen 14%</a></div>
+          <div class="row"><span class="chip propio">Propia</span><a href="#">Camacol Santander proyecta un cierre de año moderado</a></div>
+        </div>
+      </div>
+      <div class="core-card">
+        <h3>Industria</h3>
+        <p class="desc">Manufactura, energía y logística regional.</p>
+        <div class="headlines">
+          <div class="row"><span class="chip propio">Propia</span><a href="#">Parques industriales de Girón reportan ocupación récord</a></div>
+          <div class="row"><span class="chip recirc">Fuente: DANE</span><a href="#">Producción industrial nacional crece 2,1% en mayo</a></div>
+        </div>
+      </div>
+      <div class="core-card">
+        <h3>Agro</h3>
+        <p class="desc">Café, cacao y agroindustria desde las provincias de Santander.</p>
+        <div class="headlines">
+          <div class="row"><span class="chip propio">Propia</span><a href="#">El café especial de Santander gana terreno en Europa</a></div>
+          <div class="row"><span class="chip recirc">Fuente: Fed. Nal. de Cafeteros</span><a href="#">El precio interno de la carga de café sube por segunda semana</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-block wrap">
+    <div class="section-head">
+      <h2>Además, en el portal</h2>
+      <span class="sub">Secciones complementarias</span>
+    </div>
+    <div class="comp-row">
+      <a href="#">Comercio y consumo</a>
+      <a href="#">Turismo y hotelería</a>
+      <a href="#">Emprendimiento y pymes</a>
+      <a href="#">Impuestos y regulación</a>
+      <a href="#">Indicadores económicos</a>
+    </div>
+  </section>
+
+  <section class="section-block wrap">
+    <div class="section-head">
+      <h2>Dónde rinde más tu plata: CDT</h2>
+      <span class="sub">Mejor tasa por plazo · gira la tarjeta para ver todas las entidades</span>
+    </div>
+    <div class="flip-grid">
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-face flip-front">
+            <span class="flip-term">90 días</span>
+            <span class="flip-rate">hasta 14,00%<i>E.A.</i></span>
+            <span class="flip-entity">Corto plazo</span>
+            <p class="flip-note">El rango del mercado va de 9% a 14% E.A. Las mejores tasas suelen estar en bancos digitales y compañías de financiamiento.</p>
+            <button type="button" class="flip-btn" aria-expanded="false">Ver entidades →</button>
+          </div>
+          <div class="flip-face flip-back">
+            <span class="flip-back-title">CDT y CDAT a corto plazo</span>
+            <ul class="flip-list">
+              <li>Rango del mercado <b>9,00% – 14,00%</b></li>
+              <li>Banco Pichincha <b>~11,90%</b></li>
+              <li>KOA <b>~11,55%</b></li>
+              <li>Banco de Bogotá <b>~10,00%</b></li>
+              <li>GNB Sudameris <b>~10,00%</b></li>
+            </ul>
+            <p class="flip-note" style="margin-top:10px;">El <strong>CDAT</strong> (depósito de ahorro a término) es más flexible y de plazos más cortos que el CDT, pero suele pagar menos.</p>
+            <button type="button" class="flip-btn" aria-expanded="true">← Volver</button>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-face flip-front">
+            <span class="flip-term">180 días</span>
+            <span class="flip-rate">hasta 12,60%<i>E.A.</i></span>
+            <span class="flip-entity">Credifamilia</span>
+            <p class="flip-note">Mediano plazo. Equilibrio entre disponibilidad del dinero y rentabilidad.</p>
+            <button type="button" class="flip-btn" aria-expanded="false">Ver entidades →</button>
+          </div>
+          <div class="flip-face flip-back">
+            <span class="flip-back-title">Otras entidades · 180 días</span>
+            <ul class="flip-list">
+              <li>Credifamilia <b>12,60%</b></li>
+              <li>Banco Pichincha <b>11,90%</b></li>
+              <li>KOA <b>11,55%</b></li>
+              <li>Banco de Bogotá <b>10,00%</b></li>
+              <li>GNB Sudameris <b>10,00%</b></li>
+            </ul>
+            <button type="button" class="flip-btn" aria-expanded="true">← Volver</button>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card best">
+        <div class="flip-inner">
+          <div class="flip-face flip-front">
+            <span class="flip-badge">La más alta</span>
+            <span class="flip-term">360 días</span>
+            <span class="flip-rate">hasta 14,25%<i>E.A.</i></span>
+            <span class="flip-entity">Corficolombiana</span>
+            <p class="flip-note">Largo plazo. Con la inflación en 6,14%, esta tasa deja un rendimiento real cercano a 8 puntos.</p>
+            <button type="button" class="flip-btn" aria-expanded="false">Ver entidades →</button>
+          </div>
+          <div class="flip-face flip-back">
+            <span class="flip-back-title">Otras entidades · 360 días</span>
+            <ul class="flip-list">
+              <li>Corficolombiana <b>14,25%</b></li>
+              <li>Banco de Occidente <b>13,45%</b></li>
+              <li>Mibanco <b>13,42%</b></li>
+              <li>BBVA <b>13,31%</b></li>
+              <li>Bancolombia <b>11,51%</b></li>
+            </ul>
+            <button type="button" class="flip-btn" aria-expanded="true">← Volver</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="rate-disclaimer">Tasas efectivas anuales (E.A.) de referencia para julio de 2026; varían según entidad, monto y plazo, y siguen la tasa del Banco de la República (12,00%). Los intereses están sujetos a retención en la fuente del 4%. Confirma la tasa vigente en la entidad antes de invertir. · Recopilado de prensa económica (El Colombiano, La República, Infobae).</p>
+  </section>
+
+  <section class="section-block wrap">
+    <div class="section-head">
+      <h2>Tarjeta de crédito: cuánto te cuesta</h2>
+      <span class="sub">Aquí la mejor tasa es la más baja · gira la tarjeta para ver el detalle</span>
+    </div>
+    <div class="flip-grid">
+      <div class="flip-card best">
+        <div class="flip-inner">
+          <div class="flip-face flip-front">
+            <span class="flip-badge">La más baja</span>
+            <span class="flip-term">Tasa más baja</span>
+            <span class="flip-rate">desde 14,00%<i>E.A.</i></span>
+            <span class="flip-entity">Itaú Colombia</span>
+            <p class="flip-note">Una de las tasas más bajas del sistema financiero colombiano para tarjeta de crédito.</p>
+            <button type="button" class="flip-btn" aria-expanded="false">Ver entidades →</button>
+          </div>
+          <div class="flip-face flip-back">
+            <span class="flip-back-title">Bancos con tasas más bajas</span>
+            <ul class="flip-list">
+              <li>Itaú Colombia <b>~14,00%</b></li>
+              <li>Banco Falabella <b>~14,60%</b></li>
+              <li>Banco Pichincha <b>~14,90%</b></li>
+              <li>Davivienda <b>según perfil</b></li>
+              <li>AV Villas <b>según perfil</b></li>
+            </ul>
+            <p class="flip-note" style="margin-top:10px;">La tasa final depende de tu perfil de riesgo, el tipo de tarjeta y tu historial crediticio.</p>
+            <button type="button" class="flip-btn" aria-expanded="true">← Volver</button>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-face flip-front">
+            <span class="flip-term">Promedio del mercado</span>
+            <span class="flip-rate">19,19%<i>E.A.</i></span>
+            <span class="flip-entity">Interés bancario corriente</span>
+            <p class="flip-note">Es el promedio que cobran los bancos, certificado por la Superintendencia Financiera. Si te ofrecen más que esto, hay margen para negociar.</p>
+            <button type="button" class="flip-btn" aria-expanded="false">Qué significa →</button>
+          </div>
+          <div class="flip-face flip-back">
+            <span class="flip-back-title">Interés bancario corriente</span>
+            <ul class="flip-list plain">
+              <li>Lo certifica la <strong>Superintendencia Financiera</strong> cada mes.</li>
+              <li>Se calcula con lo que reportan los bancos sobre crédito de consumo y ordinario.</li>
+              <li>Para julio de 2026 quedó en <strong>19,19% E.A.</strong>, sin cambio frente a junio.</li>
+              <li>De esta cifra sale el tope de usura: es el interés corriente aumentado en la mitad.</li>
+            </ul>
+            <button type="button" class="flip-btn" aria-expanded="true">← Volver</button>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-face flip-front">
+            <span class="flip-term">Techo legal</span>
+            <span class="flip-rate">28,79%<i>E.A.</i></span>
+            <span class="flip-entity">Tasa de usura</span>
+            <p class="flip-note">Ninguna entidad puede cobrarte más que esto en consumo y ordinario. Cobrar por encima es un delito.</p>
+            <button type="button" class="flip-btn" aria-expanded="false">Ver modalidades →</button>
+          </div>
+          <div class="flip-face flip-back">
+            <span class="flip-back-title">Usura por modalidad · julio 2026</span>
+            <ul class="flip-list">
+              <li>Consumo y ordinario <b>28,79%</b></li>
+              <li>Consumo de bajo monto <b>62,10%</b></li>
+              <li>Productivo de mayor monto <b>41,27%</b></li>
+              <li>Productivo rural <b>32,75%</b></li>
+            </ul>
+            <p class="flip-note" style="margin-top:10px;">Si detectas un cobro por encima del tope, puedes denunciarlo ante la Superintendencia Financiera.</p>
+            <button type="button" class="flip-btn" aria-expanded="true">← Volver</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="rate-disclaimer">Tasas efectivas anuales de referencia para julio de 2026, certificadas por la Superintendencia Financiera. La tasa que te aprueben depende de tu perfil crediticio, el producto y el monto. · Recopilado de prensa económica (La República, Infobae, LA FM).</p>
+  </section>
+
+  <section class="section-block wrap">
+    <div class="section-head">
+      <h2>Crédito hipotecario: quién presta más barato</h2>
+      <span class="sub">Por tipo de vivienda · gira la tarjeta para comparar bancos</span>
+    </div>
+    <div class="flip-grid">
+      <div class="flip-card best">
+        <div class="flip-inner">
+          <div class="flip-face flip-front">
+            <span class="flip-badge">La más barata</span>
+            <span class="flip-term">Vivienda VIS</span>
+            <span class="flip-rate">desde 10,79%<i>E.A.</i></span>
+            <span class="flip-entity">Fondo Nacional del Ahorro</span>
+            <p class="flip-note">Vivienda de interés social. El FNA es hoy la entidad que presta más barato para este segmento.</p>
+            <button type="button" class="flip-btn" aria-expanded="false">Ver bancos →</button>
+          </div>
+          <div class="flip-face flip-back">
+            <span class="flip-back-title">Comparativo · vivienda VIS</span>
+            <ul class="flip-list">
+              <li>Fondo Nacional del Ahorro <b>10,79%</b></li>
+              <li>Banagrario <b>11,85%</b></li>
+              <li>Banco Caja Social <b>12,39%</b></li>
+              <li>BBVA Colombia <b>12,59%</b></li>
+              <li>Banco de Occidente <b>16,11%</b></li>
+              <li>La Hipotecaria <b>16,45%</b></li>
+            </ul>
+            <button type="button" class="flip-btn" aria-expanded="true">← Volver</button>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-face flip-front">
+            <span class="flip-term">Vivienda No VIS</span>
+            <span class="flip-rate">desde 10,00%<i>E.A.</i></span>
+            <span class="flip-entity">Bancos del Grupo Aval</span>
+            <p class="flip-note">Promoción vigente desde el 10 de julio de 2026. El promedio del mercado ronda el 13% E.A.</p>
+            <button type="button" class="flip-btn" aria-expanded="false">Ver bancos →</button>
+          </div>
+          <div class="flip-face flip-back">
+            <span class="flip-back-title">Comparativo · vivienda No VIS</span>
+            <ul class="flip-list">
+              <li>Banco de Bogotá <b>desde 10,00%</b></li>
+              <li>Banco Popular <b>desde 10,00%</b></li>
+              <li>AV Villas <b>desde 10,00%</b></li>
+              <li>Banco de Occidente <b>desde 10,00%</b></li>
+              <li>Promedio del mercado <b>~13,00%</b></li>
+            </ul>
+            <p class="flip-note" style="margin-top:10px;">En un crédito a 15 o 20 años, un solo punto de tasa son millones de pesos. Pide al menos tres cotizaciones.</p>
+            <button type="button" class="flip-btn" aria-expanded="true">← Volver</button>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-face flip-front">
+            <span class="flip-term">Leasing habitacional</span>
+            <span class="flip-rate">desde 9,50%<i>E.A.</i></span>
+            <span class="flip-entity">Bancos del Grupo Aval</span>
+            <p class="flip-note">La alternativa más barata del momento: el banco compra la vivienda y tú pagas un canon con opción de compra.</p>
+            <button type="button" class="flip-btn" aria-expanded="false">Cómo funciona →</button>
+          </div>
+          <div class="flip-face flip-back">
+            <span class="flip-back-title">Leasing habitacional</span>
+            <ul class="flip-list plain">
+              <li>El banco es el dueño de la vivienda mientras tú pagas un canon mensual.</li>
+              <li>Al final ejerces la opción de compra, normalmente entre el 1% y el 30% del valor.</li>
+              <li>Puede financiar hasta el 100% del inmueble, más que un crédito tradicional.</li>
+              <li>Tasas <strong>desde 9,50% E.A.</strong> en los bancos del Grupo Aval desde el 10 de julio de 2026.</li>
+            </ul>
+            <button type="button" class="flip-btn" aria-expanded="true">← Volver</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="rate-disclaimer">Tasas efectivas anuales de referencia para julio de 2026. Las tasas hipotecarias en pesos y en UVR se comportan distinto: la UVR se ajusta con la inflación, hoy en 6,14%. Confirma condiciones, seguros y costos asociados con cada entidad. · Recopilado de prensa económica y datos de la Superintendencia Financiera.</p>
+  </section>
+
+  <section class="opinion-block">
+    <div class="wrap opinion-inner">
+      <span class="tag">Opinión · Más allá del dato</span>
+      <p class="opinion-quote">La desaceleración nacional no debería leerse como destino: Santander tiene margen para crecer si la inversión pública en infraestructura no se detiene en año electoral.</p>
+      <p class="opinion-attr">— <b>[Nombre del periodista]</b>, columna de opinión</p>
+      <a class="opinion-link" href="#">Ver todas las columnas →</a>
+    </div>
+  </section>
+
+  <section class="section-block wrap">
+    <div class="section-head">
+      <h2>Entrevistas</h2>
+      <span class="sub">Voces de los gremios santandereanos</span>
+    </div>
+    <div class="interview-grid">
+      <div class="interview-card">
+        <p class="interview-org">Fenalco Santander</p>
+        <p>"El consumo se está recuperando, pero con cautela."</p>
+      </div>
+      <div class="interview-card">
+        <p class="interview-org">Camacol Santander</p>
+        <p>"La vivienda VIS sigue siendo el motor del sector."</p>
+      </div>
+      <div class="interview-card">
+        <p class="interview-org">Cámara de Comercio de Bucaramanga</p>
+        <p>"El primer semestre empresarial cierra mejor de lo esperado."</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-block wrap">
+    <div class="evergreen-block">
+      <div>
+        <span class="tag">Contenido evergreen</span>
+        <h2>Glosario y guías</h2>
+        <p class="sub">Contenido diseñado para responder búsquedas frecuentes y generar tráfico orgánico estable.</p>
+      </div>
+      <div class="evergreen-list">
+        <a href="#">¿Qué es el UVR y cómo afecta tu crédito? <span class="arrow">→</span></a>
+        <a href="#">Cómo declarar renta si eres independiente en Santander <span class="arrow">→</span></a>
+        <a href="#">Glosario básico: IPC, DTF, tasa de usura y spread bancario <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </section>

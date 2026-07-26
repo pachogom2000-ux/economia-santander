@@ -1,0 +1,21 @@
+---
+permalink: sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://economiasantander.com/</loc>
+    <lastmod>{{ (collections.noticias | reverse | first).date.toISOString().slice(0,10) }}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+{%- for n in collections.noticias | reverse %}
+  <url>
+    <loc>https://economiasantander.com{{ n.url }}</loc>
+    <lastmod>{{ n.date.toISOString().slice(0,10) }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+{%- endfor %}
+</urlset>
