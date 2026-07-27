@@ -15,7 +15,6 @@ imagenPie: "Los plazos para declarar y pagar el impuesto de renta se organizan
   según los dos últimos dígitos de la cédula o el NIT, sin contar el dígito de
   verificación. "
 imagenCredito: Archivo particular
-eleventyExcludeFromCollections: true
 tags: noticias
 ---
 El calendario de la Dirección de Impuestos y Aduanas Nacionales (DIAN) para la declaración de renta del año gravable 2025 arranca **el 12 de agosto de 2026** y se extiende hasta el 26 de octubre. El aviso, recordado por [Protección](https://www.proteccion.com) a sus afiliados, llega en el momento justo para ubicar la fecha que le corresponde y, de paso, revisar cuánto se puede optimizar la carga tributaria con los aportes voluntarios hechos durante el año.
