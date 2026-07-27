@@ -68,9 +68,26 @@ collections:
         name: "imagen"
         widget: "image"
         required: false
+        hint: "1200 x 700 píxeles y máximo 100 KB. Renombra el archivo antes de subirlo con palabras de la noticia separadas por guiones (ejemplo: empleo-formal-bucaramanga-2026.jpg), nunca IMG_1234.jpg."
       - label: "Texto alternativo de la imagen"
         name: "imagenAlt"
         widget: "string"
+        required: false
+        hint: "Describe literalmente lo que se ve, incluyendo la palabra clave. Sirve para accesibilidad y para Google Imágenes."
+      - label: "Título de la imagen (SEO)"
+        name: "imagenTitle"
+        widget: "string"
+        required: false
+        hint: "Título con la palabra clave de la noticia. Si lo dejas vacío se usa el titular."
+      - label: "Pie de foto"
+        name: "imagenPie"
+        widget: "string"
+        required: false
+        hint: "Frase que se muestra debajo de la imagen."
+      - label: "Crédito de la foto"
+        name: "imagenCredito"
+        widget: "string"
+        default: "Foto: Economía Santander"
         required: false
       - label: "Cuerpo de la noticia"
         name: "body"
