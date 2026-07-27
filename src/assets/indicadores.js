@@ -107,6 +107,12 @@
           if (!visto[dia]) { visto[dia] = true; porDia.push(pts[i]); }
         }
         dibujar(chart, porDia, { nombre: nombre, unidad: 'US$', leyenda: leyenda });
+        // Es el mismo activo: el valor grande de la ficha se refresca en vivo
+        if (pts.length) {
+          var ultimo = pts[pts.length - 1].v;
+          var elValor = $('[data-rol="valor"]', card);
+          if (elValor && !isNaN(ultimo)) elValor.textContent = 'US$' + Math.round(ultimo).toLocaleString('es-CO');
+        }
       })
       .catch(function () { dibujar(chart, null, {}); });
   }
@@ -115,19 +121,38 @@
   function cargarYahoo(card, simbolo) {
     var chart = $('[data-rol="chart"]', card);
     var fuente = $('[data-rol="fuente"]', card);
+    var puntas = $('[data-rol="puntas"]', card);
+    var esMismoActivo = card.getAttribute('data-yahoo-mismo') === '1';
     jsonFetch('/.netlify/functions/quote?symbol=' + encodeURIComponent(simbolo) + '&range=6mo')
       .then(function (j) {
         if (!j || !j.puntos || j.puntos.length < 2) throw new Error('sin datos');
         var pts = j.puntos.map(function (p) { return { t: p.t * 1000, v: p.v }; });
+        var moneda = j.currency === 'USD' ? 'US$' : (j.currency === 'COP' ? '$' : (j.currency || ''));
         dibujar(chart, pts, {
           nombre: card.getAttribute('data-nombre'),
-          unidad: j.currency === 'USD' ? 'US$' : j.currency,
+          unidad: moneda,
           leyenda: 'Serie: Yahoo Finanzas, últimos 6 meses (' + simbolo + ').'
         });
+        // Último cierre real de la serie: se muestra como chip. El mercado
+        // bursátil no publica puntas en este endpoint; cuando cierra, el dato
+        // correcto es el cierre.
+        var cierre = (j.precio != null && !isNaN(j.precio)) ? j.precio : pts[pts.length - 1].v;
+        var dec = cierre < 1000 ? 2 : 0;
+        if (puntas && !isNaN(cierre)) {
+          puntas.innerHTML = '<span class="ind-punta cierre"><b>Último cierre ' + simbolo + '</b> ' + moneda + fmt(cierre, dec) + '</span>';
+          puntas.hidden = false;
+        }
+        // Solo si la ficha y el símbolo son el mismo instrumento se actualiza
+        // el valor grande (Tecnoglass, Brent, S&P 500). En Ecopetrol/Bancolombia
+        // el valor es el cierre local en la BVC y la gráfica es el ADR.
+        if (esMismoActivo && !isNaN(cierre)) {
+          var elValor = $('[data-rol="valor"]', card);
+          if (elValor) elValor.textContent = moneda + fmt(cierre, dec);
+        }
         if (fuente) fuente.hidden = false;
       })
       .catch(function () {
-        dibujar(chart, null, { vacio: 'La gráfica histórica de este indicador estará disponible en el sitio publicado. Mientras tanto, el valor mostrado es el último cierre.' });
+        dibujar(chart, null, { vacio: 'No se pudo cargar la gráfica en este momento. El valor mostrado es el último cierre publicado por la redacción.' });
         if (fuente) fuente.hidden = false;
       });
   }

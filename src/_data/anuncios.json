@@ -3,9 +3,9 @@
     {
       "id": "tinto",
       "activo": true,
-      "marca": "Tienda Sin Estrés · Bucaramanga",
+      "marca": "Tienda Sinestrés · Bucaramanga",
       "titular": "Tu tinto va por la casa",
-      "texto": "Genera tu cupón, muéstralo en caja y reclama un tinto gratis. Uno por persona, mientras dure la promoción.",
+      "texto": "Genera tu cupón, muéstralo en caja y reclama un tinto gratis. <strong>Solo 100 cupones</strong>, uno por dispositivo.",
       "tipo": "cupon",
       "tema": "ad-cafe",
       "imagen": "/assets/ad-tinto.jpg",
@@ -17,15 +17,15 @@
     {
       "id": "pirotecnia",
       "activo": true,
-      "marca": "Pirotecnia El Vaquero",
+      "marca": "Central de Pirotecnia",
       "titular": "Que la fiesta se vea desde lejos",
       "texto": "Pólvora de bajo ruido, espectáculos con manejo profesional y parqueadero propio en Bucaramanga.",
       "tipo": "estandar",
       "tema": "ad-piro",
       "imagen": "/assets/ad-pirotecnia.jpg",
-      "url": "https://vaquerobucara.com",
+      "url": "https://centraldepirotecnia.com",
       "cta": "Ver el catálogo →",
-      "sitio": "vaquerobucara.com",
+      "sitio": "centraldepirotecnia.com",
       "notaLateral": "Venta segura y asesorada",
       "categorias": ["Portada", "Inversión", "Industria", "Agro", "Construcción", "Nacional", "Comercio y consumo"]
     }

@@ -14,7 +14,7 @@ permalink: /indicadores/
   <div class="ind-grid">
     {% for ind in mercado.indicadores %}
     <article class="ind-card{% if ind.vivo or ind.yahoo %} con-grafica{% endif %}" id="{{ ind.id }}"
-             data-vivo="{{ ind.vivo }}" data-yahoo="{{ ind.yahoo }}" data-nombre="{{ ind.nombre }}">
+             data-vivo="{{ ind.vivo }}" data-yahoo="{{ ind.yahoo }}"{% if ind.yahooMismo %} data-yahoo-mismo="1"{% endif %} data-nombre="{{ ind.nombre }}">
       <header class="ind-head">
         <h3>{{ ind.nombre }}</h3>
         <span class="ind-grupo">{{ ind.grupo }}</span>

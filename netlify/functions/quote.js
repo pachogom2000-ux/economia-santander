@@ -1,7 +1,7 @@
 // Proxy mínimo hacia Yahoo Finanzas para las gráficas de /indicadores/.
 // Necesario porque el navegador no puede consultar a Yahoo directamente (CORS).
 // Solo se permiten los símbolos que usa el portal.
-const PERMITIDOS = new Set(["EC", "CIB", "TGLS", "BZ=F", "^GSPC", "^COLCAP"]);
+const PERMITIDOS = new Set(["EC", "CIB", "TGLS", "BZ=F", "^GSPC", "ICOLCAP.CL"]);
 const RANGOS = new Set(["1mo", "3mo", "6mo", "1y", "5y"]);
 
 exports.handler = async (event) => {

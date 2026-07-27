@@ -2,7 +2,7 @@
 layout: layout.njk
 ogType: article
 ---
-<article class="wrap noticia-articulo" style="padding: 36px 0 50px;">
+<article class="wrap noticia-articulo">
   <div class="hero-eyebrow">
     <span class="tag">{{ categoria }}</span>
     <span class="chip {{ chipTipo or 'propio' }}">{{ chipLabel or 'Redacción propia' }}</span>
@@ -12,10 +12,19 @@ ogType: article
   <p class="byline">Por <b>{{ autor or 'Francisco Javier Gómez' }}</b> · {{ date | readableDate }}</p>
 
   {% if imagen %}
-  <img src="{{ imagen }}" alt="{{ imagenAlt or title }}" style="width:100%; border-radius:6px; margin: 24px 0;">
+  <figure class="noticia-figura">
+    <img class="hero-art-img" src="{{ imagen }}"
+         width="1200" height="700"
+         fetchpriority="high" decoding="async"
+         alt="{{ imagenAlt or title }}"
+         title="{{ imagenTitle or title }}">
+    {% if imagenPie %}
+    <figcaption class="hero-art-credit">{{ imagenPie }} <span>{{ imagenCredito or 'Foto: Economía Santander' }}</span></figcaption>
+    {% endif %}
+  </figure>
   {% endif %}
 
-  <div class="noticia-cuerpo" style="margin-top:24px; font-size:17px; line-height:1.75; max-width: 760px;">
+  <div class="noticia-cuerpo">
     {{ content | safe }}
   </div>
 
@@ -40,6 +49,12 @@ ogType: article
   "author": { "@type": "Person", "name": {{ (autor or "Economía Santander") | jsonify | safe }} },
   "publisher": { "@id": "https://economiasantander.com/#organization" },
   "mainEntityOfPage": "https://economiasantander.com{{ page.url }}"
-  {% if imagen %},"image": [{{ imagen | jsonify | safe }}]{% endif %}
+  {% if imagen %},"image": [{
+    "@type": "ImageObject",
+    "url": {{ ("https://economiasantander.com" + imagen) | jsonify | safe }},
+    "width": 1200,
+    "height": 700
+    {% if imagenAlt %},"caption": {{ imagenAlt | jsonify | safe }}{% endif %}
+  }]{% endif %}
 }
 </script>

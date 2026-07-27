@@ -87,6 +87,7 @@
       "delta": "▲ 3,57%",
       "dir": "up",
       "yahoo": "TGLS",
+      "yahooMismo": true,
       "yahooNota": "Tecnoglass cotiza directamente en la Bolsa de Nueva York (US$).",
       "title": "Tecnoglass (NYSE, en dólares). Cierre del 24 de julio de 2026.",
       "grupo": "Acciones"
@@ -133,8 +134,8 @@
       "valor": "2.274,53",
       "delta": "▼ 0,38%",
       "dir": "down",
-      "yahoo": "^COLCAP",
-      "yahooNota": "Índice MSCI COLCAP de la Bolsa de Valores de Colombia, en puntos.",
+      "yahoo": "ICOLCAP.CL",
+      "yahooNota": "Gráfica de referencia: ETF iShares COLCAP (ICOLCAP, BVC, en pesos), que replica el índice MSCI COLCAP.",
       "title": "Índice MSCI COLCAP de la Bolsa de Valores de Colombia (puntos). Cierre del 25 de julio de 2026.",
       "grupo": "Índices y tasas"
     },
@@ -172,6 +173,7 @@
       "delta": "24 jul",
       "dir": "flat",
       "yahoo": "BZ=F",
+      "yahooMismo": true,
       "yahooNota": "Futuro del petróleo Brent en el ICE (US$ por barril).",
       "title": "Petróleo Brent, referencia internacional (USD/barril). Cierre del 24 de julio de 2026.",
       "grupo": "Materias primas"
@@ -183,6 +185,7 @@
       "delta": "16 jul",
       "dir": "flat",
       "yahoo": "^GSPC",
+      "yahooMismo": true,
       "yahooNota": "Índice S&P 500 (EE. UU.), en puntos.",
       "title": "Índice S&P 500 (EE. UU.), en puntos. Referencia del 16 de julio de 2026.",
       "grupo": "Índices y tasas"

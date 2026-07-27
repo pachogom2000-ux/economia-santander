@@ -20,11 +20,17 @@
 <meta property="og:description" content="{{ pageDescription }}">
 <meta property="og:url" content="https://economiasantander.com{{ page.url }}">
 <meta property="og:locale" content="es_CO">
-{% if imagen %}<meta property="og:image" content="{{ imagen }}">{% endif %}
+{% set ogImagen = imagen or "/assets/uploads/empleo-formal-bucaramanga-area-metropolitana-2026.jpg" %}
+<meta property="og:image" content="https://economiasantander.com{{ ogImagen }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="700">
+{% if imagenAlt %}<meta property="og:image:alt" content="{{ imagenAlt }}">{% endif %}
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ pageTitle }}">
 <meta name="twitter:description" content="{{ pageDescription }}">
+<meta name="twitter:image" content="https://economiasantander.com{{ ogImagen }}">
+{% if imagen %}<link rel="preload" as="image" href="{{ imagen }}" fetchpriority="high">{% endif %}
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HVC4Z011SY"></script>
 <script>
@@ -85,8 +91,8 @@
         { "@type": "CollegeOrUniversity", "name": "Universidad Externado de Colombia" }
       ],
       "award": [
-        "Premio La Equidad Seguros al periodismo económico, categoría web (2018)",
-        "Mención de honor, Premio de Periodismo Económico de Anif (2018)"
+        "Premio La Equidad Seguros al periodismo cooperativo, categoría Medios Digitales (2018), con Finanzas Personales",
+        "Mención especial, Premio Nacional de Periodismo Anif (2018), con el equipo de Finanzas Personales"
       ],
       "sameAs": [
         "https://www.valoraanalitik.com/author/francisco-gomez/"
@@ -123,7 +129,7 @@
     <div class="ticker-track" id="ticker-track">
       <div class="ticker-set">
         {%- for ind in mercado.indicadores %}
-        <a class="ticker-item{% if ind.vivo %} live{% endif %}{% if ind.vivo == 'usd' %} js-usd-item{% endif %}" href="/indicadores/#{{ ind.id }}" title="{{ ind.title }} Toca para ver la gráfica.">
+        <a class="ticker-item{% if ind.vivo %} live{% endif %}{% if ind.vivo == 'usd' %} js-usd-item{% endif %}" href="/indicadores/#{{ ind.id }}" title="{{ ind.title }}{% if ind.vivo or ind.yahoo %} Toca para ver la gráfica.{% else %} Toca para ver el detalle.{% endif %}">
           <span class="name">{{ ind.nombre }}</span>
           <span class="val{% if ind.vivo %} js-{{ ind.vivo }}-val{% endif %}">{{ ind.valor }}</span>
           <span class="delta {{ ind.dir or 'flat' }}{% if ind.vivo %} js-{{ ind.vivo }}-delta{% endif %}">{{ ind.delta }}</span>
@@ -137,7 +143,13 @@
 <header class="masthead">
   <div class="wrap">
     <p class="kicker">Periodismo económico regional</p>
+    {# El H1 debe ser único por página: en la portada lo es el nombre del medio;
+       en una noticia, el H1 es el titular, así que aquí baja a <p>. #}
+    {% if page.url == "/" %}
     <h1><a href="/" style="color:inherit; text-decoration:none;">Economía <span class="leo">Santander</span></a></h1>
+    {% else %}
+    <p class="marca"><a href="/" style="color:inherit; text-decoration:none;">Economía <span class="leo">Santander</span></a></p>
+    {% endif %}
     <p class="tagline">Inversión, empleo y desarrollo del oriente colombiano, con veinte años de reportería económica detrás de cada historia.</p>
   </div>
 </header>
@@ -169,7 +181,8 @@
 </nav>
 
 {% if page.url == '/' %}
-{# Anuncio superior de portada: contextual y compacto para no robar pantalla #}
+{# Anuncio superior de portada: contextual y compacto para no robar pantalla.
+   El inventario vive en _data/anuncios.json y se edita en el CMS ("Publicidad"). #}
 {% set anuncio = anuncios.anuncios | anuncioPara('Portada', 'portada-superior') %}
 {% set anuncioCompacto = true %}
 {% include "anuncio.njk" %}
@@ -226,15 +239,9 @@
   </div>
 </footer>
 
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-<script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {});
-    window.netlifyIdentity.on("login", () => {
-      document.location.href = "/admin/";
-    });
-  }
-</script>
+<!-- Tablas de pico y placa. Se editan en el CMS, en "Datos del sitio",
+     y salen de src/_data/picoyplaca.json. No tocar a mano aqui. -->
+<script>window.__PICO_Y_PLACA__ = {{ picoyplaca | jsonify | safe }};</script>
 
 <script>
   (function () {
@@ -275,34 +282,68 @@
     (function () {
       var cont = document.getElementById('pico-cities');
       if (!cont) return;
+      // Los digitos NO se calculan aqui: vienen de src/_data/picoyplaca.json,
+      // que la redaccion edita desde el CMS en "Datos del sitio". Este codigo
+      // solo elige que fila mostrar segun el dia. Si algo falta en el dato,
+      // se muestra "Libre" antes que inventar un numero.
+      var fuente = window.__PICO_Y_PLACA__;
+      if (!fuente || !fuente.ciudades) return;
+
       var d = hoyBogota();
       var dow = d.getDay();            // 0 domingo … 6 sábado
+      var dia = d.getDate();
+      var hoyISO = d.getFullYear() + '-' +
+        ('0' + (d.getMonth() + 1)).slice(-2) + '-' +
+        ('0' + d.getDate()).slice(-2);
+      var nombreDia = ['domingo', 'lunes', 'martes', 'miercoles', 'jueves', 'viernes', 'sabado'];
+      // La franja va en una sola fila: nombres largos se abrevian y los
+      // digitos "7 y 8" se compactan a "7·8" para que quepan en el celular.
+      var abreviaturas = { 'Bucaramanga': 'B/manga' };
+      function compacta(v) {
+        return v ? String(v).replace(/,\s*/g, '·').replace(/\s*y\s*/g, '·') : v;
+      }
 
-      var bga = { 1: '7·8', 2: '9·0', 3: '1·2', 4: '3·4', 5: '5·6' };
-      var med = { 1: '5·8', 2: '1·4', 3: '0·2', 4: '3·6', 5: '7·9' };
+      // De todas las rotaciones cargadas, la ultima cuya fecha de inicio ya paso.
+      // Asi el cambio de semestre o de trimestre ocurre solo el dia que toca.
+      function rotacionVigente(ciudad) {
+        var lista = ciudad.rotaciones || [];
+        var elegida = null;
+        for (var i = 0; i < lista.length; i++) {
+          if (lista[i].desde <= hoyISO && (!elegida || lista[i].desde > elegida.desde)) {
+            elegida = lista[i];
+          }
+        }
+        return elegida;
+      }
 
-      // Bucaramanga: sábados con rotación propia (ref.: sábado 25 jul 2026 = "7·8")
-      function sabadoBga() {
-        var ciclo = ['1·2', '3·4', '5·6', '7·8', '9·0'];
-        var ref = new Date(2026, 6, 25);
-        var semanas = Math.round((d - ref) / 604800000);
-        return ciclo[((3 + semanas) % 5 + 5) % 5];
+      function digitosSabado(ciudad) {
+        var lista = ciudad.sabados || [];
+        for (var i = 0; i < lista.length; i++) {
+          if (lista[i].fecha === hoyISO) { return lista[i].digitos; }
+        }
+        return null;   // sabado sin dato publicado: no se inventa
       }
 
       var datos = [];
-      if (dow >= 1 && dow <= 5) {
-        var dia = d.getDate();
-        datos.push({ c: 'B/manga', n: 'Bucaramanga', v: bga[dow], h: '6:00 a 20:00' });
-        datos.push({ c: 'Bogotá', n: 'Bogotá', v: (dia % 2 === 1) ? '6·7·8·9·0' : '1·2·3·4·5', h: '6:00 a 21:00' });
-        datos.push({ c: 'Medellín', n: 'Medellín', v: med[dow], h: '5:00 a 20:00' });
-      } else if (dow === 6) {
-        datos.push({ c: 'B/manga', n: 'Bucaramanga', v: sabadoBga(), h: '9:00 a 13:00' });
-        datos.push({ c: 'Bogotá', n: 'Bogotá', v: null, h: 'sin restricción' });
-        datos.push({ c: 'Medellín', n: 'Medellín', v: null, h: 'sin restricción' });
-      } else {
-        datos.push({ c: 'B/manga', n: 'Bucaramanga', v: null, h: 'sin restricción' });
-        datos.push({ c: 'Bogotá', n: 'Bogotá', v: null, h: 'sin restricción' });
-        datos.push({ c: 'Medellín', n: 'Medellín', v: null, h: 'sin restricción' });
+      for (var ci = 0; ci < fuente.ciudades.length; ci++) {
+        var ciudad = fuente.ciudades[ci];
+        var v = null;
+        var h = 'sin restricción';
+
+        if (dow >= 1 && dow <= 5) {
+          if (ciudad.reglaParidad) {
+            v = (dia % 2 === 1) ? ciudad.reglaParidad.impar : ciudad.reglaParidad.par;
+          } else {
+            var rot = rotacionVigente(ciudad);
+            v = rot ? rot[nombreDia[dow]] : null;
+          }
+          if (v) { h = ciudad.horario || h; }
+        } else if (dow === 6) {
+          v = digitosSabado(ciudad);
+          if (v) { h = ciudad.horarioSabado || ciudad.horario || h; }
+        }
+
+        datos.push({ c: abreviaturas[ciudad.nombre] || ciudad.nombre, n: ciudad.nombre, v: compacta(v) || null, h: h });
       }
 
       cont.textContent = '';
@@ -413,43 +454,93 @@
       });
     })();
 
-    // ---------- 7) Cupón del anunciante (tinto gratis) ----------
+    // ---------- 7) Cupón del anunciante: uno por dispositivo, 100 disponibles ----------
     (function () {
       var btn = document.getElementById('btn-cupon');
       var caja = document.getElementById('cupon-tinto');
       if (!btn || !caja) return;
-      btn.addEventListener('click', function () {
-        // Código legible, distinto en cada generación
-        var abc = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
-        var cod = '';
-        var rnd = new Uint32Array(4);
-        if (window.crypto && window.crypto.getRandomValues) {
-          window.crypto.getRandomValues(rnd);
-          for (var i = 0; i < 4; i++) { cod += abc.charAt(rnd[i] % abc.length); }
-        } else {
-          for (var j = 0; j < 4; j++) { cod += abc.charAt(Math.floor(Math.random() * abc.length)); }
-        }
-        var elCod = document.getElementById('cupon-codigo');
-        if (elCod) elCod.textContent = 'TINTO-' + cod;
 
+      var LLAVE = 'sinestres-tinto-2026';
+      var TOTAL = 100;
+
+      function guardado() {
+        try { return JSON.parse(window.localStorage.getItem(LLAVE) || 'null'); }
+        catch (e) { return null; }
+      }
+      function guardar(dato) {
+        try { window.localStorage.setItem(LLAVE, JSON.stringify(dato)); } catch (e) {}
+      }
+      function numeroAleatorio() {
+        if (window.crypto && window.crypto.getRandomValues) {
+          var a = new Uint32Array(1);
+          window.crypto.getRandomValues(a);
+          return (a[0] % TOTAL) + 1;
+        }
+        return Math.floor(Math.random() * TOTAL) + 1;
+      }
+      function fechaLarga(iso) {
+        try {
+          return new Intl.DateTimeFormat('es-CO', {
+            day: 'numeric', month: 'long', year: 'numeric', timeZone: 'America/Bogota'
+          }).format(iso ? new Date(iso) : new Date());
+        } catch (e) { return ''; }
+      }
+      function pintar(dato) {
+        var elCod = document.getElementById('cupon-codigo');
         var elVig = document.getElementById('cupon-vigencia');
+        if (elCod) elCod.textContent = 'TINTO-' + ('00' + dato.n).slice(-3);
         if (elVig) {
-          var fecha = '';
-          try {
-            fecha = new Intl.DateTimeFormat('es-CO', {
-              day: 'numeric', month: 'long', year: 'numeric', timeZone: 'America/Bogota'
-            }).format(new Date());
-          } catch (e) {}
-          elVig.textContent = 'Válido hoy' + (fecha ? ', ' + fecha : '') + '. Muéstralo en caja. Escanea el QR para llegar a la tienda.';
+          elVig.textContent = 'Cupón ' + dato.n + ' de ' + TOTAL + '. Emitido el ' + fechaLarga(dato.fecha)
+            + '. Uno por dispositivo: muéstralo en caja y escanea el QR para llegar a la tienda.';
         }
         caja.hidden = false;
-        btn.textContent = 'Generar otro cupón';
+        btn.textContent = 'Ver mi cupón';
+        btn.setAttribute('aria-disabled', 'true');
+      }
+
+      var previo = guardado();
+      if (previo && previo.n) { pintar(previo); }
+
+      btn.addEventListener('click', function () {
+        var actual = guardado();
+        if (!actual || !actual.n) {
+          actual = { n: numeroAleatorio(), fecha: new Date().toISOString() };
+          guardar(actual);
+        }
+        pintar(actual);
         caja.setAttribute('tabindex', '-1');
         caja.focus();
       });
     })();
 
-    // ---------- 8) Tarjetas flip ----------
+    // ---------- 8) Pestañas de tasas ----------
+    (function () {
+      var tabs = document.querySelectorAll('.tab-btn');
+      if (!tabs.length) return;
+      function activar(tab) {
+        for (var i = 0; i < tabs.length; i++) {
+          var t = tabs[i];
+          var sel = (t === tab);
+          t.setAttribute('aria-selected', sel ? 'true' : 'false');
+          t.tabIndex = sel ? 0 : -1;
+          var panel = document.getElementById(t.getAttribute('aria-controls'));
+          if (panel) panel.hidden = !sel;
+        }
+      }
+      for (var i = 0; i < tabs.length; i++) {
+        tabs[i].addEventListener('click', function () { activar(this); });
+        tabs[i].addEventListener('keydown', function (e) {
+          var lista = Array.prototype.slice.call(tabs);
+          var pos = lista.indexOf(this);
+          var sig = null;
+          if (e.key === 'ArrowRight') { sig = lista[(pos + 1) % lista.length]; }
+          if (e.key === 'ArrowLeft') { sig = lista[(pos - 1 + lista.length) % lista.length]; }
+          if (sig) { e.preventDefault(); activar(sig); sig.focus(); }
+        });
+      }
+    })();
+
+    // ---------- 9) Tarjetas flip ----------
     each('.flip-btn', function (btn) {
       btn.addEventListener('click', function () {
         var card = btn.closest('.flip-card');
@@ -495,8 +586,16 @@
             '<button type="button" class="mm-lb-next" aria-label="Foto siguiente">›</button>' +
             '<p class="mm-lb-count"></p>';
           document.body.appendChild(dlg);
-          dlg.addEventListener('click', function (ev) { if (ev.target === dlg) dlg.close(); });
-          dlg.querySelector('.mm-lb-close').addEventListener('click', function () { dlg.close(); });
+          // En navegadores sin <dialog> no existe close(): se cierra quitando
+          // el atributo open (el CSS oculta .mm-lightbox:not([open])).
+          var cerrar = function () {
+            if (typeof dlg.close === 'function') { dlg.close(); } else { dlg.removeAttribute('open'); }
+          };
+          dlg.addEventListener('click', function (ev) { if (ev.target === dlg) cerrar(); });
+          dlg.querySelector('.mm-lb-close').addEventListener('click', cerrar);
+          document.addEventListener('keydown', function (ev) {
+            if (ev.key === 'Escape' && dlg.hasAttribute('open')) cerrar();
+          });
         }
         var fotos = [];
         var imgs = tpl.content ? tpl.content.querySelectorAll('img') : [];

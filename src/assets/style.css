@@ -457,15 +457,17 @@
     border-radius: 3px;
     margin: 0 0 8px;
   }
-  .masthead h1 {
+  .masthead h1, .masthead .marca {
+    font-family: var(--font-display);
     font-size: clamp(28px, 4.2vw, 48px);
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.01em;
     line-height: 0.94;
     color: var(--accent);
+    margin: 0;
   }
-  .masthead h1 .leo { color: var(--gold); }
+  .masthead h1 .leo, .masthead .marca .leo { color: var(--gold); }
   .masthead .tagline {
     margin-top: 6px;
     font-size: 13px;
@@ -575,7 +577,7 @@
     gap: 44px;
   }
   .hero-art {
-    aspect-ratio: 16/10;
+    aspect-ratio: 12 / 7;
     border-radius: 5px;
     background:
       linear-gradient(125deg, var(--accent) 0%, var(--accent) 46%, var(--yellow) 46%, var(--yellow) 54%, var(--accent-strong) 54%, var(--accent-strong) 100%);
@@ -605,10 +607,23 @@
     letter-spacing: 0.14em;
     color: rgba(255,255,255,0.9);
   }
-  .hero-art-credit {
-    font-size: 11px;
-    color: var(--text-muted);
+  .hero-figure { margin: 0; }
+  .hero-art-img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 12 / 7;
+    object-fit: cover;
+    border-radius: 5px;
+    background: var(--bg-sunken);
+    margin-bottom: 9px;
+    display: block;
   }
+  .hero-art-credit {
+    font-size: 11.5px;
+    line-height: 1.5;
+    color: var(--text-soft);
+  }
+  .hero-art-credit span { color: var(--text-muted); font-style: italic; }
   .hero-eyebrow { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
   .hero-headline {
     font-size: clamp(28px, 3.8vw, 44px);
@@ -821,7 +836,63 @@
     margin-bottom: 10px;
   }
   .flip-back-title { font-family: var(--font-display); font-size: 15px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text); margin-bottom: 10px; }
-  .flip-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 7px; overflow-y: auto; }
+  .flip-list {
+    list-style: none;
+    margin: 0;
+    padding: 0 8px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    overflow-y: auto;
+    flex: 1 1 auto;
+    min-height: 0;
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent) transparent;
+    overscroll-behavior: contain;
+  }
+  .flip-list::-webkit-scrollbar { width: 6px; }
+  .flip-list::-webkit-scrollbar-track { background: transparent; }
+  .flip-list::-webkit-scrollbar-thumb { background: var(--line); border-radius: 3px; }
+  .flip-list::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+  .flip-source {
+    font-size: 10.5px;
+    line-height: 1.45;
+    color: var(--text-muted);
+    border-top: 1px solid var(--line);
+    margin-top: 10px;
+    padding-top: 8px;
+  }
+  .flip-ast { color: var(--accent); font-weight: 700; }
+
+  /* ---------- pestañas de tasas ---------- */
+  .tabs {
+    display: flex;
+    gap: 4px;
+    border-bottom: 2px solid var(--line);
+    margin-bottom: 22px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .tabs::-webkit-scrollbar { display: none; }
+  .tab-btn {
+    flex-shrink: 0;
+    font-family: var(--font-display);
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--text-muted);
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+    padding: 10px 16px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .tab-btn:hover { color: var(--accent); }
+  .tab-btn[aria-selected="true"] { color: var(--accent); border-bottom-color: var(--accent); }
+  .tab-panel[hidden] { display: none; }
   .flip-list li {
     display: flex;
     justify-content: space-between;
@@ -1083,6 +1154,18 @@
     width: min(94vw, 1000px);
   }
   .mm-lightbox::backdrop { background: rgba(5,9,6,0.88); }
+  /* Respaldo para navegadores sin <dialog>: sin estas reglas el visor
+     quedaría pegado al final del body y sin forma de ocultarse. */
+  .mm-lightbox:not([open]) { display: none; }
+  .mm-lightbox[open] {
+    display: block;
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    height: fit-content;
+    max-height: 92vh;
+    z-index: 90;
+  }
   .mm-lb-stage { display: flex; align-items: center; justify-content: center; }
   .mm-lb-stage img { max-width: 100%; max-height: 82vh; border-radius: 6px; }
   .mm-lb-close, .mm-lb-prev, .mm-lb-next {
@@ -1278,4 +1361,24 @@
     .rate-disclaimer { font-size: 11px; }
     .mm-grid { grid-template-columns: 1fr; gap: 16px; }
     .opinion-quote { font-size: 19px; }
+  }
+
+  /* ---------- pagina de noticia ---------- */
+  /* Ojo: aqui solo padding vertical. El horizontal lo pone .wrap y no se
+     debe pisar con el atajo `padding`, porque entonces se anula y el texto
+     queda pegado a los bordes en pantallas estrechas. */
+  .noticia-articulo {
+    padding-top: 36px;
+    padding-bottom: 50px;
+  }
+  .noticia-cuerpo {
+    margin-top: 24px;
+    font-size: 17px;
+    line-height: 1.75;
+    max-width: 760px;
+  }
+
+  @media (max-width: 640px) {
+    .noticia-articulo { padding-top: 24px; padding-bottom: 36px; }
+    .noticia-cuerpo { font-size: 16.5px; line-height: 1.7; }
   }

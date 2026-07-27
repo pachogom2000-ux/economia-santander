@@ -16,7 +16,7 @@
       <div class="ad-copy">
         <p class="ad-brand">{{ anuncio.marca }}</p>
         <h3 class="ad-headline">{{ anuncio.titular }}</h3>
-        <p class="ad-text">{{ anuncio.texto }}</p>
+        <p class="ad-text">{{ anuncio.texto | safe }}</p>
         <div class="ad-actions">
           <button type="button" class="ad-cta primary" id="btn-cupon">{{ anuncio.cta }}</button>
           {% if anuncio.ctaSecundario %}
@@ -25,7 +25,7 @@
         </div>
       </div>
       <div class="ad-coupon" id="cupon-tinto" hidden>
-        <img id="qr-tinto" width="108" height="108" alt="Código QR que abre la ubicación de Tienda sinestres en Google Maps"
+        <img id="qr-tinto" width="108" height="108" alt="Código QR que abre la ubicación de Tienda Sinestrés en Google Maps"
              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeAAAAHgAQMAAABHGizWAAAABlBMVEX///8PFxKopGGdAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACT0lEQVR4nO3cPXKDMBCG4WVcpPQROIqPho/mo3CElC48VkC7K1Ya/DMxpMi8X5EhwCNXO0grbBFCCCHkn+crhYzTiXSzK+k+/TnqhZsfaC5gMHg3/G1H0/UxDihduur/Xcaj39eDweBX+ORVN8owH3wto7QX0zQgGAz+Q5zPjfM5f0qeRQQMBn+ADyk5LhPTt0sSDAZ/ji0B5xVf5wd+0QIGg1/gEMNadbkk53o9d292aMBg8Me4SZ64SsSiS8R3AgaD55S5p5bklENud55CBYZtheS9UDAYvAuu0k8X7SmZtFUzPxGHuy0RQ7GDweCnuC5J7XuKWPmFued57QPBYPC2+OjdGGvVeIcmPxyrkYdq9w8MBq9ja7LczaRqg8+WgzpKP5VkaieuYDB4a/ytNx6sG1OP0sRGuYDB4Ldw02SJr2wmb4A+LEkwGLwJlnyjTVLLtkNowpxmcbOL4mtFMBj8FNv0MmwY9MmeiEfte4qszj3BYPDWuNpW7721WfbcLf4mi/hrLmAw+AXO0bcyU8g1NkV7x0vAYPAe2Pbw5gyq8ijh5TJfDko9cQWDwQ+wRXfGU5ledrEkNWX3DwwG74ObDHrTvMG3jNwUOxgMfoqrPbyxOafbCqn5ausSMBi8Pa6Wg4Ov+Eo9G54zJKkDBoMf4LrqbrkkL/6rfJcXE1cwGLwrltKE0XZnaN+UpigYDP4FPqXSZBmWDb6cUQQMBu+ILeHHjMILZ7mefYMvtV8XAoPBKzjE5p6GPWfJX1zo9eC6fAAYDN4cE0IIIWQtP+3oa/m3wKcJAAAAAElFTkSuQmCC">
         <div>
           <p class="coupon-title">Cupón · Tinto gratis</p>
@@ -47,7 +47,7 @@
       <div class="ad-copy">
         <p class="ad-brand">{{ anuncio.marca }}</p>
         <h3 class="ad-headline">{{ anuncio.titular }}</h3>
-        <p class="ad-text">{{ anuncio.texto }}</p>
+        <p class="ad-text">{{ anuncio.texto | safe }}</p>
         <span class="ad-cta">{{ anuncio.cta }}</span>
       </div>
       {% if anuncio.sitio and not anuncioCompacto %}

@@ -9,14 +9,15 @@
         <span class="mm-play-btn" aria-hidden="true"></span>
       </button>
     {% elif mmTipo == 'podcast' %}
-      {% if item.data.spotify %}
-        <iframe class="mm-spotify" src="{{ item.data.spotify | spotifyEmbed }}" loading="lazy" allow="encrypted-media" title="Podcast: {{ item.data.title }}"></iframe>
+      {% set spotifyUrl = item.data.spotify | spotifyEmbed %}
+      {% if spotifyUrl %}
+        <iframe class="mm-spotify" src="{{ spotifyUrl }}" loading="lazy" allow="encrypted-media" title="Podcast: {{ item.data.title }}"></iframe>
       {% elif item.data.audio %}
         <div class="mm-audio">
           <audio controls preload="none" src="{{ item.data.audio }}"></audio>
         </div>
       {% elif item.data.portada %}
-        <img src="{{ item.data.portada }}" alt="" loading="lazy" decoding="async">
+        <img src="{{ item.data.portada }}" alt="{{ item.data.imagenAlt or '' }}" loading="lazy" decoding="async">
       {% endif %}
     {% elif mmTipo == 'galeria' %}
       {% set portada = item.data.portada or item.data.imagenes[0] %}

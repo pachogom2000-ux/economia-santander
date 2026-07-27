@@ -2,10 +2,70 @@ backend:
   name: git-gateway
   branch: main
 
+# Los guardados van a una rama con pull request, no a main.
+# Redactar y revisar genera deploy previews, que no consumen creditos.
+# Solo el paso final a "Listo" publica y cuesta un deploy de produccion.
+publish_mode: editorial_workflow
+
 media_folder: "src/assets/uploads"
 public_folder: "/assets/uploads"
 
 collections:
+  - name: "datos"
+    label: "Datos del sitio"
+    files:
+      - name: "picoyplaca"
+        label: "Pico y placa"
+        file: "src/_data/picoyplaca.json"
+        format: "json"
+        description: >-
+          Dígitos de la franja superior. Medellín rota por semestres y
+          Bucaramanga por trimestres: añade la rotación nueva con su fecha
+          de inicio y el sitio cambia solo ese día. No borres la anterior.
+        fields:
+          - label: "Ciudades"
+            name: "ciudades"
+            widget: "list"
+            fields:
+              - { label: "Ciudad", name: "nombre", widget: "string" }
+              - label: "Horario entre semana"
+                name: "horario"
+                widget: "string"
+                hint: "Ejemplo: 6:00 a 20:00"
+              - label: "Horario del sábado"
+                name: "horarioSabado"
+                widget: "string"
+                required: false
+              - label: "Rotaciones de lunes a viernes"
+                name: "rotaciones"
+                widget: "list"
+                required: false
+                hint: "Una por cada cambio oficial. El sitio usa la más reciente que ya haya empezado."
+                fields:
+                  - { label: "Rige desde", name: "desde", widget: "string", hint: "Formato AAAA-MM-DD, por ejemplo 2026-08-03" }
+                  - { label: "Vigencia (nota interna)", name: "vigencia", widget: "string", required: false }
+                  - { label: "Lunes", name: "lunes", widget: "string" }
+                  - { label: "Martes", name: "martes", widget: "string" }
+                  - { label: "Miércoles", name: "miercoles", widget: "string" }
+                  - { label: "Jueves", name: "jueves", widget: "string" }
+                  - { label: "Viernes", name: "viernes", widget: "string" }
+              - label: "Sábados con restricción"
+                name: "sabados"
+                widget: "list"
+                required: false
+                hint: "Solo fechas confirmadas por la autoridad de tránsito. Un sábado que no esté aquí se muestra como Libre."
+                fields:
+                  - { label: "Fecha", name: "fecha", widget: "string", hint: "Formato AAAA-MM-DD" }
+                  - { label: "Dígitos", name: "digitos", widget: "string" }
+              - label: "Regla por paridad de fecha"
+                name: "reglaParidad"
+                widget: "object"
+                required: false
+                hint: "Solo para ciudades como Bogotá, que alternan según el día del mes sea par o impar."
+                fields:
+                  - { label: "Días impares", name: "impar", widget: "string" }
+                  - { label: "Días pares", name: "par", widget: "string" }
+
   - name: "noticias"
     label: "Noticias"
     folder: "src/noticias"
@@ -20,6 +80,8 @@ collections:
       - label: "Categoría"
         name: "categoria"
         widget: "select"
+        # Alineadas una a una con la propiedad "Sección" de la base
+        # Publicaciones en Notion. Si añades una aquí, añádela también allí.
         options:
           - "Inversión"
           - "Educación financiera"
@@ -28,7 +90,14 @@ collections:
           - "Construcción"
           - "Industria"
           - "Agro"
-          - "Nacional"
+          - "Comercio y consumo"
+          - "Turismo y hotelería"
+          - "Emprendimiento y pymes"
+          - "Impuestos y regulación"
+          - "Indicadores económicos"
+          - "Opinión"
+          - "Entrevistas"
+          - "Glosario y guías"
       - label: "Tipo de contenido"
         name: "chipTipo"
         widget: "select"
@@ -48,15 +117,32 @@ collections:
       - label: "Autor"
         name: "autor"
         widget: "string"
-        default: "Francisco Javier Gómez"
+        default: "Francisco Gómez - Director"
         required: false
       - label: "Imagen destacada"
         name: "imagen"
         widget: "image"
         required: false
+        hint: "1200 x 700 píxeles y máximo 100 KB. Renombra el archivo antes de subirlo con palabras de la noticia separadas por guiones (ejemplo: empleo-formal-bucaramanga-2026.jpg), nunca IMG_1234.jpg."
       - label: "Texto alternativo de la imagen"
         name: "imagenAlt"
         widget: "string"
+        required: false
+        hint: "Describe literalmente lo que se ve, incluyendo la palabra clave. Sirve para accesibilidad y para Google Imágenes."
+      - label: "Título de la imagen (SEO)"
+        name: "imagenTitle"
+        widget: "string"
+        required: false
+        hint: "Título con la palabra clave de la noticia. Si lo dejas vacío se usa el titular."
+      - label: "Pie de foto"
+        name: "imagenPie"
+        widget: "string"
+        required: false
+        hint: "Frase que se muestra debajo de la imagen."
+      - label: "Crédito de la foto"
+        name: "imagenCredito"
+        widget: "string"
+        default: "Foto: Economía Santander"
         required: false
       - label: "Cuerpo de la noticia"
         name: "body"
@@ -110,6 +196,11 @@ collections:
         widget: "image"
         required: false
         hint: "Obligatoria para tipo Foto; en galerías es la miniatura (si falta, se usa la primera foto)."
+      - label: "Texto alternativo de la portada"
+        name: "imagenAlt"
+        widget: "string"
+        required: false
+        hint: "Describe literalmente lo que se ve en la foto de portada. Accesibilidad y Google Imágenes."
       - label: "Fotos de la galería"
         name: "imagenes"
         widget: "list"
@@ -141,9 +232,10 @@ collections:
                 name: "tipo"
                 widget: "select"
                 default: "estandar"
+                hint: "El tipo Cupón está cableado a la campaña del tinto de Tienda Sinestrés (QR, códigos TINTO-XXX). Para otro anunciante usa Estándar; un cupón nuevo requiere cambios de código."
                 options:
                   - { label: "Estándar (clic lleva al sitio)", value: "estandar" }
-                  - { label: "Cupón interactivo", value: "cupon" }
+                  - { label: "Cupón Tinto (solo campaña Tienda Sinestrés)", value: "cupon" }
               - label: "Tema visual"
                 name: "tema"
                 widget: "select"
@@ -161,7 +253,7 @@ collections:
                 name: "categorias"
                 widget: "select"
                 multiple: true
-                hint: "El anuncio solo rota en la portada y en las noticias de estas categorías."
+                hint: "El anuncio solo rota en la portada y en las noticias de estas categorías. Si una categoría no tiene ningún anuncio pautado, sus noticias no muestran publicidad."
                 options:
                   - "Portada"
                   - "Inversión"
@@ -173,3 +265,10 @@ collections:
                   - "Agro"
                   - "Nacional"
                   - "Comercio y consumo"
+                  - "Turismo y hotelería"
+                  - "Emprendimiento y pymes"
+                  - "Impuestos y regulación"
+                  - "Indicadores económicos"
+                  - "Opinión"
+                  - "Entrevistas"
+                  - "Glosario y guías"
