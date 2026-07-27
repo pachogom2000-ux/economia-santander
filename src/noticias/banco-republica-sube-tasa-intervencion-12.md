@@ -2,7 +2,7 @@
 layout: noticia.njk
 title: "Banco de la República sube la tasa de intervención a 12%"
 date: 2026-07-23
-categoria: "Nacional"
+categoria: "Indicadores económicos"
 chipTipo: "recirc"
 chipLabel: "Fuente: Banco de la República"
 excerpt: "La Junta Directiva incrementó en 75 puntos básicos la tasa de política monetaria y la llevó a 12%, su nivel más alto desde 2024, ante la presión inflacionaria y el dinamismo del consumo."

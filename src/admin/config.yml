@@ -2,6 +2,11 @@ backend:
   name: git-gateway
   branch: main
 
+# Los guardados van a una rama con pull request, no a main.
+# Redactar y revisar genera deploy previews, que no consumen creditos.
+# Solo el paso final a "Listo" publica y cuesta un deploy de produccion.
+publish_mode: editorial_workflow
+
 media_folder: "src/assets/uploads"
 public_folder: "/assets/uploads"
 
@@ -20,6 +25,8 @@ collections:
       - label: "Categoría"
         name: "categoria"
         widget: "select"
+        # Alineadas una a una con la propiedad "Sección" de la base
+        # Publicaciones en Notion. Si añades una aquí, añádela también allí.
         options:
           - "Inversión"
           - "Educación financiera"
@@ -27,9 +34,15 @@ collections:
           - "Finanzas personales"
           - "Construcción"
           - "Industria"
-          - "Comercio"
           - "Agro"
-          - "Nacional"
+          - "Comercio y consumo"
+          - "Turismo y hotelería"
+          - "Emprendimiento y pymes"
+          - "Impuestos y regulación"
+          - "Indicadores económicos"
+          - "Opinión"
+          - "Entrevistas"
+          - "Glosario y guías"
       - label: "Tipo de contenido"
         name: "chipTipo"
         widget: "select"
