@@ -294,7 +294,12 @@
       var dia = d.getDate();
 
       var bga = { 1: '7 y 8', 2: '9 y 0', 3: '1 y 2', 4: '3 y 4', 5: '5 y 6' };
-      var med = { 1: '5 y 8', 2: '1 y 4', 3: '0 y 2', 4: '3 y 6', 5: '7 y 9' };
+
+      // Medellin rota por semestres. La del primer semestre de 2026 rige
+      // hasta el viernes 31 de julio; la nueva entra el lunes 3 de agosto.
+      var medSem1 = { 1: '1 y 7', 2: '0 y 3', 3: '4 y 6', 4: '5 y 9', 5: '2 y 8' };
+      var medSem2 = { 1: '5 y 8', 2: '1 y 4', 3: '0 y 2', 4: '3 y 6', 5: '7 y 9' };
+      var med = (d >= new Date(2026, 7, 3)) ? medSem2 : medSem1;
 
       // Bucaramanga: sábados con rotación propia (ref.: sábado 25 jul 2026 = "7 y 8")
       function sabadoBga() {
