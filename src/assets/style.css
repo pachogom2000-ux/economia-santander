@@ -1199,11 +1199,13 @@
   .qs-retrato { margin: 0; }
   .qs-retrato img {
     width: 100%;
+    height: auto;
     border-radius: 10px;
     border: 1px solid var(--line);
-    background: #fff;
+    background: #0d0d0d;
     box-shadow: 0 10px 30px rgba(19,33,26,0.12);
   }
+  .qs-retrato figcaption { font-size: 10.5px; color: var(--text-muted); margin-top: 6px; }
   .qs-nombre { font-size: clamp(30px, 4.6vw, 46px); line-height: 1.02; text-transform: uppercase; }
   .qs-lead { font-size: 16.5px; line-height: 1.6; color: var(--text-soft); margin-top: 12px; max-width: 62ch; }
   .qs-meta {
