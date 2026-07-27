@@ -2,7 +2,7 @@
 layout: noticia.njk
 title: Bucaramanga lidera la creación de empleo formal en el oriente colombiano
   durante el primer semestre
-date: 2026-07-26T19:12:00.000-05:00
+date: 2026-07-26T18:16:00.000-05:00
 categoria: Empleo
 chipTipo: propio
 chipLabel: Redacción propia
