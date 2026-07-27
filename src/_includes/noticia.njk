@@ -2,7 +2,7 @@
 layout: layout.njk
 ogType: article
 ---
-<article class="wrap noticia-articulo" style="padding: 36px 0 50px;">
+<article class="wrap noticia-articulo">
   <div class="hero-eyebrow">
     <span class="tag">{{ categoria }}</span>
     <span class="chip {{ chipTipo or 'propio' }}">{{ chipLabel or 'Redacción propia' }}</span>
@@ -24,7 +24,7 @@ ogType: article
   </figure>
   {% endif %}
 
-  <div class="noticia-cuerpo" style="margin-top:24px; font-size:17px; line-height:1.75; max-width: 760px;">
+  <div class="noticia-cuerpo">
     {{ content | safe }}
   </div>
 

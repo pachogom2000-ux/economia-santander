@@ -1005,3 +1005,23 @@
     .evergreen-block { padding: 22px 20px; }
     .interview-card, .core-card { padding: 18px; }
   }
+
+  /* ---------- pagina de noticia ---------- */
+  /* Ojo: aqui solo padding vertical. El horizontal lo pone .wrap y no se
+     debe pisar con el atajo `padding`, porque entonces se anula y el texto
+     queda pegado a los bordes en pantallas estrechas. */
+  .noticia-articulo {
+    padding-top: 36px;
+    padding-bottom: 50px;
+  }
+  .noticia-cuerpo {
+    margin-top: 24px;
+    font-size: 17px;
+    line-height: 1.75;
+    max-width: 760px;
+  }
+
+  @media (max-width: 640px) {
+    .noticia-articulo { padding-top: 24px; padding-bottom: 36px; }
+    .noticia-cuerpo { font-size: 16.5px; line-height: 1.7; }
+  }
