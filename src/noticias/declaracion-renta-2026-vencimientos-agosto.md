@@ -2,13 +2,21 @@
 layout: noticia.njk
 title: "Declaración de renta 2026: los vencimientos comienzan el 12 de agosto"
 date: 2026-07-27T09:00:00.000-05:00
-categoria: "Impuestos y regulación"
-chipTipo: "recirc"
+categoria: Impuestos y regulación
+chipTipo: recirc
 chipLabel: "Fuentes: DIAN y Protección"
-excerpt: "El calendario de la DIAN para la declaración de renta del año gravable 2025 arranca el 12 de agosto y se extiende hasta el 26 de octubre."
-autor: "Francisco Gómez - Director"
-tags: noticias
+excerpt: El calendario de la DIAN para la declaración de renta del año gravable
+  2025 arranca el 12 de agosto y se extiende hasta el 26 de octubre.
+autor: Francisco Gómez - Director
+imagen: /assets/uploads/financiero.jpg
+imagenAlt: Vencimientos declaración de renta 2026
+imagenTitle: impuestos, declaración de renta Colombia 2026
+imagenPie: "Los plazos para declarar y pagar el impuesto de renta se organizan
+  según los dos últimos dígitos de la cédula o el NIT, sin contar el dígito de
+  verificación. "
+imagenCredito: Archivo particular
 eleventyExcludeFromCollections: true
+tags: noticias
 ---
 El calendario de la Dirección de Impuestos y Aduanas Nacionales (DIAN) para la declaración de renta del año gravable 2025 arranca **el 12 de agosto de 2026** y se extiende hasta el 26 de octubre. El aviso, recordado por [Protección](https://www.proteccion.com) a sus afiliados, llega en el momento justo para ubicar la fecha que le corresponde y, de paso, revisar cuánto se puede optimizar la carga tributaria con los aportes voluntarios hechos durante el año.
 
