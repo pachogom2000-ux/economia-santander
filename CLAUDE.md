@@ -104,9 +104,19 @@ eleventyExcludeFromCollections: true   # quitar cuando se apruebe
 ---
 ```
 
-**Categorías válidas:** Inversión, Educación financiera, Empleo, Finanzas personales, Construcción, Industria, Comercio, Agro, Nacional.
+**Categorías válidas** (alineadas una a una con la propiedad `Sección` de la base Publicaciones en Notion; si añades una aquí, añádela también allá):
+
+Inversión · Educación financiera · Empleo · Finanzas personales · Construcción · Industria · Agro · Comercio y consumo · Turismo y hotelería · Emprendimiento y pymes · Impuestos y regulación · Indicadores económicos · Opinión · Entrevistas · Glosario y guías
 
 `eleventyExcludeFromCollections: true` mantiene la nota fuera de la portada mientras es borrador. **Se quita solo cuando Francisco aprueba.** La decisión de publicar es del director.
+
+### Flujo de publicación del CMS
+
+Decap está en `publish_mode: editorial_workflow`. Los guardados van a una rama con pull request, no directo a `main`. Redactar y revisar genera *deploy previews*, que no consumen créditos de Netlify; solo el paso final a "Listo" publica y cuesta un despliegue de producción.
+
+### Datos editables sin tocar código
+
+`src/_data/picoyplaca.json` guarda los dígitos de la franja superior y se edita desde el CMS, en "Datos del sitio". Medellín rota por semestres y Bucaramanga por trimestres: se añade la rotación nueva con su fecha de inicio y el sitio cambia solo ese día. No borres la anterior.
 
 ---
 
