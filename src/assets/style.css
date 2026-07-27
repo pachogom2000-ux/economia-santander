@@ -1411,6 +1411,29 @@
   }
 
   /* ==========================================================
+     Botón flotante de WhatsApp
+     ========================================================== */
+  .wa-flotante {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 60;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: #25d366;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.30);
+    transition: transform 160ms ease, box-shadow 160ms ease;
+  }
+  .wa-flotante svg { width: 28px; height: 28px; display: block; }
+  .wa-flotante:hover, .wa-flotante:focus-visible { transform: scale(1.07); box-shadow: 0 8px 24px rgba(0,0,0,0.35); }
+  @media print { .wa-flotante { display: none; } }
+
+  /* ==========================================================
      El padding lateral de .wrap es sagrado.
      Varias clases hermanas (.section-block, .ad-wrap, .utility-inner,
      .qs-hero…) van sobre el MISMO elemento que .wrap y, al declararse
