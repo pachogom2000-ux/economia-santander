@@ -1,0 +1,63 @@
+{# Renderiza un anuncio del inventario (_data/anuncios.json).
+   Variables esperadas en el contexto:
+     anuncio         — objeto del anuncio (usar filtro anuncioPara)
+     anuncioCompacto — true para la variante de poco alto (portada móvil / dentro de notas) #}
+{% if anuncio %}
+<div class="wrap ad-wrap{% if anuncioCompacto %} tight{% endif %}">
+  {% if anuncio.tipo == 'cupon' %}
+  <div class="ad-unit {{ anuncio.tema }}{% if anuncioCompacto %} ad-compacto{% endif %}">
+    <span class="ad-tag">Publicidad</span>
+    {% if anuncio.imagen %}
+    <div class="ad-media" aria-hidden="true">
+      <img src="{{ anuncio.imagen }}" alt="" loading="lazy" decoding="async">
+    </div>
+    {% endif %}
+    <div class="ad-body">
+      <div class="ad-copy">
+        <p class="ad-brand">{{ anuncio.marca }}</p>
+        <h3 class="ad-headline">{{ anuncio.titular }}</h3>
+        <p class="ad-text">{{ anuncio.texto }}</p>
+        <div class="ad-actions">
+          <button type="button" class="ad-cta primary" id="btn-cupon">{{ anuncio.cta }}</button>
+          {% if anuncio.ctaSecundario %}
+          <a class="ad-cta ghost" href="{{ anuncio.url }}" target="_blank" rel="noopener sponsored">{{ anuncio.ctaSecundario }}</a>
+          {% endif %}
+        </div>
+      </div>
+      <div class="ad-coupon" id="cupon-tinto" hidden>
+        <img id="qr-tinto" width="108" height="108" alt="Código QR que abre la ubicación de Tienda sinestres en Google Maps"
+             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeAAAAHgAQMAAABHGizWAAAABlBMVEX///8PFxKopGGdAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACT0lEQVR4nO3cPXKDMBCG4WVcpPQROIqPho/mo3CElC48VkC7K1Ya/DMxpMi8X5EhwCNXO0grbBFCCCHkn+crhYzTiXSzK+k+/TnqhZsfaC5gMHg3/G1H0/UxDihduur/Xcaj39eDweBX+ORVN8owH3wto7QX0zQgGAz+Q5zPjfM5f0qeRQQMBn+ADyk5LhPTt0sSDAZ/ji0B5xVf5wd+0QIGg1/gEMNadbkk53o9d292aMBg8Me4SZ64SsSiS8R3AgaD55S5p5bklENud55CBYZtheS9UDAYvAuu0k8X7SmZtFUzPxGHuy0RQ7GDweCnuC5J7XuKWPmFued57QPBYPC2+OjdGGvVeIcmPxyrkYdq9w8MBq9ja7LczaRqg8+WgzpKP5VkaieuYDB4a/ytNx6sG1OP0sRGuYDB4Ldw02SJr2wmb4A+LEkwGLwJlnyjTVLLtkNowpxmcbOL4mtFMBj8FNv0MmwY9MmeiEfte4qszj3BYPDWuNpW7721WfbcLf4mi/hrLmAw+AXO0bcyU8g1NkV7x0vAYPAe2Pbw5gyq8ijh5TJfDko9cQWDwQ+wRXfGU5ledrEkNWX3DwwG74ObDHrTvMG3jNwUOxgMfoqrPbyxOafbCqn5ausSMBi8Pa6Wg4Ov+Eo9G54zJKkDBoMf4LrqbrkkL/6rfJcXE1cwGLwrltKE0XZnaN+UpigYDP4FPqXSZBmWDb6cUQQMBu+ILeHHjMILZ7mefYMvtV8XAoPBKzjE5p6GPWfJX1zo9eC6fAAYDN4cE0IIIWQtP+3oa/m3wKcJAAAAAElFTkSuQmCC">
+        <div>
+          <p class="coupon-title">Cupón · Tinto gratis</p>
+          <p class="coupon-code" id="cupon-codigo">TINTO-0000</p>
+          <p class="coupon-valid" id="cupon-vigencia">Escanea el QR para llegar a la tienda.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% else %}
+  <a class="ad-unit {{ anuncio.tema }}{% if anuncioCompacto %} ad-compacto{% endif %}" href="{{ anuncio.url }}" target="_blank" rel="noopener sponsored">
+    <span class="ad-tag">Publicidad</span>
+    {% if anuncio.imagen %}
+    <div class="ad-media" aria-hidden="true">
+      <img src="{{ anuncio.imagen }}" alt="" loading="lazy" decoding="async">
+    </div>
+    {% endif %}
+    <div class="ad-body">
+      <div class="ad-copy">
+        <p class="ad-brand">{{ anuncio.marca }}</p>
+        <h3 class="ad-headline">{{ anuncio.titular }}</h3>
+        <p class="ad-text">{{ anuncio.texto }}</p>
+        <span class="ad-cta">{{ anuncio.cta }}</span>
+      </div>
+      {% if anuncio.sitio and not anuncioCompacto %}
+      <div class="ad-piro-side">
+        <span class="site">{{ anuncio.sitio }}</span>
+        <span class="note">{{ anuncio.notaLateral }}</span>
+      </div>
+      {% endif %}
+    </div>
+  </a>
+  {% endif %}
+</div>
+{% endif %}

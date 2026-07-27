@@ -1,0 +1,218 @@
+{
+  "actualizado": "Cierres del 24 y 25 de julio de 2026, salvo indicación distinta",
+  "indicadores": [
+    {
+      "id": "usd-cop",
+      "nombre": "USD/COP",
+      "valor": "$3.214,40",
+      "delta": "cierre",
+      "dir": "flat",
+      "vivo": "usd",
+      "title": "Último cierre del dólar spot en Colombia (SetFX), obtenido automáticamente vía dolarapi.com. Se actualiza en cada visita.",
+      "grupo": "Monedas y cripto"
+    },
+    {
+      "id": "oro",
+      "nombre": "Oro",
+      "valor": "US$4.050",
+      "delta": "≈ oz",
+      "dir": "flat",
+      "vivo": "oro",
+      "title": "Oro (aprox.) — referencia en vivo vía PAXG/CoinGecko, token respaldado 1:1 por una onza troy de oro (USD/oz).",
+      "grupo": "Monedas y cripto"
+    },
+    {
+      "id": "bitcoin",
+      "nombre": "Bitcoin",
+      "valor": "US$64.300",
+      "delta": "cripto",
+      "dir": "flat",
+      "vivo": "btc",
+      "title": "Bitcoin (BTC/USD). Fuente: CoinGecko, en vivo con variación de 24 h.",
+      "grupo": "Monedas y cripto"
+    },
+    {
+      "id": "ecopetrol",
+      "nombre": "Ecopetrol",
+      "valor": "$2.590",
+      "delta": "▼ 0,58%",
+      "dir": "down",
+      "yahoo": "EC",
+      "yahooNota": "Gráfica de referencia: ADR de Ecopetrol en la Bolsa de Nueva York (US$). La acción local cotiza en la BVC en pesos.",
+      "title": "Ecopetrol (BVC). Cierre del 24 de julio de 2026.",
+      "grupo": "Acciones"
+    },
+    {
+      "id": "bancolombia",
+      "nombre": "Bancolombia (Cibest)",
+      "valor": "$81.020",
+      "delta": "▼ 2,53%",
+      "dir": "down",
+      "yahoo": "CIB",
+      "yahooNota": "Gráfica de referencia: ADR de Bancolombia (Grupo Cibest) en la Bolsa de Nueva York (US$). La acción local cotiza en la BVC en pesos.",
+      "title": "Bancolombia, que cotiza bajo su holding Grupo Cibest (BVC). Cierre del 24 de julio de 2026.",
+      "grupo": "Acciones"
+    },
+    {
+      "id": "grupo-sura",
+      "nombre": "Grupo Sura",
+      "valor": "$53.540",
+      "delta": "▲ 1,02%",
+      "dir": "up",
+      "title": "Grupo Sura (BVC). Cierre del 24 de julio de 2026.",
+      "grupo": "Acciones"
+    },
+    {
+      "id": "isa",
+      "nombre": "ISA",
+      "valor": "$28.740",
+      "delta": "▼ 1,58%",
+      "dir": "down",
+      "title": "Interconexión Eléctrica S.A. — ISA (BVC). Cierre del 24 de julio de 2026.",
+      "grupo": "Acciones"
+    },
+    {
+      "id": "grupo-argos",
+      "nombre": "Grupo Argos",
+      "valor": "$16.300",
+      "delta": "▲ 0,87%",
+      "dir": "up",
+      "title": "Grupo Argos (BVC). Cierre del 24 de julio de 2026.",
+      "grupo": "Acciones"
+    },
+    {
+      "id": "tecnoglass",
+      "nombre": "Tecnoglass",
+      "valor": "US$45,30",
+      "delta": "▲ 3,57%",
+      "dir": "up",
+      "yahoo": "TGLS",
+      "yahooNota": "Tecnoglass cotiza directamente en la Bolsa de Nueva York (US$).",
+      "title": "Tecnoglass (NYSE, en dólares). Cierre del 24 de julio de 2026.",
+      "grupo": "Acciones"
+    },
+    {
+      "id": "nutresa",
+      "nombre": "Nutresa",
+      "valor": "$312.000",
+      "delta": "▼ 0,10%",
+      "dir": "down",
+      "title": "Grupo Nutresa (BVC). Cierre del 24 de julio de 2026.",
+      "grupo": "Acciones"
+    },
+    {
+      "id": "banco-bogota",
+      "nombre": "Banco de Bogotá",
+      "valor": "$37.100",
+      "delta": "▼ 0,91%",
+      "dir": "down",
+      "title": "Banco de Bogotá (BVC). Cierre del 24 de julio de 2026.",
+      "grupo": "Acciones"
+    },
+    {
+      "id": "davivienda",
+      "nombre": "Davivienda",
+      "valor": "$24.180",
+      "delta": "▲ 0,67%",
+      "dir": "up",
+      "title": "Davivienda — acción preferencial (BVC). Cierre del 24 de julio de 2026.",
+      "grupo": "Acciones"
+    },
+    {
+      "id": "celsia",
+      "nombre": "Celsia",
+      "valor": "$4.950",
+      "delta": "▼ 2,94%",
+      "dir": "down",
+      "title": "Celsia (BVC), sector energía. Cierre del 24 de julio de 2026.",
+      "grupo": "Acciones"
+    },
+    {
+      "id": "colcap",
+      "nombre": "COLCAP",
+      "valor": "2.274,53",
+      "delta": "▼ 0,38%",
+      "dir": "down",
+      "yahoo": "^COLCAP",
+      "yahooNota": "Índice MSCI COLCAP de la Bolsa de Valores de Colombia, en puntos.",
+      "title": "Índice MSCI COLCAP de la Bolsa de Valores de Colombia (puntos). Cierre del 25 de julio de 2026.",
+      "grupo": "Índices y tasas"
+    },
+    {
+      "id": "tes-10",
+      "nombre": "TES 10 años",
+      "valor": "13,20%",
+      "delta": "jul",
+      "dir": "flat",
+      "title": "Rendimiento de los TES a 10 años (deuda pública colombiana). Referencia de julio de 2026.",
+      "grupo": "Índices y tasas"
+    },
+    {
+      "id": "tasa-usura",
+      "nombre": "Tasa de usura",
+      "valor": "28,79%",
+      "delta": "tope legal",
+      "dir": "flat",
+      "title": "Tasa de usura para crédito de consumo y ordinario, certificada por la Superintendencia Financiera para julio de 2026. Es el interés máximo legal.",
+      "grupo": "Índices y tasas"
+    },
+    {
+      "id": "cafe",
+      "nombre": "Café (carga)",
+      "valor": "$2.160.000",
+      "delta": "24 jul",
+      "dir": "flat",
+      "title": "Precio interno de referencia de la carga de 125 kg de café pergamino seco. Fuente: Federación Nacional de Cafeteros, 24 de julio de 2026.",
+      "grupo": "Materias primas"
+    },
+    {
+      "id": "brent",
+      "nombre": "Brent",
+      "valor": "US$98,31",
+      "delta": "24 jul",
+      "dir": "flat",
+      "yahoo": "BZ=F",
+      "yahooNota": "Futuro del petróleo Brent en el ICE (US$ por barril).",
+      "title": "Petróleo Brent, referencia internacional (USD/barril). Cierre del 24 de julio de 2026.",
+      "grupo": "Materias primas"
+    },
+    {
+      "id": "sp500",
+      "nombre": "S&P 500",
+      "valor": "7.533,77",
+      "delta": "16 jul",
+      "dir": "flat",
+      "yahoo": "^GSPC",
+      "yahooNota": "Índice S&P 500 (EE. UU.), en puntos.",
+      "title": "Índice S&P 500 (EE. UU.), en puntos. Referencia del 16 de julio de 2026.",
+      "grupo": "Índices y tasas"
+    },
+    {
+      "id": "uvr",
+      "nombre": "UVR",
+      "valor": "$416,19",
+      "delta": "25 jul",
+      "dir": "flat",
+      "title": "Valor aproximado de la UVR al 25 de julio de 2026. Fuente: Banco de la República.",
+      "grupo": "Índices y tasas"
+    },
+    {
+      "id": "inflacion",
+      "nombre": "Inflación anual",
+      "valor": "6,14%",
+      "delta": "▲ 0,30 pp",
+      "dir": "up",
+      "title": "IPC — variación anual de junio de 2026. Fuente: DANE.",
+      "grupo": "Índices y tasas"
+    },
+    {
+      "id": "tasa-banrep",
+      "nombre": "Tasa BanRep",
+      "valor": "12,00%",
+      "delta": "▲ 0,75 pp",
+      "dir": "up",
+      "title": "Tasa de intervención de política monetaria, vigente desde el 3 de julio de 2026. Fuente: Banco de la República.",
+      "grupo": "Índices y tasas"
+    }
+  ]
+}

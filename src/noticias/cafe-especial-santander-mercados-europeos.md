@@ -6,7 +6,7 @@ categoria: "Agro"
 chipTipo: "propio"
 chipLabel: "Propia"
 excerpt: "Caficultores de las provincias de Santander reportan mayor demanda de café especial en Europa, a pesar del incremento en los costos de transporte internacional."
-autor: "[Nombre del periodista]"
+autor: "Francisco Javier Gómez"
 tags: noticias
 ---
 Caficultores de las provincias de Santander reportan mayor demanda de café especial en Europa, a pesar del incremento en los costos de transporte internacional.

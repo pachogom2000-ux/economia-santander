@@ -1,0 +1,22 @@
+---
+layout: layout.njk
+title: Multimedia | Economía Santander
+description: Videos, podcasts, fotos y galerías de la reportería económica de Santander y Colombia.
+permalink: /multimedia/
+---
+<section class="section-block wrap mm-pagina">
+  <div class="section-head">
+    <h2>Multimedia</h2>
+    <span class="sub">Video, podcast, fotos y galerías de la reportería económica</span>
+  </div>
+  {% set mm = collections.multimedia | reverse %}
+  {% if mm.length %}
+  <div class="mm-grid">
+    {% for item in mm %}
+    {% include "mm-card.njk" %}
+    {% endfor %}
+  </div>
+  {% else %}
+  <p class="mm-vacio">Estamos preparando los primeros contenidos de esta sección. Vuelve pronto.</p>
+  {% endif %}
+</section>

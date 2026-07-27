@@ -6,7 +6,7 @@ categoria: "Nacional"
 chipTipo: "recirc"
 chipLabel: "Fuente: Banco de la República"
 excerpt: "La Junta Directiva del Banco de la República decidió mantener sin cambios la tasa de intervención, citando la evolución reciente de la inflación."
-autor: "[Nombre del periodista]"
+autor: "Francisco Javier Gómez"
 tags: noticias
 ---
 La Junta Directiva del Banco de la República decidió mantener sin cambios la tasa de intervención, citando la evolución reciente de la inflación.

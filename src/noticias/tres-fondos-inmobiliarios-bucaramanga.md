@@ -6,7 +6,7 @@ categoria: "Inversión"
 chipTipo: "propio"
 chipLabel: "Propia"
 excerpt: "Fondos de inversión inmobiliaria evalúan proyectos en el área metropolitana de Bucaramanga, atraídos por el crecimiento del sector construcción en la región."
-autor: "[Nombre del periodista]"
+autor: "Francisco Javier Gómez"
 tags: noticias
 ---
 Fondos de inversión inmobiliaria evalúan proyectos en el área metropolitana de Bucaramanga, atraídos por el crecimiento del sector construcción en la región.

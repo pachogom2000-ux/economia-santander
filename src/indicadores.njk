@@ -1,0 +1,33 @@
+---
+layout: layout.njk
+title: Indicadores y mercados | Economía Santander
+description: Dólar, acciones colombianas, tasas, café, oro y bitcoin con gráficas históricas, puntas de compra y venta y precios de cierre.
+permalink: /indicadores/
+---
+<section class="section-block wrap ind-pagina">
+  <div class="section-head">
+    <h2>Indicadores y mercados</h2>
+    <span class="sub">Toca cualquier valor de la cinta superior para llegar directo a su ficha</span>
+  </div>
+  <p class="ind-nota">Cuando el mercado está abierto mostramos las <b>puntas reales de compra y venta</b> si la fuente las publica; cuando ya cerró, el <b>último precio de cierre</b>. Las gráficas cargan la serie histórica disponible de cada fuente: SetFX (vía dolarapi.com), TRM del Banco de la República (datos.gov.co), CoinGecko y Yahoo Finanzas. <span class="ind-nota-fecha">{{ mercado.actualizado }}.</span></p>
+
+  <div class="ind-grid">
+    {% for ind in mercado.indicadores %}
+    <article class="ind-card{% if ind.vivo or ind.yahoo %} con-grafica{% endif %}" id="{{ ind.id }}"
+             data-vivo="{{ ind.vivo }}" data-yahoo="{{ ind.yahoo }}" data-nombre="{{ ind.nombre }}">
+      <header class="ind-head">
+        <h3>{{ ind.nombre }}</h3>
+        <span class="ind-grupo">{{ ind.grupo }}</span>
+      </header>
+      <p class="ind-valor"><span data-rol="valor">{{ ind.valor }}</span> <span class="ind-delta {{ ind.dir or 'flat' }}" data-rol="delta">{{ ind.delta }}</span></p>
+      <div class="ind-puntas" data-rol="puntas" hidden></div>
+      <div class="ind-chart" data-rol="chart" {% if not (ind.vivo or ind.yahoo) %}hidden{% endif %}>
+        <p class="ind-chart-cargando">Cargando la serie histórica…</p>
+      </div>
+      <p class="ind-desc">{{ ind.title }}</p>
+      {% if ind.yahooNota %}<p class="ind-fuente" data-rol="fuente" hidden>{{ ind.yahooNota }}</p>{% endif %}
+    </article>
+    {% endfor %}
+  </div>
+</section>
+<script src="/assets/indicadores.js" defer></script>

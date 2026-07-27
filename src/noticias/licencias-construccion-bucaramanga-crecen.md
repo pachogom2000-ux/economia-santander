@@ -6,7 +6,7 @@ categoria: "Construcción"
 chipTipo: "propio"
 chipLabel: "Propia"
 excerpt: "El repunte en licencias de construcción confirma la recuperación del sector edificador en el área metropolitana de Bucaramanga durante el primer semestre del año."
-autor: "[Nombre del periodista]"
+autor: "Francisco Javier Gómez"
 tags: noticias
 ---
 El repunte en licencias de construcción confirma la recuperación del sector edificador en el área metropolitana de Bucaramanga durante el primer semestre del año.

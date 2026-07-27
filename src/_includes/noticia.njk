@@ -9,7 +9,7 @@ ogType: article
   </div>
   <h1 class="hero-headline" style="margin-top:12px;">{{ title }}</h1>
   <p class="hero-dek">{{ excerpt }}</p>
-  <p class="byline">Por <b>{{ autor or '[Nombre del periodista]' }}</b> · {{ date | readableDate }}</p>
+  <p class="byline">Por <b>{{ autor or 'Francisco Javier Gómez' }}</b> · {{ date | readableDate }}</p>
 
   {% if imagen %}
   <img src="{{ imagen }}" alt="{{ imagenAlt or title }}" style="width:100%; border-radius:6px; margin: 24px 0;">
@@ -21,6 +21,13 @@ ogType: article
 
   <p class="volver-portada" style="margin-top:32px;"><a href="/">← Volver a la portada</a></p>
 </article>
+
+{# Publicidad contextual: se elige según la categoría de la noticia y rota por URL,
+   de modo que cada nota muestra un solo anuncio afín a su tema, sin duplicados. #}
+{% set anuncio = anuncios.anuncios | anuncioPara(categoria, page.url) %}
+{% set anuncioCompacto = true %}
+{% include "anuncio.njk" %}
+{% set anuncio = null %}
 
 <script type="application/ld+json">
 {

@@ -9,7 +9,7 @@
 <meta name="description" content="{{ pageDescription }}">
 <link rel="canonical" href="https://economiasantander.com{{ page.url }}">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-<meta name="author" content="{{ autor or 'Economía Santander' }}">
+<meta name="author" content="{{ autor or 'Francisco Javier Gómez' }}">
 <meta name="theme-color" content="#0B6E3B" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0C130E" media="(prefers-color-scheme: dark)">
 <link rel="stylesheet" href="/assets/style.css">
@@ -62,6 +62,7 @@
       "url": "https://economiasantander.com/",
       "description": "Medio nativo digital especializado en la economía del departamento de Santander, Colombia.",
       "foundingDate": "2026",
+      "telephone": "+57 350 491 0178",
       "areaServed": {
         "@type": "AdministrativeArea",
         "name": "Santander, Colombia"
@@ -72,13 +73,23 @@
     {
       "@type": "Person",
       "@id": "https://economiasantander.com/#periodista",
-      "name": "NOMBRE DEL PERIODISTA (reemplazar)",
-      "jobTitle": "Periodista económico",
-      "description": "Periodista económico con más de 20 años cubriendo la economía del oriente colombiano.",
-      "url": "https://economiasantander.com/autor/",
+      "name": "Francisco Javier Gómez",
+      "jobTitle": "Director y periodista económico",
+      "description": "Comunicador social y periodista, magíster en Asuntos Internacionales, con más de 20 años cubriendo economía en medios como Valora Analitik, Semana, Dinero, Portafolio, El Tiempo y Vanguardia.",
+      "url": "https://economiasantander.com/quien-soy/",
+      "telephone": "+57 350 491 0178",
+      "email": "pachogom2000@gmail.com",
       "worksFor": { "@id": "https://economiasantander.com/#organization" },
+      "alumniOf": [
+        { "@type": "CollegeOrUniversity", "name": "Universidad Autónoma de Bucaramanga (UNAB)" },
+        { "@type": "CollegeOrUniversity", "name": "Universidad Externado de Colombia" }
+      ],
+      "award": [
+        "Premio La Equidad Seguros al periodismo económico, categoría web (2018)",
+        "Mención de honor, Premio de Periodismo Económico de Anif (2018)"
+      ],
       "sameAs": [
-        "https://www.linkedin.com/in/USUARIO-LINKEDIN-reemplazar"
+        "https://www.valoraanalitik.com/author/francisco-gomez/"
       ]
     }
   ]
@@ -91,9 +102,9 @@
 
 <div class="pico-ribbon">
   <div class="wrap pico-inner">
-    <span class="pico-title">Pico y placa hoy</span>
+    <span class="pico-title">Pico y placa</span>
     <div class="pico-cities" id="pico-cities">
-      <span class="pico-city"><b>Bucaramanga</b> <span class="pico-digits">—</span></span>
+      <span class="pico-city"><b>B/manga</b> <span class="pico-digits">—</span></span>
       <span class="pico-city"><b>Bogotá</b> <span class="pico-digits">—</span></span>
       <span class="pico-city"><b>Medellín</b> <span class="pico-digits">—</span></span>
     </div>
@@ -102,34 +113,22 @@
 
 <div class="utility-bar">
   <div class="wrap utility-inner">
-    <span class="utility-date" id="fecha-hoy">Bucaramanga, Colombia · julio de 2026</span>
+    <span class="utility-date">Bucaramanga
+      <svg class="flag-co" viewBox="0 0 6 4" role="img" aria-label="Colombia"><rect width="6" height="2" fill="#FCD116"/><rect y="2" width="6" height="1" fill="#003893"/><rect y="3" width="6" height="1" fill="#CE1126"/></svg>
+      <span id="fecha-hoy">· —</span>
+    </span>
     <span class="ticker-label">Mercados <span class="live-badge" id="trm-live"><span class="dot"></span>EN VIVO</span></span>
   </div>
   <div class="ticker-viewport">
     <div class="ticker-track" id="ticker-track">
       <div class="ticker-set">
-        <span class="ticker-item live js-usd-item" title="Último cierre del dólar spot en Colombia (SetFX), obtenido automáticamente vía dolarapi.com. Se actualiza en cada visita."><span class="name">USD/COP</span><span class="val js-usd-val">$3.214,40</span><span class="delta flat js-usd-delta">cierre</span></span>
-        <span class="ticker-item live" title="Oro (aprox.) — referencia en vivo vía PAXG/CoinGecko, token respaldado 1:1 por una onza troy de oro (USD/oz)."><span class="name">Oro</span><span class="val js-oro-val">US$4.050</span><span class="delta flat js-oro-delta">≈ oz</span></span>
-        <span class="ticker-item live" title="Bitcoin (BTC/USD). Fuente: CoinGecko, en vivo con variación de 24 h."><span class="name">Bitcoin</span><span class="val js-btc-val">US$64.300</span><span class="delta flat js-btc-delta">cripto</span></span>
-        <span class="ticker-item" title="Ecopetrol (BVC). Cierre del 24 de julio de 2026."><span class="name">Ecopetrol</span><span class="val">$2.590</span><span class="delta down">▼ 0,58%</span></span>
-        <span class="ticker-item" title="Bancolombia, que cotiza bajo su holding Grupo Cibest (BVC). Cierre del 24 de julio de 2026."><span class="name">Bancolombia (Cibest)</span><span class="val">$81.020</span><span class="delta down">▼ 2,53%</span></span>
-        <span class="ticker-item" title="Grupo Sura (BVC). Cierre del 24 de julio de 2026."><span class="name">Grupo Sura</span><span class="val">$53.540</span><span class="delta up">▲ 1,02%</span></span>
-        <span class="ticker-item" title="Interconexión Eléctrica S.A. — ISA (BVC). Cierre del 24 de julio de 2026."><span class="name">ISA</span><span class="val">$28.740</span><span class="delta down">▼ 1,58%</span></span>
-        <span class="ticker-item" title="Grupo Argos (BVC). Cierre del 24 de julio de 2026."><span class="name">Grupo Argos</span><span class="val">$16.300</span><span class="delta up">▲ 0,87%</span></span>
-        <span class="ticker-item" title="Tecnoglass (NYSE, en dólares). Cierre del 24 de julio de 2026."><span class="name">Tecnoglass</span><span class="val">US$45,30</span><span class="delta up">▲ 3,57%</span></span>
-        <span class="ticker-item" title="Grupo Nutresa (BVC). Cierre del 24 de julio de 2026."><span class="name">Nutresa</span><span class="val">$312.000</span><span class="delta down">▼ 0,10%</span></span>
-        <span class="ticker-item" title="Banco de Bogotá (BVC). Cierre del 24 de julio de 2026."><span class="name">Banco de Bogotá</span><span class="val">$37.100</span><span class="delta down">▼ 0,91%</span></span>
-        <span class="ticker-item" title="Davivienda — acción preferencial (BVC). Cierre del 24 de julio de 2026."><span class="name">Davivienda</span><span class="val">$24.180</span><span class="delta up">▲ 0,67%</span></span>
-        <span class="ticker-item" title="Celsia (BVC), sector energía. Sustituye a Isagén, que ya no cotiza en la Bolsa de Valores de Colombia desde 2017. Cierre del 24 de julio de 2026."><span class="name">Celsia</span><span class="val">$4.950</span><span class="delta down">▼ 2,94%</span></span>
-        <span class="ticker-item" title="Índice MSCI COLCAP de la Bolsa de Valores de Colombia (puntos). Cierre del 25 de julio de 2026."><span class="name">COLCAP</span><span class="val">2.274,53</span><span class="delta down">▼ 0,38%</span></span>
-        <span class="ticker-item" title="Rendimiento de los TES a 10 años (deuda pública colombiana). Referencia de julio de 2026."><span class="name">TES 10 años</span><span class="val">13,20%</span><span class="delta flat">jul</span></span>
-        <span class="ticker-item" title="Tasa de usura para crédito de consumo y ordinario, certificada por la Superintendencia Financiera para julio de 2026. Es el interés máximo legal."><span class="name">Tasa de usura</span><span class="val">28,79%</span><span class="delta flat">tope legal</span></span>
-        <span class="ticker-item" title="Precio interno de referencia de la carga de 125 kg de café pergamino seco. Fuente: Federación Nacional de Cafeteros, 24 de julio de 2026."><span class="name">Café (carga)</span><span class="val">$2.160.000</span><span class="delta flat">24 jul</span></span>
-        <span class="ticker-item" title="Petróleo Brent, referencia internacional (USD/barril). Cierre del 24 de julio de 2026."><span class="name">Brent</span><span class="val">US$98,31</span><span class="delta flat">24 jul</span></span>
-        <span class="ticker-item" title="Índice S&amp;P 500 (EE. UU.), en puntos. Referencia del 16 de julio de 2026."><span class="name">S&amp;P 500</span><span class="val">7.533,77</span><span class="delta flat">16 jul</span></span>
-        <span class="ticker-item" title="Valor aproximado de la UVR al 25 de julio de 2026. Fuente: Banco de la República."><span class="name">UVR</span><span class="val">$416,19</span><span class="delta flat">25 jul</span></span>
-        <span class="ticker-item" title="IPC — variación anual de junio de 2026. Fuente: DANE."><span class="name">Inflación anual</span><span class="val">6,14%</span><span class="delta up">▲ 0,30 pp</span></span>
-        <span class="ticker-item" title="Tasa de intervención de política monetaria, vigente desde el 3 de julio de 2026. Fuente: Banco de la República."><span class="name">Tasa BanRep</span><span class="val">12,00%</span><span class="delta up">▲ 0,75 pp</span></span>
+        {%- for ind in mercado.indicadores %}
+        <a class="ticker-item{% if ind.vivo %} live{% endif %}{% if ind.vivo == 'usd' %} js-usd-item{% endif %}" href="/indicadores/#{{ ind.id }}" title="{{ ind.title }} Toca para ver la gráfica.">
+          <span class="name">{{ ind.nombre }}</span>
+          <span class="val{% if ind.vivo %} js-{{ ind.vivo }}-val{% endif %}">{{ ind.valor }}</span>
+          <span class="delta {{ ind.dir or 'flat' }}{% if ind.vivo %} js-{{ ind.vivo }}-delta{% endif %}">{{ ind.delta }}</span>
+        </a>
+        {%- endfor %}
       </div>
     </div>
   </div>
@@ -151,7 +150,9 @@
       <span class="nav-toggle-hint">Ver todas</span>
     </button>
     <div class="nav-inner" id="nav-menu">
-    <a href="/" class="current">Portada</a>
+    <a href="/" {% if page.url == '/' %}class="current"{% endif %}>Portada</a>
+    <a href="/multimedia/" {% if page.url == '/multimedia/' %}class="current"{% endif %}>Multimedia</a>
+    <a href="/indicadores/" {% if page.url == '/indicadores/' %}class="current"{% endif %}>Indicadores</a>
     <a href="#">Inversión</a>
     <a href="#">Finanzas personales</a>
     <a href="#">Tasas</a>
@@ -162,40 +163,19 @@
     <a href="#">Educación financiera</a>
     <a href="#">Opinión</a>
     <a href="#">Entrevistas</a>
-    <a href="#">Glosario</a>
+    <a href="/quien-soy/" {% if page.url == '/quien-soy/' %}class="current"{% endif %}>Quién soy</a>
     </div>
   </div>
 </nav>
 
-<!-- Anuncio vendido: Tienda Sin Estrés (billboard superior) -->
-<div class="wrap ad-wrap">
-  <div class="ad-unit ad-cafe">
-    <span class="ad-tag">Publicidad</span>
-    <div class="ad-media" aria-hidden="true">
-      <img src="/assets/ad-tinto.jpg" alt="" loading="lazy" decoding="async" width="1024" height="683">
-    </div>
-    <div class="ad-body">
-      <div class="ad-copy">
-        <p class="ad-brand">Tienda Sin Estrés · Bucaramanga</p>
-        <h3 class="ad-headline">Tu tinto va por la casa</h3>
-        <p class="ad-text">Genera tu cupón, muéstralo en caja y reclama un tinto gratis. Uno por persona, mientras dure la promoción.</p>
-        <div class="ad-actions">
-          <button type="button" class="ad-cta primary" id="btn-cupon">Generar mi cupón</button>
-          <a class="ad-cta ghost" id="link-sinestres" href="https://maps.app.goo.gl/8Lopf2Nfjzwn2ymj7" target="_blank" rel="noopener sponsored">Cómo llegar →</a>
-        </div>
-      </div>
-      <div class="ad-coupon" id="cupon-tinto" hidden>
-        <img id="qr-tinto" width="108" height="108" alt="Código QR que abre la ubicación de Tienda sinestres en Google Maps"
-             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeAAAAHgAQMAAABHGizWAAAABlBMVEX///8PFxKopGGdAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACT0lEQVR4nO3cPXKDMBCG4WVcpPQROIqPho/mo3CElC48VkC7K1Ya/DMxpMi8X5EhwCNXO0grbBFCCCHkn+crhYzTiXSzK+k+/TnqhZsfaC5gMHg3/G1H0/UxDihduur/Xcaj39eDweBX+ORVN8owH3wto7QX0zQgGAz+Q5zPjfM5f0qeRQQMBn+ADyk5LhPTt0sSDAZ/ji0B5xVf5wd+0QIGg1/gEMNadbkk53o9d292aMBg8Me4SZ64SsSiS8R3AgaD55S5p5bklENud55CBYZtheS9UDAYvAuu0k8X7SmZtFUzPxGHuy0RQ7GDweCnuC5J7XuKWPmFued57QPBYPC2+OjdGGvVeIcmPxyrkYdq9w8MBq9ja7LczaRqg8+WgzpKP5VkaieuYDB4a/ytNx6sG1OP0sRGuYDB4Ldw02SJr2wmb4A+LEkwGLwJlnyjTVLLtkNowpxmcbOL4mtFMBj8FNv0MmwY9MmeiEfte4qszj3BYPDWuNpW7721WfbcLf4mi/hrLmAw+AXO0bcyU8g1NkV7x0vAYPAe2Pbw5gyq8ijh5TJfDko9cQWDwQ+wRXfGU5ledrEkNWX3DwwG74ObDHrTvMG3jNwUOxgMfoqrPbyxOafbCqn5ausSMBi8Pa6Wg4Ov+Eo9G54zJKkDBoMf4LrqbrkkL/6rfJcXE1cwGLwrltKE0XZnaN+UpigYDP4FPqXSZBmWDb6cUQQMBu+ILeHHjMILZ7mefYMvtV8XAoPBKzjE5p6GPWfJX1zo9eC6fAAYDN4cE0IIIWQtP+3oa/m3wKcJAAAAAElFTkSuQmCC">
-        <div>
-          <p class="coupon-title">Cupón · Tinto gratis</p>
-          <p class="coupon-code" id="cupon-codigo">TINTO-0000</p>
-          <p class="coupon-valid" id="cupon-vigencia">Escanea el QR para llegar a la tienda.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+{% if page.url == '/' %}
+{# Anuncio superior de portada: contextual y compacto para no robar pantalla #}
+{% set anuncio = anuncios.anuncios | anuncioPara('Portada', 'portada-superior') %}
+{% set anuncioCompacto = true %}
+{% include "anuncio.njk" %}
+{% set anuncio = null %}
+{% set anuncioCompacto = false %}
+{% endif %}
 
 <main>
 {{ content | safe }}
@@ -205,16 +185,21 @@
   <div class="wrap">
     <div class="footer-grid">
       <div class="author-block">
-        <h3>[Nombre del periodista]</h3>
-        <p>Periodista económico con más de 20 años cubriendo la economía del oriente colombiano — trayectoria, medios previos y reconocimientos van aquí.</p>
+        <h3>Francisco Javier Gómez</h3>
+        <p>Director de Economía Santander. Comunicador social y periodista, magíster en Asuntos Internacionales, con más de 20 años cubriendo la economía del país y del oriente colombiano en medios como Valora Analitik, Semana, Dinero, Portafolio, El Tiempo y Vanguardia.</p>
         <div class="author-links">
-          <a href="#">LinkedIn ↗</a>
-          <a href="#">Publicaciones anteriores ↗</a>
+          <a href="/quien-soy/">Quién soy →</a>
+          <a href="tel:+573504910178">Tel. 350 491 0178</a>
+          <a href="https://wa.me/573504910178" target="_blank" rel="noopener">WhatsApp ↗</a>
+          <a href="mailto:pachogom2000@gmail.com">Escríbeme</a>
+          <a href="https://www.valoraanalitik.com/author/francisco-gomez/" target="_blank" rel="noopener">Publicaciones anteriores ↗</a>
         </div>
       </div>
       <div class="footer-col">
         <h4>Secciones</h4>
         <ul>
+          <li><a href="/multimedia/">Multimedia</a></li>
+          <li><a href="/indicadores/">Indicadores</a></li>
           <li><a href="#">Inversión</a></li>
           <li><a href="#">Empleo</a></li>
           <li><a href="#">Construcción</a></li>
@@ -224,9 +209,9 @@
       <div class="footer-col">
         <h4>Sobre el medio</h4>
         <ul>
-          <li><a href="#">Cómo trabajamos</a></li>
+          <li><a href="/quien-soy/">Quién soy</a></li>
           <li><a href="#">Política editorial</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="tel:+573504910178">Contacto: 350 491 0178</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -273,30 +258,32 @@
       } catch (e) { return new Date(); }
     }
 
-    // ---------- 1) Fecha del encabezado ----------
+    // ---------- 1) Fecha del encabezado: dd/mmm/yyyy ----------
     try {
-      var hoyTxt = new Intl.DateTimeFormat('es-CO', {
-        weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'America/Bogota'
-      }).format(new Date());
-      hoyTxt = hoyTxt.charAt(0).toUpperCase() + hoyTxt.slice(1);
+      var fp = new Intl.DateTimeFormat('es-CO', {
+        day: '2-digit', month: 'short', year: 'numeric', timeZone: 'America/Bogota'
+      }).formatToParts(new Date());
+      var fo = {};
+      for (var fi = 0; fi < fp.length; fi++) { fo[fp[fi].type] = fp[fi].value; }
       var elFecha = document.getElementById('fecha-hoy');
-      if (elFecha) elFecha.textContent = 'Bucaramanga, Colombia · ' + hoyTxt;
+      if (elFecha && fo.day && fo.month && fo.year) {
+        elFecha.textContent = '· ' + fo.day + '/' + fo.month.replace('.', '') + '/' + fo.year;
+      }
     } catch (e) {}
 
-    // ---------- 2) Pico y placa ----------
+    // ---------- 2) Pico y placa (una sola fila, nombres cortos) ----------
     (function () {
       var cont = document.getElementById('pico-cities');
       if (!cont) return;
       var d = hoyBogota();
       var dow = d.getDay();            // 0 domingo … 6 sábado
-      var dia = d.getDate();
 
-      var bga = { 1: '7 y 8', 2: '9 y 0', 3: '1 y 2', 4: '3 y 4', 5: '5 y 6' };
-      var med = { 1: '5 y 8', 2: '1 y 4', 3: '0 y 2', 4: '3 y 6', 5: '7 y 9' };
+      var bga = { 1: '7·8', 2: '9·0', 3: '1·2', 4: '3·4', 5: '5·6' };
+      var med = { 1: '5·8', 2: '1·4', 3: '0·2', 4: '3·6', 5: '7·9' };
 
-      // Bucaramanga: sábados con rotación propia (ref.: sábado 25 jul 2026 = "7 y 8")
+      // Bucaramanga: sábados con rotación propia (ref.: sábado 25 jul 2026 = "7·8")
       function sabadoBga() {
-        var ciclo = ['1 y 2', '3 y 4', '5 y 6', '7 y 8', '9 y 0'];
+        var ciclo = ['1·2', '3·4', '5·6', '7·8', '9·0'];
         var ref = new Date(2026, 6, 25);
         var semanas = Math.round((d - ref) / 604800000);
         return ciclo[((3 + semanas) % 5 + 5) % 5];
@@ -304,17 +291,18 @@
 
       var datos = [];
       if (dow >= 1 && dow <= 5) {
-        datos.push({ c: 'Bucaramanga', v: bga[dow], h: '6:00 a 20:00' });
-        datos.push({ c: 'Bogotá', v: (dia % 2 === 1) ? '6, 7, 8, 9 y 0' : '1, 2, 3, 4 y 5', h: '6:00 a 21:00' });
-        datos.push({ c: 'Medellín', v: med[dow], h: '5:00 a 20:00' });
+        var dia = d.getDate();
+        datos.push({ c: 'B/manga', n: 'Bucaramanga', v: bga[dow], h: '6:00 a 20:00' });
+        datos.push({ c: 'Bogotá', n: 'Bogotá', v: (dia % 2 === 1) ? '6·7·8·9·0' : '1·2·3·4·5', h: '6:00 a 21:00' });
+        datos.push({ c: 'Medellín', n: 'Medellín', v: med[dow], h: '5:00 a 20:00' });
       } else if (dow === 6) {
-        datos.push({ c: 'Bucaramanga', v: sabadoBga(), h: '9:00 a 13:00' });
-        datos.push({ c: 'Bogotá', v: null, h: 'sin restricción' });
-        datos.push({ c: 'Medellín', v: null, h: 'sin restricción' });
+        datos.push({ c: 'B/manga', n: 'Bucaramanga', v: sabadoBga(), h: '9:00 a 13:00' });
+        datos.push({ c: 'Bogotá', n: 'Bogotá', v: null, h: 'sin restricción' });
+        datos.push({ c: 'Medellín', n: 'Medellín', v: null, h: 'sin restricción' });
       } else {
-        datos.push({ c: 'Bucaramanga', v: null, h: 'sin restricción' });
-        datos.push({ c: 'Bogotá', v: null, h: 'sin restricción' });
-        datos.push({ c: 'Medellín', v: null, h: 'sin restricción' });
+        datos.push({ c: 'B/manga', n: 'Bucaramanga', v: null, h: 'sin restricción' });
+        datos.push({ c: 'Bogotá', n: 'Bogotá', v: null, h: 'sin restricción' });
+        datos.push({ c: 'Medellín', n: 'Medellín', v: null, h: 'sin restricción' });
       }
 
       cont.textContent = '';
@@ -334,8 +322,8 @@
         wrap.appendChild(dig);
         wrap.appendChild(tm);
         wrap.title = it.v
-          ? 'Placas restringidas hoy en ' + it.c + ' para vehículos particulares, ' + it.h + '.'
-          : 'Hoy no hay pico y placa para vehículos particulares en ' + it.c + '.';
+          ? 'Placas restringidas hoy en ' + it.n + ' para vehículos particulares (' + it.v.split('·').join(', ') + '), ' + it.h + '.'
+          : 'Hoy no hay pico y placa para vehículos particulares en ' + it.n + '.';
         cont.appendChild(wrap);
       }
     })();
@@ -348,6 +336,7 @@
       if (!set) return;
       var clon = set.cloneNode(true);
       clon.setAttribute('aria-hidden', 'true');
+      clon.querySelectorAll('a').forEach ? clon.querySelectorAll('a').forEach(function (a) { a.setAttribute('tabindex', '-1'); }) : null;
       track.appendChild(clon);
     })();
 
@@ -371,7 +360,8 @@
         each('.js-usd-item', function (el) {
           el.title = 'Último cierre del dólar spot en Colombia (SetFX), vía dolarapi.com — se actualiza en cada visita.'
             + (!isNaN(c) ? ' · Compra $' + fmtNum(c, 2) : '')
-            + (!isNaN(v) ? ' · Venta $' + fmtNum(v, 2) : '');
+            + (!isNaN(v) ? ' · Venta $' + fmtNum(v, 2) : '')
+            + ' Toca para ver la gráfica.';
         });
         if (elLive) elLive.classList.add('on');
       })
@@ -471,6 +461,62 @@
         if (reverso) reverso.setAttribute('aria-expanded', abierta ? 'true' : 'false');
         var destino = abierta ? reverso : frente;
         if (destino) { window.setTimeout(function () { destino.focus(); }, 320); }
+      });
+    });
+
+    // ---------- 9) Multimedia: reproducir video en la propia tarjeta ----------
+    each('.mm-play', function (btn) {
+      btn.addEventListener('click', function () {
+        var id = btn.getAttribute('data-yt');
+        if (!id) return;
+        var f = document.createElement('iframe');
+        f.className = 'mm-frame';
+        f.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(id) + '?autoplay=1';
+        f.setAttribute('allow', 'autoplay; encrypted-media; picture-in-picture');
+        f.setAttribute('allowfullscreen', '');
+        f.title = btn.getAttribute('aria-label') || 'Video';
+        btn.parentNode.replaceChild(f, btn);
+      });
+    });
+
+    // ---------- 10) Multimedia: galerías con visor tipo lightbox ----------
+    each('.mm-open-galeria', function (btn) {
+      btn.addEventListener('click', function () {
+        var tpl = document.getElementById(btn.getAttribute('data-galeria'));
+        if (!tpl) return;
+        var dlg = document.getElementById('mm-lightbox');
+        if (!dlg) {
+          dlg = document.createElement('dialog');
+          dlg.id = 'mm-lightbox';
+          dlg.className = 'mm-lightbox';
+          dlg.innerHTML = '<button type="button" class="mm-lb-close" aria-label="Cerrar galería">×</button>' +
+            '<button type="button" class="mm-lb-prev" aria-label="Foto anterior">‹</button>' +
+            '<div class="mm-lb-stage"></div>' +
+            '<button type="button" class="mm-lb-next" aria-label="Foto siguiente">›</button>' +
+            '<p class="mm-lb-count"></p>';
+          document.body.appendChild(dlg);
+          dlg.addEventListener('click', function (ev) { if (ev.target === dlg) dlg.close(); });
+          dlg.querySelector('.mm-lb-close').addEventListener('click', function () { dlg.close(); });
+        }
+        var fotos = [];
+        var imgs = tpl.content ? tpl.content.querySelectorAll('img') : [];
+        for (var i = 0; i < imgs.length; i++) { fotos.push({ src: imgs[i].getAttribute('src'), alt: imgs[i].getAttribute('alt') || '' }); }
+        if (!fotos.length) return;
+        var idx = 0;
+        var stage = dlg.querySelector('.mm-lb-stage');
+        var count = dlg.querySelector('.mm-lb-count');
+        function pinta() {
+          stage.innerHTML = '';
+          var im = document.createElement('img');
+          im.src = fotos[idx].src;
+          im.alt = fotos[idx].alt;
+          stage.appendChild(im);
+          count.textContent = (idx + 1) + ' / ' + fotos.length;
+        }
+        dlg.querySelector('.mm-lb-prev').onclick = function () { idx = (idx - 1 + fotos.length) % fotos.length; pinta(); };
+        dlg.querySelector('.mm-lb-next').onclick = function () { idx = (idx + 1) % fotos.length; pinta(); };
+        pinta();
+        if (dlg.showModal) dlg.showModal(); else dlg.setAttribute('open', '');
       });
     });
   })();

@@ -48,7 +48,7 @@ collections:
       - label: "Autor"
         name: "autor"
         widget: "string"
-        default: "Economía Santander"
+        default: "Francisco Javier Gómez"
         required: false
       - label: "Imagen destacada"
         name: "imagen"
@@ -65,3 +65,111 @@ collections:
         name: "tags"
         widget: "hidden"
         default: "noticias"
+
+  - name: "multimedia"
+    label: "Multimedia"
+    label_singular: "Contenido multimedia"
+    folder: "src/multimedia"
+    create: true
+    slug: "{{slug}}"
+    format: "frontmatter"
+    extension: "md"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Fecha", name: "date", widget: "datetime" }
+      - label: "Tipo"
+        name: "tipo"
+        widget: "select"
+        default: "video"
+        options:
+          - { label: "Video (YouTube)", value: "video" }
+          - { label: "Podcast", value: "podcast" }
+          - { label: "Galería de fotos", value: "galeria" }
+          - { label: "Foto", value: "foto" }
+      - label: "Descripción"
+        name: "descripcion"
+        widget: "text"
+        required: false
+      - label: "Video de YouTube (URL o ID)"
+        name: "youtube"
+        widget: "string"
+        required: false
+        hint: "Solo para tipo Video. Pega la URL completa o el ID, ej: https://www.youtube.com/watch?v=XXXXX"
+      - label: "Podcast en Spotify (URL del episodio)"
+        name: "spotify"
+        widget: "string"
+        required: false
+        hint: "Solo para tipo Podcast. Pega el enlace del episodio o del programa."
+      - label: "Archivo de audio (MP3)"
+        name: "audio"
+        widget: "file"
+        required: false
+        hint: "Alternativa a Spotify para tipo Podcast: sube el MP3 directamente."
+      - label: "Imagen de portada"
+        name: "portada"
+        widget: "image"
+        required: false
+        hint: "Obligatoria para tipo Foto; en galerías es la miniatura (si falta, se usa la primera foto)."
+      - label: "Fotos de la galería"
+        name: "imagenes"
+        widget: "list"
+        required: false
+        field: { label: "Foto", name: "foto", widget: "image" }
+      - label: "Fuente o crédito"
+        name: "fuente"
+        widget: "string"
+        required: false
+
+  - name: "publicidad"
+    label: "Publicidad"
+    files:
+      - file: "src/_data/anuncios.json"
+        label: "Inventario de anuncios"
+        name: "anuncios"
+        fields:
+          - label: "Anuncios"
+            name: "anuncios"
+            widget: "list"
+            summary: "{{fields.marca}} — {{fields.titular}}"
+            fields:
+              - { label: "Identificador", name: "id", widget: "string", hint: "Corto, sin espacios y único. Ej: tinto" }
+              - { label: "Activo", name: "activo", widget: "boolean", default: true }
+              - { label: "Marca / anunciante", name: "marca", widget: "string" }
+              - { label: "Titular", name: "titular", widget: "string" }
+              - { label: "Texto", name: "texto", widget: "text" }
+              - label: "Tipo"
+                name: "tipo"
+                widget: "select"
+                default: "estandar"
+                options:
+                  - { label: "Estándar (clic lleva al sitio)", value: "estandar" }
+                  - { label: "Cupón interactivo", value: "cupon" }
+              - label: "Tema visual"
+                name: "tema"
+                widget: "select"
+                default: "ad-cafe"
+                options:
+                  - { label: "Café (tonos cálidos)", value: "ad-cafe" }
+                  - { label: "Nocturno (azul con destellos)", value: "ad-piro" }
+              - { label: "Imagen de fondo", name: "imagen", widget: "image", required: false }
+              - { label: "Enlace del anunciante", name: "url", widget: "string" }
+              - { label: "Texto del botón", name: "cta", widget: "string" }
+              - { label: "Botón secundario (solo cupón)", name: "ctaSecundario", widget: "string", required: false }
+              - { label: "Sitio (texto lateral)", name: "sitio", widget: "string", required: false }
+              - { label: "Nota lateral", name: "notaLateral", widget: "string", required: false }
+              - label: "Categorías donde puede aparecer"
+                name: "categorias"
+                widget: "select"
+                multiple: true
+                hint: "El anuncio solo rota en la portada y en las noticias de estas categorías."
+                options:
+                  - "Portada"
+                  - "Inversión"
+                  - "Educación financiera"
+                  - "Empleo"
+                  - "Finanzas personales"
+                  - "Construcción"
+                  - "Industria"
+                  - "Agro"
+                  - "Nacional"
+                  - "Comercio y consumo"

@@ -1,0 +1,40 @@
+{# Tarjeta de un contenido multimedia. Espera `item` (entrada de collections.multimedia). #}
+{% set mmTipo = item.data.tipo or 'video' %}
+<article class="mm-card" id="mm-{{ item.fileSlug }}">
+  <div class="mm-thumb">
+    {% if mmTipo == 'video' %}
+      {% set yid = item.data.youtube | ytId %}
+      <button type="button" class="mm-play" data-yt="{{ yid }}" aria-label="Reproducir video: {{ item.data.title }}">
+        <img src="https://i.ytimg.com/vi/{{ yid }}/hqdefault.jpg" alt="" loading="lazy" decoding="async" width="480" height="360">
+        <span class="mm-play-btn" aria-hidden="true"></span>
+      </button>
+    {% elif mmTipo == 'podcast' %}
+      {% if item.data.spotify %}
+        <iframe class="mm-spotify" src="{{ item.data.spotify | spotifyEmbed }}" loading="lazy" allow="encrypted-media" title="Podcast: {{ item.data.title }}"></iframe>
+      {% elif item.data.audio %}
+        <div class="mm-audio">
+          <audio controls preload="none" src="{{ item.data.audio }}"></audio>
+        </div>
+      {% elif item.data.portada %}
+        <img src="{{ item.data.portada }}" alt="" loading="lazy" decoding="async">
+      {% endif %}
+    {% elif mmTipo == 'galeria' %}
+      {% set portada = item.data.portada or item.data.imagenes[0] %}
+      <button type="button" class="mm-open-galeria" data-galeria="galeria-{{ item.fileSlug }}" aria-label="Abrir galería: {{ item.data.title }}">
+        <img src="{{ portada }}" alt="" loading="lazy" decoding="async">
+        {% if item.data.imagenes %}<span class="mm-count">{{ item.data.imagenes | length }} fotos</span>{% endif %}
+      </button>
+      <template id="galeria-{{ item.fileSlug }}">
+        {%- for im in item.data.imagenes -%}
+        <img src="{{ im }}" alt="{{ item.data.title }} — foto {{ loop.index }}">
+        {%- endfor -%}
+      </template>
+    {% else %}
+      {% if item.data.portada %}<img src="{{ item.data.portada }}" alt="{{ item.data.imagenAlt or item.data.title }}" loading="lazy" decoding="async">{% endif %}
+    {% endif %}
+    <span class="mm-tipo mm-tipo-{{ mmTipo }}">{{ { video: 'Video', podcast: 'Podcast', galeria: 'Galería', foto: 'Foto' }[mmTipo] or mmTipo }}</span>
+  </div>
+  <h3 class="mm-title">{{ item.data.title }}</h3>
+  {% if item.data.descripcion %}<p class="mm-desc">{{ item.data.descripcion }}</p>{% endif %}
+  {% if item.data.fuente %}<p class="mm-fuente">{{ item.data.fuente }}</p>{% endif %}
+</article>

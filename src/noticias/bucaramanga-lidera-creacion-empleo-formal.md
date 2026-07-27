@@ -6,7 +6,7 @@ categoria: "Empleo"
 chipTipo: "propio"
 chipLabel: "Redacción propia"
 excerpt: "Datos del DANE muestran un repunte en construcción y servicios, mientras el comercio sigue rezagado frente a 2025. Los gremios piden cautela ante la desaceleración nacional."
-autor: "[Nombre del periodista]"
+autor: "Francisco Javier Gómez"
 tags: noticias
 ---
 Datos del [DANE](https://www.dane.gov.co) muestran un repunte en **construcción y servicios**, mientras el comercio sigue rezagado frente a **2025**. Los gremios piden cautela ante la desaceleración nacional.

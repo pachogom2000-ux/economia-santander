@@ -1,0 +1,33 @@
+{
+  "anuncios": [
+    {
+      "id": "tinto",
+      "activo": true,
+      "marca": "Tienda Sin Estrés · Bucaramanga",
+      "titular": "Tu tinto va por la casa",
+      "texto": "Genera tu cupón, muéstralo en caja y reclama un tinto gratis. Uno por persona, mientras dure la promoción.",
+      "tipo": "cupon",
+      "tema": "ad-cafe",
+      "imagen": "/assets/ad-tinto.jpg",
+      "url": "https://maps.app.goo.gl/8Lopf2Nfjzwn2ymj7",
+      "cta": "Generar mi cupón",
+      "ctaSecundario": "Cómo llegar →",
+      "categorias": ["Portada", "Finanzas personales", "Educación financiera", "Empleo", "Comercio y consumo"]
+    },
+    {
+      "id": "pirotecnia",
+      "activo": true,
+      "marca": "Pirotecnia El Vaquero",
+      "titular": "Que la fiesta se vea desde lejos",
+      "texto": "Pólvora de bajo ruido, espectáculos con manejo profesional y parqueadero propio en Bucaramanga.",
+      "tipo": "estandar",
+      "tema": "ad-piro",
+      "imagen": "/assets/ad-pirotecnia.jpg",
+      "url": "https://vaquerobucara.com",
+      "cta": "Ver el catálogo →",
+      "sitio": "vaquerobucara.com",
+      "notaLateral": "Venta segura y asesorada",
+      "categorias": ["Portada", "Inversión", "Industria", "Agro", "Construcción", "Nacional", "Comercio y consumo"]
+    }
+  ]
+}
