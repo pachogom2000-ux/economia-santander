@@ -181,6 +181,11 @@ collections:
         widget: "string"
         required: false
         hint: "Solo para tipo Video. Pega la URL completa o el ID, ej: https://www.youtube.com/watch?v=XXXXX"
+      - label: "Archivo de video (MP4)"
+        name: "archivo"
+        widget: "file"
+        required: false
+        hint: "Alternativa a YouTube: sube el MP4 directamente (clips cortos y comprimidos, ideal menos de 5 MB). Si llenas este campo, se ignora el de YouTube."
       - label: "Podcast en Spotify (URL del episodio)"
         name: "spotify"
         widget: "string"

@@ -3,11 +3,18 @@
 <article class="mm-card" id="mm-{{ item.fileSlug }}">
   <div class="mm-thumb">
     {% if mmTipo == 'video' %}
+      {% if item.data.archivo %}
+      <video class="mm-video" controls preload="none" playsinline
+             {% if item.data.portada %}poster="{{ item.data.portada }}"{% endif %}
+             src="{{ item.data.archivo }}"
+             title="{{ item.data.title }}"></video>
+      {% else %}
       {% set yid = item.data.youtube | ytId %}
       <button type="button" class="mm-play" data-yt="{{ yid }}" aria-label="Reproducir video: {{ item.data.title }}">
         <img src="https://i.ytimg.com/vi/{{ yid }}/hqdefault.jpg" alt="" loading="lazy" decoding="async" width="480" height="360">
         <span class="mm-play-btn" aria-hidden="true"></span>
       </button>
+      {% endif %}
     {% elif mmTipo == 'podcast' %}
       {% set spotifyUrl = item.data.spotify | spotifyEmbed %}
       {% if spotifyUrl %}

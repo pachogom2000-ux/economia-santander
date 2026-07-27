@@ -1108,6 +1108,7 @@
   }
   .mm-play:hover .mm-play-btn, .mm-play:focus-visible .mm-play-btn { transform: translate(-50%, -50%) scale(1.08); background: var(--accent-strong, #084f2a); }
   .mm-frame { width: 100%; height: 100%; border: 0; display: block; }
+  .mm-video { width: 100%; height: 100%; object-fit: cover; display: block; background: #000; }
   .mm-spotify { width: 100%; height: 100%; border: 0; display: block; border-radius: 8px; }
   .mm-audio { display: flex; align-items: center; justify-content: center; height: 100%; padding: 16px; }
   .mm-audio audio { width: 100%; }
