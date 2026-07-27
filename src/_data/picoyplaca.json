@@ -1,0 +1,57 @@
+{
+  "ciudades": [
+    {
+      "nombre": "Bucaramanga",
+      "horario": "6:00 a 20:00",
+      "horarioSabado": "9:00 a 13:00",
+      "rotaciones": [
+        {
+          "desde": "2026-07-06",
+          "vigencia": "Julio, agosto y septiembre de 2026",
+          "lunes": "7 y 8",
+          "martes": "9 y 0",
+          "miercoles": "1 y 2",
+          "jueves": "3 y 4",
+          "viernes": "5 y 6"
+        }
+      ],
+      "sabados": [
+        { "fecha": "2026-07-11", "digitos": "3 y 4" },
+        { "fecha": "2026-07-18", "digitos": "5 y 6" },
+        { "fecha": "2026-07-25", "digitos": "7 y 8" }
+      ]
+    },
+    {
+      "nombre": "Bogotá",
+      "horario": "6:00 a 21:00",
+      "reglaParidad": {
+        "impar": "6, 7, 8, 9 y 0",
+        "par": "1, 2, 3, 4 y 5"
+      }
+    },
+    {
+      "nombre": "Medellín",
+      "horario": "5:00 a 20:00",
+      "rotaciones": [
+        {
+          "desde": "2026-02-02",
+          "vigencia": "Primer semestre de 2026, hasta el 31 de julio",
+          "lunes": "1 y 7",
+          "martes": "0 y 3",
+          "miercoles": "4 y 6",
+          "jueves": "5 y 9",
+          "viernes": "2 y 8"
+        },
+        {
+          "desde": "2026-08-03",
+          "vigencia": "Segundo semestre de 2026, desde el 3 de agosto",
+          "lunes": "5 y 8",
+          "martes": "1 y 4",
+          "miercoles": "0 y 2",
+          "jueves": "3 y 6",
+          "viernes": "7 y 9"
+        }
+      ]
+    }
+  ]
+}

@@ -11,6 +11,61 @@ media_folder: "src/assets/uploads"
 public_folder: "/assets/uploads"
 
 collections:
+  - name: "datos"
+    label: "Datos del sitio"
+    files:
+      - name: "picoyplaca"
+        label: "Pico y placa"
+        file: "src/_data/picoyplaca.json"
+        format: "json"
+        description: >-
+          Dígitos de la franja superior. Medellín rota por semestres y
+          Bucaramanga por trimestres: añade la rotación nueva con su fecha
+          de inicio y el sitio cambia solo ese día. No borres la anterior.
+        fields:
+          - label: "Ciudades"
+            name: "ciudades"
+            widget: "list"
+            fields:
+              - { label: "Ciudad", name: "nombre", widget: "string" }
+              - label: "Horario entre semana"
+                name: "horario"
+                widget: "string"
+                hint: "Ejemplo: 6:00 a 20:00"
+              - label: "Horario del sábado"
+                name: "horarioSabado"
+                widget: "string"
+                required: false
+              - label: "Rotaciones de lunes a viernes"
+                name: "rotaciones"
+                widget: "list"
+                required: false
+                hint: "Una por cada cambio oficial. El sitio usa la más reciente que ya haya empezado."
+                fields:
+                  - { label: "Rige desde", name: "desde", widget: "string", hint: "Formato AAAA-MM-DD, por ejemplo 2026-08-03" }
+                  - { label: "Vigencia (nota interna)", name: "vigencia", widget: "string", required: false }
+                  - { label: "Lunes", name: "lunes", widget: "string" }
+                  - { label: "Martes", name: "martes", widget: "string" }
+                  - { label: "Miércoles", name: "miercoles", widget: "string" }
+                  - { label: "Jueves", name: "jueves", widget: "string" }
+                  - { label: "Viernes", name: "viernes", widget: "string" }
+              - label: "Sábados con restricción"
+                name: "sabados"
+                widget: "list"
+                required: false
+                hint: "Solo fechas confirmadas por la autoridad de tránsito. Un sábado que no esté aquí se muestra como Libre."
+                fields:
+                  - { label: "Fecha", name: "fecha", widget: "string", hint: "Formato AAAA-MM-DD" }
+                  - { label: "Dígitos", name: "digitos", widget: "string" }
+              - label: "Regla por paridad de fecha"
+                name: "reglaParidad"
+                widget: "object"
+                required: false
+                hint: "Solo para ciudades como Bogotá, que alternan según el día del mes sea par o impar."
+                fields:
+                  - { label: "Días impares", name: "impar", widget: "string" }
+                  - { label: "Días pares", name: "par", widget: "string" }
+
   - name: "noticias"
     label: "Noticias"
     folder: "src/noticias"

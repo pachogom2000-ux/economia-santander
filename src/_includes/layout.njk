@@ -253,6 +253,10 @@
   </div>
 </footer>
 
+<!-- Tablas de pico y placa. Se editan en el CMS, en "Datos del sitio",
+     y salen de src/_data/picoyplaca.json. No tocar a mano aqui. -->
+<script>window.__PICO_Y_PLACA__ = {{ picoyplaca | jsonify | safe }};</script>
+
 <script>
   (function () {
     // ---------- utilidades ----------
@@ -289,39 +293,62 @@
     (function () {
       var cont = document.getElementById('pico-cities');
       if (!cont) return;
+      // Los digitos NO se calculan aqui: vienen de src/_data/picoyplaca.json,
+      // que la redaccion edita desde el CMS en "Datos del sitio". Este codigo
+      // solo elige que fila mostrar segun el dia. Si algo falta en el dato,
+      // se muestra "Libre" antes que inventar un numero.
+      var fuente = window.__PICO_Y_PLACA__;
+      if (!fuente || !fuente.ciudades) return;
+
       var d = hoyBogota();
       var dow = d.getDay();            // 0 domingo … 6 sábado
       var dia = d.getDate();
+      var hoyISO = d.getFullYear() + '-' +
+        ('0' + (d.getMonth() + 1)).slice(-2) + '-' +
+        ('0' + d.getDate()).slice(-2);
+      var nombreDia = ['domingo', 'lunes', 'martes', 'miercoles', 'jueves', 'viernes', 'sabado'];
 
-      var bga = { 1: '7 y 8', 2: '9 y 0', 3: '1 y 2', 4: '3 y 4', 5: '5 y 6' };
+      // De todas las rotaciones cargadas, la ultima cuya fecha de inicio ya paso.
+      // Asi el cambio de semestre o de trimestre ocurre solo el dia que toca.
+      function rotacionVigente(ciudad) {
+        var lista = ciudad.rotaciones || [];
+        var elegida = null;
+        for (var i = 0; i < lista.length; i++) {
+          if (lista[i].desde <= hoyISO && (!elegida || lista[i].desde > elegida.desde)) {
+            elegida = lista[i];
+          }
+        }
+        return elegida;
+      }
 
-      // Medellin rota por semestres. La del primer semestre de 2026 rige
-      // hasta el viernes 31 de julio; la nueva entra el lunes 3 de agosto.
-      var medSem1 = { 1: '1 y 7', 2: '0 y 3', 3: '4 y 6', 4: '5 y 9', 5: '2 y 8' };
-      var medSem2 = { 1: '5 y 8', 2: '1 y 4', 3: '0 y 2', 4: '3 y 6', 5: '7 y 9' };
-      var med = (d >= new Date(2026, 7, 3)) ? medSem2 : medSem1;
-
-      // Bucaramanga: sábados con rotación propia (ref.: sábado 25 jul 2026 = "7 y 8")
-      function sabadoBga() {
-        var ciclo = ['1 y 2', '3 y 4', '5 y 6', '7 y 8', '9 y 0'];
-        var ref = new Date(2026, 6, 25);
-        var semanas = Math.round((d - ref) / 604800000);
-        return ciclo[((3 + semanas) % 5 + 5) % 5];
+      function digitosSabado(ciudad) {
+        var lista = ciudad.sabados || [];
+        for (var i = 0; i < lista.length; i++) {
+          if (lista[i].fecha === hoyISO) { return lista[i].digitos; }
+        }
+        return null;   // sabado sin dato publicado: no se inventa
       }
 
       var datos = [];
-      if (dow >= 1 && dow <= 5) {
-        datos.push({ c: 'Bucaramanga', v: bga[dow], h: '6:00 a 20:00' });
-        datos.push({ c: 'Bogotá', v: (dia % 2 === 1) ? '6, 7, 8, 9 y 0' : '1, 2, 3, 4 y 5', h: '6:00 a 21:00' });
-        datos.push({ c: 'Medellín', v: med[dow], h: '5:00 a 20:00' });
-      } else if (dow === 6) {
-        datos.push({ c: 'Bucaramanga', v: sabadoBga(), h: '9:00 a 13:00' });
-        datos.push({ c: 'Bogotá', v: null, h: 'sin restricción' });
-        datos.push({ c: 'Medellín', v: null, h: 'sin restricción' });
-      } else {
-        datos.push({ c: 'Bucaramanga', v: null, h: 'sin restricción' });
-        datos.push({ c: 'Bogotá', v: null, h: 'sin restricción' });
-        datos.push({ c: 'Medellín', v: null, h: 'sin restricción' });
+      for (var ci = 0; ci < fuente.ciudades.length; ci++) {
+        var ciudad = fuente.ciudades[ci];
+        var v = null;
+        var h = 'sin restricción';
+
+        if (dow >= 1 && dow <= 5) {
+          if (ciudad.reglaParidad) {
+            v = (dia % 2 === 1) ? ciudad.reglaParidad.impar : ciudad.reglaParidad.par;
+          } else {
+            var rot = rotacionVigente(ciudad);
+            v = rot ? rot[nombreDia[dow]] : null;
+          }
+          if (v) { h = ciudad.horario || h; }
+        } else if (dow === 6) {
+          v = digitosSabado(ciudad);
+          if (v) { h = ciudad.horarioSabado || ciudad.horario || h; }
+        }
+
+        datos.push({ c: ciudad.nombre, v: v || null, h: h });
       }
 
       cont.textContent = '';
