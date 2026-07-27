@@ -1188,7 +1188,7 @@
   /* ==========================================================
      Quién soy
      ========================================================== */
-  .qs-hero { padding: 34px 0 8px; }
+  .qs-hero { padding-top: 34px; padding-bottom: 8px; }
   .qs-hero-grid {
     display: grid;
     grid-template-columns: 250px 1fr;
@@ -1269,7 +1269,7 @@
   .qs-btn.ghost { background: transparent; color: #fff; border-color: rgba(255,255,255,0.5); text-transform: none; letter-spacing: 0.01em; }
   .qs-btn.ghost:hover { border-color: var(--yellow); color: var(--yellow); }
   @media (max-width: 700px) {
-    .qs-hero { padding: 22px 0 4px; }
+    .qs-hero { padding-top: 22px; padding-bottom: 4px; }
     .qs-hero-grid { grid-template-columns: 1fr; gap: 18px; }
     .qs-retrato { max-width: 210px; }
     .qs-lead { font-size: 15px; }
@@ -1381,4 +1381,18 @@
   @media (max-width: 640px) {
     .noticia-articulo { padding-top: 24px; padding-bottom: 36px; }
     .noticia-cuerpo { font-size: 16.5px; line-height: 1.7; }
+  }
+
+  /* ==========================================================
+     El padding lateral de .wrap es sagrado.
+     Varias clases hermanas (.section-block, .ad-wrap, .utility-inner,
+     .qs-hero…) van sobre el MISMO elemento que .wrap y, al declararse
+     después, su atajo `padding: X 0` anulaba el padding horizontal y el
+     texto quedaba pegado al borde en el celular. Esta regla cierra la
+     cascada restituyendo SOLO el padding lateral para cualquier
+     combinación, presente o futura. Mínimo 20px en pantallas angostas.
+     ========================================================== */
+  .wrap {
+    padding-left: clamp(20px, 5vw, 40px);
+    padding-right: clamp(20px, 5vw, 40px);
   }
