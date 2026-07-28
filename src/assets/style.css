@@ -1560,6 +1560,82 @@
   }
 
   /* ==========================================================
+     "Sigue leyendo": tres notas al final de cada artículo
+     ========================================================== */
+  .sigue-leyendo { border-top: 1px solid var(--line); }
+  .sigue-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+  }
+  .sigue-card {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    text-decoration: none;
+    min-width: 0;
+  }
+  .sigue-foto {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+    background: var(--bg-sunken);
+  }
+  .sigue-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 260ms ease;
+  }
+  .sigue-card:hover .sigue-foto img { transform: scale(1.04); }
+  /* Sin foto, el hueco se llena con el motivo cromático del portal */
+  .sigue-foto-vacia {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(125deg, var(--accent) 0%, var(--accent) 46%, var(--yellow) 46%, var(--yellow) 54%, var(--accent-strong) 54%, var(--accent-strong) 100%);
+  }
+  .sigue-cat {
+    position: absolute;
+    left: 8px; bottom: 8px;
+    font-family: var(--font-display);
+    font-size: 10.5px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #fff;
+    background: rgba(15,23,18,0.82);
+    padding: 3px 8px;
+    border-radius: 3px;
+  }
+  .sigue-card h3 {
+    font-size: 17.5px;
+    line-height: 1.22;
+    color: var(--text);
+    transition: color 160ms ease;
+  }
+  .sigue-card:hover h3, .sigue-card:focus-visible h3 { color: var(--accent); }
+  .sigue-fecha { font-size: 11.5px; color: var(--text-muted); }
+  @media (max-width: 640px) {
+    .sigue-grid { grid-template-columns: 1fr; gap: 16px; }
+    /* Rejilla y no fila: en fila, el título y la fecha quedaban como dos
+       columnas más y la fecha se partía letra por letra. */
+    .sigue-card {
+      display: grid;
+      grid-template-columns: 116px 1fr;
+      grid-template-rows: auto auto;
+      column-gap: 12px;
+      row-gap: 3px;
+      align-items: start;
+    }
+    .sigue-foto { grid-column: 1; grid-row: 1 / span 2; aspect-ratio: 4 / 3; }
+    .sigue-card h3 { grid-column: 2; grid-row: 1; font-size: 15.5px; }
+    .sigue-fecha { grid-column: 2; grid-row: 2; }
+    .sigue-cat { display: none; }
+  }
+
+  /* ==========================================================
      Página del dólar: convertidor, puntas y gráfica
      ========================================================== */
   .dolar-hero { padding-top: 28px; }

@@ -79,6 +79,22 @@ module.exports = function (eleventyConfig) {
     return pool[h % pool.length];
   });
 
+  // Notas para seguir leyendo al final de un artículo: primero las de la
+  // misma categoría (de la más reciente a la más vieja) y luego el resto,
+  // siempre sin repetir la que se está leyendo.
+  eleventyConfig.addFilter("relacionadas", (lista, urlActual, categoria, cuantas) => {
+    const otras = (lista || []).filter((p) => p.url !== urlActual);
+    const reciente = (a, b) => new Date(b.date) - new Date(a.date);
+    const cat = String(categoria || "").toLowerCase();
+    const mismas = otras
+      .filter((p) => String(p.data.categoria || "").toLowerCase() === cat)
+      .sort(reciente);
+    const demas = otras
+      .filter((p) => String(p.data.categoria || "").toLowerCase() !== cat)
+      .sort(reciente);
+    return mismas.concat(demas).slice(0, cuantas || 3);
+  });
+
   eleventyConfig.addGlobalData("eleventyComputed", {
     description: (data) => data.description || data.excerpt,
   });

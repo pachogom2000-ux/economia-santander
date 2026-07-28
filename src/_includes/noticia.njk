@@ -38,6 +38,33 @@ ogType: article
 {% include "anuncio.njk" %}
 {% set anuncio = null %}
 
+{# Al terminar la lectura, tres notas más: primero de la misma categoría. #}
+{% set otras = collections.noticias | relacionadas(page.url, categoria, 3) %}
+{% if otras.length %}
+<section class="section-block wrap sigue-leyendo">
+  <div class="section-head">
+    <h2>Sigue leyendo</h2>
+    <span class="sub">Más de la economía de Santander</span>
+  </div>
+  <div class="sigue-grid">
+    {% for n in otras %}
+    <a class="sigue-card" href="{{ n.url }}">
+      <div class="sigue-foto">
+        {% if n.data.imagen %}
+        <img src="{{ n.data.imagen }}" alt="" width="1200" height="700" loading="lazy" decoding="async">
+        {% else %}
+        <span class="sigue-foto-vacia" aria-hidden="true"></span>
+        {% endif %}
+        <span class="sigue-cat">{{ n.data.categoria }}</span>
+      </div>
+      <h3>{{ n.data.title }}</h3>
+      <p class="sigue-fecha">{{ n.data.date | readableDate }}</p>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
