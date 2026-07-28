@@ -35,7 +35,7 @@ Esto es periodismo económico. Un dato falso destruye la credibilidad y puede ll
 - La cifra va adelante, no al final del párrafo.
 - Párrafos de 2 o 3 frases, máximo 40-50 palabras. El lector está en el celular.
 - Cero adjetivos de relleno: nada de "importante repunte" ni "significativo crecimiento".
-- Voz activa, frases cortas, español de Colombia, tuteando al lector.
+- Voz activa, frases cortas, español de Colombia, no tutear al lector, en la cultura santandereana se habla de usted, por respeto. 
 - Aterriza las cifras grandes: "$4 billones al año" dice poco; "uno de cada cuatro huevos que se comen en Colombia" dice mucho.
 - Busca la tensión o la paradoja del dato. Santander es el mayor productor de cacao pero no el mayor exportador: ahí está la nota.
 
