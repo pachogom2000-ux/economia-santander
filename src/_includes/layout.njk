@@ -32,20 +32,24 @@
 <meta name="twitter:image" content="https://economiasantander.com{{ ogImagen }}">
 {% if imagen %}<link rel="preload" as="image" href="{{ imagen }}" fetchpriority="high">{% endif %}
 <!-- Analítica (Google Analytics 4).
-     No se carga hasta que la persona la acepta en el aviso de cookies: sin
-     aceptación no se descarga gtag.js y no se guarda ninguna cookie suya.
-     Consent Mode v2 queda en "denied" por defecto. Ver /legal/cookies/. -->
+     Encendida por defecto: en Colombia la Ley 1581 exige informar y permitir
+     el rechazo, no pedir permiso previo para analítica propia. Quien rechaza
+     en /legal/cookies/ queda registrado y a partir de ahí no se mide.
+     La publicidad personalizada sigue denegada siempre. -->
 <script>
   (function () {
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     window.gtag = gtag;
 
+    var decision = null;
+    try { decision = window.localStorage.getItem('es-consent-analitica'); } catch (e) {}
+
     gtag('consent', 'default', {
       ad_storage: 'denied',
       ad_user_data: 'denied',
       ad_personalization: 'denied',
-      analytics_storage: 'denied'
+      analytics_storage: decision === 'no' ? 'denied' : 'granted'
     });
 
     window.esCargarAnalitica = function () {
@@ -60,11 +64,11 @@
       gtag('config', 'G-HVC4Z011SY', { anonymize_ip: true });
     };
 
-    try {
-      if (window.localStorage.getItem('es-consent-analitica') === 'si') {
-        window.esCargarAnalitica();
-      }
-    } catch (e) {}
+    window.esApagarAnalitica = function () {
+      gtag('consent', 'update', { analytics_storage: 'denied' });
+    };
+
+    if (decision !== 'no') window.esCargarAnalitica();
   })();
 </script>
 
@@ -723,12 +727,12 @@
   })();
 </script>
 
-<!-- Aviso de cookies. La analítica sigue apagada mientras no se acepte. -->
-<div class="cookie-aviso" id="cookie-aviso" role="dialog" aria-live="polite"
+<!-- Aviso de cookies. No bloquea nada: la analítica ya está corriendo. Solo
+     informa una vez y deja a la mano el interruptor para apagarla. -->
+<div class="cookie-aviso" id="cookie-aviso" role="region" aria-live="polite"
      aria-label="Aviso de cookies" hidden>
   <div class="cookie-aviso-texto">
-    <p><strong>Este sitio usa cookies solo para medir audiencia.</strong></p>
-    <p>Sirven para saber cuánta gente lee y qué notas. No hay publicidad que lo rastree ni venta de datos. Si no acepta, el portal funciona igual. <a href="/legal/cookies/">Ver la política de cookies</a>.</p>
+    <p><strong>Este sitio usa cookies</strong> para medir su audiencia de forma anónima y mejorar la experiencia de lectura. Al continuar navegando, usted acepta su uso. <a href="/legal/cookies/">Política de cookies</a>.</p>
   </div>
   <div class="cookie-aviso-botones">
     <button type="button" class="cookie-btn cookie-btn-no" data-cookies="no">Rechazar</button>
@@ -759,7 +763,9 @@
         var valor = b.getAttribute('data-cookies');
         guardar(valor);
         ocultar();
-        // Rechazar no recarga: la analítica nunca llegó a cargarse.
+        // La analítica ya venía corriendo: aceptar no hace nada nuevo y
+        // rechazar la apaga de inmediato, sin necesidad de recargar.
+        if (valor === 'no' && window.esApagarAnalitica) window.esApagarAnalitica();
         if (valor === 'si' && window.esCargarAnalitica) window.esCargarAnalitica();
       });
     });

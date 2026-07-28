@@ -104,7 +104,7 @@ Si el reclamo llega incompleto, se le pide completarlo dentro de los 5 días sig
 
 ## 7. Transferencia internacional
 
-Google Analytics procesa información en servidores fuera de Colombia, principalmente en Estados Unidos. Al usar el sitio y aceptar las cookies de analítica, usted queda informado de esa transferencia. Si no la quiere, puede rechazarla en el aviso de cookies y el sitio funciona igual.
+Google Analytics procesa información en servidores fuera de Colombia, principalmente en Estados Unidos. Al navegar el sitio usted queda informado de esa transferencia, que se limita a datos de audiencia anónimos. Si no la quiere, puede apagar la medición en el aviso de cookies o en el pie de página, y el sitio funciona igual.
 
 Los correos que usted me envía llegan a una cuenta de Google, con el mismo alcance.
 

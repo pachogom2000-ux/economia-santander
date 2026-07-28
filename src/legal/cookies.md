@@ -26,7 +26,9 @@ Es un archivo diminuto que una página guarda en su navegador para recordar algo
 
 Sirve para saber si vale la pena seguir escribiendo sobre cacao o si nadie lo lee. No se usa para identificarlo, ni para armarle un perfil, ni para mostrarle publicidad.
 
-**La analítica está desactivada hasta que usted la acepte.** Si cierra el aviso sin aceptar o elige rechazar, Google Analytics no se carga y no se guarda ninguna cookie suya.
+**La medición está activa mientras usted no la rechace.** Es lo que hace cualquier sitio que usted abra desde el celular, y en Colombia la ley pide informarlo y permitirle rechazarlo, que es justamente lo que hace el aviso que aparece la primera vez que entra.
+
+**Si prefiere que no lo midan, apáguelo y listo.** Desde ese momento Google Analytics deja de registrar su navegación en este portal. No pierde nada: el sitio funciona exactamente igual.
 
 ### Almacenamiento local — el cupón del tinto
 
@@ -47,7 +49,7 @@ Si algún día se incorpora publicidad servida por Google u otra red —que sí 
 
 ## Cómo cambiar de opinión
 
-Puede rechazarlas o aceptarlas cuando quiera con este botón:
+La decisión no es definitiva. Puede apagar o volver a encender la medición cuando quiera, aquí o desde el enlace "Preferencias de cookies" que está en el pie de todas las páginas:
 
 <p><button type="button" class="btn-cookies" data-abrir-cookies>Cambiar mis preferencias de cookies</button></p>
 
