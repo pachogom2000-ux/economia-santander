@@ -1,7 +1,7 @@
 ---
 layout: noticia.njk
 title: "Comercio en Santander: ventas suben 10,6% y el empleo cae"
-date: 2026-07-28
+date: 2026-07-29T06:01:00.000-05:00
 categoria: Comercio y consumo
 chipTipo: propio
 chipLabel: Redacción propia
