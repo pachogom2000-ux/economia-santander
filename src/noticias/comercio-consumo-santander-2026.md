@@ -2,13 +2,21 @@
 layout: noticia.njk
 title: "Comercio en Santander: ventas suben 10,6% y el empleo cae"
 date: 2026-07-28
-updated: 2026-07-28
-categoria: "Comercio y consumo"
-chipTipo: "propio"
-chipLabel: "Redacción propia"
-excerpt: "Las ventas del comercio en Santander crecieron 10,6% en mayo, pero el empleo del sector cae 1,6% en lo corrido del año y Bucaramanga lidera la inflación."
-autor: "Francisco Gómez - Director"
+categoria: Comercio y consumo
+chipTipo: propio
+chipLabel: Redacción propia
+excerpt: Las ventas del comercio en Santander crecieron 10,6% en mayo, pero el
+  empleo del sector cae 1,6% en lo corrido del año y Bucaramanga lidera la
+  inflación.
+autor: Francisco Gómez - Director
+imagen: /assets/uploads/pexels-hangers-1850082.jpg
+imagenAlt: Ventas y comercio en Santander
+imagenTitle: Ventas, comercio en Santander, empleo
+imagenPie: "En Santander las ventas reales subieron 10,6% en mayo y 14,9% entre
+  enero y mayo de 2026. "
+imagenCredito: "Foto: Pixabay/Pexels"
 tags: noticias
+updated: 2026-07-28
 ---
 El comercio de Santander vendió **10,6% más** en mayo de 2026 que un año atrás. En lo corrido del año recortó **1,6%** de su personal ocupado.
 
