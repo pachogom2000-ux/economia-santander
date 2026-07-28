@@ -82,10 +82,18 @@ src/
 ```bash
 npm install
 npx @11ty/eleventy        # compila a _site/
-npx @11ty/eleventy --serve # previsualiza en local
+npm start                 # previsualiza en local, en http://localhost:8080
 ```
 
 Verifica siempre que compile antes de hacer push: Netlify construye desde GitHub y un error deja el sitio sin actualizar.
+
+### Previsualizar una nota antes de publicarla
+
+Con `npm start` corriendo, **http://localhost:8080/borradores/** lista todas las notas del repositorio, marcando cuáles son borradores y cuáles están en portada, con enlace a cada una. Sirve para abrir una nota y verla montada, con su plantilla y su diseño, antes de hacer push.
+
+Esa página la genera `src/borradores.11ty.js` y **solo existe en local**: en el build de producción devuelve `permalink: false`, así que Eleventy no la escribe y no aparece en el sitemap.
+
+Un borrador con `eleventyExcludeFromCollections: true` no sale en la portada, pero sí tiene página propia en `/noticias/<slug>/`. Ojo con eso: una vez en `main`, esa URL es pública aunque no esté enlazada. Para que un borrador no llegue a producción, la vía es el *editorial workflow* del CMS, que lo deja en una rama con su *deploy preview*.
 
 ### Front matter de una nota
 
