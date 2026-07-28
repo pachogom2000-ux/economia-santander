@@ -79,6 +79,32 @@ module.exports = function (eleventyConfig) {
     return pool[h % pool.length];
   });
 
+  // Notas de una categoría, de la más reciente a la más vieja.
+  eleventyConfig.addFilter("porCategoria", (lista, categoria, cuantas) => {
+    const cat = String(categoria || "").toLowerCase();
+    const encontradas = (lista || [])
+      .filter((p) => String(p.data.categoria || "").toLowerCase() === cat)
+      .sort((a, b) => new Date(b.date) - new Date(a.date));
+    return cuantas ? encontradas.slice(0, cuantas) : encontradas;
+  });
+
+  // Guías y glosarios: contenido de consulta permanente, marcado con
+  // "guia: true" en el front matter.
+  eleventyConfig.addFilter("soloGuias", (lista, cuantas) => {
+    const encontradas = (lista || [])
+      .filter((p) => p.data.guia)
+      .sort((a, b) => new Date(b.date) - new Date(a.date));
+    return cuantas ? encontradas.slice(0, cuantas) : encontradas;
+  });
+
+  // Todas las secciones del portal, en el orden en que se muestran. Sale de
+  // _data/secciones.json para que la taxonomía viva en un solo lugar: el
+  // menú, la portada y las páginas de sección leen de aquí.
+  eleventyConfig.addCollection("secciones", (api) => {
+    const datos = require("./src/_data/secciones.json");
+    return [].concat(datos.principales, datos.complementarias);
+  });
+
   // Notas para seguir leyendo al final de un artículo: primero las de la
   // misma categoría (de la más reciente a la más vieja) y luego el resto,
   // siempre sin repetir la que se está leyendo.

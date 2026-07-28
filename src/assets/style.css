@@ -1559,6 +1559,73 @@
     .ind-valor { font-size: 26px; }
   }
 
+  /* ---------- tarjetas de declaraciones de gremios ---------- */
+  .interview-cita { font-family: var(--font-display); font-weight: 600; font-size: 17px; line-height: 1.25; }
+  .interview-quien { font-size: 12.5px; color: var(--text-soft); margin-top: 10px; font-weight: 600; }
+  .interview-quien span { display: block; font-weight: 400; color: var(--text-muted); font-size: 11.5px; }
+  .interview-fuente {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .interview-fuente:hover { text-decoration: underline; }
+
+  /* ==========================================================
+     Páginas de sección
+     ========================================================== */
+  .seccion-titulo { font-size: clamp(26px, 4vw, 38px); text-transform: uppercase; }
+  .seccion-desc { color: var(--text-soft); max-width: 70ch; margin-bottom: 26px; }
+  .seccion-lista { display: flex; flex-direction: column; gap: 24px; }
+  .seccion-item {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 20px;
+    align-items: start;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--line);
+  }
+  .seccion-item:last-child { border-bottom: 0; padding-bottom: 0; }
+  .seccion-foto {
+    position: relative;
+    display: block;
+    border-radius: 8px;
+    overflow: hidden;
+    aspect-ratio: 16 / 10;
+    background: var(--bg-sunken);
+  }
+  .seccion-foto img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .seccion-texto { min-width: 0; }
+  .seccion-fecha { font-size: 11.5px; color: var(--text-muted); }
+  .seccion-texto h2 { font-size: clamp(19px, 2.4vw, 25px); line-height: 1.2; margin: 8px 0 8px; }
+  .seccion-texto h2 a { text-decoration: none; }
+  .seccion-texto h2 a:hover { color: var(--accent); }
+  .seccion-resumen { font-size: 14.5px; color: var(--text-soft); line-height: 1.6; max-width: 68ch; }
+  .seccion-vacia {
+    background: var(--bg-raised);
+    border: 1px dashed var(--line);
+    border-radius: 8px;
+    padding: 26px;
+    color: var(--text-soft);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .seccion-vacia a { color: var(--accent); font-weight: 600; }
+  .comp-row a b { font-variant-numeric: tabular-nums; opacity: 0.72; font-weight: 700; }
+  .core-card h3 a { text-decoration: none; }
+  .core-card h3 a:hover { color: var(--accent); }
+  @media (max-width: 640px) {
+    .seccion-item { grid-template-columns: 116px 1fr; gap: 12px; padding-bottom: 18px; }
+    .seccion-foto { aspect-ratio: 4 / 3; }
+    .seccion-texto h2 { font-size: 16.5px; margin: 6px 0 5px; }
+    .seccion-resumen { display: none; }
+    .seccion-lista { gap: 18px; }
+  }
+
   /* ==========================================================
      "Sigue leyendo": tres notas al final de cada artículo
      ========================================================== */

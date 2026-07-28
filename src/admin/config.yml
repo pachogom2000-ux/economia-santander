@@ -144,6 +144,12 @@ collections:
         widget: "string"
         default: "Foto: Economía Santander"
         required: false
+      - label: "¿Es guía o glosario?"
+        name: "guia"
+        widget: "boolean"
+        default: false
+        required: false
+        hint: "Actívalo si es contenido de consulta permanente (guías, glosarios). Aparece en el bloque 'Glosario y guías' de la portada."
       - label: "Cuerpo de la noticia"
         name: "body"
         widget: "markdown"
@@ -215,6 +221,27 @@ collections:
         name: "fuente"
         widget: "string"
         required: false
+
+  - name: "declaraciones"
+    label: "Declaraciones de gremios"
+    files:
+      - file: "src/_data/declaraciones.json"
+        label: "Lo que dicen los gremios (portada)"
+        name: "citas"
+        fields:
+          - label: "Declaraciones"
+            name: "citas"
+            widget: "list"
+            summary: "{{fields.gremio}} — {{fields.persona}}"
+            hint: "Solo citas REALES ya publicadas, con su enlace. Si la lista queda vacía, la sección no aparece en la portada."
+            fields:
+              - { label: "Gremio o entidad", name: "gremio", widget: "string" }
+              - { label: "Cita textual", name: "cita", widget: "text", hint: "Copiada tal cual de la fuente, sin comillas." }
+              - { label: "Quién lo dijo", name: "persona", widget: "string" }
+              - { label: "Cargo", name: "cargo", widget: "string" }
+              - { label: "Medio", name: "medio", widget: "string" }
+              - { label: "Fecha", name: "fecha", widget: "string", hint: "Ej: 15 de julio de 2026" }
+              - { label: "Enlace a la fuente", name: "url", widget: "string" }
 
   - name: "publicidad"
     label: "Publicidad"

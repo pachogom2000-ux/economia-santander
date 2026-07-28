@@ -1,0 +1,66 @@
+{
+  "principales": [
+    {
+      "nombre": "Inversión",
+      "desc": "Dónde y cómo invierten los santandereanos, de finca raíz a fondos de capital."
+    },
+    {
+      "nombre": "Educación financiera",
+      "desc": "Herramientas prácticas para tomar mejores decisiones con el dinero."
+    },
+    {
+      "nombre": "Empleo",
+      "desc": "El mercado laboral formal e informal en el área metropolitana de Bucaramanga."
+    },
+    {
+      "nombre": "Finanzas personales",
+      "desc": "Presupuesto, ahorro y crédito para hogares santandereanos."
+    },
+    {
+      "nombre": "Construcción",
+      "desc": "El pulso del sector edificador en Santander."
+    },
+    {
+      "nombre": "Industria",
+      "desc": "Manufactura, energía y logística regional."
+    },
+    {
+      "nombre": "Agro",
+      "desc": "Café, cacao y agroindustria desde las provincias de Santander."
+    }
+  ],
+  "complementarias": [
+    {
+      "nombre": "Comercio y consumo",
+      "desc": "Ventas, consumo de los hogares y el pulso de los comerciantes."
+    },
+    {
+      "nombre": "Turismo y hotelería",
+      "desc": "Visitantes, ocupación hotelera y turismo de aventura en Santander."
+    },
+    {
+      "nombre": "Emprendimiento y pymes",
+      "desc": "Creación de empresa, financiación y supervivencia empresarial."
+    },
+    {
+      "nombre": "Impuestos y regulación",
+      "desc": "Renta, DIAN, normas y su efecto en el bolsillo y en las empresas."
+    },
+    {
+      "nombre": "Indicadores económicos",
+      "desc": "Inflación, tasas, dólar y las cifras que mueven la economía."
+    },
+    {
+      "nombre": "Opinión",
+      "desc": "Análisis y columnas más allá del dato."
+    },
+    {
+      "nombre": "Entrevistas",
+      "desc": "Voces de los gremios y del empresariado santandereano."
+    },
+    {
+      "nombre": "Glosario y guías",
+      "desc": "Contenido de consulta permanente para entender la economía."
+    }
+  ]
+}
