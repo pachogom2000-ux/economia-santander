@@ -43,17 +43,17 @@ Ahí entran los giros que le hicieron para gastos del contrato, los traslados en
 
 Y revisa con lupa los topes que circulan por ahí. Varias tablas publicadas este año traen las cifras calculadas con la **UVT 2026**, que vale **$52.374**: **$73.324.000** de ingresos y **$235.683.000** de patrimonio.
 
-Esas cifras son correctas, pero aplican a lo que ganes durante 2026 y declares en 2027. Para la declaración que presentas entre agosto y octubre de este año valen las de arriba.
+Esas cifras son correctas, pero aplican a lo que gane durante 2026 y declare en 2027. Para la declaración que presentas entre agosto y octubre de este año valen las de arriba.
 
 La diferencia en el tope de ingresos son **$3.605.000**. Alcanza para que alguien concluya que no le toca declarar cuando sí le toca.
 
 La UVT subió 5,17% para 2026 por la Resolución 000238 del 15 de diciembre de 2025, según el [reporte de Actualícese](https://actualicese.com/uvt-2026/).
 
-## ¿Cómo se depuran tus honorarios en la cédula general?
+## ¿Cómo se depuran sus honorarios en la cédula general?
 
-Tus honorarios entran a la **cédula general**, la misma bolsa donde caen salarios, arriendos y rentas no laborales. No pagas impuesto sobre el bruto.
+Sus honorarios entran a la **cédula general**, la misma bolsa donde caen salarios, arriendos y rentas no laborales. No paga impuesto sobre el bruto.
 
-Lo primero que restas son los ingresos no constitutivos de renta: ahí van tus aportes obligatorios a salud y pensión. Como contratista cotizas sobre una base mínima del **40%** del valor mensualizado del contrato, sin incluir IVA (artículo 244 de la Ley 1955 de 2019), y ese aporte sale de la base.
+Lo primero que resta son los ingresos no constitutivos de renta: ahí van sus aportes obligatorios a salud y pensión. Como contratista cotiza sobre una base mínima del **40%** del valor mensualizado del contrato, sin incluir IVA (artículo 244 de la Ley 1955 de 2019), y ese aporte sale de la base.
 
 Después vienen las deducciones. Estas son las que un independiente sí puede tomar, con su tope en pesos de 2025:
 
@@ -66,13 +66,13 @@ Después vienen las deducciones. Estas son las que un independiente sí puede to
 
 Ojo con dos reglas. La primera: sobre un mismo dependiente no se toman las dos deducciones a la vez, sino una, según explica [Siempre Al Día](https://siemprealdia.co/colombia/impuestos/aplicacion-de-la-nueva-deduccion-por-dependientes/).
 
-La segunda es el techo global: la suma de deducciones y rentas exentas no puede pasar del **40%** de tu ingreso neto ni de **1.340 UVT**, que son **$66.730.660**. Aplica el menor de los dos.
+La segunda es el techo global: la suma de deducciones y rentas exentas no puede pasar del **40%** de su ingreso neto ni de **1.340 UVT**, que son **$66.730.660**. Aplica el menor de los dos.
 
 Sobre la deducción de 72 UVT hay discusión entre las fuentes especializadas: Gerencie.com sostiene que cubre a todo el que reciba rentas de trabajo —independientes incluidos— y que opera por fuera del límite del 40%; [Siempre Al Día](https://siemprealdia.co/colombia/impuestos/aplicacion-de-la-nueva-deduccion-por-dependientes/), en cambio, la circunscribe en un pasaje a las rentas de relación laboral. Mientras la doctrina publicada no coincida, trátala como terreno discutido: si vas a tomarla, valídala con un contador antes de radicar.
 
-## ¿Costos reales o el 25% exento? Tienes que escoger uno
+## ¿Costos reales o el 25% exento? Tiene que escoger uno
 
-Aquí está la decisión que más plata mueve, y una de las que más se resuelve a ciegas. El artículo 336 del **Estatuto Tributario** te obliga a optar: o restas los costos y gastos de tu actividad, o tomas la renta exenta del **25%**.
+Aquí está la decisión que más plata mueve, y una de las que más se resuelve a ciegas. El artículo 336 del **Estatuto Tributario lo** obliga a optar: o resta los costos y gastos de su actividad, o toma la renta exenta del **25%**.
 
 La norma lo dice sin rodeos: "...los contribuyentes deberán optar entre restar los costos y gastos procedentes o la renta exenta prevista en el numeral 10 del artículo 206 del Estatuto Tributario conforme con lo dispuesto en el parágrafo 5 del mismo artículo", según recoge [Gerencie.com](https://www.gerencie.com/guia-renta/conceptos/renta-exenta-del-25).
 
