@@ -82,7 +82,7 @@ Dos pasajes cortos diarios a $3.000 son $6.000. En 24 días de trabajo, **$144.0
 
 En junio, el Índice de Confianza del Consumidor de **Fedesarrollo** llegó a **24,3%** nacional: 6,5 puntos más que en mayo y 22,1 puntos más que en junio de 2025.
 
-Bucaramanga fue a contramano. Registró la caída más pronunciada de las cinco ciudades medidas, **-13,6 puntos porcentuales**, hasta un balance de **22,5%**, [según Valora Analitik](https://www.valoraanalitik.com/confianza-del-consumidor-en-colombia-siguio-repuntando-y-cerro-con-fuerza-el-primer-semestre-de-2026/).
+Bucaramanga fue a contramano. Registró la caída más pronunciada de las cinco ciudades medidas, **\-13,6 puntos porcentuales**, hasta un balance de **22,5%**, [según Valora Analitik](https://www.valoraanalitik.com/confianza-del-consumidor-en-colombia-siguio-repuntando-y-cerro-con-fuerza-el-primer-semestre-de-2026/).
 
 El vaivén es brusco. En mayo, Bucaramanga había sido la ciudad de mayor salto de las cinco medidas: **+32,1 puntos porcentuales**, [según La República](https://www.larepublica.co/economia/confianza-del-consumidor-se-situo-en-17-8-en-mayo-y-subio-4-1-puntos-porcentuales-4416267). En un mes devolvió cerca de la mitad de lo ganado.
 
@@ -108,16 +108,16 @@ En la región, **Alejandro Almeyda**, director ejecutivo de **Fenalco Santander*
 
 El dato del DANE de junio dirá si esa proyección se cumplió. La página de la encuesta no anuncia todavía la fecha del próximo boletín; el de mayo salió el 15 de julio.
 
-## ¿Qué sigue y qué puedes hacer con esto?
+## ¿Qué sigue y qué puede hacer usted con esto?
 
 El Banco de la República vuelve a decidir tasas el **31 de julio**, según el [calendario de decisiones de 2026](https://www.portafolio.co/economia/gobierno/estas-son-las-fechas-clave-en-2026-para-las-decisiones-sobre-la-tasa-de-interes-del-banco-de-la-republica-487296). En su sesión anterior, la del **30 de junio**, llevó la tasa de política monetaria a **12%**.
 
-Si vuelve a subirla, el crédito para comprar moto o carro se encarece. Repasa [la decisión del Emisor de llevar la tasa a 12%](/noticias/banco-republica-sube-tasa-intervencion-12/) antes de firmar cualquier financiación.
+Si vuelve a subirla, el crédito para comprar moto o carro se encarece. Repase [la decisión del Emisor de llevar la tasa a 12%](/noticias/banco-republica-sube-tasa-intervencion-12/) antes de firmar cualquier financiación.
 
 Tres cosas concretas:
 
-- **Si vas a comprar a crédito**, cotiza ya y compara la tasa efectiva anual, no la cuota. El traslado del alza del Emisor tarda semanas en llegar a los bancos.
-- **Si tienes un negocio de comercio**, no leas el 10,6% como tuyo. Ese número lo inflan vehículos y alimentos, y el empleo formal del sector viene cayendo en el departamento.
-- **Si administras tu presupuesto**, el corrientazo y el pasaje son tus dos fugas grandes en Bucaramanga: entre los dos suman 1,62 de los 7,05 puntos de inflación anual de la ciudad, según cálculos de Economía Santander sobre las contribuciones del DANE.
+* **Si usted va a comprar a crédito**, cotice ya y compare la tasa efectiva anual, no la cuota. El traslado del alza del Emisor tarda semanas en llegar a los bancos.
+* **Si tiene un negocio de comercio**, no lea el 10,6% como suyo. Ese número lo inflan vehículos y alimentos, y el empleo formal del sector viene cayendo en el departamento.
+* **Si administra su presupuesto**, el corrientazo y el pasaje son sus dos fugas grandes en Bucaramanga: entre los dos suman 1,62 de los 7,05 puntos de inflación anual de la ciudad, según cálculos de Economía Santander sobre las contribuciones del DANE.
 
-Dos fechas para marcar en agosto: el IPC de julio y la Encuesta Mensual de Comercio de junio. Sigue el tablero en la sección de [indicadores económicos](/indicadores/).
+Dos fechas para marcar en agosto: el IPC de julio y la Encuesta Mensual de Comercio de junio. Siga el tablero en la sección de [indicadores económicos](/indicadores/).
