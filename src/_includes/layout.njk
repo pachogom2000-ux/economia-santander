@@ -119,15 +119,14 @@
 
 <div class="utility-bar">
   <div class="wrap utility-inner">
-    <span class="utility-date">Bucaramanga
+    <span class="utility-date">
       <svg class="flag-co" viewBox="0 0 6 4" role="img" aria-label="Colombia"><rect width="6" height="2" fill="#FCD116"/><rect y="2" width="6" height="1" fill="#003893"/><rect y="3" width="6" height="1" fill="#CE1126"/></svg>
-      <span id="fecha-hoy">· —</span>
+      <span id="fecha-hoy">—</span>
     </span>
-    <span class="ticker-label">Mercados</span>
     <a class="dolar-cta" id="trm-live" href="/dolar-hoy/" title="Convertidor de dólares a pesos, puntas de compra y venta y gráfica de la TRM">
       <span class="dot" aria-hidden="true"></span>
       <span>¿Cuánto vale tu dólar?</span>
-      <b class="js-usd-val"></b>
+      <b class="js-usd-entero"></b>
       <span class="flecha" aria-hidden="true">→</span>
     </a>
   </div>
@@ -164,24 +163,33 @@
   <div class="wrap">
     <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
       <span class="nav-burger" aria-hidden="true"></span>
-      Secciones
-      <span class="nav-toggle-hint">Ver todas</span>
+      Menú
+      <span class="nav-toggle-hint">Abrir</span>
     </button>
     <div class="nav-inner" id="nav-menu">
     <a href="/" {% if page.url == '/' %}class="current"{% endif %}>Portada</a>
+    {# Las secciones temáticas cuelgan de un submenú: en el menú plano
+       eran catorce enlaces y no se entendía la jerarquía del portal. #}
+    <div class="nav-grupo" id="nav-grupo">
+      <button type="button" class="nav-sub-toggle" id="nav-sub-toggle" aria-expanded="false" aria-controls="nav-secciones">
+        Secciones<span class="nav-caret" aria-hidden="true"></span>
+      </button>
+      <div class="nav-sub" id="nav-secciones">
+        <a href="#">Inversión</a>
+        <a href="#">Finanzas personales</a>
+        <a href="#">Tasas</a>
+        <a href="#">Empleo</a>
+        <a href="#">Construcción</a>
+        <a href="#">Industria</a>
+        <a href="#">Agro</a>
+        <a href="#">Educación financiera</a>
+        <a href="#">Opinión</a>
+        <a href="#">Entrevistas</a>
+      </div>
+    </div>
     <a href="/multimedia/" {% if page.url == '/multimedia/' %}class="current"{% endif %}>Multimedia</a>
     <a href="/dolar-hoy/" {% if page.url == '/dolar-hoy/' %}class="current"{% endif %}>Dólar hoy</a>
     <a href="/indicadores/" {% if page.url == '/indicadores/' %}class="current"{% endif %}>Indicadores</a>
-    <a href="#">Inversión</a>
-    <a href="#">Finanzas personales</a>
-    <a href="#">Tasas</a>
-    <a href="#">Empleo</a>
-    <a href="#">Construcción</a>
-    <a href="#">Industria</a>
-    <a href="#">Agro</a>
-    <a href="#">Educación financiera</a>
-    <a href="#">Opinión</a>
-    <a href="#">Entrevistas</a>
     <a href="/quien-soy/" {% if page.url == '/quien-soy/' %}class="current"{% endif %}>Quién soy</a>
     </div>
   </div>
@@ -300,7 +308,7 @@
       for (var fi = 0; fi < fp.length; fi++) { fo[fp[fi].type] = fp[fi].value; }
       var elFecha = document.getElementById('fecha-hoy');
       if (elFecha && fo.day && fo.month && fo.year) {
-        elFecha.textContent = '· ' + fo.day + '/' + fo.month.replace('.', '') + '/' + fo.year;
+        elFecha.textContent = fo.day + '/' + fo.month.replace('.', '') + '/' + fo.year;
       }
     } catch (e) {}
 
@@ -417,7 +425,12 @@
         for (var i = 0; i < list.length; i++) { if (list[i].moneda === 'USD') { usd = list[i]; break; } }
         if (!usd) return;
         var cierre = parseFloat(usd.ultimoCierre);
-        if (!isNaN(cierre)) each('.js-usd-val', function (el) { el.textContent = '$' + fmtNum(cierre, 2); });
+        if (!isNaN(cierre)) {
+          each('.js-usd-val', function (el) { el.textContent = '$' + fmtNum(cierre, 2); });
+          // En el botón del encabezado el dato va sin decimales: es un gancho,
+          // no una cotización.
+          each('.js-usd-entero', function (el) { el.textContent = '$' + fmtNum(Math.round(cierre), 0); });
+        }
         try {
           var ff = new Intl.DateTimeFormat('es-CO', { day: 'numeric', month: 'short', timeZone: 'America/Bogota' })
             .format(new Date(usd.fechaActualizacion));
@@ -456,28 +469,55 @@
       })
       .catch(function () {});
 
-    // ---------- 6) Menú de secciones en móvil ----------
+    // ---------- 6) Menú móvil y submenú de Secciones ----------
     (function () {
       var btn = document.getElementById('nav-toggle');
       var menu = document.getElementById('nav-menu');
-      if (!btn || !menu) return;
-      btn.addEventListener('click', function () {
-        var abierto = menu.classList.toggle('is-open');
-        btn.setAttribute('aria-expanded', abierto ? 'true' : 'false');
-        var hint = btn.querySelector('.nav-toggle-hint');
-        if (hint) hint.textContent = abierto ? 'Cerrar' : 'Ver todas';
-      });
-      // Al elegir una sección, cerrar el menú
-      each('#nav-menu a', function (a) {
-        a.addEventListener('click', function () {
-          if (menu.classList.contains('is-open')) {
-            menu.classList.remove('is-open');
-            btn.setAttribute('aria-expanded', 'false');
-            var h = btn.querySelector('.nav-toggle-hint');
-            if (h) h.textContent = 'Ver todas';
-          }
+      var grupo = document.getElementById('nav-grupo');
+      var subBtn = document.getElementById('nav-sub-toggle');
+
+      function cerrarSub() {
+        if (!grupo || !subBtn) return;
+        grupo.classList.remove('abierto');
+        subBtn.setAttribute('aria-expanded', 'false');
+      }
+      function cerrarMenu() {
+        if (!menu || !btn) return;
+        menu.classList.remove('is-open');
+        btn.setAttribute('aria-expanded', 'false');
+        var h = btn.querySelector('.nav-toggle-hint');
+        if (h) h.textContent = 'Abrir';
+      }
+
+      if (subBtn && grupo) {
+        subBtn.addEventListener('click', function (ev) {
+          ev.stopPropagation();
+          var abierto = grupo.classList.toggle('abierto');
+          subBtn.setAttribute('aria-expanded', abierto ? 'true' : 'false');
         });
-      });
+        // En escritorio el submenú es un desplegable: se cierra al hacer
+        // clic por fuera o con Escape.
+        document.addEventListener('click', function (ev) {
+          if (grupo.classList.contains('abierto') && !grupo.contains(ev.target)) cerrarSub();
+        });
+        document.addEventListener('keydown', function (ev) {
+          if (ev.key === 'Escape') { cerrarSub(); cerrarMenu(); }
+        });
+      }
+
+      if (btn && menu) {
+        btn.addEventListener('click', function () {
+          var abierto = menu.classList.toggle('is-open');
+          btn.setAttribute('aria-expanded', abierto ? 'true' : 'false');
+          var hint = btn.querySelector('.nav-toggle-hint');
+          if (hint) hint.textContent = abierto ? 'Cerrar' : 'Abrir';
+          if (!abierto) cerrarSub();
+        });
+        // Al elegir un destino se cierra todo
+        each('#nav-menu a', function (a) {
+          a.addEventListener('click', function () { cerrarSub(); cerrarMenu(); });
+        });
+      }
     })();
 
     // ---------- 7) Cupón del anunciante: uno por dispositivo, 100 disponibles ----------

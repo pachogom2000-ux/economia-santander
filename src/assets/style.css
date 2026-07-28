@@ -497,10 +497,12 @@
   .nav-inner {
     display: flex;
     gap: 2px;
-    overflow-x: auto;
-    scrollbar-width: none;
+    flex-wrap: wrap;
+    /* Debe quedar visible: con overflow, el navegador recorta el submenú
+       desplegable de Secciones. Antes hacía falta scroll porque el menú
+       tenía catorce enlaces; ahora son seis destinos y caben. */
+    overflow: visible;
   }
-  .nav-inner::-webkit-scrollbar { display: none; }
   .nav-inner a {
     flex-shrink: 0;
     text-decoration: none;
@@ -517,6 +519,64 @@
   .nav-inner a:hover, .nav-inner a:focus-visible { color: var(--accent); border-bottom-color: var(--yellow); }
   .nav-inner a.current { color: var(--accent); border-bottom-color: var(--accent); }
   a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* ---------- submenú de Secciones ---------- */
+  .nav-grupo { position: relative; flex-shrink: 0; }
+  .nav-sub-toggle {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-display);
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: var(--text-soft);
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    padding: 13px 14px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .nav-sub-toggle:hover, .nav-sub-toggle:focus-visible { color: var(--accent); border-bottom-color: var(--yellow); }
+  .nav-caret {
+    width: 0; height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid currentColor;
+    transition: transform 200ms ease;
+  }
+  .nav-grupo.abierto .nav-sub-toggle { color: var(--accent); border-bottom-color: var(--accent); }
+  .nav-grupo.abierto .nav-caret { transform: rotate(180deg); }
+  .nav-sub {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 232px;
+    flex-direction: column;
+    background: var(--bg-raised);
+    border: 1px solid var(--line);
+    border-top: 3px solid var(--accent);
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 14px 30px rgba(19,33,26,0.16);
+    padding: 6px;
+    z-index: 30;
+  }
+  .nav-grupo.abierto .nav-sub { display: flex; }
+  .nav-inner .nav-sub a {
+    font-size: 14px;
+    padding: 9px 12px;
+    border-bottom: 0;
+    border-radius: 6px;
+    white-space: nowrap;
+  }
+  .nav-inner .nav-sub a:hover, .nav-inner .nav-sub a:focus-visible {
+    background: var(--accent-tint);
+    color: var(--accent);
+    border-bottom-color: transparent;
+  }
 
   .nav-toggle {
     display: none;
@@ -1049,6 +1109,35 @@
     .nav-inner a:hover, .nav-inner a:focus-visible { border-bottom-color: var(--line); border-left-color: var(--yellow); }
     .nav-inner a.current { border-bottom-color: var(--line); border-left-color: var(--accent); }
     nav.primary { position: static; }
+
+    /* En el celular el submenú no flota: se despliega dentro de la lista */
+    .nav-grupo { width: 100%; }
+    .nav-sub-toggle {
+      width: 100%;
+      justify-content: space-between;
+      font-size: 16px;
+      padding: 12px 4px;
+      border-bottom: 1px solid var(--line);
+      border-left: 3px solid transparent;
+    }
+    .nav-sub-toggle:hover, .nav-sub-toggle:focus-visible { border-bottom-color: var(--line); border-left-color: var(--yellow); }
+    .nav-grupo.abierto .nav-sub-toggle { border-bottom-color: var(--line); border-left-color: var(--accent); }
+    .nav-sub {
+      position: static;
+      min-width: 0;
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      box-shadow: none;
+      background: var(--bg-sunken);
+    }
+    .nav-inner .nav-sub a {
+      font-size: 15px;
+      padding: 11px 4px 11px 22px;
+      border-radius: 0;
+      border-bottom: 1px solid var(--line);
+      border-left: 3px solid transparent;
+    }
   }
 
   @media (max-width: 640px) {
