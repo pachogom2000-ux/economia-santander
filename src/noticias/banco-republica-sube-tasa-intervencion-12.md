@@ -1,7 +1,7 @@
 ---
 layout: noticia.njk
 title: "Tasa de interés: qué se juega Bucaramanga el 31 de julio"
-date: 2026-07-23
+date: 2026-07-28T15:22:00.000-05:00
 categoria: Indicadores económicos
 chipTipo: recirc
 chipLabel: "Fuente: Banco de la República"
