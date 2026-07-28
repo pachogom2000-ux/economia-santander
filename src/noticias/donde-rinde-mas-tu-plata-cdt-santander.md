@@ -101,9 +101,9 @@ Los fondos de renta variable son otra cosa. Con corte a julio, Credicorp Capital
 
 Dos advertencias antes de firmar. Los FIC **no tienen seguro Fogafín**, porque son productos fiduciarios. Y cobran comisión de administración: pregunta si la rentabilidad que te muestran ya la tiene descontada.
 
-## Qué hacer con tu plata, según el horizonte
+## Qué hacer con su plata, según el horizonte
 
-**Menos de 3 meses.** Cuenta de ahorro de alta rentabilidad o FIC de liquidez. No amarres plata que vas a necesitar.
+**Menos de 3 meses.** Cuenta de ahorro de alta rentabilidad o FIC de liquidez. No amarre plata que va a necesitar.
 
 **De 3 a 6 meses.** CDT a 90 o 180 días. Un CDT a 90 días al 11,90% E.A. —tasa de Banco Pichincha reportada por Infobae, que no cita fuente primaria— sobre $10 millones deja unos $281.000 brutos en el trimestre. Advertencia de método: el reporte de la Superfinanciera que usamos en el resto del artículo solo cubre 360 días, así que este dato viene con un estándar de fuente más flojo.
 
@@ -111,7 +111,7 @@ Dos advertencias antes de firmar. Los FIC **no tienen seguro Fogafín**, porque 
 
 Antes de firmar, verifica tres cosas: que la entidad esté vigilada por la Superfinanciera o la Supersolidaria, que el producto tenga sello de Fogafín o Fogacoop, y que la tasa que te ofrecen sea la del día. Se mueven cada semana.
 
-Y no olvides el impuesto. Los rendimientos suman a tu patrimonio y a tus ingresos del año; revisa [el calendario de vencimientos de la declaración de renta 2026](/noticias/declaracion-renta-2026-vencimientos-agosto/) para no llevarte la sorpresa.
+Y no olvide el impuesto. Los rendimientos suman a su patrimonio y a sus ingresos del año; revise [el calendario de vencimientos de la declaración de renta 2026](/noticias/declaracion-renta-2026-vencimientos-agosto/) para no llevarse la sorpresa.
 
 ## Qué sigue
 
