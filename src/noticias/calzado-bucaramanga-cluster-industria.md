@@ -5,8 +5,16 @@ date: 2026-07-28T08:00:00.000-05:00
 categoria: Industria
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: El clúster de calzado y marroquinería de Bucaramanga registra 1.116 empleos formales, pero ACICAM calcula que el sector ocupa a cerca de 47.000 personas.
+excerpt: El clúster de calzado y marroquinería de Bucaramanga registra 1.116
+  empleos formales, pero ACICAM calcula que el sector ocupa a cerca de 47.000
+  personas.
 autor: Francisco Gómez - Director
+imagen: /assets/uploads/whatsapp-image-2026-07-28-at-1.55.44-pm.jpeg
+imagenAlt: Panorámica de San Francisco, hub de calzado y marroquinería
+imagenTitle: Panorámica de San Francisco, hub de calzado y marroquinería
+imagenPie: En San Francisco, el "Distrito del Calzado y la Marroquinería" de
+  Bucaramanga, funcionan más de 200 locales entre fábricas y puntos de venta.
+imagenCredito: Archivo particular
 tags: noticias
 ---
 El clúster de calzado y marroquinería del área metropolitana de Bucaramanga reúne **88 empresas** y **1.116 empleos directos** formales, con ventas por **$124.353 millones** en 2024, según el inventario de la [Cámara de Comercio de Bucaramanga](https://www.camaradirecta.com/), el IMEBU y la Alcaldía. [ACICAM](https://acicam.org/santander/) calcula que el sector ocupa en realidad a cerca de **47.000 personas** en la región.
@@ -18,6 +26,8 @@ La distancia entre esos dos números no es una contradicción: miden cosas disti
 ## San Francisco y el cuero que llega del centro
 
 En **San Francisco**, el "Distrito del Calzado y la Marroquinería" de Bucaramanga, funcionan más de 200 locales entre fábricas y puntos de venta, según [Periódico 15](https://www.periodico15.com/san-francisco-la-vitrina-del-calzado/). Buena parte del insumo llega de las curtiembres del centro de la ciudad: la [CDMB](https://www.cdmb.gov.co/) mantiene una guía ambiental específica para ese sector, que enfrenta su propia presión por vertimientos y normativa.
+
+![El sector de San Francisco lo conforman 88 empresas y genera 1.116 empleos directos. ](/assets/uploads/whatsapp-image-2026-07-28-at-1.55.38-pm.jpeg "El sector de San Francisco lo conforman 88 empresas y genera 1.116 empleos directos. ")
 
 ## El dólar, arma de doble filo
 
