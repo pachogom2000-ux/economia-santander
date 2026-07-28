@@ -2,13 +2,21 @@
 layout: noticia.njk
 title: "Café de Santander: carga a $2.210.000 y la prima que salva"
 date: 2026-07-24
-updated: 2026-07-28
-categoria: "Agro"
-chipTipo: "propio"
-chipLabel: "Redacción propia"
-excerpt: "El precio interno cerró en $2.210.000 la carga. La prima del suave colombiano subió de 15 a 62 centavos, pero la revaluación quita $700.000 por carga."
-autor: "Francisco Gómez - Director"
+categoria: Agro
+chipTipo: propio
+chipLabel: Redacción propia
+excerpt: El precio interno cerró en $2.210.000 la carga. La prima del suave
+  colombiano subió de 15 a 62 centavos, pero la revaluación quita $700.000 por
+  carga.
+autor: Francisco Gómez - Director
+imagen: /assets/uploads/publicdomainpictures-coffee-15994.jpg
+imagenAlt: Precio del café en Santander
+imagenTitle: Impacto de precio del café para Santander
+imagenPie: El precio de referencia nacional para factor de rendimiento 94 quedó
+  en $2.210.000 por carga.
+imagenCredito: "Foto: Pixabay-Publicdomainpictures"
 tags: noticias
+updated: 2026-07-28
 ---
 Una carga de 125 kilos de café pergamino seco se pagó a **$2.210.000** el lunes 27 de julio, según el boletín diario de la **Federación Nacional de Cafeteros (FNC)**.
 
@@ -28,7 +36,7 @@ Hay más letra menuda. La pasilla contenida en el pergamino se liquida a $10.000
 
 ## ¿Por qué el precio aguanta si Nueva York se desplomó?
 
-El contrato C de Nueva York cerró el 27 de julio en **324,55 centavos por libra**. Venía de una caída que ya tocó fondo: "...desde los US$4,13/lb alcanzados en noviembre de 2025, el precio del KC cayó 42% hasta los US$2,4 a finales de mayo de este año. Si bien se ha recuperado hasta niveles alrededor de los US$3 en la primera semana de julio, el mercado acumula más fundamentales bajistas que alcistas", dice el informe *Panorama Sector Caficultor* de **Bancolombia**, citado por [Portafolio](https://www.portafolio.co/economia/agro/aunque-el-cafe-pierde-valor-en-la-bolsa-de-nueva-york-la-prima-del-grano-colombiano-sostiene-el-precio-interno-498254).
+El contrato C de Nueva York cerró el 27 de julio en **US$324,55 centavos por libra**. Venía de una caída que ya tocó fondo: "...desde los US$4,13/lb alcanzados en noviembre de 2025, el precio del KC cayó 42% hasta los US$2,4 a finales de mayo de este año. Si bien se ha recuperado hasta niveles alrededor de los US$3 en la primera semana de julio, el mercado acumula más fundamentales bajistas que alcistas", dice el informe *Panorama Sector Caficultor* de **Bancolombia**, citado por [Portafolio](https://www.portafolio.co/economia/agro/aunque-el-cafe-pierde-valor-en-la-bolsa-de-nueva-york-la-prima-del-grano-colombiano-sostiene-el-precio-interno-498254).
 
 Conviene fijar la cuenta: frente al pico de noviembre, el cierre del 27 de julio está 21% abajo, no 42%. El 42% fue la caída de pico a piso, y el piso quedó atrás.
 
@@ -44,7 +52,9 @@ Del otro lado empuja Brasil. **Conab** proyecta 66,7 millones de sacos para el c
 
 La TRM del 27 de julio fue de **$3.210,56**: 21,9% menos que un año atrás, cuando estaba en $4.110,48, y 14% por debajo del cierre de 2025. Son cifras de la serie oficial de TRM del Banco de la República publicada en datos.gov.co. Cada peso que se revalúa sale del bolsillo del productor.
 
-**Germán Bahamón**, gerente de la FNC, lo cuantificó a comienzos de junio: "En un año, la tasa de cambio ha caído cerca de 549 pesos por dólar, provocando que la familia cafetera deje de percibir más de 400.000 pesos por su carga de café. Estamos hablando de un impacto cercano al 17 por ciento de su ingreso", dijo a [Portafolio](https://www.portafolio.co/economia/agro/revaluacion-del-peso-frente-al-dolar-genera-preocupacion-en-el-sector-cafetero-cuanto-se-pierde-por-carga-495514).
+![Santander tiene 55.640 hectáreas sembradas de café en 78 de sus 87 municipios. Foto: Pixabay-Leonel Barreto](/assets/uploads/hunterproducciones-farming-6959629.jpg)
+
+**Germán Bahamón**, gerente de la FNC, lo cuantificó a comienzos de junio: "En un año, la tasa de cambio ha caído cerca de $549 por dólar, provocando que la familia cafetera deje de percibir más de $400.000 por su carga de café. Estamos hablando de un impacto cercano al 17 por ciento de su ingreso", dijo a [Portafolio](https://www.portafolio.co/economia/agro/revaluacion-del-peso-frente-al-dolar-genera-preocupacion-en-el-sector-cafetero-cuanto-se-pierde-por-carga-495514).
 
 En julio la cuenta le creció. "...por cada 100 pesos que se revalúa el peso, el caficultor deja de recibir aproximadamente $75.000 por cada carga de 125 kilogramos de café", dijo a [El Colombiano](https://www.elcolombiano.com/negocios/cafetero-pierden-devaluacion-caida-dolar-MM39171049), y añadió que, mirando el último año, "la pérdida ya ronda los $700.000 por carga".
 
@@ -106,11 +116,11 @@ El precio lo explica: el kilo pasó de $25.977 en julio de 2025 a $13.713 en jul
 
 El café llegó a perder 42% en Nueva York y todavía está 21% bajo el pico, y el productor casi no lo sintió, porque la prima por calidad amortiguó el golpe. El cacao perdió 47% y no tuvo con qué amortiguarlo. La lección para Santander es esa: **la prima no es un lujo, es el seguro**.
 
-## Qué sigue y qué puedes hacer
+## ¿Qué se espera? 
 
-La FNC publica el precio cada día hábil después del cierre de Nueva York. Revisa el [boletín oficial](https://federaciondecafeteros.org/wp-content/uploads/2026/03/precio_cafe.pdf) antes de vender, no el del lunes pasado.
+La FNC publica el precio cada día hábil después del cierre de Nueva York. Revise el [boletín oficial](https://federaciondecafeteros.org/wp-content/uploads/2026/03/precio_cafe.pdf) antes de vender, no el del lunes pasado.
 
-Tres palancas concretas si produces café en Santander:
+Tres palancas concretas si usted es un productor de café en Santander:
 
 **Factor de rendimiento.** Entre FR 88 y FR 100 hay $166.000 por carga. El factor se define en la trilla: mientras menos pergamino se necesite para sacar un saco de excelso, mejor te pagan.
 
@@ -118,4 +128,4 @@ Tres palancas concretas si produces café en Santander:
 
 **Transformación local.** El Centro Regional de Industrialización del Café, abierto en Bucaramanga en noviembre de 2025 por la FNC y el Comité de Cafeteros de Santander, trilla hasta 1.000 sacos al mes y tuesta 22 toneladas. Néstor Serrano Capacho, director ejecutivo del Comité de Cafeteros de Santander, lo explicó así: "El café que entra se va a perfilar, tanto física como sensorialmente".
 
-Y vigila los dos números que deciden tu año: la prima y el dólar. Puedes seguirlos en nuestros [indicadores económicos](/indicadores/).
+Y vigile los dos números que deciden su año: la prima y el dólar. Puede seguirlos en nuestros [indicadores económicos](/indicadores/).
