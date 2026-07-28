@@ -1,14 +1,21 @@
 ---
 layout: noticia.njk
-title: "Dónde poner los ahorros en Bucaramanga con tasas del 12%"
+title: Dónde poner los ahorros en Bucaramanga con tasas del 12%
 date: 2026-07-28
-updated: 2026-07-28
-categoria: "Finanzas personales"
-chipTipo: "propio"
-chipLabel: "Redacción propia"
-excerpt: "Con el Emisor en 12% y la inflación de Bucaramanga en 7,05%, comparamos CDT, cuentas de ahorro y billeteras. Cuánto ganas con $5, $10 y $20 millones."
-autor: "Francisco Gómez - Director"
+categoria: Finanzas personales
+chipTipo: propio
+chipLabel: Redacción propia
+excerpt: Con el Emisor en 12% y la inflación de Bucaramanga en 7,05%, comparamos
+  CDT, cuentas de ahorro y billeteras. Cuánto gana con $5, $10 y $20 millones.
+autor: Francisco Gómez - Director
+imagen: /assets/uploads/gettyimages-1204261194.jpg
+imagenAlt: Inversión en CDT, invertir $5, $10, $20 millones
+imagenTitle: Inversión en CDT, invertir $5, $10, $20 millones
+imagenPie: "Haga cuentas de lo que usted recibe realmente si invierte en un CDT,
+  restando la alta inflación. "
+imagenCredito: archivo particular
 tags: noticias
+updated: 2026-07-28
 ---
 Un CDT a 360 días paga hasta **13,46% efectivo anual**, con corte al 2 de julio. La inflación anual de Bucaramanga cerró junio en **7,05%**. Esa resta, más lo que se lleva la DIAN, es todo este reportaje.
 
