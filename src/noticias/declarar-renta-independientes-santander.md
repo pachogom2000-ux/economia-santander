@@ -80,29 +80,29 @@ El 25% tiene techo: **790 UVT** al año, **$39.341.210**. Y además compite dent
 
 Los costos reales no tienen techo, pero exigen soporte. Factura electrónica, contrato, comprobante de pago: arriendo de oficina, equipos, software, transporte, el contador.
 
-La regla práctica es simple. Si tus gastos comprobables del año superan el 25% de tus honorarios, te conviene restar costos. Si trabajas desde tu casa con un computador y poco más, suele convenir el 25%.
+La regla práctica es simple. Si sus gastos comprobables del año superan el 25% de sus honorarios, le conviene restar costos. Si trabaja desde su casa con un computador y poco más, suele convenir el 25%.
 
 Esa decisión queda amarrada a la declaración. Correr el cálculo por los dos caminos antes de radicar es lo que separa a quien paga de más de quien no.
 
-## ¿Por qué te retuvieron plata y aun así puedes deber?
+## ¿Por qué le retuvieron plata y aun así puedesdeber?
 
-Porque la retención en la fuente es un abono, no el impuesto. Y a un independiente no siempre le aplican la misma tarifa: depende de cómo se clasifiquen tus ingresos y de lo que hayas informado a tu contratante. Revisa tu certificado de ingresos y retenciones: ahí está la tarifa que de verdad te aplicaron.
+Porque la retención en la fuente es un abono, no el impuesto. Y a un independiente no siempre le aplican la misma tarifa: depende de cómo se clasifiquen sus ingresos y de lo que haya informado a su contratante. Revise su certificado de ingresos y retenciones: ahí está la tarifa que de verdad le aplicaron.
 
 Esa retención se calcula pago por pago, no con el año completo a la vista. El impuesto real solo se define al cierre, cuando ya están sumados los ingresos, los costos y las deducciones de los doce meses.
 
-De ahí salen dos escenarios. Si te retuvieron más de lo que dio tu impuesto, queda saldo a favor y puedes pedir devolución o compensación.
+De ahí salen dos escenarios. Si le retuvieron más de lo que dio su impuesto, queda saldo a favor y puede pedir devolución o compensación.
 
-Si te retuvieron menos —el caso de quien facturó a varios contratantes pequeños o cobró sin retención—, pagas la diferencia el día del vencimiento. Pídele a cada contratante su certificado de ingresos y retenciones: es el documento que soporta lo que ya te descontaron.
+Si retuvieron menos —el caso de quien facturó a varios contratantes pequeños o cobró sin retención—, paga la diferencia el día del vencimiento. Pídale a cada contratante su certificado de ingresos y retenciones: es el documento que soporta lo que ya le descontaron.
 
-## ¿Qué pasa si no declaras?
+## ¿Qué pasa si no declara?
 
-La sanción mínima de 2026 son **10 UVT**: **$523.740**. Es el piso de cualquier sanción que se te cause —así el impuesto te dé cero—, no un cobro por declarar.
+La sanción mínima de 2026 son **10 UVT**: **$523.740**. Es el piso de cualquier sanción que se tl cause —así el impuesto sea de cero—, no un cobro por declarar.
 
-Si declaras tarde, la sanción por extemporaneidad es del **5%** del impuesto por cada mes o fracción de retraso, sin superar el 100% del impuesto, y corren intereses de mora.
+Si declara tarde, la sanción por extemporaneidad es del **5%** del impuesto por cada mes o fracción de retraso, sin superar el 100% del impuesto, y corren intereses de mora.
 
-Si de plano no declaras y la **DIAN** te alcanza, el artículo 643 castiga con el **20%** de la mayor de tres bases: tus consignaciones bancarias del año, tus ingresos brutos del año o los ingresos brutos de tu última declaración. Sobre $69.719.000, por ejemplo, eso son **$13.943.800**. Antes de imponerla la DIAN debe emplazarte y darte un mes para declarar.
+Si de plano no declara y la **DIAN** lo alcanza, el artículo 643 castiga con el **20%** de la mayor de tres bases: sus consignaciones bancarias del año, sus ingresos brutos del año o los ingresos brutos de su última declaración. Sobre $69.719.000, por ejemplo, eso son **$13.943.800**. Antes de imponerla la DIAN debe emplazarlo y darle un mes para declarar.
 
-Esa es la paradoja del contratista. Puedes terminar debiendo cero de impuesto y aun así pagar millones por no haber presentado un formulario.
+Esa es la paradoja del contratista. Puede terminar debiendo cero de impuesto y aun así pagar millones por no haber presentado un formulario.
 
 ## ¿Qué significa esto para los contratistas del área metropolitana?
 
