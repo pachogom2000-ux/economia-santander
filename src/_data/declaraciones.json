@@ -1,3 +1,31 @@
 {
-  "citas": []
+  "citas": [
+    {
+      "gremio": "Fenalco Santander",
+      "cita": "Esperamos que frente al año anterior las ventas crezcan entre un 20 % y un 25 %, y precisamente esto jalonará la economía de manera muy positiva para todos los sectores comerciales del departamento",
+      "persona": "Alejandro Almeyda",
+      "cargo": "Director ejecutivo, sobre las ventas de junio",
+      "medio": "El Frente",
+      "fecha": "11 de junio de 2026",
+      "url": "https://elfrente.com.co/comercio-en-santander-espera-aumentar-sus-ventas-hasta-en-un-25-durante-junio/"
+    },
+    {
+      "gremio": "Camacol Santander",
+      "cita": "La construcción es un sector que históricamente ha enfrentado altos niveles de informalidad y un ajuste salarial de esta magnitud, sin medidas complementarias, puede incentivar estas prácticas",
+      "persona": "Javier Ricardo Peñaranda",
+      "cargo": "Gerente, sobre el alza del salario mínimo y la VIS",
+      "medio": "Vanguardia",
+      "fecha": "3 de enero de 2026",
+      "url": "https://www.vanguardia.com/economia/local/2026/01/03/constructores-de-santander-advierten-sobre-el-impacto-del-alza-del-salario-minimo-en-las-viviendas-vis-y-vip/"
+    },
+    {
+      "gremio": "Cámara de Comercio de Bucaramanga",
+      "cita": "El hecho de que más del 81 % de las empresas haya logrado mantener o aumentar sus ventas y que cerca del 89 % haya sostenido o incrementado su nivel de ocupación refleja la capacidad de adaptación y el compromiso de nuestros empresarios con el crecimiento de la región",
+      "persona": "Juan Carlos Rincón Liévano",
+      "cargo": "Presidente ejecutivo, sobre la Encuesta Ritmo Empresarial",
+      "medio": "Vanguardia",
+      "fecha": "20 de marzo de 2026",
+      "url": "https://www.vanguardia.com/economia/2026/03/20/como-ven-los-empresarios-de-bucaramanga-el-panorama-economico-para-el-primer-semestre-de-2026/"
+    }
+  ]
 }
