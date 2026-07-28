@@ -118,14 +118,14 @@ Para dimensionar el salto: en todo 2025 esa seccional recaudó **$3,07 billones*
 
 ## Qué hacer esta semana
 
-**Uno.** Entra al portal de la DIAN y revisa tu información exógena. Ahí está lo que terceros reportaron sobre ti: pagos, retenciones, consignaciones.
+**Uno.** Entre al portal de la DIAN y revise su información exógena. Ahí está lo que terceros reportaron sobre usted: pagos, retenciones, consignaciones.
 
-**Dos.** Descarga la declaración sugerida y la herramienta **Ayuda Renta**. Es un borrador, no una verdad revelada: la responsabilidad de las cifras sigue siendo tuya.
+**Dos.** Descargue la declaración sugerida y la herramienta **Ayuda Renta**. Es un borrador, no una verdad revelada: la responsabilidad de las cifras sigue siendo suya.
 
-**Tres.** Reúne los certificados de ingresos y retenciones de cada contratante, las planillas de seguridad social y las facturas de tus gastos de 2025.
+**Tres.** Reúna los certificados de ingresos y retenciones de cada contratante, las planillas de seguridad social y las facturas de tus gastos de 2025.
 
-**Cuatro.** Corre el cálculo por los dos caminos, costos reales contra 25% exento, antes de radicar.
+**Cuatro.** Corra el cálculo por los dos caminos, costos reales contra 25% exento, antes de radicar.
 
-**Cinco.** Mira tu fecha, que la fijan los dos últimos dígitos de tu NIT en el RUT (sin el dígito de verificación). Si terminan en **01** o **02** vence el **12 de agosto**; si terminan en **19** o **20**, el **26 de agosto**.
+**Cinco.** Mire su fecha, que la fijan los dos últimos dígitos de tu NIT en el RUT (sin el dígito de verificación). Si terminan en **01** o **02** vence el **12 de agosto**; si terminan en **19** o **20**, el **26 de agosto**.
 
-Y quédate con la idea que más plata te ahorra: declarar no es pagar. Si pasaste un tope en 2025 tienes que presentar la declaración aunque el impuesto te dé cero. El resto de cifras del año las sigues en [nuestros indicadores económicos](/indicadores/).
+Y quédese con la idea que más plata le ahorra: declarar no es pagar. Si pasa un tope en 2025 tiene que presentar la declaración aunque el impuesto le dé cero. El resto de cifras del año las puede seguir en [nuestros indicadores económicos](/indicadores/).
