@@ -873,6 +873,45 @@
   }
   .flip-ast { color: var(--accent); font-weight: 700; }
 
+  /* ---------- tablas dentro de una noticia ---------- */
+  /* La tabla scrollea dentro de su caja para que la página nunca
+     se desborde de lado en el celular. */
+  .tabla-wrap {
+    overflow-x: auto;
+    margin: 22px 0;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    -webkit-overflow-scrolling: touch;
+  }
+  .noticia-cuerpo table, .tabla-wrap table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+    min-width: 420px;
+  }
+  .noticia-cuerpo th, .tabla-wrap th {
+    background: var(--bg-sunken);
+    font-family: var(--font-display);
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--text);
+    text-align: left;
+    padding: 11px 14px;
+    border-bottom: 2px solid var(--line);
+    white-space: nowrap;
+  }
+  .noticia-cuerpo td, .tabla-wrap td {
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--line);
+    color: var(--text-soft);
+    font-variant-numeric: tabular-nums;
+  }
+  .noticia-cuerpo tr:last-child td, .tabla-wrap tr:last-child td { border-bottom: none; }
+  .noticia-cuerpo tbody tr:hover, .tabla-wrap tbody tr:hover { background: var(--bg-sunken); }
+  .noticia-cuerpo td:first-child, .tabla-wrap td:first-child { color: var(--text); font-weight: 600; }
+
   /* ---------- pestañas de tasas ---------- */
   .tabs {
     display: flex;
