@@ -1941,3 +1941,138 @@
     padding-left: clamp(20px, 5vw, 40px);
     padding-right: clamp(20px, 5vw, 40px);
   }
+
+/* ============================================================
+   PAGINAS LEGALES, PIE LEGAL Y AVISO DE COOKIES
+   ============================================================ */
+
+.legal { max-width: 760px; padding-top: 26px; padding-bottom: 60px; }
+
+.legal-head { border-bottom: 3px solid var(--accent); padding-bottom: 18px; margin-bottom: 30px; }
+.legal-kicker {
+  font-family: var(--font-display); font-size: 12px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent);
+  margin: 0 0 8px;
+}
+.legal-head h1 {
+  font-family: var(--font-display); font-size: clamp(26px, 5vw, 38px);
+  line-height: 1.12; font-weight: 600; color: var(--text); margin: 0;
+}
+.legal-resumen { font-size: 17px; line-height: 1.55; color: var(--text-soft); margin: 14px 0 0; }
+.legal-fecha {
+  font-family: var(--font-display); font-size: 12px; text-transform: uppercase;
+  letter-spacing: 0.06em; color: var(--text-muted); margin: 12px 0 0;
+}
+
+.legal-cuerpo { font-size: 16.5px; line-height: 1.68; color: var(--text-soft); }
+.legal-cuerpo h2 {
+  font-family: var(--font-display); font-size: 21px; font-weight: 600;
+  color: var(--text); line-height: 1.25; margin: 40px 0 12px;
+  padding-top: 18px; border-top: 1px solid var(--line);
+}
+.legal-cuerpo h3 {
+  font-family: var(--font-display); font-size: 17px; font-weight: 600;
+  color: var(--text); margin: 26px 0 8px;
+}
+.legal-cuerpo p { margin: 0 0 14px; }
+.legal-cuerpo ul, .legal-cuerpo ol { margin: 0 0 16px; padding-left: 22px; }
+.legal-cuerpo li { margin-bottom: 7px; }
+.legal-cuerpo strong { color: var(--text); font-weight: 600; }
+.legal-cuerpo a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+.legal-cuerpo hr { border: 0; border-top: 3px solid var(--line); margin: 44px 0; }
+.legal-cuerpo code {
+  font-family: var(--font-mono); font-size: 0.88em; background: var(--gold-tint);
+  color: var(--gold); padding: 2px 7px; border-radius: 3px; font-weight: 600;
+}
+.legal-cuerpo blockquote {
+  margin: 20px 0; padding: 16px 20px; background: var(--accent-tint);
+  border-left: 4px solid var(--accent); border-radius: 0 5px 5px 0;
+}
+.legal-cuerpo blockquote p { margin: 0; color: var(--text); font-size: 17px; }
+.legal-cuerpo table {
+  width: 100%; border-collapse: collapse; font-size: 15px; margin: 18px 0;
+}
+.legal-cuerpo th {
+  background: var(--bg-sunken); font-family: var(--font-display); font-size: 12px;
+  font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em;
+  color: var(--text); text-align: left; padding: 10px 13px;
+  border-bottom: 2px solid var(--line);
+}
+.legal-cuerpo td {
+  padding: 10px 13px; border-bottom: 1px solid var(--line); vertical-align: top;
+}
+.legal-cuerpo td:first-child { color: var(--text); font-weight: 500; }
+
+.legal-nav { margin-top: 52px; padding: 22px 24px; background: var(--bg-sunken); border-radius: 8px; }
+.legal-nav h2 {
+  font-family: var(--font-display); font-size: 13px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted);
+  margin: 0 0 12px;
+}
+.legal-nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 22px; }
+.legal-nav a { color: var(--accent); font-size: 15px; text-decoration: none; font-weight: 500; }
+.legal-nav a:hover { text-decoration: underline; }
+
+.btn-cookies {
+  font-family: var(--font-display); font-size: 14px; font-weight: 600;
+  background: var(--accent); color: #fff; border: 0; border-radius: 5px;
+  padding: 11px 20px; cursor: pointer;
+}
+.btn-cookies:hover { background: var(--accent-strong); }
+
+/* ---------- franja legal del pie ---------- */
+.footer-legal { border-top: 1px solid var(--line); margin-top: 30px; padding-top: 22px; }
+.footer-legal-marca { font-size: 13px; color: var(--text-muted); margin: 0 0 12px; }
+.footer-legal-links {
+  list-style: none; margin: 0 0 16px; padding: 0;
+  display: flex; flex-wrap: wrap; gap: 6px 20px; align-items: center;
+}
+.footer-legal-links a, .footer-legal-btn {
+  font-size: 13.5px; color: var(--text-soft); text-decoration: none;
+}
+.footer-legal-links a:hover, .footer-legal-btn:hover { color: var(--accent); text-decoration: underline; }
+.footer-legal-btn {
+  background: none; border: 0; padding: 0; cursor: pointer;
+  font-family: var(--font-body); font-size: 13.5px;
+}
+.footer-legal-aviso {
+  font-size: 12.5px; line-height: 1.6; color: var(--text-muted);
+  margin: 0; padding: 13px 16px; background: var(--bg-sunken);
+  border-left: 3px solid var(--gold); border-radius: 0 5px 5px 0;
+}
+.footer-legal-aviso strong { color: var(--text-soft); }
+.footer-legal-aviso a { color: var(--accent); }
+
+/* ---------- aviso de cookies ---------- */
+.cookie-aviso {
+  position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 9000;
+  max-width: 620px; margin: 0 auto;
+  background: var(--bg-raised); border: 1px solid var(--line);
+  border-radius: 10px; padding: 18px 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.22);
+  display: flex; flex-wrap: wrap; gap: 14px 18px;
+  align-items: center; justify-content: space-between;
+}
+.cookie-aviso[hidden] { display: none; }
+.cookie-aviso-texto { flex: 1 1 300px; }
+.cookie-aviso-texto p { margin: 0 0 5px; font-size: 13.5px; line-height: 1.55; color: var(--text-soft); }
+.cookie-aviso-texto p:last-child { margin-bottom: 0; }
+.cookie-aviso-texto strong { color: var(--text); }
+.cookie-aviso-texto a { color: var(--accent); }
+.cookie-aviso-botones { display: flex; gap: 9px; flex: 0 0 auto; }
+.cookie-btn {
+  font-family: var(--font-display); font-size: 14px; font-weight: 600;
+  border-radius: 5px; padding: 10px 20px; cursor: pointer; white-space: nowrap;
+}
+.cookie-btn-si { background: var(--accent); color: #fff; border: 1px solid var(--accent); }
+.cookie-btn-si:hover { background: var(--accent-strong); }
+.cookie-btn-no { background: transparent; color: var(--text-soft); border: 1px solid var(--line); }
+.cookie-btn-no:hover { border-color: var(--text-muted); color: var(--text); }
+
+@media (max-width: 560px) {
+  .cookie-aviso { left: 10px; right: 10px; bottom: 10px; padding: 16px; }
+  .cookie-aviso-botones { width: 100%; }
+  .cookie-btn { flex: 1; }
+  .legal-cuerpo { font-size: 16px; }
+  .legal-cuerpo table { font-size: 14px; display: block; overflow-x: auto; }
+}

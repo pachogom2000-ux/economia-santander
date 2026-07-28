@@ -31,13 +31,41 @@
 <meta name="twitter:description" content="{{ pageDescription }}">
 <meta name="twitter:image" content="https://economiasantander.com{{ ogImagen }}">
 {% if imagen %}<link rel="preload" as="image" href="{{ imagen }}" fetchpriority="high">{% endif %}
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HVC4Z011SY"></script>
+<!-- Analítica (Google Analytics 4).
+     No se carga hasta que la persona la acepta en el aviso de cookies: sin
+     aceptación no se descarga gtag.js y no se guarda ninguna cookie suya.
+     Consent Mode v2 queda en "denied" por defecto. Ver /legal/cookies/. -->
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-HVC4Z011SY');
+  (function () {
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    window.gtag = gtag;
+
+    gtag('consent', 'default', {
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      analytics_storage: 'denied'
+    });
+
+    window.esCargarAnalitica = function () {
+      if (window.esAnaliticaCargada) return;
+      window.esAnaliticaCargada = true;
+      gtag('consent', 'update', { analytics_storage: 'granted' });
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-HVC4Z011SY';
+      document.head.appendChild(s);
+      gtag('js', new Date());
+      gtag('config', 'G-HVC4Z011SY', { anonymize_ip: true });
+    };
+
+    try {
+      if (window.localStorage.getItem('es-consent-analitica') === 'si') {
+        window.esCargarAnalitica();
+      }
+    } catch (e) {}
+  })();
 </script>
 
 <script type="application/ld+json">
@@ -245,7 +273,9 @@
         <h4>Sobre el medio</h4>
         <ul>
           <li><a href="/quien-soy/">Quién soy</a></li>
-          <li><a href="#">Política editorial</a></li>
+          <li><a href="/legal/politica-editorial/">Política editorial</a></li>
+          <li><a href="/legal/politica-editorial/#7-derecho-de-rectificacion">Pedir una rectificación</a></li>
+          <li><a href="/legal/publicidad/">Pautar en el portal</a></li>
           <li><a href="tel:+573112865169">Contacto: 311 286 5169</a></li>
         </ul>
       </div>
@@ -257,6 +287,19 @@
           <li><a href="#">Boletín por correo</a></li>
         </ul>
       </div>
+    </div>
+
+    <div class="footer-legal">
+      <p class="footer-legal-marca">© 2026 Economía Santander · Francisco Javier Gómez · Bucaramanga, Colombia</p>
+      <ul class="footer-legal-links">
+        <li><a href="/legal/datos-personales/">Datos personales</a></li>
+        <li><a href="/legal/cookies/">Cookies</a></li>
+        <li><a href="/legal/terminos/">Términos y aviso financiero</a></li>
+        <li><a href="/legal/politica-editorial/">Política editorial</a></li>
+        <li><a href="/legal/publicidad/">Publicidad</a></li>
+        <li><button type="button" class="footer-legal-btn" data-abrir-cookies>Preferencias de cookies</button></li>
+      </ul>
+      <p class="footer-legal-aviso">La información económica de este portal es periodística e informativa. <strong>No es asesoría financiera ni de inversión.</strong> Las tasas y precios tienen fecha de corte y pueden estar desactualizados: verifique en la fuente oficial antes de decidir. <a href="/legal/terminos/#2-aviso-financiero-lealo-antes-de-decidir-con-su-plata">Leer el aviso completo</a>.</p>
     </div>
   </div>
 </footer>
@@ -675,6 +718,58 @@
         dlg.querySelector('.mm-lb-next').onclick = function () { idx = (idx + 1) % fotos.length; pinta(); };
         pinta();
         if (dlg.showModal) dlg.showModal(); else dlg.setAttribute('open', '');
+      });
+    });
+  })();
+</script>
+
+<!-- Aviso de cookies. La analítica sigue apagada mientras no se acepte. -->
+<div class="cookie-aviso" id="cookie-aviso" role="dialog" aria-live="polite"
+     aria-label="Aviso de cookies" hidden>
+  <div class="cookie-aviso-texto">
+    <p><strong>Este sitio usa cookies solo para medir audiencia.</strong></p>
+    <p>Sirven para saber cuánta gente lee y qué notas. No hay publicidad que lo rastree ni venta de datos. Si no acepta, el portal funciona igual. <a href="/legal/cookies/">Ver la política de cookies</a>.</p>
+  </div>
+  <div class="cookie-aviso-botones">
+    <button type="button" class="cookie-btn cookie-btn-no" data-cookies="no">Rechazar</button>
+    <button type="button" class="cookie-btn cookie-btn-si" data-cookies="si">Aceptar</button>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var LLAVE = 'es-consent-analitica';
+    var aviso = document.getElementById('cookie-aviso');
+    if (!aviso) return;
+
+    function leer() {
+      try { return window.localStorage.getItem(LLAVE); } catch (e) { return null; }
+    }
+    function guardar(valor) {
+      try { window.localStorage.setItem(LLAVE, valor); } catch (e) {}
+    }
+    function mostrar() { aviso.hidden = false; }
+    function ocultar() { aviso.hidden = true; }
+
+    // Sin decisión previa, se pregunta. Con decisión, no se molesta más.
+    if (leer() === null) mostrar();
+
+    aviso.querySelectorAll('[data-cookies]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var valor = b.getAttribute('data-cookies');
+        guardar(valor);
+        ocultar();
+        // Rechazar no recarga: la analítica nunca llegó a cargarse.
+        if (valor === 'si' && window.esCargarAnalitica) window.esCargarAnalitica();
+      });
+    });
+
+    // Botón "Preferencias de cookies" del pie y de la página de cookies.
+    document.querySelectorAll('[data-abrir-cookies]').forEach(function (b) {
+      b.addEventListener('click', function (e) {
+        e.preventDefault();
+        mostrar();
+        aviso.scrollIntoView({ behavior: 'smooth', block: 'center' });
       });
     });
   })();

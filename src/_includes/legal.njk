@@ -1,0 +1,26 @@
+---
+layout: layout.njk
+---
+<article class="legal wrap">
+  <header class="legal-head">
+    <p class="legal-kicker">Información legal</p>
+    <h1>{{ tituloLegal or title }}</h1>
+    {% if resumen %}<p class="legal-resumen">{{ resumen }}</p>{% endif %}
+    {% if actualizado %}<p class="legal-fecha">Vigente desde el {{ actualizado }}</p>{% endif %}
+  </header>
+
+  <div class="legal-cuerpo">
+    {{ content | safe }}
+  </div>
+
+  <nav class="legal-nav" aria-label="Documentos legales">
+    <h2>Los demás documentos</h2>
+    <ul>
+      <li><a href="/legal/datos-personales/">Tratamiento de datos personales</a></li>
+      <li><a href="/legal/cookies/">Cookies y analítica</a></li>
+      <li><a href="/legal/terminos/">Términos de uso y aviso financiero</a></li>
+      <li><a href="/legal/politica-editorial/">Política editorial, correcciones y rectificación</a></li>
+      <li><a href="/legal/publicidad/">Publicidad y contenido patrocinado</a></li>
+    </ul>
+  </nav>
+</article>

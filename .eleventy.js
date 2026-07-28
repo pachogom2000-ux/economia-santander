@@ -21,6 +21,25 @@ module.exports = function (eleventyConfig) {
     }
     return renderPorDefecto(tokens, idx, options, env, self);
   };
+
+  // IDs automáticos en los encabezados, para poder enlazar a una sección
+  // concreta: el pie apunta al aviso financiero y al derecho de rectificación.
+  // Se hace a mano en vez de con markdown-it-anchor para no sumar dependencia.
+  md.renderer.rules.heading_open = function (tokens, idx, options, env, self) {
+    const inline = tokens[idx + 1];
+    if (inline && inline.type === "inline") {
+      const slug = inline.content
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[̀-ͯ]/g, "")
+        .replace(/[^a-z0-9\s-]/g, "")
+        .trim()
+        .replace(/\s+/g, "-");
+      if (slug) tokens[idx].attrSet("id", slug);
+    }
+    return self.renderToken(tokens, idx, options, env, self);
+  };
+
   eleventyConfig.setLibrary("md", md);
 
   eleventyConfig.addFilter("readableDate", (dateObj) => {
