@@ -3,7 +3,9 @@ layout: layout.njk
 title: Economía Santander | Noticias de economía en Santander
 ogType: website
 ---
-{% set noticias = collections.noticias | reverse %}
+{# Orden de la portada: primero lo fijado a mano en "Datos del sitio → Orden de
+   la portada"; el resto, por fecha. Con la lista vacía manda la fecha. #}
+{% set noticias = collections.noticias | ordenarPortada(portada.destacadas) %}
 {% set hero = noticias[0] %}
 {% set secundarias = noticias.slice(1, 5) %}
 

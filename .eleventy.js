@@ -116,6 +116,25 @@ module.exports = function (eleventyConfig) {
     return cuantas ? encontradas.slice(0, cuantas) : encontradas;
   });
 
+  // Orden de la portada. Las notas fijadas en _data/portada.json van primero y
+  // en ese orden; el resto sigue por fecha, de la más reciente a la más vieja.
+  // Con la lista vacía la portada se comporta como siempre, así que fijar es
+  // opcional. Un slug que ya no exista (nota borrada, despublicada o todavía en
+  // borrador) se ignora en silencio: la portada nunca queda con un hueco.
+  eleventyConfig.addFilter("ordenarPortada", (lista, destacadas) => {
+    const notas = lista || [];
+    const slugDe = (p) => (p.page && p.page.fileSlug) || p.fileSlug || "";
+    const fijadas = [];
+    (destacadas || []).forEach((slug) => {
+      const nota = notas.find((p) => slugDe(p) === slug);
+      if (nota && !fijadas.includes(nota)) fijadas.push(nota);
+    });
+    const resto = notas
+      .filter((p) => !fijadas.includes(p))
+      .sort((a, b) => new Date(b.date) - new Date(a.date));
+    return fijadas.concat(resto);
+  });
+
   // Todas las secciones del portal, en el orden en que se muestran. Sale de
   // _data/secciones.json para que la taxonomía viva en un solo lugar: el
   // menú, la portada y las páginas de sección leen de aquí.

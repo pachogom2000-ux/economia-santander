@@ -118,6 +118,8 @@ Decap está en `publish_mode: editorial_workflow`. Los guardados van a una rama 
 
 `src/_data/picoyplaca.json` guarda los dígitos de la franja superior y se edita desde el CMS, en "Datos del sitio". Medellín rota por semestres y Bucaramanga por trimestres: se añade la rotación nueva con su fecha de inicio y el sitio cambia solo ese día. No borres la anterior.
 
+`src/_data/portada.json` fija el orden de la portada, también desde "Datos del sitio". La primera nota de `destacadas` es la principal y las siguientes ocupan los cuatro huecos de al lado; lo que no esté en la lista aparece debajo por fecha. Con la lista vacía manda la fecha, como siempre. Un slug que ya no exista se ignora, así que borrar o despublicar una nota nunca deja hueco. **Es una decisión editorial, no técnica: hay que soltar la nota cuando deje de ser relevante, o la portada se congela.**
+
 ---
 
 ## Cosas que ya nos pasaron

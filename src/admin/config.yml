@@ -14,6 +14,31 @@ collections:
   - name: "datos"
     label: "Datos del sitio"
     files:
+      - name: "portada"
+        label: "Orden de la portada"
+        file: "src/_data/portada.json"
+        format: "json"
+        description: >-
+          Fija qué notas van arriba y en qué orden. La primera de la lista es la
+          nota principal; las siguientes ocupan los cuatro huecos de al lado.
+          Lo que no fijes aquí sigue apareciendo debajo, de la más reciente a la
+          más vieja. Si dejas la lista vacía manda la fecha, como siempre.
+          Acuérdate de soltar una nota cuando deje de ser relevante.
+        fields:
+          - label: "Notas fijadas, en orden"
+            name: "destacadas"
+            widget: "list"
+            required: false
+            hint: "Arrastra para reordenar. La primera es la nota principal de la portada."
+            field:
+              label: "Nota"
+              name: "nota"
+              widget: "relation"
+              collection: "noticias"
+              search_fields: ["title"]
+              display_fields: ["title"]
+              value_field: "{{slug}}"
+
       - name: "picoyplaca"
         label: "Pico y placa"
         file: "src/_data/picoyplaca.json"
