@@ -207,23 +207,32 @@
     align-items: center;
     gap: 7px;
   }
-  .live-badge {
-    display: none;
+  /* Botón de la barra: reemplaza al viejo sello "EN VIVO", que invitaba
+     al clic y no llevaba a ninguna parte. Ahora muestra el dólar del día
+     y abre el convertidor. */
+  .dolar-cta {
+    display: inline-flex;
     align-items: center;
-    gap: 4px;
-    font-size: 9px;
-    letter-spacing: 0.08em;
-    color: #fff;
-    background: rgba(0,0,0,0.28);
-    padding: 2px 7px;
-    border-radius: 10px;
+    gap: 6px;
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #15200f;
+    background: var(--yellow);
+    padding: 4px 11px;
+    border-radius: 999px;
+    white-space: nowrap;
+    transition: filter 160ms ease, transform 160ms ease;
   }
-  .live-badge.on { display: inline-flex; }
-  .live-badge .dot {
+  .dolar-cta:hover, .dolar-cta:focus-visible { filter: brightness(1.08); transform: translateY(-1px); }
+  .dolar-cta .dot {
     width: 6px; height: 6px; border-radius: 50%;
-    background: #7df0a6;
+    background: #0b6e3b;
     animation: pulse 1.8s ease-in-out infinite;
   }
+  .dolar-cta b { font-variant-numeric: tabular-nums; }
+  .dolar-cta .flecha { font-weight: 700; }
   @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.35; } }
 
   /* ---------- cinta bursátil deslizante ---------- */
@@ -1242,19 +1251,74 @@
   .qs-meta-item b { display: block; font-family: var(--font-display); font-size: 21px; font-weight: 700; color: var(--text); }
   .qs-meta-item span { font-size: 12px; color: var(--text-muted); line-height: 1.3; display: block; }
 
-  .qs-cinta { margin-top: 26px; }
-  .qs-cinta-viewport { background: var(--accent); }
-  .qs-cinta-track { animation-duration: 46s; }
-  .qs-cinta-item {
-    padding: 10px 22px;
+  /* ---------- muro de medios: los logos se alternan ---------- */
+  .qs-medios { padding: 22px 0 4px; }
+  .qs-medios-titulo {
     font-family: var(--font-display);
-    font-size: 14px;
+    font-size: 11px;
     font-weight: 600;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: #fff;
-    white-space: nowrap;
-    border-right: 1px solid rgba(255,255,255,0.18);
+    color: var(--text-muted);
+    margin-bottom: 12px;
+  }
+  .qs-muro {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(168px, 1fr));
+    gap: 10px;
+  }
+  /* Cuando el JS toma el control quedan pocas fichas, siempre del mismo alto */
+  .qs-muro.rota { grid-template-columns: repeat(5, 1fr); }
+  .qs-medio {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 58px;
+    padding: 9px 12px;
+    background: var(--bg-raised);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    min-width: 0;
+  }
+  /* La tarjeta se queda quieta y solo cambia su contenido: si se desvaneciera
+     entera, la cuadrícula mostraría un hueco y parecería un error. */
+  .qs-medio img, .qs-medio .qs-medio-nombre {
+    transition: opacity 300ms ease, transform 300ms ease;
+  }
+  .qs-medio img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    flex-shrink: 0;
+    /* Los logos vienen de fuentes distintas: este filtro suave los empareja */
+    filter: saturate(0.92);
+  }
+  .qs-medio-nombre {
+    font-family: var(--font-display);
+    font-size: 13.5px;
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: 0.01em;
+    color: var(--text);
+    overflow-wrap: anywhere;
+  }
+  .qs-medio.saliendo img, .qs-medio.saliendo .qs-medio-nombre { opacity: 0; transform: translateY(-7px); }
+  .qs-medio.entrando img, .qs-medio.entrando .qs-medio-nombre { animation: medioEntra 400ms ease both; }
+  @keyframes medioEntra {
+    from { opacity: 0; transform: translateY(9px); }
+    to { opacity: 1; transform: none; }
+  }
+  @media (max-width: 700px) {
+    .qs-muro.rota { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+    .qs-medio { flex-direction: column; text-align: center; gap: 6px; padding: 10px 6px; min-height: 84px; justify-content: center; }
+    .qs-medio-nombre { font-size: 11.5px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .qs-medio img, .qs-medio .qs-medio-nombre { transition: none; }
+    .qs-medio.entrando img, .qs-medio.entrando .qs-medio-nombre { animation: none; }
   }
   .qs-bio { max-width: 760px; display: flex; flex-direction: column; gap: 14px; }
   .qs-bio p { font-size: 16px; line-height: 1.7; color: var(--text-soft); }
@@ -1365,6 +1429,166 @@
     .ind-grid { grid-template-columns: 1fr; gap: 12px; }
     .ind-card { padding: 14px; }
     .ind-valor { font-size: 26px; }
+  }
+
+  /* ==========================================================
+     Página del dólar: convertidor, puntas y gráfica
+     ========================================================== */
+  .dolar-hero { padding-top: 28px; }
+  .dolar-titulo { font-size: clamp(28px, 4.4vw, 42px); text-transform: uppercase; line-height: 1.03; margin-bottom: 16px; }
+  .dolar-tarjetas { display: grid; grid-template-columns: 1.15fr 1fr; gap: 16px; }
+  .dolar-principal, .dolar-puntas {
+    background: var(--bg-raised);
+    border: 1px solid var(--line);
+    border-top: 3px solid var(--accent);
+    border-radius: 8px;
+    padding: 16px 18px;
+  }
+  .dolar-puntas { border-top-color: var(--gold); }
+  .dolar-etiqueta {
+    font-family: var(--font-display);
+    font-size: 11px; font-weight: 600;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--text-muted);
+    display: block;
+  }
+  .dolar-valor {
+    font-family: var(--font-display);
+    font-size: clamp(34px, 5.6vw, 52px);
+    font-weight: 700; line-height: 1;
+    margin: 6px 0 4px;
+    font-variant-numeric: tabular-nums;
+  }
+  .dolar-fecha { font-size: 12px; color: var(--text-soft); line-height: 1.4; }
+  .dolar-variacion { font-size: 13px; font-weight: 700; margin-top: 6px; }
+  .dolar-variacion.up { color: var(--accent); }
+  .dolar-variacion.down { color: var(--down); }
+  .dolar-punta-fila { display: flex; gap: 10px; margin: 10px 0 8px; flex-wrap: wrap; }
+  .dolar-punta {
+    flex: 1 1 120px;
+    background: var(--bg-sunken);
+    border-radius: 6px;
+    padding: 8px 10px;
+    display: flex; flex-direction: column; gap: 2px;
+  }
+  .dolar-punta b {
+    font-family: var(--font-display);
+    font-size: 10.5px; font-weight: 600;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--text-muted);
+  }
+  .dolar-punta span {
+    font-family: var(--font-display);
+    font-size: 21px; font-weight: 700;
+    font-variant-numeric: tabular-nums;
+  }
+  .dolar-nota { font-size: 11.5px; color: var(--text-muted); line-height: 1.45; }
+
+  .conv {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 14px;
+    align-items: end;
+  }
+  .conv-campo { min-width: 0; }
+  .conv-campo label {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 11.5px; font-weight: 600;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+  }
+  .conv-input {
+    display: flex; align-items: center; gap: 8px;
+    background: var(--bg-raised);
+    border: 2px solid var(--line);
+    border-radius: 8px;
+    padding: 10px 14px;
+    transition: border-color 160ms ease;
+  }
+  .conv-input:focus-within { border-color: var(--accent); }
+  .conv-simbolo {
+    font-family: var(--font-display);
+    font-size: 17px; font-weight: 700;
+    color: var(--text-muted);
+    flex-shrink: 0;
+  }
+  .conv-input input {
+    flex: 1;
+    min-width: 0;
+    border: 0;
+    background: transparent;
+    color: var(--text);
+    font-family: var(--font-display);
+    font-size: clamp(22px, 3.4vw, 30px);
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    padding: 0;
+  }
+  .conv-input input:focus { outline: none; }
+  .conv-igual {
+    font-family: var(--font-display);
+    font-size: 26px; font-weight: 700;
+    color: var(--accent);
+    padding-bottom: 12px;
+  }
+  .conv-rapidos { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+  .conv-chip {
+    font-family: var(--font-display);
+    font-size: 13px; font-weight: 600;
+    letter-spacing: 0.02em;
+    color: var(--text);
+    background: var(--bg-sunken);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 7px 14px;
+    cursor: pointer;
+    transition: background 160ms ease, border-color 160ms ease;
+  }
+  .conv-chip:hover, .conv-chip:focus-visible { background: var(--accent-tint); border-color: var(--accent); }
+  .conv-pie { font-size: 12.5px; color: var(--text-soft); line-height: 1.55; margin-top: 14px; max-width: 76ch; }
+
+  .dolar-chart { border-radius: 6px; overflow: hidden; }
+  .dolar-chart svg { width: 100%; height: auto; display: block; background: var(--bg-sunken); border-radius: 6px; }
+  .dolar-comparativos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+    margin-top: 14px;
+  }
+  .dolar-comp {
+    background: var(--bg-raised);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--yellow);
+    border-radius: 0 8px 8px 0;
+    padding: 10px 12px;
+  }
+  .dolar-comp b {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 20px; font-weight: 700;
+    font-variant-numeric: tabular-nums;
+  }
+  .dolar-comp span { font-size: 11.5px; color: var(--text-muted); line-height: 1.3; }
+
+  .dolar-tabla td { font-variant-numeric: tabular-nums; }
+  .dolar-tabla td:first-child { white-space: nowrap; }
+  .dolar-faq { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+  .faq-item {
+    background: var(--bg-raised);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 14px 16px;
+  }
+  .faq-item h3 { font-size: 16px; margin-bottom: 6px; line-height: 1.2; }
+  .faq-item p { font-size: 13.5px; color: var(--text-soft); line-height: 1.6; }
+
+  @media (max-width: 720px) {
+    .dolar-tarjetas { grid-template-columns: 1fr; gap: 12px; }
+    .conv { grid-template-columns: 1fr; gap: 10px; }
+    .conv-igual { display: none; }
+    .dolar-hero { padding-top: 18px; }
   }
 
   /* ==========================================================

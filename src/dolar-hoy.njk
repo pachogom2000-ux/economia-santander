@@ -1,0 +1,116 @@
+---
+layout: layout.njk
+title: "Dólar hoy en Colombia: TRM, convertidor y gráfica"
+description: "Convierte dólares a pesos con la TRM de hoy, consulta las puntas de compra y venta del mercado y mira la gráfica del dólar en Colombia del último año."
+permalink: /dolar-hoy/
+---
+<section class="dolar-hero wrap">
+  <p class="kicker">Herramienta · Actualizada en cada visita</p>
+  <h1 class="dolar-titulo">Dólar hoy en Colombia</h1>
+  <div class="dolar-tarjetas">
+    <div class="dolar-principal">
+      <span class="dolar-etiqueta">TRM oficial de hoy</span>
+      <p class="dolar-valor"><span data-rol="trm">Cargando…</span></p>
+      <p class="dolar-fecha" data-rol="trm-fecha">Banco de la República</p>
+      <p class="dolar-variacion" data-rol="trm-var"></p>
+    </div>
+    <div class="dolar-puntas" data-rol="puntas">
+      <span class="dolar-etiqueta">Mercado spot (SetFX)</span>
+      <div class="dolar-punta-fila">
+        <span class="dolar-punta"><b>Compra</b><span data-rol="compra">—</span></span>
+        <span class="dolar-punta"><b>Venta</b><span data-rol="venta">—</span></span>
+      </div>
+      <p class="dolar-nota" data-rol="spot-nota">Consultando el mercado…</p>
+    </div>
+  </div>
+</section>
+
+<section class="section-block wrap">
+  <div class="section-head">
+    <h2>Convertidor de dólares a pesos</h2>
+    <span class="sub">Escribe en cualquiera de los dos campos: la conversión se hace sola</span>
+  </div>
+
+  <div class="conv">
+    <div class="conv-campo">
+      <label for="conv-usd">Dólares (USD)</label>
+      <div class="conv-input"><span class="conv-simbolo">US$</span><input type="text" id="conv-usd" inputmode="decimal" value="100" autocomplete="off"></div>
+    </div>
+    <span class="conv-igual" aria-hidden="true">=</span>
+    <div class="conv-campo">
+      <label for="conv-cop">Pesos colombianos (COP)</label>
+      <div class="conv-input"><span class="conv-simbolo">$</span><input type="text" id="conv-cop" inputmode="decimal" value="" autocomplete="off"></div>
+    </div>
+  </div>
+
+  <div class="conv-rapidos" aria-label="Montos frecuentes">
+    <button type="button" class="conv-chip" data-usd="20">US$20</button>
+    <button type="button" class="conv-chip" data-usd="50">US$50</button>
+    <button type="button" class="conv-chip" data-usd="100">US$100</button>
+    <button type="button" class="conv-chip" data-usd="200">US$200</button>
+    <button type="button" class="conv-chip" data-usd="500">US$500</button>
+    <button type="button" class="conv-chip" data-usd="1000">US$1.000</button>
+  </div>
+  <p class="conv-pie">Calculado con la <b>TRM</b>, la tasa oficial que certifica la Superintendencia Financiera. En una casa de cambio o al pagar con tarjeta, el valor que te den será distinto: cada entidad cobra su margen.</p>
+</section>
+
+<section class="section-block wrap">
+  <div class="section-head">
+    <h2>Cómo se ha movido el dólar</h2>
+    <span class="sub">TRM del último año · fuente: Banco de la República vía datos.gov.co</span>
+  </div>
+  <div class="dolar-chart" data-rol="chart">
+    <p class="ind-chart-cargando">Cargando la serie histórica…</p>
+  </div>
+  <div class="dolar-comparativos">
+    <div class="dolar-comp"><b data-rol="comp-mes">—</b><span>frente a hace un mes</span></div>
+    <div class="dolar-comp"><b data-rol="comp-anio">—</b><span>frente a hace un año</span></div>
+    <div class="dolar-comp"><b data-rol="comp-max">—</b><span>máximo del último año</span></div>
+    <div class="dolar-comp"><b data-rol="comp-min">—</b><span>mínimo del último año</span></div>
+  </div>
+</section>
+
+<section class="section-block wrap">
+  <div class="section-head">
+    <h2>Si te llega una remesa</h2>
+    <span class="sub">Cuánto recibirías hoy, antes de comisiones</span>
+  </div>
+  <div class="tabla-scroll">
+    <table class="dolar-tabla">
+      <thead><tr><th>Te envían</th><th>Recibes a TRM</th><th>Si te cobran 2% de margen</th></tr></thead>
+      <tbody data-rol="remesas">
+        <tr><td>US$100</td><td>—</td><td>—</td></tr>
+        <tr><td>US$200</td><td>—</td><td>—</td></tr>
+        <tr><td>US$500</td><td>—</td><td>—</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="conv-pie">Las remesas son una de las principales fuentes de ingreso de miles de hogares santandereanos. Pregunta siempre qué tasa te aplican: la diferencia entre la TRM y la tasa del giro es lo que gana el intermediario.</p>
+</section>
+
+<section class="section-block wrap">
+  <div class="section-head">
+    <h2>Preguntas frecuentes sobre el dólar</h2>
+  </div>
+  <div class="dolar-faq">
+    <div class="faq-item">
+      <h3>¿Qué es la TRM y para qué sirve?</h3>
+      <p>Es la <b>Tasa Representativa del Mercado</b>: el promedio de las operaciones de compra y venta de dólares entre entidades financieras del día anterior, certificado por la <b>Superintendencia Financiera</b>. Es la tasa oficial para contratos, declaraciones de renta, aranceles y facturación en dólares.</p>
+    </div>
+    <div class="faq-item">
+      <h3>¿Por qué en la casa de cambio me dan menos?</h3>
+      <p>Porque la TRM es un promedio del mercado mayorista. Las casas de cambio, bancos y giros compran más barato y venden más caro que ese promedio: esa diferencia —el <b>spread</b>— es su ganancia. Compara siempre dos o tres antes de cambiar.</p>
+    </div>
+    <div class="faq-item">
+      <h3>¿Qué diferencia hay entre TRM y precio spot?</h3>
+      <p>El <b>spot</b> es el precio al que se está negociando el dólar en este momento en el mercado (con sus puntas de compra y venta). La <b>TRM</b> es el promedio ya certificado del día anterior. Por eso casi nunca son iguales.</p>
+    </div>
+    <div class="faq-item">
+      <h3>¿Un dólar caro es bueno o malo?</h3>
+      <p>Depende de qué lado estés. Al exportador santandereano —café, cacao, calzado— un dólar caro le mejora el ingreso en pesos. Al que importa insumos, viaja o paga suscripciones en dólares, le encarece todo. Y a quien recibe remesas, un dólar caro le rinde más.</p>
+    </div>
+  </div>
+  <p class="conv-pie">¿Buscas más indicadores? Mira el <a href="/indicadores/">oro, el bitcoin, las acciones colombianas y las tasas</a> con sus gráficas históricas.</p>
+</section>
+
+<script src="/assets/dolar.js" defer></script>

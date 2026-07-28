@@ -123,7 +123,13 @@
       <svg class="flag-co" viewBox="0 0 6 4" role="img" aria-label="Colombia"><rect width="6" height="2" fill="#FCD116"/><rect y="2" width="6" height="1" fill="#003893"/><rect y="3" width="6" height="1" fill="#CE1126"/></svg>
       <span id="fecha-hoy">· —</span>
     </span>
-    <span class="ticker-label">Mercados <span class="live-badge" id="trm-live"><span class="dot"></span>EN VIVO</span></span>
+    <span class="ticker-label">Mercados</span>
+    <a class="dolar-cta" id="trm-live" href="/dolar-hoy/" title="Convertidor de dólares a pesos, puntas de compra y venta y gráfica de la TRM">
+      <span class="dot" aria-hidden="true"></span>
+      <span>¿Cuánto vale tu dólar?</span>
+      <b class="js-usd-val"></b>
+      <span class="flecha" aria-hidden="true">→</span>
+    </a>
   </div>
   <div class="ticker-viewport">
     <div class="ticker-track" id="ticker-track">
@@ -164,6 +170,7 @@
     <div class="nav-inner" id="nav-menu">
     <a href="/" {% if page.url == '/' %}class="current"{% endif %}>Portada</a>
     <a href="/multimedia/" {% if page.url == '/multimedia/' %}class="current"{% endif %}>Multimedia</a>
+    <a href="/dolar-hoy/" {% if page.url == '/dolar-hoy/' %}class="current"{% endif %}>Dólar hoy</a>
     <a href="/indicadores/" {% if page.url == '/indicadores/' %}class="current"{% endif %}>Indicadores</a>
     <a href="#">Inversión</a>
     <a href="#">Finanzas personales</a>
@@ -225,6 +232,7 @@
         <h4>Secciones</h4>
         <ul>
           <li><a href="/multimedia/">Multimedia</a></li>
+          <li><a href="/dolar-hoy/">Dólar hoy</a></li>
           <li><a href="/indicadores/">Indicadores</a></li>
           <li><a href="#">Inversión</a></li>
           <li><a href="#">Empleo</a></li>
