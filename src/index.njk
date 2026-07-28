@@ -71,68 +71,32 @@ ogType: website
   {% include "anuncio.njk" %}
   {% set anuncio = null %}
 
+  {# Las tarjetas leen de la colección real: cada sección muestra sus dos
+     notas más recientes y la que no tenga ninguna no se pinta. Antes eran
+     catorce titulares escritos a mano que no llevaban a ningún lado. #}
   <section class="section-block wrap">
     <div class="section-head">
       <h2>Secciones principales</h2>
       <span class="sub">Los siete núcleos temáticos del portal</span>
     </div>
     <div class="core-grid">
+      {% for s in secciones.principales %}
+      {% set notasSec = collections.noticias | porCategoria(s.nombre, 2) %}
+      {% if notasSec.length %}
       <div class="core-card">
-        <h3>Inversión</h3>
-        <p class="desc">Dónde y cómo invierten los santandereanos, de finca raíz a fondos de capital.</p>
+        <h3><a href="/seccion/{{ s.nombre | slugify }}/">{{ s.nombre }}</a></h3>
+        <p class="desc">{{ s.desc }}</p>
         <div class="headlines">
-          <div class="row"><span class="chip propio">Propia</span><a href="#">Tres fondos inmobiliarios ponen la mira en Bucaramanga</a></div>
-          <div class="row"><span class="chip propio">Propia</span><a href="#">Guía: cómo evaluar un proyecto de vivienda en preventa</a></div>
+          {% for n in notasSec %}
+          <div class="row">
+            <span class="chip {{ n.data.chipTipo or 'propio' }}">{{ n.data.chipLabel or 'Propia' }}</span>
+            <a href="{{ n.url }}">{{ n.data.title }}</a>
+          </div>
+          {% endfor %}
         </div>
       </div>
-      <div class="core-card">
-        <h3>Educación financiera</h3>
-        <p class="desc">Herramientas prácticas para tomar mejores decisiones con el dinero.</p>
-        <div class="headlines">
-          <div class="row"><span class="chip propio">Propia</span><a href="#">Qué es el UVR y cómo afecta tu crédito hipotecario</a></div>
-          <div class="row"><span class="chip propio">Propia</span><a href="#">Cinco errores comunes al declarar renta como independiente</a></div>
-        </div>
-      </div>
-      <div class="core-card">
-        <h3>Empleo</h3>
-        <p class="desc">El mercado laboral formal e informal en el área metropolitana de Bucaramanga.</p>
-        <div class="headlines">
-          <div class="row"><span class="chip propio">Propia</span><a href="#">Bucaramanga lidera la creación de empleo formal</a></div>
-          <div class="row"><span class="chip propio">Propia</span><a href="#">Los sectores que más contratarán en el segundo semestre</a></div>
-        </div>
-      </div>
-      <div class="core-card">
-        <h3>Finanzas personales</h3>
-        <p class="desc">Presupuesto, ahorro y crédito para hogares santandereanos.</p>
-        <div class="headlines">
-          <div class="row"><span class="chip propio">Propia</span><a href="#">Cómo armar un fondo de emergencia con salario mínimo</a></div>
-          <div class="row"><span class="chip recirc">Fuente: BanRep</span><a href="#">Bancos ajustan tasas de crédito de consumo tras decisión del Emisor</a></div>
-        </div>
-      </div>
-      <div class="core-card">
-        <h3>Construcción</h3>
-        <p class="desc">El pulso del sector edificador en Santander.</p>
-        <div class="headlines">
-          <div class="row"><span class="chip propio">Propia</span><a href="#">Licencias de construcción crecen 14%</a></div>
-          <div class="row"><span class="chip propio">Propia</span><a href="#">Camacol Santander proyecta un cierre de año moderado</a></div>
-        </div>
-      </div>
-      <div class="core-card">
-        <h3>Industria</h3>
-        <p class="desc">Manufactura, energía y logística regional.</p>
-        <div class="headlines">
-          <div class="row"><span class="chip propio">Propia</span><a href="#">Parques industriales de Girón reportan ocupación récord</a></div>
-          <div class="row"><span class="chip recirc">Fuente: DANE</span><a href="#">Producción industrial nacional crece 2,1% en mayo</a></div>
-        </div>
-      </div>
-      <div class="core-card">
-        <h3>Agro</h3>
-        <p class="desc">Café, cacao y agroindustria desde las provincias de Santander.</p>
-        <div class="headlines">
-          <div class="row"><span class="chip propio">Propia</span><a href="#">El café especial de Santander gana terreno en Europa</a></div>
-          <div class="row"><span class="chip recirc">Fuente: Fed. Nal. de Cafeteros</span><a href="#">El precio interno de la carga de café sube por segunda semana</a></div>
-        </div>
-      </div>
+      {% endif %}
+      {% endfor %}
     </div>
   </section>
 
@@ -142,11 +106,10 @@ ogType: website
       <span class="sub">Secciones complementarias</span>
     </div>
     <div class="comp-row">
-      <a href="#">Comercio y consumo</a>
-      <a href="#">Turismo y hotelería</a>
-      <a href="#">Emprendimiento y pymes</a>
-      <a href="#">Impuestos y regulación</a>
-      <a href="#">Indicadores económicos</a>
+      {% for s in secciones.complementarias %}
+      {% set cuantas = (collections.noticias | porCategoria(s.nombre)).length %}
+      <a href="/seccion/{{ s.nombre | slugify }}/">{{ s.nombre }}{% if cuantas %} <b>{{ cuantas }}</b>{% endif %}</a>
+      {% endfor %}
     </div>
   </section>
 
@@ -424,50 +387,60 @@ ogType: website
     </div>
   </section>
 
+  {# El bloque de opinión sale de una columna real: sin columna publicada,
+     no se pinta. Antes mostraba una cita atribuida al director que él
+     nunca escribió. #}
+  {% set columnas = collections.noticias | porCategoria('Opinión', 1) %}
+  {% if columnas.length %}
   <section class="opinion-block">
     <div class="wrap opinion-inner">
       <span class="tag">Opinión · Más allá del dato</span>
-      <p class="opinion-quote">La desaceleración nacional no debería leerse como destino: Santander tiene margen para crecer si la inversión pública en infraestructura no se detiene en año electoral.</p>
-      <p class="opinion-attr">— <b>Francisco Javier Gómez</b>, columna de opinión</p>
-      <a class="opinion-link" href="#">Ver todas las columnas →</a>
+      <p class="opinion-quote">{{ columnas[0].data.excerpt }}</p>
+      <p class="opinion-attr">— <b>{{ columnas[0].data.autor or 'Francisco Gómez - Director' }}</b>, <a href="{{ columnas[0].url }}">{{ columnas[0].data.title }}</a></p>
+      <a class="opinion-link" href="/seccion/opinion/">Ver todas las columnas →</a>
     </div>
   </section>
+  {% endif %}
 
+  {# Declaraciones REALES de los gremios, con su fuente enlazada. Viven en
+     _data/declaraciones.json; si el archivo queda vacío, la sección no
+     aparece. Nunca se inventa una cita. #}
+  {% if declaraciones.citas.length %}
   <section class="section-block wrap">
     <div class="section-head">
-      <h2>Entrevistas</h2>
-      <span class="sub">Voces de los gremios santandereanos</span>
+      <h2>Lo que dicen los gremios</h2>
+      <span class="sub">Declaraciones publicadas, con su fuente</span>
     </div>
     <div class="interview-grid">
+      {% for d in declaraciones.citas %}
       <div class="interview-card">
-        <p class="interview-org">Fenalco Santander</p>
-        <p>"El consumo se está recuperando, pero con cautela."</p>
+        <p class="interview-org">{{ d.gremio }}</p>
+        <p class="interview-cita">“{{ d.cita }}”</p>
+        <p class="interview-quien">{{ d.persona }}<span>{{ d.cargo }}</span></p>
+        <a class="interview-fuente" href="{{ d.url }}" target="_blank" rel="noopener">{{ d.medio }}, {{ d.fecha }} ↗</a>
       </div>
-      <div class="interview-card">
-        <p class="interview-org">Camacol Santander</p>
-        <p>"La vivienda VIS sigue siendo el motor del sector."</p>
-      </div>
-      <div class="interview-card">
-        <p class="interview-org">Cámara de Comercio de Bucaramanga</p>
-        <p>"El primer semestre empresarial cierra mejor de lo esperado."</p>
-      </div>
+      {% endfor %}
     </div>
   </section>
+  {% endif %}
 
+  {% set guias = collections.noticias | soloGuias(4) %}
+  {% if guias.length %}
   <section class="section-block wrap">
     <div class="evergreen-block">
       <div>
         <span class="tag">Contenido evergreen</span>
         <h2>Glosario y guías</h2>
-        <p class="sub">Contenido diseñado para responder búsquedas frecuentes y generar tráfico orgánico estable.</p>
+        <p class="sub">Contenido de consulta permanente, para resolver dudas que se repiten todo el año.</p>
       </div>
       <div class="evergreen-list">
-        <a href="#">¿Qué es el UVR y cómo afecta tu crédito? <span class="arrow">→</span></a>
-        <a href="#">Cómo declarar renta si eres independiente en Santander <span class="arrow">→</span></a>
-        <a href="#">Glosario básico: IPC, DTF, tasa de usura y spread bancario <span class="arrow">→</span></a>
+        {% for g in guias %}
+        <a href="{{ g.url }}">{{ g.data.title }} <span class="arrow">→</span></a>
+        {% endfor %}
       </div>
     </div>
   </section>
+  {% endif %}
   <!-- Espacio publicitario: banner de cierre, antes del pie de página. -->
   <div class="wrap ad-wrap">
     <div class="ad-slot ad-billboard">

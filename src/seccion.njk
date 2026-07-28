@@ -1,0 +1,48 @@
+---
+layout: layout.njk
+pagination:
+  data: collections.secciones
+  size: 1
+  alias: seccion
+permalink: "/seccion/{{ seccion.nombre | slugify }}/"
+eleventyComputed:
+  title: "{{ seccion.nombre }} | Economía Santander"
+  description: "{{ seccion.desc }} Noticias de {{ seccion.nombre | lower }} en Bucaramanga y Santander."
+---
+{% set notas = collections.noticias | porCategoria(seccion.nombre) %}
+<section class="section-block wrap seccion-pagina">
+  <div class="section-head">
+    <h1 class="seccion-titulo">{{ seccion.nombre }}</h1>
+    <span class="sub">{{ notas.length }} {% if notas.length == 1 %}publicación{% else %}publicaciones{% endif %}</span>
+  </div>
+  <p class="seccion-desc">{{ seccion.desc }}</p>
+
+  {% if notas.length %}
+  <div class="seccion-lista">
+    {% for n in notas %}
+    <article class="seccion-item">
+      <a class="seccion-foto" href="{{ n.url }}" tabindex="-1" aria-hidden="true">
+        {% if n.data.imagen %}
+        <img src="{{ n.data.imagen }}" alt="" width="1200" height="700" loading="lazy" decoding="async">
+        {% else %}
+        <span class="sigue-foto-vacia"></span>
+        {% endif %}
+      </a>
+      <div class="seccion-texto">
+        <div class="secondary-eyebrow">
+          <span class="chip {{ n.data.chipTipo or 'propio' }}">{{ n.data.chipLabel or 'Propia' }}</span>
+          <span class="seccion-fecha">{{ n.data.date | readableDate }}</span>
+        </div>
+        <h2><a href="{{ n.url }}">{{ n.data.title }}</a></h2>
+        {% if n.data.excerpt %}<p class="seccion-resumen">{{ n.data.excerpt }}</p>{% endif %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+  {% else %}
+  <div class="seccion-vacia">
+    <p>Todavía no hemos publicado en esta sección. Estamos trabajando en ella.</p>
+    <p>Mientras tanto, mira <a href="/">la portada</a>, los <a href="/indicadores/">indicadores del mercado</a> o el <a href="/dolar-hoy/">dólar de hoy</a>.</p>
+  </div>
+  {% endif %}
+</section>

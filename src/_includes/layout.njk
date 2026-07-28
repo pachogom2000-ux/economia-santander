@@ -175,16 +175,9 @@
         Secciones<span class="nav-caret" aria-hidden="true"></span>
       </button>
       <div class="nav-sub" id="nav-secciones">
-        <a href="#">Inversión</a>
-        <a href="#">Finanzas personales</a>
-        <a href="#">Tasas</a>
-        <a href="#">Empleo</a>
-        <a href="#">Construcción</a>
-        <a href="#">Industria</a>
-        <a href="#">Agro</a>
-        <a href="#">Educación financiera</a>
-        <a href="#">Opinión</a>
-        <a href="#">Entrevistas</a>
+        {%- for s in collections.secciones %}
+        <a href="/seccion/{{ s.nombre | slugify }}/">{{ s.nombre }}</a>
+        {%- endfor %}
       </div>
     </div>
     <a href="/multimedia/" {% if page.url == '/multimedia/' %}class="current"{% endif %}>Multimedia</a>
@@ -242,10 +235,10 @@
           <li><a href="/multimedia/">Multimedia</a></li>
           <li><a href="/dolar-hoy/">Dólar hoy</a></li>
           <li><a href="/indicadores/">Indicadores</a></li>
-          <li><a href="#">Inversión</a></li>
-          <li><a href="#">Empleo</a></li>
-          <li><a href="#">Construcción</a></li>
-          <li><a href="#">Agro</a></li>
+          <li><a href="/seccion/inversion/">Inversión</a></li>
+          <li><a href="/seccion/empleo/">Empleo</a></li>
+          <li><a href="/seccion/construccion/">Construcción</a></li>
+          <li><a href="/seccion/agro/">Agro</a></li>
         </ul>
       </div>
       <div class="footer-col">
