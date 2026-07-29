@@ -1,7 +1,7 @@
 ---
 layout: noticia.njk
 title: "Café de Santander: carga a $2.210.000 y la prima que salva"
-date: 2026-07-24
+date: 2026-07-29T07:19:00.000-05:00
 categoria: Agro
 chipTipo: propio
 chipLabel: Redacción propia
