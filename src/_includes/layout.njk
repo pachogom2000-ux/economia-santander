@@ -8,7 +8,14 @@
 <title>{{ pageTitle }}</title>
 <meta name="description" content="{{ pageDescription }}">
 <link rel="canonical" href="https://economiasantander.com{{ page.url }}">
+{# Un borrador no sale en la portada, pero su URL sí es pública en cuanto llega
+   a main. Se marca noindex para que no lo indexe nadie mientras esté sin
+   aprobar; al quitar eleventyExcludeFromCollections vuelve a ser indexable. #}
+{% if eleventyExcludeFromCollections %}
+<meta name="robots" content="noindex, nofollow">
+{% else %}
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+{% endif %}
 <meta name="author" content="{{ autor or 'Francisco Javier Gómez' }}">
 <meta name="theme-color" content="#0B6E3B" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0C130E" media="(prefers-color-scheme: dark)">

@@ -2,6 +2,11 @@
 permalink: sitemap.xml
 eleventyExcludeFromCollections: true
 ---
+{#- Las secciones salen de collections.secciones con el mismo slugify que usa
+    seccion.njk para su permalink, así no se pueden desincronizar. Antes solo
+    entraban las noticias y las páginas legales: quedaban fuera las 14 de
+    sección, /quien-soy/, /dolar-hoy/, /indicadores/ y /multimedia/, 18 URLs
+    que Google no tenía por dónde descubrir. -#}
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
@@ -16,6 +21,20 @@ eleventyExcludeFromCollections: true
     <lastmod>{{ n.date.toISOString().slice(0,10) }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+{%- endfor %}
+{%- for s in collections.secciones %}
+  <url>
+    <loc>https://economiasantander.com/seccion/{{ s.nombre | slugify }}/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+{%- endfor %}
+{%- for ruta in ["/quien-soy/", "/indicadores/", "/dolar-hoy/", "/multimedia/"] %}
+  <url>
+    <loc>https://economiasantander.com{{ ruta }}</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
 {%- endfor %}
 {%- for ruta in ["/legal/datos-personales/", "/legal/cookies/", "/legal/terminos/", "/legal/politica-editorial/", "/legal/publicidad/"] %}

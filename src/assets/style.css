@@ -720,8 +720,11 @@
   /* ---------- section grid ---------- */
   .section-block { padding: 44px 0; border-top: 1px solid var(--line); }
   .section-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 22px; gap: 16px; flex-wrap: wrap; }
-  .section-head h2 { font-size: 28px; text-transform: uppercase; letter-spacing: 0.01em; position: relative; padding-left: 16px; }
-  .section-head h2::before { content: ''; position: absolute; left: 0; top: 4px; bottom: 4px; width: 5px; background: var(--yellow); border-radius: 2px; }
+  /* h1 y h2 comparten estilo: en /indicadores/ y /multimedia/ el titulo de la
+     seccion es el H1 de la pagina, porque el del cabezote solo existe en la
+     portada. Se ven igual, pero la jerarquia queda correcta. */
+  .section-head h1, .section-head h2 { font-size: 28px; text-transform: uppercase; letter-spacing: 0.01em; position: relative; padding-left: 16px; }
+  .section-head h1::before, .section-head h2::before { content: ''; position: absolute; left: 0; top: 4px; bottom: 4px; width: 5px; background: var(--yellow); border-radius: 2px; }
   .section-head .sub { font-size: 13px; color: var(--text-muted); }
 
   .core-grid {
@@ -1149,7 +1152,7 @@
     .pico-cities { gap: 6px 14px; }
     .pico-city { font-size: 12px; }
     .pico-time { display: none; }
-    .section-head h2 { font-size: 23px; }
+    .section-head h1, .section-head h2 { font-size: 23px; }
     .hero-headline { font-size: 27px; }
     .flip-card, .flip-inner { min-height: 348px; }
     .flip-rate { font-size: 36px; }

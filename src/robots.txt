@@ -4,4 +4,7 @@ Allow: /
 # Bloquear parámetros de búsqueda interna para no gastar crawl budget
 Disallow: /*?s=
 
+# El panel de redacción no es contenido: no tiene título, ni descripción, ni H1.
+Disallow: /admin/
+
 Sitemap: https://economiasantander.com/sitemap.xml

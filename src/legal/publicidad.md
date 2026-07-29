@@ -39,7 +39,7 @@ Si en el futuro se incorpora publicidad servida por Google u otra red —que sí
 
 ---
 
-# Promoción "Tinto gratis" — Tienda Sinestrés
+## Promoción "Tinto gratis" — Tienda Sinestrés
 
 Términos y condiciones, conforme al artículo 33 de la Ley 1480 de 2011.
 
@@ -81,7 +81,7 @@ Sobre el funcionamiento del cupón en el sitio: **directoreconomiasantander@gmai
 
 ---
 
-# Central de Pirotecnia
+## Central de Pirotecnia
 
 El aviso de Central de Pirotecnia enlaza a [centraldepirotecnia.com](https://centraldepirotecnia.com). Es publicidad de un establecimiento comercial independiente.
 
