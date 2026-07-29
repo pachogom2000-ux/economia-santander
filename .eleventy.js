@@ -40,6 +40,23 @@ module.exports = function (eleventyConfig) {
     return self.renderToken(tokens, idx, options, env, self);
   };
 
+  // Las fotos que se suben desde el CMS van en 1200x700 por norma de la casa.
+  // Declarar esas medidas reserva el espacio antes de que cargue la imagen y
+  // evita que el texto salte (CLS). Si alguna no cumple la norma, el
+  // "height: auto" del CSS la escala igual sin deformarla.
+  md.renderer.rules.image = function (tokens, idx, options, env, self) {
+    const token = tokens[idx];
+    const src = token.attrGet("src") || "";
+    if (/^\/assets\/uploads\//.test(src)) {
+      if (!token.attrGet("width")) token.attrSet("width", "1200");
+      if (!token.attrGet("height")) token.attrSet("height", "700");
+      token.attrSet("loading", "lazy");
+      token.attrSet("decoding", "async");
+    }
+    token.attrSet("alt", token.content);
+    return self.renderToken(tokens, idx, options, env, self);
+  };
+
   eleventyConfig.setLibrary("md", md);
 
   eleventyConfig.addFilter("readableDate", (dateObj) => {

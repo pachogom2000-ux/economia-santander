@@ -9,9 +9,10 @@ excerpt: El clúster de calzado y marroquinería de Bucaramanga registra 1.116
   empleos formales, pero ACICAM calcula que el sector ocupa a cerca de 47.000
   personas.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/whatsapp-image-2026-07-28-at-1.55.44-pm.jpeg
-imagenAlt: Panorámica de San Francisco, hub de calzado y marroquinería
-imagenTitle: Panorámica de San Francisco, hub de calzado y marroquinería
+imagen: /assets/uploads/san-francisco-distrito-calzado-marroquineria-bucaramanga.jpg
+imagenAlt: Monumento y locales comerciales en el distrito del calzado de San
+  Francisco, en Bucaramanga
+imagenTitle: calzado y marroquinería Bucaramanga, distrito de San Francisco
 imagenPie: En San Francisco, el "Distrito del Calzado y la Marroquinería" de
   Bucaramanga, funcionan más de 200 locales entre fábricas y puntos de venta.
 imagenCredito: Archivo particular
@@ -27,7 +28,7 @@ La distancia entre esos dos números no es una contradicción: miden cosas disti
 
 En **San Francisco**, el "Distrito del Calzado y la Marroquinería" de Bucaramanga, funcionan más de 200 locales entre fábricas y puntos de venta, según [Periódico 15](https://www.periodico15.com/san-francisco-la-vitrina-del-calzado/). Buena parte del insumo llega de las curtiembres del centro de la ciudad: la [CDMB](https://www.cdmb.gov.co/) mantiene una guía ambiental específica para ese sector, que enfrenta su propia presión por vertimientos y normativa.
 
-![El sector de San Francisco lo conforman 88 empresas y genera 1.116 empleos directos. ](/assets/uploads/whatsapp-image-2026-07-28-at-1.55.38-pm.jpeg "El sector de San Francisco lo conforman 88 empresas y genera 1.116 empleos directos. ")
+![Vitrinas de calzado y marroquinería en un local del distrito de San Francisco, en Bucaramanga](/assets/uploads/talleres-calzado-san-francisco-bucaramanga-empleo.jpg "empleo calzado San Francisco Bucaramanga, 88 empresas y 1.116 empleos directos")
 
 ## El dólar, arma de doble filo
 
