@@ -2,13 +2,21 @@
 layout: noticia.njk
 title: "Crear empresa en Santander: 13.674 nuevas, 34% sobrevive"
 date: 2026-07-28
-updated: 2026-07-28
-categoria: "Emprendimiento y pymes"
-chipTipo: "propio"
-chipLabel: "Redacción propia"
-excerpt: "En 2025 nacieron 13.674 empresas en la jurisdicción de la Cámara de Comercio de Bucaramanga y murieron 10.551. De las que abrieron en 2020, queda el 34%."
-autor: "Francisco Gómez - Director"
+categoria: Emprendimiento y pymes
+chipTipo: propio
+chipLabel: Redacción propia
+excerpt: En 2025 nacieron 13.674 empresas en la jurisdicción de la Cámara de
+  Comercio de Bucaramanga y murieron 10.551. De las que abrieron en 2020, queda
+  el 34%.
+autor: Francisco Gómez - Director
+imagen: /assets/uploads/tattybadger-sparks-1405851.jpg
+imagenAlt: creación empresas, industria, cierre empresas
+imagenTitle: creación empresas, industria, cierre empresas
+imagenPie: "Los 4 municipios del área metropolitana concentran el 70% de
+  empresas que hay en Santander con corte a 2026. "
+imagenCredito: "Pixabay-Alex Freeman. "
 tags: noticias
+updated: 2026-07-28
 ---
 Cada día de 2025 nacieron, en promedio, 37 empresas en la jurisdicción de la **Cámara de Comercio de Bucaramanga**. Cada día murieron 29.
 
@@ -58,7 +66,7 @@ Al primer año quedaban 10.085 (64,4%). Al tercero, 6.950 (44,4%). Al quinto, 5.
 
 O sea que 10.220 de esas empresas dejaron de estar activas en cinco años. El filtro más duro son los tres primeros: para 2023 ya había cerrado el 55,6% de la cohorte.
 
-Un apunte sobre la fuente: el texto del informe habla de una probabilidad de cierre superior al 44,4% en los tres primeros años, pero ese 44,4% corresponde, en su propio gráfico 9, a la tasa de supervivencia al tercer año. Economía Santander se atiene a los números del gráfico.
+El texto del informe habla de una probabilidad de cierre superior al 44,4% en los tres primeros años, pero ese 44,4% corresponde, en su propio gráfico 9, a la tasa de supervivencia al tercer año. Economía Santander se atiene a los números del gráfico.
 
 Si la cohorte de 2026 se comportara como la de 2020 —un año atípico por la pandemia—, una de cada tres empresas nuevas seguiría abierta en 2031.
 
@@ -98,14 +106,14 @@ Sobre el alza del salario mínimo —23% en el básico, a $1.750.905, más auxil
 
 Solo el 2,8% de los encuestados exportó. El mercado es local y la queja principal también: el 24,1% señaló la elevada competencia como su mayor problema, y el 16,1% la falta de demanda.
 
-## Qué hacer si vas a abrir empresa este año
+## ¿Qué hacer si va a abrir empresa este año?
 
-Calcula el costo real. Matrícula más establecimiento arranca cerca de $157.000 con activos modestos. Y la renovación se paga cada marzo mientras la empresa exista, sobre una tarifa que se recalcula según los activos declarados ese año: el negocio que crece paga más.
+Calcule el costo real. Matrícula más establecimiento arranca cerca de $157.000 con activos modestos. Y la renovación se paga cada marzo mientras la empresa exista, sobre una tarifa que se recalcula según los activos declarados ese año: el negocio que crece paga más.
 
-Decide la figura jurídica con cabeza fría. El 79,5% de las nuevas se registra como persona natural y el 20,5% como sociedad. En el stock, las sociedades son las que más crecen: llegaron a 21.387 con 1.470 nuevas (+7,4%), frente al +3,7% de las personas naturales, que suman 69.906.
+Decida la figura jurídica con cabeza fría. El 79,5% de las nuevas se registra como persona natural y el 20,5% como sociedad. En el stock, las sociedades son las que más crecen: llegaron a 21.387 con 1.470 nuevas (+7,4%), frente al +3,7% de las personas naturales, que suman 69.906.
 
-Mira dónde te metes. El comercio concentra el 42,1% de las empresas nuevas y ya es el 43,8% del stock (39.950 empresas). Le siguen comida y alojamiento (15,2% de las nuevas) e industria manufacturera (11,3%).
+Mire dónde se mete. El comercio concentra el 42,1% de las empresas nuevas y ya es el 43,8% del stock (39.950 empresas). Le siguen comida y alojamiento (15,2% de las nuevas) e industria manufacturera (11,3%).
 
-Toca la puerta del IMEBU antes que la de un banco comercial si necesitas menos de $10 millones, y pregunta por los programas de la Cámara: Empréndelo, para negocios aún no registrados, y [Transforma tu Negocio](https://www.camaradirecta.com/programas-para-empresarios/fortalecimiento/transforma-tu-negocio/), para tenderos y microcomercio, que vinculó 526 unidades productivas y reporta un alza de 6,4 puntos en formalización.
+Toque la puerta del IMEBU antes que la de un banco comercial si necesitas menos de $10 millones, y pregunta por los programas de la Cámara: Empréndelo, para negocios aún no registrados, y [Transforma tu Negocio](https://www.camaradirecta.com/programas-para-empresarios/fortalecimiento/transforma-tu-negocio/), para tenderos y microcomercio, que vinculó 526 unidades productivas y reporta un alza de 6,4 puntos en formalización.
 
-Y marca el 31 de marzo en el calendario. Igual que los [vencimientos de la declaración de renta 2026](/noticias/declaracion-renta-2026-vencimientos-agosto/), es una fecha que no perdona.
+Y marque el 31 de marzo en el calendario. Igual que los [vencimientos de la declaración de renta 2026](/noticias/declaracion-renta-2026-vencimientos-agosto/), es una fecha que no perdona.
