@@ -19,9 +19,36 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
 
+    const esPrueba = url.hostname.endsWith(".workers.dev");
+
+    // Mientras Cloudflare y Netlify convivan hay dos copias del sitio en
+    // internet. A la de pruebas se le cierra la puerta a los buscadores para
+    // que no compita con el portal. Se hace por robots.txt y no con una
+    // cabecera en cada página a propósito: Cloudflare sirve los archivos
+    // estáticos SIN ejecutar este código (por eso no se cobran), así que una
+    // cabecera por página no llegaría a las páginas — comprobado — y forzarla
+    // exigiría `run_worker_first` a secas, que vuelve cobrable todo el sitio.
+    // Por eso wrangler.jsonc encamina solo /robots.txt hacia aquí.
+    // Al pasar al dominio propio esto deja de aplicar solo.
+    if (esPrueba && url.pathname === "/robots.txt") {
+      return new Response("User-agent: *\nDisallow: /\n", {
+        status: 200,
+        headers: {
+          "Content-Type": "text/plain; charset=utf-8",
+          "X-Robots-Tag": "noindex, nofollow",
+          "Cache-Control": "no-store",
+        },
+      });
+    }
+
     // Todo lo que no sea la función lo resuelve el sitio estático.
     if (!RUTAS_QUOTE.has(url.pathname)) {
-      return env.ASSETS.fetch(request);
+      const respuesta = await env.ASSETS.fetch(request);
+      if (!esPrueba) return respuesta;
+      // Lo que sí pasa por aquí (la 404, por ejemplo) se marca también.
+      const copia = new Response(respuesta.body, respuesta);
+      copia.headers.set("X-Robots-Tag", "noindex, nofollow");
+      return copia;
     }
 
     const symbol = String(url.searchParams.get("symbol") || "").toUpperCase();

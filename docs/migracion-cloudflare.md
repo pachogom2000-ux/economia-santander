@@ -133,10 +133,39 @@ El Worker completo se levantó con `wrangler dev` y se le pasó el comprobador. 
 
 Wrangler además confirmó que lee nuestras cabeceras: *"Parsed 9 valid header rules"*. Y las páginas salen **idénticas byte a byte** a las que sirve Netlify hoy.
 
-Dos cosas que esta prueba **no** puede decidir, y que solo se sabrán al desplegar (Fase B):
+---
 
-1. Si Yahoo Finanzas bloquea las IP de Cloudflare. Desde una casa en Bucaramanga responde; desde un centro de datos puede que no.
-2. El comportamiento del caché en el borde, que en local no existe.
+## 3.ter Fase B hecha: Cloudflare ya está vivo en paralelo
+
+**https://economia-santander.digitautom.workers.dev**
+
+Desplegado el 30 de julio de 2026 en la cuenta `edwinjojojo@gmail.com`. El comprobador de paridad da **todo en verde contra producción**: las 39 páginas, la 404 real, las cabeceras, los seis símbolos de bolsa y el HTML idéntico byte a byte.
+
+**El riesgo que no se podía verificar sin desplegar quedó despejado: Yahoo Finanzas NO bloquea las IP de Cloudflare.** Los seis símbolos devuelven los mismos datos que por Netlify.
+
+El dominio sigue apuntando a Netlify. El lector no ha notado nada y no notará nada hasta que se decida el corte.
+
+### Lo que se aprendió desplegando (y no estaba en el diseño)
+
+**Cloudflare NO ejecuta el Worker para los archivos estáticos.** Comprobado: una cabecera añadida en el código aparece en la 404 y en la función, pero no en las páginas ni en el CSS. Esto confirma de primera mano por qué los archivos estáticos son gratis — no es una tarifa especial, es que el código sencillamente no corre.
+
+De ahí salió `run_worker_first`, y con él un susto que conviene dejar escrito: **esa lista es exhaustiva, no un añadido.** Al ponerla con una sola ruta, la función de bolsa dejó de responder y empezó a devolver la página de error, porque todo lo que no esté en la lista deja de llegar al Worker. Ahora están las tres rutas que lo necesitan:
+
+```jsonc
+"run_worker_first": ["/api/quote", "/.netlify/functions/quote", "/robots.txt"]
+```
+
+Puesta como `true` a secas en vez de lista, todo el sitio pasaría por el Worker y **todo pasaría a ser cobrable**.
+
+### La copia de pruebas no compite con el portal
+
+Mientras los dos convivan hay dos copias del sitio en internet. La de `workers.dev` sirve un `robots.txt` propio con `Disallow: /` — de ahí que robots.txt esté en la lista de arriba. El portal real conserva el suyo intacto. Además, todas las páginas ya traían la etiqueta canónica apuntando al dominio real.
+
+Al pasar al dominio propio esto deja de aplicar solo, sin tener que acordarse de quitarlo.
+
+### Sobre la cuenta
+
+Quedó en la cuenta personal de Edwin, con el subdominio `digitautom.workers.dev`. **Conviene decidir antes del corte si el sitio debe vivir en una cuenta de Francisco**, ya que el repositorio y el dominio son suyos. Moverlo después de cortar es más incómodo que hacerlo ahora.
 
 ---
 
