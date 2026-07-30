@@ -103,7 +103,10 @@ for (const s of SIMBOLOS) {
     aviso("posible bloqueo del proveedor a las IP de Cloudflare — revisar antes de cortar");
   }
 }
-const malSimbolo = await pedir(candidato + "/api/quote?symbol=AAPL");
+// Por la ruta vieja a propósito: es la única que existe en las dos
+// plataformas, así que el comprobador sirve igual contra Netlify y contra
+// Cloudflare. /api/quote solo la atiende el Worker.
+const malSimbolo = await pedir(candidato + "/.netlify/functions/quote?symbol=AAPL");
 ok("rechaza símbolos fuera de la lista blanca", malSimbolo.status === 400, `(${malSimbolo.status})`);
 
 // ── 5. El mismo HTML, no solo el mismo código de estado ─────────────────────
