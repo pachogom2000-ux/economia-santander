@@ -1,0 +1,42 @@
+# Cabeceras del sitio. Lo entienden IGUAL Netlify y Cloudflare, así que este
+# archivo hace que las dos plataformas sirvan el sitio de forma idéntica.
+#
+# Por qué existe: el HSTS que hoy se envía lo pone la plataforma de Netlify por
+# su cuenta, no el repositorio. Al mover el sitio a otro hosting desaparecería
+# en silencio. Declarándolo aquí, viaja con el código.
+
+/*
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+
+# El HTML nunca se guarda en caché sin revalidar: una nota corregida tiene que
+# verse ya. El navegador pregunta y el servidor responde 304 si no cambió.
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/
+  Cache-Control: public, max-age=0, must-revalidate
+
+# CSS y JS tampoco llevan huella en el nombre, así que se revalidan siempre.
+# Este proyecto ya sufrió el problema de servir una hoja de estilos vieja.
+/assets/style.css
+  Cache-Control: public, max-age=0, must-revalidate
+
+/assets/*.js
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Las imágenes y los videos sí se pueden guardar: cuando cambian, cambia el
+# nombre del archivo.
+/assets/uploads/*
+  Cache-Control: public, max-age=604800
+
+/assets/videos/*
+  Cache-Control: public, max-age=604800
+
+/assets/logos-medios/*
+  Cache-Control: public, max-age=604800
+
+/assets/quien-soy/*
+  Cache-Control: public, max-age=604800

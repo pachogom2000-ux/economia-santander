@@ -4,6 +4,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/admin");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
+  // Cabeceras del sitio. Netlify y Cloudflare leen el mismo archivo, así que
+  // las dos plataformas sirven exactamente igual mientras convivan.
+  eleventyConfig.addPassthroughCopy({ "src/_headers": "_headers" });
 
   // Los enlaces externos se abren en una pestaña nueva, como pide la guía SEO.
   // Aplica también a lo que se escriba desde el CMS, sin tener que recordarlo.

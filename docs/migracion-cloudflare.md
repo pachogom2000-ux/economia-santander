@@ -1,79 +1,115 @@
 # Migración de Netlify a Cloudflare
 
-Diseño técnico · 28 de julio de 2026
-Estado: **propuesta, sin ejecutar**
+Diseño técnico · versión 2 · 30 de julio de 2026
+Estado: **correcciones aplicadas en el repositorio; sin tocar producción**
 
 ---
 
-## 1. La decisión, en corto
+## 1. La idea: convivencia, no salto al vacío
 
-Mover `economiasantander.com` de **Netlify** a **Cloudflare Workers con Static Assets**.
+No se apaga Netlify para encender Cloudflare. **Los dos publican el mismo sitio al mismo tiempo**, desde el mismo repositorio, con el mismo contenido, durante el tiempo que haga falta.
 
-El motivo es concreto: Netlify bloquea los despliegues cuando la cuenta agota créditos (*account credit usage exceeded*). Cloudflare no tiene ese modelo: el plan gratuito cobra por peticiones al Worker, y **servir archivos estáticos es gratis e ilimitado**.
+```
+                    GitHub (main)
+                    /          \
+            Netlify              Cloudflare
+                |                     |
+    economiasantander.com      *.workers.dev
+     (lo que ve el lector)      (idéntico, para probar)
+```
 
-**No hay emergencia.** El bloqueo de créditos de Netlify impide *desplegar*, pero el sitio ya publicado se sigue sirviendo con normalidad. Eso significa que la migración se puede planear con calma y ejecutar en un día tranquilo, no a las carreras.
+Cada push despliega en **las dos** plataformas. Se comparan lado a lado, se prueba todo en Cloudflare con calma, y **el corte es una sola decisión tuya**: cambiar a dónde apunta el dominio. Si algo sale mal, se devuelve en cinco minutos porque Netlify sigue vivo e intacto.
 
-### Por qué Workers y no Pages
+**No hay urgencia.** El bloqueo por créditos agotados de Netlify impide *desplegar*, pero el sitio publicado se sigue sirviendo con normalidad. Esto se puede hacer sin prisa.
+
+### El destino: Workers, no Pages
 
 Cloudflare lo dice por escrito en su documentación de buenas prácticas:
 
-> *Workers Static Assets is the recommended way to deploy static sites… If you are starting a new project, use Workers instead of Pages. Pages continues to work, but new features and optimizations are focused on Workers.*
+> *Workers Static Assets is the recommended way to deploy static sites… If you are starting a new project, use Workers instead of Pages.*
 
-Pages **no está deprecado** y funcionaría, pero es el camino secundario. Además existe una guía oficial específica [Migrate from Netlify to Workers](https://developers.cloudflare.com/workers/static-assets/migration-guides/netlify-to-workers/), actualizada en abril de 2026.
-
-Una ventaja práctica para este proyecto: con Workers, **un solo Worker sirve el sitio y atiende la función** de la bolsa. No hay que separar hosting y funciones.
+Pages no está deprecado y funcionaría, pero es el camino secundario. Ventaja práctica aquí: **un solo Worker sirve el sitio y atiende la función** de la bolsa; no hay que separar hosting y funciones.
 
 ---
 
 ## 2. Qué depende hoy de Netlify
 
-Inventario real del repositorio, no supuestos:
-
-| Pieza | Hoy | Al migrar |
+| Pieza | Hoy | Estado |
 |---|---|---|
-| Hosting estático | Netlify (`netlify.toml`) | Workers Static Assets |
-| Build | `npx @11ty/eleventy` → `_site` | igual, en Workers Builds |
-| Despliegue en cada push | Netlify + GitHub | Workers Builds + GitHub |
-| Vistas previas de PR | Deploy previews | Preview URLs (hay que activarlas) |
-| Función de bolsa | `netlify/functions/quote.js` | dentro del Worker |
-| **Autenticación del CMS** | **Netlify Identity + git-gateway** | **⚠️ no existe en Cloudflare** |
-| DNS | Netlify DNS (NS1) | Cloudflare DNS |
-| Registrador | GoDaddy | GoDaddy (no se toca) |
-| HSTS | lo pone Netlify solo | ⚠️ hay que reponerlo |
+| Hosting estático | Netlify (`netlify.toml`) | ✅ ya hay `wrangler.jsonc` en paralelo |
+| Build | `npx @11ty/eleventy` → `_site` | ✅ idéntico en las dos |
+| Función de bolsa | `netlify/functions/quote.js` | ✅ ya está en `worker.js`, misma ruta |
+| Página 404 | no existía | ✅ creada con permalink correcto |
+| Cabeceras y HSTS | las ponía Netlify sola | ✅ ahora en `src/_headers`, las leen las dos |
+| **Autenticación del CMS** | **Netlify Identity + git-gateway** | ⚠️ **pendiente — el único bloqueante** |
+| DNS | Netlify DNS (NS1) | pendiente, es el corte |
+| Registrador | GoDaddy | no se toca |
 | Correo | **no hay MX ni TXT** | nada que romper |
 
 ---
 
-## 3. El nudo real: el CMS
+## 3. Lo que ya quedó hecho en el repositorio
 
-Esto es lo único que puede dejar a Francisco sin poder publicar, y es donde se concentra el riesgo.
+Estas son las correcciones que salieron de la investigación y que **ya están aplicadas**. Todas funcionan igual en Netlify, así que no rompen nada hoy.
 
-Decap CMS usa hoy `backend: git-gateway` con **Netlify Identity**. Fuera de Netlify eso no existe. Y la propia documentación de Decap lo da por muerto:
+### 3.1 Página 404 (`src/404.njk`)
 
-> *Git Gateway is deprecated. While Git Gateway continues to function for sites that currently have it enabled, new Git Gateway configurations are not recommended.*
+El sitio no tenía. Sin ella, Cloudflare devolvería **200 con la portada** para cualquier URL inexistente: *soft 404* en masa y castigo en buscadores.
 
-### Opciones evaluadas
+Trampa específica de Eleventy, comprobada en este repositorio: crear `src/404.html` genera `_site/404/index.html`, **no** `_site/404.html`. Cloudflare exige el archivo en la raíz. Por eso el archivo lleva `permalink: /404.html` explícito.
 
-| Opción | Veredicto |
-|---|---|
-| **Decap con `backend: github` + proxy OAuth propio en un Worker** | ✅ **Recomendada** |
-| DecapBridge (servicio externo, plan gratis 3 sitios / 10 colaboradores) | Alternativa válida; añade dependencia de un tercero |
-| Sveltia CMS | ❌ **Descartada**: no implementa `editorial_workflow`, que es justo el flujo que usa este sitio. Está en su hoja de ruta sin fecha firme |
+Criterio de aceptación, ya verificado:
 
-### Por qué la opción recomendada es limpia aquí
+```bash
+npx @11ty/eleventy && ls _site/404.html   # debe existir
+```
 
-El backend `github` de Decap exige que todo usuario tenga permiso de escritura en el repositorio. Normalmente eso es una fricción — pero **en este caso no aplica**:
+La página usa el diseño del portal y lista las cinco notas más recientes y todas las secciones, para que quien caiga ahí no se vaya.
 
-- El repositorio `pachogom2000-ux/economia-santander` **es de Francisco**: figura como propietario con permisos de administrador.
-- O sea: **ya tiene cuenta de GitHub y ya tiene todos los permisos**. No hay que crear cuentas, ni invitar a nadie, ni darle acceso nuevo a nada.
+### 3.2 Cabeceras propias (`src/_headers`)
 
-Lo único que cambia para él es **cómo entra a `/admin`**: en vez de usuario y contraseña de Netlify Identity, entrará con su cuenta de GitHub.
+El sitio hoy envía `Strict-Transport-Security: max-age=31536000`. **Esa cabecera la pone la plataforma de Netlify**, no el repositorio: al migrar habría desaparecido en silencio.
+
+Ahora está declarada en un archivo que **leen igual Netlify y Cloudflare**, junto con el resto de la política de caché: HTML y CSS siempre revalidan (este proyecto ya sufrió servir una hoja de estilos vieja), e imágenes y videos se guardan una semana.
+
+### 3.3 El Worker (`worker.js` + `wrangler.jsonc`)
+
+Traduce la función de Netlify a la firma de Cloudflare y **conserva la ruta vieja** `/.netlify/functions/quote`, así que el mismo `indicadores.js` funciona en las dos plataformas sin tocar una línea. Se añadió `/api/quote` para migrar el front con calma, después.
+
+Dos decisiones que hay que respetar y están comentadas en el código:
+
+- `not_found_handling: "404-page"` es obligatorio y explícito.
+- **No activar `"cache": { "enabled": true }`** en `wrangler.jsonc`. Suena a optimización pero es una trampa de facturación: al activarlo, Cloudflare cobra *todas* las peticiones al Worker a tarifa estándar, **incluidas las de archivos estáticos, que por defecto son gratis e ilimitadas**. El caché que sí conviene ya está en el `fetch` a Yahoo (`cf.cacheTtl`).
+
+### 3.4 Scripts (`package.json`)
+
+```bash
+npm run cf:dev       # probar en local: eleventy + wrangler dev
+npm run cf:deploy    # publicar a Cloudflare
+npm run cf:preview   # subir una versión de prueba
+```
+
+---
+
+## 4. Lo que falta: el CMS
+
+Es el único bloqueante real y donde se concentra el riesgo, porque es lo que puede dejar a Francisco sin poder publicar.
+
+Decap usa hoy `backend: git-gateway` con **Netlify Identity**. La propia documentación de Decap lo da por muerto:
+
+> *Git Gateway is deprecated. […] new Git Gateway configurations are not recommended.*
+
+### La solución, y por qué aquí es fácil
+
+Cambiar a `backend: github` con un proxy OAuth propio en un Worker. El backend `github` exige que el usuario tenga permiso de escritura en el repositorio — normalmente una fricción, pero **aquí no aplica**:
+
+> El repositorio `pachogom2000-ux/economia-santander` **es de Francisco**: figura como propietario con permisos de administrador. Ya tiene cuenta de GitHub y ya tiene todos los permisos. No hay que crear ni invitar a nadie.
+
+Lo único que cambia para él: entra a `/admin` **con su cuenta de GitHub** en vez de usuario y contraseña de Netlify.
 
 ### El detalle que no se puede pasar por alto
 
 Si se cambia `git-gateway` por `github` sin más, Decap sigue mandando el login **a los servidores de Netlify**: cuando falta `base_url`, su valor por defecto es `https://api.netlify.com`. Se saldría de Netlify por la puerta y se volvería a entrar por la ventana.
-
-La configuración correcta es:
 
 ```yaml
 backend:
@@ -84,289 +120,178 @@ backend:
   auth_endpoint: auth
 ```
 
-El proxy OAuth es un Worker pequeño (existe plantilla mantenida: `sterlingwes/decap-proxy`) que guarda el *client secret* de una GitHub OAuth App. El secreto nunca puede viajar al navegador; por eso hace falta.
+`editorial_workflow` **sigue funcionando**: ramas, pull requests y botón de publicar, igual que hoy.
 
-**`editorial_workflow` sigue funcionando** con el backend `github`: se mantienen las ramas, los pull requests y el botón de publicar.
+**Sveltia CMS queda descartada**: no implementa `editorial_workflow`, que es justo el flujo de este sitio. Está en su hoja de ruta sin fecha firme.
 
----
+### La jugada que quita el riesgo
 
-## 4. Tres cosas que hay que arreglar antes de mover nada
+**Migrar el CMS primero, mientras el sitio todavía está en Netlify.** El backend `github` funciona igual en Netlify que en Cloudflare — solo cambia cómo se autentica, no dónde vive el sitio.
 
-Son deudas que hoy tapa Netlify y que Cloudflare deja al descubierto.
-
-### 4.1 El sitio no tiene página 404
-
-Netlify sirve un 404 genérico. Workers, si no se le declara una, puede caer en modo aplicación de una sola página y devolver **200 con la portada** para cualquier URL inexistente. Para Google eso son *soft 404* masivos: veneno para el SEO.
-
-Hay una trampa específica de Eleventy comprobada en este repo: crear `src/404.html` **no** produce `_site/404.html`, sino `_site/404/index.html` (Eleventy aplica permalinks "bonitos"). Cloudflare exige el archivo en la raíz de la salida.
-
-La solución es forzar el permalink:
-
-```njk
----
-permalink: /404.html
-layout: layout.njk
-title: Página no encontrada | Economía Santander
----
-```
-
-Y el criterio de aceptación no es "existe el archivo fuente" sino:
-
-```bash
-npx @11ty/eleventy && ls _site/404.html
-```
-
-### 4.2 El HSTS desaparece en silencio
-
-El sitio hoy envía `Strict-Transport-Security: max-age=31536000` — un año. Esa cabecera **la pone la plataforma de Netlify**: no está en el repositorio (no hay `_headers` ni bloque `[[headers]]`).
-
-Dos consecuencias:
-
-1. En Cloudflare hay que **volver a activarla** (SSL/TLS → Edge Certificates → Enable HSTS, o un archivo `_headers`). Si no, se pierde una protección sin que nadie lo note, porque el sitio se ve igual.
-2. Ese año de HSTS ya está grabado en el navegador de los lectores recurrentes: **si tras el corte hay un error de certificado, no podrán saltárselo**. Esto convierte el certificado en el punto crítico del corte (§5.4).
-
-### 4.3 La caché por defecto de Cloudflare
-
-Cloudflare Free trae *Browser Cache TTL* en 4 horas. Este proyecto **ya tuvo el problema** de servir CSS viejo. Hay que:
-
-- Poner Browser Cache TTL en **"Respect Existing Headers"**.
-- **Nunca** crear una regla de tipo *Cache Everything* sobre el HTML.
-
-Queda anotado como prohibición permanente en `CLAUDE.md`.
+Así, cuando llegue el corte de DNS, el CMS ya lleva semanas funcionando y probado. Y si el cambio de CMS falla, se revierte con un `git revert` sin que el hosting tenga nada que ver.
 
 ---
 
 ## 5. Plan por fases
 
-Regla de oro: **el cambio de hosting y el cambio de DNS nunca el mismo día.**
+### Fase A — CMS a GitHub *(sitio sigue en Netlify)*
 
-### Fase 0 — Línea base (antes de tocar nada)
+1. Crear una **GitHub OAuth App** en la cuenta de Francisco.
+2. Desplegar el **Worker proxy OAuth** (plantilla mantenida: `sterlingwes/decap-proxy`) con el *client secret* como variable secreta.
+3. Cambiar `src/admin/config.yml` al backend `github` **con `base_url`**, y quitar el widget de Identity de `src/admin/index.html`.
+4. **Probar con Francisco delante**: que entre con GitHub, cree un borrador, lo pase por el flujo editorial y publique. Sitio todavía en Netlify.
+5. Dejarlo rodar unos días.
 
-Medir cómo se comporta el sitio hoy, para poder comparar después:
+> Reversión: `git revert` del commit de `src/admin/`. Vuelve Identity y ya.
 
-```bash
-curl -sI https://economiasantander.com/ | grep -i "strict-transport\|cache-control\|server"
-curl -sI https://economiasantander.com/una-url-que-no-existe | head -1     # ¿404 o 200?
-curl -sI https://economiasantander.com/assets/style.css | grep -i cache
-curl -s "https://economiasantander.com/.netlify/functions/quote?symbol=EC&range=1mo" | head -c 200
-```
+### Fase B — Cloudflare en paralelo *(nadie lo nota)*
 
-Y exportar la zona DNS desde Netlify (aunque esté casi vacía: sin MX, sin TXT).
-
-### Fase 1 — Código (sin tocar producción)
-
-1. Crear la página 404 con su permalink (§4.1).
-2. Crear `wrangler.jsonc` y el Worker (§6).
-3. **Prueba crítica y bloqueante**: desplegar solo el Worker a su URL `*.workers.dev` y comprobar que Yahoo Finanzas responde desde las IP de Cloudflare:
+6. Conectar el repositorio a **Workers Builds** (build: `npx @11ty/eleventy`).
+7. Activar *builds for non-production branches* para tener vistas previas de los PR.
+8. **Prueba bloqueante**: comprobar que Yahoo Finanzas no bloquea las IP de Cloudflare.
 
    ```bash
    curl "https://<worker>.workers.dev/.netlify/functions/quote?symbol=EC&range=6mo"
    ```
 
-   Si devuelve 429 o 403, **parar la migración** y replantear la fuente de las gráficas. Es el único riesgo que no se puede verificar sin desplegar.
-4. Montar la GitHub OAuth App y el Worker proxy; cambiar `src/admin/config.yml` y quitar el widget de Identity de `src/admin/index.html`.
+   Si devuelve 429 o 403, **parar** y replantear la fuente de las gráficas. Es el único riesgo que no se puede verificar sin desplegar.
+9. Comparar `*.workers.dev` contra el sitio real, punto por punto (§7).
 
-### Fase 2 — Montaje en Cloudflare (DNS todavía en Netlify)
+> Aquí ya hay **dos sitios idénticos y vivos**. El lector sigue entrando por Netlify sin enterarse de nada.
 
-5. Conectar el repositorio a **Workers Builds** (build: `npx @11ty/eleventy`).
-6. Activar *builds for non-production branches* para tener vistas previas de los PR.
-7. Probar **todo** en la URL `*.workers.dev` contra la línea base de la Fase 0: 404 real, gráficas de `/indicadores/`, cabeceras de caché.
-8. **Probar el CMS con Francisco delante**: que entre con GitHub, cree un borrador, lo pase por el flujo editorial y publique. No se avanza hasta que él publique sin ayuda.
+### Fase C — Preparar el corte *(sin cambiar a dónde apunta el dominio)*
 
-### Fase 3 — El corte de DNS
+Esta fase es la que hace que el corte final no tenga ventana de riesgo.
 
-El orden importa y no es intuitivo:
+10. Crear la **zona** de `economiasantander.com` en Cloudflare.
+11. Al importar los registros, **borrar los A heredados de Netlify** (`18.208.88.157`, `98.84.224.111`) y volver a crearlos **en modo "DNS only" (nube gris) apuntando a Netlify**.
+12. Bajar el TTL a **300 segundos**.
+13. Cambiar los **nameservers en GoDaddy** a los de Cloudflare.
 
-9. Crear la **zona** de `economiasantander.com` en Cloudflare. Al importar, **borrar los registros A heredados de Netlify** (`18.208.88.157`, `98.84.224.111`) — si quedan, el dominio seguiría resolviendo a Netlify o daría error 522.
-10. Añadir el dominio personalizado (apex y `www`) en el proyecto de Workers. Quedará *pendiente*: es lo esperado.
-11. Bajar el TTL en la zona de Netlify a **300 s** y esperar a que expire el TTL viejo. Esto reduce la ventana de reversión de una hora a cinco minutos.
-12. Cambiar los **nameservers en GoDaddy** a los que asigne Cloudflare. *(No se transfiere el registrador: ICANN lo bloquea hasta ~24 de septiembre por ser un dominio registrado el 26 de julio. Cambiar nameservers sí se puede.)*
-13. **Vigilar los primeros 15 minutos**: que la zona pase a *Active* y que el certificado Universal SSL quede emitido. Cloudflare solo lo emite **después** de que el dominio esté activo, así que no se puede pre-validar. Si a los 15 minutos no hay certificado válido → revertir nameservers (§8).
-14. Crear el redirect `www` → apex con una **Redirect Rule** (no con `_redirects`: ese archivo no maneja redirecciones a nivel de dominio).
-15. Activar **HSTS** (§4.2).
+**¿Qué pasa aquí?** El DNS pasa a Cloudflare pero **sigue mandando el tráfico a Netlify**. Para el lector no cambia absolutamente nada. Y mientras tanto la zona queda *Active*, que es la condición para que Cloudflare emita el **certificado Universal SSL**.
 
-### Fase 4 — Después
+Eso es lo importante: el certificado queda emitido **antes** del corte. Sin este truco, el certificado solo se emite después de mover el dominio, y como el sitio manda HSTS de un año, un error de certificado dejaría a los lectores recurrentes **sin poder saltárselo**.
 
-16. Repetir la batería de `curl` de la Fase 0 contra el dominio real.
-17. Search Console: reenviar el `sitemap.xml` e inspeccionar la portada y dos o tres notas. **No** usar la herramienta de Cambio de Dirección: el dominio no cambia.
-18. Activar Cloudflare Web Analytics si se quiere métrica (gratis, sin cookies).
-19. **No borrar nada de Netlify durante un mes.**
-20. A las dos semanas estable: borrar `netlify.toml` y `netlify/`, y actualizar `CLAUDE.md`.
+> *(No se transfiere el registrador: ICANN lo bloquea hasta ~24 de septiembre por ser un dominio registrado el 26 de julio. Cambiar nameservers sí se puede.)*
 
----
+### Fase D — El corte *(tu decisión, cuando quieras)*
 
-## 6. El código
+14. Añadir el dominio personalizado (apex y `www`) en el proyecto de Workers. Eso reapunta el DNS al Worker.
+15. Activar la **nube naranja** (proxy).
+16. Crear el redirect `www` → apex con una **Redirect Rule**.
+17. Poner *Browser Cache TTL* en **"Respect Existing Headers"** y confirmar que no exista ninguna regla *Cache Everything*.
+18. Activar **HSTS** en la zona.
 
-### `wrangler.jsonc`
+Tiempo real del corte: minutos. Certificado ya emitido, contenido ya probado, CMS ya migrado. **El lector no nota nada.**
 
-```jsonc
-{
-  "name": "economia-santander",
-  "main": "worker.js",
-  "compatibility_date": "2026-07-01",
-  "assets": {
-    "directory": "./_site",
-    "binding": "ASSETS",
-    "not_found_handling": "404-page"
-  }
-}
-```
+### Fase E — Después
 
-⚠️ **No añadir `"cache": { "enabled": true }`.** Suena bien pero es una trampa de facturación: la documentación de Workers advierte que al habilitarlo *toda* petición al Worker se cobra a tarifa estándar, **incluidas las de archivos estáticos, que normalmente son gratis**. En el plan gratuito eso puede tumbar el sitio entero al pasar de 100.000 peticiones diarias. Sin ese bloque, los estáticos siguen siendo gratis e ilimitados y solo se cuentan las llamadas reales a la función.
-
-### El Worker
-
-Conserva **la ruta vieja** `/.netlify/functions/quote`, así que **no hay que tocar `src/assets/indicadores.js`**. Se añade `/api/quote` como ruta nueva para migrar el front con calma, después.
-
-```js
-// worker.js — sirve el sitio estático y atiende la función de bolsa.
-const PERMITIDOS = new Set(["EC", "CIB", "TGLS", "BZ=F", "^GSPC", "ICOLCAP.CL"]);
-const RANGOS = new Set(["1mo", "3mo", "6mo", "1y", "5y"]);
-// La ruta de Netlify se conserva para no tocar el JavaScript del portal.
-const RUTAS_QUOTE = new Set(["/.netlify/functions/quote", "/api/quote"]);
-
-export default {
-  async fetch(request, env) {
-    const url = new URL(request.url);
-    if (!RUTAS_QUOTE.has(url.pathname)) {
-      return env.ASSETS.fetch(request);   // el resto lo sirve el sitio estático
-    }
-
-    const symbol = String(url.searchParams.get("symbol") || "").toUpperCase();
-    const rangoPedido = url.searchParams.get("range");
-    const range = RANGOS.has(rangoPedido) ? rangoPedido : "6mo";
-
-    const headers = {
-      "Content-Type": "application/json; charset=utf-8",
-      "Access-Control-Allow-Origin": "*",
-      "Cache-Control": "public, max-age=900, s-maxage=900",
-    };
-
-    if (!PERMITIDOS.has(symbol)) {
-      return new Response(JSON.stringify({ error: "símbolo no permitido" }), {
-        status: 400, headers,
-      });
-    }
-
-    try {
-      const destino =
-        "https://query1.finance.yahoo.com/v8/finance/chart/" +
-        encodeURIComponent(symbol) + "?range=" + range + "&interval=1d";
-      // cacheTtl protege a Yahoo de recibir una petición por visita.
-      const r = await fetch(destino, {
-        headers: { "User-Agent": "Mozilla/5.0 (compatible; EconomiaSantander/1.0)" },
-        cf: { cacheTtl: 900, cacheEverything: true },
-      });
-      if (!r.ok) throw new Error("upstream " + r.status);
-
-      const j = await r.json();
-      const res = j?.chart?.result?.[0];
-      if (!res || !res.timestamp) throw new Error("sin datos");
-
-      const close = res.indicators.quote[0].close || [];
-      const puntos = [];
-      for (let i = 0; i < res.timestamp.length; i++) {
-        if (close[i] != null) puntos.push({ t: res.timestamp[i], v: close[i] });
-      }
-
-      return new Response(JSON.stringify({
-        symbol,
-        currency: res.meta?.currency,
-        precio: res.meta?.regularMarketPrice,
-        cierrePrevio: res.meta?.chartPreviousClose,
-        puntos,
-      }), { status: 200, headers });
-    } catch (e) {
-      return new Response(JSON.stringify({ error: String(e?.message || e) }), {
-        status: 502,
-        headers: { ...headers, "Cache-Control": "no-store" },
-      });
-    }
-  },
-};
-```
+19. Repetir la batería de comprobación (§7) contra el dominio real.
+20. Search Console: reenviar `sitemap.xml`. **No** usar Cambio de Dirección: el dominio no cambia.
+21. **No borrar nada de Netlify durante un mes.**
+22. A las dos semanas estable: borrar `netlify.toml` y `netlify/`, y actualizar `CLAUDE.md`.
 
 ---
 
-## 7. Límites y costo
+## 6. ¿Cuánto va a costar Cloudflare?
 
-Plan **gratuito** de Cloudflare Workers:
+**Cero pesos, con el tráfico de este portal y bastante margen por encima.**
 
-- **Peticiones al Worker**: 100.000 al día. Solo cuentan las llamadas a la función de bolsa, no las páginas ni los assets.
-- **Archivos estáticos**: gratis e ilimitados.
-- **CPU**: 10 ms por invocación (el proxy hace un `fetch` y transforma JSON: sobra).
-- **Ancho de banda**: sin límite publicado.
-- **Builds**: Workers Builds tiene su propia cuota; muy por encima del ritmo de este portal.
+| Concepto | Plan gratuito | Qué consume este sitio |
+|---|---|---|
+| **Archivos estáticos** (páginas, CSS, imágenes, videos) | **gratis e ilimitado** | todo el tráfico normal |
+| **Peticiones al Worker** | 100.000 al día | solo `/api/quote` |
+| CPU por invocación | 10 ms | el proxy hace un `fetch`: sobra |
+| Ancho de banda | sin límite publicado | 10 MB de sitio |
+| DNS | gratis | — |
+| Certificado SSL | gratis | — |
+| Web Analytics | gratis | opcional |
+| Builds automáticos | incluidos | ~2 al día |
 
-El sitio pesa ~10 MB en 66 archivos: cabe de sobra.
+**La cuenta que importa:** lo único que se cobra son las llamadas a la función de la bolsa. Una visita a `/indicadores/` dispara hasta 6. Con 100.000 al día, eso da margen para unas **16.000 visitas diarias a esa página específica** antes de rozar el límite — y las páginas normales no cuentan para nada.
 
-**Resultado sobre el motivo de la migración**: sí, desaparece el bloqueo por créditos agotados. El riesgo cambia de naturaleza — ya no es "no puedo desplegar", sería "superé 100.000 llamadas diarias a la función", algo lejísimos del tráfico actual.
+Dicho de otro modo: para que Cloudflare te empiece a cobrar, el portal tendría que crecer varios órdenes de magnitud. Si algún día pasa, el plan Workers Paid cuesta **US$5 al mes** y sube el cupo a 10 millones de peticiones mensuales.
+
+**Lo que sí seguirás pagando** es la renovación del dominio en GoDaddy, igual que hoy. Eso no cambia.
+
+**Y lo que dejas de tener**: el modelo de créditos de Netlify que bloquea despliegues. Ese problema desaparece.
+
+---
+
+## 7. Comprobación antes y después del corte
+
+Ejecutar contra `*.workers.dev` primero y contra el dominio después. Deben dar lo mismo.
+
+```bash
+S=https://economiasantander.com          # o la URL de workers.dev
+
+curl -sI $S/ | head -1                                    # 200
+curl -sI $S/una-url-que-no-existe | head -1               # 404, NO 200
+curl -sI $S/ | grep -i strict-transport                   # HSTS presente
+curl -sI $S/assets/style.css | grep -i cache-control      # must-revalidate
+curl -s "$S/.netlify/functions/quote?symbol=EC&range=1mo" | head -c 120
+curl -sI $S/quien-soy/ | head -1                          # 200
+```
+
+Y en el navegador: que las gráficas de `/indicadores/` se pinten y que el convertidor de `/dolar-hoy/` calcule.
+
+### Lista de verificación
+
+Antes de la Fase D (el corte):
+
+- [ ] El CMS lleva días funcionando con GitHub y Francisco publicó sin ayuda
+- [ ] El login del CMS apunta a nuestro proxy, **no** a `api.netlify.com`
+- [ ] La función devuelve datos reales desde Cloudflare (Yahoo no bloquea sus IP)
+- [ ] `404` real, HSTS, caché y gráficas verificados en `*.workers.dev`
+- [ ] Zona en Cloudflare *Active* y **certificado Universal SSL emitido**
+- [ ] TTL en 300 s y expirado el anterior
+- [ ] Netlify sigue vivo y desplegando
+
+Después del corte, en los primeros minutos:
+
+- [ ] `https://` carga sin error de certificado
+- [ ] `www` redirige al apex
+- [ ] HSTS activado
+- [ ] La batería de `curl` da igual que antes
 
 ---
 
 ## 8. Reversión
 
-Tres niveles, según qué falle:
-
 | Falla | Cómo se revierte | Cuánto tarda |
 |---|---|---|
-| Un despliegue malo en Cloudflare | Rollback en el panel a la versión anterior | Inmediato |
-| Cloudflare responde mal, con DNS ya movido | Volver los nameservers en GoDaddy a `dns1..4.p02.nsone.net` | 5 min si se bajó el TTL |
-| El CMS falla tras cambiar el backend | Revertir en git el commit de `src/admin/` | Un push |
+| Un despliegue malo en Cloudflare | Rollback en el panel | inmediato |
+| Cloudflare responde mal, ya cortado | Poner el registro del apex de nuevo en **DNS only** apuntando a Netlify | ~5 min (TTL 300) |
+| Todo Cloudflare falla | Devolver los nameservers en GoDaddy a `dns1..4.p02.nsone.net` | horas (NS propagan lento) |
+| El CMS falla | `git revert` del commit de `src/admin/` | un push |
 
-Por eso **el sitio de Netlify no se toca durante un mes** y el cambio del CMS se prueba en `*.workers.dev` **antes** del corte, no después.
+Por eso el corte de la Fase D es tan seguro: **la reversión rápida no depende de los nameservers** sino de un registro DNS que ya vive en Cloudflare y se cambia en un clic.
 
 ---
 
 ## 9. Lo que no cambia
 
-Para que quede claro qué NO es un riesgo:
-
-- El contenido: sigue siendo markdown en GitHub. Nada que exportar ni importar.
-- El flujo editorial: ramas, pull requests, vistas previas y botón de publicar.
-- Eleventy, las plantillas, el CSS, las imágenes: intactos.
-- El registrador (GoDaddy) y la titularidad del dominio.
-- El correo: no hay registros MX ni TXT que perder.
-- `indicadores.js` y el resto del JavaScript del portal.
+- El contenido: markdown en GitHub. Nada que exportar ni importar.
+- El flujo editorial: ramas, pull requests, vistas previas, botón de publicar.
+- Eleventy, plantillas, CSS, imágenes: intactos.
+- Las URLs: idénticas. Ningún enlace se rompe, ningún lector nota el cambio.
+- El registrador y la titularidad del dominio.
+- El correo: no hay MX ni TXT que perder.
 
 ---
 
-## 10. Lista de comprobación antes del corte
-
-Todo en verde antes de tocar los nameservers:
-
-- [ ] `_site/404.html` existe y devuelve 404 real en `*.workers.dev`
-- [ ] La función devuelve datos reales desde Cloudflare (Yahoo no bloquea sus IP)
-- [ ] Las 6 gráficas de `/indicadores/` se pintan
-- [ ] Francisco entró a `/admin` con GitHub y publicó una nota de prueba de principio a fin
-- [ ] El login del CMS apunta a nuestro proxy, **no** a `api.netlify.com`
-- [ ] La zona DNS está creada y **sin** los registros A de Netlify
-- [ ] El dominio está añadido en el proyecto de Workers
-- [ ] Browser Cache TTL en "Respect Existing Headers", sin reglas *Cache Everything*
-- [ ] TTL bajado a 300 s en la zona de Netlify y expirado el anterior
-- [ ] El sitio de Netlify sigue vivo y desplegando
-
-Y después del corte, en los primeros minutos:
-
-- [ ] Zona *Active* y certificado Universal SSL emitido
-- [ ] `https://` carga sin error de certificado (crítico por el HSTS)
-- [ ] `www` redirige al apex
-- [ ] HSTS activado de nuevo
-
----
-
-## 11. Esfuerzo estimado
+## 10. Esfuerzo
 
 | Fase | Trabajo |
 |---|---|
-| 0 · Línea base | 30 min |
-| 1 · Código (404, Worker, OAuth) | 3–4 h |
-| 2 · Montaje y pruebas | 2 h + sesión con Francisco |
-| 3 · Corte de DNS | 1 h de trabajo, 24 h de vigilancia |
-| 4 · Cierre y limpieza | 1 h, dos semanas después |
+| A · CMS a GitHub | 2–3 h + sesión con Francisco |
+| B · Cloudflare en paralelo | 1–2 h |
+| C · Preparar el corte | 30 min + esperar propagación |
+| D · El corte | 20 min |
+| E · Cierre | 1 h, dos semanas después |
 
-Lo más largo no es el hosting: es el CMS y las pruebas con Francisco.
+Lo más largo no es el hosting: es el CMS y probarlo con Francisco.
 
 ---
 
-*Investigado con documentación oficial de Cloudflare y Decap CMS consultada el 28 de julio de 2026, con una segunda pasada de verificación que corrigió siete afirmaciones incorrectas del análisis inicial (entre ellas la trampa de facturación de `cache.enabled`, la ruta de salida del 404 en Eleventy y el `base_url` que dejaba el login en Netlify).*
+*Investigado con documentación oficial de Cloudflare y Decap CMS consultada el 28 de julio de 2026, con una segunda pasada de verificación que corrigió siete afirmaciones incorrectas del análisis inicial — entre ellas la trampa de facturación de `cache.enabled`, la ruta de salida del 404 en Eleventy, el `base_url` que dejaba el login en Netlify y el orden de emisión del certificado, que es lo que motivó el esquema de dos fases del DNS.*

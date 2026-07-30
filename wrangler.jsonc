@@ -1,0 +1,26 @@
+{
+  // Configuración de Cloudflare Workers. Convive con netlify.toml: mientras
+  // los dos archivos existan, cada plataforma lee el suyo y las dos publican
+  // el mismo sitio desde el mismo repositorio.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "economia-santander",
+  "main": "worker.js",
+  "compatibility_date": "2026-07-01",
+
+  "assets": {
+    // Lo que genera Eleventy.
+    "directory": "./_site",
+    "binding": "ASSETS",
+    // Obligatorio y explícito: sin esto, una URL inexistente devolvería 200
+    // con la portada (comportamiento de aplicación de una sola página), que
+    // para Google son soft 404. Requiere que exista _site/404.html.
+    "not_found_handling": "404-page"
+  }
+
+  // NO añadir "cache": { "enabled": true }.
+  // Suena a optimización pero es una trampa de facturación: al activarlo,
+  // Cloudflare cobra TODAS las peticiones al Worker a tarifa estándar,
+  // incluidas las de archivos estáticos, que por defecto son gratis e
+  // ilimitadas. En el plan gratuito eso puede agotar el cupo diario.
+  // El caché que sí conviene ya está en el fetch a Yahoo (cf.cacheTtl).
+}

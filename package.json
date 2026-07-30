@@ -3,10 +3,16 @@
   "private": true,
   "scripts": {
     "build": "eleventy",
-    "start": "eleventy --serve"
+    "start": "eleventy --serve",
+    "cf:dev": "eleventy && wrangler dev",
+    "cf:deploy": "eleventy && wrangler deploy",
+    "cf:preview": "eleventy && wrangler versions upload"
   },
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
     "markdown-it": "^14.3.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
   }
 }

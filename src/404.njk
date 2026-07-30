@@ -1,0 +1,42 @@
+---
+layout: layout.njk
+title: Página no encontrada | Economía Santander
+description: La página que buscas no existe o cambió de dirección.
+eleventyExcludeFromCollections: true
+permalink: /404.html
+---
+{# OJO: el permalink es obligatorio. Sin él, Eleventy genera /404/index.html y
+   tanto Netlify como Cloudflare necesitan el archivo 404.html en la raíz de la
+   salida. Sin ese archivo, Cloudflare devolvería 200 con la portada para
+   cualquier URL inexistente: soft 404 en masa y castigo en buscadores. #}
+<section class="section-block wrap error-404">
+  <p class="kicker">Error 404</p>
+  <h1 class="error-titulo">Esta página no existe</h1>
+  <p class="error-texto">Puede que la dirección esté mal escrita o que la nota haya cambiado de sitio. Lo que sí sigue aquí es el resto del portal.</p>
+
+  <div class="error-accesos">
+    <a class="error-boton" href="/">Ir a la portada</a>
+    <a class="error-boton ghost" href="/dolar-hoy/">Dólar de hoy</a>
+    <a class="error-boton ghost" href="/indicadores/">Indicadores</a>
+  </div>
+
+  {% set ultimas = collections.noticias | reverse %}
+  {% if ultimas.length %}
+  <div class="error-recientes">
+    <h2>Lo último que publicamos</h2>
+    <ul>
+      {% for n in ultimas.slice(0, 5) %}
+      <li>
+        <span class="tag">{{ n.data.categoria }}</span>
+        <a href="{{ n.url }}">{{ n.data.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+  <p class="error-secciones">
+    O busca por sección:
+    {% for s in collections.secciones %}<a href="/seccion/{{ s.nombre | slugify }}/">{{ s.nombre }}</a>{% if not loop.last %} · {% endif %}{% endfor %}
+  </p>
+</section>
