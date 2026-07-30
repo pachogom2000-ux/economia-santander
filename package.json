@@ -6,7 +6,10 @@
     "start": "eleventy --serve",
     "cf:dev": "eleventy && wrangler dev",
     "cf:deploy": "eleventy && wrangler deploy",
-    "cf:preview": "eleventy && wrangler versions upload"
+    "cf:preview": "eleventy && wrangler versions upload",
+    "cf:check": "eleventy && node scripts/comprobar-paridad.mjs",
+    "oauth:deploy": "wrangler deploy -c workers/decap-oauth/wrangler.jsonc",
+    "oauth:secret": "wrangler secret put GITHUB_CLIENT_SECRET -c workers/decap-oauth/wrangler.jsonc"
   },
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",

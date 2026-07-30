@@ -41,7 +41,7 @@ Pages no está deprecado y funcionaría, pero es el camino secundario. Ventaja p
 | Función de bolsa | `netlify/functions/quote.js` | ✅ ya está en `worker.js`, misma ruta |
 | Página 404 | no existía | ✅ creada con permalink correcto |
 | Cabeceras y HSTS | las ponía Netlify sola | ✅ ahora en `src/_headers`, las leen las dos |
-| **Autenticación del CMS** | **Netlify Identity + git-gateway** | ⚠️ **pendiente — el único bloqueante** |
+| **Autenticación del CMS** | **Netlify Identity + git-gateway** | 🔸 proxy escrito y probado, **falta desplegarlo** |
 | DNS | Netlify DNS (NS1) | pendiente, es el corte |
 | Registrador | GoDaddy | no se toca |
 | Correo | **no hay MX ni TXT** | nada que romper |
@@ -81,13 +81,62 @@ Dos decisiones que hay que respetar y están comentadas en el código:
 - `not_found_handling: "404-page"` es obligatorio y explícito.
 - **No activar `"cache": { "enabled": true }`** en `wrangler.jsonc`. Suena a optimización pero es una trampa de facturación: al activarlo, Cloudflare cobra *todas* las peticiones al Worker a tarifa estándar, **incluidas las de archivos estáticos, que por defecto son gratis e ilimitadas**. El caché que sí conviene ya está en el `fetch` a Yahoo (`cf.cacheTtl`).
 
-### 3.4 Scripts (`package.json`)
+### 3.4 El proxy de autenticación del CMS (`workers/decap-oauth/`)
+
+Escrito y probado, **sin desplegar**. Es lo único que faltaba para poder sacar el CMS de Netlify. Instrucciones completas en `workers/decap-oauth/README.md`.
+
+Comprobado en local contra credenciales falsas: redirige bien a GitHub, la cookie de `state` sale `__Host-` + `HttpOnly` + `Secure` + `SameSite=Lax`, rechaza el `callback` con `state` inventado y también con `state` bueno pero sin cookie, el *client secret* no aparece en ninguna respuesta ni cabecera, y el token se entrega **solo a orígenes de una lista blanca** — nunca con `postMessage(..., "*")`, que es el error habitual de estos proxys.
+
+### 3.5 Comprobador de paridad (`scripts/comprobar-paridad.mjs`)
+
+La prueba de aceptación de la migración, automatizada. Compara el sitio candidato contra el publicado y **no da verde hasta que se comportan igual**: las 39 páginas del sitemap, la 404 real, las cabeceras, los seis símbolos de la función de bolsa, el rechazo de símbolos fuera de la lista blanca, y el HTML byte a byte.
 
 ```bash
-npm run cf:dev       # probar en local: eleventy + wrangler dev
-npm run cf:deploy    # publicar a Cloudflare
-npm run cf:preview   # subir una versión de prueba
+npm run cf:check                                              # contra el Worker local
+node scripts/comprobar-paridad.mjs https://<worker>.workers.dev   # contra Cloudflare
+node scripts/comprobar-paridad.mjs https://economiasantander.com  # después del corte
 ```
+
+### 3.6 Scripts (`package.json`)
+
+```bash
+npm run cf:dev        # probar en local: eleventy + wrangler dev
+npm run cf:check      # comprobador de paridad
+npm run cf:deploy     # publicar el sitio a Cloudflare
+npm run cf:preview    # subir una versión de prueba
+npm run oauth:deploy  # publicar el proxy de autenticación
+npm run oauth:secret  # cargar el client secret (cifrado, fuera del repo)
+```
+
+---
+
+## 3.bis Resultado de la prueba en local
+
+El Worker completo se levantó con `wrangler dev` y se le pasó el comprobador. **Todo en verde**, sin ninguna excepción:
+
+```
+1. Paridad de páginas
+  ✓ las 39 páginas del sitemap responden 200
+  ✓ ninguna difiere de lo publicado
+2. Página de error
+  ✓ una URL inexistente devuelve 404, no 200
+  ✓ sirve la 404 del portal, no una en blanco
+3. Cabeceras
+  ✓ HSTS presente y de un año   ✓ nosniff
+  ✓ el HTML revalida siempre    ✓ la hoja de estilos revalida siempre
+4. Función de bolsa
+  ✓ EC  ✓ CIB  ✓ TGLS  ✓ BZ=F  ✓ ^GSPC  ✓ ICOLCAP.CL
+  ✓ rechaza símbolos fuera de la lista blanca
+5. Contenido idéntico
+  ✓ /  ✓ /quien-soy/  ✓ /dolar-hoy/  ✓ /multimedia/
+```
+
+Wrangler además confirmó que lee nuestras cabeceras: *"Parsed 9 valid header rules"*. Y las páginas salen **idénticas byte a byte** a las que sirve Netlify hoy.
+
+Dos cosas que esta prueba **no** puede decidir, y que solo se sabrán al desplegar (Fase B):
+
+1. Si Yahoo Finanzas bloquea las IP de Cloudflare. Desde una casa en Bucaramanga responde; desde un centro de datos puede que no.
+2. El comportamiento del caché en el borde, que en local no existe.
 
 ---
 
@@ -136,9 +185,11 @@ Así, cuando llegue el corte de DNS, el CMS ya lleva semanas funcionando y proba
 
 ### Fase A — CMS a GitHub *(sitio sigue en Netlify)*
 
-1. Crear una **GitHub OAuth App** en la cuenta de Francisco.
-2. Desplegar el **Worker proxy OAuth** (plantilla mantenida: `sterlingwes/decap-proxy`) con el *client secret* como variable secreta.
-3. Cambiar `src/admin/config.yml` al backend `github` **con `base_url`**, y quitar el widget de Identity de `src/admin/index.html`.
+> El Worker proxy **ya está escrito y probado** en `workers/decap-oauth/` (§3.4). Falta desplegarlo, que requiere los pasos de navegador.
+
+1. Crear una **GitHub OAuth App** en la cuenta de Francisco *(navegador)*.
+2. Pegar el Client ID en `workers/decap-oauth/wrangler.jsonc` y desplegar: `npm run oauth:deploy`, luego `npm run oauth:secret`.
+3. Cambiar `src/admin/config.yml` al backend `github` **con `base_url`**, y quitar el widget de Identity de `src/admin/index.html`. *(El bloque exacto está en el README del proxy.)*
 4. **Probar con Francisco delante**: que entre con GitHub, cree un borrador, lo pase por el flujo editorial y publique. Sitio todavía en Netlify.
 5. Dejarlo rodar unos días.
 
@@ -154,8 +205,14 @@ Así, cuando llegue el corte de DNS, el CMS ya lleva semanas funcionando y proba
    curl "https://<worker>.workers.dev/.netlify/functions/quote?symbol=EC&range=6mo"
    ```
 
-   Si devuelve 429 o 403, **parar** y replantear la fuente de las gráficas. Es el único riesgo que no se puede verificar sin desplegar.
-9. Comparar `*.workers.dev` contra el sitio real, punto por punto (§7).
+   Si devuelve 429 o 403, **parar** y replantear la fuente de las gráficas. Es el único riesgo que no se puede verificar sin desplegar. *(El comprobador de §3.5 lo detecta y lo avisa por su cuenta.)*
+9. Comparar `*.workers.dev` contra el sitio real, punto por punto:
+
+   ```bash
+   node scripts/comprobar-paridad.mjs https://economia-santander.<sub>.workers.dev
+   ```
+
+   Mientras esto no dé **todo en verde**, no se pasa a la Fase C.
 
 > Aquí ya hay **dos sitios idénticos y vivos**. El lector sigue entrando por Netlify sin enterarse de nada.
 
@@ -220,7 +277,13 @@ Dicho de otro modo: para que Cloudflare te empiece a cobrar, el portal tendría 
 
 ## 7. Comprobación antes y después del corte
 
-Ejecutar contra `*.workers.dev` primero y contra el dominio después. Deben dar lo mismo.
+Lo automático, que es lo que decide:
+
+```bash
+node scripts/comprobar-paridad.mjs https://economia-santander.<sub>.workers.dev
+```
+
+Y a mano, si se quiere mirar una cosa suelta:
 
 ```bash
 S=https://economiasantander.com          # o la URL de workers.dev

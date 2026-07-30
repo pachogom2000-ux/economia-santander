@@ -1,0 +1,21 @@
+{
+  // Worker aparte del sitio: solo hace el intercambio de OAuth con GitHub.
+  // Desplegar con:  npm run oauth:deploy
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "economia-santander-auth",
+  "main": "worker.js",
+  "compatibility_date": "2026-07-01",
+
+  "vars": {
+    // El client id de una OAuth App es público (viaja en la URL de GitHub).
+    // Se rellena al crear la app; ver README.md.
+    "GITHUB_CLIENT_ID": "",
+    // Orígenes extra desde los que se acepta el CMS, separados por coma.
+    // Los del dominio real ya están en el código; aquí va el de pruebas.
+    "ORIGENES_PERMITIDOS": ""
+  }
+
+  // GITHUB_CLIENT_SECRET **no** va aquí. Se carga una sola vez con:
+  //   npx wrangler secret put GITHUB_CLIENT_SECRET -c workers/decap-oauth/wrangler.jsonc
+  // Queda cifrado en Cloudflare y nunca toca el repositorio.
+}
