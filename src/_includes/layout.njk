@@ -268,7 +268,10 @@
           </div>
         </div>
       </div>
-      <div class="footer-col">
+      {# En el teléfono estos enlaces son cortos y uno debajo de otro dejaban
+         media pantalla vacía: se muestran como fichas que fluyen y llenan la
+         fila. En pantalla grande siguen siendo una columna normal. #}
+      <div class="footer-col footer-col-secciones">
         <h4>Secciones</h4>
         <ul>
           <li><a href="/multimedia/">Multimedia</a></li>
@@ -280,7 +283,7 @@
           <li><a href="/seccion/agro/">Agro</a></li>
         </ul>
       </div>
-      <div class="footer-col">
+      <div class="footer-col footer-col-medio">
         <h4>Sobre el medio</h4>
         <ul>
           <li><a href="/quien-soy/">Quién soy</a></li>
@@ -290,12 +293,19 @@
           <li><a href="tel:+573112865169">Contacto: 311 286 5169</a></li>
         </ul>
       </div>
-      <div class="footer-col">
+      {# Las redes salen de _data/redes.json y se editan en el CMS. Un perfil
+         sin dirección NO se pinta: un enlace que no lleva a ninguna parte
+         cuesta más confianza de la que suma tenerlo ahí. #}
+      <div class="footer-col footer-col-redes">
         <h4>Síguenos</h4>
         <ul>
-          <li><a href="#">LinkedIn</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Boletín por correo</a></li>
+          {% for red in redes.perfiles %}
+            {% if red.url %}
+            <li><a href="{{ red.url }}" target="_blank" rel="noopener">{{ red.nombre }} ↗</a></li>
+            {% endif %}
+          {% endfor %}
+          <li><a href="https://wa.me/573112865169?text=Hola%2C%20quiero%20seguir%20Econom%C3%ADa%20Santander%20por%20WhatsApp." target="_blank" rel="noopener">WhatsApp ↗</a></li>
+          <li><a href="mailto:directoreconomiasantander@gmail.com?subject=Quiero%20recibir%20el%20bolet%C3%ADn">Boletín por correo</a></li>
         </ul>
       </div>
     </div>
@@ -731,6 +741,94 @@
         if (dlg.showModal) dlg.showModal(); else dlg.setAttribute('open', '');
       });
     });
+  })();
+</script>
+
+<!-- Compartir la nota. WhatsApp, Facebook, LinkedIn y Gmail son enlaces
+     normales armados en el build y no necesitan nada de esto.
+     Instagram y TikTok sí: no publican una dirección web para compartir un
+     enlace, así que se usa el menú de compartir del teléfono (que lista las
+     apps instaladas) y, donde no existe, se copia el enlace. -->
+<script>
+  (function () {
+    var caja = document.querySelector('[data-compartir]');
+    if (!caja) return;
+
+    var url = caja.getAttribute('data-url');
+    var titulo = caja.getAttribute('data-titulo');
+    var texto = caja.getAttribute('data-texto');
+    var aviso = caja.querySelector('[data-compartir-aviso]');
+    var reloj;
+
+    function decir(mensaje) {
+      if (!aviso) return;
+      aviso.textContent = mensaje;
+      aviso.hidden = false;
+      clearTimeout(reloj);
+      reloj = setTimeout(function () { aviso.hidden = true; }, 4000);
+    }
+
+    function copiar() {
+      if (navigator.clipboard && window.isSecureContext) {
+        return navigator.clipboard.writeText(url);
+      }
+      // Sin portapapeles moderno (http, navegadores viejos): se selecciona
+      // el texto en un campo fuera de pantalla y se copia a la vieja usanza.
+      return new Promise(function (resolver, rechazar) {
+        var campo = document.createElement('textarea');
+        campo.value = url;
+        campo.setAttribute('readonly', '');
+        campo.style.cssText = 'position:absolute;left:-9999px;top:0';
+        document.body.appendChild(campo);
+        campo.select();
+        var bien = false;
+        try { bien = document.execCommand('copy'); } catch (e) {}
+        document.body.removeChild(campo);
+        bien ? resolver() : rechazar();
+      });
+    }
+
+    function copiarYAvisar(app) {
+      copiar().then(
+        function () {
+          decir(app
+            ? 'Enlace copiado. Pégalo en tu historia o publicación de ' + app + '.'
+            : 'Enlace copiado.');
+        },
+        function () { decir('No se pudo copiar. El enlace es: ' + url); }
+      );
+    }
+
+    caja.querySelectorAll('[data-compartir-app]').forEach(function (boton) {
+      boton.addEventListener('click', function () {
+        var app = boton.getAttribute('data-compartir-app');
+        if (navigator.share) {
+          // Dentro de un try: hay navegadores donde share() existe pero está
+          // bloqueado (por ejemplo en un iframe con la política restringida) y
+          // revienta en el acto, sin devolver promesa. Sin esto el botón se
+          // quedaría mudo, que es justo lo que no queremos.
+          try {
+            var promesa = navigator.share({ title: titulo, text: texto, url: url });
+            if (promesa && promesa.catch) {
+              promesa.catch(function (e) {
+                // Cancelar el menú no es un fallo: no hay que decir nada.
+                if (e && e.name === 'AbortError') return;
+                copiarYAvisar(app);
+              });
+              return;
+            }
+          } catch (e) {
+            if (e && e.name === 'AbortError') return;
+          }
+        }
+        copiarYAvisar(app);
+      });
+    });
+
+    var botonCopiar = caja.querySelector('[data-compartir-copiar]');
+    if (botonCopiar) {
+      botonCopiar.addEventListener('click', function () { copiarYAvisar(null); });
+    }
   })();
 </script>
 

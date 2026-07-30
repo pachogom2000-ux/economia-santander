@@ -2149,3 +2149,138 @@
   .error-secciones { margin-top: 26px; font-size: 12.5px; color: var(--text-muted); line-height: 1.9; }
   .error-secciones a { color: var(--accent); text-decoration: none; }
   .error-secciones a:hover { text-decoration: underline; }
+
+  /* ==========================================================
+     Compartir la nota
+     Instagram y TikTok no tienen dirección web para compartir un enlace,
+     así que son botones y usan el menú del teléfono (o copian el enlace).
+     ========================================================== */
+  .compartir {
+    margin-top: 34px;
+    padding-top: 22px;
+    border-top: 1px solid var(--line);
+  }
+  .compartir-titulo {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin: 0 0 12px;
+  }
+  .compartir-lista {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .compartir-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 13px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--bg);
+    color: var(--text-soft);
+    font: inherit;
+    font-size: 12.5px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color .16s ease, border-color .16s ease, background-color .16s ease;
+  }
+  .compartir-btn svg { width: 15px; height: 15px; flex-shrink: 0; }
+  /* El color de cada marca solo aparece al apuntar: en reposo la fila se ve
+     ordenada y no compite con el texto de la noticia. */
+  .compartir-btn:hover, .compartir-btn:focus-visible {
+    color: var(--marca, var(--accent));
+    border-color: currentColor;
+    background: var(--bg-sunken);
+  }
+  .compartir-btn.es-whatsapp  { --marca: #1FA855; }
+  .compartir-btn.es-facebook  { --marca: #1877F2; }
+  .compartir-btn.es-linkedin  { --marca: #0A66C2; }
+  .compartir-btn.es-gmail     { --marca: #C5221F; }
+  .compartir-btn.es-instagram { --marca: #C13584; }
+  .compartir-btn.es-tiktok    { --marca: #111; }
+  .compartir-aviso {
+    margin: 12px 0 0;
+    font-size: 12.5px;
+    font-weight: 600;
+    color: var(--accent);
+  }
+  @media (prefers-color-scheme: dark) {
+    .compartir-btn.es-whatsapp  { --marca: #25D366; }
+    .compartir-btn.es-gmail     { --marca: #EA4335; }
+    .compartir-btn.es-tiktok    { --marca: #FE2C55; }
+    .compartir-btn.es-instagram { --marca: #E4638F; }
+  }
+  :root[data-theme="dark"] .compartir-btn.es-whatsapp  { --marca: #25D366; }
+  :root[data-theme="dark"] .compartir-btn.es-gmail     { --marca: #EA4335; }
+  :root[data-theme="dark"] .compartir-btn.es-tiktok    { --marca: #FE2C55; }
+  :root[data-theme="dark"] .compartir-btn.es-instagram { --marca: #E4638F; }
+  :root[data-theme="light"] .compartir-btn.es-tiktok   { --marca: #111; }
+
+  /* En pantallas angostas el nombre estorba: quedan solo los iconos, más
+     grandes y con área de toque cómoda. Copiar enlace conserva su texto
+     porque el icono de cadena solo no se entiende. */
+  @media (max-width: 460px) {
+    .compartir-lista { gap: 9px; }
+    .compartir-btn { padding: 0; width: 42px; height: 42px; justify-content: center; }
+    .compartir-btn svg { width: 18px; height: 18px; }
+    .compartir-btn span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+    .compartir-btn.es-copiar { width: auto; padding: 0 15px; gap: 7px; }
+    .compartir-btn.es-copiar span { position: static; width: auto; height: auto; overflow: visible; clip: auto; }
+  }
+
+  /* ==========================================================
+     Pie de página en el teléfono
+     Con una sola columna el pie medía 1320 px en una pantalla de 844: más de
+     una pantalla y media de enlaces cortos, uno debajo de otro, con la mitad
+     del ancho vacío a la derecha. Se reparte en dos columnas y las secciones
+     pasan a fichas que fluyen.
+     ========================================================== */
+  @media (max-width: 560px) {
+    .footer-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 26px 18px;
+      margin-bottom: 28px;
+    }
+    /* La ficha del director y las secciones ocupan el ancho completo; las
+       otras dos listas van lado a lado porque son cortas. */
+    .author-block, .footer-col-secciones { grid-column: 1 / -1; }
+
+    .footer-col-secciones ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .footer-col-secciones li { display: flex; }
+    .footer-col-secciones a {
+      display: inline-block;
+      padding: 7px 13px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--bg);
+      font-size: 12.5px;
+      font-weight: 600;
+      line-height: 1;
+    }
+    .footer-col-medio ul, .footer-col-redes ul { gap: 11px; }
+    .footer-col-medio a, .footer-col-redes a { font-size: 12.5px; line-height: 1.35; display: inline-block; }
+
+    /* La foto pierde 20 px y la biografía gana el ancho que necesita para no
+       partirse en tiras de tres palabras. */
+    .author-foto { width: 64px; height: 64px; }
+    .author-cabeza { gap: 12px; }
+    .author-block h3 { font-size: 16.5px; }
+    .author-block p { font-size: 12.5px; }
+    .author-links-etiqueta { min-width: 0; }
+    .author-links-fila { gap: 4px 12px; }
+
+    .footer-legal { margin-top: 22px; padding-top: 18px; }
+    .footer-legal-links { gap: 8px 14px; }
+  }

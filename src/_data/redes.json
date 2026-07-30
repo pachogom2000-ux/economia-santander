@@ -1,0 +1,9 @@
+{
+  "perfiles": [
+    { "nombre": "LinkedIn", "url": "" },
+    { "nombre": "Instagram", "url": "" },
+    { "nombre": "Facebook", "url": "" },
+    { "nombre": "TikTok", "url": "" },
+    { "nombre": "YouTube", "url": "" }
+  ]
+}

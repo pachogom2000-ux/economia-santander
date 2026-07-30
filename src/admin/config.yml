@@ -268,6 +268,22 @@ collections:
               - { label: "Fecha", name: "fecha", widget: "string", hint: "Ej: 15 de julio de 2026" }
               - { label: "Enlace a la fuente", name: "url", widget: "string" }
 
+  - name: "redes"
+    label: "Redes sociales"
+    files:
+      - file: "src/_data/redes.json"
+        label: "Perfiles del pie de página"
+        name: "perfiles"
+        fields:
+          - label: "Perfiles"
+            name: "perfiles"
+            widget: "list"
+            summary: "{{fields.nombre}}"
+            hint: "El que quede SIN dirección no aparece en el pie. Un enlace que no lleva a ninguna parte le quita credibilidad al portal, así que es mejor dejarlo vacío hasta tener el perfil listo."
+            fields:
+              - { label: "Red", name: "nombre", widget: "string" }
+              - { label: "Dirección del perfil", name: "url", widget: "string", required: false, hint: "Completa, empezando por https://. Déjala vacía si todavía no existe el perfil." }
+
   - name: "publicidad"
     label: "Publicidad"
     files:
