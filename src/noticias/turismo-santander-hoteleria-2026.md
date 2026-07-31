@@ -2,7 +2,6 @@
 layout: noticia.njk
 title: "Turismo en Santander: menos empleo pese al repunte de abril"
 date: 2026-07-28
-updated: 2026-07-28
 categoria: "Turismo y hotelería"
 chipTipo: "propio"
 chipLabel: "Redacción propia"

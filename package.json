@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "@11ty/eleventy-img": "^6.0.4",
+    "image-size": "^2.0.2",
     "wrangler": "^4.0.0"
   }
 }

@@ -15,7 +15,6 @@ imagenPie: Si en 2025 recibió $69.719.000 o más en honorarios, le toca declara
 imagenCredito: Archivo particular
 guia: true
 tags: noticias
-updated: 2026-07-28
 ---
 Si en 2025 recibió **$69.719.000** o más en honorarios, le toca declarar renta. Son **$5.809.917** al mes: un contrato de prestación de servicios de seis millones mensuales ya cruza el umbral.
 

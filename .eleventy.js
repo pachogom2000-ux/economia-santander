@@ -1,4 +1,5 @@
 const markdownIt = require("markdown-it");
+const Image = require("@11ty/eleventy-img");
 const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 
 module.exports = function (eleventyConfig) {
@@ -95,7 +96,105 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("isoDate", (dateObj) => new Date(dateObj).toISOString());
 
+  // Fecha de última modificación. Se toma el MÁXIMO, no "updated si existe":
+  // con `updated or date`, una nota con una corrección mal fechada le decía a
+  // Google que se modificó ANTES de publicarse, y en el sitemap hacía
+  // retroceder el lastmod. Google descarta el lastmod de un sitio entero si lo
+  // pilla siendo inconsistente.
+  const masReciente = (fecha, actualizada) => {
+    const d = new Date(fecha);
+    if (!actualizada) return d;
+    const u = new Date(actualizada);
+    return u > d ? u : d;
+  };
+  eleventyConfig.addFilter("fechaModificacion", (fecha, actualizada) =>
+    masReciente(fecha, actualizada).toISOString()
+  );
+  eleventyConfig.addFilter("fechaModificacionCorta", (fecha, actualizada) =>
+    masReciente(fecha, actualizada).toISOString().slice(0, 10)
+  );
+
+  // RSS 2.0 exige fechas en RFC-822 ("Wed, 29 Jul 2026 12:19:00 GMT"), no en
+  // ISO. Muchos lectores toleran el ISO, pero los validadores lo marcan como
+  // inválido y algunos agregadores descartan el ítem entero.
+  eleventyConfig.addFilter("fechaRss", (fecha, actualizada) =>
+    masReciente(fecha, actualizada).toUTCString()
+  );
+
+  // Fecha de la nota más reciente de una sección: es el único `lastmod`
+  // honesto que se le puede dar a una página de sección, porque sí cambia
+  // cuando entra una nota.
+  eleventyConfig.addFilter("ultimaDeSeccion", (lista, categoria) => {
+    const cat = String(categoria || "").toLowerCase();
+    const fechas = (lista || [])
+      .filter((p) => String(p.data.categoria || "").toLowerCase() === cat)
+      .map((p) => masReciente(p.date, p.data.updated).getTime());
+    return fechas.length ? new Date(Math.max(...fechas)).toISOString().slice(0, 10) : "";
+  });
+
   eleventyConfig.addFilter("jsonify", (value) => JSON.stringify(value));
+
+  // Medidas REALES de una foto, leídas de la cabecera del archivo. Estaban
+  // quemadas en 1200x700 para todo el sitio, aunque las fotos van de 724x483
+  // a 8688x5792: se le declaraba a Google y a WhatsApp una medida que no era
+  // la del archivo. Devuelve null si la foto no existe, y entonces la
+  // plantilla simplemente no declara medidas — mejor callar que mentir.
+  const fs = require("fs");
+  const path = require("path");
+  const imageSize = require("image-size");
+  const medirImagen = imageSize.imageSize || imageSize;
+  const medidasCache = new Map();
+  eleventyConfig.addFilter("medidas", (ruta) => {
+    if (!ruta) return null;
+    if (medidasCache.has(ruta)) return medidasCache.get(ruta);
+    let r = null;
+    try {
+      const archivo = path.join("src", String(ruta).replace(/^\//, ""));
+      const { width, height } = medirImagen(fs.readFileSync(archivo));
+      if (width && height) r = { width, height };
+    } catch (e) {
+      r = null;
+    }
+    medidasCache.set(ruta, r);
+    return r;
+  });
+
+  // Imagen de vista previa para WhatsApp, Facebook y buscadores.
+  //
+  // Se generaba apuntando al ORIGINAL, y algunos originales pesan 4,5 MB con
+  // 8688 px de ancho. WhatsApp no descarga imágenes así para pintar la vista
+  // previa: el enlace sale sin foto justo en el canal por el que llega la
+  // mayoría de los lectores de este portal.
+  //
+  // Aquí se genera una versión de 1200 px en JPEG: por encima del mínimo de
+  // 1200 que exige Google Discover, y en JPEG porque WhatsApp no come WebP.
+  const ogCache = new Map();
+  eleventyConfig.addFilter("imagenVistaPrevia", (ruta) => {
+    if (!ruta) return null;
+    if (ogCache.has(ruta)) return ogCache.get(ruta);
+    const archivo = path.join("src", String(ruta).replace(/^\//, ""));
+    const opciones = {
+      widths: [1200],
+      formats: ["jpeg"],
+      outputDir: "./_site/img/",
+      urlPath: "/img/",
+      filenameFormat: (id, src, width, format) => `og-${id}-${width}.${format}`,
+    };
+    let r = null;
+    try {
+      // Se dispara la generación (asíncrona, escribe el archivo) y se piden
+      // los datos de forma síncrona para poder devolver la URL ya en esta
+      // pasada de la plantilla.
+      Image(archivo, opciones);
+      const stats = Image.statsSync(archivo, opciones);
+      const jpeg = stats && stats.jpeg && stats.jpeg[stats.jpeg.length - 1];
+      if (jpeg) r = { url: jpeg.url, width: jpeg.width, height: jpeg.height };
+    } catch (e) {
+      r = null; // Si falla, la plantilla cae al original: mejor eso que nada.
+    }
+    ogCache.set(ruta, r);
+    return r;
+  });
 
   // ID de YouTube a partir de una URL completa o del ID pelado
   eleventyConfig.addFilter("ytId", (value) => {

@@ -15,7 +15,6 @@ imagenPie: "Haga cuentas de lo que usted recibe realmente si invierte en un CDT,
   restando la alta inflación. "
 imagenCredito: archivo particular
 tags: noticias
-updated: 2026-07-28
 ---
 Un CDT a 360 días paga hasta **13,46% efectivo anual**, con corte al 2 de julio. La inflación anual de Bucaramanga cerró junio en **7,05%**. Esa resta, más lo que se lleva la DIAN, es la clave de este artículo.
 

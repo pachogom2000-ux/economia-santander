@@ -16,7 +16,6 @@ imagenPie: "En Santander las ventas reales subieron 10,6% en mayo y 14,9% entre
   enero y mayo de 2026. "
 imagenCredito: "Foto: Pixabay/Pexels"
 tags: noticias
-updated: 2026-07-28
 ---
 El comercio de Santander vendió **10,6% más** en mayo de 2026 que un año atrás. En lo corrido del año recortó **1,6%** de su personal ocupado.
 

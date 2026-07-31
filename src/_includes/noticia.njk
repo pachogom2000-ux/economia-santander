@@ -3,6 +3,13 @@ layout: layout.njk
 ogType: article
 ---
 <article class="wrap noticia-articulo">
+  {# Ruta de navegación. Sirve al lector que llega de Google a una nota suelta
+     y no sabe dónde está, y le enseña al buscador la jerarquía del sitio. #}
+  <nav class="miga" aria-label="Ruta de navegación">
+    <a href="/">Portada</a>
+    <span aria-hidden="true">›</span>
+    <a href="/seccion/{{ categoria | slugify }}/">{{ categoria }}</a>
+  </nav>
   <div class="hero-eyebrow">
     <span class="tag">{{ categoria }}</span>
     <span class="chip {{ chipTipo or 'propio' }}">{{ chipLabel or 'Redacción propia' }}</span>
@@ -89,16 +96,44 @@ ogType: article
   "headline": {{ title | jsonify | safe }},
   "description": {{ excerpt | jsonify | safe }},
   "datePublished": "{{ date | isoDate }}",
-  "dateModified": "{{ (updated or date) | isoDate }}",
-  "author": { "@type": "Person", "name": {{ (autor or "Economía Santander") | jsonify | safe }} },
+  "dateModified": "{{ date | fechaModificacion(updated) }}",
+  {# El autor apunta a la ficha de Francisco que ya declara el layout: veinte
+     años de trayectoria, dos premios y sus perfiles. Con solo el nombre suelto,
+     Google ve una cadena de texto distinta en cada nota y no la conecta con
+     nadie. Con @id, todas las notas cuelgan de la misma persona.
+     Si algún día firma otra persona, se emite un Person normal en vez de
+     atribuirle a Francisco algo que no escribió. #}
+  {% if not autor or "Francisco" in autor %}
+  "author": { "@id": "https://economiasantander.com/#periodista" },
+  {% else %}
+  "author": { "@type": "Person", "name": {{ autor | jsonify | safe }} },
+  {% endif %}
   "publisher": { "@id": "https://economiasantander.com/#organization" },
-  "mainEntityOfPage": "https://economiasantander.com{{ page.url }}"
-  {% if imagen %},"image": [{
+  "mainEntityOfPage": "https://economiasantander.com{{ page.url }}",
+  {# La jerarquía Portada > Sección > Nota ya existía en la navegación, pero
+     Google no tenía cómo verla. Con esto, en los resultados de búsqueda
+     aparece la ruta en vez de la URL cruda. #}
+  "isPartOf": { "@id": "https://economiasantander.com/#website" }
+  {% if imagen %}{% set med = imagen | medidas %},"image": [{
     "@type": "ImageObject",
-    "url": {{ ("https://economiasantander.com" + imagen) | jsonify | safe }},
-    "width": 1200,
-    "height": 700
+    "url": {{ ("https://economiasantander.com" + imagen) | jsonify | safe }}
+    {% if med %},"width": {{ med.width }},"height": {{ med.height }}{% endif %}
     {% if imagenAlt %},"caption": {{ imagenAlt | jsonify | safe }}{% endif %}
   }]{% endif %}
+}
+</script>
+
+{# BreadcrumbList aparte del NewsArticle: Google lo lee mejor como bloque
+   propio y es lo que convierte la URL cruda del resultado de busqueda en la
+   ruta "economiasantander.com > Agro > titular". #}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Portada", "item": "https://economiasantander.com/" },
+    { "@type": "ListItem", "position": 2, "name": {{ categoria | jsonify | safe }}, "item": "https://economiasantander.com/seccion/{{ categoria | slugify }}/" },
+    { "@type": "ListItem", "position": 3, "name": {{ title | jsonify | safe }} }
+  ]
 }
 </script>

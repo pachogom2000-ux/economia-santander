@@ -17,7 +17,6 @@ imagenPie: Junio de 2026 cerró con una inflación anual de 7,05%, un dato clave
 imagenCredito: Bucaramanga cerró junio de 2026 con una inflación anual de 7,05%,
   un dato clave en la decisión que tomará la Junta del Banco de la República.
 tags: noticias
-updated: 2026-07-28
 ---
 **Bucaramanga cerró junio con 7,05% de inflación anual, la más alta del país.** El DANE calcula el IPC en 38 ciudades y áreas urbanas, y ninguna otra llegó tan arriba. El promedio nacional fue 6,14%.
 

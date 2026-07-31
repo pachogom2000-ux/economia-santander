@@ -16,7 +16,6 @@ imagenPie: "Los 4 municipios del área metropolitana concentran el 70% de
   empresas que hay en Santander con corte a 2026. "
 imagenCredito: "Pixabay-Alex Freeman. "
 tags: noticias
-updated: 2026-07-28
 ---
 Cada día de 2025 nacieron, en promedio, 37 empresas en la jurisdicción de la **Cámara de Comercio de Bucaramanga**. Cada día murieron 29.
 

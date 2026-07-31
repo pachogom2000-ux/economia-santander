@@ -6,7 +6,7 @@ categoria: "Industria"
 chipTipo: "propio"
 chipLabel: "Redacción propia"
 excerpt: "Santander es la cuarta economía de Colombia con el 6,4% del PIB. Más allá del petróleo y la palma, diez cadenas productivas sostienen su empleo y sus exportaciones."
-autor: "[Nombre del periodista]"
+autor: "Francisco Gómez - Director"
 tags: noticias
 eleventyExcludeFromCollections: true
 ---

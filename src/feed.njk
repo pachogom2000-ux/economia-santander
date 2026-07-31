@@ -1,0 +1,46 @@
+---
+permalink: feed.xml
+eleventyExcludeFromCollections: true
+---
+{#- Feed RSS de las últimas notas.
+
+    Para qué sirve de verdad, sin vender humo: NO es para Google News, que ni
+    pide feed ni lo lee desde marzo de 2025. Sirve para dos cosas concretas:
+    es la única entrada mecánica para automatizar el boletín por correo, y lo
+    leen los agregadores y los lectores de RSS que todavía usa buena parte del
+    gremio periodístico.
+
+    Por sí solo no trae tráfico. Es fontanería para lo que viene. -#}
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Economía Santander</title>
+    <link>https://economiasantander.com/</link>
+    <atom:link href="https://economiasantander.com/feed.xml" rel="self" type="application/rss+xml" />
+    <description>Noticias económicas de Santander y el oriente colombiano: inversión, empleo, construcción, agro e indicadores.</description>
+    <language>es-CO</language>
+    <copyright>Economía Santander · Francisco Javier Gómez</copyright>
+    <managingEditor>directoreconomiasantander@gmail.com (Francisco Javier Gómez)</managingEditor>
+{%- set ultima = collections.noticias | reverse | first %}
+{%- if ultima %}
+    <lastBuildDate>{{ ultima.date | fechaRss(ultima.data.updated) }}</lastBuildDate>
+{%- endif %}
+{%- for n in collections.noticias | reverse %}
+{%- if loop.index <= 20 %}
+    <item>
+      <title>{{ n.data.title }}</title>
+      <link>https://economiasantander.com{{ n.url }}</link>
+      <guid isPermaLink="true">https://economiasantander.com{{ n.url }}</guid>
+      <pubDate>{{ n.date | fechaRss(n.data.updated) }}</pubDate>
+      <description>{{ n.data.excerpt }}</description>
+{%- if n.data.categoria %}
+      <category>{{ n.data.categoria }}</category>
+{%- endif %}
+{%- if n.data.imagen %}
+      <enclosure url="https://economiasantander.com{{ n.data.imagen }}" type="image/jpeg" />
+{%- endif %}
+    </item>
+{%- endif %}
+{%- endfor %}
+  </channel>
+</rss>

@@ -3,45 +3,45 @@ permalink: sitemap.xml
 eleventyExcludeFromCollections: true
 ---
 {#- Las secciones salen de collections.secciones con el mismo slugify que usa
-    seccion.njk para su permalink, así no se pueden desincronizar. Antes solo
-    entraban las noticias y las páginas legales: quedaban fuera las 14 de
-    sección, /quien-soy/, /dolar-hoy/, /indicadores/ y /multimedia/, 18 URLs
-    que Google no tenía por dónde descubrir. -#}
+    seccion.njk para su permalink, así no se pueden desincronizar.
+
+    Sobre `lastmod`: solo se pone donde es VERIFICABLE. Google dice que usa el
+    valor "si es consistente y verificablemente exacto", y que si lo pilla
+    mintiendo lo descarta para el sitio entero. Por eso:
+      · Notas y portada: la fecha real de publicación o de corrección.
+      · Secciones: la fecha de su nota más reciente. Sí cambia cuando entra una.
+      · Legales, /quien-soy/, /multimedia/, /indicadores/, /dolar-hoy/: SIN
+        lastmod. Poner la fecha del último despliegue sería jurarle a Google
+        que la política de cookies cambió siete veces hoy, y con eso se pierde
+        la credibilidad del lastmod donde sí sirve. Omitirlo es válido.
+
+    Tampoco van `changefreq` ni `priority`: Google dice textualmente que
+    ignora ambos valores. Eran líneas de ruido. -#}
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- set ultima = collections.noticias | reverse | first %}
   <url>
     <loc>https://economiasantander.com/</loc>
-    <lastmod>{{ (collections.noticias | reverse | first).date.toISOString().slice(0,10) }}</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <lastmod>{{ ultima.date | fechaModificacionCorta(ultima.data.updated) }}</lastmod>
   </url>
 {%- for n in collections.noticias | reverse %}
   <url>
     <loc>https://economiasantander.com{{ n.url }}</loc>
-    <lastmod>{{ n.date.toISOString().slice(0,10) }}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>{{ n.date | fechaModificacionCorta(n.data.updated) }}</lastmod>
   </url>
 {%- endfor %}
 {%- for s in collections.secciones %}
+{%- set fechaSeccion = collections.noticias | ultimaDeSeccion(s.nombre) %}
   <url>
     <loc>https://economiasantander.com/seccion/{{ s.nombre | slugify }}/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+{%- if fechaSeccion %}
+    <lastmod>{{ fechaSeccion }}</lastmod>
+{%- endif %}
   </url>
 {%- endfor %}
-{%- for ruta in ["/quien-soy/", "/indicadores/", "/dolar-hoy/", "/multimedia/"] %}
+{%- for ruta in ["/quien-soy/", "/indicadores/", "/dolar-hoy/", "/multimedia/", "/legal/datos-personales/", "/legal/cookies/", "/legal/terminos/", "/legal/politica-editorial/", "/legal/publicidad/"] %}
   <url>
     <loc>https://economiasantander.com{{ ruta }}</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-{%- endfor %}
-{%- for ruta in ["/legal/datos-personales/", "/legal/cookies/", "/legal/terminos/", "/legal/politica-editorial/", "/legal/publicidad/"] %}
-  <url>
-    <loc>https://economiasantander.com{{ ruta }}</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
   </url>
 {%- endfor %}
 </urlset>

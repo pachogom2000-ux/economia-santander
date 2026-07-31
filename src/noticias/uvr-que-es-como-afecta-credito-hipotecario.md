@@ -2,7 +2,6 @@
 layout: noticia.njk
 title: "UVR hoy: ¿te conviene el crédito de vivienda en UVR?"
 date: 2026-07-28
-updated: 2026-07-28
 categoria: "Educación financiera"
 chipTipo: "propio"
 chipLabel: "Redacción propia"

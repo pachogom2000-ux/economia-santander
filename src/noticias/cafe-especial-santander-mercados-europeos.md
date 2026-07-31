@@ -16,7 +16,6 @@ imagenPie: El precio de referencia nacional para factor de rendimiento 94 quedó
   en $2.210.000 por carga.
 imagenCredito: "Foto: Pixabay-Publicdomainpictures"
 tags: noticias
-updated: 2026-07-28
 ---
 Una carga de 125 kilos de café pergamino seco se pagó a **$2.210.000** el lunes 27 de julio, según el boletín diario de la **Federación Nacional de Cafeteros (FNC)**.
 
