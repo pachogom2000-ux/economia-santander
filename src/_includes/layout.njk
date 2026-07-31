@@ -20,6 +20,14 @@
 <meta name="author" content="{{ autor or 'Francisco Javier Gómez' }}">
 <meta name="theme-color" content="#0B6E3B" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0C130E" media="(prefers-color-scheme: dark)">
+{# Las dos caras que se ven de entrada: el cuerpo del texto y los titulares.
+   Se precargan porque el navegador no las descubre hasta haber leído todo el
+   CSS, y con eso el texto tarda más en aparecer. Las otras dos (Barlow 600 y
+   700) no se precargan a propósito: van más abajo y precargar de más compite
+   por el ancho de banda con lo que sí urge.
+   El nombre lleva huella, así que se pueden cachear un año sin miedo. #}
+<link rel="preload" href="/assets/fonts/barlow-400.81419bf5ab.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/oswald-600.5f49329007.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/style.css">
 <!-- Open Graph -->
 <meta property="og:type" content="{{ ogType or 'website' }}">

@@ -27,6 +27,18 @@
 /assets/*.js
   Cache-Control: public, max-age=0, must-revalidate
 
+# Las fuentes SÍ llevan huella en el nombre (barlow-400.81419bf5ab.woff2), así
+# que se pueden congelar un año: si el archivo cambia, cambia el nombre y el
+# navegador pide el nuevo. Sin la huella esto sería la trampa de servir un
+# archivo viejo durante un año, que es justo lo que advierten las líneas de
+# arriba sobre el CSS.
+/assets/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Las variantes de imagen que genera el build también llevan huella.
+/img/*
+  Cache-Control: public, max-age=31536000, immutable
+
 # Las imágenes y los videos sí se pueden guardar: cuando cambian, cambia el
 # nombre del archivo.
 /assets/uploads/*
