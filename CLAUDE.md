@@ -53,11 +53,17 @@ Esto es periodismo económico. Un dato falso destruye la credibilidad y puede ll
 
 ## Imágenes
 
-- **1200 x 700 píxeles, menos de 100 KB.**
+**El build las optimiza solo.** `@11ty/eleventy-img` reescribe todas las `<img>` y genera WebP y JPEG en 400, 800, 1200 y 1600 px. No hay que redimensionar nada a mano.
+
+- **Mínimo 1200 px de ancho.** Google Discover exige ese mínimo; por debajo, la nota no aparece. El peso del original da igual: el build lo reduce.
+- **NUNCA declarar `width` ni `height` fijos en las plantillas.** Con ellos el plugin emite una sola medida y no hay `srcset`. Él mismo repone las dimensiones con la relación de aspecto real de cada archivo, así que el CLS queda cubierto (medido: 0,0021).
+- La foto de arriba lleva `loading="eager"` explícito. El plugin pone `lazy` por defecto, y en la imagen que mide el LCP eso pelea con el `fetchpriority`.
+- **No preargar (`<link rel="preload">`) las fotos.** El plugin reescribe `<img>` pero no los `preload`, así que el navegador se bajaría el original completo además de la versión optimizada.
+- El `og:image` se queda como el **JPEG original**, no WebP: WhatsApp es el canal real de este portal.
 - Nombre descriptivo con guiones: `empleo-formal-bucaramanga-2026.jpg`. Nunca `IMG_1234.jpg`.
 - Van en `src/assets/uploads/`.
 - Siempre con `imagenAlt`, `imagenTitle`, `imagenPie` e `imagenCredito`.
-- Declarar `width="1200" height="700"` en la plantilla protege el CLS.
+- **Toda nota necesita `imagen:`.** Sin ella hereda la foto de otra nota como vista previa, que es justo lo que Discover llama *misleading preview content*, y en WhatsApp decide si tocan el enlace.
 
 ---
 

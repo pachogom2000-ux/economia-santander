@@ -1,6 +1,29 @@
 const markdownIt = require("markdown-it");
+const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 
 module.exports = function (eleventyConfig) {
+  // Todas las <img> del sitio se reescriben en el build con varias medidas.
+  // Antes se servía el original a cualquier tamaño: una foto de 4,5 MB y
+  // 8688 px de ancho se pintaba a 276 px en un teléfono. El navegador ahora
+  // baja la medida que le sirve.
+  //
+  // El tope se queda en 1600 y NUNCA baja de 1200: Google Discover exige
+  // imágenes de al menos 1200 px de ancho. Y el og:image sigue siendo el JPEG
+  // original a propósito — WhatsApp es el canal real de este portal y no se
+  // le va a mandar un WebP.
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    formats: ["webp", "auto"],
+    widths: [400, 800, 1200, 1600],
+    failOnError: false,
+    htmlOptions: {
+      imgAttributes: { loading: "lazy", decoding: "async" },
+      pictureAttributes: {},
+    },
+    sharpOptions: { animated: false },
+    defaultAttributes: {
+      sizes: "(max-width: 700px) 100vw, 700px",
+    },
+  });
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/admin");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
@@ -43,16 +66,15 @@ module.exports = function (eleventyConfig) {
     return self.renderToken(tokens, idx, options, env, self);
   };
 
-  // Las fotos que se suben desde el CMS van en 1200x700 por norma de la casa.
-  // Declarar esas medidas reserva el espacio antes de que cargue la imagen y
-  // evita que el texto salte (CLS). Si alguna no cumple la norma, el
-  // "height: auto" del CSS la escala igual sin deformarla.
+  // Las fotos del cuerpo de la nota las procesa el plugin de imágenes, que
+  // repone width y height con la relación de aspecto REAL de cada archivo.
+  // Antes se declaraban 1200x700 a mano: reservaba el espacio, sí, pero
+  // deformaba las que no cumplían la norma y —lo importante— impedía que el
+  // plugin generara más de una medida.
   md.renderer.rules.image = function (tokens, idx, options, env, self) {
     const token = tokens[idx];
     const src = token.attrGet("src") || "";
     if (/^\/assets\/uploads\//.test(src)) {
-      if (!token.attrGet("width")) token.attrSet("width", "1200");
-      if (!token.attrGet("height")) token.attrSet("height", "700");
       token.attrSet("loading", "lazy");
       token.attrSet("decoding", "async");
     }

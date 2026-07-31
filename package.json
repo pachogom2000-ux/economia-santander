@@ -16,6 +16,7 @@
     "markdown-it": "^14.3.0"
   },
   "devDependencies": {
+    "@11ty/eleventy-img": "^6.0.4",
     "wrangler": "^4.0.0"
   }
 }

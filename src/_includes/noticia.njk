@@ -19,9 +19,17 @@ ogType: article
 
   {% if imagen %}
   <figure class="noticia-figura">
+    {# Sin width/height fijos: con ellos el plugin de imágenes emite una sola
+       medida y no hay srcset. El propio plugin repone las dimensiones con la
+       relación de aspecto REAL del archivo, así que el CLS sigue cubierto y
+       además deja de deformar las fotos que no venían en 1200x700. #}
+    {# loading="eager" explícito: el plugin pone lazy por defecto a todo, y en
+       la foto de arriba eso pelea con el fetchpriority y retrasa justo la
+       imagen con la que Google mide el LCP. #}
     <img class="hero-art-img" src="{{ imagen }}"
-         width="1200" height="700"
-         fetchpriority="high" decoding="async"
+         eleventy:widths="600,900,1200,1600"
+         sizes="(max-width: 760px) 100vw, 760px"
+         loading="eager" fetchpriority="high" decoding="async"
          alt="{{ imagenAlt or title }}"
          title="{{ imagenTitle or title }}">
     {% if imagenPie %}
@@ -59,7 +67,8 @@ ogType: article
     <a class="sigue-card" href="{{ n.url }}">
       <div class="sigue-foto">
         {% if n.data.imagen %}
-        <img src="{{ n.data.imagen }}" alt="" width="1200" height="700" loading="lazy" decoding="async">
+        {# Miniatura de 116 px: pedía el original de hasta 4,5 MB. #}
+        <img src="{{ n.data.imagen }}" alt="" eleventy:widths="240,480" sizes="240px" loading="lazy" decoding="async">
         {% else %}
         <span class="sigue-foto-vacia" aria-hidden="true"></span>
         {% endif %}

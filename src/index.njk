@@ -14,9 +14,12 @@ ogType: website
     <div class="hero-grid">
       {% if hero.data.imagen %}
       <figure class="hero-figure">
+        {# Ver la nota de noticia.njk: los width/height fijos anulan el srcset. #}
+        {# Ver la nota de noticia.njk sobre loading="eager". #}
         <img class="hero-art-img" src="{{ hero.data.imagen }}"
-             width="1200" height="700"
-             fetchpriority="high" decoding="async"
+             eleventy:widths="600,900,1200,1600"
+             sizes="(max-width: 760px) 100vw, 760px"
+             loading="eager" fetchpriority="high" decoding="async"
              alt="{{ hero.data.imagenAlt or hero.data.title }}"
              title="{{ hero.data.imagenTitle or hero.data.title }}">
         <figcaption class="hero-art-credit">{{ hero.data.imagenPie or hero.data.excerpt }} <span>{{ hero.data.imagenCredito or 'Foto: Economía Santander' }}</span></figcaption>

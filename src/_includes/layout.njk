@@ -37,7 +37,11 @@
 <meta name="twitter:title" content="{{ pageTitle }}">
 <meta name="twitter:description" content="{{ pageDescription }}">
 <meta name="twitter:image" content="https://economiasantander.com{{ ogImagen }}">
-{% if imagen %}<link rel="preload" as="image" href="{{ imagen }}" fetchpriority="high">{% endif %}
+{# Aquí había un preload de la foto original. Con el plugin de imágenes es
+   contraproducente: reescribe las <img> pero NO los <link rel=preload>, así que
+   el navegador se bajaba el original completo (hasta 4,5 MB) ADEMÁS de la
+   versión optimizada. La foto va alta en el HTML y lleva fetchpriority="high"
+   en la propia etiqueta, que es lo que hace falta. #}
 <!-- Analítica (Google Analytics 4).
      Encendida por defecto: en Colombia la Ley 1581 exige informar y permitir
      el rechazo, no pedir permiso previo para analítica propia. Quien rechaza
