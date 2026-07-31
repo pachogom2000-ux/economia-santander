@@ -2334,3 +2334,71 @@
     line-height: 1.45;
   }
   .dolar-manana b { color: var(--text); }
+
+  /* ==========================================================
+     Página de pico y placa
+     ========================================================== */
+  .pyp { max-width: 860px; padding-top: 34px; padding-bottom: 50px; }
+  .pyp-titulo {
+    font-size: clamp(30px, 5vw, 44px);
+    text-transform: uppercase;
+    line-height: 1.05;
+    margin: 6px 0 12px;
+  }
+  .pyp h2 { font-size: 21px; margin: 34px 0 10px; }
+  .pyp p { line-height: 1.65; color: var(--text-soft); }
+  .pyp-hoy {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 8px 12px;
+    margin: 18px 0 6px;
+    padding: 14px 18px;
+    background: var(--bg-sunken);
+    border-left: 4px solid var(--accent);
+    border-radius: 6px;
+  }
+  .pyp-hoy-dia { font-weight: 600; color: var(--text); }
+  .pyp-hoy-digitos { font-family: var(--font-display); font-size: 30px; font-weight: 700; color: var(--accent); line-height: 1; }
+  .pyp-hoy-horario { font-size: 13px; color: var(--text-muted); }
+  .pyp-tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 8px 0 4px;
+    font-size: 15px;
+  }
+  .pyp-tabla th {
+    text-align: left;
+    font-size: 11.5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    padding: 8px 12px;
+    border-bottom: 2px solid var(--line);
+  }
+  .pyp-tabla td { padding: 9px 12px; border-bottom: 1px solid var(--line); }
+  .pyp-tabla b { font-size: 17px; }
+  .pyp-tabla tr.es-hoy { background: var(--bg-sunken); }
+  .pyp-tabla tr.es-hoy td:first-child::after {
+    content: ' · hoy';
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 12px;
+  }
+  .pyp-tabla tr.ya-paso { opacity: .45; }
+  .pyp-nota { font-size: 13.5px; color: var(--text-muted); margin: 8px 0 0; line-height: 1.55; }
+  .pyp-lista { margin: 10px 0; padding-left: 20px; }
+  .pyp-lista li { margin-bottom: 10px; line-height: 1.6; color: var(--text-soft); }
+  .pyp-aviso {
+    margin-top: 38px;
+    padding: 16px 20px;
+    border-left: 4px solid var(--yellow, #d7a500);
+    background: var(--bg-sunken);
+    border-radius: 6px;
+  }
+  .pyp-aviso p { font-size: 13px; line-height: 1.6; color: var(--text-muted); margin: 0 0 10px; }
+  .pyp-aviso p:last-child { margin-bottom: 0; }
+
+  /* La etiqueta del pico y placa ahora es un enlace a la página completa */
+  a.pico-title { text-decoration: none; }
+  a.pico-title:hover { text-decoration: underline; text-underline-offset: 3px; }

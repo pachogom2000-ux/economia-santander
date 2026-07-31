@@ -96,6 +96,17 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("isoDate", (dateObj) => new Date(dateObj).toISOString());
 
+  // "2026-08-01" -> "sábado 1 de agosto". Para el calendario de sábados del
+  // pico y placa. Mediodía UTC para que la zona horaria no corra el día.
+  eleventyConfig.addFilter("fechaCortaCo", (iso) =>
+    new Date(iso + "T12:00:00Z").toLocaleDateString("es-CO", {
+      weekday: "long",
+      day: "numeric",
+      month: "long",
+      timeZone: "America/Bogota",
+    })
+  );
+
   // Fecha de última modificación. Se toma el MÁXIMO, no "updated si existe":
   // con `updated or date`, una nota con una corrección mal fechada le decía a
   // Google que se modificó ANTES de publicarse, y en el sitemap hacía

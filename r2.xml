@@ -1,0 +1,2 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:act="http://action.trm.services.generic.action.superfinanciera.nexura.sc.com.co/">
+<soapenv:Body><act:queryTCRM><tcrmQueryAssociatedDate>2026-07-31</tcrmQueryAssociatedDate></act:queryTCRM></soapenv:Body></soapenv:Envelope>

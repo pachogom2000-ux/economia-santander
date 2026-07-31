@@ -1,0 +1,173 @@
+---
+layout: layout.njk
+title: "Pico y placa en Bucaramanga hoy: dígitos, horarios y sábados 2026"
+description: "Pico y placa vigente en Bucaramanga, Floridablanca, Girón y Piedecuesta: dígitos por día en texto, horario, sábados, motos, taxis y excepciones. Con la resolución citada."
+permalink: /pico-y-placa/
+---
+{#- Página de consulta permanente. Todo lo que afirma salió de una verificación
+    contra la Resolución 854 de 2025 (escaneo leído página por página) y los
+    actos de los otros tres municipios; cada dato pasó por tres verificadores
+    independientes. Lo que no se pudo verificar NO está aquí — está en la lista
+    de llamadas pendientes a la DTB. Ni la fuente oficial ni Vanguardia
+    publican estos dígitos en texto: los publican dentro de una imagen. Esa es
+    la razón de ser de esta página.
+
+    Los dígitos salen de _data/picoyplaca.json (el mismo del encabezado, con
+    fechas de vigencia por rotación). El JS solo RESALTA el día actual: la
+    tabla completa viaja en el HTML y nunca depende del navegador. -#}
+{# Nunjucks no conserva un set hecho dentro de un for: se busca con selectattr. #}
+{% set bga = picoyplaca.ciudades | selectattr("nombre", "equalto", "Bucaramanga") | first %}
+
+<section class="wrap pyp">
+  <nav class="miga" aria-label="Ruta de navegación">
+    <a href="/">Portada</a>
+    <span aria-hidden="true">›</span>
+    <span>Pico y placa</span>
+  </nav>
+
+  <p class="kicker">Consulta permanente · Verificada contra la resolución oficial</p>
+  <h1 class="pyp-titulo">Pico y placa en Bucaramanga</h1>
+  <p class="hero-dek">Dígitos por día, horarios, sábados, motos y taxis del área metropolitana, en texto y con la norma citada. Rige la <b>Resolución 854 del 30 de diciembre de 2025</b> de la Dirección de Tránsito de Bucaramanga, vigente todo 2026.</p>
+
+  <div class="pyp-hoy" data-pyp-hoy hidden>
+    <span class="pyp-hoy-dia" data-pyp-dia></span>
+    <span class="pyp-hoy-digitos" data-pyp-digitos></span>
+    <span class="pyp-hoy-horario" data-pyp-horario></span>
+  </div>
+
+  <h2 id="rotacion">Dígitos de lunes a viernes</h2>
+  <p>Aplica al <b>último dígito de la placa</b>, de <b>6:00 a. m. a 8:00 p. m.</b> en jornada continua, días hábiles. Esta rotación rige <b>del 6 de julio al 3 de octubre de 2026</b>:</p>
+  <div class="tabla-scroll">
+    <table class="pyp-tabla" data-pyp-semana>
+      <thead><tr><th>Día</th><th>No circulan las placas terminadas en</th></tr></thead>
+      <tbody>
+        {% set rotacion = bga.rotaciones[0] %}
+        <tr data-dia="1"><td>Lunes</td><td><b>{{ rotacion.lunes }}</b></td></tr>
+        <tr data-dia="2"><td>Martes</td><td><b>{{ rotacion.martes }}</b></td></tr>
+        <tr data-dia="3"><td>Miércoles</td><td><b>{{ rotacion.miercoles }}</b></td></tr>
+        <tr data-dia="4"><td>Jueves</td><td><b>{{ rotacion.jueves }}</b></td></tr>
+        <tr data-dia="5"><td>Viernes</td><td><b>{{ rotacion.viernes }}</b></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="pyp-nota">Desde el <b>lunes 5 de octubre de 2026</b> y hasta fin de año cambia la rotación: lunes {{ bga.rotaciones[1].lunes }}, martes {{ bga.rotaciones[1].martes }}, miércoles {{ bga.rotaciones[1].miercoles }}, jueves {{ bga.rotaciones[1].jueves }} y viernes {{ bga.rotaciones[1].viernes }}. Los domingos no hay restricción programada en la resolución.</p>
+
+  <h2 id="sabados">Sábados: rotación propia, de 9:00 a. m. a 1:00 p. m.</h2>
+  <p>El sábado <b>no</b> usa el dígito del día de semana: tiene su propia rotación, sábado por sábado. Calendario verificado en la resolución (a veces coincide con el de un día de semana, y no es error):</p>
+  <div class="tabla-scroll">
+    <table class="pyp-tabla pyp-sabados" data-pyp-sabados>
+      <thead><tr><th>Sábado</th><th>No circulan</th></tr></thead>
+      <tbody>
+        {% for s in bga.sabados %}
+        <tr data-fecha="{{ s.fecha }}"><td>{{ s.fecha | fechaCortaCo }}</td><td><b>{{ s.digitos }}</b></td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <p class="pyp-nota">El calendario de sábados de la rotación de octubre a diciembre se añadirá cuando se verifique contra la resolución.</p>
+
+  <h2 id="motos">¿Las motos tienen pico y placa?</h2>
+  <p><b>Sí.</b> Las motocicletas están sujetas a la misma restricción, por el <b>último dígito numérico</b> de la placa, sin contar la letra final (Parágrafo Segundo de la resolución).</p>
+
+  <h2 id="taxis">Taxis: norma y rotación aparte</h2>
+  <p>Los taxis están <b>excluidos</b> de la Resolución 854 y se rigen por la <b>Resolución 041 de 2023</b>: restricción de lunes a viernes, de <b>7:00 a. m. a 9:00 p. m.</b>, en el perímetro urbano de Bucaramanga, con un ciclo que se repite <b>cada cinco semanas</b>:</p>
+  <div class="tabla-scroll">
+    <table class="pyp-tabla">
+      <thead><tr><th>Semana del ciclo</th><th>Lun</th><th>Mar</th><th>Mié</th><th>Jue</th><th>Vie</th></tr></thead>
+      <tbody>
+        <tr><td>Semana 1</td><td>9-0</td><td>1-2</td><td>3-4</td><td>5-6</td><td>7-8</td></tr>
+        <tr><td>Semana 2</td><td>1-2</td><td>3-4</td><td>5-6</td><td>7-8</td><td>9-0</td></tr>
+        <tr><td>Semana 3</td><td>3-4</td><td>5-6</td><td>7-8</td><td>9-0</td><td>1-2</td></tr>
+        <tr><td>Semana 4</td><td>5-6</td><td>7-8</td><td>9-0</td><td>1-2</td><td>3-4</td></tr>
+        <tr><td>Semana 5</td><td>7-8</td><td>9-0</td><td>1-2</td><td>3-4</td><td>5-6</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="pyp-nota">La norma no define en qué semana calendario arranca el ciclo, así que <b>el dígito del día hay que confirmarlo con la Dirección de Tránsito: (607) 680 9966</b>. Publicar un cálculo propio sería adivinar. Excepción única: circular sin pasajeros entre 3:00 y 4:00 p. m. para mantenimiento, con el aviso "Fuera de servicio por restricción vehicular pico y placa" en el panorámico.</p>
+
+  <h2 id="excepciones">Quién está exento</h2>
+  <ul class="pyp-lista">
+    <li><b>Camiones de menos de 5 toneladas</b> de capacidad: exentos (se rigen por la norma de cargue y descargue). Las <b>camionetas, en cambio, sí</b> tienen pico y placa, de cualquier carrocería y servicio.</li>
+    <li><b>Vehículos con permiso de cargue y descargue</b> vigente, cumpliendo sus horarios y rutas.</li>
+    <li><b>Personas con discapacidad</b>: vehículo inscrito con los requisitos del registro RLCPD (Resolución 113 de 2020 de MinSalud), un solo vehículo por persona.</li>
+    <li><b>Servicios públicos domiciliarios</b> (aseo, acueducto, gas, energía, telefonía pública básica y móvil rural, alcantarillado, internet, semaforización y señalización), siempre que el vehículo sea propiedad de la empresa, no pueda reemplazarse por otro y esté demarcado de forma permanente.</li>
+    <li><b>Enseñanza automovilística</b>: inscritos en el RUNT, cumpliendo la Resolución 3245 de 2009, mientras imparten instrucción.</li>
+    <li><b>Carro matriculado en 2026 en Bucaramanga</b> (o cuenta trasladada a la DTB): exonerado 12 meses, pero <b>solo de 9:00 a. m. a 5:00 p. m.</b> En hora pico responde como cualquiera. No aplica para motos.</li>
+    <li><b>Única vía exenta</b>: el Anillo Vial entre Puente Palenque y Café Madrid.</li>
+  </ul>
+  <p class="pyp-nota">La lista completa de excepciones (numerales 9 a 20) está en las páginas 8 y 9 de la <a href="https://transitobucaramanga.gov.co/consulta_resoluciones_DTB/uploads/RESOLUCION-854-2025-PICOYPLACA.pdf" target="_blank" rel="noopener">resolución</a>. Los permisos expedidos por otros municipios del área metropolitana solo valen en Bucaramanga entre 9:00 a. m. y 5:00 p. m. entre semana, y <b>no valen los sábados</b>. En Bucaramanga <b>no existe</b> el "pico y placa solidario" de pago que tiene Bogotá.</p>
+
+  <h2 id="municipios">Floridablanca, Girón y Piedecuesta</h2>
+  <p>Hoy los dígitos y horarios son <b>iguales</b> en los cuatro municipios, pero son <b>normas separadas</b> y cada alcaldía puede cambiar la suya por su cuenta — en Semana Santa de 2026, Floridablanca y Piedecuesta suspendieron la medida y Bucaramanga y Girón no.</p>
+  <ul class="pyp-lista">
+    <li><b>Floridablanca</b> (Resolución 008 de 2026): mismos dígitos y horarios. Exentos los eléctricos y cero emisiones, los taxis, y los vehículos foráneos el día de ingreso presentando el recibo del peaje. Matrícula o traslado de cuenta en 2026: exoneración de 24 meses, solo de 9:00 a. m. a 5:00 p. m., sin cubrir motos.</li>
+    <li><b>Piedecuesta</b> (Decreto 001 de 2026): mismos dígitos y horarios, y aplica en <b>toda</b> la jurisdicción, incluidas vías internas de barrios, por orden judicial desde 2025.</li>
+    <li><b>Girón</b>: aplica la misma rotación de dígitos (verificado en prensa seria); su acto administrativo de 2026 no está publicado en línea, así que confirme el detalle con la Secretaría de Tránsito de Girón.</li>
+  </ul>
+
+  <h2 id="multa">La multa</h2>
+  <p>Infringir el pico y placa cuesta <b>15 salarios mínimos diarios legales vigentes (SMDLV)</b> más la <b>inmovilización</b> del vehículo. Ojo: algunos medios dicen "salarios mínimos mensuales" — es un error, la sanción del Código de Tránsito se liquida en salarios <b>diarios</b>.</p>
+  <p class="pyp-nota">¿Festivos? La resolución habla de "días hábiles"; para un festivo concreto (como el viernes 7 de agosto) confirme con la Dirección de Tránsito: ninguna fuente oficial publica la exención de forma expresa.</p>
+
+  <div class="pyp-aviso">
+    <p><b>Aviso importante.</b> Esta página es un servicio informativo y no reemplaza los actos administrativos oficiales. La fuente que manda es la <b>Resolución 854 del 30 de diciembre de 2025</b> de la Dirección de Tránsito de Bucaramanga (y, para taxis, la Resolución 041 de 2023), junto con los actos propios de Floridablanca, Girón y Piedecuesta, que cada autoridad puede modificar o suspender en cualquier momento. Antes de sacar su vehículo, confirme en <a href="https://transitobucaramanga.gov.co" target="_blank" rel="noopener">transitobucaramanga.gov.co</a> o en el teléfono (607) 680 9966.</p>
+    <p>Información verificada contra las fuentes oficiales el <b>31 de julio de 2026</b>. La rotación aquí publicada rige hasta el <b>sábado 3 de octubre de 2026</b>; desde el lunes 5 de octubre cambian los dígitos (la tabla nueva ya está arriba). Una curiosidad que explica esta página: la fuente oficial publica la programación solo como PDF escaneado e imágenes, sin texto legible — por eso este portal la transcribe.</p>
+  </div>
+</section>
+
+<script>
+  // Solo RESALTA el día actual: la tabla completa ya viaja en el HTML.
+  (function () {
+    var caja = document.querySelector('[data-pyp-hoy]');
+    if (!caja) return;
+    var ahora = new Date();
+    // Día de la semana en Bogotá, no en la zona del visitante
+    var bogota = new Date(ahora.toLocaleString('en-US', { timeZone: 'America/Bogota' }));
+    var dia = bogota.getDay(); // 0=domingo ... 6=sábado
+    var nombres = ['domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado'];
+    var elDia = caja.querySelector('[data-pyp-dia]');
+    var elDig = caja.querySelector('[data-pyp-digitos]');
+    var elHor = caja.querySelector('[data-pyp-horario]');
+
+    if (dia >= 1 && dia <= 5) {
+      var fila = document.querySelector('[data-pyp-semana] tr[data-dia="' + dia + '"]');
+      if (!fila) return;
+      fila.classList.add('es-hoy');
+      elDia.textContent = 'Hoy ' + nombres[dia] + ' no circulan las placas terminadas en';
+      elDig.textContent = fila.querySelector('b').textContent;
+      elHor.textContent = 'de 6:00 a. m. a 8:00 p. m.';
+      caja.hidden = false;
+    } else if (dia === 6) {
+      var y = bogota.getFullYear(), m = ('0' + (bogota.getMonth() + 1)).slice(-2), d = ('0' + bogota.getDate()).slice(-2);
+      var fila6 = document.querySelector('[data-pyp-sabados] tr[data-fecha="' + y + '-' + m + '-' + d + '"]');
+      if (fila6) {
+        fila6.classList.add('es-hoy');
+        elDia.textContent = 'Hoy sábado no circulan las placas terminadas en';
+        elDig.textContent = fila6.querySelector('b').textContent;
+        elHor.textContent = 'de 9:00 a. m. a 1:00 p. m.';
+        caja.hidden = false;
+      }
+    } else {
+      elDia.textContent = 'Hoy domingo no hay restricción programada en Bucaramanga';
+      elDig.textContent = '';
+      elHor.textContent = '';
+      caja.hidden = false;
+    }
+    // Atenuar los sábados que ya pasaron
+    var hoyIso = bogota.toISOString().slice(0, 10);
+    document.querySelectorAll('[data-pyp-sabados] tr[data-fecha]').forEach(function (tr) {
+      if (tr.getAttribute('data-fecha') < hoyIso) tr.classList.add('ya-paso');
+    });
+  })();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Portada", "item": "https://economiasantander.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Pico y placa" }
+  ]
+}
+</script>
