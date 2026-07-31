@@ -31,6 +31,10 @@ module.exports = function (eleventyConfig) {
   // Cabeceras del sitio. Netlify y Cloudflare leen el mismo archivo, así que
   // las dos plataformas sirven exactamente igual mientras convivan.
   eleventyConfig.addPassthroughCopy({ "src/_headers": "_headers" });
+  // Verificación de propiedad de Search Console. El passthrough es OBLIGATORIO:
+  // sin él Eleventy lo procesa como plantilla y lo escribe en
+  // /google.../index.html, que no es la ruta que Google comprueba.
+  eleventyConfig.addPassthroughCopy("src/google91c787862403ac92.html");
 
   // Los enlaces externos se abren en una pestaña nueva, como pide la guía SEO.
   // Aplica también a lo que se escriba desde el CMS, sin tener que recordarlo.
