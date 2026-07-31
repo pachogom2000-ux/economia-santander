@@ -5,7 +5,7 @@ ogType: website
 ---
 {# Orden de la portada: primero lo fijado a mano en "Datos del sitio → Orden de
    la portada"; el resto, por fecha. Con la lista vacía manda la fecha. #}
-{% set noticias = collections.noticias | ordenarPortada(portada.destacadas) %}
+{% set noticias = collections.noticias | ordenarPortada(destacadas.destacadas) %}
 {% set hero = noticias[0] %}
 {% set secundarias = noticias.slice(1, 5) %}
 

@@ -20,7 +20,7 @@ No se apaga Netlify para encender Cloudflare. **Los dos publican el mismo sitio 
 
 Cada push despliega en **las dos** plataformas. Se comparan lado a lado, se prueba todo en Cloudflare con calma, y **el corte es una sola decisión tuya**: cambiar a dónde apunta el dominio. Si algo sale mal, se devuelve en cinco minutos porque Netlify sigue vivo e intacto.
 
-**No hay urgencia.** El bloqueo por créditos agotados de Netlify impide *desplegar*, pero el sitio publicado se sigue sirviendo con normalidad. Esto se puede hacer sin prisa.
+**No hay urgencia.** Comprobado el 30 y 31 de julio de 2026: **Netlify está desplegando con normalidad**. Se hicieron siete despliegues seguidos y cada uno salió en vivo en menos de 45 segundos. *(La versión 1 de este documento afirmaba que un bloqueo por créditos agotados impedía desplegar. Era falso, o dejó de serlo; se corrige aquí porque un plan entero se construyó encima de ese dato.)*
 
 ### El destino: Workers, no Pages
 

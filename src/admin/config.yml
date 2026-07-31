@@ -16,7 +16,7 @@ collections:
     files:
       - name: "portada"
         label: "Orden de la portada"
-        file: "src/_data/portada.json"
+        file: "src/_data/destacadas.json"
         format: "json"
         description: >-
           Fija qué notas van arriba y en qué orden. La primera de la lista es la
