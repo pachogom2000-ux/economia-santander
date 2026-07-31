@@ -2325,3 +2325,12 @@
   .miga a { color: var(--text-muted); text-decoration: none; }
   .miga a:hover { color: var(--accent); text-decoration: underline; }
   .miga span { opacity: .55; }
+
+  /* Aviso de la TRM de mañana, cuando el Banco de la República ya la publicó */
+  .dolar-manana {
+    margin-top: 10px;
+    font-size: 12.5px;
+    color: var(--text-muted);
+    line-height: 1.45;
+  }
+  .dolar-manana b { color: var(--text); }

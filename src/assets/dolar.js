@@ -193,10 +193,32 @@
 
       dibujar(rol('chart'), serie);
 
-      // Comparativos, siempre contra la TRM vigente hoy
-      var vals = serie.map(function (p) { return p.v; });
-      var hace30 = iHoy > 30 ? serie[iHoy - 30].v : null;
-      var hace365 = serie[0].v;
+      // Comparativos, siempre contra la TRM vigente hoy.
+      //
+      // Se comparan FECHAS DEL CALENDARIO, no posiciones de la lista. La serie
+      // solo trae días hábiles: contar 30 filas hacia atrás daba unas seis
+      // semanas y se rotulaba "frente a hace un mes", y el "hace un año" era
+      // la primera fila de 370 hábiles, o sea unos diecisiete meses. Además
+      // así coincide con lo que el propio HTML trae desde el build; si no, el
+      // lector veía un número y el buscador otro distinto.
+      function restarDias(iso, dias) {
+        var d = new Date(iso + 'T12:00:00Z');
+        d.setUTCDate(d.getUTCDate() - dias);
+        return d.toISOString().slice(0, 10);
+      }
+      function valorEn(fechaLimite) {
+        for (var i = iHoy; i >= 0; i--) {
+          if (dia(serie[i].t) <= fechaLimite) return serie[i].v;
+        }
+        return null;
+      }
+      var hoyIso = dia(serie[iHoy].t);
+      var hace30 = valorEn(restarDias(hoyIso, 30));
+      var hace365 = valorEn(restarDias(hoyIso, 365));
+      var ultimoAnio = serie.filter(function (p) {
+        return dia(p.t) >= restarDias(hoyIso, 365) && dia(p.t) <= hoyIso;
+      });
+      var vals = (ultimoAnio.length ? ultimoAnio : serie).map(function (p) { return p.v; });
       var cm = rol('comp-mes'), ca = rol('comp-anio'), cx = rol('comp-max'), cn = rol('comp-min');
       if (cm) cm.textContent = variacion(trm, hace30);
       if (ca) ca.textContent = variacion(trm, hace365);
@@ -208,10 +230,18 @@
       pintarRemesas();
     })
     .catch(function () {
+      // El HTML ya trae la TRM del momento en que se publicó el sitio, así que
+      // aquí NO se borra: pisarla con "No disponible" dejaría al lector peor de
+      // lo que estaba. Solo se avisa que el dato no se pudo refrescar.
       var elTrm = rol('trm');
-      if (elTrm) elTrm.textContent = 'No disponible';
+      var hayValorDelBuild = elTrm && /\d/.test(elTrm.textContent);
+      if (elTrm && !hayValorDelBuild) elTrm.textContent = 'No disponible';
       var elFecha = rol('trm-fecha');
-      if (elFecha) elFecha.textContent = 'No pudimos consultar la TRM en este momento. Intenta de nuevo en unos minutos.';
+      if (elFecha) {
+        elFecha.textContent = hayValorDelBuild
+          ? 'Último dato publicado. No pudimos consultar la TRM de este momento; verifícala en el Banco de la República.'
+          : 'No pudimos consultar la TRM en este momento. Intenta de nuevo en unos minutos.';
+      }
       dibujar(rol('chart'), null);
     });
 

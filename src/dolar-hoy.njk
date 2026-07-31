@@ -8,11 +8,19 @@ permalink: /dolar-hoy/
   <p class="kicker">Herramienta · Actualizada en cada visita</p>
   <h1 class="dolar-titulo">Dólar hoy en Colombia</h1>
   <div class="dolar-tarjetas">
+    {# La TRM viene del build (src/_data/trm.js) y no de una llamada del
+       navegador. Antes el buscador recibía la palabra "Cargando…": la página
+       de consulta más buscada del portal publicaba un valor vacío. El
+       JavaScript sigue actualizándola en cada visita, pero ya no es la única
+       forma de que el dato exista. #}
     <div class="dolar-principal">
       <span class="dolar-etiqueta">TRM oficial de hoy</span>
-      <p class="dolar-valor"><span data-rol="trm">Cargando…</span></p>
-      <p class="dolar-fecha" data-rol="trm-fecha">Banco de la República</p>
-      <p class="dolar-variacion" data-rol="trm-var"></p>
+      <p class="dolar-valor"><span data-rol="trm">{% if trm %}${{ trm.valorTexto }}{% else %}Cargando…{% endif %}</span></p>
+      <p class="dolar-fecha" data-rol="trm-fecha">{% if trm %}Vigente el {{ trm.desdeTexto }} · {{ trm.fuente }}{% else %}Banco de la República{% endif %}</p>
+      <p class="dolar-variacion" data-rol="trm-var">{% if trm and trm.variacionMes %}{{ trm.variacionMes }} frente a hace un mes{% endif %}</p>
+      {% if trm and trm.manana %}
+      <p class="dolar-manana">El Banco de la República ya publicó la de mañana: <b>${{ trm.manana.valorTexto }}</b>, vigente el {{ trm.manana.desdeTexto }}.</p>
+      {% endif %}
     </div>
     <div class="dolar-puntas" data-rol="puntas">
       <span class="dolar-etiqueta">Mercado spot (SetFX)</span>
@@ -62,11 +70,12 @@ permalink: /dolar-hoy/
   <div class="dolar-chart" data-rol="chart">
     <p class="ind-chart-cargando">Cargando la serie histórica…</p>
   </div>
+  {# Los cuatro comparativos también salen del build: eran cuatro guiones. #}
   <div class="dolar-comparativos">
-    <div class="dolar-comp"><b data-rol="comp-mes">—</b><span>frente a hace un mes</span></div>
-    <div class="dolar-comp"><b data-rol="comp-anio">—</b><span>frente a hace un año</span></div>
-    <div class="dolar-comp"><b data-rol="comp-max">—</b><span>máximo del último año</span></div>
-    <div class="dolar-comp"><b data-rol="comp-min">—</b><span>mínimo del último año</span></div>
+    <div class="dolar-comp"><b data-rol="comp-mes">{{ trm.variacionMes if trm and trm.variacionMes else "—" }}</b><span>frente a hace un mes</span></div>
+    <div class="dolar-comp"><b data-rol="comp-anio">{{ trm.variacionAnio if trm and trm.variacionAnio else "—" }}</b><span>frente a hace un año</span></div>
+    <div class="dolar-comp"><b data-rol="comp-max">{{ "$" + trm.maximoAnio if trm and trm.maximoAnio else "—" }}</b><span>máximo del último año</span></div>
+    <div class="dolar-comp"><b data-rol="comp-min">{{ "$" + trm.minimoAnio if trm and trm.minimoAnio else "—" }}</b><span>mínimo del último año</span></div>
   </div>
 </section>
 
