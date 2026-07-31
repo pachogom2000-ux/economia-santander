@@ -35,6 +35,9 @@ module.exports = function (eleventyConfig) {
   // sin él Eleventy lo procesa como plantilla y lo escribe en
   // /google.../index.html, que no es la ruta que Google comprueba.
   eleventyConfig.addPassthroughCopy("src/google91c787862403ac92.html");
+  // Clave de IndexNow: avisa a Bing, Yandex y otros buscadores cuando hay
+  // contenido nuevo, sin cuentas ni consolas. Google no participa.
+  eleventyConfig.addPassthroughCopy("src/851cd111c4cd75b657229a301a84210a.txt");
 
   // Los enlaces externos se abren en una pestaña nueva, como pide la guía SEO.
   // Aplica también a lo que se escriba desde el CMS, sin tener que recordarlo.
