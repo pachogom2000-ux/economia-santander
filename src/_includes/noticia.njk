@@ -11,6 +11,12 @@ ogType: article
   <p class="hero-dek">{{ excerpt }}</p>
   <p class="byline">Por <b>{{ autor or 'Francisco Javier Gómez' }}</b> · {{ date | readableDate }}</p>
 
+  {# Compartir arriba: mucha gente decide reenviar una nota con solo ver el
+     titular y la entradilla, y si el botón está solo al final ya se fue. #}
+  {% set compartirArriba = true %}
+  {% include "compartir.njk" %}
+  {% set compartirArriba = false %}
+
   {% if imagen %}
   <figure class="noticia-figura">
     <img class="hero-art-img" src="{{ imagen }}"

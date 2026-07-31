@@ -9,11 +9,15 @@
    lista todas las apps instaladas. En computador, donde ese menú no existe,
    copian el enlace para pegarlo en la historia o en el pie de la publicación.
 #}
+{# Se incluye DOS veces por nota: arriba, justo bajo la firma, para quien decide
+   compartir con solo ver el titular; y al final, para quien ya leyó. La de
+   arriba va compacta (`compartirArriba`) para no empujar el texto hacia abajo:
+   sin encabezado, sin borde y solo iconos. #}
 {% set urlNota = "https://economiasantander.com" + page.url %}
 {% set textoNota = title + " — Economía Santander" %}
 
-<div class="compartir" data-compartir data-url="{{ urlNota }}" data-titulo="{{ title }}" data-texto="{{ textoNota }}">
-  <p class="compartir-titulo">¿Le sirvió esta nota? Compártala</p>
+<div class="compartir{% if compartirArriba %} compartir-arriba{% endif %}" data-compartir data-url="{{ urlNota }}" data-titulo="{{ title }}" data-texto="{{ textoNota }}">
+  <p class="compartir-titulo">{% if compartirArriba %}Compartir{% else %}¿Le sirvió esta nota? Compártala{% endif %}</p>
   <ul class="compartir-lista">
     <li>
       <a class="compartir-btn es-whatsapp" href="https://wa.me/?text={{ (textoNota + " " + urlNota) | urlencode }}" target="_blank" rel="noopener" aria-label="Compartir por WhatsApp">

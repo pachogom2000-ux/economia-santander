@@ -750,10 +750,10 @@
      enlace, así que se usa el menú de compartir del teléfono (que lista las
      apps instaladas) y, donde no existe, se copia el enlace. -->
 <script>
-  (function () {
-    var caja = document.querySelector('[data-compartir]');
-    if (!caja) return;
-
+  // Cada nota lleva DOS barras (arriba y al final), así que se recorren todas:
+  // con querySelector a secas solo funcionaría la primera y la de abajo
+  // quedaría muerta al tacto.
+  document.querySelectorAll('[data-compartir]').forEach(function (caja) {
     var url = caja.getAttribute('data-url');
     var titulo = caja.getAttribute('data-titulo');
     var texto = caja.getAttribute('data-texto');
@@ -829,7 +829,7 @@
     if (botonCopiar) {
       botonCopiar.addEventListener('click', function () { copiarYAvisar(null); });
     }
-  })();
+  });
 </script>
 
 <!-- Aviso de cookies. No bloquea nada: la analítica ya está corriendo. Solo
