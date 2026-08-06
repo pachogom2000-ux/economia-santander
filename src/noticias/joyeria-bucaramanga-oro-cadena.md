@@ -1,14 +1,23 @@
 ---
 layout: noticia.njk
 title: "Joyería en Bucaramanga: comprar oro legal y poder probarlo"
-date: 2026-08-31T07:00:00.000-05:00
+date: 2026-08-06T17:25:00.000-05:00
 categoria: Industria
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "El escándalo del oro ilegal en Santurbán deja al descubierto el
+excerpt: "La extracción del oro ilegal en Santurbán deja al descubierto el
   problema de fondo de los joyeros de Bucaramanga: comprar oro legal y poder
   probarlo."
 autor: Francisco Gómez - Director
+imagen: /assets/uploads/joyería-santander-pixabay-hans-rings.jpg
+imagenAlt: "Imagen relacionada a la joyería en Santander, gremio que sostiene
+  una cantidad representativa del comercio en el Departamento, la mayoría
+  producto de las ventas en centros comerciales, comerciantes independientes y
+  ventas de joyas que se llevan a los mercados internacionales. "
+imagenTitle: Joyería en Bucaramanga
+imagenPie: "De las minas de Vetas y California sale el oro que sostiene los
+  talleres de joyería en Bucaramanga. Foto: Pixabay-Hans Rings. "
+imagenCredito: Pixabay Hans Rings
 eleventyExcludeFromCollections: true
 tags: noticias
 ---
@@ -42,13 +51,15 @@ El problema es operativo. **El oro no trae etiqueta.** Un gramo fundido provenie
 
 Eso deja al taller formal de Bucaramanga en una posición incómoda: **compite con quien accede a oro más barato porque no pagó regalías, no tramitó licencia y no asumió el costo ambiental**, y al mismo tiempo carga con la carga de la prueba si algo sale mal.
 
-## Lo que falta reportear
+## Un sector que carece de cifras actualizadas
 
-Este es el vacío que no se resuelve con fuentes públicas, y conviene declararlo antes que rellenarlo.
+Pese a que el sector de joyería en Santander es uno de los más importantes para la economía del Departamento, desafortunadamente carece de cifras actualizadas. Las cifras que circulan en internet —700 talleres, más del 40% de la producción nacional— provienen de [un artículo de El Tiempo de abril de 2004](https://www.eltiempo.com/archivo/documento/MAM-1555094). Tienen veintidós años. Este medio decidió no publicarlas como vigentes.
 
-**No existe una medición pública y actualizada del clúster joyero de Bucaramanga.** Las cifras que circulan en internet —700 talleres, más del 40% de la producción nacional— provienen de [un artículo de El Tiempo de abril de 2004](https://www.eltiempo.com/archivo/documento/MAM-1555094). Tienen veintidós años. Este medio decidió no publicarlas como vigentes.
+Sin embargo, Economía Santander encontró un documento de carácter académico que en 2025 analizó 35 empresas representativas de joyería en Bucaramanga. La investigación llamada **"Caracterización de las empresas joyeras deBucaramanga, Colombia: Análisis de sucontexto socioeconómico y perspectivas futuras"**, de las autoras Cristina Tavera y Sandra Gil encontró que **la joyería se ha convertido en una actividad para el desarrollo económico de Bucaramanga y Santander** de tradición, "gracias a factores de calidad en sus materiales y diseños, los cuales indican que ya hay espíritu de empresa, más allá de la idea de solo un proyecto de emprendimiento, pues se ha recorrido un camino que ha puesto las bases y los fundamentosde una industria que cuenta con tener afortunadamente cercanía con la provincia de Soto Norte (Santander), donde tienen la materia prima: las minas de oro vecinas del Páramo de Santurbán", señala el reporte.
 
-[VERIFICAR: pendiente con la Cámara de Comercio de Bucaramanga el número actual de empresas registradas en los códigos CIIU de fabricación de joyas y artículos conexos, el empleo formal del sector y las ventas anuales. Pendiente con la ANM la producción de oro reportada por Vetas y California en 2025 y lo corrido de 2026, y el número de comercializadores con RUCOM vigente en Santander. Buscar joyeros del centro de Bucaramanga para el testimonio sobre cómo verifican el origen del material.]
+Las investigadoras afirman que la situación financiera de las empresas encuestadas del sector joyero de Bucaramanga tuvieron un cierre financiero en 2022 desafiante, con un 66% reportando resultados negativos. "Solo un 34% de las empresas, según la base de datos proporcionada por la Cámara de Comercio de Bucaramanga, logró mantener una operacióncon resultados positivos en el año 2023".
+
+De acuerdo con las autoras, "este reducido grupo de tres empresas, a pesar de las dificultades financieras generales, **concentró aproximadamente el 23% del valor total de ventas,** alcanzando cerca de $1.200 millones durante ese periodo. Posiblemente la sostenibilidad del sector también se vio golpeada por el COVID-19 y sus consecuencias a nivel empresarial, local y mundial y para el sector joyero lograr superar la crisis no ha sido fácil", revela el estudio. 
 
 ## La cadena que no se cierra
 
