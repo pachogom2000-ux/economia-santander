@@ -83,7 +83,7 @@ La regla práctica es simple. Si sus gastos comprobables del año superan el 25%
 
 Esa decisión queda amarrada a la declaración. Correr el cálculo por los dos caminos antes de radicar es lo que separa a quien paga de más de quien no.
 
-## ¿Por qué le retuvieron plata y aun así puedesdeber?
+## ¿Por qué le retuvieron plata y aun así puede deber?
 
 Porque la retención en la fuente es un abono, no el impuesto. Y a un independiente no siempre le aplican la misma tarifa: depende de cómo se clasifiquen sus ingresos y de lo que haya informado a su contratante. Revise su certificado de ingresos y retenciones: ahí está la tarifa que de verdad le aplicaron.
 
