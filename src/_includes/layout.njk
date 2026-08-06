@@ -269,7 +269,12 @@
     <div class="footer-grid">
       <div class="author-block">
         <div class="author-cabeza">
-          <img class="author-foto" src="/assets/quien-soy/francisco-gomez.jpg" alt="Francisco Javier Gómez" width="84" height="84" loading="lazy" decoding="async">
+          {# 248 px = el doble del tamaño máximo al que se pinta (124 px), para
+             que se vea nítida en pantallas de alta densidad. El plugin de
+             imágenes genera la variante a partir de este ancho; con 84 px
+             salía borrosa apenas el retrato crecía. El tamaño en pantalla lo
+             manda el CSS, no estos atributos. #}
+          <img class="author-foto" src="/assets/quien-soy/francisco-gomez.jpg" alt="Francisco Javier Gómez" width="248" height="248" loading="lazy" decoding="async">
           <div>
             <h3>Francisco Javier Gómez</h3>
             <p>Director de Economía Santander. Comunicador social y periodista, magíster en Asuntos Internacionales, con más de 20 años cubriendo la economía del país y del oriente colombiano en medios como Valora Analitik, Semana, Dinero, Portafolio, El Tiempo y Vanguardia.</p>

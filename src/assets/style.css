@@ -1055,19 +1055,26 @@
   .author-block h3 { font-family: var(--font-display); font-size: 18px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.01em; margin-bottom: 8px; }
   .author-block p { font-size: 13px; color: var(--text-soft); margin-bottom: 10px; line-height: 1.55; }
   .author-cabeza { display: flex; gap: 14px; align-items: flex-start; }
-  .author-foto {
-    width: 84px;
-    /* Alto por relación de aspecto, no fijo. Con `height: 84px` bastaba con que
-       el contenedor apretara —el reset global lleva `max-width: 100%`— para que
-       el ancho cediera, el alto no, y el círculo saliera como un óvalo. Así el
-       alto siempre sigue al ancho y el círculo se mantiene. */
-    height: auto;
+  /* El plugin de imágenes envuelve cada <img> en un <picture>. El ítem flex
+     pasó a ser ese <picture>, que no heredaba ni el ancho ni el flex-shrink
+     —seguían apuntando a la <img>—, así que se encogía a su mínimo y la foto,
+     limitada por el `max-width: 100%` del reset, se iba con él: el retrato
+     quedaba en 14 px, un punto. Se dimensiona el ENVOLTORIO y la foto lo
+     llena. El segundo selector cubre el caso sin <picture>. */
+  .author-cabeza > picture,
+  .author-cabeza > .author-foto {
+    flex: 0 0 auto;
+    display: block;
+    width: clamp(92px, 26vw, 124px);
     aspect-ratio: 1 / 1;
-    flex-shrink: 0;
+  }
+  .author-foto {
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     object-fit: cover;
     /* La foto de estudio es vertical: se encuadra hacia el rostro */
-    object-position: 50% 14%;
+    object-position: 50% 12%;
     border: 2px solid var(--accent);
     background: #0d0d0d;
   }
@@ -2291,7 +2298,8 @@
 
     /* La foto pierde 20 px y la biografía gana el ancho que necesita para no
        partirse en tiras de tres palabras. */
-    .author-foto { width: 64px; }
+    .author-cabeza > picture,
+    .author-cabeza > .author-foto { width: clamp(84px, 24vw, 104px); }
     .author-cabeza { gap: 12px; }
     .author-block h3 { font-size: 16.5px; }
     .author-block p { font-size: 12.5px; }
