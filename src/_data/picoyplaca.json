@@ -1,4 +1,13 @@
 {
+  "festivos": [
+    { "fecha": "2026-08-07", "nombre": "Batalla de Boyacá" },
+    { "fecha": "2026-08-17", "nombre": "Asunción de la Virgen" },
+    { "fecha": "2026-10-12", "nombre": "Día de la Raza" },
+    { "fecha": "2026-11-02", "nombre": "Todos los Santos" },
+    { "fecha": "2026-11-16", "nombre": "Independencia de Cartagena" },
+    { "fecha": "2026-12-08", "nombre": "Inmaculada Concepción" },
+    { "fecha": "2026-12-25", "nombre": "Navidad" }
+  ],
   "ciudades": [
     {
       "nombre": "Bucaramanga",

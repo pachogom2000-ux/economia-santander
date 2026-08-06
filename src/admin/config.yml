@@ -48,6 +48,17 @@ collections:
           Bucaramanga por trimestres: añade la rotación nueva con su fecha
           de inicio y el sitio cambia solo ese día. No borres la anterior.
         fields:
+          - label: "Festivos nacionales"
+            name: "festivos"
+            widget: "list"
+            required: false
+            hint: >-
+              En festivo no hay pico y placa en ninguna ciudad: la franja marca
+              "Libre" sola. Manda sobre las rotaciones y sobre los sábados.
+              Carga aquí el calendario del año a comienzos de enero.
+            fields:
+              - { label: "Fecha", name: "fecha", widget: "string", hint: "Formato AAAA-MM-DD" }
+              - { label: "Nombre del festivo", name: "nombre", widget: "string", hint: "Se muestra en la franja: 'festivo: Batalla de Boyacá'" }
           - label: "Ciudades"
             name: "ciudades"
             widget: "list"

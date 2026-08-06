@@ -107,7 +107,16 @@ permalink: /pico-y-placa/
 
   <h2 id="multa">La multa</h2>
   <p>Infringir el pico y placa cuesta <b>15 salarios mínimos diarios legales vigentes (SMDLV)</b> más la <b>inmovilización</b> del vehículo. Ojo: algunos medios dicen "salarios mínimos mensuales" — es un error, la sanción del Código de Tránsito se liquida en salarios <b>diarios</b>.</p>
-  <p class="pyp-nota">¿Festivos? La resolución habla de "días hábiles"; para un festivo concreto (como el viernes 7 de agosto) confirme con la Dirección de Tránsito: ninguna fuente oficial publica la exención de forma expresa.</p>
+  <h2 id="festivos">Festivos</h2>
+  <p>En <b>festivo nacional no hay pico y placa</b>, ni en Bucaramanga ni en su área metropolitana. La Resolución 854 restringe en "días hábiles", y un festivo no lo es. Tampoco rige domingos.</p>
+  <p>El más cercano es el <b>viernes 7 de agosto</b>, Batalla de Boyacá: ese día circulan todas las placas. La restricción vuelve el <b>sábado 8</b>, en el horario de 9:00 a 13:00 y con los dígitos de la tabla de sábados.</p>
+  <p>Festivos que quedan de 2026:</p>
+  <ul class="pyp-lista">
+  {%- for f in picoyplaca.festivos %}
+    <li><b>{{ f.fecha | fechaCortaCo }}</b> — {{ f.nombre }}</li>
+  {%- endfor %}
+  </ul>
+  <p class="pyp-nota">La franja superior de este portal marca "Libre" sola en cada una de esas fechas.</p>
 
   <div class="pyp-aviso">
     <p><b>Aviso importante.</b> Esta página es un servicio informativo y no reemplaza los actos administrativos oficiales. La fuente que manda es la <b>Resolución 854 del 30 de diciembre de 2025</b> de la Dirección de Tránsito de Bucaramanga (y, para taxis, la Resolución 041 de 2023), junto con los actos propios de Floridablanca, Girón y Piedecuesta, que cada autoridad puede modificar o suspender en cualquier momento. Antes de sacar su vehículo, confirme en <a href="https://transitobucaramanga.gov.co" target="_blank" rel="noopener">transitobucaramanga.gov.co</a> o en el teléfono (607) 680 9966.</p>

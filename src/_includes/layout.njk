@@ -445,13 +445,27 @@
         return null;   // sabado sin dato publicado: no se inventa
       }
 
+      // En festivo nacional no hay pico y placa en ninguna de las tres ciudades:
+      // la resolucion de Bucaramanga habla de "dias habiles", y un festivo no lo
+      // es. Manda sobre todo lo demas, incluidos los sabados cargados a mano.
+      function festivoDeHoy() {
+        var lista = fuente.festivos || [];
+        for (var i = 0; i < lista.length; i++) {
+          if (lista[i].fecha === hoyISO) { return lista[i].nombre || 'festivo'; }
+        }
+        return null;
+      }
+      var festivo = festivoDeHoy();
+
       var datos = [];
       for (var ci = 0; ci < fuente.ciudades.length; ci++) {
         var ciudad = fuente.ciudades[ci];
         var v = null;
         var h = 'sin restricción';
 
-        if (dow >= 1 && dow <= 5) {
+        if (festivo) {
+          h = 'festivo: ' + festivo;
+        } else if (dow >= 1 && dow <= 5) {
           if (ciudad.reglaParidad) {
             v = (dia % 2 === 1) ? ciudad.reglaParidad.impar : ciudad.reglaParidad.par;
           } else {
