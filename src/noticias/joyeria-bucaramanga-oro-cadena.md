@@ -18,7 +18,6 @@ imagenTitle: Joyería en Bucaramanga
 imagenPie: "De las minas de Vetas y California sale el oro que sostiene los
   talleres de joyería en Bucaramanga. Foto: Pixabay-Hans Rings. "
 imagenCredito: Pixabay Hans Rings
-eleventyExcludeFromCollections: true
 tags: noticias
 ---
 De las minas de **Vetas y California** sale el oro que sostiene los talleres de joyería de Bucaramanga. De los socavones ilegales del páramo de Santurbán sale aproximadamente **un kilo de oro diario**, que se mueve en un mercado paralelo valorado en **$26.000 millones mensuales** por la Unidad de Información y Análisis Financiero.
