@@ -1057,7 +1057,12 @@
   .author-cabeza { display: flex; gap: 14px; align-items: flex-start; }
   .author-foto {
     width: 84px;
-    height: 84px;
+    /* Alto por relación de aspecto, no fijo. Con `height: 84px` bastaba con que
+       el contenedor apretara —el reset global lleva `max-width: 100%`— para que
+       el ancho cediera, el alto no, y el círculo saliera como un óvalo. Así el
+       alto siempre sigue al ancho y el círculo se mantiene. */
+    height: auto;
+    aspect-ratio: 1 / 1;
     flex-shrink: 0;
     border-radius: 50%;
     object-fit: cover;
@@ -1493,7 +1498,19 @@
   @media (max-width: 700px) {
     .qs-hero { padding-top: 22px; padding-bottom: 4px; }
     .qs-hero-grid { grid-template-columns: 1fr; gap: 18px; }
-    .qs-retrato { max-width: 210px; }
+    /* En el celular el retrato vertical de 210px quedaba pegado a la izquierda,
+       con un hueco muerto al lado y la cara diminuta. Ahora ocupa todo el ancho
+       con un recorte 5:4 encuadrado en el rostro. El object-fit es lo que
+       impide que se deforme: el marco cambia de tamaño, la foto se recorta,
+       nunca se estira ni se vuelve un óvalo. */
+    .qs-retrato { max-width: none; }
+    .qs-retrato img {
+      width: 100%;
+      aspect-ratio: 5 / 4;
+      height: auto;
+      object-fit: cover;
+      object-position: 50% 26%;
+    }
     .qs-lead { font-size: 15px; }
     .qs-meta { grid-template-columns: 1fr 1fr; }
   }
@@ -2274,7 +2291,7 @@
 
     /* La foto pierde 20 px y la biografía gana el ancho que necesita para no
        partirse en tiras de tres palabras. */
-    .author-foto { width: 64px; height: 64px; }
+    .author-foto { width: 64px; }
     .author-cabeza { gap: 12px; }
     .author-block h3 { font-size: 16.5px; }
     .author-block p { font-size: 12.5px; }
