@@ -7,4 +7,21 @@ Disallow: /*?s=
 # El panel de redacción no es contenido: no tiene título, ni descripción, ni H1.
 Disallow: /admin/
 
+# Ahrefs usa DOS rastreadores distintos y hay que nombrar a los dos:
+#   AhrefsBot        recorre la web y arma el índice de enlaces
+#   AhrefsSiteAudit  audita ESTE sitio (enlaces rotos, redirecciones, SEO)
+# Hoy ya entrarían por la regla de arriba, pero un robots.txt se endurece con
+# el tiempo: dejarlos declarados evita que un Disallow futuro los deje fuera
+# sin que nadie se dé cuenta. Se les aplican las mismas restricciones que a
+# todos, no más.
+User-agent: AhrefsBot
+Allow: /
+Disallow: /*?s=
+Disallow: /admin/
+
+User-agent: AhrefsSiteAudit
+Allow: /
+Disallow: /*?s=
+Disallow: /admin/
+
 Sitemap: https://economiasantander.com/sitemap.xml
