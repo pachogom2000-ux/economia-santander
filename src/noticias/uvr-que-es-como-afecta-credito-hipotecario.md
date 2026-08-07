@@ -1,20 +1,29 @@
 ---
 layout: noticia.njk
-title: "UVR hoy: ¿te conviene el crédito de vivienda en UVR?"
-date: 2026-07-28
-categoria: "Educación financiera"
-chipTipo: "propio"
-chipLabel: "Redacción propia"
-excerpt: "La UVR vale $416,3866 hoy y subió 5,97% en un año. Te contamos si el crédito de vivienda en UVR o en pesos te conviene para comprar en Bucaramanga."
-autor: "Francisco Gómez - Director"
+title: "UVR hoy: ¿conviene el crédito de vivienda en UVR?"
+date: 2026-08-07T07:08:00.000-05:00
+categoria: Educación financiera
+chipTipo: propio
+chipLabel: Redacción propia
+excerpt: La UVR vale $416,3866 hoy y subió 5,97% en un año. Acá le contamos si
+  el crédito de vivienda en UVR o en pesos le conviene para comprar en
+  Bucaramanga.
+autor: Francisco Gómez - Director
+imagen: /assets/uploads/gettyimages-1204261194.jpg
+imagenAlt: "Imagen relacionada con la decisión de tomar un crédito para comprar
+  vivienda en UVR o en pesos en 2026. "
+imagenTitle: "UVR hoy ¿conviene un crédito de vivienda en UVR para 2026? "
+imagenPie: "Si va a tomar un crédito de vivienda en Bucaramanga, esto es lo que
+  tiene que entender. "
+imagenCredito: Archivo particular. EconomíaSantander.com.
 guia: true
 tags: noticias
 ---
-El mismo apartamento, el mismo banco y el mismo plazo te dan dos cuotas: **$797.631** o **$1.150.730**. La diferencia mensual, $353.098, se llama UVR.
+El mismo apartamento, el mismo banco y el mismo plazo le dan dos cuotas: **$797.631** o **$1.150.730**. La diferencia mensual, $353.098, se llama UVR.
 
 Esa brecha del 30,7% es real y es legal. También es temporal: la cuota barata sube todos los días.
 
-Si estás por firmar un crédito de vivienda esta semana en Bucaramanga, esto es lo que tienes que entender antes de marcar la casilla.
+Si está por firmar un crédito de vivienda esta semana en Bucaramanga, esto es lo que tiene que entender antes de marcar la casilla.
 
 ## ¿Cuánto vale la UVR hoy y cuánto subió en un año?
 
@@ -32,27 +41,30 @@ El Emisor toma la variación mensual del **IPC** del mes anterior y la reparte d
 
 Traducción: la UVR que te cobran hoy refleja la inflación de junio. Y en junio [el IPC anual llegó a 6,14%](https://www.elpais.com.co/economia/costo-de-vida-en-colombia-estas-fueron-las-ciudades-donde-mas-subieron-los-precios-en-junio-de-2026-0750.html), más del doble de la meta de 3% del Emisor.
 
-Ahí está la primera trampa. La UVR no predice la inflación: la persigue con un mes de retraso. Cuando los precios se aceleran, tu deuda se entera después, pero se entera.
+Ahí está la primera trampa. La UVR no predice la inflación: la persigue con un mes de retraso. Cuando los precios se aceleran, su deuda se entera después, pero se entera.
 
 ## ¿Cuánto cambia tu cuota entre un crédito en pesos y uno en UVR?
 
-Hicimos la cuenta con las tasas del [tarifario oficial de Davivienda](https://www.davivienda.com/documents/d/guest/tarifas-davivienda-vigentes-desde-marzo-2026), cuyo bloque de vivienda está marcado como vigente desde el 1 de enero de 2026. Confirma con el banco antes de firmar: las tasas de lista cambian y la que te apliquen depende de tu perfil. Para vivienda de hasta $213.525.000, ese tarifario cobra **12,60% efectivo anual en pesos** o **6,95% en UVR**.
+Hicimos la cuenta con las tasas del [tarifario oficial de Davivienda](https://www.davivienda.com/documents/d/guest/tarifas-davivienda-vigentes-desde-marzo-2026), cuyo bloque de vivienda está marcado como vigente desde el 1 de enero de 2026. Confirme con el banco antes de firmar: las tasas de lista cambian y la que le apliquen depende de su perfil. Para vivienda de hasta $213.525.000, ese tarifario cobra **12,60% efectivo anual en pesos** o **6,95% en UVR**.
 
-Toma un apartamento de $150 millones en Bucaramanga —un supuesto del ejercicio, no un precio de mercado verificado—, cuota inicial del 30% y un crédito de **$105 millones a 20 años**.
+Tome un apartamento de $150 millones en Bucaramanga —un supuesto del ejercicio, no un precio de mercado verificado—, cuota inicial del 30% y un crédito de **$105 millones a 20 años**.
 
-En pesos pagas **$1.150.730** fijos, en el mes 1 y en el mes 240. En UVR pagas **1.915,60 UVR**, que hoy equivalen a **$797.631**. Esas dos cifras, y todas las proyecciones de cuota y saldo que siguen, son cálculos de Economía Santander sobre las tasas publicadas por Davivienda, la UVR del Banco de la República y el IPC del DANE.
+En pesos usted paga **$1.150.730** fijos, en el mes 1 y en el mes 240. En UVR paga **1.915,60 UVR**, que hoy equivalen a **$797.631**. Esas dos cifras, y todas las proyecciones de cuota y saldo que siguen, son cálculos de Economía Santander sobre las tasas publicadas por Davivienda, la UVR del Banco de la República y el IPC del DANE.
 
 Esa cuota en UVR nunca cambia. En UVR. Lo que cambia es cuántos pesos cuesta una UVR.
 
-Con inflación de 6% anual sostenida —un supuesto nuestro, no el pronóstico de ninguna entidad—, la cuota llega a $1.067.411 en el año cinco y **cruza a la cuota fija en el mes 76**: seis años y tres meses. De ahí en adelante pagas más que tu vecino que escogió pesos.
+Con inflación de 6% anual sostenida —un supuesto nuestro, no el pronóstico de ninguna entidad—, la cuota llega a $1.067.411 en el año cinco y **cruza a la cuota fija en el mes 76**: seis años y tres meses. De ahí en adelante se paga más que su vecino que escogió pesos.
 
 ## ¿Por qué la gente le tiene miedo a la UVR?
 
-Porque en un crédito en UVR tu deuda en pesos crece antes de bajar.
+Porque en un crédito en UVR su deuda en pesos crece antes de bajar.
 
-Con esos mismos números y 6% de inflación, el saldo de tu crédito de $105 millones **toca techo en $125.469.428 en el mes 103**, según esos mismos cálculos. Ocho años y medio debiendo más de lo que te prestaron.
+Con esos mismos números y 6% de inflación, el saldo de su crédito de $105 millones **toca techo en $125.469.428 en el mes 103**, según esos mismos cálculos. Ocho años y medio debiendo más de lo que le prestaron.
 
 Eso no es una falla del producto: es el diseño. Pero es también lo que volvió impagables los créditos de vivienda en 1999.
+
+***Lea también: [Joyería en Bucaramanga: comprar oro legal y poder probarlo](https://economiasantander.com/noticias/joyeria-bucaramanga-oro-cadena/)***
+
 
 El **UPAC**, antecesor de la UVR, dejó de atarse solo a la inflación en 1994 y pasó a seguir la **DTF**, la tasa a la que los bancos captan CDT. El cambio quedó consignado en la **Resolución 18 de 1994** de la Junta Directiva del Banco de la República. Cuando las tasas se dispararon para defender el peso, las deudas se dispararon con ellas.
 
@@ -66,7 +78,7 @@ Hay un solo número que decide: **5,28%**.
 
 Es la inflación promedio anual a la que las dos opciones cuestan exactamente lo mismo, según cálculos de Economía Santander: sale de dividir 1,1260 entre 1,0695. Debajo de ese umbral gana la UVR; encima, ganan los pesos.
 
-Hoy la inflación va en 6,14% y la UVR sube 5,97%. Con esas cifras, el crédito en UVR te cuesta **13,33% efectivo anual** frente a 12,60% en pesos.
+Hoy la inflación va en 6,14% y la UVR sube 5,97%. Con esas cifras, el crédito en UVR le cuesta **13,33% efectivo anual** frente a 12,60% en pesos.
 
 En tasa real queda más nítido. El crédito en pesos al 12,60%, con inflación de 6,14%, te cobra **6,09% real**. El de UVR te cobra 6,95% real, fijo, todos los años.
 
@@ -90,20 +102,22 @@ Del lado de la oferta, las ventas van bien pero la obra nueva no arranca. Santan
 
 El inventario regional supera las **6.600 unidades** y 61% son VIS. Con ese stock tienes con qué negociar precio y con qué esperar, algo que también se lee en [el comportamiento de las licencias de construcción en Bucaramanga](/noticias/licencias-construccion-bucaramanga-crecen/).
 
-## ¿Qué hacer si firmas esta semana?
+## ¿Qué hacer si firma esta semana?
 
-Pide las dos simulaciones por escrito, del mismo banco y al mismo plazo: cuota en pesos y cuota en UVR, con la tabla de amortización completa.
+Pida las dos simulaciones por escrito, del mismo banco y al mismo plazo: cuota en pesos y cuota en UVR, con la tabla de amortización completa.
 
-Busca el mes 76 y el mes 103 de la tabla en UVR. Si no aguantas esa cuota ni ese saldo, ese no es tu producto.
+Busque el mes 76 y el mes 103 de la tabla en UVR. Si no aguanta esa cuota ni ese saldo, ese no es su producto.
 
-Cotiza en tres entidades como mínimo. Según la **Superfinanciera**, [con corte al 19 de junio](https://www.larepublica.co/finanzas/las-tasas-para-la-compra-de-vivienda-estan-entre-11-8-y-17-7-segun-la-superfinanciera-4431233), la tasa promedio ponderada iba en 15,18% para no VIS y 14,02% para VIS. El más barato del listado es el **Fondo Nacional del Ahorro**, con 11,85% en no VIS y 10,93% en VIS; el más caro, el Banco Unión, con 17,75% en no VIS.
+Cotice en tres entidades como mínimo. Según la **Superfinanciera**, [con corte al 19 de junio](https://www.larepublica.co/finanzas/las-tasas-para-la-compra-de-vivienda-estan-entre-11-8-y-17-7-segun-la-superfinanciera-4431233), la tasa promedio ponderada iba en 15,18% para no VIS y 14,02% para VIS. El más barato del listado es el **Fondo Nacional del Ahorro**, con 11,85% en no VIS y 10,93% en VIS; el más caro, el Banco Unión, con 17,75% en no VIS.
 
-Ojo con la diferencia entre la tarifa publicada y lo que termina cobrando el banco. En la misma tabla de la Superfinanciera, Davivienda aparece en leasing habitacional no VIS al 14,95%, casi tres puntos por encima del 12,10% de su tarifario. La tasa de lista es un punto de partida para negociar, no la que te van a desembolsar.
+Ojo con la diferencia entre la tarifa publicada y lo que termina cobrando el banco. En la misma tabla de la Superfinanciera, Davivienda aparece en leasing habitacional no VIS al 14,95%, casi tres puntos por encima del 12,10% de su tarifario. La tasa de lista es un punto de partida para negociar, no la que le van a desembolsar.
 
 Cuidado también con el techo de precio. El crédito en UVR de Davivienda sube a 7,95% si el inmueble pasa de $213.525.000, y el de pesos baja a 12,50%. Con ese par de tasas, el punto de equilibrio cae a 4,21%.
+
+***Siga viendo: [precio del dólar hoy en Colombia](https://economiasantander.com/dolar-hoy/)***
 
 Para que la UVR gane en ese tramo, la inflación tendría que promediar menos de 4,21% durante veinte años. Viniendo de 6,14%, eso exige que el Emisor converja rápido a su meta de 3% y se quede ahí.
 
 Regla corta: si tu presupuesto está justo hoy y solo te cuadra con la cuota baja, la UVR no te está dando plata, te está aplazando el problema. Si tienes colchón y crees en la convergencia a 3%, la UVR paga mejor.
 
-Y revisa el calendario antes de firmar: según ese mismo cronograma de 2026, la junta del Banco de la República vuelve a definir tasa el **31 de julio**, y el dato de inflación de julio sale la primera semana de agosto. Puedes seguir ambos en [nuestro tablero de indicadores económicos](/indicadores/).
+Y revise el calendario antes de firmar: según ese mismo cronograma de 2026, la junta del Banco de la República vuelve a definir tasa el **31 de julio**, y el dato de inflación de julio sale la primera semana de agosto. Puede seguir ambos en [nuestro tablero de indicadores económicos](/indicadores/).
