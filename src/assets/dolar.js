@@ -17,12 +17,24 @@
       maximumFractionDigits: dec == null ? 0 : dec
     });
   }
-  // Acepta "1.234,56" y "1234.56"; devuelve número o NaN
+  // Acepta "1.234,56" (colombiano) y "1234.56" (inglés); devuelve número o NaN
   function parsear(txt) {
     if (!txt) return NaN;
     var s = String(txt).replace(/\s/g, '').replace(/[^\d.,-]/g, '');
-    if (s.indexOf(',') > -1) { s = s.replace(/\./g, '').replace(',', '.'); }
-    else if ((s.match(/\./g) || []).length > 1) { s = s.replace(/\./g, ''); }
+    if (s.indexOf(',') > -1) {
+      // Hay coma: ella es el decimal y los puntos son separadores de miles.
+      s = s.replace(/\./g, '').replace(',', '.');
+    } else if ((s.match(/\./g) || []).length > 1) {
+      // Varios puntos: todos son de miles ("1.234.567").
+      s = s.replace(/\./g, '');
+    } else if (/^-?\d{1,3}\.\d{3}$/.test(s)) {
+      // Un único punto seguido de EXACTAMENTE tres dígitos y nada más. En
+      // Colombia eso es separador de miles, no decimal: "1.000" son mil.
+      // Sin esta regla parseFloat lo leía como 1,0 y el convertidor decía
+      // que mil dólares eran $3.157 en vez de $3.157.000. Un punto con una
+      // o dos cifras detrás ("1.5", "1.50") sí es decimal y no se toca.
+      s = s.replace('.', '');
+    }
     return parseFloat(s);
   }
 
