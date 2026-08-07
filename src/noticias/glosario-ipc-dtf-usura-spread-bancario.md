@@ -2,47 +2,56 @@
 layout: noticia.njk
 title: "IPC, DTF, usura y UVR: guía de tasas en Colombia 2026"
 date: 2026-07-28
-categoria: "Educación financiera"
-chipTipo: "propio"
-chipLabel: "Redacción propia"
-excerpt: "La inflación anual llegó a 6,14% y en Bucaramanga a 7,05%. Te explicamos qué son IPC, DTF, IBR, UVR, usura y TRM, y dónde te pegan hoy en el bolsillo."
-autor: "Francisco Gómez - Director"
+categoria: Educación financiera
+chipTipo: propio
+chipLabel: Redacción propia
+excerpt: La inflación anual llegó a 6,14% y en Bucaramanga a 7,05%. Te
+  explicamos qué son IPC, DTF, IBR, UVR, usura y TRM, y dónde te pegan hoy en el
+  bolsillo.
+autor: Francisco Gómez - Director
+imagen: /assets/uploads/financiero.jpg
+imagenAlt: Imagen relacionada para explicar IPC, DTF, usura y UVR en
+  EconomíaSantander.com.
+imagenTitle: "IPC, DTF, usura y UVR: guía de tasas en Colombia 2026"
+imagenPie: Acá explicamos qué son IPC, DTF, IBR, UVR, usura y TRM, y dónde te
+  pegan hoy en el bolsillo. Foto archivo particular.
+imagenCredito: Archivo particular EconomíaSantander.com-
 guia: true
 tags: noticias
 ---
 Bucaramanga cerró junio con la inflación anual más alta del país: **7,05%**, frente al **6,14%** nacional. Son 0,91 puntos de diferencia. El dato nacional está en el [comunicado de prensa del DANE](https://www.dane.gov.co/files/operaciones/IPC/jun2026/cp-IPC-jun2026.pdf); el de la ciudad sale de los anexos por ciudad del mismo boletín y así lo reportaron [Vanguardia](https://www.vanguardia.com/economia/2026/07/07/inflacion-colombia-repunto-a-614-asi-le-fue-a-bucaramanga/) y [La República](https://www.larepublica.co/economia/el-costo-de-vida-supero-la-barrera-de-6-tras-dos-anos-con-inflacion-en-6-14-4430692).
 
-De ese número salen casi todas las tasas que te cobran y las que te pagan. La cuota del carro, el CDT, la tarjeta y el arriendo se mueven con indicadores que casi nadie te explica.
+De ese número salen casi todas las tasas que cobran y las que pagan por sus productos financieros. La cuota del carro, el CDT, la tarjeta y el arriendo se mueven con indicadores que casi nadie explica a una persona del común.
 
-Aquí están los que importan, con su valor vigente, su fecha de corte y el sitio exacto donde te aparecen. Última actualización de esta guía: 28 de julio de 2026.
+Aquí están los que importan, con su valor vigente, su fecha de corte y el sitio exacto donde aparecen. Última actualización de esta guía: 28 de julio de 2026.
 
 ## ¿Cuánto vale hoy cada tasa? El tablero con su fecha de corte
 
-| Indicador | Valor vigente | Corte | Quién lo calcula |
-|---|---|---|---|
-| IPC anual nacional | 6,14% | junio 2026 | DANE |
-| IPC anual Bucaramanga | 7,05% | junio 2026 | DANE |
-| Rango meta de inflación | 3% ± 1 punto (2% a 4%) | vigente | Banco de la República |
-| Tasa de intervención | 12,00% | 30 jun 2026 | Banco de la República |
-| DTF | 10,24% E.A. | semana 27 jul – 2 ago | Banco de la República |
-| Interés bancario corriente | 19,19% E.A. | julio 2026 | Superfinanciera |
-| Tasa de usura (consumo y ordinario) | 28,79% E.A. | julio 2026 | Superfinanciera |
-| UVR | $416,3866 | 28 jul 2026 | Banco de la República |
-| TRM | $3.205,80 | 28 jul 2026 | Superfinanciera |
+| Indicador                           | Valor vigente          | Corte                 | Quién lo calcula      |
+| ----------------------------------- | ---------------------- | --------------------- | --------------------- |
+| IPC anual nacional                  | 6,14%                  | junio 2026            | DANE                  |
+| IPC anual Bucaramanga               | 7,05%                  | junio 2026            | DANE                  |
+| Rango meta de inflación             | 3% ± 1 punto (2% a 4%) | vigente               | Banco de la República |
+| Tasa de intervención                | 12,00%                 | 30 jun 2026           | Banco de la República |
+| DTF                                 | 10,24% E.A.            | semana 27 jul – 2 ago | Banco de la República |
+| Interés bancario corriente          | 19,19% E.A.            | julio 2026            | Superfinanciera       |
+| Tasa de usura (consumo y ordinario) | 28,79% E.A.            | julio 2026            | Superfinanciera       |
+| UVR                                 | $416,3866              | 28 jul 2026           | Banco de la República |
+| TRM                                 | $3.205,80              | 28 jul 2026           | Superfinanciera       |
 
-Falta uno en ese tablero: el IBR. No publicamos su valor porque la serie oficial del Emisor no estuvo accesible al cierre de esta edición, y una cifra que no podamos contrastar contra su fuente no entra a una tabla donde todo lo demás sí lo está. Más abajo te explicamos qué es y en qué productos te aparece.
+Falta uno en ese tablero: el IBR. No publicamos su valor porque la serie oficial del Emisor no estuvo accesible al cierre de esta edición, y una cifra que no podamos contrastar contra su fuente no entra a una tabla donde todo lo demás sí lo está. Más abajo explicamos qué es y en qué productos tiene efecto.
 
 ## ¿Qué es el IPC y por qué en Bucaramanga pega más duro?
 
 El IPC mide cuánto subió el precio de la canasta que compra un hogar promedio. Lo calcula el **DANE**. En junio la variación mensual nacional fue 0,39% y el año corrido va en 4,77%. La mensual de Bucaramanga fue 0,36%, según [Vanguardia](https://www.vanguardia.com/economia/2026/07/07/inflacion-colombia-repunto-a-614-asi-le-fue-a-bucaramanga/).
 
-Lo que hoy te cuesta $500.000 en el mercado costaba $467.071 hace un año en Bucaramanga. En el promedio nacional costaba $471.076. Esos $4.005 son la prima que paga la ciudad, según cálculos de Economía Santander sobre las variaciones anuales del DANE.
+Lo que hoy cuesta $500.000 en el mercado costaba $467.071 hace un año en Bucaramanga. En el promedio nacional costaba $471.076. Esos $4.005 son la prima que paga la ciudad, según cálculos de Economía Santander sobre las variaciones anuales del DANE.
 
 Vanguardia desglosó el 7,05%: el corrientazo aporta 1,14 puntos y los arriendos, efectivos e imputados, suman 1,31 puntos (0,71 los imputados y 0,60 los efectivos). Las frutas frescas ponen 0,57 puntos; la carne de res, 0,53; el transporte urbano, 0,48. La naranja subió 51% y la papa 45%.
 
-Dónde te aparece: en el arriendo. El **artículo 20 de la Ley 820 de 2003** deja subir el canon cada doce meses en una proporción que "…no sea superior al ciento por ciento (100%) del incremento que haya tenido el índice de precios al consumidor en el año calendario inmediatamente anterior…", según el [texto de la norma](https://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?i=8738). La frase no termina ahí: el mismo artículo condiciona el reajuste a que el nuevo canon no exceda lo previsto en el artículo 18 de esa ley, que le pone un techo adicional al valor del arriendo. El IPC que manda para el reajuste de este año cerró en **5,10%** en diciembre de 2025. Sobre un canon de $1.200.000, el tope son $61.200 más al mes: $734.400 en el año.
+Dónde aparece en su economía personal: en el arriendo. El **artículo 20 de la Ley 820 de 2003** deja subir el canon cada doce meses en una proporción que "…no sea superior al ciento por ciento (100%) del incremento que haya tenido el índice de precios al consumidor en el año calendario inmediatamente anterior…", según el [texto de la norma](https://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?i=8738). La frase no termina ahí: el mismo artículo condiciona el reajuste a que el nuevo canon no exceda lo previsto en el artículo 18 de esa ley, que le pone un techo adicional al valor del arriendo. El IPC que manda para el reajuste de este año cerró en **5,10%** en diciembre de 2025. Sobre un canon de $1.200.000, el tope son $61.200 más al mes: $734.400 en el año.
 
-Y ojo con el trámite: la misma norma exige que el arrendador te avise del incremento y de la fecha desde la que rige, por servicio postal autorizado o por el medio pactado en el contrato.
+Y ojo con el trámite: la misma norma exige que el arrendador le avise del incremento y de la fecha desde la que rige, por servicio postal autorizado o por el medio pactado en el contrato.
 
 ## ¿Qué es la tasa de intervención y para qué sirve el rango meta?
 
@@ -52,7 +61,7 @@ Cuatro codirectores votaron por el alza, dos por bajar 50 puntos y uno por dejar
 
 El rango meta es el compromiso del Emisor: inflación de 3%, con margen de un punto arriba o abajo, es decir entre 2% y 4%, en el horizonte de política monetaria. Hoy el 6,14% nacional está 2,14 puntos por encima del techo. Bucaramanga está 3,05 puntos arriba.
 
-Tú no pagas esta tasa. Pero es el piso sobre el que se construye todo lo que sí pagas.
+Usted no paga esta tasa. Pero es el piso sobre el que se construye todo lo que sí paga.
 
 ## ¿Cuánto rinde tu CDT? Ahí mandan la DTF y el IBR
 
