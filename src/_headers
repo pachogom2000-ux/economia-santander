@@ -19,11 +19,21 @@
 /
   Cache-Control: public, max-age=0, must-revalidate
 
-# CSS y JS tampoco llevan huella en el nombre, así que se revalidan siempre.
-# Este proyecto ya sufrió el problema de servir una hoja de estilos vieja.
+# La hoja de estilos YA lleva huella (/assets/css/style.<huella>.css), así que
+# se congela un año: si el contenido cambia, cambia el nombre y el navegador
+# pide el archivo nuevo. Es imposible servir una versión vieja. Esto quita el
+# viaje de revalidación que bloqueaba el pintado ~360 ms en CADA visita, aun
+# teniendo el archivo ya guardado.
+/assets/css/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# La copia sin huella se sigue publicando por si quedó HTML viejo cacheado
+# apuntando a ella. Esa sí se revalida siempre, que es lo correcto para un
+# nombre que no cambia nunca.
 /assets/style.css
   Cache-Control: public, max-age=0, must-revalidate
 
+# El JS no lleva huella todavía: se revalida siempre.
 /assets/*.js
   Cache-Control: public, max-age=0, must-revalidate
 

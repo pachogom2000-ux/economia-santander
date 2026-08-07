@@ -1,8 +1,39 @@
 const markdownIt = require("markdown-it");
 const Image = require("@11ty/eleventy-img");
 const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
+const crypto = require("node:crypto");
+const fsSync = require("node:fs");
+
+// Huella del CSS, como la que ya llevan las fuentes.
+//
+// La hoja se servía con `max-age=0, must-revalidate` por miedo —fundado— a
+// servir una versión vieja. El precio era que el navegador preguntaba al
+// servidor si había cambiado ANTES de pintar nada, en cada visita: 360 ms de
+// bloqueo que pagaba hasta quien ya tenía el archivo guardado.
+//
+// Con la huella en el nombre ese miedo desaparece: si el contenido cambia,
+// cambia el nombre, y es IMPOSIBLE servir una versión vieja. Por eso se puede
+// cachear un año (ver src/_headers).
+//
+// Se calcula al cargar la configuración. En `--serve` hay que reiniciar para
+// que cambie; en producción cada despliegue arranca de cero, así que da igual.
+const CSS_ORIGEN = "src/assets/style.css";
+const cssHuella = crypto
+  .createHash("sha256")
+  .update(fsSync.readFileSync(CSS_ORIGEN))
+  .digest("hex")
+  .slice(0, 10);
+const CSS_SALIDA = `assets/css/style.${cssHuella}.css`;
 
 module.exports = function (eleventyConfig) {
+  // La copia con huella va a su propia carpeta para que la regla de caché de
+  // un año en _headers apunte SOLO a archivos con huella. /assets/style.css
+  // se sigue publicando (lo copia el passthrough de la carpeta) y conserva su
+  // cabecera de revalidar siempre: así el HTML viejo que quedó cacheado en
+  // algún navegador no se queda sin estilos.
+  eleventyConfig.addPassthroughCopy({ [CSS_ORIGEN]: CSS_SALIDA });
+  eleventyConfig.addGlobalData("cssUrl", `/${CSS_SALIDA}`);
+
   // Todas las <img> del sitio se reescriben en el build con varias medidas.
   // Antes se servía el original a cualquier tamaño: una foto de 4,5 MB y
   // 8688 px de ancho se pintaba a 276 px en un teléfono. El navegador ahora

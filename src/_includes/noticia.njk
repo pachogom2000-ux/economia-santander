@@ -33,9 +33,16 @@ ogType: article
     {# loading="eager" explícito: el plugin pone lazy por defecto a todo, y en
        la foto de arriba eso pelea con el fetchpriority y retrasa justo la
        imagen con la que Google mide el LCP. #}
+    {# El `sizes` tiene que decir la VERDAD sobre el hueco que ocupa la foto:
+       es lo único con lo que el navegador escoge del srcset, y lo hace antes
+       de conocer el CSS. Decía 100vw, pero la foto nunca ocupa el ancho de la
+       pantalla. Medido en el móvil: 270 px en una pantalla de 390 y 291 px en
+       una de 412 — un 70% del ancho, no el 100%. Con la promesa inflada, un
+       teléfono de densidad 1,75 pedía la versión de 900 px para un hueco de
+       509, y se bajaba 41 KiB de más. #}
     <img class="hero-art-img" src="{{ imagen }}"
          eleventy:widths="600,900,1200,1600"
-         sizes="(max-width: 760px) 100vw, 760px"
+         sizes="(max-width: 720px) 72vw, 760px"
          loading="eager" fetchpriority="high" decoding="async"
          alt="{{ imagenAlt or title }}"
          title="{{ imagenTitle or title }}">
