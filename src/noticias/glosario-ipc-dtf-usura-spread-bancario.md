@@ -5,8 +5,8 @@ date: 2026-07-28
 categoria: Educación financiera
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: La inflación anual llegó a 6,14% y en Bucaramanga a 7,05%. Te
-  explicamos qué son IPC, DTF, IBR, UVR, usura y TRM, y dónde te pegan hoy en el
+excerpt: La inflación anual llegó a 6,14% y en Bucaramanga a 7,05%. Acá
+  explicamos qué son IPC, DTF, IBR, UVR, usura y TRM, y dónde pegan hoy en el
   bolsillo.
 autor: Francisco Gómez - Director
 imagen: /assets/uploads/financiero.jpg
