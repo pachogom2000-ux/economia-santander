@@ -38,6 +38,11 @@ module.exports = function (eleventyConfig) {
   // Clave de IndexNow: avisa a Bing, Yandex y otros buscadores cuando hay
   // contenido nuevo, sin cuentas ni consolas. Google no participa.
   eleventyConfig.addPassthroughCopy("src/851cd111c4cd75b657229a301a84210a.txt");
+  // Verificación de propiedad de Bing Webmaster Tools. Sin el passthrough,
+  // Eleventy ni siquiera copia el .xml —no es un formato de plantilla— y la
+  // ruta devolvería 404. El nombre va con mayúsculas EXACTAS: Bing comprueba
+  // /BingSiteAuth.xml y el alojamiento distingue mayúsculas de minúsculas.
+  eleventyConfig.addPassthroughCopy("src/BingSiteAuth.xml");
 
   // Los enlaces externos se abren en una pestaña nueva, como pide la guía SEO.
   // Aplica también a lo que se escriba desde el CMS, sin tener que recordarlo.
