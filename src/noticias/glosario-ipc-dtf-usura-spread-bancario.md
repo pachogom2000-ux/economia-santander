@@ -59,6 +59,8 @@ Es el precio al que el **Banco de la República** le presta plata a los bancos a
 
 Cuatro codirectores votaron por el alza, dos por bajar 50 puntos y uno por dejarla quieta. Ya te contamos [la subida de la tasa del Emisor al 12%](/noticias/banco-republica-sube-tasa-intervencion-12/).
 
+*Siga leyendo: [Declarar renta siendo independiente en 2026: topes y guía](https://economiasantander.com/noticias/declarar-renta-independientes-santander/)*
+
 El rango meta es el compromiso del Emisor: inflación de 3%, con margen de un punto arriba o abajo, es decir entre 2% y 4%, en el horizonte de política monetaria. Hoy el 6,14% nacional está 2,14 puntos por encima del techo. Bucaramanga está 3,05 puntos arriba.
 
 Usted no paga esta tasa. Pero es el piso sobre el que se construye todo lo que sí paga.
@@ -69,43 +71,45 @@ La **DTF** es el promedio ponderado de lo que pagan bancos, corporaciones financ
 
 Diez millones en un CDT a esa tasa te dan $1.024.000 en un año. Con inflación de 6,14%, tu ganancia real es 3,86%. Si vives en Bucaramanga y tu canasta subió 7,05%, baja a 2,98%. Son cálculos de Economía Santander, no cifras publicadas por el Emisor.
 
-Compara antes de firmar. [Infobae](https://www.infobae.com/colombia/2026/07/01/asi-quedo-la-rentabilidad-de-los-cdt-para-julio-de-2026-con-nueva-subida-en-la-tasa-de-interes-del-banco-de-la-republica/) listó ofertas de julio entre 9% y 14,25% E.A. según entidad y plazo. Son tasas recogidas por ese medio, no tarifarios oficiales: confírmalas en la entidad antes de abrir el título.
+Compare antes de firmar. [Infobae](https://www.infobae.com/colombia/2026/07/01/asi-quedo-la-rentabilidad-de-los-cdt-para-julio-de-2026-con-nueva-subida-en-la-tasa-de-interes-del-banco-de-la-republica/) listó ofertas de julio entre 9% y 14,25% E.A. según entidad y plazo. Son tasas recogidas por ese medio, no tarifarios oficiales: confírmalas en la entidad antes de abrir el título.
 
-El **IBR** es la tasa a la que los bancos se prestan entre ellos. Aquí no vas a encontrar su valor de hoy: la serie oficial del Banco de la República no estuvo accesible al cierre de esta edición y preferimos dejar la casilla vacía antes que publicar un número que no podamos atribuirle a su fuente. Lo que sí conviene que sepas es cómo se comporta: se mueve todos los días, mientras la DTF se actualiza una vez por semana.
+El **IBR** es la tasa a la que los bancos se prestan entre ellos. Aquí no va a encontrar su valor de hoy: la serie oficial del Banco de la República no estuvo accesible al cierre de esta edición y preferimos dejar la casilla vacía antes que publicar un número que no podamos atribuirle a su fuente. Lo que sí conviene que sepa es cómo se comporta: se mueve todos los días, mientras la DTF se actualiza una vez por semana.
 
-Dónde te aparece: en créditos empresariales, leasing y algunos hipotecarios pactados como *IBR más puntos*. Si tu contrato dice eso, tu cuota cambia cada mes, y el valor vigente lo debes pedir en tu entidad o consultarlo en la publicación oficial del Emisor.
+Dónde aparece: en créditos empresariales, leasing y algunos hipotecarios pactados como *IBR más puntos*. Si su contrato dice eso, su cuota cambia cada mes, y el valor vigente lo debes pedir en su entidad o consultarlo en la publicación oficial del Emisor.
 
-## ¿Cuánto te pueden cobrar? Interés corriente, usura y la brecha
+## ¿Cuánto le pueden cobrar? Interés corriente, usura y la brecha
 
 El **interés bancario corriente** es el promedio de lo que los bancos cobran en consumo y crédito ordinario. La **Superfinanciera** lo certificó en **19,19% E.A.** para julio, con la Resolución 0965 de 2026, sin cambio frente a junio.
 
 La **tasa de usura** sale de multiplicar ese número por 1,5: **28,79% efectivo anual**. Es un límite penal, no una sugerencia. Equivale a 2,13% mensual.
 
-Si dejas $3.000.000 rotando en la tarjeta un año a la tasa máxima, pagas $863.700 solo en intereses. Es casi medio salario mínimo mensual, que en 2026 quedó en $1.750.905.
+Si deja $3.000.000 rotando en la tarjeta un año a la tasa máxima, paga $863.700 solo en intereses. Es casi medio salario mínimo mensual, que en 2026 quedó en $1.750.905.
 
 Cada modalidad tiene su techo. Consumo de bajo monto: 62,66%. Productivo urbano: 58,16%. Productivo rural: 32,75%.
 
-La brecha entre lo que te pagan y lo que te cobran se ve fácil con dos cifras de hoy: los mismos diez millones te rinden $1.024.000 si se los prestas al banco, con DTF de 10,24%, y te cuestan $1.919.000 si el banco te los presta a ti, con interés corriente de 19,19%. Son 8,95 puntos de diferencia. Es un cálculo de Economía Santander y no corresponde al margen de intermediación oficial, que la Superfinanciera construye sobre las tasas efectivas de colocación y captación de la cartera real y arroja un número distinto.
+La brecha entre lo que le pagan y lo que le cobran se ve fácil con dos cifras de hoy: los mismos diez millones rinden $1.024.000 si se los presta al banco, con DTF de 10,24%, y le cuestan $1.919.000 si el banco se los presta a usted, con interés corriente de 19,19%. Son 8,95 puntos de diferencia. Es un cálculo de Economía Santander y no corresponde al margen de intermediación oficial, que la Superfinanciera construye sobre las tasas efectivas de colocación y captación de la cartera real y arroja un número distinto.
 
 ## ¿Qué son la UVR y la TRM, y dónde te aparecen?
 
 La **UVR** es una unidad de cuenta que se mueve con la inflación del mes anterior. La calcula el Banco de la República para periodos que van del 16 de un mes al 15 del siguiente, y publica los valores diarios antes de que empiece cada periodo. Hoy vale **$416,3866**.
 
-Dónde te aparece: en los créditos de vivienda pactados en UVR. Un saldo de 100.000 UVR valía $41.382.750 el 16 de junio y hoy vale $41.638.660. Subió $255.910 en 42 días, aunque hayas pagado puntual.
+Dónde aparece: en los créditos de vivienda pactados en UVR. Un saldo de 100.000 UVR valía $41.382.750 el 16 de junio y hoy vale $41.638.660. Subió $255.910 en 42 días, aunque haya pagado puntual.
 
 La **TRM** es el promedio de las compraventas de dólares del día hábil anterior. Hoy quedó en **$3.205,80**, $4,76 menos que la que rigió ayer. La puedes revisar en nuestro [convertidor y TRM del día](/dolar-hoy/).
 
-Dónde te aparece: en la remesa, el tiquete, la compra por internet y el café. Doscientos dólares hoy te dan $641.160. El 28 de julio de 2025 regía una TRM de $4.110,48, es decir $904,68 más alta, y esos mismos doscientos dólares te daban $822.096. La comparación está hecha sobre la [serie histórica de TRM de la Superintendencia Financiera](https://www.datos.gov.co/d/32sa-8pi3).
+Dónde le aparece: en la remesa, el tiquete, la compra por internet y el café. Doscientos dólares hoy te dan $641.160. El 28 de julio de 2025 regía una TRM de $4.110,48, es decir $904,68 más alta, y esos mismos doscientos dólares te daban $822.096. La comparación está hecha sobre la [serie histórica de TRM de la Superintendencia Financiera](https://www.datos.gov.co/d/32sa-8pi3).
 
 La otra cara: un dólar más barato significa menos pesos por cada dólar exportado. Es la aritmética que enfrenta quien vende [café especial de Santander en mercados europeos](/noticias/cafe-especial-santander-mercados-europeos/) y factura en divisa. Cuánto pesa ese efecto en las exportaciones de la región es materia de otra nota, con cifras de la Cámara de Comercio de Bucaramanga.
+
+***También le puede interesar: [UVR hoy: ¿te conviene el crédito de vivienda en UVR?](https://economiasantander.com/noticias/uvr-que-es-como-afecta-credito-hipotecario/)***
 
 ## ¿Cómo se encadena todo y qué pasa el 31 de julio?
 
 La cadena tiene un orden. Sube el IPC, el Emisor sube la tasa de intervención para enfriar el gasto, los bancos pagan más por fondearse y eso empuja el IBR y la DTF.
 
-Con el fondeo más caro, sube el interés bancario corriente. Y como la usura es ese número multiplicado por 1,5, sube el techo legal de tu tarjeta. El último eslabón es tu cuota.
+Con el fondeo más caro, sube el interés bancario corriente. Y como la usura es ese número multiplicado por 1,5, sube el techo legal de su tarjeta. El último eslabón es su cuota.
 
-Ese eslabón es lento. La usura lleva dos meses quieta en 28,79% mientras la intervención subía, porque la Superfinanciera certifica el interés corriente con la información del mes inmediatamente anterior. El efecto de lo que decidió la Junta en junio tarda varios meses en aparecer en tu cuota.
+Ese eslabón es lento. La usura lleva dos meses quieta en 28,79% mientras la intervención subía, porque la Superfinanciera certifica el interés corriente con la información del mes inmediatamente anterior. **El efecto de lo que decidió la Junta en junio tarda varios meses en aparecer en su cuota.**
 
 El **31 de julio** la Junta vuelve a decidir. La Encuesta Mensual de Expectativas de Analistas Económicos del propio Emisor y la Encuesta de Opinión Financiera de Fedesarrollo anticipan que la tasa llegue a 12,5%, [según El Espectador](https://www.elespectador.com/economia/que-viene-para-las-tasas-de-interes-el-banco-de-la-republica-decidira-el-31-de-julio/). Es una expectativa de mercado, no una decisión tomada. Esta guía se actualiza esa misma tarde.
 
