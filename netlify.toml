@@ -1,5 +1,7 @@
 [build]
-  command = "npx @11ty/eleventy"
+  # Se pasa por npm run build para que compilar y avisar a los buscadores sean
+  # un solo paso: así ninguna vía de despliegue se queda sin el aviso.
+  command = "npm run build"
   publish = "_site"
 
 [functions]
