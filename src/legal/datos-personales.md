@@ -32,9 +32,12 @@ Dicho eso, sí hay tres situaciones en las que existe información suya:
 
 ### 2.1 Datos de navegación (analítica)
 
-El sitio usa **Google Analytics 4** para saber cuántas personas leen, qué notas y desde qué ciudad o dispositivo. Esa herramienta recoge identificadores del navegador, dirección IP truncada, tipo de dispositivo, origen de la visita y páginas vistas.
+El sitio usa dos herramientas de medición de audiencia:
 
-No se usa para identificarlo a usted individualmente ni para armar perfiles publicitarios. El detalle completo, incluida la forma de rechazarla, está en la [política de cookies](/legal/cookies/).
+- **Google Analytics 4**, para saber cuántas personas leen, qué notas y desde qué ciudad o dispositivo. Recoge identificadores del navegador, dirección IP truncada, tipo de dispositivo, origen de la visita y páginas vistas.
+- **Ahrefs Web Analytics**, para medir el desempeño del portal en los buscadores. **No usa cookies** ni guarda nada en su navegador.
+
+Ninguna de las dos se usa para identificarlo a usted individualmente ni para armar perfiles publicitarios, y las dos se apagan con el mismo interruptor. El detalle completo, incluida la forma de rechazarlas, está en la [política de cookies](/legal/cookies/).
 
 ### 2.2 Datos que usted envía voluntariamente
 
@@ -104,7 +107,7 @@ Si el reclamo llega incompleto, se le pide completarlo dentro de los 5 días sig
 
 ## 7. Transferencia internacional
 
-Google Analytics procesa información en servidores fuera de Colombia, principalmente en Estados Unidos. Al navegar el sitio usted queda informado de esa transferencia, que se limita a datos de audiencia anónimos. Si no la quiere, puede apagar la medición en el aviso de cookies o en el pie de página, y el sitio funciona igual.
+Las dos herramientas de medición procesan información en servidores fuera de Colombia: Google Analytics principalmente en Estados Unidos, y Ahrefs desde su infraestructura internacional. Al navegar el sitio usted queda informado de esa transferencia, que se limita a datos de audiencia agregados. Si no la quiere, puede apagar la medición en el aviso de cookies o en el pie de página, y el sitio funciona igual.
 
 Los correos que usted me envía llegan a una cuenta de Google, con el mismo alcance.
 

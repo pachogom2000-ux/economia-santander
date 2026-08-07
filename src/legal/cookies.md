@@ -28,7 +28,20 @@ Sirve para saber si vale la pena seguir escribiendo sobre cacao o si nadie lo le
 
 **La medición está activa mientras usted no la rechace.** Es lo que hace cualquier sitio que usted abra desde el celular, y en Colombia la ley pide informarlo y permitirle rechazarlo, que es justamente lo que hace el aviso que aparece la primera vez que entra.
 
-**Si prefiere que no lo midan, apáguelo y listo.** Desde ese momento Google Analytics deja de registrar su navegación en este portal. No pierde nada: el sitio funciona exactamente igual.
+**Si prefiere que no lo midan, apáguelo y listo.** Desde ese momento las herramientas de medición dejan de registrar su navegación en este portal. No pierde nada: el sitio funciona exactamente igual.
+
+### Analítica — Ahrefs Web Analytics
+
+| | |
+|---|---|
+| **Quién la pone** | Ahrefs |
+| **Para qué** | Medir audiencia y el desempeño del portal en buscadores |
+| **¿Usa cookies?** | **No.** No guarda nada en su navegador |
+| **¿Se puede rechazar?** | Sí, con el mismo interruptor |
+
+Es una herramienta de analítica **sin cookies**: cuenta visitas de forma agregada y no deja rastro en su equipo. Se usa para ver cómo se comporta el portal en los buscadores, que es de donde llega la mayoría de los lectores.
+
+Aunque no usa cookies y la ley no obligaría a pedir permiso para ella, **se apaga con el mismo botón que Google Analytics**. El aviso de este sitio promete que quien rechaza deja de ser medido, y esa promesa vale para las dos herramientas, no solo para la que guarda cookies.
 
 ### Almacenamiento local — el cupón del tinto
 
@@ -42,7 +55,7 @@ Vale la pena decirlo porque es raro:
 
 - **No hay cookies de publicidad.** Los avisos de Tienda Sinestrés y Central de Pirotecnia son imágenes y enlaces fijos, no vienen de una red de anunciantes y no lo rastrean.
 - **No hay botones de redes sociales** incrustados que reporten su visita a Facebook o a X.
-- **No hay mapas de calor, grabación de sesión ni herramientas que reconstruyan lo que usted hace en la pantalla.**
+- **No hay mapas de calor, grabación de sesión ni herramientas que reconstruyan lo que usted hace en la pantalla.** Las dos herramientas que se usan cuentan visitas de forma agregada; ninguna reproduce su sesión.
 - **No se venden ni se ceden sus datos a nadie.**
 
 Si algún día se incorpora publicidad servida por Google u otra red —que sí usa cookies de seguimiento—, este documento se actualizará **antes** de activarla y se le pedirá su consentimiento por separado.

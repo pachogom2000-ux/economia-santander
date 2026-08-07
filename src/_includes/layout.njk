@@ -89,6 +89,16 @@
       document.head.appendChild(s);
       gtag('js', new Date());
       gtag('config', 'G-HVC4Z011SY', { anonymize_ip: true });
+
+      // Ahrefs Web Analytics. No usa cookies, pero sí mide, así que se carga
+      // con la misma decisión que Google Analytics: el aviso del sitio promete
+      // que quien rechaza deja de ser medido, y esa promesa vale para las dos
+      // herramientas, no solo para la que guarda cookies.
+      var ah = document.createElement('script');
+      ah.async = true;
+      ah.src = 'https://analytics.ahrefs.com/analytics.js';
+      ah.setAttribute('data-key', 'MF6QGETkI/zizIV3w3Je/A');
+      document.head.appendChild(ah);
     };
 
     window.esApagarAnalitica = function () {
