@@ -7,4 +7,5 @@ descripcion: "Una amplia variedad gastronómica fue protagonista de Gastrofusió
   variedad gastronómica que deleita el paladar de los bumangueses y turistas.
   Economía Santander estuvo presente en un recorrido por el lugar. "
 archivo: /assets/uploads/video-gastrofusion.mp4
+audio: /assets/uploads/portada-video-gastrofusion.jpg
 ---
