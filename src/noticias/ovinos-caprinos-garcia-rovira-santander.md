@@ -15,7 +15,6 @@ imagenTitle: "Agroindustria cabro en Santander. "
 imagenPie: Los trece municipios de García Rovira reúnen 15.917 caprinos, el
   48,5% de todas las cabras de Santander.
 imagenCredito: Pixabay-Rubiwane
-eleventyExcludeFromCollections: true
 tags: noticias
 ---
 Santander tiene **81.545 ovinos y caprinos** repartidos en sus 87 municipios, según el [Censo Nacional Caprino y Ovino del ICA](https://www.ica.gov.co/areas/pecuaria/servicios/epidemiologia-veterinaria/censos-caprinos-y-ovinos-2023-final.aspx). Son 48.716 ovejos y 32.829 cabras. La mitad de las cabras del departamento están en una sola provincia: **García Rovira**.

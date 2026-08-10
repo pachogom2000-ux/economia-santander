@@ -16,7 +16,6 @@ imagenPie: "La mayoría de empresas de bisutería y joyería en Santander
   sobrepasan los 10 años de antigüedad, de acuerdo con la Cámara de Comercio de
   Bucaramanga. "
 imagenCredito: "Archivo particular. "
-eleventyExcludeFromCollections: true
 tags: noticias
 ---
 La bisutería santandereana exporta. Lo que no aparece por ninguna parte es **cuánto**.
