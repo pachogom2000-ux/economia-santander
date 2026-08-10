@@ -13,12 +13,12 @@ imagen: /assets/uploads/imagen-sismo.webp
 imagenAlt: Temblor en Colombia
 imagenTitle: Temblor en Colombia lunes 10 de agosto de 2026
 imagenPie: "El epicentro se localizó en San José del Palmar, Chocó, con una
-  magnitud de 6,7 en la escala de Richter. "
+  magnitud de 7,4 en la escala de Richter. "
 imagenCredito: "Foto: Economía Santander"
 guia: false
 tags: noticias
 ---
-Este lunes 10 de agosto a las 7:34 a.m. en [San José del Palmar, ](https://x.com/sgcol/status/2086793923788148955)Chocó, Colombia, se presentó **un sismo de magnitud 6,7 en la escala de Richter,** el más fuerte que se haya registrado en el país en los últimos años. 
+Este lunes 10 de agosto a las 7:34 a.m. en [San José del Palmar, ](https://x.com/sgcol/status/2086793923788148955)Chocó, Colombia, se presentó **un sismo de magnitud 7,4 en la escala de Richter,** el más fuerte que se haya registrado en el país en los últimos años. 
 
 Los daños más graves que se registran hasta el momento ocurrieron en Quibdó, capital del departamento donde fue el epicentro, como también en ciudades importantes como Cali, Manizales y Pereira. 
 
