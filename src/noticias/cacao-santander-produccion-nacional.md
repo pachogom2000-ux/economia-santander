@@ -15,7 +15,6 @@ imagenTitle: "Cacao en Santander mueve la economía de la región. "
 imagenPie: "El cacao es uno de los productos agrícolas más importantes para
   Santander, con una participación de 41% en la producción nacional. "
 imagenCredito: "Maliflac-Banco Pixabay. "
-eleventyExcludeFromCollections: true
 tags: noticias
 ---
 Santander produjo **28.044 toneladas de cacao en 2024**, el **41% del total nacional**, según cifras de la Federación Nacional de Cacaoteros recogidas por [Vanguardia](https://www.vanguardia.com/santander/2026/04/19/santander-lidera-la-produccion-nacional-de-cacao-cual-es-el-potencial-de-crecimiento/) en abril de 2026. Ningún otro departamento se le acerca.
