@@ -28,11 +28,17 @@ Lo que sigue es la parte menos obvia: cómo se arma la declaración cuando su in
 
 Son cinco topes y basta con pasar uno solo. Todos se miden con la UVT de 2025, no con la de este año.
 
-* **Patrimonio bruto** a 31 de diciembre de 2025: **$224.096.000** (4.500 UVT).
-* **Ingresos brutos** del año: **$69.719.000** (1.400 UVT).
-* **Consumos con tarjeta de crédito**: **$69.719.000**.
-* **Compras y consumos totales**: **$69.719.000**.
-* **Consignaciones, depósitos o inversiones financieras**: **$69.719.000**.
+<div class="tabla-wrap">
+
+| Concepto | Tope para el año gravable 2025 |
+|---|---|
+| **Patrimonio bruto** a 31 de diciembre de 2025 | **$224.096.000** (4.500 UVT) |
+| **Ingresos brutos** del año | **$69.719.000** (1.400 UVT) |
+| **Consumos con tarjeta de crédito** | **$69.719.000** |
+| **Compras y consumos totales** | **$69.719.000** |
+| **Consignaciones, depósitos o inversiones financieras** | **$69.719.000** |
+
+</div>
 
 Hay un sexto caso que no depende de cuánto fueron sus ingresos: si a 31 de diciembre de 2025 era responsable de **IVA**, declara así no haya pasado ningún tope.
 
@@ -56,12 +62,18 @@ Lo primero que resta son los ingresos no constitutivos de renta: ahí van sus ap
 
 Después vienen las deducciones. Estas son las que un independiente sí puede tomar, con su tope en pesos de 2025:
 
-* **Intereses de vivienda**: 1.200 UVT, **$59.758.800**.
-* **Crédito Icetex**: 100 UVT, **$4.979.900**.
-* **Medicina prepagada**: 16 UVT al mes, **$796.784** mensuales o **$9.561.408** al año.
-* **Dependientes** por el artículo 387: 10% de tus ingresos brutos, tope 32 UVT al mes, **$1.593.568**.
-* **Dependientes** por el artículo 336: **$3.585.528** por cada uno, hasta cuatro, o sea **$14.342.112** (ver salvedad abajo).
-* **1% de tus compras** soportadas con factura electrónica, tope 240 UVT: **$11.951.760**.
+<div class="tabla-wrap">
+
+| Deducción | Tope en UVT | Tope en pesos de 2025 |
+|---|---|---|
+| **Intereses de vivienda** | 1.200 UVT | **$59.758.800** |
+| **Crédito Icetex** | 100 UVT | **$4.979.900** |
+| **Medicina prepagada** | 16 UVT al mes | **$796.784** mensuales · **$9.561.408** al año |
+| **Dependientes**, artículo 387 | 32 UVT al mes, sin pasar del 10% de los ingresos brutos | **$1.593.568** |
+| **Dependientes**, artículo 336 | — | **$3.585.528** por cada uno, hasta cuatro: **$14.342.112** (ver salvedad abajo) |
+| **1% de las compras** soportadas con factura electrónica | 240 UVT | **$11.951.760** |
+
+</div>
 
 Ojo con dos reglas. La primera: sobre un mismo dependiente no se toman las dos deducciones a la vez, sino una, según explica [Siempre Al Día](https://siemprealdia.co/colombia/impuestos/aplicacion-de-la-nueva-deduccion-por-dependientes/).
 
@@ -95,7 +107,7 @@ Si retuvieron menos —el caso de quien facturó a varios contratantes pequeños
 
 ## ¿Qué pasa si no declara?
 
-La sanción mínima de 2026 son **10 UVT**: **$523.740**. Es el piso de cualquier sanción que se tl cause —así el impuesto sea de cero—, no un cobro por declarar.
+La sanción mínima de 2026 son **10 UVT**: **$523.740**. Es el piso de cualquier sanción que se cause —así el impuesto sea de cero—, no un cobro por declarar.
 
 Si declara tarde, la sanción por extemporaneidad es del **5%** del impuesto por cada mes o fracción de retraso, sin superar el 100% del impuesto, y corren intereses de mora.
 

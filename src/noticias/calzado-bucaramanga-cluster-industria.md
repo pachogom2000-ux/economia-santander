@@ -20,21 +20,21 @@ tags: noticias
 ---
 El clúster de calzado y marroquinería del área metropolitana de Bucaramanga reúne **88 empresas** y **1.116 empleos directos** formales, con ventas por **$124.353 millones** en 2024, según el inventario de la [Cámara de Comercio de Bucaramanga](https://www.camaradirecta.com/), el IMEBU y la Alcaldía. [ACICAM](https://acicam.org/santander/) calcula que el sector ocupa en realidad a cerca de **47.000 personas** en la región.
 
-## Por qué la cifra formal es tan chica
+## ¿Por qué la cifra formal es tan chica?
 
 La distancia entre esos dos números no es una contradicción: miden cosas distintas. Más del 94% de los talleres tienen menos de cinco empleados y muchos no aparecen en el registro mercantil, como ya contó esta serie al [mapear los diez sectores del PIB santandereano](/noticias/santander-mas-alla-ecopetrol-palma-mapa-productivo/).
 
-## San Francisco y el cuero que llega del centro
+## ¿De dónde sale el cuero que usan los talleres?
 
 En **San Francisco**, el "Distrito del Calzado y la Marroquinería" de Bucaramanga, funcionan más de 200 locales entre fábricas y puntos de venta, según [Periódico 15](https://www.periodico15.com/san-francisco-la-vitrina-del-calzado/). Buena parte del insumo llega de las curtiembres del centro de la ciudad: la [CDMB](https://www.cdmb.gov.co/) mantiene una guía ambiental específica para ese sector, que enfrenta su propia presión por vertimientos y normativa.
 
 ![Vitrinas de calzado y marroquinería en un local del distrito de San Francisco, en Bucaramanga](/assets/uploads/talleres-calzado-san-francisco-bucaramanga-empleo.jpg "empleo calzado San Francisco Bucaramanga, 88 empresas y 1.116 empleos directos")
 
-## El dólar, arma de doble filo
+## ¿Cómo le afecta al calzado un dólar barato?
 
 La [tasa de cambio](https://www.banrep.gov.co/es/glosario/tasa-cambio-trm) rondó los **$3.210 por dólar** la última semana de julio de 2026, su nivel más bajo en siete años. Un peso fuerte abarata el cuero y los sintéticos importados que usan los talleres. Pero también abarata el calzado que entra de Asia y presiona las exportaciones: Santander vendió **USD 1,89 millones FOB** en calzado entre enero y agosto de 2025, dentro de una caída del 15,9% en las exportaciones de moda del departamento, según cifras de [DIAN y DANE citadas por Vanguardia](https://www.vanguardia.com/economia/local/2025/07/10/exportaciones-de-moda-en-santander-estas-son-las-razones-de-menores-ventas/). El Gobierno avanzó en 2026 un arancel del 35% para el calzado importado por debajo de un umbral —**US$11 FOB** para el de capellada de cuero—, para frenar el dumping asiático, según el [Ministerio de Comercio](https://www.mincit.gov.co/).
 
-## Un oficio que ya no se hereda
+## ¿Por qué los talleres no consiguen operarios?
 
 Bucaramanga cerró 2025 con la tasa de desempleo más baja en siete años, [según Vanguardia](https://www.vanguardia.com/economia/2026/04/22/santander-cerro-2025-con-la-tasa-de-desempleo-mas-baja-en-los-ultimos-siete-anos/). Aun así, los talleres de calzado no consiguen operarios: ya en 2022 [Vanguardia documentó la escasez de obreros](https://www.vanguardia.com/economia/local/2022/08/09/para-donde-se-fueron-escasez-de-obreros-y-operarios-preocupa-a-empresarios-en-bucaramanga/) en el sector, un patrón que persiste. **Wilson Gamboa**, presidente de [Asoinducals](https://asoinducals.org/), el gremio del calzado con sede en Bucaramanga, propone crear "escuelas taller" dentro de las empresas para asegurar el relevo generacional, después de que la anterior cerrara por edad y enfermedad de sus instructores.
 

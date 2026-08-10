@@ -61,11 +61,32 @@ En enero la ocupación de la ciudad fue **41,28%** con tarifa de $264.230, frent
 
 En 2025 Santander recibió **38.458 turistas internacionales**, **5,5%** más que el año anterior, según las cifras publicadas por [Vanguardia](https://www.vanguardia.com/santander/2026/03/22/topocoro-el-mar-dulce-que-impulsa-el-turismo-en-santander/). Son unos **105 extranjeros por día** para 87 municipios, según cálculos de Economía Santander sobre esa cifra.
 
-**Estados Unidos** aportó **33,3%** de ese flujo; **Venezuela**, 10,5%; **México**, 6,4%; **Panamá**, 6,1%; **España**, 5%.
+Estos son los cinco países que más aportaron a ese flujo:
 
-**Bucaramanga** concentró **76,6%** de los hospedajes, aunque los mayores crecimientos fueron de **Piedecuesta** (34,4%) y **Floridablanca** (11,9%).
+<div class="tabla-wrap">
 
-Las cifras por municipio varían según la fuente: Procolombia reporta crecimientos mayores para Piedecuesta (**41,9%**) y Floridablanca (**18,4%**) que Anato (**34,4%** y **11,9%**). Las dos entidades miden con metodologías distintas.
+| País de origen | Participación |
+|---|---|
+| **Estados Unidos** | **33,3%** |
+| **Venezuela** | 10,5% |
+| **México** | 6,4% |
+| **Panamá** | 6,1% |
+| **España** | 5% |
+
+</div>
+
+**Bucaramanga** concentró **76,6%** de los hospedajes, y los mayores crecimientos fueron de **Piedecuesta** y **Floridablanca**. Pero cuánto crecieron depende de a quién se le pregunte:
+
+<div class="tabla-wrap">
+
+| Municipio | Según Anato | Según Procolombia |
+|---|---|---|
+| **Piedecuesta** | **34,4%** | **41,9%** |
+| **Floridablanca** | **11,9%** | **18,4%** |
+
+</div>
+
+Las dos entidades miden con metodologías distintas, y ninguna de las dos cifras es la equivocada: son dos formas de contar lo mismo.
 
 El columnista **Víctor Solano Franco** propuso una meta de **40.000 visitantes extranjeros** para 2026. "Para 2026, podríamos fijarnos metas concretas: Llegar a 40.000 visitantes extranjeros, con énfasis en mercados estratégicos", escribió en su [columna de Vanguardia](https://www.vanguardia.com/opinion/columnistas/2025/11/15/turismo-para-santander/). Frente a los 38.458 de 2025, sería un aumento de **4%**. Es una propuesta de opinión, no una política adoptada por la Gobernación.
 
