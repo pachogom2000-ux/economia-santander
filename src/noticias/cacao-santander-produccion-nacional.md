@@ -34,7 +34,6 @@ Para el cacaotero santandereano eso significa que la bonanza que justificó semb
 
 ***Siga leyendo: [Joyería en Bucaramanga: comprar oro legal y poder probarlo](https://economiasantander.com/noticias/joyeria-bucaramanga-oro-cadena/)***
 
-
 ## Qué puede hacer un departamento que ya es primero
 
 El presidente de Fedecacao, **Eduard Baquero**, ha insistido en que el camino es subir la productividad por hectárea antes que la superficie sembrada. Con el precio a la baja, el margen ya no lo da el mercado: lo tiene que dar el rendimiento del cultivo.
@@ -54,3 +53,5 @@ Este medio intentó verificar por medio de información pública el dato de 2025
 Tres cosas definen el año para el cacao santandereano: si el precio internacional toca piso, si el relevo generacional sostiene las fincas y si alguna parte de la transformación se queda en el departamento.
 
 Las dos primeras dependen de fuera. La tercera es la única que se decide en Santander.
+
+***Le puede interesar: [Café de Santander: carga a $2.210.000 y la prima que salva](https://economiasantander.com/noticias/cafe-especial-santander-mercados-europeos/)***
