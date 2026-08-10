@@ -1061,6 +1061,11 @@
      limitada por el `max-width: 100%` del reset, se iba con él: el retrato
      quedaba en 14 px, un punto. Se dimensiona el ENVOLTORIO y la foto lo
      llena. El segundo selector cubre el caso sin <picture>. */
+  /* El ancho lo manda SIEMPRE el hijo directo de .author-cabeza, sea cual sea:
+     el enlace al perfil, el <picture> del plugin, o la <img> pelada. Tenerlos
+     los tres listados es lo que evita repetir el fallo del retrato de 14 px
+     cada vez que algo envuelve la foto. */
+  .author-cabeza > .author-foto-enlace,
   .author-cabeza > picture,
   .author-cabeza > .author-foto {
     flex: 0 0 auto;
@@ -1068,6 +1073,8 @@
     width: clamp(92px, 26vw, 124px);
     aspect-ratio: 1 / 1;
   }
+  /* Dentro del enlace, el <picture> y la foto llenan el hueco por completo. */
+  .author-foto-enlace picture { display: block; width: 100%; height: 100%; }
   .author-foto {
     width: 100%;
     height: 100%;
@@ -1077,6 +1084,34 @@
     object-position: 50% 12%;
     border: 2px solid var(--accent);
     background: #0d0d0d;
+  }
+
+  /* Señales de que la foto y el nombre llevan a algún lado. Sin esto no hay
+     forma de adivinar que se puede hacer clic: el cursor cambia, pero solo
+     cuando ya estás encima. */
+  .author-foto-enlace .author-foto {
+    transition: border-color 180ms ease, transform 180ms ease;
+  }
+  .author-foto-enlace:hover .author-foto,
+  .author-foto-enlace:focus-visible .author-foto {
+    border-color: var(--yellow);
+    transform: scale(1.04);
+  }
+  .author-nombre {
+    color: inherit;
+    text-decoration: none;
+    transition: color 160ms ease;
+  }
+  .author-nombre:hover,
+  .author-nombre:focus-visible {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .author-foto-enlace .author-foto { transition: none; }
+    .author-foto-enlace:hover .author-foto { transform: none; }
   }
   /* Dos filas etiquetadas: la etiqueta con ancho fijo alinea las dos filas en
      columnas y cada enlace es indivisible — si falta espacio, baja COMPLETO. */
@@ -2298,6 +2333,7 @@
 
     /* La foto pierde 20 px y la biografía gana el ancho que necesita para no
        partirse en tiras de tres palabras. */
+    .author-cabeza > .author-foto-enlace,
     .author-cabeza > picture,
     .author-cabeza > .author-foto { width: clamp(84px, 24vw, 104px); }
     .author-cabeza { gap: 12px; }

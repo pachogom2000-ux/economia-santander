@@ -284,9 +284,16 @@
              imágenes genera la variante a partir de este ancho; con 84 px
              salía borrosa apenas el retrato crecía. El tamaño en pantalla lo
              manda el CSS, no estos atributos. #}
-          <img class="author-foto" src="/assets/quien-soy/francisco-gomez.jpg" alt="Francisco Javier Gómez" width="248" height="248" loading="lazy" decoding="async">
+          {# La foto y el nombre llevan al perfil. El enlace de la foto se oculta
+             al lector de pantalla (aria-hidden + tabindex="-1") porque va al
+             mismo sitio que el del nombre, que está justo al lado: sin eso, quien
+             navega a ciegas oiría el mismo destino tres veces seguidas, contando
+             el "Quién soy →" de abajo. #}
+          <a class="author-foto-enlace" href="/quien-soy/" aria-hidden="true" tabindex="-1">
+            <img class="author-foto" src="/assets/quien-soy/francisco-gomez.jpg" alt="Francisco Javier Gómez" width="248" height="248" loading="lazy" decoding="async">
+          </a>
           <div>
-            <h3>Francisco Javier Gómez</h3>
+            <h3><a class="author-nombre" href="/quien-soy/">Francisco Javier Gómez</a></h3>
             <p>Director de Economía Santander. Comunicador social y periodista, magíster en Asuntos Internacionales, con más de 20 años cubriendo la economía del país y del oriente colombiano en medios como Valora Analitik, Semana, Dinero, Portafolio, El Tiempo y Vanguardia.</p>
           </div>
         </div>
