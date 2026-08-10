@@ -29,3 +29,9 @@ En Bucaramanga, los habitantes más asustados fueron los que sintieron el **temb
 El funcionario indicó que solo se presentaron afectaciones menores en algunas fachadas de edificaciones y objetos que cayeron desde lo alto. Asimismo, indicó que la **represa de Hidrosogamoso no presentó daños** y no se encuentra en riesgo para la seguridad. 
 
 Ciudadanos de Bucaramanga observaron cómo el agua de la piscina de un edificio situado en la carrera 27 con calle 54 se **desbordaba desde el último piso,** dando cuenta de la magnitud del fuerte temblor.
+
+¿Qué hacer en caso de un evento sísmico? 
+
+La seguridad y mantener la serenidad es lo más importante al momento de encontrarse en una situación como la de este lunes, 10 de agosto de 2026. A continuación, le contamos cómo debe prepararse y actuar cuando ocurre un sismo. 
+
+![Recomendaciones en un sismo](/assets/uploads/recomendaciones-temblor.jpeg "Recomendaciones de seguridad pre, durante y después de un sismo. Fuente: Archivo particular. OGRD Santander. ")
