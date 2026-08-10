@@ -1,6 +1,6 @@
 ---
 layout: noticia.njk
-title: "Temblor hoy: Santander sin reporte de daños graves"
+title: "Temblor 10 de agosto: Santander sin reporte de daños graves"
 date: 2026-08-10T09:13:00.000-05:00
 categoria: Comercio y consumo
 chipTipo: propio
