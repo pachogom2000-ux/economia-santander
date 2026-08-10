@@ -3,7 +3,7 @@ layout: noticia.njk
 title: "Cacao de Santander: 41% del país con el precio en caída"
 date: 2026-08-10T00:05:00.000-05:00
 categoria: Agro
-chipTipo: recirc
+chipTipo: propio
 chipLabel: Redacción propia
 excerpt: Santander produce el 41% del cacao del país y lo siembra en 56
   municipios. Su liderazgo llega justo cuando el precio internacional pierde dos
