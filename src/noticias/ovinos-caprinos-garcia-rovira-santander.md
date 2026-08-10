@@ -1,7 +1,7 @@
 ---
 layout: noticia.njk
 title: "Ovinos y caprinos en Santander: 81.545 cabezas, poco mercado"
-date: 2026-09-07T07:00:00.000-05:00
+date: 2026-08-09T20:56:00.000-05:00
 categoria: Agro
 chipTipo: propio
 chipLabel: Redacción propia
@@ -9,12 +9,18 @@ excerpt: El censo del ICA cuenta 48.716 ovinos y 32.829 caprinos en Santander.
   García Rovira concentra la mitad de las cabras, pero el consumo no llega a un
   kilo.
 autor: Francisco Gómez - Director
+imagen: /assets/uploads/cabro-santander-pixabay.webp
+imagenAlt: Actividad caprina en Santander.
+imagenTitle: "Agroindustria cabro en Santander. "
+imagenPie: Los trece municipios de García Rovira reúnen 15.917 caprinos, el
+  48,5% de todas las cabras de Santander.
+imagenCredito: Pixabay-Rubiwane
 eleventyExcludeFromCollections: true
 tags: noticias
 ---
 Santander tiene **81.545 ovinos y caprinos** repartidos en sus 87 municipios, según el [Censo Nacional Caprino y Ovino del ICA](https://www.ica.gov.co/areas/pecuaria/servicios/epidemiologia-veterinaria/censos-caprinos-y-ovinos-2023-final.aspx). Son 48.716 ovejos y 32.829 cabras. La mitad de las cabras del departamento están en una sola provincia: **García Rovira**.
 
-Es el renglón más pequeño de los diez que componen el mapa productivo santandereano, y el que menos atención recibe. También el único donde una provincia entera depende de un animal que casi nadie come.
+Es el renglón más pequeño de los diez que componen el mapa productivo santandereano, y el que menos atención recibe. También el único donde una provincia entera depende de un animal que es apetecido  por los santandereanos "de pura raca mandaca".  
 
 ## Dónde están los animales
 
@@ -22,21 +28,21 @@ Los trece municipios de García Rovira reúnen **15.917 caprinos**, el **48,5%**
 
 El dato revela algo que no aparece en ningún informe oficial: **la cabra es el animal de García Rovira, no la oveja.**
 
-| Municipio | Ovinos | Caprinos | Total |
-|---|---|---|---|
-| Concepción | 3.543 | 1.375 | 4.918 |
-| Cerrito | 3.009 | 1.271 | 4.280 |
-| Molagavita | 97 | 3.475 | 3.572 |
-| Carcasí | 1.808 | 1.600 | 3.408 |
-| Capitanejo | 70 | 2.450 | 2.520 |
-| Macaravita | 403 | 1.635 | 2.038 |
-| Guaca | 973 | 405 | 1.378 |
-| San Andrés | 572 | 670 | 1.242 |
-| San José de Miranda | 226 | 1.009 | 1.235 |
-| Málaga | 479 | 395 | 874 |
-| Enciso | 216 | 541 | 757 |
-| Cepitá | 47 | 690 | 737 |
-| San Miguel | 102 | 401 | 503 |
+| Municipio           | Ovinos | Caprinos | Total |
+| ------------------- | ------ | -------- | ----- |
+| Concepción          | 3.543  | 1.375    | 4.918 |
+| Cerrito             | 3.009  | 1.271    | 4.280 |
+| Molagavita          | 97     | 3.475    | 3.572 |
+| Carcasí             | 1.808  | 1.600    | 3.408 |
+| Capitanejo          | 70     | 2.450    | 2.520 |
+| Macaravita          | 403    | 1.635    | 2.038 |
+| Guaca               | 973    | 405      | 1.378 |
+| San Andrés          | 572    | 670      | 1.242 |
+| San José de Miranda | 226    | 1.009    | 1.235 |
+| Málaga              | 479    | 395      | 874   |
+| Enciso              | 216    | 541      | 757   |
+| Cepitá              | 47     | 690      | 737   |
+| San Miguel          | 102    | 401      | 503   |
 
 ## Concepción, el municipio con más ovejos de Santander
 
@@ -46,13 +52,15 @@ En el extremo opuesto están **Molagavita y Capitanejo**, donde la relación se 
 
 **Málaga, la capital de la provincia, ocupa el décimo lugar** con 874 animales. El centro administrativo no es el centro productivo.
 
+***Siga leyendo: [Café de Santander: carga a $2.210.000 y la prima que salva](https://economiasantander.com/noticias/cafe-especial-santander-mercados-europeos/)***
+
 ## Por qué Santander no pesa en el mapa nacional
 
 Con 48.716 ovinos, Santander representa el **2,7% del inventario ovino del país**, que suma 1.819.247 animales. En caprinos la participación es del **2,8%** sobre un total nacional de 1.155.721.
 
 La distancia con el líder es enorme: **La Guajira concentra el 44,4% de los ovinos y el 77,9% de los caprinos de Colombia**. Ahí la cría es parte de la cultura wayúu y el consumo de chivo está incorporado a la mesa cotidiana.
 
-En Santander no. Y ese es el problema de fondo.
+En Santander, pese a que es famoso su plato típico de cabro con pepitoria, el consumo viene decayendo. Y ese es el problema de fondo.
 
 ## El cuello de botella no es la producción: es el plato
 
@@ -72,7 +80,8 @@ Tres vacíos quedan abiertos, y ninguno se resuelve con las cifras disponibles h
 
 **Qué pasa con la leche y la lana.** Los ángulos de valor agregado que podrían sostener el negocio durante todo el año —quesos de cabra, lana— no aparecen medidos en ninguna fuente oficial consultada.
 
-[VERIFICAR: pendiente confirmar con Asoovinos y con la Secretaría de Agricultura de Santander el número de productores de la provincia, el destino comercial del animal y si existe algún proyecto de planta de beneficio en García Rovira. Buscar productores en Málaga y Concepción para el testimonio de campo.]
+***Siga leyendo: [Inversión inmobiliaria en Bucaramanga: el mapa de los fondos](https://economiasantander.com/noticias/tres-fondos-inmobiliarios-bucaramanga/)***
+
 
 ## El sector que nadie mira
 
