@@ -1,7 +1,7 @@
 ---
 layout: noticia.njk
 title: "Cacao de Santander: 41% del país con el precio en caída"
-date: 2026-08-10T00:05:00.000-05:00
+date: 2026-08-10T05:23:00.000-05:00
 categoria: Agro
 chipTipo: recirc
 chipLabel: Redacción propia
