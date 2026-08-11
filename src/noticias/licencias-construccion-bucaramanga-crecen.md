@@ -1,7 +1,7 @@
 ---
 layout: noticia.njk
 title: Licencias de construcción en Bucaramanga caen 43% en 2026
-date: 2026-08-11T06:31:00.000-05:00
+date: 2026-08-11T07:31:00.000-05:00
 categoria: Construcción
 chipTipo: propio
 chipLabel: Redacción propia
