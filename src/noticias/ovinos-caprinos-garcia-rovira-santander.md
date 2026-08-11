@@ -1,7 +1,7 @@
 ---
 layout: noticia.njk
 title: "Ovinos y caprinos en Santander: 81.545 cabezas, poco mercado"
-date: 2026-08-09T21:49:00.000-05:00
+date: 2026-08-11T07:24:00.000-05:00
 categoria: Agro
 chipTipo: propio
 chipLabel: Redacción propia
