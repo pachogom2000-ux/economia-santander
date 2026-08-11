@@ -1,14 +1,16 @@
 ---
 layout: noticia.njk
-title: "Licencias de construcción en Bucaramanga caen 43% en 2026"
-date: 2026-07-22
-updated: 2026-07-28
-categoria: "Construcción"
-chipTipo: "propio"
-chipLabel: "Redacción propia"
-excerpt: "El área metropolitana licenció 258.890 m² entre enero y mayo: 43% menos que en 2025, mientras el país creció 29%. Qué significa si buscas vivienda VIS."
-autor: "Francisco Gómez - Director"
+title: Licencias de construcción en Bucaramanga caen 43% en 2026
+date: 2026-08-11T06:31:00.000-05:00
+categoria: Construcción
+chipTipo: propio
+chipLabel: Redacción propia
+excerpt: "El área metropolitana licenció 258.890 m² entre enero y mayo: 43%
+  menos que en 2025, mientras el país creció 29%. Qué significa si buscas
+  vivienda VIS."
+autor: Francisco Gómez - Director
 tags: noticias
+updated: 2026-07-28
 ---
 El área metropolitana de Bucaramanga licenció **258.890 m²** de construcción entre enero y mayo de 2026. Son **195.187 m² menos** que en el mismo periodo de 2025, cuando llegó a 454.077 m². Una caída de **43%**.
 
