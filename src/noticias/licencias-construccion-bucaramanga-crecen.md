@@ -1,20 +1,31 @@
 ---
 layout: noticia.njk
-title: "Licencias de construcción en Bucaramanga caen 43% en 2026"
-date: 2026-07-22
-updated: 2026-07-28
-categoria: "Construcción"
-chipTipo: "propio"
-chipLabel: "Redacción propia"
-excerpt: "El área metropolitana licenció 258.890 m² entre enero y mayo: 43% menos que en 2025, mientras el país creció 29%. Qué significa si buscas vivienda VIS."
-autor: "Francisco Gómez - Director"
+title: Licencias de construcción en Bucaramanga caen 43% en 2026
+date: 2026-08-11T07:31:00.000-05:00
+categoria: Construcción
+chipTipo: propio
+chipLabel: Redacción propia
+excerpt: "El área metropolitana licenció 258.890 m² entre enero y mayo: 43%
+  menos que en 2025, mientras el país creció 29%. Qué significa si buscas
+  vivienda VIS."
+autor: Francisco Gómez - Director
+imagen: /assets/uploads/panoramica-bucaramanga-archivoparticular-economiasantander.webp
+imagenAlt: "Panorámica de Bucaramanga en relación a construcción de vivienda. "
+imagenTitle: "Construcción en Bucaramanga y su área metropolitana. "
+imagenPie: "Se frenó la construcción de vivienda en los municipios del Área
+  Metropolitana de Bucaramanga. "
+imagenCredito: "Archivo particular-Economía Santander. "
 tags: noticias
+updated: 2026-07-28
 ---
-El área metropolitana de Bucaramanga licenció **258.890 m²** de construcción entre enero y mayo de 2026. Son **195.187 m² menos** que en el mismo periodo de 2025, cuando llegó a 454.077 m². Una caída de **43%**.
+El área metropolitana de Bucaramanga licenció **258.890 m²** de [construcción](https://economiasantander.com/seccion/construccion/) entre enero y mayo de 2026. Son **195.187 m² menos** que en el mismo periodo de 2025, cuando llegó a 454.077 m². Una caída de **43%**.
 
 En ese mismo lapso, el país creció **29%**: pasó de 8.510.257 m² a 10.982.314 m².
 
 El agregado nacional está en el [boletín de mayo de 2026](https://www.dane.gov.co/files/operaciones/ELIC/bol-ELIC-may2026pr.pdf) de las Estadísticas de Licencias de Construcción (ELIC) del **DANE**, publicado el 15 de julio. Las cifras del área metropolitana y de cada municipio son cálculos de Economía Santander sobre el [microdato municipal](https://www.dane.gov.co/index.php/estadisticas-por-tema/construccion/licencias-de-construccion) de esa misma operación, descargable en la página de la entidad.
+
+***Siga leyendo: [Comercio en Santander: ventas suben 10,6% y el empleo cae](https://economiasantander.netlify.app/noticias/comercio-consumo-santander-2026/)***
+
 
 ## ¿Cuánto cayó cada municipio del área metropolitana?
 
@@ -22,9 +33,9 @@ El desplome se concentra en el centro. **Bucaramanga** licenció 58% menos que e
 
 **Girón** cayó 27%. **Piedecuesta** es el único que sube: **+56%**. Los cuatro porcentajes son cálculos de Economía Santander sobre el microdato del DANE, no cifras publicadas por la entidad.
 
-Para el departamento completo, el boletín sí trae el dato: **-21,8%** en el año corrido, con una contribución de **-1,6 puntos porcentuales** a la variación nacional. En ese mismo cuadro, Bolívar, Atlántico y Santander restaron en conjunto 8,8 puntos porcentuales al resultado del país.
+Para el departamento completo, el boletín sí trae el dato: **\-21,8%** en el año corrido, con una contribución de **\-1,6 puntos porcentuales** a la variación nacional. En ese mismo cuadro, Bolívar, Atlántico y Santander restaron en conjunto 8,8 puntos porcentuales al resultado del país.
 
-## ¿Por qué el país crece 29% y aquí no?
+### ¿Por qué el país crece 29% y aquí no?
 
 Porque el crecimiento se está armando en otra parte. Según ese boletín, **Tolima** aportó 9,8 puntos porcentuales a la variación del año corrido. **Risaralda**, 6,7. **Quindío**, 5,6.
 
@@ -34,11 +45,14 @@ Traducido: se está aprobando industria, no apartamentos. De esos 82.426 m² no 
 
 Y el repunte de Piedecuesta tampoco compensa. El municipio crece 56% sobre una base pequeña, mientras Bucaramanga y Floridablanca —que concentran el grueso del mercado— pierden más de la mitad.
 
+***Le puede interesar: [Dónde poner los ahorros en Bucaramanga con tasas del 12%](https://economiasantander.netlify.app/noticias/donde-rinde-mas-tu-plata-cdt-santander/)***
+
+
 ## ¿Qué pasó con la VIS, que era el motor del mercado local?
 
 Las viviendas de interés social aprobadas en el área metropolitana pasaron de **3.159 a 1.084** entre enero-mayo de 2025 y el mismo periodo de 2026.
 
-Se perdieron dos de cada tres: **-65,7%**, según cálculos de Economía Santander sobre el microdato del DANE.
+Se perdieron dos de cada tres: **\-65,7%**, según cálculos de Economía Santander sobre el microdato del DANE.
 
 La paradoja es de fondo. En el país, el área licenciada para VIS creció **50,4%** en el año corrido —y la No VIS, 18,4%—, según ese mismo boletín. El segmento que jalona a Colombia es justo el que se apagó aquí.
 
@@ -46,9 +60,9 @@ Y no es un renglón menor: la VIS concentra cerca del **72%** de las transaccion
 
 ## ¿Por qué se frenó? Tasas en 12% y un tope VIS que se disparó
 
-El **Banco de la República** subió su tasa de intervención a **12%** el 30 de junio de 2026, con un alza de 75 puntos básicos y una votación de 4-2-1. Venía de 11,25%, nivel en el que estaba desde la reunión de marzo, y es el registro más alto desde abril de 2024.
+El **Banco de la República** mantuvo su tasa de intervención a **12%** el 30 de julio de 2026, una decisión por mayoría (4 votos a favor de mantenerla y 3 votos que proponían un incremento de 50 puntos básicos). El último incremento venía de 11,25%, nivel en el que estaba desde la reunión de marzo, y es el registro más alto desde abril de 2024.
 
-Puedes revisar el detalle en nuestra nota sobre [la tasa del Emisor en 12%](/noticias/banco-republica-sube-tasa-intervencion-12/).
+Revise el detalle en nuestra nota sobre [la tasa del Emisor en 12%](/noticias/banco-republica-sube-tasa-intervencion-12/).
 
 La inflación anual de mayo fue 5,8% y la básica, 6%, [según explicó el gerente **Leonardo Villar**](https://www.larepublica.co/economia/decision-de-tasas-de-interes-del-la-junta-directiva-del-banco-de-la-republica-en-junio-de-2026-4426251). Con esa referencia, la hipoteca se encarece por el lado de la cuota.
 
@@ -58,7 +72,7 @@ Es un alza de 23% sobre el salario base —$1.750.905 frente a $1.423.500, segú
 
 Eso mueve el tope de la VIS, que en Bucaramanga, Floridablanca, Girón y Piedecuesta equivale a 150 salarios mínimos por el Decreto 1467 de 2019, citado en el glosario del propio boletín del DANE. Pasó de **$213,5 millones** a **$262,6 millones**.
 
-Haz la cuenta tú mismo: 150 × $1.750.905 = $262.635.750. Es una cuenta nuestra, no una cifra oficial: Vanguardia publicó en enero un tope de $262.032.300, calculado antes de que se conociera el valor definitivo del salario mínimo. Antes de firmar, confirma el tope vigente con Camacol Santander o con Minvivienda.
+Haga cuentas: 150 × $1.750.905 = $262.635.750. Es una cuenta nuestra, no una cifra oficial: Vanguardia publicó en enero un tope de $262.032.300, calculado antes de que se conociera el valor definitivo del salario mínimo. Antes de firmar, confirme el tope vigente con Camacol Santander o con Minvivienda.
 
 Más techo de precio suena bien para el constructor. Pero la misma alza le subió la mano de obra.
 
@@ -80,7 +94,7 @@ Una licencia aprobada hoy no se vuelve obra al día siguiente: entre el permiso 
 
 El hueco de 2026 se va a sentir después. El desempleo del área metropolitana ya venía subiendo por otras razones: **8,3%** en el trimestre marzo-mayo, 0,9 puntos porcentuales más, con 615.000 ocupados y 56.000 desocupados, [según Vanguardia](https://www.vanguardia.com/economia/2026/06/30/aumento-el-desempleo-en-el-area-metropolitana-de-bucaramanga-cuales-son-las-razones/). Las pérdidas de ese trimestre estuvieron en transporte, en actividades artísticas y de cultura, y en alojamiento y comida, no en construcción.
 
-## ¿Qué significa si buscas vivienda VIS?
+## ¿Qué significa si anda buscando vivienda VIS?
 
 Menos licencias hoy significan menos proyectos para escoger después: lo que no se aprueba en 2026 no puede lanzarse al mercado el año entrante.
 
@@ -94,7 +108,7 @@ Ojo con la letra menuda del contrato. Camacol cerró el primer semestre con 78.4
 
 **El subsidio ya no llega del Gobierno Nacional.** Sin nuevas asignaciones de Mi Casa Ya, la ruta pasa por las cajas de compensación, el Fondo Nacional del Ahorro y los programas locales.
 
-Si estás cerca del cierre financiero, el tope de $262,6 millones te da más margen de precio que en 2025. La tasa en 12% te lo devuelve por el lado de la cuota mensual.
+Si usted está cerca del cierre financiero, el tope de $262,6 millones le da más margen de precio que en 2025. La tasa en 12% se lo devuelve por el lado de la cuota mensual.
 
 ## ¿Qué sigue? El dato de junio cierra el semestre
 
