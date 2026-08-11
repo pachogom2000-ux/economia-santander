@@ -1,7 +1,7 @@
 ---
 layout: noticia.njk
 title: "IPC, DTF, usura y UVR: guía de tasas en Colombia 2026"
-date: 2026-07-28
+date: 2026-08-11T08:30:00.000-05:00
 categoria: Educación financiera
 chipTipo: propio
 chipLabel: Redacción propia
