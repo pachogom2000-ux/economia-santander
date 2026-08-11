@@ -17,10 +17,17 @@ const fsSync = require("node:fs");
 //
 // Se calcula al cargar la configuración. En `--serve` hay que reiniciar para
 // que cambie; en producción cada despliegue arranca de cero, así que da igual.
+//
+// Los finales de línea se normalizan ANTES de calcular la huella: en Windows
+// el repositorio se descarga con CRLF y en el servidor de build con LF, así
+// que el mismo archivo daba dos nombres distintos. Eso hacía que comparar un
+// build local contra el publicado (scripts/comprobar-paridad.mjs, la prueba de
+// aceptación de la migración) marcara diferencias en TODAS las páginas por una
+// sola línea: la del <link> a la hoja de estilos.
 const CSS_ORIGEN = "src/assets/style.css";
 const cssHuella = crypto
   .createHash("sha256")
-  .update(fsSync.readFileSync(CSS_ORIGEN))
+  .update(fsSync.readFileSync(CSS_ORIGEN, "utf8").replace(/\r\n/g, "\n"))
   .digest("hex")
   .slice(0, 10);
 const CSS_SALIDA = `assets/css/style.${cssHuella}.css`;
