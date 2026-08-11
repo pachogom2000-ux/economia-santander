@@ -1,6 +1,14 @@
 # Proxy de autenticación del CMS
 
-Este Worker es lo único que falta para sacar el CMS de Netlify. Está **escrito y probado**, pero **sin desplegar**: desplegarlo no cambia nada del portal, porque hasta que no se toque `src/admin/` el CMS sigue entrando por Netlify Identity como hasta ahora.
+Este Worker es lo único que falta para sacar el CMS de Netlify.
+
+**Desplegado el 10 de agosto de 2026** en https://economia-santander-auth.digitautom.workers.dev — vivo pero **sin credenciales todavía**: responde `500 Faltan GITHUB_CLIENT_ID o GITHUB_CLIENT_SECRET` a todo. Eso es lo correcto por ahora y **no cambia nada del portal**: hasta que no se toque `src/admin/`, el CMS sigue entrando por Netlify Identity como hasta hoy y nada apunta a esta URL.
+
+Se desplegó vacío a propósito, para invertir el orden que traía este documento: la OAuth App de GitHub pide una *callback URL* que solo existe después del primer despliegue. Ahora ya se sabe cuál es y se puede pegar de una:
+
+```
+https://economia-santander-auth.digitautom.workers.dev/callback
+```
 
 ## Por qué hace falta
 
@@ -23,23 +31,25 @@ Probado en local con `wrangler dev` y credenciales falsas:
 
 ## Pasos para ponerlo en marcha
 
-Son tres cosas en el navegador y dos comandos. **Nada de esto toca el portal.**
+Queda **una cosa en el navegador** y dos comandos. El despliegue ya está hecho. **Nada de esto toca el portal.**
 
-### 1. Crear la OAuth App en GitHub
+### 1. Crear la OAuth App en GitHub · *paso de navegador, es el único*
 
-En la cuenta de Francisco: **Settings → Developer settings → OAuth Apps → New OAuth App**.
+**Settings → Developer settings → OAuth Apps → New OAuth App** (https://github.com/settings/applications/new).
 
 | Campo | Valor |
 |---|---|
 | Application name | `Economía Santander CMS` |
 | Homepage URL | `https://economiasantander.com` |
-| Authorization callback URL | `https://economia-santander-auth.<subdominio>.workers.dev/callback` |
+| Authorization callback URL | `https://economia-santander-auth.digitautom.workers.dev/callback` |
 
-> El subdominio de `workers.dev` sale al desplegar el Worker por primera vez. Si aún no existe, se pone cualquier cosa y se corrige después: **este campo se puede editar**.
+> **De quién debe ser la app.** Lo natural es la cuenta de Francisco, que es el dueño del repositorio. Si se crea en la de Edwin para no depender de una sesión ajena, **no es un callejón sin salida**: GitHub permite transferir una OAuth App a otro usuario u organización desde sus ajustes, y al hacerlo el Client ID y el secreto siguen siendo los mismos. Los dos campos de arriba también son editables después.
+>
+> Quien entra al CMS se autentica **siempre con su propia cuenta de GitHub**, sea de quien sea la app; lo que la app decide es a nombre de quién se pide el permiso.
 
 Al guardar, GitHub muestra el **Client ID** y deja generar un **Client secret** (se ve una sola vez).
 
-### 2. Poner el Client ID y desplegar
+### 2. Poner el Client ID y volver a desplegar
 
 ```bash
 # 1. Pegar el Client ID en workers/decap-oauth/wrangler.jsonc → vars.GITHUB_CLIENT_ID
@@ -47,7 +57,7 @@ Al guardar, GitHub muestra el **Client ID** y deja generar un **Client secret** 
 npm run oauth:deploy
 ```
 
-La primera vez `wrangler` pide iniciar sesión en Cloudflare (abre el navegador).
+El Client ID es público —viaja en la URL de GitHub—, por eso sí va en el repositorio.
 
 ### 3. Guardar el secreto
 
@@ -61,14 +71,18 @@ Queda cifrado en Cloudflare. **Nunca entra al repositorio.**
 ### 4. Comprobar
 
 ```bash
-curl -sI "https://economia-santander-auth.<subdominio>.workers.dev/auth?provider=github" | head -3
+curl -sI "https://economia-santander-auth.digitautom.workers.dev/auth?provider=github" | head -3
 ```
 
 Debe responder `302` con un `Location` hacia `github.com`. Si es así, el proxy funciona.
 
+Mientras falte cualquiera de los dos valores, responde `500 Faltan GITHUB_CLIENT_ID o GITHUB_CLIENT_SECRET` — que es justo lo que responde hoy.
+
 ## Y solo entonces: conectar el CMS
 
 Este es el paso que **sí** cambia cómo entra Francisco. Se hace **con el sitio todavía en Netlify**, a propósito: así el cambio de CMS y el cambio de hosting no se prueban a la vez, y si algo falla se revierte con `git revert` sin que el hosting tenga nada que ver.
+
+> **Ya está escrito, en la rama local `cms-github-oauth`** (10 de agosto de 2026). No se ha fusionado a `main` a propósito: en cuanto llegue a `main`, Netlify despliega y Francisco entra por GitHub. Si eso pasa antes de que el proxy tenga sus credenciales, **se queda sin poder entrar al CMS**. El orden es: crear la OAuth App → `oauth:deploy` → `oauth:secret` → comprobar el `302` → recién ahí fusionar.
 
 **`src/admin/config.yml`** — reemplazar el bloque `backend:`:
 
@@ -77,7 +91,7 @@ backend:
   name: github
   repo: pachogom2000-ux/economia-santander
   branch: main
-  base_url: https://economia-santander-auth.<subdominio>.workers.dev
+  base_url: https://economia-santander-auth.digitautom.workers.dev
   auth_endpoint: auth
 ```
 

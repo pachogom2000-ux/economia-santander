@@ -1,7 +1,16 @@
 # Migración de Netlify a Cloudflare
 
-Diseño técnico · versión 2 · 30 de julio de 2026
-Estado: **correcciones aplicadas en el repositorio; sin tocar producción**
+Diseño técnico · versión 2 · 30 de julio de 2026 · **estado al 10 de agosto de 2026**
+
+| Fase | Estado |
+|---|---|
+| A · CMS a GitHub | 🔸 **en curso** — proxy desplegado sin credenciales, cambio del CMS escrito en la rama `cms-github-oauth`. Falta **crear la OAuth App en GitHub**: es el único paso de navegador que queda. |
+| B · Cloudflare en paralelo | ✅ hecho y **revalidado el 10 de agosto** contra los 63 commits nuevos: todo en verde |
+| C · Preparar el corte (DNS) | ⬜ sin empezar — los nameservers siguen en `dns1..4.p02.nsone.net` (Netlify) |
+| D · El corte | ⬜ sin empezar |
+| E · Cierre | ⬜ sin empezar |
+
+**Producción intacta:** `economiasantander.com` sigue sirviéndose desde Netlify y nadie ha notado nada.
 
 ---
 
@@ -41,7 +50,7 @@ Pages no está deprecado y funcionaría, pero es el camino secundario. Ventaja p
 | Función de bolsa | `netlify/functions/quote.js` | ✅ ya está en `worker.js`, misma ruta |
 | Página 404 | no existía | ✅ creada con permalink correcto |
 | Cabeceras y HSTS | las ponía Netlify sola | ✅ ahora en `src/_headers`, las leen las dos |
-| **Autenticación del CMS** | **Netlify Identity + git-gateway** | 🔸 proxy escrito y probado, **falta desplegarlo** |
+| **Autenticación del CMS** | **Netlify Identity + git-gateway** | 🔸 proxy **desplegado** y esperando credenciales; falta la OAuth App |
 | DNS | Netlify DNS (NS1) | pendiente, es el corte |
 | Registrador | GoDaddy | no se toca |
 | Correo | **no hay MX ni TXT** | nada que romper |
@@ -83,7 +92,9 @@ Dos decisiones que hay que respetar y están comentadas en el código:
 
 ### 3.4 El proxy de autenticación del CMS (`workers/decap-oauth/`)
 
-Escrito y probado, **sin desplegar**. Es lo único que faltaba para poder sacar el CMS de Netlify. Instrucciones completas en `workers/decap-oauth/README.md`.
+**Desplegado el 10 de agosto de 2026** en https://economia-santander-auth.digitautom.workers.dev, a propósito **sin credenciales**: responde `500 Faltan GITHUB_CLIENT_ID o GITHUB_CLIENT_SECRET` a todo y nada del portal lo apunta todavía. Instrucciones completas en `workers/decap-oauth/README.md`.
+
+Se desplegó vacío para invertir el orden del plan original: la OAuth App de GitHub pide una *callback URL* que **solo existe después del primer despliegue**. El plan decía "se pone cualquier cosa y se corrige después"; ahora no hace falta corregir nada, la URL ya se sabe.
 
 Comprobado en local contra credenciales falsas: redirige bien a GitHub, la cookie de `state` sale `__Host-` + `HttpOnly` + `Secure` + `SameSite=Lax`, rechaza el `callback` con `state` inventado y también con `state` bueno pero sin cookie, el *client secret* no aparece en ninguna respuesta ni cabecera, y el token se entrega **solo a orígenes de una lista blanca** — nunca con `postMessage(..., "*")`, que es el error habitual de estos proxys.
 
@@ -163,9 +174,17 @@ Mientras los dos convivan hay dos copias del sitio en internet. La de `workers.d
 
 Al pasar al dominio propio esto deja de aplicar solo, sin tener que acordarse de quitarlo.
 
+### Revalidada el 10 de agosto de 2026, 63 commits después
+
+La copia de Cloudflare se había quedado en el estado del 30 de julio. Se volvió a desplegar desde `main` y se le pasó el comprobador: **45 páginas** (eran 39), 404 real, cabeceras, los seis símbolos de bolsa y contenido idéntico. Todo en verde.
+
+De paso salió un defecto que no era de Cloudflare sino del build: **la huella del CSS cambiaba según el sistema operativo**. Se calculaba sobre los bytes del archivo, y en Windows el repositorio se descarga con CRLF mientras el servidor de build usa LF — dos huellas para el mismo CSS. Eso hacía que el comparador marcara diferencias en *todas* las páginas por una sola línea, la del `<link>` a la hoja de estilos, y que el aviso "difiere" dejara de significar nada. Corregido normalizando los finales de línea antes de calcular la huella; en el servidor el resultado es idéntico al de hoy, así que el sitio publicado no cambió ni un byte.
+
 ### Sobre la cuenta
 
 Quedó en la cuenta personal de Edwin, con el subdominio `digitautom.workers.dev`. **Conviene decidir antes del corte si el sitio debe vivir en una cuenta de Francisco**, ya que el repositorio y el dominio son suyos. Moverlo después de cortar es más incómodo que hacerlo ahora.
+
+Lo mismo aplica al proxy del CMS y a la OAuth App de GitHub. Con una diferencia tranquilizadora: **una OAuth App de GitHub se puede transferir** a otro usuario u organización conservando su Client ID y su secreto, así que crearla ahora en la cuenta de Edwin no cierra ninguna puerta.
 
 ---
 
@@ -214,13 +233,14 @@ Así, cuando llegue el corte de DNS, el CMS ya lleva semanas funcionando y proba
 
 ### Fase A — CMS a GitHub *(sitio sigue en Netlify)*
 
-> El Worker proxy **ya está escrito y probado** en `workers/decap-oauth/` (§3.4). Falta desplegarlo, que requiere los pasos de navegador.
+> El Worker proxy **ya está desplegado** (§3.4) y el cambio del CMS **ya está escrito** en la rama local `cms-github-oauth`. Queda un solo paso de navegador.
 
-1. Crear una **GitHub OAuth App** en la cuenta de Francisco *(navegador)*.
-2. Pegar el Client ID en `workers/decap-oauth/wrangler.jsonc` y desplegar: `npm run oauth:deploy`, luego `npm run oauth:secret`.
-3. Cambiar `src/admin/config.yml` al backend `github` **con `base_url`**, y quitar el widget de Identity de `src/admin/index.html`. *(El bloque exacto está en el README del proxy.)*
-4. **Probar con Francisco delante**: que entre con GitHub, cree un borrador, lo pase por el flujo editorial y publique. Sitio todavía en Netlify.
-5. Dejarlo rodar unos días.
+1. ⬜ Crear una **GitHub OAuth App** *(navegador — lo único que no se puede automatizar: GitHub no tiene API para crear OAuth Apps)*. Callback: `https://economia-santander-auth.digitautom.workers.dev/callback`.
+2. ⬜ Pegar el Client ID en `workers/decap-oauth/wrangler.jsonc` y desplegar: `npm run oauth:deploy`, luego `npm run oauth:secret`.
+3. ⬜ Comprobar que `/auth?provider=github` responde `302` hacia `github.com`.
+4. ⬜ Fusionar `cms-github-oauth`: backend `github` **con `base_url`** y sin el widget de Identity. *(El bloque exacto está en el README del proxy.)* **No antes del paso 3**: en cuanto esto llegue a `main`, Netlify despliega y el CMS deja de usar Identity; si el proxy no tiene credenciales, Francisco se queda sin poder entrar.
+5. ⬜ **Probar con Francisco delante**: que entre con GitHub, cree un borrador, lo pase por el flujo editorial y publique. Sitio todavía en Netlify.
+6. ⬜ Dejarlo rodar unos días.
 
 > Reversión: `git revert` del commit de `src/admin/`. Vuelve Identity y ya.
 

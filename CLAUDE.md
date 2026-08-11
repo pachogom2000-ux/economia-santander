@@ -2,8 +2,8 @@
 
 Portal de noticias económicas del departamento de Santander (Colombia). Lo dirige Francisco Gómez, periodista económico con más de 20 años de trayectoria. El objetivo es posicionar su marca personal con crecimiento orgánico y buen SEO.
 
-- **Sitio:** https://economiasantander.netlify.app
-- **CMS:** https://economiasantander.netlify.app/admin/
+- **Sitio:** https://economiasantander.com
+- **CMS:** https://economiasantander.com/admin/
 - **Planeación editorial y costos:** [Notion](https://app.notion.com/p/3a98bdb28047818bbe34c102cc5271b8)
 
 ---
@@ -133,13 +133,13 @@ Decap está en `publish_mode: editorial_workflow`. Los guardados van a una rama 
 
 `src/_data/picoyplaca.json` guarda los dígitos de la franja superior y se edita desde el CMS, en "Datos del sitio". Medellín rota por semestres y Bucaramanga por trimestres: se añade la rotación nueva con su fecha de inicio y el sitio cambia solo ese día. No borres la anterior.
 
-`src/_data/portada.json` fija el orden de la portada, también desde "Datos del sitio". La primera nota de `destacadas` es la principal y las siguientes ocupan los cuatro huecos de al lado; lo que no esté en la lista aparece debajo por fecha. Con la lista vacía manda la fecha, como siempre. Un slug que ya no exista se ignora, así que borrar o despublicar una nota nunca deja hueco. **Es una decisión editorial, no técnica: hay que soltar la nota cuando deje de ser relevante, o la portada se congela.**
+`src/_data/destacadas.json` fija el orden de la portada, también desde "Datos del sitio". (Se llamaba `portada.json` y hubo que renombrarlo: creaba una variable global `portada` que le ganaba al front matter de multimedia y dejaba `poster="[object Object]"`. Si algún día se revierte el nombre, el fallo vuelve solo.) La primera nota de `destacadas` es la principal y las siguientes ocupan los cuatro huecos de al lado; lo que no esté en la lista aparece debajo por fecha. Con la lista vacía manda la fecha, como siempre. Un slug que ya no exista se ignora, así que borrar o despublicar una nota nunca deja hueco. **Es una decisión editorial, no técnica: hay que soltar la nota cuando deje de ser relevante, o la portada se congela.**
 
 ---
 
 ## Cosas que ya nos pasaron
 
-- **Netlify puede bloquear despliegues** por créditos agotados ("account credit usage exceeded"). No es error de código. Alternativa gratuita sin ese límite: Cloudflare Pages.
+- **Netlify puede bloquear despliegues** por créditos agotados ("account credit usage exceeded"). No es error de código. Hay una **migración a Cloudflare Workers** en curso —no Pages, que es el camino secundario— documentada en [`docs/migracion-cloudflare.md`](docs/migracion-cloudflare.md): las dos plataformas publican del mismo repositorio y el corte es un cambio de DNS. Lee ese documento antes de tocar `worker.js`, `wrangler.jsonc`, `src/_headers`, `src/404.njk` o `src/admin/`.
 - **Hay más de una sesión trabajando sobre este repo.** Haz `git fetch` antes de empezar y `rebase` antes de hacer push. **Nunca hagas force push**: borrarías trabajo ajeno.
 - **`_site/` no se limpia solo.** Si renombras o borras una nota, quedan carpetas huérfanas en el build local. Borra `_site/` y recompila.
 - **Los datos del ticker y las tasas tienen fecha.** Solo el dólar, el oro y el bitcoin se actualizan en vivo; el resto son valores fijos que hay que refrescar a mano.
