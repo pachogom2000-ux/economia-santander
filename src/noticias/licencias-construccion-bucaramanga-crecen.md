@@ -10,6 +10,11 @@ excerpt: "El área metropolitana licenció 258.890 m² entre enero y mayo: 43%
   vivienda VIS."
 autor: Francisco Gómez - Director
 imagen: /assets/uploads/panoramica-bucaramanga-archivoparticular-economiasantander.webp
+imagenAlt: "Panorámica de Bucaramanga en relación a construcción de vivienda. "
+imagenTitle: "Construcción en Bucaramanga y su área metropolitana. "
+imagenPie: "Se frenó la construcción de vivienda en los municipios del Área
+  Metropolitana de Bucaramanga. "
+imagenCredito: "Archivo particular-Economía Santander. "
 tags: noticias
 updated: 2026-07-28
 ---
