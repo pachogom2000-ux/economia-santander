@@ -12,6 +12,16 @@
       "grupo": "Monedas y cripto"
     },
     {
+      "id": "eur-cop",
+      "nombre": "EUR/COP",
+      "valor": "$3.495 / $3.754",
+      "delta": "compra · venta",
+      "dir": "flat",
+      "vivo": "eur",
+      "title": "Euro en Colombia: precio de compra y de venta en casas de cambio, obtenido automáticamente vía dolarapi.com. Se actualiza en cada visita. El margen entre las dos puntas es mucho mayor que el del dólar porque el euro no tiene un mercado spot interbancario en Colombia.",
+      "grupo": "Monedas y cripto"
+    },
+    {
       "id": "oro",
       "nombre": "Oro",
       "valor": "US$4.050",

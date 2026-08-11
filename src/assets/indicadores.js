@@ -94,6 +94,46 @@
       .catch(function () {});
   }
 
+  /* ---------- EUR/COP: las dos puntas de casa de cambio ---------- */
+  // El euro no tiene en Colombia un equivalente a la TRM: no hay serie oficial
+  // certificada ni mercado spot interbancario. Lo que existe es el precio al
+  // que las casas de cambio compran y venden, y ahí el margen entre las dos
+  // puntas ronda el 7%, contra el 0,1% del dólar. Por eso esta ficha muestra
+  // las dos cifras y no una sola: cuál le sirve al lector depende de si va a
+  // comprar euros o a venderlos. Y por eso declara que no hay gráfica, en vez
+  // de dejar el "Cargando…" colgado para siempre.
+  function cargarEur(card) {
+    var chart = $('[data-rol="chart"]', card);
+    var puntas = $('[data-rol="puntas"]', card);
+
+    dibujar(chart, null, {
+      vacio: 'El euro no tiene serie histórica oficial en Colombia: a diferencia del dólar, no lo certifica la Superintendencia Financiera.'
+    });
+
+    jsonFetch('https://co.dolarapi.com/v1/cotizaciones')
+      .then(function (list) {
+        var eur = null;
+        for (var i = 0; i < list.length; i++) { if (list[i].moneda === 'EUR') { eur = list[i]; break; } }
+        if (!eur) return;
+        var compra = parseFloat(eur.compra), venta = parseFloat(eur.venta);
+        var html = '';
+        if (!isNaN(compra)) html += '<span class="ind-punta"><b>Compra</b> $' + fmt(compra, 2) + '</span>';
+        if (!isNaN(venta)) html += '<span class="ind-punta"><b>Venta</b> $' + fmt(venta, 2) + '</span>';
+        if (!isNaN(compra) && !isNaN(venta) && compra > 0) {
+          html += '<span class="ind-punta cierre"><b>Margen</b> ' + fmt(100 * (venta - compra) / compra, 1) + '%</span>';
+        }
+        if (html) {
+          puntas.innerHTML = html + '<span class="ind-punta-fuente">Euro en casas de cambio vía dolarapi.com</span>';
+          puntas.hidden = false;
+        }
+        if (!isNaN(compra) && !isNaN(venta)) {
+          $('[data-rol="valor"]', card).textContent =
+            '$' + fmt(Math.round(compra), 0) + ' / $' + fmt(Math.round(venta), 0);
+        }
+      })
+      .catch(function () {});
+  }
+
   /* ---------- CoinGecko: oro (PAXG) y bitcoin ---------- */
   function cargarCoinGecko(card, id, nombre, leyenda) {
     var chart = $('[data-rol="chart"]', card);
@@ -164,6 +204,7 @@
       var vivo = card.getAttribute('data-vivo');
       var yahoo = card.getAttribute('data-yahoo');
       if (vivo === 'usd') cargarUsd(card);
+    else if (vivo === 'eur') cargarEur(card);
       else if (vivo === 'oro') cargarCoinGecko(card, 'pax-gold', 'Oro (PAXG)', 'Serie: PAXG/CoinGecko (respaldado 1:1 por una onza troy), últimos 90 días.');
       else if (vivo === 'btc') cargarCoinGecko(card, 'bitcoin', 'Bitcoin', 'Serie: CoinGecko, últimos 90 días.');
       else if (yahoo) cargarYahoo(card, yahoo);

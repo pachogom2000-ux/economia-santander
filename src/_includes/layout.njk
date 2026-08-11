@@ -206,7 +206,10 @@
     <div class="ticker-track" id="ticker-track">
       <div class="ticker-set">
         {%- for ind in mercado.indicadores %}
-        <a class="ticker-item{% if ind.vivo %} live{% endif %}{% if ind.vivo == 'usd' %} js-usd-item{% endif %}" href="/indicadores/#{{ ind.id }}" title="{{ ind.title }}{% if ind.vivo or ind.yahoo %} Toca para ver la gráfica.{% else %} Toca para ver el detalle.{% endif %}">
+        {# La clase del ítem se genera a partir de `vivo`, no con un `if` por
+           moneda: así basta con añadir el indicador en mercado.json y darle su
+           bloque en el script. Antes solo el dólar tenía gancho. #}
+        <a class="ticker-item{% if ind.vivo %} live js-{{ ind.vivo }}-item{% endif %}" href="/indicadores/#{{ ind.id }}" title="{{ ind.title }}{% if ind.vivo or ind.yahoo %} Toca para ver la gráfica.{% else %} Toca para ver el detalle.{% endif %}">
           <span class="name">{{ ind.nombre }}</span>
           <span class="val{% if ind.vivo %} js-{{ ind.vivo }}-val{% endif %}">{{ ind.valor }}</span>
           <span class="delta {{ ind.dir or 'flat' }}{% if ind.vivo %} js-{{ ind.vivo }}-delta{% endif %}">{{ ind.delta }}</span>
@@ -535,12 +538,49 @@
 
     var elLive = document.getElementById('trm-live');
 
-    // ---------- 4) USD/COP: último cierre del dólar spot (dolarapi.com) ----------
+    // ---------- 4) Monedas en vivo (dolarapi.com) ----------
+    // Una sola petición trae el dólar y el euro. Se tratan distinto a
+    // propósito: ver el bloque del euro más abajo.
     fetch('https://co.dolarapi.com/v1/cotizaciones')
       .then(function (r) { return r.ok ? r.json() : Promise.reject(); })
       .then(function (list) {
-        var usd = null;
-        for (var i = 0; i < list.length; i++) { if (list[i].moneda === 'USD') { usd = list[i]; break; } }
+        function moneda(codigo) {
+          for (var i = 0; i < list.length; i++) {
+            if (list[i].moneda === codigo) return list[i];
+          }
+          return null;
+        }
+
+        // ----- Euro: se muestran las DOS puntas -----
+        // El euro no tiene mercado spot interbancario en Colombia; lo que hay
+        // es precio de casa de cambio. Ahí la diferencia entre lo que le
+        // compran y lo que le venden ronda el 7%, contra el 0,1% del dólar.
+        // Dar una sola cifra sería engañar: la punta que le sirve al lector
+        // depende de si va a comprar euros o a venderlos.
+        var eur = moneda('EUR');
+        if (eur) {
+          var ec = parseFloat(eur.compra), ev = parseFloat(eur.venta);
+          if (!isNaN(ec) && !isNaN(ev)) {
+            each('.js-eur-val', function (el) {
+              el.textContent = '$' + fmtNum(Math.round(ec), 0) + ' / $' + fmtNum(Math.round(ev), 0);
+            });
+            var fe = '';
+            try {
+              fe = ' · ' + new Intl.DateTimeFormat('es-CO', { day: 'numeric', month: 'short', timeZone: 'America/Bogota' })
+                .format(new Date(eur.fechaActualizacion));
+            } catch (e) {}
+            each('.js-eur-item', function (el) {
+              el.title = 'Euro en Colombia, precio de casa de cambio vía dolarapi.com' + fe + '.'
+                + ' · Compra $' + fmtNum(ec, 2)
+                + ' · Venta $' + fmtNum(ev, 2)
+                + ' · Margen entre las dos puntas: ' + fmtNum(100 * (ev - ec) / ec, 1) + '%.'
+                + ' Toca para ver el detalle.';
+            });
+          }
+        }
+
+        // ----- Dólar: se muestra el último cierre spot -----
+        var usd = moneda('USD');
         if (!usd) return;
         var cierre = parseFloat(usd.ultimoCierre);
         if (!isNaN(cierre)) {
