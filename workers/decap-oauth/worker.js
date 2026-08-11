@@ -94,8 +94,15 @@ export default {
     const ruta = url.pathname.replace(/\/+$/, "") || "/";
     const origenes = origenesPermitidos(env);
 
+    // Se dice CUÁL falta: el mensaje genérico obligaba a adivinar entre una
+    // variable que está en el repositorio y un secreto que no se puede leer.
+    // Ninguno de los dos nombres es información sensible.
     if (!env.GITHUB_CLIENT_ID || !env.GITHUB_CLIENT_SECRET) {
-      return new Response("Faltan GITHUB_CLIENT_ID o GITHUB_CLIENT_SECRET.", {
+      const faltan = [
+        env.GITHUB_CLIENT_ID ? null : "GITHUB_CLIENT_ID (va en wrangler.jsonc)",
+        env.GITHUB_CLIENT_SECRET ? null : "GITHUB_CLIENT_SECRET (npm run oauth:secret)",
+      ].filter(Boolean);
+      return new Response(`Falta configurar: ${faltan.join(" y ")}.`, {
         status: 500,
         headers: HTML,
       });

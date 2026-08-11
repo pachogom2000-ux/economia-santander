@@ -8,8 +8,8 @@
 
   "vars": {
     // El client id de una OAuth App es público (viaja en la URL de GitHub).
-    // Se rellena al crear la app; ver README.md.
-    "GITHUB_CLIENT_ID": "",
+    // App "Economía Santander CMS", creada el 10 de agosto de 2026.
+    "GITHUB_CLIENT_ID": "Ov23lihP9bvokuzeJ58B",
     // Orígenes extra desde los que se acepta el CMS, separados por coma.
     // Los del dominio real ya están en el código; aquí va el de pruebas.
     "ORIGENES_PERMITIDOS": ""
