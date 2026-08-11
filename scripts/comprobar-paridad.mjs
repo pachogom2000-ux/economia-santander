@@ -9,8 +9,15 @@
  * No modifica nada: solo hace peticiones GET.
  */
 
+// La referencia era el dominio real mientras lo servía Netlify. Desde el corte
+// del 10 de agosto de 2026 ese dominio ES Cloudflare, así que dejarlo así hacía
+// que la herramienta se comparara consigo misma y diera verde siempre: una
+// prueba que no puede fallar no prueba nada. La referencia pasa a ser la copia
+// de Netlify, que sigue construyendo del mismo repositorio.
+// Cuando se retire Netlify, esta comprobación pierde su punto de comparación y
+// habrá que jubilarla o apuntarla a otra cosa.
 const candidato = (process.argv[2] || "http://127.0.0.1:8787").replace(/\/+$/, "");
-const referencia = (process.argv[3] || "https://economiasantander.com").replace(/\/+$/, "");
+const referencia = (process.argv[3] || "https://economiasantander.netlify.app").replace(/\/+$/, "");
 
 const SIMBOLOS = ["EC", "CIB", "TGLS", "BZ=F", "^GSPC", "ICOLCAP.CL"];
 const verde = (t) => `\x1b[32m${t}\x1b[0m`;
