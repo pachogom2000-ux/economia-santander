@@ -1,6 +1,19 @@
+# Se entra con la cuenta de GitHub, no con usuario y contrasena de Netlify.
+#
+# git-gateway esta deprecado por la propia Decap y solo funciona dentro de
+# Netlify, asi que no puede sobrevivir a la migracion. El reemplazo necesita
+# alguien que intercambie el codigo de GitHub por un token, porque ese paso usa
+# un secreto que no puede vivir en el navegador: eso es el Worker de
+# workers/decap-oauth/.
 backend:
-  name: git-gateway
+  name: github
+  repo: pachogom2000-ux/economia-santander
   branch: main
+  # OBLIGATORIO. Sin base_url, Decap manda el login a https://api.netlify.com,
+  # que es su valor por defecto: se saldria de Netlify por la puerta y se
+  # volveria a entrar por la ventana.
+  base_url: https://economia-santander-auth.digitautom.workers.dev
+  auth_endpoint: auth
 
 # Los guardados van a una rama con pull request, no a main.
 # Redactar y revisar genera deploy previews, que no consumen creditos.
