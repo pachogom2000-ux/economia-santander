@@ -4,13 +4,25 @@ Diseño técnico · versión 2 · 30 de julio de 2026 · **estado al 10 de agost
 
 | Fase | Estado |
 |---|---|
-| A · CMS a GitHub | 🔸 **en curso** — proxy desplegado sin credenciales, cambio del CMS escrito en la rama `cms-github-oauth`. Falta **crear la OAuth App en GitHub**: es el único paso de navegador que queda. |
-| B · Cloudflare en paralelo | ✅ hecho y **revalidado el 10 de agosto** contra los 63 commits nuevos: todo en verde |
-| C · Preparar el corte (DNS) | ⬜ sin empezar — los nameservers siguen en `dns1..4.p02.nsone.net` (Netlify) |
-| D · El corte | ⬜ sin empezar |
-| E · Cierre | ⬜ sin empezar |
+| A · CMS a GitHub | ✅ **hecho** — backend `github` + proxy OAuth propio; probado leyendo y **escribiendo** (Francisco publicó y borró una nota por el flujo editorial) |
+| B · Cloudflare en paralelo | ✅ hecho y revalidado |
+| C · Preparar el corte (DNS) | ✅ zona *Active*, certificado emitido y comprobado con un handshake TLS |
+| D · El corte | ✅ **hecho el 10 de agosto de 2026** — el apex lo sirve el Worker |
+| E · Cierre | 🔸 falta `www`, retirar Netlify y reenviar el sitemap |
 
-**Producción intacta:** `economiasantander.com` sigue sirviéndose desde Netlify y nadie ha notado nada.
+**`economiasantander.com` ya se sirve desde Cloudflare.** El comprobador de paridad dio todo en verde contra Netlify: 45 páginas, 404 real, cabeceras, los 6 símbolos de bolsa y contenido byte a byte.
+
+### La lección que costó cara: Cloudflare no construye solo
+
+Netlify construía con cada push. **Cloudflare no**: un Worker solo cambia cuando alguien lo despliega. El corte se hizo sin dejar esa pieza cableada, y el resultado fue inmediato — Francisco publicó una nota, el pull request se fusionó, y el portal siguió mostrando lo de antes. Nada estaba roto: sencillamente nadie había desplegado.
+
+Está resuelto en `.github/workflows/publicar-en-cloudflare.yml`. **El orden correcto era al revés: la construcción automática va ANTES del corte, no después.** Si alguien repite esta migración en otro sitio, ese es el paso que este plan tenía mal colocado.
+
+### Lo que falta
+
+- **`www`** sigue resolviendo a Netlify, que hace su 301 al apex. Funciona, pero mantiene a Netlify en el camino. Para traerlo hace falta la regla de redirección (permiso *Rules & Configuration* sobre la zona) y cambiar sus registros.
+- **El secret `CLOUDFLARE_API_TOKEN`** en el repositorio: sin él, el flujo construye y avisa, pero no publica.
+- Retirar `netlify.toml` y `netlify/` cuando pase el mes de convivencia, y mover entonces el aviso a IndexNow al flujo de Actions.
 
 ---
 

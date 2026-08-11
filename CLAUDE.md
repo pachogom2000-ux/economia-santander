@@ -69,7 +69,14 @@ Esto es periodismo económico. Un dato falso destruye la credibilidad y puede ll
 
 ## Arquitectura
 
-Sitio estático con **Eleventy 3** y **Decap CMS**, desplegado en Netlify desde GitHub.
+Sitio estático con **Eleventy 3** y **Decap CMS**.
+
+**El dominio lo sirve Cloudflare Workers desde el 10 de agosto de 2026.** Netlify sigue vivo y construyendo del mismo repositorio (es la vuelta atrás; no se toca durante un mes), pero `economiasantander.com` ya no pasa por ahí.
+
+Dos consecuencias que hay que tener presentes:
+
+- **Cloudflare NO construye solo con un push.** Un Worker solo cambia cuando alguien lo despliega. De eso se encarga `.github/workflows/publicar-en-cloudflare.yml`. **Si ese flujo no corre o no tiene credencial, el CMS puede fusionar una nota en `main` y el portal seguir mostrando lo de antes** — pasó el 10 de agosto. Para publicar a mano: `npx @11ty/eleventy && npx wrangler deploy`.
+- **El CMS se entra con GitHub**, no con Netlify Identity, y **solo por `https://economiasantander.com/admin/`**. Desde la vieja dirección de netlify el login se queda colgado sin explicar por qué: el proxy de autenticación solo entrega el token a los orígenes del dominio real, a propósito.
 
 ```
 src/
@@ -141,6 +148,8 @@ Decap está en `publish_mode: editorial_workflow`. Los guardados van a una rama 
 
 - **Netlify puede bloquear despliegues** por créditos agotados ("account credit usage exceeded"). No es error de código. Hay una **migración a Cloudflare Workers** en curso —no Pages, que es el camino secundario— documentada en [`docs/migracion-cloudflare.md`](docs/migracion-cloudflare.md): las dos plataformas publican del mismo repositorio y el corte es un cambio de DNS. Lee ese documento antes de tocar `worker.js`, `wrangler.jsonc`, `src/_headers`, `src/404.njk` o `src/admin/`.
 - **Hay más de una sesión trabajando sobre este repo.** Haz `git fetch` antes de empezar y `rebase` antes de hacer push. **Nunca hagas force push**: borrarías trabajo ajeno.
-- **`_site/` no se limpia solo.** Si renombras o borras una nota, quedan carpetas huérfanas en el build local. Borra `_site/` y recompila.
+- **`_site/` no se limpia solo.** Si renombras o borras una nota, quedan carpetas huérfanas en el build local. Borra `_site/` y recompila. **Ahora esto es más grave que antes**: con Netlify el build salía siempre de un clon limpio, pero un despliegue manual a Cloudflare sube tu `_site/` tal como esté — una nota borrada volvería a publicarse. (En Windows `rm -rf _site` puede fallar con *Device or resource busy* por OneDrive o el antivirus; en ese caso `find _site -mindepth 1 -delete`.)
+- **Publicar y no ver el cambio no siempre es un fallo del CMS.** El 10 de agosto de 2026 Francisco publicó una nota, el pull request se fusionó bien y el portal siguió igual: faltaba el despliegue a Cloudflare. Antes de buscar el error en el CMS, mira si el flujo de Actions corrió.
+- **Una nota nueva no entra sola a la portada.** Los cinco espacios de arriba están fijados en `destacadas.json`, y las secciones *complementarias* solo muestran su contador. Una nota de "Comercio y consumo" existe, se indexa y sale en su sección, pero no aparece en la portada hasta que se fije. No es un error.
 - **Los datos del ticker y las tasas tienen fecha.** Solo el dólar, el oro y el bitcoin se actualizan en vivo; el resto son valores fijos que hay que refrescar a mano.
 - **Isagén no cotiza en la BVC** desde 2017 y **Bancolombia cotiza como Grupo Cibest**. Ojo al citar acciones.
