@@ -1,0 +1,76 @@
+# Publica el portal en Cloudflare con cada cambio en `main`.
+#
+# POR QUÉ EXISTE: Netlify construía solo con cada push. Cloudflare no: un
+# Worker solo cambia cuando alguien lo despliega. Al pasar el dominio a
+# Cloudflare sin esto, una nota publicada desde el CMS se fusionaba en `main`
+# y el portal seguía mostrando lo de antes. Pasó de verdad, el 10 de agosto de
+# 2026, con la nota de las tiendas de barrio.
+#
+# Mientras Netlify siga vivo, los dos construyen del mismo repositorio: es la
+# convivencia del plan (docs/migracion-cloudflare.md), no una duplicación por
+# descuido.
+
+name: Publicar en Cloudflare
+
+on:
+  push:
+    branches: [main]
+  # Permite lanzarlo a mano desde la pestaña Actions, sin tener que inventar
+  # un commit para republicar.
+  workflow_dispatch:
+
+concurrency:
+  # Dos publicaciones seguidas se hacen en fila, no a la vez. No se cancela la
+  # que va corriendo: cada push tiene que llegar a publicarse.
+  group: cloudflare-produccion
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Construir el sitio
+        run: npx @11ty/eleventy
+
+      # El sitio no puede quedarse sin página de error: sin este archivo,
+      # Cloudflare respondería 200 con la portada a cualquier URL inexistente.
+      - name: Comprobar que existe la 404
+        run: test -f _site/404.html
+
+      # El secret no se puede consultar desde `if:` a nivel de job, así que se
+      # mira aquí. Sin credencial el flujo termina en verde con un aviso, en
+      # vez de fallar y llenar de correos a quien no puede arreglarlo.
+      - name: ¿Hay credencial de Cloudflare?
+        id: credencial
+        run: |
+          if [ -n "${{ secrets.CLOUDFLARE_API_TOKEN }}" ]; then
+            echo "hay=si" >> "$GITHUB_OUTPUT"
+          else
+            echo "hay=no" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Desplegar
+        if: steps.credencial.outputs.hay == 'si'
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: a1f21e64e97d7c01c2fd7ef7a7f9b66a
+
+      - name: Aviso si falta la credencial
+        if: steps.credencial.outputs.hay == 'no'
+        run: |
+          echo "::warning::Falta el secret CLOUDFLARE_API_TOKEN. El sitio se construyó pero NO se publicó en Cloudflare: economiasantander.com sigue mostrando el despliegue anterior."
+
+# PENDIENTE para cuando se retire Netlify (ver Fase E del plan): añadir aquí el
+# aviso a IndexNow — `node scripts/indexnow.mjs` — que hoy lo hace el build de
+# Netlify. Ponerlo antes de tiempo avisaría dos veces por cada publicación.
