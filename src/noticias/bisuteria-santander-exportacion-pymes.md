@@ -1,7 +1,7 @@
 ---
 layout: noticia.njk
 title: "Bisutería en Santander: exporta, pero sin cifra propia"
-date: 2026-08-09T20:49:00.000-05:00
+date: 2026-08-12T07:54:00.000-05:00
 categoria: Emprendimiento y pymes
 chipTipo: propio
 chipLabel: Redacción propia
