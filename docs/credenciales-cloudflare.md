@@ -1,5 +1,23 @@
 # Credenciales de Cloudflare
 
+## La que publica el portal (no la borres)
+
+Desde el 14 de agosto de 2026, quien publica `economiasantander.com` **no es una persona**: es el flujo `.github/workflows/publicar-en-cloudflare.yml`, con el secret **`CLOUDFLARE_API_TOKEN`** guardado en el repositorio.
+
+Ese secret es un token llamado **`despliegue-economia-santander`**, con **un solo permiso** —*Entire Account → Workers Scripts → Edit*— y **sin caducidad**. Comprobado en las dos direcciones al crearlo: publica Workers, y **no puede leer ni tocar el DNS de la zona**. Es a propósito: la llave que vive en un repositorio debe poder hacer exactamente una cosa.
+
+> **Si ese token se revoca o se cambia, el portal deja de actualizarse sin avisar a nadie.** El CMS seguirá fusionando notas en `main` y el sitio seguirá mostrando lo de antes. Ese fallo ya ocurrió una vez, el 10 de agosto, y no es evidente desde el CMS: hay que mirar la pestaña **Actions** del repositorio.
+>
+> Antes hubo un token de migración con caducidad de 7 días haciendo este trabajo. Se cambió justo por eso: una llave de CI **no debe caducar** salvo que alguien tenga la tarea de renovarla en el calendario.
+
+Para reponerlo: crear un token nuevo con ese único permiso y sin caducidad, y guardarlo con
+`gh secret set CLOUDFLARE_API_TOKEN --repo pachogom2000-ux/economia-santander`.
+Después **lanzar el flujo a mano desde Actions y confirmar que el paso "Desplegar" sale en verde** — no basta con guardarlo.
+
+---
+
+## Tokens para trabajar a mano
+
 Dos caminos. El segundo es el que conviene si no vas a estar frente al teclado en el momento exacto.
 
 ---
