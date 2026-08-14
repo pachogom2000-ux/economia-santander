@@ -1,7 +1,7 @@
 ---
 layout: noticia.njk
 title: "PIB de Santander 2025: creció 2,4% y perdió terreno"
-date: 2026-08-10
+date: 2026-08-14T06:00:00.000-05:00
 categoria: Industria
 chipTipo: propio
 chipLabel: "Fuente: Cámara de Comercio de Bucaramanga"
