@@ -15,7 +15,6 @@ imagenTitle: Economía en el departamento de Santander
 imagenPie: "Santander es más que hidrocarburos y palma. Esta serie recorre 10
   cadenas productivas. "
 imagenCredito: "Archivo particular, elaboración Economía Santander. "
-eleventyExcludeFromCollections: true
 tags: noticias
 ---
 Cuando se habla de la economía de Santander, la conversación suele terminar en dos palabras: **Barrancabermeja** y **palma**. La refinería y el aceite dominan los titulares, pero no explican dónde trabaja la mayoría de los santandereanos.
