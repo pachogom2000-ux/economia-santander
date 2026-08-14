@@ -124,6 +124,16 @@ collections:
     extension: "md"
     fields:
       - { label: "layout", name: "layout", widget: "hidden", default: "noticia.njk" }
+      # Este interruptor era invisible en el CMS y ya dejó tres notas mudas
+      # (renta el 6 de agosto, cacao el 10, PIB el 14): Francisco las editaba y
+      # publicaba una y otra vez, y la marca seguía ahí sin que nadie pudiera
+      # verla ni quitarla. Estando a la vista, se controla desde aquí.
+      - label: "Dejar como borrador (no sale en el portal)"
+        name: "eleventyExcludeFromCollections"
+        widget: "boolean"
+        default: false
+        required: false
+        hint: "Encendido, la nota NO aparece en la portada, ni en su sección, ni en el sitemap, y se marca noindex. Apágalo cuando la nota esté lista para salir."
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Fecha", name: "date", widget: "datetime" }
       - label: "Categoría"

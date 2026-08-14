@@ -15,7 +15,6 @@ imagenTitle: Foto relacionada con PIB de Santander
 imagenPie: "Santander se situó como el departamento con el tercer PIB per cápita
   del país en 2025. "
 imagenCredito: Archivo particular / Economía Santander
-eleventyExcludeFromCollections: true
 tags: noticias
 ---
 El Producto Interno Bruto de Santander llegó a **$64,1 billones de pesos en 2025** y creció **2,4%** frente al año anterior. El país creció **2,6%**, según el informe de PIB departamental que publicó el Centro de Información Empresarial de la [Cámara de Comercio de Bucaramanga](https://www.camaradirecta.com/imagenes/vdo_conexion/cone_058a103c4708bdb8ee2af2c3f59e634ecdbc0cd2.pdf) con datos del DANE.
