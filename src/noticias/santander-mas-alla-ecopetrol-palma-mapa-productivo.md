@@ -1,14 +1,22 @@
 ---
 layout: noticia.njk
 title: "Economía de Santander: los 10 sectores más allá de Ecopetrol"
-date: 2026-08-03
-categoria: "Industria"
-chipTipo: "propio"
-chipLabel: "Redacción propia"
-excerpt: "Santander es la cuarta economía de Colombia con el 6,4% del PIB. Más allá del petróleo y la palma, diez cadenas productivas sostienen su empleo y sus exportaciones."
-autor: "Francisco Gómez - Director"
-tags: noticias
+date: 2026-08-13T21:48:00.000-05:00
+categoria: Industria
+chipTipo: propio
+chipLabel: Redacción propia
+excerpt: Santander es la cuarta economía de Colombia con el 6,4% del PIB. Más
+  allá del petróleo y la palma, diez cadenas productivas sostienen su empleo y
+  sus exportaciones.
+autor: Francisco Gómez - Director
+imagen: /assets/uploads/especial-departamento-santander-archivo-particular.webp
+imagenAlt: Especial economía en Santander
+imagenTitle: Economía en el departamento de Santander
+imagenPie: "Santander es más que hidrocarburos y palma. Esta serie recorre 10
+  cadenas productivas. "
+imagenCredito: "Archivo particular, elaboración Economía Santander. "
 eleventyExcludeFromCollections: true
+tags: noticias
 ---
 Cuando se habla de la economía de Santander, la conversación suele terminar en dos palabras: **Barrancabermeja** y **palma**. La refinería y el aceite dominan los titulares, pero no explican dónde trabaja la mayoría de los santandereanos.
 
@@ -19,6 +27,9 @@ Esta serie recorre esas **diez cadenas**, una por entrega. Empezamos por el mapa
 ## Qué tan grande es la economía de Santander
 
 Santander cerró 2025 como la **cuarta economía del país**, detrás de Bogotá, Antioquia y Valle del Cauca. Aportó el **6,4% del PIB nacional**: $119 billones de los $1.852 billones que produjo Colombia, según las cuentas departamentales del [DANE](https://www.dane.gov.co/index.php/estadisticas-por-tema/cuentas-nacionales/cuentas-nacionales-departamentales).
+
+***Le puede interesar: [Bisutería en Santander: exporta, pero sin cifra propia](https://economiasantander.com/noticias/bisuteria-santander-exportacion-pymes/)***
+
 
 Dos datos matizan esa foto. El primero: la participación **bajó** frente al 6,5% de 2024, y Cundinamarca viene pisándole los talones con 6,3%.
 
@@ -40,6 +51,8 @@ Detrás de esa cifra hay unas **18.000 familias** en cerca de **40 municipios**,
 
 Pero hay una paradoja que vale una entrega completa: Santander es el mayor **productor**, no el mayor **exportador**. Buena parte del grano sale del departamento sin transformar, y el valor agregado se queda en otra parte.
 
+***Lea más aquí: [Cacao de Santander: 41% del país con el precio en caída](https://economiasantander.com/noticias/cacao-santander-produccion-nacional/)***
+
 ## Avícola: la despensa de proteína del país
 
 Santander concentra alrededor del **25% de la producción nacional de huevo y pollo**, lo que lo convierte en la segunda zona avícola de Colombia. El valor de esa producción supera los **$4 billones al año**, de acuerdo con cifras de [Fenavi](https://fenavi.org).
@@ -60,19 +73,19 @@ La distancia entre ambas cifras es la historia: más del **94%** de las unidades
 
 Cada entrega toma una cadena, mide su peso real y busca a quienes viven de ella:
 
-- **Cacao** — el liderazgo nacional y la paradoja exportadora
-- **Avícola** — cuánto empleo genera de verdad
-- **Café** — la estructura del negocio en los cafetales de altura
-- **Bovina** — leche, carne y la presión ambiental del Magdalena Medio
-- **Calzado** — qué queda del clúster que fue potencia
-- **Oro** — la minería de Vetas y California frente a Santurbán
-- **Curtiembres** — el cuero entre la demanda y la norma ambiental
-- **Joyería** — de la mina al taller
-- **Bisutería** — el negocio que exporta sin oro
-- **Ovinos y caprinos** — el sector más pequeño de García Rovira
+* **Cacao** — el liderazgo nacional y la paradoja exportadora. Lea acá la [nota completa](https://economiasantander.com/noticias/cacao-santander-produccion-nacional/).
+* **Avícola** — cuánto empleo genera de verdad
+* **Café** — la estructura del negocio en los cafetales de altura. Siga [este enlace](https://economiasantander.com/noticias/cafe-especial-santander-mercados-europeos/). 
+* **Bovina** — leche, carne y la presión ambiental del Magdalena Medio
+* **Calzado** — qué queda del clúster que fue potencia. Lea [más aquí.](https://economiasantander.com/noticias/calzado-bucaramanga-cluster-industria/) 
+* **Oro** — la minería de Vetas y California frente a Santurbán. [Siga leyendo](https://economiasantander.com/noticias/joyeria-bucaramanga-oro-cadena/). 
+* **Curtiembres** — el cuero entre la demanda y la norma ambiental
+* **Joyería** — de la mina al taller. 
+* **Bisutería** — el negocio que exporta sin oro. Le contamos [más aquí.](https://economiasantander.com/noticias/bisuteria-santander-exportacion-pymes/) 
+* **Ovinos y caprinos** — el sector más pequeño de García Rovira. Lea el [reporte completo](https://economiasantander.com/noticias/ovinos-caprinos-garcia-rovira-santander/). 
 
 ## Nota sobre las cifras
 
-Los datos macroeconómicos provienen de las cuentas departamentales del DANE con corte a 2025. Las cifras sectoriales corresponden a los reportes más recientes publicados por cada gremio y se citan con su fuente en cada entrega.
+Los datos macroeconómicos provienen de las cuentas departamentales del DANE con corte a 2025. Las cifras sectoriales **corresponden a los reportes más recientes publicados** por cada gremio y se citan con su fuente en cada entrega.
 
 Cuando una cifra gremial no coincide con la oficial —ocurre con frecuencia en empleo— esta serie presenta ambas y explica la diferencia, en lugar de escoger la más conveniente.
