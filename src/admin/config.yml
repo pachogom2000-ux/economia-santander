@@ -43,14 +43,20 @@ collections:
             widget: "list"
             required: false
             hint: "Arrastra para reordenar. La primera es la nota principal de la portada."
+            # Aquí había un campo "relation". Decap lo lista por nombre de
+            # archivo y solo muestra 20 opciones, así que al pasar de 20 notas
+            # las últimas del alfabeto desaparecían del desplegable: la de
+            # turismo y la de UVR dejaron de poderse fijar.
+            #
+            # Decap no permite ordenar un campo de relación por fecha. Por eso
+            # las opciones se generan en cada build, de la más reciente a la más
+            # antigua: src/admin-config.11ty.js reemplaza la marca de abajo.
+            # No escribas las opciones a mano; se pierden en el siguiente build.
             field:
               label: "Nota"
               name: "nota"
-              widget: "relation"
-              collection: "noticias"
-              search_fields: ["title"]
-              display_fields: ["title"]
-              value_field: "{{slug}}"
+              widget: "select"
+              # OPCIONES-GENERADAS-EN-EL-BUILD
 
       - name: "picoyplaca"
         label: "Pico y placa"

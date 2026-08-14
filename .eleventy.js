@@ -64,7 +64,11 @@ module.exports = function (eleventyConfig) {
     },
   });
   eleventyConfig.addPassthroughCopy("src/assets");
-  eleventyConfig.addPassthroughCopy("src/admin");
+  // Del panel solo se copia el index. El config.yml NO se copia: lo genera
+  // src/admin-config.11ty.js, que le inyecta las opciones del desplegable de
+  // "Orden de la portada" ordenadas por fecha. Si se copiara tal cual, pisaria
+  // al generado y el desplegable volveria a quedarse sin las notas nuevas.
+  eleventyConfig.addPassthroughCopy("src/admin/index.html");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
   // Cabeceras del sitio. Netlify y Cloudflare leen el mismo archivo, así que
   // las dos plataformas sirven exactamente igual mientras convivan.
