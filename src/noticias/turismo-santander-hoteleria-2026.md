@@ -1,12 +1,20 @@
 ---
 layout: noticia.njk
 title: "Turismo en Santander: menos empleo pese al repunte de abril"
-date: 2026-07-28
-categoria: "Turismo y hotelería"
-chipTipo: "propio"
-chipLabel: "Redacción propia"
-excerpt: "El alojamiento de los Santanderes creció en ingresos en abril, pero el empleo cae en el acumulado del año. Cuánta plata mueve y qué le falta para despegar."
-autor: "Francisco Gómez - Director"
+date: 2026-08-13T22:53:00.000-05:00
+categoria: Turismo y hotelería
+chipTipo: propio
+chipLabel: Redacción propia
+excerpt: El alojamiento de los Santanderes creció en ingresos en abril, pero el
+  empleo cae en el acumulado del año. Cuánta plata mueve y qué le falta para
+  despegar.
+autor: Francisco Gómez - Director
+imagen: /assets/uploads/turismo-santander.webp
+imagenAlt: "Turismo en la Mesa de los Santos, Santander. "
+imagenTitle: "El turismo sigue siento una actividad fuerte, pero el empleo disminuye. "
+imagenPie: "Los ingresos en los Santanderes (agrupa a Santander y Norte de
+  Santander) aumentan en 2026, pero se perdió el personal ocupado. "
+imagenCredito: "Foto: Archivo particular/Economía Santander. "
 tags: noticias
 ---
 El alojamiento de **los Santanderes** —la región con la que el DANE agrupa a Santander y Norte de Santander— fue el que más creció en ingresos del país en abril de 2026: **3,4%** real frente al mismo mes de 2025. En ese mismo mes, el sector perdió **5,2%** de su personal ocupado.
@@ -19,13 +27,13 @@ La foto más detallada disponible es la de enero de 2026 en **Bucaramanga**. Ese
 
 El desglose importa más que el total. Restaurantes y gastronomía se llevaron **$34.890 millones**; alojamiento y hoteles, **$20.532 millones**; bares, **$1.343 millones**.
 
-Haz la división: por cada peso que factura un hotel en Bucaramanga, la gastronomía factura **$1,70**. El negocio del turismo acá es más de mesa que de cama.
+Haga la división: por cada peso que factura un hotel en Bucaramanga, la gastronomía factura **$1,70**. El negocio del turismo acá es más de mesa que de cama.
 
 Con una tarifa promedio de **$264.230** por noche, esos $20.532 millones equivalen a unas **77.700 noches de hotel** vendidas en un solo mes, según cálculos de Economía Santander sobre las cifras publicadas por Vanguardia.
 
 La ciudad tenía entonces **4.284 empresas activas** del sector: 3.328 establecimientos gastronómicos, 496 bares y apenas **460 de alojamiento**.
 
-## ¿Cuántos empleos sostiene el sector?
+### ¿Cuántos empleos sostiene el sector?
 
 Acá no hay una cifra actualizada. La medición departamental que más circula —**$776.000 millones** en ventas anuales y **8.247 empleos**, atribuida a la **Cámara de Comercio de Bucaramanga**— fue publicada por La República en junio de 2023. Tiene tres años encima.
 
@@ -37,15 +45,16 @@ Menos empleados y mejor pagados: el patrón de un sector que ajusta plantilla y 
 
 **Cotelco** atribuye la presión al crecimiento del alojamiento informal y de las plataformas digitales sin regulación, frente a una hotelería formal que carga con la tributación.
 
+***Lea también: [Bucaramanga lidera la creación de empleo formal en el oriente colombiano durante el primer semestre](https://economiasantander.com/noticias/bucaramanga-lidera-creacion-empleo-formal/)***
+
+
 El recorte de personal no es solo de los Santanderes. En mayo de 2026 el empleo del alojamiento cayó **4,8%** en todo el país y los ingresos reales del sector cayeron **7,5%**, según el DANE.
 
-Los dos datos no son del mismo mes: el alza de los Santanderes es de abril y la caída nacional es de mayo. En el acumulado enero-abril, los ingresos reales de la región también cayeron: **-0,7%**.
-
-Mira cómo se ha movido [el empleo formal en Bucaramanga](/noticias/bucaramanga-lidera-creacion-empleo-formal/).
+Los dos datos no son del mismo mes: el alza de los Santanderes es de abril y la caída nacional es de mayo. En el acumulado enero-abril, los ingresos reales de la región también cayeron: **\-0,7%**.
 
 **Cotelco Santander** cerró 2025 con **55 hoteles afiliados** —sexto capítulo del país entre 21— y pasó de facturar $136 millones en 2021 a **$551 millones en 2025**.
 
-## ¿Qué tan llenos están los hoteles de Santander?
+#### ¿Qué tan llenos están los hoteles de Santander?
 
 En abril de 2026 la ocupación hotelera de los Santanderes fue **34,8%**, apenas por encima del 34,5% de abril de 2025. De cada 100 habitaciones disponibles, **65 quedaron vacías**.
 
@@ -57,34 +66,34 @@ Pero el promedio nacional proyectado fue **55,9%**. Bucaramanga sube y sigue **4
 
 En enero la ocupación de la ciudad fue **41,28%** con tarifa de $264.230, frente a **40%** de las viviendas turísticas con tarifa de **$160.740**. El hotel cuesta 64% más que el apartamento, según cálculos de Economía Santander sobre esas dos tarifas.
 
-## ¿De dónde vienen los extranjeros que llegan a Santander?
+##### ¿De dónde vienen los extranjeros que llegan a Santander?
 
 En 2025 Santander recibió **38.458 turistas internacionales**, **5,5%** más que el año anterior, según las cifras publicadas por [Vanguardia](https://www.vanguardia.com/santander/2026/03/22/topocoro-el-mar-dulce-que-impulsa-el-turismo-en-santander/). Son unos **105 extranjeros por día** para 87 municipios, según cálculos de Economía Santander sobre esa cifra.
 
 Estos son los cinco países que más aportaron a ese flujo:
 
-<div class="tabla-wrap">
 
-| País de origen | Participación |
-|---|---|
-| **Estados Unidos** | **33,3%** |
-| **Venezuela** | 10,5% |
-| **México** | 6,4% |
-| **Panamá** | 6,1% |
-| **España** | 5% |
 
-</div>
+| País de origen     | Participación |
+| ------------------ | ------------- |
+| **Estados Unidos** | **33,3%**     |
+| **Venezuela**      | 10,5%         |
+| **México**         | 6,4%          |
+| **Panamá**         | 6,1%          |
+| **España**         | 5%            |
+
+
 
 **Bucaramanga** concentró **76,6%** de los hospedajes, y los mayores crecimientos fueron de **Piedecuesta** y **Floridablanca**. Pero cuánto crecieron depende de a quién se le pregunte:
 
-<div class="tabla-wrap">
 
-| Municipio | Según Anato | Según Procolombia |
-|---|---|---|
-| **Piedecuesta** | **34,4%** | **41,9%** |
-| **Floridablanca** | **11,9%** | **18,4%** |
 
-</div>
+| Municipio         | Según Anato | Según Procolombia |
+| ----------------- | ----------- | ----------------- |
+| **Piedecuesta**   | **34,4%**   | **41,9%**         |
+| **Floridablanca** | **11,9%**   | **18,4%**         |
+
+
 
 Las dos entidades miden con metodologías distintas, y ninguna de las dos cifras es la equivocada: son dos formas de contar lo mismo.
 
@@ -96,7 +105,10 @@ Como referencia nacional, Colombia recibió **1.584.378 visitantes no residentes
 
 La ministra **Diana Marcela Morales Rojas** dijo que "el turismo colombiano atraviesa un momento de expansión y consolidación internacional muy significativo". En Santander esa expansión todavía no aterriza en camas ocupadas.
 
-## ¿Sirvieron las nuevas rutas del aeropuerto Palonegro?
+***Siga leyendo: [Licencias de construcción en Bucaramanga caen 43% en 2026](https://economiasantander.com/noticias/licencias-construccion-bucaramanga-crecen/)***
+
+
+###### ¿Sirvieron las nuevas rutas del aeropuerto Palonegro?
 
 El **aeropuerto Palonegro** cerró 2025 con más de **75.000 viajeros internacionales** y en lo corrido de 2026 suma más de **24.000**. Esas dos cifras, y solo esas, las reporta [Corrillos](https://www.corrillos.com.co/al-aeropuerto-palonegro-no-solo-llegan-mas-rutas-y-pasajeros-tambien-la-modernidad/): no hay publicado un total de pasajeros movilizados que permita ponerlas en contexto.
 
@@ -106,7 +118,7 @@ La ruta a Aruba arrancó con tarifas desde **US$116** por trayecto, según esa m
 
 Pero avión no es turista. En enero de 2026 se movilizaron cerca de **600.000 viajeros** por el aeropuerto y la terminal de Bucaramanga —cifra que cuenta entradas y salidas—, y solo **2.475 extranjeros** se hospedaron en la ciudad.
 
-## ¿Por qué San Gil y Barichara no repuntaron en vacaciones?
+###### ¿Por qué San Gil y Barichara no repuntaron en vacaciones?
 
 El eje **San Gil–Barichara–Cañón del Chicamocha** es la marca turística del departamento. En las vacaciones de mitad de 2026 no le fue bien.
 
@@ -118,7 +130,7 @@ Los empresarios culpan a la falta de promoción institucional, no a una pérdida
 
 Hay un segundo cuello de botella y es de asfalto. **Raúl Gutiérrez**, del hotel Cacique Charalá, lo planteó en la asamblea de **Cotelco Santander**: "Las vías son importantísimas. Para mí la prioridad hoy es el turismo".
 
-## ¿Qué sigue para el turismo santandereano?
+###### ¿Qué sigue para el turismo santandereano?
 
 Tres fechas para marcar.
 
@@ -128,8 +140,8 @@ Tres fechas para marcar.
 
 **Diciembre**: el cierre dirá si el departamento superó los 38.458 extranjeros de 2025. Ojo con el referente: en diciembre de 2025 la ocupación de los Santanderes fue **39,7%** contra **50,2%** nacional.
 
-Si tienes hotel, restaurante o agencia, dos movidas concretas. Renueva el **RNT** —el presidente ejecutivo de Cotelco, **José Andrés Duarte**, pidió en junio: "Reiteramos la invitación a todos los turistas para que elijan siempre establecimientos de hospedaje formal que cuenten con el RNT vigente"— y revisa costos antes de volver a subir tarifas: la habitación sencilla de la región ya subió 10,4% en mayo.
+Si tiene hotel, restaurante o agencia, dos movidas concretas. Renueve el **RNT** —el presidente ejecutivo de Cotelco, **José Andrés Duarte**, pidió en junio: "Reiteramos la invitación a todos los turistas para que elijan siempre establecimientos de hospedaje formal que cuenten con el RNT vigente"— y revisa costos antes de volver a subir tarifas: la habitación sencilla de la región ya subió 10,4% en mayo.
 
 Del lado del viajero, lo que sí está medido: la ocupación promedio de la región fue **34,8%** en abril, y Cotelco proyecta **51,4%** para Bucaramanga en junio y julio.
 
-Para seguir la evolución de precios, tasas y dólar, consulta nuestros [indicadores económicos actualizados](/indicadores/).
+Para seguir la evolución de precios, tasas y dólar, consulte nuestros [indicadores económicos actualizados](/indicadores/).
