@@ -1,7 +1,7 @@
 ---
 layout: noticia.njk
 title: "Economía de Santander: los 10 sectores más allá de Ecopetrol"
-date: 2026-08-13T21:48:00.000-05:00
+date: 2026-08-14T06:00:00.000-05:00
 categoria: Industria
 chipTipo: propio
 chipLabel: Redacción propia
