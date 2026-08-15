@@ -6,7 +6,7 @@ categoria: Indicadores económicos
 chipTipo: propio
 chipLabel: Redacción propia
 excerpt: "NOAA e IDEAM le dan 69% de probabilidad al Niño más fuerte desde 1950. En 2024 el golpe no llegó por los alimentos: llegó por la tarifa de energía."
-autor: Francisco Gómez - Director
+autor: Experto en Energía - Redactor invitado
 imagen: /assets/uploads/embalse-hidroelectrico-nino-2026.jpg
 imagenAlt: "Embalse de una central hidroeléctrica con el nivel del agua por debajo de la cota del vertedero."
 imagenTitle: "El Niño 2026 y el nivel de los embalses que generan la energía de Colombia"
@@ -28,13 +28,11 @@ El estado oficial es **Aviso de El Niño**, con el fenómeno ya presente y forta
 
 El IDEAM añade el dato que importa acá: prevé **reducción significativa de las precipitaciones** en las regiones Pacífica, Andina y Caribe, con mayor evapotranspiración, episodios de estrés hídrico y reducción de caudales y de niveles de embalses. Santander está en la región Andina.
 
-Una precisión técnica que cambia las cuentas: desde el 1 de febrero de 2026 el índice oficial de NOAA es el **RONI**, no el ONI que se citaba antes. El RONI descuenta el calentamiento general del océano tropical, así que arroja anomalías menores para el mismo mar. En el trimestre mayo-julio de 2026 el RONI marcó **+0,98 °C** y el ONI **+1,39 °C**. Quien cite el índice viejo exagera la señal.
-
 ## La lección de 2024: el golpe no llegó por los alimentos
 
 Esta es la parte contraintuitiva, y está en las cifras del [**DANE**](https://www.dane.gov.co/files/operaciones/IPC/bol-IPC-dic2023.pdf).
 
-En marzo de 2024, en el punto más seco del episodio anterior, la inflación anual de alimentos [tocó **su piso**](https://www.dane.gov.co/files/operaciones/IPC/anex-IPC-mar2024.xlsx): **1,73%**, con un IPC total de 7,36%. Al cierre de 2023, con El Niño ya declarado, los alimentos habían subido **5,00%** anual, la segunda división más barata de toda la canasta.
+En marzo de 2024, en el punto más seco del episodio anterior, la inflación anual de alimentos [tocó **su piso**](https://www.dane.gov.co/files/operaciones/IPC/anex-IPC-mar2024.xlsx): **1,73%**, con un IPC total de 7,36%. Al cierre de 2023, con El Niño ya declarado, los alimentos habían subido **5%** anual, la segunda división más barata de toda la canasta.
 
 Mientras tanto, la tarifa de **electricidad** llegó a **+22,46% anual en enero de 2024** y se mantuvo cerca del 20% durante meses. La división de servicios del hogar —alojamiento, agua, luz y gas— aportó **2,82 de los 7,16 puntos** de la inflación anual de abril de 2024: fue el mayor contribuyente de la canasta.
 
@@ -44,7 +42,7 @@ El daño en alimentos existió, pero fue quirúrgico y con rezago. La **papa** p
 
 ## Por qué Santander no es espectador
 
-Santander no solo consume energía en un Niño: la genera. **Hidrosogamoso** produjo **5.367,5 GWh** entre agosto de 2025 y julio de 2026, el **6,16% de toda la electricidad del país**, según los registros de **XM**, el operador del sistema. Es la cuarta central del país.
+Santander no solo consume energía en un Niño: la genera. **Hidrosogamoso** produjo **5.367 GWh** entre agosto de 2025 y julio de 2026, el **6,16% de toda la electricidad del país**, según los registros de **XM**, el operador del sistema. Es la cuarta central del país.
 
 Y produce por encima de su tamaño: con el **3,75%** de la capacidad instalada nacional entrega el 6,16% de la generación. Eso significa que trabaja duro, y que cuando le falta agua, al país le falta más de lo que su tamaño sugiere.
 
