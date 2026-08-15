@@ -15,6 +15,23 @@ name: Publicar en Cloudflare
 on:
   push:
     branches: [main]
+
+  # Reconstrucción diaria a las 6:00 de Colombia (11:00 UTC). Hace dos cosas:
+  #
+  # 1. REFRESCA LOS DATOS. La TRM se congela en el build. Sin esto, el dato
+  #    solo se actualiza cuando alguien publica una nota: un fin de semana sin
+  #    publicar deja al buscador viendo la TRM del viernes, en un portal
+  #    económico. (El JavaScript la repinta para el lector, pero el buscador y
+  #    el primer pintado ven la del build.)
+  #    La hora no es casual: la Superfinanciera publica la TRM del día hacia
+  #    las 18:06 del día anterior, así que a las 6:00 ya está.
+  #
+  # 2. ES UN LATIDO. Si la llave de despliegue se revoca o caduca, el fallo
+  #    aparece aquí al día siguiente en vez de descubrirse cuando alguien note
+  #    que el portal lleva una semana congelado. Eso ya pasó una vez.
+  schedule:
+    - cron: "0 11 * * *"
+
   # Permite lanzarlo a mano desde la pestaña Actions, sin tener que inventar
   # un commit para republicar.
   workflow_dispatch:
@@ -24,6 +41,11 @@ concurrency:
   # que va corriendo: cada push tiene que llegar a publicarse.
   group: cloudflare-produccion
   cancel-in-progress: false
+
+permissions:
+  contents: read
+  # Para poder abrir un aviso si la publicación falla (ver el último paso).
+  issues: write
 
 jobs:
   publicar:
@@ -70,6 +92,31 @@ jobs:
         if: steps.credencial.outputs.hay == 'no'
         run: |
           echo "::warning::Falta el secret CLOUDFLARE_API_TOKEN. El sitio se construyó pero NO se publicó en Cloudflare: economiasantander.com sigue mostrando el despliegue anterior."
+
+      # Un fallo aquí es invisible desde el CMS: Francisco ve su nota publicada
+      # y el portal sigue mostrando lo de antes. Sin este paso, el sistema
+      # depende de que alguien se acuerde de mirar esta pestaña.
+      #
+      # Se abre un aviso en Issues en vez de mandar un correo porque no hace
+      # falta ninguna credencial: el token del propio flujo alcanza. Y si ya
+      # hay uno abierto, se comenta en ese en lugar de abrir otro — tres días
+      # de fallo no deben dejar tres avisos que nadie lee.
+      - name: Avisar si la publicación falló
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          EJECUCION: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          ABIERTO=$(gh issue list --label "publicacion-fallida" --state open --limit 1 --json number --jq '.[0].number // empty')
+          if [ -n "$ABIERTO" ]; then
+            gh issue comment "$ABIERTO" --body "Volvió a fallar el $(date -u '+%Y-%m-%d %H:%M UTC'). Detalle: $EJECUCION"
+          else
+            gh label create "publicacion-fallida" --color B60205 --description "El portal no se está actualizando" 2>/dev/null || true
+            gh issue create \
+              --title "El portal no se está publicando" \
+              --label "publicacion-fallida" \
+              --body "$(printf 'La publicación automática falló, así que **economiasantander.com sigue mostrando el despliegue anterior**. Lo que se apruebe en el CMS desde ahora no va a salir al aire hasta que esto se arregle.\n\nDetalle de la ejecución: %s\n\nCausas más probables, en orden:\n\n1. El secret `CLOUDFLARE_API_TOKEN` se revocó o caducó.\n2. El sitio no compila (mira el paso "Construir el sitio").\n3. Cloudflare rechazó el despliegue.\n\nMientras tanto se puede publicar a mano:\n\n```\nnpx @11ty/eleventy && npx wrangler deploy\n```\n\nCierra este aviso cuando vuelva a publicarse solo.' "$EJECUCION")"
+          fi
 
 # PENDIENTE para cuando se retire Netlify (ver Fase E del plan): añadir aquí el
 # aviso a IndexNow — `node scripts/indexnow.mjs` — que hoy lo hace el build de
