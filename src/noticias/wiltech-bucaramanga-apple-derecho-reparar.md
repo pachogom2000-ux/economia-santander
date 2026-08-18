@@ -1,14 +1,22 @@
 ---
 layout: noticia.njk
-title: "Wiltech: el bumangués que le plantó cara a Apple"
+eleventyExcludeFromCollections: true
+title: "Wiltech: el taller en Bucaramanga que desafió a Apple y se volvió una
+  marca en 9 países"
 date: 2026-08-18T09:00:00.000-05:00
 categoria: Emprendimiento y pymes
 chipTipo: recirc
 chipLabel: "Fuentes: Infobae, Semana y Vanguardia"
-excerpt: Apple le exigió a Wilmer Becerra dejar de usar sus marcas y le mencionó cárcel. Tres años después, la SIC investiga a Apple por lo mismo que él alegó.
+excerpt: Apple le exigió a Wilmer Becerra dejar de usar sus marcas y le mencionó
+  cárcel. Tres años después, la SIC investiga a Apple por lo mismo que él alegó.
 autor: Francisco Gómez - Director
+imagen: /assets/uploads/wiltech-historia.jpg
+imagenAlt: Wilmer Becerra
+imagenTitle: Wilmer Becerra
+imagenPie: "WIlmer Becerra convirtió su taller de reparación de tecnología en
+  una marca que se expandió por 9 países. Así lo consiguió. "
+imagenCredito: Wilmer Becerra, tomada de WiltechOficial.com.
 tags: noticias
-eleventyExcludeFromCollections: true
 ---
 En agosto de 2023 un taller de reparación de celulares de Bucaramanga recibió una carta del bufete **Baker & McKenzie**, que representaba a **Apple**. Le exigía dejar de usar las marcas **APPLE, iPhone y Apple Logo**. De no cumplir, la comunicación mencionaba el artículo 306 del Código Penal colombiano: **de cuatro a ocho años de prisión** y sanciones económicas.
 
@@ -22,7 +30,7 @@ La reclamación tenía tres frentes: el uso de los signos distintivos de la marc
 
 No era una demanda ante un juez. Era un requerimiento privado, de los que buscan que el destinatario ceda antes de que exista un proceso.
 
-## ¿Qué respondió el bumangués?
+### ¿Qué respondió el bumangués?
 
 Becerra no cerró. Puso en público la carta y devolvió la pregunta:
 
@@ -32,7 +40,7 @@ Y propuso lo contrario de lo que le pedían: **una alianza** entre Apple y Wilte
 
 El caso se volvió viral. Y ahí cambió el pulso.
 
-## ¿Cómo terminó de verdad?
+#### ¿Cómo terminó de verdad?
 
 Aquí conviene ser preciso, porque la versión que circula suele acortar el final.
 
@@ -46,7 +54,7 @@ Y sobre la figura misma: *"Ese servicio IRP, ahorita en Colombia no funciona, po
 
 **No hubo demanda, no hubo fallo y no hubo acuerdo firmado.** Lo que hubo fue un requerimiento que se retiró después de la presión pública, y una propuesta que —en palabras del propio empresario— se quedó en el anuncio. Él siguió reparando. Eso es lo que ocurrió.
 
-## ¿Y qué pasó tres años después?
+#### ¿Y qué pasó tres años después?
 
 En **agosto de 2025**, la Superintendencia de Industria y Comercio abrió investigación y formuló pliego de cargos contra **Apple Inc.** y **Apple Services Latam** por presunto abuso de posición de dominio, [según informó Vanguardia](https://www.vanguardia.com/economia/nacional/2025/08/26/colombia-investiga-a-apple-por-posible-abuso-de-posicion-dominante-en-ios/).
 
@@ -54,34 +62,38 @@ El expediente no es sobre reparaciones: apunta a la App Store y a la obligación
 
 Son dos asuntos distintos con una raíz común: **hasta dónde puede una empresa controlar lo que pasa dentro de un aparato que ya vendió.** Becerra lo planteó en 2023 desde un taller de Bucaramanga. El regulador colombiano lo planteó en 2025 desde una resolución.
 
-## ¿Qué es Wiltech hoy?
+##### ¿Qué es Wiltech hoy?
 
 La empresa opera desde **2012** y repara iPhone, iPad, MacBook, iMac, Apple Watch y cargadores. Tiene además una línea de formación, **Wiltech Academy**, con cursos de reparación.
 
 Según su propio sitio, tiene presencia en nueve países:
 
-<div class="tabla-wrap">
 
-| País |
-|---|
-| Colombia |
-| México |
-| Argentina |
-| Chile |
-| Perú |
-| Bolivia |
-| Ecuador |
-| Guatemala |
-| Panamá |
+
+| País                 |
+| -------------------- |
+| Colombia             |
+| México               |
+| Argentina            |
+| Chile                |
+| Perú                 |
+| Bolivia              |
+| Ecuador              |
+| Guatemala            |
+| Panamá               |
 | República Dominicana |
 
-</div>
+
 
 No hay cifras públicas de facturación, número de empleados ni de sedes por ciudad. Este portal no las encontró en ninguna fuente verificable, y prefiere señalar el vacío antes que estimarlo.
 
-## Lo que este caso deja para Santander
+##### Lo que este caso deja para Santander
 
 Una empresa de servicios técnicos nacida en Bucaramanga llegó a diez mercados de América Latina reparando aparatos de la compañía más valiosa del mundo. Ese es el dato económico, y no depende de quién ganó el pulso.
+
+Becerra no solo es un emprendedor. Así como al inicio, empezó ofreciendo sus videos de reparaciones para que todo interesado pudiera aprender más rápido, hoy es un expositor que enseña a los demás emprendedores a través de sus cursos las nociones básicas y más avanzadas para reparar toda clase de artefactos tecnológicos. 
+
+Sus cursos en Wiltech Academy incluyen temas como Curso Básico de iPhone, curso avanzado de iPhone, con precios desde USD$ 160. 
 
 También deja una lección menos cómoda: **el activo que salvó a Wiltech no fue jurídico, fue reputacional.** Un taller pequeño no gana un litigio contra un bufete internacional; lo que hizo Becerra fue convertir una carta privada en una conversación pública. Para el tejido de micro y pequeña empresa que sostiene buena parte del [emprendimiento en Bucaramanga](/noticias/emprendimiento-pymes-bucaramanga-2026/), esa es una herramienta real, y también un riesgo: funciona una vez, y solo si el caso resuena.
 
