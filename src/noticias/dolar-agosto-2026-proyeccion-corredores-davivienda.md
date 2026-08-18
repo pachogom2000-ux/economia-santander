@@ -1,6 +1,5 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
 title: "Dólar en agosto: la proyección dice $3.310, va en $3.128"
 date: 2026-08-17T18:00:00.000-05:00
 categoria: Indicadores económicos
@@ -11,7 +10,7 @@ excerpt: Corredores Davivienda proyecta una TRM promedio de $3.310 para agosto.
   $3.128,65.
 autor: Francisco Gómez - Director
 imagen: /assets/uploads/pib-santander.webp
-imagenAlt: imagen d ereferencia dólar en Colombia
+imagenAlt: Billetes de dólar, referencia de la tasa de cambio en Colombia
 imagenTitle: Dólar en Colombia 2026
 imagenPie: "La apreciación del peso en 2026 acumula un 20%. "
 imagenCredito: "archivo particular. "

@@ -1,6 +1,5 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
 title: "Comercio en Bucaramanga: 6.444 vendedores en la calle"
 date: 2026-08-17T19:24:00.000-05:00
 categoria: Comercio y consumo
