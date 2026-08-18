@@ -1,6 +1,5 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
 title: "Moto y carro en Santander: el calendario de gastos 2026"
 date: 2026-08-17T20:00:00.000-05:00
 categoria: Impuestos y regulación
