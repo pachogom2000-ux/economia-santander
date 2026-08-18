@@ -29,7 +29,17 @@ El comercio de Santander cerró mayo con **ventas 10,6% por encima** del año an
 
 Vender más y emplear menos es la señal que conviene mirar. Sugiere que el crecimiento no se está traduciendo en puestos de trabajo formales dentro de los locales.
 
-Dónde se está resolviendo el pulso: en el andén
+## El dato que desarma el lugar común
+
+Se repite que Bucaramanga está saturada de centros comerciales. Los números dicen lo contrario.
+
+El área metropolitana —Bucaramanga, Floridablanca, Girón y Piedecuesta— tiene **7 centros comerciales** que suman **210.700 m²** de área comercial arrendable, para **1.407.495 habitantes**. El índice de saturación queda en **14,9 m² por cada 100 habitantes**, **uno de los más bajos entre las principales ciudades del país**.
+
+Es decir: no hay demasiada superficie comercial formal. Hay poca.
+
+Eso cambia la lectura del problema. La calle no está llenando un espacio que el comercio formal ya cubre; está ocupando uno que el comercio formal no ha construido.
+
+## Dónde se está resolviendo el pulso: en el andén
 
 En mayo de 2026 la Alcaldía adelantó operativos para **despejar andenes en el Centro**, y la situación sobre la **calle 34** llegó a describirse como un caos por la ocupación del espacio público, según [Vanguardia](https://www.vanguardia.com/area-metropolitana/bucaramanga/2026/05/27/bucaramanga-ordenan-a-vendedores-informales-y-despejan-andenes-en-el-centro/).
 
@@ -40,16 +50,16 @@ La norma vigente prohíbe las ventas informales, fijas o ambulantes, en los acce
 ***Siga leyendo: [Economía de Santander: los 10 sectores más allá de Ecopetrol](https://economiasantander.com/noticias/santander-mas-alla-ecopetrol-palma-mapa-productivo/)***
 
 
-### Por qué esto no es un asunto de estética urbana
+## Por qué esto no es un asunto de estética urbana
 
 El vendedor de la calle es un actor económico, no un problema de decoración. Buena parte de esos 6.444 puestos son la respuesta de un mercado laboral que ocupa gente pero no la formaliza, la misma tensión que aparece en el [empleo del área metropolitana](/noticias/bucaramanga-lidera-creacion-empleo-formal/).
 
 Tratarlo solo como ocupación indebida del andén deja fuera la pregunta económica: qué ingreso sustituye a esas ventas si desaparecen.
 
-#### Lo que hay que vigilar
+## Lo que hay que vigilar
 
 Si el consumo se contrae, la pregunta es quién pierde primero. El local formal tiene costos fijos que no puede bajar; la venta callejera tiene margen estrecho pero cero arriendo.
 
-La respuesta a esa pregunta decide qué comercio va a tener Bucaramanga dentro de cinco años.
+Y queda la pregunta que abre el dato de saturación: con uno de los índices más bajos del país, la superficie comercial formal de Bucaramanga tiene margen para crecer. Quién ocupe ese espacio —y en qué formato— decide qué comercio va a tener la ciudad dentro de cinco años.
 
 Le puede interesar: [PIB de Santander 2025: creció 2,4% y perdió terreno](https://economiasantander.com/noticias/pib-santander-2025-crecimiento/)
