@@ -1,6 +1,5 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
 title: "Avicultura en Santander: 110.000 empleos, 40.000 directos"
 date: 2026-08-19T09:22:00.000-05:00
 categoria: Agro
