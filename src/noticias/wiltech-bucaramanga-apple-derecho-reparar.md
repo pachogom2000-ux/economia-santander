@@ -3,7 +3,7 @@ layout: noticia.njk
 eleventyExcludeFromCollections: true
 title: "Wiltech: el taller en Bucaramanga que desafió a Apple y se volvió una
   marca en 9 países"
-date: 2026-08-18T09:00:00.000-05:00
+date: 2026-08-19T06:25:00.000-05:00
 categoria: Emprendimiento y pymes
 chipTipo: recirc
 chipLabel: "Fuentes: Infobae, Semana y Vanguardia"
