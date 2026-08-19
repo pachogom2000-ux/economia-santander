@@ -1,6 +1,5 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
 title: "Empresas más grandes de Santander: ventas suben 13,1%"
 date: 2026-08-17T06:00:00.000-05:00
 categoria: Indicadores económicos
@@ -41,7 +40,7 @@ La diferencia podría explicarse porque el universo de empresas excluye a Barran
 
 **Industria** fue el segundo motor, con **9,2%** más ventas y $8,1 billones. Ahí pesa sobre todo **alimentos, bebidas y tabaco**, que explica el 73,9% de las ventas industriales del grupo.
 
-No todo subió dentro de la industria. **Productos informáticos, electrónicos y ópticos** cayó **28,2%**, hasta $316.900 millones, la contracción más fuerte de cualquier renglón del informe. Minerales no metálicos también creció frente a 2024, aunque la cifra exacta apareció incompleta en la copia del informe que compartió la CCB con esta redacción —se leía "+,1%"— y no se pudo reconstruir con certeza. **\[VERIFICAR: variación 2025 de minerales no metálicos, pendiente de confirmar con la CCB]**.
+No todo subió dentro de la industria. **Productos informáticos, electrónicos y ópticos** cayó **28,2%**, hasta $316.900 millones, la contracción más fuerte de cualquier renglón del informe. Minerales no metálicos también creció frente a 2024, aunque la cifra exacta apareció incompleta en la copia del informe que compartió la CCB con esta redacción —se leía "+,1%"— y no se pudo reconstruir con certeza.
 
 #### ¿Cuál sector es el más rentable y cuál el más endeudado?
 
