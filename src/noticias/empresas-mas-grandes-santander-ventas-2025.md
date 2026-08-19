@@ -1,7 +1,7 @@
 ---
 layout: noticia.njk
 title: "Empresas más grandes de Santander: ventas suben 13,1%"
-date: 2026-08-17T06:00:00.000-05:00
+date: 2026-08-19T06:27:00.000-05:00
 categoria: Indicadores económicos
 chipTipo: propio
 chipLabel: "Fuente: Cámara de Comercio de Bucaramanga"
