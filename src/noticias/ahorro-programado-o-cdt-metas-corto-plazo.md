@@ -1,6 +1,5 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
 title: "Ahorro programado o CDT: cuál conviene a 3, 6 y 12 meses"
 date: 2026-08-24T07:46:00.000-05:00
 categoria: Finanzas personales
@@ -11,11 +10,11 @@ excerpt: Un CDT a 12 meses paga hasta 13,5% y la inflación va en 5,10%. Cuándo
   sacarla.
 autor: Francisco Gómez - Director
 imagen: /assets/uploads/printablue-piggy-bank-10016128.jpg
-imagenAlt: Inversión CDT a 3-6-12 meses
-imagenTitle: Inversión CDT a 3-6-12 meses
+imagenAlt: Alcancía de cerdo, referencia del ahorro a corto plazo
+imagenTitle: CDT Colombia tasas 2026, ahorro programado a corto plazo
 imagenPie: Esté atento a los cambios de tasas de los CDT a 30, 60, 90 y 120
   días. Cada entidad maneja sus cifras.
-imagenCredito: PIxabay
+imagenCredito: Pixabay
 guia: true
 tags: noticias
 ---

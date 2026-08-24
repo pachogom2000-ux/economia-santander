@@ -946,6 +946,20 @@
     border-radius: 6px;
     -webkit-overflow-scrolling: touch;
   }
+  /* Una tabla del cuerpo lleva min-width: 420px, asi que en un telefono no
+     cabe. Si va dentro de .tabla-wrap, ese envoltorio le da su propio scroll.
+     Pero el envoltorio es HTML crudo dentro del markdown y se pierde con
+     facilidad al reformatear la nota desde el CMS: paso dos veces, y sin el
+     la tabla empujaba la PAGINA ENTERA fuera del ancho de la pantalla.
+     Con esto la tabla se defiende sola y da igual si el envoltorio esta o no. */
+  @media (max-width: 720px) {
+    .noticia-cuerpo table {
+      display: block;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+
   .noticia-cuerpo table, .tabla-wrap table {
     width: 100%;
     border-collapse: collapse;
