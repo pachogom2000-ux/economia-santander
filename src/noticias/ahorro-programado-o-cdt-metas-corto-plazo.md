@@ -1,15 +1,23 @@
 ---
 layout: noticia.njk
+eleventyExcludeFromCollections: true
 title: "Ahorro programado o CDT: cuál conviene a 3, 6 y 12 meses"
-date: 2026-08-19T12:00:00.000-05:00
+date: 2026-08-24T07:46:00.000-05:00
 categoria: Finanzas personales
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: Un CDT a 12 meses paga hasta 13,5% y la inflación va en 5,10%. Cuándo conviene amarrar la plata y cuándo el ahorro programado sale mejor por poder sacarla.
+excerpt: Un CDT a 12 meses paga hasta 13,5% y la inflación va en 5,10%. Cuándo
+  conviene amarrar la plata y cuándo el ahorro programado sale mejor por poder
+  sacarla.
 autor: Francisco Gómez - Director
+imagen: /assets/uploads/printablue-piggy-bank-10016128.jpg
+imagenAlt: Inversión CDT a 3-6-12 meses
+imagenTitle: Inversión CDT a 3-6-12 meses
+imagenPie: Esté atento a los cambios de tasas de los CDT a 30, 60, 90 y 120
+  días. Cada entidad maneja sus cifras.
+imagenCredito: PIxabay
 guia: true
 tags: noticias
-eleventyExcludeFromCollections: true
 ---
 Un CDT a doce meses paga hoy hasta **13,5% efectivo anual** en las entidades más agresivas del mercado. La inflación anual cerró 2025 en **5,10%**. La diferencia entre las dos cifras —más de ocho puntos— es la razón por la que vale la pena hacer esta cuenta.
 
@@ -17,14 +25,14 @@ La pregunta no es cuál producto paga más. Casi siempre paga más el CDT. La pr
 
 ## ¿Cuál es la diferencia de fondo?
 
-<div class="tabla-wrap">
 
-| | Ahorro programado | CDT |
-|---|---|---|
-| **Tasa** | Baja, variable | Alta, **fija y pactada** |
+
+|                          | Ahorro programado       | CDT                                    |
+| ------------------------ | ----------------------- | -------------------------------------- |
+| **Tasa**                 | Baja, variable          | Alta, **fija y pactada**               |
 | **Sacar la plata antes** | Sí, con o sin penalidad | **No.** Hay que endosarlo o negociarlo |
-| **Aportes** | Cuota mensual | Un solo monto al inicio |
-| **Para qué sirve** | Juntar la plata | Hacer rendir una plata que ya se tiene |
+| **Aportes**              | Cuota mensual           | Un solo monto al inicio                |
+| **Para qué sirve**       | Juntar la plata         | Hacer rendir una plata que ya se tiene |
 
 </div>
 
@@ -50,14 +58,14 @@ Aquí es donde la mayoría de las cuentas caseras fallan, porque el rendimiento 
 
 Un ejemplo con números redondos, para ver el efecto:
 
-<div class="tabla-wrap">
 
-| | Monto |
-|---|---|
-| Capital | $10.000.000 |
-| Rendimiento bruto a 13,5% E.A., 12 meses | $1.350.000 |
-| Menos retención del 7% | −$94.500 |
-| **Rendimiento neto aproximado** | **$1.255.500** |
+
+|                                                  | Monto                  |
+| ------------------------------------------------ | ---------------------- |
+| Capital                                          | $10.000.000            |
+| Rendimiento bruto a 13,5% E.A., 12 meses         | $1.350.000             |
+| Menos retención del 7%                           | −$94.500               |
+| **Rendimiento neto aproximado**                  | **$1.255.500**         |
 | Rendimiento real, descontando 5,10% de inflación | cercano a **$745.000** |
 
 </div>
@@ -66,7 +74,10 @@ Un ejemplo con números redondos, para ver el efecto:
 
 Esa última fila es la que casi nunca se muestra: **la plata creció $1,25 millones, pero el poder de compra solo creció unos $745.000.** El resto se lo comió la inflación. Aun así, ganó — que es más de lo que puede decir una cuenta de ahorros corriente.
 
-## ¿Entonces cuál elegir, según el plazo?
+***Siga leyendo: [Inversión inmobiliaria en Bucaramanga: el mapa de los fondos](https://economiasantander.com/noticias/tres-fondos-inmobiliarios-bucaramanga/)***
+
+
+### ¿Entonces cuál elegir, según el plazo?
 
 **A tres meses.** Si es un fondo para emergencias o la plata de la matrícula de enero, **no la amarre**. Un CDT a 90 días paga poco y le quita la liquidez justo cuando la necesita. Ahorro programado o una cuenta de alto rendimiento.
 
@@ -76,7 +87,7 @@ Esa última fila es la que casi nunca se muestra: **la plata creció $1,25 millo
 
 Y una combinación que funciona bien: **ahorro programado para juntar durante el año, y al final trasladar el total a un CDT.** Cada producto en la etapa para la que sirve.
 
-## Tres cosas que conviene mirar antes de firmar
+#### Tres cosas que conviene mirar antes de firmar
 
 **Que la entidad esté vigilada por la Superintendencia Financiera.** Es lo que le da el seguro de depósitos de Fogafín. Una tasa muy por encima del mercado en una entidad no vigilada no es una oportunidad: es una alerta.
 
@@ -85,3 +96,5 @@ Y una combinación que funciona bien: **ahorro programado para juntar durante el
 **Que la tasa sea efectiva anual.** Es la única forma de comparar peras con peras entre entidades.
 
 Para comparar lo que ofrecen las entidades con presencia en la región, está la nota sobre [dónde rinde más su plata en un CDT en Santander](/noticias/donde-rinde-mas-tu-plata-cdt-santander/). Y si la duda es qué significa cada sigla, el [glosario de IPC, DTF y tasa de usura](/noticias/glosario-ipc-dtf-usura-spread-bancario/) las explica una por una.
+
+***Le puede interesar: [IPC, DTF, usura y UVR: guía de tasas en Colombia 2026](https://economiasantander.com/noticias/glosario-ipc-dtf-usura-spread-bancario/)***
