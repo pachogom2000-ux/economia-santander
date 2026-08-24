@@ -1,15 +1,23 @@
 ---
 layout: noticia.njk
+eleventyExcludeFromCollections: true
 title: "Deuda sana: cuánto puede deber un hogar santandereano"
-date: 2026-08-19T11:30:00.000-05:00
+date: 2026-08-24T07:29:00.000-05:00
 categoria: Finanzas personales
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: La tasa de usura de agosto es 29,66% y subió frente a julio. Cómo calcular la capacidad de pago real de un hogar y en qué punto una deuda deja de ser sana.
+excerpt: La tasa de usura de agosto es 29,66% y subió frente a julio. Cómo
+  calcular la capacidad de pago real de un hogar y en qué punto una deuda deja
+  de ser sana.
 autor: Francisco Gómez - Director
+imagen: /assets/uploads/deuda-santandereanos.webp
+imagenAlt: Imagen de deuda de los santandereanos
+imagenTitle: Deuda de los santandereanos
+imagenPie: "La tasa de usura es el techo que se pone para los créditos de
+  consumo y ordinario. Cobrar por encima es un delito. "
+imagenCredito: Archivo particular
 guia: true
 tags: noticias
-eleventyExcludeFromCollections: true
 ---
 La **tasa de usura** para agosto de 2026 es de **29,66% efectivo anual**, según la Resolución 1139 de la [Superintendencia Financiera](https://www.superfinanciera.gov.co/). Subió frente al 28,79% de julio.
 
@@ -19,42 +27,45 @@ Ese es el techo legal para créditos de consumo y ordinario. Cobrar por encima e
 
 La usura no es una sola. La Superfinanciera certifica varias, y la diferencia entre ellas es enorme:
 
-<div class="tabla-wrap">
 
-| Tipo de crédito | Tope de usura, agosto 2026 |
-|---|---|
-| Consumo y ordinario | **29,66%** |
-| Productivo rural | 33,56% |
-| Productivo de mayor monto | 42,00% |
-| Productivo urbano | 59,67% |
-| **Consumo de bajo monto** | **65,46%** |
 
-</div>
+| Tipo de crédito           | Tope de usura, agosto 2026 |
+| ------------------------- | -------------------------- |
+| Consumo y ordinario       | **29,66%**                 |
+| Productivo rural          | 33,56%                     |
+| Productivo de mayor monto | 42,00%                     |
+| Productivo urbano         | 59,67%                     |
+| **Consumo de bajo monto** | **65,46%**                 |
+
+
 
 Fíjese en la última fila. El **crédito de consumo de bajo monto** —el de los préstamos pequeños y rápidos— puede cobrar legalmente más del doble que una tarjeta de crédito. Es la modalidad a la que más recurre quien no tiene historial bancario, y es la más cara del sistema.
 
 El **interés bancario corriente**, que es el promedio del mercado, quedó en **19,77%**.
 
-## ¿Cuánta deuda aguanta un hogar?
+***Siga leyendo: [Empresas más grandes de Santander: ventas suben 13,1%](https://economiasantander.com/noticias/empresas-mas-grandes-santander-ventas-2025/)***
+
+
+### ¿Cuánta deuda aguanta un hogar?
 
 La regla más usada dice que el pago mensual de todas las deudas no debe pasar del **30% del ingreso**. Los bancos suelen aprobar hasta el 40%, y ahí está el malentendido: **que se lo aprueben no significa que le convenga.**
 
 Una forma práctica de hacer la cuenta:
 
-<div class="tabla-wrap">
+
 
 | Ingreso mensual del hogar | Cuota total sana (30%) | Límite bancario (40%) |
-|---|---|---|
-| $2.000.000 | $600.000 | $800.000 |
-| $3.500.000 | $1.050.000 | $1.400.000 |
-| $5.000.000 | $1.500.000 | $2.000.000 |
-| $8.000.000 | $2.400.000 | $3.200.000 |
+| ------------------------- | ---------------------- | --------------------- |
+| $2.000.000                | $600.000               | $800.000              |
+| $3.500.000                | $1.050.000             | $1.400.000            |
+| $5.000.000                | $1.500.000             | $2.000.000            |
+| $8.000.000                | $2.400.000             | $3.200.000            |
 
-</div>
+
 
 Sume **todas** las cuotas: tarjetas, libranza, libre inversión, el celular a cuotas, la moto, el crédito educativo. Si el total pasa de la columna del medio, el hogar está apretado. Si pasa de la derecha, está en problemas.
 
-## ¿Por qué el 30% se queda corto en Santander?
+#### ¿Por qué el 30% se queda corto en Santander?
 
 Porque supone un ingreso estable, y buena parte del empleo del área metropolitana no lo es.
 
@@ -62,7 +73,7 @@ El área metropolitana de Bucaramanga tiene una **informalidad del 44,5%**, seg�
 
 Para un contratista o un comerciante, el 30% del "ingreso promedio" es una trampa: el promedio incluye los meses buenos. **La regla útil para un ingreso variable es calcular sobre el peor mes de los últimos doce**, no sobre el promedio.
 
-## ¿Cuándo una deuda deja de ser sana?
+##### ¿Cuándo una deuda deja de ser sana?
 
 No es una cifra, son cinco señales. Con dos ya hay que actuar:
 
@@ -76,7 +87,10 @@ No es una cifra, son cinco señales. Con dos ya hay que actuar:
 
 **Avances en efectivo.** Suelen ser lo más caro del producto y empiezan a generar intereses desde el primer día, sin período de gracia.
 
-## ¿Qué hacer si ya se pasó?
+***Le contamos: [Wiltech: el taller en Bucaramanga que desafió a Apple y se volvió una marca en 9 países](https://economiasantander.com/noticias/wiltech-bucaramanga-apple-derecho-reparar/)***
+
+
+##### ¿Qué hacer si ya se pasó?
 
 Tres movimientos, en este orden:
 
