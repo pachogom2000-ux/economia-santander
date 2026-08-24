@@ -1,6 +1,5 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
 title: "Deuda sana: cuánto puede deber un hogar santandereano"
 date: 2026-08-24T07:29:00.000-05:00
 categoria: Finanzas personales

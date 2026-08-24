@@ -1,6 +1,5 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
 title: "Arriendo en Bucaramanga: cuánto pagar sin ahogarse"
 date: 2026-08-24T07:39:00.000-05:00
 categoria: Finanzas personales
