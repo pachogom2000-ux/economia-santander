@@ -12,11 +12,10 @@ imagenAlt: "Embalse de una central hidroeléctrica con el nivel del agua por deb
 imagenTitle: "El Niño 2026 y el nivel de los embalses que generan la energía de Colombia"
 imagenPie: "La factura de El Niño se paga donde se genera la energía. Santander aporta el 6,16% de la electricidad del país con una sola central: Hidrosogamoso."
 imagenCredito: "Foto: MinhVN123, Wikimedia Commons (CC0). Imagen de referencia; no corresponde al embalse Topocoro."
-eleventyExcludeFromCollections: true
 tags: noticias
 ---
 
-**El 69%.** Esa es la probabilidad que la agencia atmosférica de Estados Unidos le asigna a que el fenómeno de El Niño alcance entre octubre y diciembre de este año una intensidad **superior a la de todos los eventos registrados desde 1950**. Y la estadística de que sea "un Niño muy fuerte" es de 95% entre octubre y noviembre de 2026. 
+**El 69%.** Esa es la probabilidad que la agencia atmosférica de Estados Unidos le asigna a que el fenómeno de El Niño alcance entre octubre y diciembre de este año una intensidad **superior a la de todos los eventos registrados desde 1950**. Y la estadística de que sea "un Niño muy fuerte" es de 95% entre octubre y diciembre de 2026. 
 
 No es un pronóstico de prensa. Es la cifra del [boletín del Climate Prediction Center de la NOAA](https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml) del 13 de agosto de 2026, y el [IDEAM la replicó ese mismo día](https://www.ideam.gov.co/sala-de-prensa/noticia/condiciones-el-nino-continuan-en-fortalecimiento-y-aumenta-la-probabilidad-de-que-alcance-una) para Colombia.
 
