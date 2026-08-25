@@ -128,6 +128,11 @@ collections:
     slug: "{{slug}}"
     format: "frontmatter"
     extension: "md"
+    # El boton de vista previa del flujo editorial abria la PORTADA del deploy
+    # preview, no la nota, asi que habia que buscarla a mano cada vez. Las notas
+    # se publican en /noticias/<direccion>/ y esa direccion sale del mismo slug
+    # que Decap ya calcula aqui.
+    preview_path: "noticias/{{slug}}/"
     fields:
       - { label: "layout", name: "layout", widget: "hidden", default: "noticia.njk" }
       # Este interruptor era invisible en el CMS y ya dejó tres notas mudas
