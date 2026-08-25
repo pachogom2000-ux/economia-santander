@@ -10,7 +10,7 @@ excerpt: El fraude digital en Colombia cayó 74%, pero el que ataca empresas
   apelar.
 autor: Francisco Gómez - Director
 imagen: /assets/uploads/fraude-pymes.webp
-imagenAlt: Comerciante revisando pagos en el celular en su negocio
+imagenAlt: Delincuente cometiendo fraude en pymes
 imagenTitle: ciberseguridad en pymes
 imagenPie: "Los ciberdelincuentes aprovechan la vulnerabilidad de las pymes para
   cometer fraudes. "
