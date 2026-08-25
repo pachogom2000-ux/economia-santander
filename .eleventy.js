@@ -94,9 +94,25 @@ module.exports = function (eleventyConfig) {
     function (tokens, idx, options, env, self) {
       return self.renderToken(tokens, idx, options, env, self);
     };
+  // Un enlace al PROPIO portal escrito con la dirección completa seguía siendo,
+  // para esta regla, un enlace externo: se abría en una pestaña nueva. Medido en
+  // producción, 16 notas navegaban así, y en el celular el lector iba acumulando
+  // pestañas para moverse dentro del mismo sitio.
+  //
+  // También entra aquí el alojamiento viejo. Dos notas publicadas enlazaban a
+  // economiasantander.netlify.app —la copia de Netlify—, que manda al lector
+  // fuera del dominio real y que va a devolver un error el día que se retire
+  // Netlify (fase E del plan de migración).
+  //
+  // Las dos cosas se arreglan reescribiendo el enlace a ruta relativa, y se
+  // arreglan en el build a propósito: así vale también para lo que se pegue
+  // mañana desde el CMS, sin tener que acordarse de la regla.
+  const DEL_PORTAL = /^https?:\/\/(www\.)?(economiasantander\.com|economiasantander\.netlify\.app)(\/|$)/i;
   md.renderer.rules.link_open = function (tokens, idx, options, env, self) {
     const href = tokens[idx].attrGet("href") || "";
-    if (/^https?:\/\//i.test(href)) {
+    if (DEL_PORTAL.test(href)) {
+      tokens[idx].attrSet("href", href.replace(/^https?:\/\/[^/]+/i, "") || "/");
+    } else if (/^https?:\/\//i.test(href)) {
       tokens[idx].attrSet("target", "_blank");
       tokens[idx].attrSet("rel", "noopener noreferrer");
     }
