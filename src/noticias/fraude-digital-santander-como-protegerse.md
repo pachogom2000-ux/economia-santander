@@ -1,6 +1,5 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
 title: "Fraude a pymes: el golpe promedio son $260 millones"
 date: 2026-08-25T06:00:00.000-05:00
 categoria: Educación financiera
@@ -11,7 +10,7 @@ excerpt: El fraude digital en Colombia cayó 74%, pero el que ataca empresas
   apelar.
 autor: Francisco Gómez - Director
 imagen: /assets/uploads/fraude-pymes.webp
-imagenAlt: ciberseguridad en pymes
+imagenAlt: Comerciante revisando pagos en el celular en su negocio
 imagenTitle: ciberseguridad en pymes
 imagenPie: "Los ciberdelincuentes aprovechan la vulnerabilidad de las pymes para
   cometer fraudes. "

@@ -1,6 +1,5 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
 title: "Dólar barato: el ciclo anterior duró 63 meses, este va en 45"
 date: 2026-08-25T06:00:00.000-05:00
 categoria: Inversión
@@ -11,7 +10,7 @@ excerpt: El ciclo de dólar barato más largo desde 1991 duró 63 meses. El actu
   Santander.
 autor: Francisco Gómez - Director
 imagen: /assets/uploads/foto-dolar-bajista-2026-colombia.webp
-imagenAlt: Dólar sigue bajando en Colombia
+imagenAlt: Billetes de dólar y peso colombiano sobre una mesa
 imagenTitle: Dólar sigue bajando en Colombia
 imagenPie: El ciclo actual bajista ya es más largo que dos de los tres anteriores.
 imagenCredito: Elaboración propia con ayuda de ChatGPT. Economía Santander.
