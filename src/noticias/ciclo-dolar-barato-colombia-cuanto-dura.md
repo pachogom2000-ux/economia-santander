@@ -11,6 +11,10 @@ excerpt: El ciclo de dólar barato más largo desde 1991 duró 63 meses. El actu
   Santander.
 autor: Francisco Gómez - Director
 imagen: /assets/uploads/foto-dolar-bajista-2026-colombia.webp
+imagenAlt: Dólar sigue bajando en Colombia
+imagenTitle: Dólar sigue bajando en Colombia
+imagenPie: El ciclo actual bajista ya es más largo que dos de los tres anteriores.
+imagenCredito: Elaboración propia con ayuda de ChatGPT. Economía Santander.
 tags: noticias
 ---
 El dólar cerró en **$3.056,51** el 25 de agosto. Para encontrar una tasa igual o más baja hay que devolverse hasta **el 18 de octubre de 2018**: siete años y once meses.
@@ -23,22 +27,22 @@ La pregunta que sigue —cuánto más puede durar— no tiene respuesta. Pero la
 
 Economía Santander procesó los 8.332 registros de la TRM desde diciembre de 1991 y midió cada ciclo de techo a piso, con promedios mensuales para que los vaivenes de un día no cuenten como giro:
 
-<div class="tabla-wrap">
 
-| Ciclo | Duración | Cuánto cayó el dólar |
-|---|---|---|
-| Marzo 2003 → junio 2008 | **63 meses** (5,3 años) | −41,8% |
-| Febrero 2009 → julio 2011 | 29 meses (2,4 años) | −30,1% |
-| Febrero 2016 → abril 2018 | 26 meses (2,2 años) | −17,7% |
-| **Noviembre 2022 → hoy** | **45 meses** (3,8 años) | **−36,6%** |
 
-</div>
+| Ciclo                     | Duración                | Cuánto cayó el dólar |
+| ------------------------- | ----------------------- | -------------------- |
+| Marzo 2003 → junio 2008   | **63 meses** (5,3 años) | −41,8%               |
+| Febrero 2009 → julio 2011 | 29 meses (2,4 años)     | −30,1%               |
+| Febrero 2016 → abril 2018 | 26 meses (2,2 años)     | −17,7%               |
+| **Noviembre 2022 → hoy**  | **45 meses** (3,8 años) | **−36,6%**           |
+
+
 
 El ciclo actual **ya es más largo que dos de los tres anteriores**. Solo el de 2003-2008 fue mayor, y por 18 meses.
 
 Medido con datos diarios en vez de promedios mensuales, la caída es aún más honda: del techo de **$5.061,21** del 5 de noviembre de 2022 a los $3.056,51 de hoy hay **−39,6%**.
 
-## ¿Por qué está tan barato el dólar ahora?
+### ¿Por qué está tan barato el dólar ahora?
 
 Por una razón que el propio banco central mira con recelo: **la tasa de interés**.
 
@@ -50,7 +54,7 @@ Cuando el emisor dice que la apreciación puede ser insostenible, conviene leerl
 
 En lo corrido de 2026 el peso se ha fortalecido **19,4%**: la TRM abrió el año en $3.790,77.
 
-## ¿Cuánto más puede durar este ciclo?
+#### ¿Cuánto más puede durar este ciclo?
 
 **Nadie lo sabe, y este portal no se lo va a decir.**
 
@@ -58,7 +62,10 @@ Lo que sí se puede afirmar es el rango histórico: los tres ciclos anteriores d
 
 Esa horquilla —de "puede terminar ya" a "puede durar año y medio más"— es toda la precisión disponible. Quien le ofrezca más, está adivinando.
 
-## ¿Cómo golpea esto a la economía de Santander?
+***Siga leyendo: [Arriendo en Bucaramanga: cuánto pagar sin ahogarse](https://economiasantander.com/noticias/arriendo-bucaramanga-cuanto-pagar/)***
+
+
+#### ¿Cómo golpea esto a la economía de Santander?
 
 Un dólar barato no es bueno ni malo: **reparte ganadores y perdedores**, y en Santander los tiene de los dos lados.
 
@@ -68,7 +75,7 @@ Un dólar barato no es bueno ni malo: **reparte ganadores y perdedores**, y en S
 
 **Y pierde el hogar que recibe remesas**, que por cada dólar girado desde el exterior recibe hoy casi 2.000 pesos menos que hace cuatro años.
 
-## ¿Y si tiene inversiones en dólares?
+#### ¿Y si tiene inversiones en dólares?
 
 Aquí está lo que casi nadie explica cuando se habla de invertir en acciones o ETF del mercado estadounidense desde plataformas como **Hapi**, **Trii** o **eToro**.
 
@@ -80,7 +87,7 @@ No significa que haya sido mal negocio: un índice como el S&P 500 pudo subir ba
 
 Sobre la seguridad de la plataforma conviene una precisión, porque suele malinterpretarse. Hapi está regulada en Estados Unidos por la **SEC** y **FINRA**, y es miembro del **SIPC**, que cubre hasta **USD 500.000**. Esa protección es real, pero cubre **que el bróker quiebre y desaparezca con sus títulos**. No cubre que el mercado caiga, ni que el dólar se devalúe frente al peso. Son riesgos distintos y solo uno está asegurado.
 
-## El FOMO: por qué "aprovechar" puede salir caro
+##### El FOMO: por qué "aprovechar" puede salir caro
 
 **FOMO** son las siglas en inglés de *fear of missing out*: el miedo a quedarse por fuera. Es el impulso de entrar a algo porque parece que todo el mundo está ganando, o porque una oportunidad parece a punto de cerrarse.
 
@@ -94,7 +101,7 @@ Lo que la tabla de arriba muestra es que **estos ciclos se miden en años, no en
 
 No hay que decidir hoy porque hoy parezca el momento. Las preguntas útiles son otras: **en cuánto tiempo va a necesitar esa plata**, **cuánto puede perder sin que le cambie la vida**, y **si entiende exactamente en qué está poniendo el dinero**. Si alguna no tiene respuesta clara, la respuesta a la pregunta grande probablemente sea esperar.
 
-## Lo que este portal no le va a decir
+###### Lo que este portal no le va a decir
 
 Ni que compre ni que venda. **Esto es periodismo económico, no asesoría de inversión**, y así está declarado en los [términos de uso](/legal/terminos/) del portal.
 
@@ -103,3 +110,5 @@ Lo que sí puede llevarse es el dato duro: el dólar está en su nivel más bajo
 Con eso, y con la tasa del día que puede seguir en [dólar hoy](/dolar-hoy/), la decisión es suya y de su asesor.
 
 *Los cálculos sobre los ciclos son de Economía Santander a partir de la serie histórica de la TRM certificada por la Superintendencia Financiera, publicada en datos.gov.co. Las cifras de política monetaria provienen de las actas del Banco de la República.*
+
+***Le puede interesar:* [Dólar en agosto: la proyección dice $3.310, va en $3.128](https://economiasantander.com/noticias/dolar-agosto-2026-proyeccion-corredores-davivienda/)**
