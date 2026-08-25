@@ -2,7 +2,7 @@
 layout: noticia.njk
 eleventyExcludeFromCollections: true
 title: "Dólar barato: el ciclo anterior duró 63 meses, este va en 45"
-date: 2026-08-24T21:39:00.000-05:00
+date: 2026-08-25T06:00:00.000-05:00
 categoria: Inversión
 chipTipo: propio
 chipLabel: Redacción propia
