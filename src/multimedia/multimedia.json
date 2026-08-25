@@ -1,4 +1,5 @@
 {
   "tags": ["multimedia"],
-  "permalink": false
+  "layout": "multimedia-item.njk",
+  "permalink": "/multimedia/{{ page.fileSlug | slugify | default: page.fileSlug }}/"
 }

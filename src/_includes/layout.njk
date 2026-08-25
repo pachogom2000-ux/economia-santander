@@ -40,9 +40,16 @@
 {# Versión de 1200 px en JPEG en vez del original: hay fotos de 4,5 MB y
    WhatsApp no las descarga para la vista previa, así que el enlace salía sin
    foto. Las medidas se declaran de verdad, no quemadas en 1200x700. #}
-{% set ogPrevia = ogImagen | imagenVistaPrevia %}
-{% set ogMedidas = ogImagen | medidas %}
-<meta property="og:image" content="https://economiasantander.com{{ ogPrevia.url if ogPrevia else ogImagen }}">
+{# Una ficha de multimedia puede traer como imagen social la miniatura que sirve
+   el propio YouTube, que es una dirección completa y no un archivo del
+   repositorio. A esa no se le puede pedir versión optimizada —los dos filtros
+   buscan el archivo en disco— ni se le puede anteponer el dominio, o saldría
+   "https://economiasantander.comhttps://i.ytimg.com/…". #}
+{% set ogRemota = "//" in ogImagen %}
+{% set ogPrevia = null if ogRemota else (ogImagen | imagenVistaPrevia) %}
+{% set ogMedidas = null if ogRemota else (ogImagen | medidas) %}
+{% set ogUrl = ogImagen if ogRemota else ("https://economiasantander.com" + (ogPrevia.url if ogPrevia else ogImagen)) %}
+<meta property="og:image" content="{{ ogUrl }}">
 {% if ogPrevia %}<meta property="og:image:width" content="{{ ogPrevia.width }}">
 <meta property="og:image:height" content="{{ ogPrevia.height }}">
 {% elif ogMedidas %}<meta property="og:image:width" content="{{ ogMedidas.width }}">
@@ -52,7 +59,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ pageTitle }}">
 <meta name="twitter:description" content="{{ pageDescription }}">
-<meta name="twitter:image" content="https://economiasantander.com{{ ogPrevia.url if ogPrevia else ogImagen }}">
+<meta name="twitter:image" content="{{ ogUrl }}">
 {# Aquí había un preload de la foto original. Con el plugin de imágenes es
    contraproducente: reescribe las <img> pero NO los <link rel=preload>, así que
    el navegador se bajaba el original completo (hasta 4,5 MB) ADEMÁS de la
@@ -779,18 +786,35 @@
       });
     });
 
-    // ---------- 9) Multimedia: reproducir video en la propia tarjeta ----------
-    each('.mm-play', function (btn) {
+    // ---------- 9) Incrustaciones: cargar el contenido solo si lo piden ----------
+    //
+    // Lo que hay en la página es una tapa: una imagen, el nombre de la
+    // plataforma y la medida ya reservada. El marco de verdad se crea aquí, al
+    // tocar. Hasta entonces el navegador del lector no habla con YouTube, ni
+    // con TikTok, ni con Meta, ni con X.
+    //
+    // Ese es el motivo de fondo: el aviso de /legal/cookies/ promete que quien
+    // rechaza deja de ser medido, y los scripts de las redes rastrean apenas
+    // cargan, mire o no mire alguien el video.
+    each('.incrusta-abrir', function (btn) {
       btn.addEventListener('click', function () {
-        var id = btn.getAttribute('data-yt');
-        if (!id) return;
+        var src = btn.getAttribute('data-src');
+        if (!src) return;
         var f = document.createElement('iframe');
-        f.className = 'mm-frame';
-        f.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(id) + '?autoplay=1';
-        f.setAttribute('allow', 'autoplay; encrypted-media; picture-in-picture');
+        f.className = 'incrusta-marco';
+        f.src = src;
+        f.setAttribute('allow', 'autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share');
         f.setAttribute('allowfullscreen', '');
-        f.title = btn.getAttribute('aria-label') || 'Video';
+        f.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
+        f.title = btn.getAttribute('data-titulo') || 'Contenido incrustado';
+        // La caja de una publicación sin foto de tapa estaba encogida a
+        // propósito; ahora sí toma el alto que pide la red.
+        if (btn.parentNode.classList) btn.parentNode.classList.add('incrusta-abierta');
         btn.parentNode.replaceChild(f, btn);
+        // Quien abrió con el teclado se quedaba sin foco: el botón que tenía el
+        // foco acaba de desaparecer y el siguiente tabulador volvía al principio
+        // del documento. Se le pasa el foco al marco recién creado.
+        if (typeof f.focus === 'function') { try { f.focus(); } catch (e) {} }
       });
     });
 
@@ -823,9 +847,19 @@
         }
         var fotos = [];
         var imgs = tpl.content ? tpl.content.querySelectorAll('img') : [];
-        for (var i = 0; i < imgs.length; i++) { fotos.push({ src: imgs[i].getAttribute('src'), alt: imgs[i].getAttribute('alt') || '' }); }
+        for (var i = 0; i < imgs.length; i++) {
+          // El plugin de imágenes deja en `src` la medida MÁS PEQUEÑA (400 px)
+          // y el resto en `srcset`. El visor pinta a pantalla completa, así que
+          // con `src` a secas mostraba una foto de 400 px en el centro de una
+          // pantalla de 1280: no se veía borrosa, se veía diminuta. Se toma la
+          // última candidata del srcset, que es la más grande.
+          var conjunto = imgs[i].getAttribute('srcset');
+          var grande = conjunto ? conjunto.split(',').pop().trim().split(/\s+/)[0] : '';
+          fotos.push({ src: grande || imgs[i].getAttribute('src'), alt: imgs[i].getAttribute('alt') || '' });
+        }
         if (!fotos.length) return;
-        var idx = 0;
+        // Empieza en la foto que se tocó, no siempre en la primera.
+        var idx = Math.min(parseInt(btn.getAttribute('data-indice'), 10) || 0, fotos.length - 1);
         var stage = dlg.querySelector('.mm-lb-stage');
         var count = dlg.querySelector('.mm-lb-count');
         function pinta() {

@@ -1,48 +1,45 @@
-{# Tarjeta de un contenido multimedia. Espera `item` (entrada de collections.multimedia). #}
+{# Tarjeta de un contenido multimedia. Espera `item` (entrada de collections.multimedia).
+
+   La tarjeta ya NO reproduce: lleva a la ficha del contenido, que desde ahora
+   tiene dirección propia (/multimedia/<slug>/). Antes el video se reproducía
+   dentro de la tarjeta y no había forma de enviarle a alguien ese video: no
+   existía como página. De paso, la sección deja de cargar un reproductor por
+   cada tarjeta. #}
 {% set mmTipo = item.data.tipo or 'video' %}
-<article class="mm-card" id="mm-{{ item.fileSlug }}">
-  <div class="mm-thumb">
-    {% if mmTipo == 'video' %}
-      {% if item.data.archivo %}
-      <video class="mm-video" controls preload="none" playsinline
-             {% if item.data.portada %}poster="{{ item.data.portada }}"{% endif %}
-             src="{{ item.data.archivo }}"
-             title="{{ item.data.title }}"></video>
-      {% else %}
-      {% set yid = item.data.youtube | ytId %}
-      <button type="button" class="mm-play" data-yt="{{ yid }}" aria-label="Reproducir video: {{ item.data.title }}">
-        <img src="https://i.ytimg.com/vi/{{ yid }}/hqdefault.jpg" alt="" loading="lazy" decoding="async" width="480" height="360">
-        <span class="mm-play-btn" aria-hidden="true"></span>
-      </button>
-      {% endif %}
-    {% elif mmTipo == 'podcast' %}
-      {% set spotifyUrl = item.data.spotify | spotifyEmbed %}
-      {% if spotifyUrl %}
-        <iframe class="mm-spotify" src="{{ spotifyUrl }}" loading="lazy" allow="encrypted-media" title="Podcast: {{ item.data.title }}"></iframe>
-      {% elif item.data.audio %}
-        <div class="mm-audio">
-          <audio controls preload="none" src="{{ item.data.audio }}"></audio>
-        </div>
-      {% elif item.data.portada %}
-        <img src="{{ item.data.portada }}" alt="{{ item.data.imagenAlt or '' }}" loading="lazy" decoding="async">
-      {% endif %}
-    {% elif mmTipo == 'galeria' %}
-      {% set portada = item.data.portada or item.data.imagenes[0] %}
-      <button type="button" class="mm-open-galeria" data-galeria="galeria-{{ item.fileSlug }}" aria-label="Abrir galería: {{ item.data.title }}">
-        <img src="{{ portada }}" alt="" loading="lazy" decoding="async">
-        {% if item.data.imagenes %}<span class="mm-count">{{ item.data.imagenes | length }} fotos</span>{% endif %}
-      </button>
-      <template id="galeria-{{ item.fileSlug }}">
-        {%- for im in item.data.imagenes -%}
-        <img src="{{ im }}" alt="{{ item.data.title }} — foto {{ loop.index }}">
-        {%- endfor -%}
-      </template>
-    {% else %}
-      {% if item.data.portada %}<img src="{{ item.data.portada }}" alt="{{ item.data.imagenAlt or item.data.title }}" loading="lazy" decoding="async">{% endif %}
-    {% endif %}
-    <span class="mm-tipo mm-tipo-{{ mmTipo }}">{{ { video: 'Video', podcast: 'Podcast', galeria: 'Galería', foto: 'Foto' }[mmTipo] or mmTipo }}</span>
-  </div>
-  <h3 class="mm-title">{{ item.data.title }}</h3>
+{% set etiqueta = { video: 'Video', podcast: 'Podcast', galeria: 'Galería', foto: 'Foto', red: 'En redes' }[mmTipo] or mmTipo %}
+{% set yid = item.data.youtube | ytId %}
+{% set tapa = item.data.portada or (item.data.imagenes[0] if item.data.imagenes) or (("https://i.ytimg.com/vi/" + yid + "/hqdefault.jpg") if yid) %}
+{# Si no hay nada que reproducir, no se pinta el botón de reproducir: una ficha
+   a la que el editor todavía no le subió el archivo no debe prometer un video
+   que no existe. #}
+{% set hayMedio = item.data.archivo or item.data.youtube or item.data.spotify or item.data.audio or item.data.enlace %}
+{# Una tarjeta sin foto decía "En redes", lo mismo que su etiqueta. Diciendo de
+   qué red es se gana información sin pedirle nada a la red: el nombre sale del
+   propio enlace, en el build. #}
+{% set marcaRed = (item.data.enlace | redDe) if mmTipo == 'red' %}
+<article class="mm-card" id="mm-{{ item.fileSlug | slugify }}">
+  <a class="mm-thumb" href="{{ item.url }}" tabindex="-1" aria-hidden="true">
+    {%- if tapa -%}
+      {%- if "//" in tapa -%}
+      {# Miniatura de YouTube. El build también se la baja y la sirve desde
+         aquí, pero si un día compila sin red se queda apuntando al original:
+         por eso lleva medidas declaradas (480x360 es el tamaño real de
+         hqdefault) y no se queda sin relación de aspecto reservada. #}
+      <img src="{{ tapa }}" alt="" loading="lazy" decoding="async" width="480" height="360">
+      {%- else -%}
+      <img src="{{ tapa }}" alt="" sizes="(max-width: 720px) 92vw, 300px" loading="lazy" decoding="async">
+      {%- endif -%}
+    {%- else -%}
+      <span class="mm-sin-foto" aria-hidden="true">{{ marcaRed or etiqueta }}</span>
+    {%- endif -%}
+    {%- if hayMedio and (mmTipo == 'video' or mmTipo == 'podcast') -%}<span class="mm-play-btn" aria-hidden="true"></span>{%- endif -%}
+    {%- if mmTipo == 'galeria' and item.data.imagenes -%}<span class="mm-count">{{ item.data.imagenes | length }} fotos</span>{%- endif -%}
+    <span class="mm-tipo mm-tipo-{{ mmTipo }}">{{ etiqueta }}</span>
+  </a>
+  {# El enlace de la foto va oculto para los lectores de pantalla —es el mismo
+     destino que el titular y anunciarlo dos veces estorba—, pero con él se iba
+     también la etiqueta de tipo. Por eso el tipo se nombra aquí. #}
+  <h3 class="mm-title"><a href="{{ item.url }}" aria-label="{{ etiqueta }}: {{ item.data.title }}">{{ item.data.title }}</a></h3>
   {% if item.data.descripcion %}<p class="mm-desc">{{ item.data.descripcion }}</p>{% endif %}
   {% if item.data.fuente %}<p class="mm-fuente">{{ item.data.fuente }}</p>{% endif %}
 </article>

@@ -1,0 +1,130 @@
+---
+layout: layout.njk
+ogType: article
+---
+{# Ficha de un contenido multimedia. Cada video, podcast, galería o publicación
+   tiene aquí su propia dirección —/multimedia/<slug>/— en vez de existir solo
+   como tarjeta dentro de la sección.
+
+   Por qué importa: un video sin dirección propia no se puede compartir por
+   WhatsApp, no se puede enlazar desde una nota, no aparece en el buscador y no
+   se puede medir. Era contenido que solo existía mientras alguien estuviera
+   mirando la sección. #}
+{% set mmTipo = tipo or 'video' %}
+{% set etiqueta = { video: 'Video', podcast: 'Podcast', galeria: 'Galería', foto: 'Foto', red: 'En redes' }[mmTipo] or 'Multimedia' %}
+{% set yid = youtube | ytId %}
+
+<article class="wrap noticia-articulo mm-ficha">
+  <nav class="miga" aria-label="Ruta de navegación">
+    <a href="/">Portada</a>
+    <span aria-hidden="true">›</span>
+    <a href="/multimedia/">Multimedia</a>
+  </nav>
+
+  <div class="hero-eyebrow">
+    <span class="tag">{{ etiqueta }}</span>
+  </div>
+  <h1 class="hero-headline" style="margin-top:12px;">{{ title }}</h1>
+  {% if descripcion %}<p class="hero-dek">{{ descripcion }}</p>{% endif %}
+  <p class="byline">{{ date | readableDate }}</p>
+
+  {% set compartirArriba = true %}
+  {% include "compartir.njk" %}
+  {% set compartirArriba = false %}
+
+  <div class="mm-ficha-medio">
+    {%- if mmTipo == 'galeria' -%}
+      <div class="mm-ficha-galeria">
+        {%- for im in imagenes -%}
+        {# `data-indice`: el botón promete abrir en la foto N y el visor tiene
+           que empezar ahí. Sin esto, tocar la séptima foto abría la primera. #}
+        <button type="button" class="mm-open-galeria mm-ficha-foto" data-galeria="galeria-{{ page.fileSlug | slugify }}" data-indice="{{ loop.index0 }}" aria-label="Abrir la galería en la foto {{ loop.index }}">
+          <img src="{{ im }}" alt="{{ title }} — foto {{ loop.index }}" sizes="(max-width: 720px) 45vw, 240px" loading="lazy" decoding="async">
+        </button>
+        {%- endfor -%}
+      </div>
+      {# El visor lo abre el mismo script que ya usan las tarjetas de la sección. #}
+      <template id="galeria-{{ page.fileSlug | slugify }}">
+        {%- for im in imagenes -%}
+        <img src="{{ im }}" alt="{{ title }} — foto {{ loop.index }}">
+        {%- endfor -%}
+      </template>
+    {%- elif mmTipo == 'foto' -%}
+      {% if portada %}
+      <img class="mm-ficha-unica" src="{{ portada }}" alt="{{ imagenAlt or title }}" sizes="(max-width: 720px) 92vw, 760px" loading="eager" fetchpriority="high" decoding="async">
+      {% endif %}
+    {%- else -%}
+      {# Qué se pinta, según el tipo. El orden importa y antes estaba mal: el
+         campo de audio iba delante del de YouTube para TODOS los tipos, así que
+         un video con algo suelto en "Archivo de audio" mostraba el audio y
+         escondía el video. Ahora cada tipo busca primero lo suyo. #}
+      {% if mmTipo == 'red' %}
+        {% set fuenteMedio = enlace or archivo %}
+      {% elif mmTipo == 'podcast' %}
+        {% set fuenteMedio = spotify or audio or enlace %}
+      {% else %}
+        {% set fuenteMedio = archivo or (("https://www.youtube.com/watch?v=" + yid) if yid) or enlace or audio %}
+      {% endif %}
+      {{ fuenteMedio | incrustar(portada) | safe }}
+    {%- endif -%}
+    {% if fuente %}<p class="mm-fuente mm-ficha-fuente">{{ fuente }}</p>{% endif %}
+  </div>
+
+  {% if content %}
+  <div class="noticia-cuerpo">
+    {{ content | safe }}
+  </div>
+  {% endif %}
+
+  {% include "compartir.njk" %}
+
+  <p class="volver-portada" style="margin-top:32px;"><a href="/multimedia/">← Volver a Multimedia</a></p>
+</article>
+
+{% set otras = collections.multimedia | relacionadas(page.url, '', 3) %}
+{% if otras.length %}
+<section class="section-block wrap mm-mas">
+  <div class="section-head">
+    <h2>Más multimedia</h2>
+    <span class="sub">Video, podcast, fotos y galerías · <a class="mm-ver-todo" href="/multimedia/">Ver toda la sección →</a></span>
+  </div>
+  <div class="mm-grid">
+    {% for item in otras %}
+    {% include "mm-card.njk" %}
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{%- set miniatura = portada or (("https://i.ytimg.com/vi/" + yid + "/hqdefault.jpg") if yid) -%}
+{%- if mmTipo == 'video' and miniatura and (archivo or yid) -%}
+{# VideoObject: es lo que hace que un video pueda salir en la pestaña Videos de
+   Google con su miniatura. Exige nombre, descripción, miniatura y fecha de
+   publicación; sin miniatura no se emite nada, porque un dato incompleto ahí
+   no sirve de nada. #}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": {{ title | jsonify | safe }},
+  "description": {{ (descripcion or title) | jsonify | safe }},
+  "thumbnailUrl": {{ (miniatura if "http" in miniatura else "https://economiasantander.com" + miniatura) | jsonify | safe }},
+  "uploadDate": "{{ date | isoDate }}",
+  {% if archivo %}"contentUrl": {{ ("https://economiasantander.com" + archivo) | jsonify | safe }},
+  {% elif yid %}"embedUrl": "https://www.youtube-nocookie.com/embed/{{ yid }}",
+  {% endif %}"publisher": { "@id": "https://economiasantander.com/#organization" }
+}
+</script>
+{%- endif -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Portada", "item": "https://economiasantander.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Multimedia", "item": "https://economiasantander.com/multimedia/" },
+    { "@type": "ListItem", "position": 3, "name": {{ title | jsonify | safe }} }
+  ]
+}
+</script>

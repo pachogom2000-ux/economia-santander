@@ -3,6 +3,25 @@ const Image = require("@11ty/eleventy-img");
 const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 const crypto = require("node:crypto");
 const fsSync = require("node:fs");
+const { incrustar, reconocer } = require("./lib/incrustar");
+
+// ID de un video de YouTube a partir de una URL completa o del ID pelado (el
+// CMS acepta las dos formas). Devuelve cadena vacía si lo pegado NO es un
+// video: antes devolvía el texto tal cual cuando no reconocía nada, y con eso
+// una lista de reproducción acababa dentro de una miniatura inventada
+// —i.ytimg.com/vi/https://youtube.com/playlist?list=…/hqdefault.jpg— que además
+// se declaraba como thumbnailUrl en los datos estructurados.
+// Vive fuera de la configuración porque lo usan el filtro y los datos
+// calculados, y tienen que decidir igual.
+function idDeYoutube(valor) {
+  if (!valor) return "";
+  const m = String(valor).match(
+    /(?:youtube\.com\/(?:watch\?.*v=|embed\/|shorts\/|live\/)|youtu\.be\/)([\w-]{6,})/
+  );
+  const id = m ? m[1] : String(valor).trim();
+  if (id === "videoseries" || !/^[\w-]{6,20}$/.test(id)) return "";
+  return id;
+}
 
 // Huella del CSS, como la que ya llevan las fuentes.
 //
@@ -153,7 +172,46 @@ module.exports = function (eleventyConfig) {
     return self.renderToken(tokens, idx, options, env, self);
   };
 
+  // Un párrafo que solo lleva la dirección de un video o de una publicación se
+  // convierte en el contenido ya montado. Es la forma de incrustar desde el
+  // CMS: pegar el enlace en su propia línea, sin nada más alrededor.
+  //
+  // La regla corre al final del proceso, cuando `linkify` ya convirtió la
+  // dirección suelta en un enlace. Por eso se mira el TEXTO del párrafo, que
+  // sigue siendo la dirección tal cual se escribió: así un enlace con texto
+  // ([ver el video](...)) no se toca, porque su texto ya no es la dirección.
+  md.core.ruler.push("incrustaciones", (state) => {
+    const tokens = state.tokens;
+    for (let i = 0; i < tokens.length - 2; i++) {
+      if (tokens[i].type !== "paragraph_open") continue;
+      const dentro = tokens[i + 1];
+      if (!dentro || dentro.type !== "inline") continue;
+      if (tokens[i + 2].type !== "paragraph_close") continue;
+      const texto = dentro.content.trim().replace(/^<|>$/g, "");
+      if (!texto || /\s/.test(texto)) continue; // el párrafo trae algo más
+      const html = incrustar(texto);
+      if (!html) continue;
+      const bloque = new state.Token("html_block", "", 0);
+      bloque.content = html;
+      tokens.splice(i, 3, bloque);
+    }
+  });
+
   eleventyConfig.setLibrary("md", md);
+
+  // El mismo motor para las plantillas: {{ item.data.enlace | incrustar | safe }}
+  eleventyConfig.addFilter("incrustar", (enlace, portada) => incrustar(enlace, { portada }) || "");
+
+  // Solo el nombre de la plataforma ("TikTok", "Instagram"…). Sirve para que
+  // una tarjeta sin foto diga de qué red es, en vez del genérico "En redes",
+  // y se resuelve en el build: no se le pregunta nada a la red.
+  eleventyConfig.addFilter("redDe", (enlace) => {
+    const dato = reconocer(enlace);
+    return dato && dato.nombre ? dato.nombre : "";
+  });
+
+  // Y para escribirlo a mano con su propio pie: {% incrustar "https://…", "Pie" %}
+  eleventyConfig.addShortcode("incrustar", (enlace, pie) => incrustar(enlace, { pie }) || "");
 
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return new Date(dateObj).toLocaleDateString("es-CO", {
@@ -278,13 +336,13 @@ module.exports = function (eleventyConfig) {
   });
 
   // ID de YouTube a partir de una URL completa o del ID pelado
-  eleventyConfig.addFilter("ytId", (value) => {
-    if (!value) return "";
-    const m = String(value).match(
-      /(?:youtube\.com\/(?:watch\?.*v=|embed\/|shorts\/|live\/)|youtu\.be\/)([\w-]{6,})/
-    );
-    return m ? m[1] : String(value).trim();
-  });
+  //
+  // Devuelve cadena vacía si lo pegado no es un video. Antes devolvía el texto
+  // tal cual cuando no reconocía nada —para admitir el ID pelado, que el CMS
+  // acepta— y con eso una lista de reproducción acababa dentro de una miniatura
+  // inventada: i.ytimg.com/vi/https://youtube.com/playlist?list=…/hqdefault.jpg,
+  // que además se declaraba como thumbnailUrl en los datos estructurados.
+  eleventyConfig.addFilter("ytId", (value) => idDeYoutube(value));
 
   // URL de embed de Spotify a partir del enlace normal de un episodio/show.
   // Valida dominio y forma: cualquier otra cosa (incluido javascript:) devuelve
@@ -382,7 +440,22 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addGlobalData("eleventyComputed", {
-    description: (data) => data.description || data.excerpt,
+    // Las fichas de multimedia resumen en `descripcion`, no en `excerpt`: sin
+    // esto su meta descripción saldría con el texto genérico del portal.
+    description: (data) => data.description || data.excerpt || data.descripcion,
+    // Y guardan su tapa en `portada`. Sin esto, la vista previa de WhatsApp de
+    // un video caería a la foto por defecto del portal, que es de otra nota:
+    // el lector recibe un enlace ilustrado con algo que no tiene que ver.
+    // El respaldo sigue el mismo orden que la tarjeta de la sección: portada,
+    // la primera foto de la galería y, en último lugar, la miniatura que
+    // publica el propio YouTube.
+    imagen: (data) => {
+      if (data.imagen) return data.imagen;
+      if (data.portada) return data.portada;
+      if (Array.isArray(data.imagenes) && data.imagenes.length) return data.imagenes[0];
+      const id = idDeYoutube(data.youtube);
+      return id ? "https://i.ytimg.com/vi/" + id + "/hqdefault.jpg" : undefined;
+    },
   });
 
   return {

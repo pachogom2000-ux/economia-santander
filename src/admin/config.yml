@@ -20,6 +20,16 @@ backend:
 # Solo el paso final a "Listo" publica y cuesta un deploy de produccion.
 publish_mode: editorial_workflow
 
+# El nombre del archivo sale del titulo, y de ahi la direccion publica. Sin
+# esto, un titulo con tildes o con ene deja una direccion que hay que codificar
+# al compartirla (…gastrofusi%C3%B3n…) y que se ve rota en WhatsApp.
+# Solo afecta a lo que se cree de aqui en adelante: lo ya publicado conserva su
+# direccion, que es justo lo que se quiere.
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "-"
+
 media_folder: "src/assets/uploads"
 public_folder: "/assets/uploads"
 
@@ -223,6 +233,7 @@ collections:
       - label: "Cuerpo de la noticia"
         name: "body"
         widget: "markdown"
+        hint: "Para montar un video o una publicación dentro de la nota, pega la dirección SOLA, en su propio párrafo: YouTube, TikTok, Instagram, X, Facebook, LinkedIn, Threads, Vimeo, Spotify y SoundCloud se montan solos. Si el enlace va dentro de una frase, se queda como enlace normal."
       - label: "tags"
         name: "tags"
         widget: "hidden"
@@ -236,6 +247,9 @@ collections:
     slug: "{{slug}}"
     format: "frontmatter"
     extension: "md"
+    # Cada contenido tiene desde ahora su propia pagina, no solo una tarjeta
+    # dentro de la seccion: /multimedia/<direccion>/. Es la que se comparte.
+    preview_path: "multimedia/{{slug}}/"
     fields:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Fecha", name: "date", widget: "datetime" }
@@ -244,14 +258,20 @@ collections:
         widget: "select"
         default: "video"
         options:
-          - { label: "Video (YouTube)", value: "video" }
+          - { label: "Video (YouTube o archivo propio)", value: "video" }
           - { label: "Podcast", value: "podcast" }
           - { label: "Galería de fotos", value: "galeria" }
           - { label: "Foto", value: "foto" }
+          - { label: "Publicación de redes (TikTok, Instagram, X, Facebook…)", value: "red" }
       - label: "Descripción"
         name: "descripcion"
         widget: "text"
         required: false
+      - label: "Enlace de la publicación (TikTok, Instagram, X, Facebook, LinkedIn, Threads…)"
+        name: "enlace"
+        widget: "string"
+        required: false
+        hint: "Para tipo Publicación de redes. Pega la dirección tal como la copias de la app. Ojo con los enlaces cortos de TikTok (vm.tiktok.com/…): esos no se pueden montar, abre el video en la web y copia la dirección larga."
       - label: "Video de YouTube (URL o ID)"
         name: "youtube"
         widget: "string"
@@ -271,12 +291,12 @@ collections:
         name: "audio"
         widget: "file"
         required: false
-        hint: "Alternativa a Spotify para tipo Podcast: sube el MP3 directamente."
+        hint: "Alternativa a Spotify para tipo Podcast: sube el MP3 directamente. Aquí va SONIDO, no imágenes: la foto de portada tiene su propio campo, más abajo."
       - label: "Imagen de portada"
         name: "portada"
         widget: "image"
         required: false
-        hint: "Obligatoria para tipo Foto; en galerías es la miniatura (si falta, se usa la primera foto)."
+        hint: "Es la cara del contenido: la que se ve en la sección, la que abre la ficha y la que sale en la vista previa de WhatsApp. Obligatoria para tipo Foto; en galerías, si falta, se usa la primera foto; en videos de YouTube, si falta, se usa la miniatura de YouTube."
       - label: "Texto alternativo de la portada"
         name: "imagenAlt"
         widget: "string"
@@ -291,6 +311,17 @@ collections:
         name: "fuente"
         widget: "string"
         required: false
+      # La ficha del contenido sabe pintar un texto debajo del reproductor, pero
+      # la colección no tenía dónde escribirlo: toda ficha quedaba con título,
+      # descripción y el medio, y nada más. Con cinco fichas así, cinco
+      # direcciones del portal dicen casi lo mismo y para Google eso es
+      # contenido flaco. Aquí va el contexto: qué se ve, quién habla, qué cifra
+      # aparece. Es opcional.
+      - label: "Texto de la ficha (opcional)"
+        name: "body"
+        widget: "markdown"
+        required: false
+        hint: "Contexto del contenido: qué se ve en el video, quién habla, de dónde salen las cifras. Aparece debajo del reproductor."
 
   - name: "declaraciones"
     label: "Declaraciones de gremios"
