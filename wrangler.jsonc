@@ -7,6 +7,49 @@
   "main": "worker.js",
   "compatibility_date": "2026-07-01",
 
+  // EL DOMINIO REAL NO SE DECLARA AQUÍ, Y ES A PROPÓSITO.
+  //
+  // economiasantander.com está atado a este Worker como *custom domain* desde
+  // el 10 de agosto de 2026. Eso vive en Cloudflare (Workers & Pages → el
+  // Worker → Settings → Domains & Routes), no en este archivo.
+  //
+  // La tentación es escribirlo aquí, que es donde uno lo buscaría:
+  //
+  //   "routes": [{ "pattern": "economiasantander.com", "custom_domain": true }]
+  //
+  // Y rompería la publicación automática. Comprobado leyendo wrangler 4.115.0:
+  // con rutas de tipo custom_domain, CADA `wrangler deploy` termina en un
+  // PUT /accounts/{cuenta}/workers/domains/records. Es incondicional: no se lo
+  // salta porque el dominio ya esté atado. Esa llamada toca el DNS de la zona,
+  // y el token de CI (`despliegue-economia-santander`) tiene un solo permiso,
+  // Workers Scripts → Edit, que a propósito NO alcanza al DNS — ver
+  // docs/credenciales-cloudflare.md.
+  //
+  // Y en CI es peor, porque no hay una terminal delante: wrangler se pone solo
+  // `override_existing_dns_record: true` y manda el PUT sin preguntar nada.
+  //
+  // El despliegue empezaría a fallar, y ese fallo no se ve desde el CMS:
+  // Francisco aprueba su nota, el pull request se fusiona y el portal sigue
+  // mostrando lo de antes. Es exactamente lo que pasó el 10 de agosto.
+  //
+  // Que no estén aquí no desata nada: el apex lleva atado desde entonces y
+  // todos los despliegues desde ese día han corrido con esta configuración sin
+  // rutas. Wrangler solo toca los dominios cuando la configuración los declara.
+  //
+  // PARA REHACER LA ZONA DESDE CERO, o para mover el dominio a otro Worker,
+  // desde una sesión con permiso sobre la zona: panel → Workers & Pages → el
+  // Worker → Settings → Domains & Routes → Add → Custom domain. Ojo: si el apex
+  // todavía tiene registros A, Cloudflare responde "Hostname already has
+  // externally managed DNS records" y hay que borrarlos antes. El
+  // `override_existing_dns_record` de wrangler NO aplica a registros A.
+
+  // El subdominio de pruebas (economia-santander.digitautom.workers.dev) queda
+  // encendido a propósito: es la copia contra la que `npm run cf:check` compara
+  // producción, y no compite con el portal porque su robots.txt es Disallow: /.
+  // Sin rutas declaradas ya estaría encendido por defecto; se escribe explícito
+  // para que siga estándolo si alguien llega a declarar una.
+  "workers_dev": true,
+
   "assets": {
     // Lo que genera Eleventy.
     "directory": "./_site",

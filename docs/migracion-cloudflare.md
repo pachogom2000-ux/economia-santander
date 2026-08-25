@@ -180,6 +180,31 @@ De ahí salió `run_worker_first`, y con él un susto que conviene dejar escrito
 
 Puesta como `true` a secas en vez de lista, todo el sitio pasaría por el Worker y **todo pasaría a ser cobrable**.
 
+### El dominio no se declara en `wrangler.jsonc`, y es a propósito
+
+Lo natural, al leer el repositorio, es echar en falta el dominio: `wrangler.jsonc` no dice en ninguna parte que este Worker sirva `economiasantander.com`. La tentación de arreglarlo es escribir lo que trae cualquier ejemplo:
+
+```jsonc
+"routes": [{ "pattern": "economiasantander.com", "custom_domain": true }]
+```
+
+**Eso rompería la publicación automática.** Leyendo wrangler 4.115.0: cuando la configuración trae rutas de tipo `custom_domain`, *cada* `wrangler deploy` termina en un `PUT /accounts/{cuenta}/workers/domains/records`, y esa llamada es incondicional — no se la salta porque el dominio ya esté atado desde hace semanas. Atar un dominio personalizado crea un registro DNS en la zona, y el token de CI tiene **un solo permiso**, *Workers Scripts → Edit*, que a propósito no llega al DNS ([`credenciales-cloudflare.md`](credenciales-cloudflare.md)).
+
+En CI, además, no hay una terminal delante, y wrangler lo trata como vía libre:
+
+```js
+if (!process.stdout.isTTY) {
+  options.override_existing_origin = true;
+  options.override_existing_dns_record = true;
+}
+```
+
+Es decir, sin nadie mirando se salta la comprobación de conflictos y manda el PUT con permiso para pisar el registro que haya. Con el token actual la respuesta sería un rechazo, el paso «Desplegar» empezaría a fallar y el fallo tendría la forma cara: Francisco aprueba en el CMS, el pull request se fusiona y el portal se queda como estaba. Igual que el 10 de agosto.
+
+Dejarlo fuera no desata nada. El apex lleva atado desde el corte y todos los despliegues posteriores han corrido con esta misma configuración sin rutas: wrangler solo toca los dominios cuando la configuración se los nombra. Por eso el dominio se documenta —en un comentario largo dentro de `wrangler.jsonc`, con los pasos para rehacerlo a mano— en vez de declararse.
+
+Si algún día conviene declararlo de verdad, primero hay que darle al token de CI permiso de zona (*Workers Routes*), asumiendo que la llave del repositorio deje de poder hacer una sola cosa.
+
 ### La copia de pruebas no compite con el portal
 
 Mientras los dos convivan hay dos copias del sitio en internet. La de `workers.dev` sirve un `robots.txt` propio con `Disallow: /` — de ahí que robots.txt esté en la lista de arriba. El portal real conserva el suyo intacto. Además, todas las páginas ya traían la etiqueta canónica apuntando al dominio real.
