@@ -712,7 +712,13 @@
   .secondary-list { display: flex; flex-direction: column; gap: 20px; }
   .secondary-item { padding-bottom: 20px; border-bottom: 1px solid var(--line); }
   .secondary-item:last-child { border-bottom: none; }
-  .secondary-eyebrow { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  /* `wrap` porque el chip lo escribe la redacción y puede ser largo: "Fuente:
+     Cámara de Comercio de Bucaramanga" mide 281 px y no se encoge (lleva
+     white-space: nowrap). En una fila que no envuelve, empujaba al titular
+     fuera de la pantalla y hacía que la PORTADA ENTERA se deslizara de lado en
+     el celular: 12 px medidos a 375 px de ancho. Envolver no cambia nada
+     cuando sí caben. */
+  .secondary-eyebrow { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 8px; }
   .secondary-item h3 { font-size: 20px; line-height: 1.15; font-weight: 600; }
   .secondary-item h3 a { text-decoration: none; }
   .secondary-item h3 a:hover { color: var(--accent); }
@@ -752,8 +758,17 @@
     display: block;
   }
   .core-card .headlines a:hover { color: var(--accent); }
-  .core-card .headlines .row { display: flex; align-items: flex-start; gap: 8px; }
+  /* Mismo caso que .secondary-eyebrow: el chip no se encoge y aquí llegó a
+     medir 281 px en una fila de 297, dejando el titular en 58 px y con su caja
+     12 px por fuera de la pantalla. */
+  .core-card .headlines .row { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 8px; }
   .core-card .headlines .row .chip { margin-top: 2px; }
+  /* Último cortafuegos, para un rótulo de fuente absurdamente largo: el chip no
+     puede pasar del ancho de su fila. Con los de hoy no se nota —caben en su
+     propia línea—, pero deja de ser posible que un texto del CMS deslice la
+     página entera. */
+  .secondary-eyebrow .chip,
+  .core-card .headlines .row .chip { max-width: 100%; overflow: hidden; text-overflow: ellipsis; }
 
   .comp-row {
     display: flex;
