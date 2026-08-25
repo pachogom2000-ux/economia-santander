@@ -26,7 +26,7 @@ Para Santander la pregunta no es si va a llover menos. Es por dónde llega la fa
 
 El estado oficial es **Aviso de El Niño**, con el fenómeno ya presente y fortaleciéndose. NOAA le da **más del 90% de probabilidad** de que sea un evento "muy fuerte" durante el otoño e invierno del hemisferio norte, es decir, el segundo semestre de 2026 y el comienzo de 2027.
 
-El IDEAM añade el dato que importa acá: prevé **reducción significativa de las precipitaciones** en las regiones Pacífica, Andina y Caribe, con mayor evapotranspiración, episodios de estrés hídrico y reducción de caudales y de niveles de embalses. Santander está en la región Andina.
+El IDEAM añade el dato que importa acá: prevé **reducción significativa de las precipitaciones** en las regiones Pacífica, Andina y Caribe, con mayor evaporación, episodios de estrés hídrico y reducción de caudales y de niveles de embalses. Santander está en la región Andina.
 
 ## La lección de 2024: el golpe no llegó por los alimentos
 
