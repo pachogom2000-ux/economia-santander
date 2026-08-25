@@ -7,3 +7,7 @@ _site/
 # Caché local de wrangler (Cloudflare)
 .wrangler/
 .dev.vars
+
+# Lo que el build se baja de fuera (miniaturas de YouTube de las
+# incrustaciones). Se rehace solo en cada compilacion.
+.cache/

@@ -779,17 +779,30 @@
       });
     });
 
-    // ---------- 9) Multimedia: reproducir video en la propia tarjeta ----------
-    each('.mm-play', function (btn) {
+    // ---------- 9) Incrustaciones: cargar el contenido solo si lo piden ----------
+    //
+    // Lo que hay en la página es una tapa: una imagen, el nombre de la
+    // plataforma y la medida ya reservada. El marco de verdad se crea aquí, al
+    // tocar. Hasta entonces el navegador del lector no habla con YouTube, ni
+    // con TikTok, ni con Meta, ni con X.
+    //
+    // Ese es el motivo de fondo: el aviso de /legal/cookies/ promete que quien
+    // rechaza deja de ser medido, y los scripts de las redes rastrean apenas
+    // cargan, mire o no mire alguien el video.
+    each('.incrusta-abrir', function (btn) {
       btn.addEventListener('click', function () {
-        var id = btn.getAttribute('data-yt');
-        if (!id) return;
+        var src = btn.getAttribute('data-src');
+        if (!src) return;
         var f = document.createElement('iframe');
-        f.className = 'mm-frame';
-        f.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(id) + '?autoplay=1';
-        f.setAttribute('allow', 'autoplay; encrypted-media; picture-in-picture');
+        f.className = 'incrusta-marco';
+        f.src = src;
+        f.setAttribute('allow', 'autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share');
         f.setAttribute('allowfullscreen', '');
-        f.title = btn.getAttribute('aria-label') || 'Video';
+        f.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
+        f.title = btn.getAttribute('data-titulo') || 'Contenido incrustado';
+        // La caja de una publicación sin foto de tapa estaba encogida a
+        // propósito; ahora sí toma el alto que pide la red.
+        if (btn.parentNode.classList) btn.parentNode.classList.add('incrusta-abierta');
         btn.parentNode.replaceChild(f, btn);
       });
     });

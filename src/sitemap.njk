@@ -30,6 +30,15 @@ eleventyExcludeFromCollections: true
     <lastmod>{{ n.date | fechaModificacionCorta(n.data.updated) }}</lastmod>
   </url>
 {%- endfor %}
+{#- Cada video, podcast o galería tiene ficha propia desde que dejó de existir
+    solo como tarjeta dentro de /multimedia/. Llevan lastmod porque su fecha es
+    la de publicación real del contenido. -#}
+{%- for m in collections.multimedia | reverse %}
+  <url>
+    <loc>https://economiasantander.com{{ m.url }}</loc>
+    <lastmod>{{ m.date | fechaModificacionCorta(m.data.updated) }}</lastmod>
+  </url>
+{%- endfor %}
 {%- for s in collections.secciones %}
 {%- set fechaSeccion = collections.noticias | ultimaDeSeccion(s.nombre) %}
   <url>

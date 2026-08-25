@@ -3,6 +3,7 @@ const Image = require("@11ty/eleventy-img");
 const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 const crypto = require("node:crypto");
 const fsSync = require("node:fs");
+const { incrustar } = require("./lib/incrustar");
 
 // Huella del CSS, como la que ya llevan las fuentes.
 //
@@ -153,7 +154,38 @@ module.exports = function (eleventyConfig) {
     return self.renderToken(tokens, idx, options, env, self);
   };
 
+  // Un párrafo que solo lleva la dirección de un video o de una publicación se
+  // convierte en el contenido ya montado. Es la forma de incrustar desde el
+  // CMS: pegar el enlace en su propia línea, sin nada más alrededor.
+  //
+  // La regla corre al final del proceso, cuando `linkify` ya convirtió la
+  // dirección suelta en un enlace. Por eso se mira el TEXTO del párrafo, que
+  // sigue siendo la dirección tal cual se escribió: así un enlace con texto
+  // ([ver el video](...)) no se toca, porque su texto ya no es la dirección.
+  md.core.ruler.push("incrustaciones", (state) => {
+    const tokens = state.tokens;
+    for (let i = 0; i < tokens.length - 2; i++) {
+      if (tokens[i].type !== "paragraph_open") continue;
+      const dentro = tokens[i + 1];
+      if (!dentro || dentro.type !== "inline") continue;
+      if (tokens[i + 2].type !== "paragraph_close") continue;
+      const texto = dentro.content.trim().replace(/^<|>$/g, "");
+      if (!texto || /\s/.test(texto)) continue; // el párrafo trae algo más
+      const html = incrustar(texto);
+      if (!html) continue;
+      const bloque = new state.Token("html_block", "", 0);
+      bloque.content = html;
+      tokens.splice(i, 3, bloque);
+    }
+  });
+
   eleventyConfig.setLibrary("md", md);
+
+  // El mismo motor para las plantillas: {{ item.data.enlace | incrustar | safe }}
+  eleventyConfig.addFilter("incrustar", (enlace, portada) => incrustar(enlace, { portada }) || "");
+
+  // Y para escribirlo a mano con su propio pie: {% incrustar "https://…", "Pie" %}
+  eleventyConfig.addShortcode("incrustar", (enlace, pie) => incrustar(enlace, { pie }) || "");
 
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return new Date(dateObj).toLocaleDateString("es-CO", {
@@ -382,7 +414,12 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addGlobalData("eleventyComputed", {
-    description: (data) => data.description || data.excerpt,
+    // Las fichas de multimedia resumen en `descripcion`, no en `excerpt`: sin
+    // esto su meta descripción saldría con el texto genérico del portal.
+    description: (data) => data.description || data.excerpt || data.descripcion,
+    // Y guardan su tapa en `portada`. Sin esto, la vista previa de WhatsApp de
+    // un video caería a la foto por defecto, que es de otra nota.
+    imagen: (data) => data.imagen || data.portada,
   });
 
   return {

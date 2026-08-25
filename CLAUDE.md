@@ -84,11 +84,16 @@ src/
   _includes/
     layout.njk           cabezote, pico y placa, cinta bursátil, avisos, pie, scripts
     noticia.njk          plantilla de nota + JSON-LD NewsArticle
+    multimedia-item.njk  ficha de un video, podcast, galería o publicación
+    mm-card.njk          tarjeta de multimedia (lleva a la ficha, no reproduce)
   noticias/*.md          las notas
+  multimedia/*.md        los contenidos multimedia; cada uno con su dirección
   assets/style.css       todo el CSS
   assets/uploads/        imágenes del CMS
   admin/config.yml       configuración de Decap CMS
 .eleventy.js             config; enlaces externos abren en pestaña nueva
+lib/incrustar.js         convierte un enlace de YouTube, TikTok, X… en el
+                         contenido montado dentro de la nota
 ```
 
 ### Comandos
@@ -132,6 +137,56 @@ Inversión · Educación financiera · Empleo · Finanzas personales · Construc
 
 `eleventyExcludeFromCollections: true` mantiene la nota fuera de la portada mientras es borrador. **Se quita solo cuando Francisco aprueba.** La decisión de publicar es del director.
 
+### Multimedia: cada contenido con su propia dirección
+
+Los videos, podcasts, galerías y fotos viven en `src/multimedia/*.md` y **cada uno
+tiene su página**: `/multimedia/<direccion>/`. Antes solo existían como tarjetas
+dentro de la sección, y eso quería decir que un video no se podía mandar por
+WhatsApp, ni enlazar desde una nota, ni salir en Google: no era una página.
+
+- La dirección sale del nombre del archivo, ya sin tildes ni eñes.
+- La tarjeta de la sección y la de la portada **llevan a la ficha; no
+  reproducen**. Un reproductor por tarjeta era una sección pesada donde nadie
+  llegaba nunca al contenido.
+- La ficha la arma `_includes/multimedia-item.njk`, con su barra de compartir,
+  su ruta de navegación y —si es video— su `VideoObject`, que es lo que permite
+  que aparezca en la pestaña Videos de Google.
+- **`portada` es la cara del contenido.** Es la que se ve en la sección y la que
+  sale en la vista previa de WhatsApp. Ojo con confundirla con `audio`, que es
+  para el MP3: si una foto se sube en el campo del audio, la tarjeta sale negra.
+
+### Incrustar un video o una publicación de redes
+
+Dentro de una nota, **pegue la dirección sola, en su propio párrafo**. El build
+la reconoce y monta el contenido:
+
+```markdown
+El alcalde lo anunció en su cuenta:
+
+https://www.tiktok.com/@alcaldiabucaramanga/video/7412345678901234567
+
+Y la cifra la confirmó el Banco de la República.
+```
+
+Se montan solos: **YouTube, Vimeo, TikTok, Instagram, Facebook, X, LinkedIn,
+Threads, Spotify y SoundCloud**, además de cualquier MP4 o MP3 del propio sitio.
+Un enlace escrito dentro de una frase, o uno con texto (`[ver el video](...)`),
+se queda como enlace normal: solo se transforma el párrafo que no tiene nada más.
+
+Tres cosas que conviene saber:
+
+- **No se carga nada hasta que el lector toca.** Lo que se pinta es una tapa con
+  el nombre de la red; el contenido llega al primer toque. Es a propósito: los
+  scripts de las redes rastrean apenas cargan, y el aviso de `/legal/cookies/`
+  promete que quien rechaza deja de ser medido.
+- **Los enlaces cortos de TikTok no sirven** (`vm.tiktok.com/ZM8…`). Son los que
+  reparte la app al compartir y no llevan dentro el número del video, así que no
+  hay nada que montar: sale una tarjeta con el enlace. Abra el video en la web y
+  copie la dirección larga.
+- **La atribución es parte de la incrustación.** Cada una lleva su "Ver en…"
+  hacia la publicación original, que es lo que pide la política editorial para
+  todo lo que no es propio.
+
 ### Flujo de publicación del CMS
 
 Decap está en `publish_mode: editorial_workflow`. Los guardados van a una rama con pull request, no directo a `main`. Redactar y revisar genera *deploy previews*, que no consumen créditos de Netlify; solo el paso final a "Listo" publica y cuesta un despliegue de producción.
@@ -151,6 +206,13 @@ Decap está en `publish_mode: editorial_workflow`. Los guardados van a una rama 
 - **`_site/` no se limpia solo.** Si renombras o borras una nota, quedan carpetas huérfanas en el build local. Borra `_site/` y recompila. **Ahora esto es más grave que antes**: con Netlify el build salía siempre de un clon limpio, pero un despliegue manual a Cloudflare sube tu `_site/` tal como esté — una nota borrada volvería a publicarse. (En Windows `rm -rf _site` puede fallar con *Device or resource busy* por OneDrive o el antivirus; en ese caso `find _site -mindepth 1 -delete`.)
 - **Publicar y no ver el cambio no siempre es un fallo del CMS.** El 10 de agosto de 2026 Francisco publicó una nota, el pull request se fusionó bien y el portal siguió igual: faltaba el despliegue a Cloudflare. Antes de buscar el error en el CMS, mira si el flujo de Actions corrió.
 - **Una nota nueva no entra sola a la portada.** Los cinco espacios de arriba están fijados en `destacadas.json`, y las secciones *complementarias* solo muestran su contador. Una nota de "Comercio y consumo" existe, se indexa y sale en su sección, pero no aparece en la portada hasta que se fije. No es un error.
+- **El plugin de imágenes envuelve cada `<img>` en un `<picture>`, y dentro del
+  cuerpo de una nota manda `.noticia-cuerpo img`.** Las dos cosas juntas
+  rompieron la tapa de las incrustaciones: el envoltorio se comía la medida y la
+  regla del cuerpo le devolvía el alto automático, así que la miniatura de 4:3
+  de YouTube se salía del hueco de 16:9. Se arregla con `display: contents` en
+  el `<picture>` y dos clases en el selector de la foto. Si algún componente
+  nuevo mete una foto dentro de una caja con medida fija, le va a pasar igual.
 - **Los datos del ticker y las tasas tienen fecha.** Solo el dólar, el euro, el oro y el bitcoin se actualizan en vivo; el resto son valores fijos que hay que refrescar a mano.
 - **El euro no es como el dólar.** No hay TRM del euro ni mercado spot interbancario en Colombia: lo que existe es el precio de casa de cambio, con un margen entre compra y venta de ~7% (el del dólar es ~0,1%). Por eso su ficha muestra las dos puntas y declara que no hay serie histórica, en vez de inventar una cifra única.
 - **Isagén no cotiza en la BVC** desde 2017 y **Bancolombia cotiza como Grupo Cibest**. Ojo al citar acciones.
