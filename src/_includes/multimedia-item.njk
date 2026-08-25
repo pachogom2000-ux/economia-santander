@@ -36,7 +36,9 @@ ogType: article
     {%- if mmTipo == 'galeria' -%}
       <div class="mm-ficha-galeria">
         {%- for im in imagenes -%}
-        <button type="button" class="mm-open-galeria mm-ficha-foto" data-galeria="galeria-{{ page.fileSlug | slugify }}" aria-label="Abrir la galería en la foto {{ loop.index }}">
+        {# `data-indice`: el botón promete abrir en la foto N y el visor tiene
+           que empezar ahí. Sin esto, tocar la séptima foto abría la primera. #}
+        <button type="button" class="mm-open-galeria mm-ficha-foto" data-galeria="galeria-{{ page.fileSlug | slugify }}" data-indice="{{ loop.index0 }}" aria-label="Abrir la galería en la foto {{ loop.index }}">
           <img src="{{ im }}" alt="{{ title }} — foto {{ loop.index }}" sizes="(max-width: 720px) 45vw, 240px" loading="lazy" decoding="async">
         </button>
         {%- endfor -%}
@@ -52,10 +54,17 @@ ogType: article
       <img class="mm-ficha-unica" src="{{ portada }}" alt="{{ imagenAlt or title }}" sizes="(max-width: 720px) 92vw, 760px" loading="eager" fetchpriority="high" decoding="async">
       {% endif %}
     {%- else -%}
-      {# Video, podcast o publicación de redes: gana el archivo propio, después
-         el enlace de la plataforma que corresponda al tipo, y por último el
-         campo genérico de redes. #}
-      {% set fuenteMedio = archivo or (enlace if mmTipo == 'red') or (spotify if mmTipo == 'podcast') or audio or (("https://www.youtube.com/watch?v=" + yid) if yid) or enlace %}
+      {# Qué se pinta, según el tipo. El orden importa y antes estaba mal: el
+         campo de audio iba delante del de YouTube para TODOS los tipos, así que
+         un video con algo suelto en "Archivo de audio" mostraba el audio y
+         escondía el video. Ahora cada tipo busca primero lo suyo. #}
+      {% if mmTipo == 'red' %}
+        {% set fuenteMedio = enlace or archivo %}
+      {% elif mmTipo == 'podcast' %}
+        {% set fuenteMedio = spotify or audio or enlace %}
+      {% else %}
+        {% set fuenteMedio = archivo or (("https://www.youtube.com/watch?v=" + yid) if yid) or enlace or audio %}
+      {% endif %}
       {{ fuenteMedio | incrustar(portada) | safe }}
     {%- endif -%}
     {% if fuente %}<p class="mm-fuente mm-ficha-fuente">{{ fuente }}</p>{% endif %}
@@ -88,7 +97,7 @@ ogType: article
 {% endif %}
 
 {%- set miniatura = portada or (("https://i.ytimg.com/vi/" + yid + "/hqdefault.jpg") if yid) -%}
-{%- if mmTipo == 'video' and miniatura -%}
+{%- if mmTipo == 'video' and miniatura and (archivo or yid) -%}
 {# VideoObject: es lo que hace que un video pueda salir en la pestaña Videos de
    Google con su miniatura. Exige nombre, descripción, miniatura y fecha de
    publicación; sin miniatura no se emite nada, porque un dato incompleto ahí

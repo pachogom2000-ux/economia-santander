@@ -139,8 +139,8 @@ Inversión · Educación financiera · Empleo · Finanzas personales · Construc
 
 ### Multimedia: cada contenido con su propia dirección
 
-Los videos, podcasts, galerías y fotos viven en `src/multimedia/*.md` y **cada uno
-tiene su página**: `/multimedia/<direccion>/`. Antes solo existían como tarjetas
+Los videos, podcasts, galerías, fotos y publicaciones de redes viven en
+`src/multimedia/*.md` y **cada uno tiene su página**: `/multimedia/<direccion>/`. Antes solo existían como tarjetas
 dentro de la sección, y eso quería decir que un video no se podía mandar por
 WhatsApp, ni enlazar desde una nota, ni salir en Google: no era una página.
 
@@ -154,6 +154,11 @@ WhatsApp, ni enlazar desde una nota, ni salir en Google: no era una página.
 - **`portada` es la cara del contenido.** Es la que se ve en la sección y la que
   sale en la vista previa de WhatsApp. Ojo con confundirla con `audio`, que es
   para el MP3: si una foto se sube en el campo del audio, la tarjeta sale negra.
+- El tipo **Publicación de redes** (`tipo: red` + campo `enlace`) sirve para
+  guardar en el portal una publicación de TikTok, Instagram, X o Facebook con
+  ficha propia, en vez de que viva solo dentro de una nota.
+- El campo de texto de la ficha es opcional pero conviene llenarlo: sin él, cada
+  ficha aporta unas cuarenta palabras propias y varias se parecen entre sí.
 
 ### Incrustar un video o una publicación de redes
 

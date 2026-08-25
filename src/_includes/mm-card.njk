@@ -9,6 +9,14 @@
 {% set etiqueta = { video: 'Video', podcast: 'Podcast', galeria: 'Galería', foto: 'Foto', red: 'En redes' }[mmTipo] or mmTipo %}
 {% set yid = item.data.youtube | ytId %}
 {% set tapa = item.data.portada or (item.data.imagenes[0] if item.data.imagenes) or (("https://i.ytimg.com/vi/" + yid + "/hqdefault.jpg") if yid) %}
+{# Si no hay nada que reproducir, no se pinta el botón de reproducir: una ficha
+   a la que el editor todavía no le subió el archivo no debe prometer un video
+   que no existe. #}
+{% set hayMedio = item.data.archivo or item.data.youtube or item.data.spotify or item.data.audio or item.data.enlace %}
+{# Una tarjeta sin foto decía "En redes", lo mismo que su etiqueta. Diciendo de
+   qué red es se gana información sin pedirle nada a la red: el nombre sale del
+   propio enlace, en el build. #}
+{% set marcaRed = (item.data.enlace | redDe) if mmTipo == 'red' %}
 <article class="mm-card" id="mm-{{ item.fileSlug | slugify }}">
   <a class="mm-thumb" href="{{ item.url }}" tabindex="-1" aria-hidden="true">
     {%- if tapa -%}
@@ -22,13 +30,16 @@
       <img src="{{ tapa }}" alt="" sizes="(max-width: 720px) 92vw, 300px" loading="lazy" decoding="async">
       {%- endif -%}
     {%- else -%}
-      <span class="mm-sin-foto" aria-hidden="true">{{ etiqueta }}</span>
+      <span class="mm-sin-foto" aria-hidden="true">{{ marcaRed or etiqueta }}</span>
     {%- endif -%}
-    {%- if mmTipo == 'video' or mmTipo == 'podcast' -%}<span class="mm-play-btn" aria-hidden="true"></span>{%- endif -%}
+    {%- if hayMedio and (mmTipo == 'video' or mmTipo == 'podcast') -%}<span class="mm-play-btn" aria-hidden="true"></span>{%- endif -%}
     {%- if mmTipo == 'galeria' and item.data.imagenes -%}<span class="mm-count">{{ item.data.imagenes | length }} fotos</span>{%- endif -%}
     <span class="mm-tipo mm-tipo-{{ mmTipo }}">{{ etiqueta }}</span>
   </a>
-  <h3 class="mm-title"><a href="{{ item.url }}">{{ item.data.title }}</a></h3>
+  {# El enlace de la foto va oculto para los lectores de pantalla —es el mismo
+     destino que el titular y anunciarlo dos veces estorba—, pero con él se iba
+     también la etiqueta de tipo. Por eso el tipo se nombra aquí. #}
+  <h3 class="mm-title"><a href="{{ item.url }}" aria-label="{{ etiqueta }}: {{ item.data.title }}">{{ item.data.title }}</a></h3>
   {% if item.data.descripcion %}<p class="mm-desc">{{ item.data.descripcion }}</p>{% endif %}
   {% if item.data.fuente %}<p class="mm-fuente">{{ item.data.fuente }}</p>{% endif %}
 </article>

@@ -2501,8 +2501,13 @@
   a.mm-thumb { display: block; }
   .mm-title a { color: inherit; }
   .mm-title a:hover { text-decoration: underline; text-underline-offset: 3px; }
+  /* Pasar por la miniatura o por el titular enciende el botón: son el mismo
+     enlace para el lector. La segunda mitad estaba escrita como
+     `.mm-title a:hover ~ .mm-play-btn`, que no podía seleccionar nada — el
+     botón no es hermano del titular, vive dentro del enlace de la foto—, así
+     que hay que subir a la tarjeta con `:has()`. */
   a.mm-thumb:hover .mm-play-btn,
-  .mm-title a:hover ~ .mm-play-btn { transform: translate(-50%, -50%) scale(1.08); background: var(--accent-strong); }
+  .mm-card:has(.mm-title a:hover) .mm-play-btn { transform: translate(-50%, -50%) scale(1.08); background: var(--accent-strong); }
   .mm-sin-foto {
     position: absolute;
     inset: 0;
@@ -2552,7 +2557,10 @@
      tapa no hay nada que enseñar ahí. Así que la tapa mide lo justo y la caja
      crece al tocar: ese salto sí lo pidió el lector, y por eso no cuenta como
      CLS (Google no mide los movimientos de los 500 ms siguientes a un toque). */
-  .incrusta-fijo .incrusta-caja { height: 200px; }
+  /* `min()` porque hay reproductores más bajos que la tapa: una canción de
+     Spotify pide 152 px y SoundCloud 166, así que reservar 200 hacía que la
+     caja ENCOGIERA al tocar, que es el salto que se quería evitar. */
+  .incrusta-fijo .incrusta-caja { height: min(200px, var(--inc-alto, 200px)); }
   .incrusta-fijo.incrusta-con-foto .incrusta-caja,
   .incrusta-fijo .incrusta-caja.incrusta-abierta { height: var(--inc-alto, 560px); }
   /* La tapa y el marco se colocan CONTRA la caja, no dentro del flujo: es la
@@ -2566,6 +2574,10 @@
     display: block; border: 0;
   }
   .incrusta-abrir { padding: 0; margin: 0; background: none; cursor: pointer; }
+  /* Foco por dentro: la caja recorta lo que se salga (overflow: hidden), así
+     que un anillo por fuera no se vería y quien navega con teclado no sabría
+     dónde está parado. */
+  .incrusta-abrir:focus-visible { outline: 3px solid var(--accent); outline-offset: -3px; }
   .incrusta-abrir picture { display: contents; }
   /* Dos clases a propósito: dentro de una nota manda `.noticia-cuerpo img`,
      que le pone alto automático, margen y esquinas redondeadas a toda foto del
@@ -2602,8 +2614,33 @@
     border-width: 9px 0 9px 15px;
     border-color: transparent transparent transparent #fff;
   }
+  /* Publicación que no se reproduce (Instagram, X, LinkedIn, Threads, un post
+     de Facebook): el mismo círculo, pero con una punta de flecha en vez del
+     triángulo de reproducir. Se abre, no suena. */
+  .incrusta-abre {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 54px; height: 54px;
+    border-radius: 50%;
+    background: rgba(11,110,59,0.92);
+    box-shadow: 0 4px 18px rgba(0,0,0,0.35);
+    transition: transform 160ms ease, background 160ms ease;
+  }
+  .incrusta-abre::after {
+    content: '';
+    position: absolute;
+    left: 45%; top: 50%;
+    width: 13px; height: 13px;
+    border-top: 3px solid #fff;
+    border-right: 3px solid #fff;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
   .incrusta-abrir:hover .incrusta-play,
-  .incrusta-abrir:focus-visible .incrusta-play { transform: translate(-50%, -50%) scale(1.08); background: var(--accent-strong); }
+  .incrusta-abrir:focus-visible .incrusta-play,
+  .incrusta-abrir:hover .incrusta-abre,
+  .incrusta-abrir:focus-visible .incrusta-abre { transform: translate(-50%, -50%) scale(1.08); background: var(--accent-strong); }
   .incrusta-marca {
     position: absolute; top: 10px; left: 10px; z-index: 2;
     padding: 4px 9px;
@@ -2631,19 +2668,28 @@
     gap: 12px;
   }
   .incrusta:not(.incrusta-con-foto) .incrusta-play,
+  .incrusta:not(.incrusta-con-foto) .incrusta-abre,
   .incrusta:not(.incrusta-con-foto) .incrusta-marca,
   .incrusta:not(.incrusta-con-foto) .incrusta-aviso {
     position: relative; left: auto; right: auto; top: auto; bottom: auto;
     transform: none;
   }
   .incrusta:not(.incrusta-con-foto) .incrusta-abrir:hover .incrusta-play,
-  .incrusta:not(.incrusta-con-foto) .incrusta-abrir:focus-visible .incrusta-play { transform: scale(1.08); }
+  .incrusta:not(.incrusta-con-foto) .incrusta-abrir:focus-visible .incrusta-play,
+  .incrusta:not(.incrusta-con-foto) .incrusta-abrir:hover .incrusta-abre,
+  .incrusta:not(.incrusta-con-foto) .incrusta-abrir:focus-visible .incrusta-abre { transform: scale(1.08); }
   .incrusta:not(.incrusta-con-foto) .incrusta-aviso { color: var(--text-muted); text-shadow: none; }
   .incrusta-pie { margin-top: 8px; font-size: 12px; color: var(--text-muted); text-align: right; }
   .incrusta-fuente { color: var(--accent); font-weight: 600; text-decoration: none; }
   .incrusta-fuente:hover { text-decoration: underline; text-underline-offset: 3px; }
   .incrusta-propio video,
   .incrusta-propio audio { width: 100%; display: block; border-radius: 10px; background: #000; }
+  /* Con póster no hace falta nada: medido en Chrome, el navegador reserva la
+     caja con la proporción del póster aunque el video no se haya cargado
+     (preload="none", readyState 0). SIN póster sí colapsa a 300x150 y el texto
+     salta cuando llegan los metadatos, así que a esos —y solo a esos— se les
+     reserva una caja apaisada. */
+  .incrusta-propio video:not([poster]) { aspect-ratio: 16 / 9; height: auto; }
   .incrusta-propio audio { background: none; }
 
   /* Red conocida de la que no se puede sacar el identificador (los enlaces
@@ -2666,6 +2712,11 @@
   /* Cada red con su color, que es como el lector la reconoce de un vistazo */
   .incrusta-red-youtube .incrusta-marca { background: #ff0000; }
   .incrusta-red-vimeo .incrusta-marca { background: #1ab7ea; }
+  /* Las tres marcas casi negras llevan un filo claro: sin él, sobre el fondo
+     oscuro del sitio la píldora desaparece y solo se lee el texto flotando. */
+  .incrusta-red-tiktok .incrusta-marca,
+  .incrusta-red-x .incrusta-marca,
+  .incrusta-red-threads .incrusta-marca { border: 1px solid rgba(255,255,255,0.3); }
   .incrusta-red-tiktok .incrusta-marca { background: #010101; }
   .incrusta-red-instagram .incrusta-marca { background: #c13584; }
   .incrusta-red-threads .incrusta-marca { background: #101010; }
@@ -2677,7 +2728,12 @@
 
   @media (max-width: 640px) {
     .incrusta { margin: 20px auto; }
-    /* En el celular ninguna incrustación puede pasarse del alto de la pantalla */
-    .incrusta-fijo .incrusta-caja { height: min(var(--inc-alto, 560px), 78vh); }
+    /* En el celular ninguna incrustación puede pasarse del alto de la pantalla.
+       OJO con a quién se le aplica: escrito como `.incrusta-fijo .incrusta-caja`
+       a secas hacía lo contrario de lo que dice, porque también alcanzaba a la
+       tapa cerrada —que mide 200px a propósito— y la inflaba a 560. Solo se
+       acota lo que de verdad está abierto o lleva foto. */
+    .incrusta-fijo.incrusta-con-foto .incrusta-caja,
+    .incrusta-fijo .incrusta-caja.incrusta-abierta { height: min(var(--inc-alto, 560px), 78vh); }
     .mm-ficha-galeria { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 8px; }
   }

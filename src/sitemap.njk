@@ -18,7 +18,8 @@ eleventyExcludeFromCollections: true
     Tampoco van `changefreq` ni `priority`: Google dice textualmente que
     ignora ambos valores. Eran líneas de ruido. -#}
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 {%- set ultima = collections.noticias | reverse | first %}
   <url>
     <loc>https://economiasantander.com/</loc>
@@ -34,9 +35,29 @@ eleventyExcludeFromCollections: true
     solo como tarjeta dentro de /multimedia/. Llevan lastmod porque su fecha es
     la de publicación real del contenido. -#}
 {%- for m in collections.multimedia | reverse %}
+{%- set yid = m.data.youtube | ytId %}
+{%- set miniatura = m.data.portada or (("https://i.ytimg.com/vi/" + yid + "/hqdefault.jpg") if yid) %}
   <url>
     <loc>https://economiasantander.com{{ m.url }}</loc>
     <lastmod>{{ m.date | fechaModificacionCorta(m.data.updated) }}</lastmod>
+{%- if (m.data.tipo or "video") == "video" and miniatura and (m.data.archivo or yid) %}
+    {#- Extensión de video del sitemap. Es lo que le dice a Google que en esta
+        página hay un video y de qué va, sin que tenga que deducirlo. Solo se
+        emite cuando están los cuatro datos que exige —miniatura, título,
+        descripción y una dirección para reproducirlo—; un video a medias no
+        se declara, que es la misma regla que se sigue con el lastmod. -#}
+    <video:video>
+      <video:thumbnail_loc>{% if "//" in miniatura %}{{ miniatura }}{% else %}https://economiasantander.com{{ miniatura }}{% endif %}</video:thumbnail_loc>
+      <video:title>{{ m.data.title }}</video:title>
+      <video:description>{{ m.data.descripcion or m.data.title }}</video:description>
+{%- if m.data.archivo %}
+      <video:content_loc>https://economiasantander.com{{ m.data.archivo }}</video:content_loc>
+{%- else %}
+      <video:player_loc>https://www.youtube-nocookie.com/embed/{{ yid }}</video:player_loc>
+{%- endif %}
+      <video:publication_date>{{ m.date | isoDate }}</video:publication_date>
+    </video:video>
+{%- endif %}
   </url>
 {%- endfor %}
 {%- for s in collections.secciones %}

@@ -311,6 +311,17 @@ collections:
         name: "fuente"
         widget: "string"
         required: false
+      # La ficha del contenido sabe pintar un texto debajo del reproductor, pero
+      # la colección no tenía dónde escribirlo: toda ficha quedaba con título,
+      # descripción y el medio, y nada más. Con cinco fichas así, cinco
+      # direcciones del portal dicen casi lo mismo y para Google eso es
+      # contenido flaco. Aquí va el contexto: qué se ve, quién habla, qué cifra
+      # aparece. Es opcional.
+      - label: "Texto de la ficha (opcional)"
+        name: "body"
+        widget: "markdown"
+        required: false
+        hint: "Contexto del contenido: qué se ve en el video, quién habla, de dónde salen las cifras. Aparece debajo del reproductor."
 
   - name: "declaraciones"
     label: "Declaraciones de gremios"
