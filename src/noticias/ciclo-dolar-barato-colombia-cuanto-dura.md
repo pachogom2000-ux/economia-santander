@@ -1,14 +1,17 @@
 ---
 layout: noticia.njk
+eleventyExcludeFromCollections: true
 title: "Dólar barato: el ciclo anterior duró 63 meses, este va en 45"
-date: 2026-08-25T09:00:00.000-05:00
+date: 2026-08-24T21:39:00.000-05:00
 categoria: Inversión
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: El ciclo de dólar barato más largo desde 1991 duró 63 meses. El actual ya lleva 45 y una caída de 36,6%. Qué significa para quien invierte desde Santander.
+excerpt: El ciclo de dólar barato más largo desde 1991 duró 63 meses. El actual
+  ya lleva 45 y una caída de 36,6%. Qué significa para quien invierte desde
+  Santander.
 autor: Francisco Gómez - Director
+imagen: /assets/uploads/foto-dolar-bajista-2026-colombia.webp
 tags: noticias
-eleventyExcludeFromCollections: true
 ---
 El dólar cerró en **$3.056,51** el 25 de agosto. Para encontrar una tasa igual o más baja hay que devolverse hasta **el 18 de octubre de 2018**: siete años y once meses.
 
