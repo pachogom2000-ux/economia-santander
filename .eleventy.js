@@ -104,6 +104,14 @@ module.exports = function (eleventyConfig) {
   // ruta devolvería 404. El nombre va con mayúsculas EXACTAS: Bing comprueba
   // /BingSiteAuth.xml y el alojamiento distingue mayúsculas de minúsculas.
   eleventyConfig.addPassthroughCopy("src/BingSiteAuth.xml");
+  // La marca del portal. Van a la RAÍZ y con estos nombres a propósito:
+  // /favicon.ico es la dirección que navegadores y buscadores piden por su
+  // cuenta aunque no haya ninguna etiqueta en el HTML. Sin estos archivos,
+  // Google pinta el globo gris genérico al lado del resultado.
+  eleventyConfig.addPassthroughCopy("src/favicon.ico");
+  eleventyConfig.addPassthroughCopy("src/favicon.svg");
+  eleventyConfig.addPassthroughCopy("src/icono-96.png");
+  eleventyConfig.addPassthroughCopy("src/apple-touch-icon.png");
 
   // Los enlaces externos se abren en una pestaña nueva, como pide la guía SEO.
   // Aplica también a lo que se escriba desde el CMS, sin tener que recordarlo.

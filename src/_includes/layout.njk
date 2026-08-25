@@ -8,6 +8,17 @@
 <title>{{ pageTitle }}</title>
 <meta name="description" content="{{ pageDescription }}">
 <link rel="canonical" href="https://economiasantander.com{{ page.url }}">
+{# La marca, para la pestaña del navegador y para el resultado de Google. El
+   portal no tenía ninguna: Google busca un icono declarado en la PORTADA o un
+   /favicon.ico en la raíz, no encontraba nada y pintaba el globo gris.
+   Se declaran tres a propósito: el .ico lleva 16, 32 y 48 px dentro (Google
+   pide múltiplo de 48 y es lo que entienden hasta los navegadores viejos), el
+   .svg es el que usan los navegadores modernos, y el de 180 px es el de la
+   pantalla de inicio de iOS. Las direcciones no deben cambiar nunca: Google
+   guarda la del icono y volver a rastrearla cuesta semanas. #}
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="alternate" type="application/rss+xml" title="Economía Santander" href="https://economiasantander.com/feed.xml">
 {# Un borrador no sale en la portada, pero su URL sí es pública en cuanto llega
    a main. Se marca noindex para que no lo indexe nadie mientras esté sin
