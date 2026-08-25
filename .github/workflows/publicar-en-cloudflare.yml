@@ -88,6 +88,21 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: a1f21e64e97d7c01c2fd7ef7a7f9b66a
 
+      # Después de publicar, no antes: se le anuncia a los buscadores una
+      # dirección que ya está en el aire. Solo avisa de lo publicado o
+      # corregido en los últimos tres días, así que en la mayoría de los
+      # despliegues no manda nada.
+      #
+      # Mientras Netlify siga vivo el aviso sale por partida doble, y es a
+      # propósito: IndexNow admite que se repita una dirección, y el precio de
+      # avisar dos veces es cero comparado con el de no avisar nunca. Hasta hoy
+      # el único que avisaba era el build de Netlify (`npm run build`), así que
+      # apagarlo habría dejado a Bing, Yandex y compañía sin enterarse de nada
+      # sin que saltara ninguna alarma.
+      - name: Avisar a IndexNow
+        if: steps.credencial.outputs.hay == 'si'
+        run: node scripts/indexnow.mjs
+
       - name: Aviso si falta la credencial
         if: steps.credencial.outputs.hay == 'no'
         run: |
@@ -118,6 +133,7 @@ jobs:
               --body "$(printf 'La publicación automática falló, así que **economiasantander.com sigue mostrando el despliegue anterior**. Lo que se apruebe en el CMS desde ahora no va a salir al aire hasta que esto se arregle.\n\nDetalle de la ejecución: %s\n\nCausas más probables, en orden:\n\n1. El secret `CLOUDFLARE_API_TOKEN` se revocó o caducó.\n2. El sitio no compila (mira el paso "Construir el sitio").\n3. Cloudflare rechazó el despliegue.\n\nMientras tanto se puede publicar a mano:\n\n```\nnpx @11ty/eleventy && npx wrangler deploy\n```\n\nCierra este aviso cuando vuelva a publicarse solo.' "$EJECUCION")"
           fi
 
-# PENDIENTE para cuando se retire Netlify (ver Fase E del plan): añadir aquí el
-# aviso a IndexNow — `node scripts/indexnow.mjs` — que hoy lo hace el build de
-# Netlify. Ponerlo antes de tiempo avisaría dos veces por cada publicación.
+# El aviso a IndexNow ya está arriba. Se adelantó a la fase E a propósito: era
+# la única pieza que se habría apagado EN SILENCIO junto con Netlify, porque
+# hasta ahora lo daba su build (`npm run build`) y no este flujo. Avisar dos
+# veces mientras conviven no cuesta nada; no avisar sí.

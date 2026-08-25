@@ -32,6 +32,12 @@ function esProduccion() {
   if (process.env.INDEXNOW_FORZAR === "1") return true;
   if (process.env.CONTEXT) return process.env.CONTEXT === "production";
   if (process.env.CF_PAGES_BRANCH) return process.env.CF_PAGES_BRANCH === "main";
+  // GitHub Actions, que es quien publica en Cloudflare. Sin esta línea el
+  // aviso no se daría nunca desde ahí: ninguna de las dos variables de arriba
+  // existe en Actions, así que caía en el `false` de abajo y se saltaba en
+  // silencio. Ese silencio importa el día que Netlify se apague, porque hoy es
+  // el build de Netlify el único que avisa.
+  if (process.env.GITHUB_ACTIONS) return process.env.GITHUB_REF === "refs/heads/main";
   return false;
 }
 
