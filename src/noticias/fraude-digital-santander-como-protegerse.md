@@ -1,14 +1,22 @@
 ---
 layout: noticia.njk
+eleventyExcludeFromCollections: true
 title: "Fraude a pymes: el golpe promedio son $260 millones"
-date: 2026-08-25T15:00:00.000-05:00
+date: 2026-08-25T06:00:00.000-05:00
 categoria: Educación financiera
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: El fraude digital en Colombia cayó 74%, pero el que ataca empresas subió. Suplantar a un proveedor deja pérdidas de USD 85.000 y la pyme no puede apelar.
+excerpt: El fraude digital en Colombia cayó 74%, pero el que ataca empresas
+  subió. Suplantar a un proveedor deja pérdidas de USD 85.000 y la pyme no puede
+  apelar.
 autor: Francisco Gómez - Director
+imagen: /assets/uploads/fraude-pymes.webp
+imagenAlt: ciberseguridad en pymes
+imagenTitle: ciberseguridad en pymes
+imagenPie: "Los ciberdelincuentes aprovechan la vulnerabilidad de las pymes para
+  cometer fraudes. "
+imagenCredito: Pixabay-flutie8211
 tags: noticias
-eleventyExcludeFromCollections: true
 ---
 En Colombia, un fraude por suplantación de proveedor que sale bien le cuesta a la empresa **más de USD 85.000** en promedio. A la tasa de cambio de hoy son unos **$260 millones**, según cálculos de Economía Santander. Hay casos documentados por encima de **USD 500.000** en construcción y servicios.
 
@@ -20,16 +28,19 @@ Las dos cosas son ciertas a la vez, y esa es la nota: **hay menos intentos, pero
 
 <div class="tabla-wrap">
 
-| Modalidad | Cómo se movió |
-|---|---|
-| Intentos sospechosos, en general | **−74%** (de 8,9% a 2,3%) |
-| Tiendas en línea falsas | **+91%** en el primer semestre |
-| Estafas de soporte técnico | **+26%** en el primer semestre |
-| Pérdida mediana por víctima | **$5,8 millones** |
+| Modalidad                        | Cómo se movió                  |
+| -------------------------------- | ------------------------------ |
+| Intentos sospechosos, en general | **−74%** (de 8,9% a 2,3%)      |
+| Tiendas en línea falsas          | **+91%** en el primer semestre |
+| Estafas de soporte técnico       | **+26%** en el primer semestre |
+| Pérdida mediana por víctima      | **$5,8 millones**              |
 
 </div>
 
 Un dato ayuda a dimensionar el volumen: **Asobancaria** registró más de **218.000 reclamaciones** por suplantación de identidad en canales financieros en apenas seis meses.
+
+***Le contamos: [Inversión inmobiliaria en Bucaramanga: el mapa de los fondos](https://economiasantander.com/noticias/tres-fondos-inmobiliarios-bucaramanga/)***
+
 
 ## ¿Por qué la pyme queda peor parada que el ciudadano?
 
@@ -80,6 +91,9 @@ Tres cosas concretas, en orden de cuánto evitan por lo poco que cuestan:
 **Ponga doble autenticación en los correos de la empresa.** El ataque no empieza en el banco: empieza en un correo con contraseña débil.
 
 **Defina quién autoriza pagos y por encima de qué monto.** Que una sola persona pueda mover plata sin un segundo par de ojos es lo que hace posible el golpe grande.
+
+***Siga viendo: [Wiltech: el taller en Bucaramanga que desafió a Apple y se volvió una marca en 9 países](https://economiasantander.com/noticias/wiltech-bucaramanga-apple-derecho-reparar/)***
+
 
 ## Lo que esto significa para Santander
 
