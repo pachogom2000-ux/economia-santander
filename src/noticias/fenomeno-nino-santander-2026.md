@@ -6,7 +6,7 @@ categoria: Indicadores económicos
 chipTipo: propio
 chipLabel: Redacción propia
 excerpt: "NOAA e IDEAM le dan 69% de probabilidad al Niño más fuerte desde 1950. En 2024 el golpe no llegó por los alimentos: llegó por la tarifa de energía."
-autor: Experto en Energía - Redactor invitado
+autor: Redacción propia
 imagen: /assets/uploads/embalse-hidroelectrico-nino-2026.jpg
 imagenAlt: "Embalse de una central hidroeléctrica con el nivel del agua por debajo de la cota del vertedero."
 imagenTitle: "El Niño 2026 y el nivel de los embalses que generan la energía de Colombia"
@@ -16,7 +16,7 @@ eleventyExcludeFromCollections: true
 tags: noticias
 ---
 
-**El 95%.** Esa es la probabilidad que la agencia atmosférica de Estados Unidos le asigna a que el fenómeno de El Niño alcance entre octubre y diciembre de este año una intensidad **superior a la de todos los eventos registrados desde 1950**.
+**El 69%.** Esa es la probabilidad que la agencia atmosférica de Estados Unidos le asigna a que el fenómeno de El Niño alcance entre octubre y diciembre de este año una intensidad **superior a la de todos los eventos registrados desde 1950**. Y la estadística de que sea "un Niño muy fuerte" es de 95% entre octubre y noviembre de 2026. 
 
 No es un pronóstico de prensa. Es la cifra del [boletín del Climate Prediction Center de la NOAA](https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml) del 13 de agosto de 2026, y el [IDEAM la replicó ese mismo día](https://www.ideam.gov.co/sala-de-prensa/noticia/condiciones-el-nino-continuan-en-fortalecimiento-y-aumenta-la-probabilidad-de-que-alcance-una) para Colombia.
 
