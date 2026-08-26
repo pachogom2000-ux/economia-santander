@@ -1,6 +1,5 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
 title: "Multa por no declarar renta: desde $524.000 en 2026"
 date: 2026-08-26T07:28:00.000-05:00
 categoria: Impuestos y regulación
