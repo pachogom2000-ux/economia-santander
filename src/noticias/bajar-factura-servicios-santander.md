@@ -2,7 +2,7 @@
 layout: noticia.njk
 eleventyExcludeFromCollections: true
 title: "Bajar la factura de servicios en Santander: 10 acciones"
-date: 2026-08-25T21:40:00.000-05:00
+date: 2026-08-26T07:34:00.000-05:00
 categoria: Finanzas personales
 chipTipo: propio
 chipLabel: Redacción propia
