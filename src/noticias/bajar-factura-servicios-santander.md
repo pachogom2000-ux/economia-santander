@@ -2,17 +2,19 @@
 layout: noticia.njk
 eleventyExcludeFromCollections: true
 title: "Bajar la factura de servicios en Santander: 10 acciones"
-date: 2026-08-25T09:00:00.000-05:00
+date: 2026-08-26T07:34:00.000-05:00
 categoria: Finanzas personales
 chipTipo: propio
 chipLabel: Redacción propia
 excerpt: El alza del 25,2% en el agua quedó aplazada, no cancelada, y solo cubre
   acueducto. Diez acciones para bajar el recibo de la luz, el agua y el gas.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/factura-servicios-publicos-santander.jpg
-imagenAlt: Factura de servicios públicos y contador de energía en una vivienda de Bucaramanga
+imagen: /assets/uploads/servicios-publicos.webp
+imagenAlt: Factura de servicios públicos y contador de energía en una vivienda
+  de Bucaramanga
 imagenTitle: Cómo bajar la factura de servicios públicos en Santander
-imagenPie: El consumo de subsistencia en Bucaramanga es de 173 kWh al mes, el límite hasta donde llega el subsidio.
+imagenPie: El consumo de subsistencia en Bucaramanga es de 173 kWh al mes, el
+  límite hasta donde llega el subsidio.
 imagenCredito: Archivo particular
 guia: true
 tags: noticias
@@ -33,7 +35,7 @@ El aumento tampoco desapareció: quedó suspendido mientras se resuelve la discu
 
 Conviene usar estos meses para bajar el consumo, no para asumir que el problema se resolvió.
 
-## Los 173 kWh que deciden su subsidio de energía
+### Los 173 kWh que deciden su subsidio de energía
 
 Esta es la cifra que más plata mueve en Santander y casi nadie la conoce.
 
@@ -45,7 +47,7 @@ El efecto es escalonado. Pasar de 170 a 200 kWh no encarece la factura en la mis
 
 **Su factura trae el dato.** Búsquelo antes de hacer cualquier otra cosa de esta lista.
 
-## ¿Qué estratos reciben subsidio y cuáles pagan de más?
+#### ¿Qué estratos reciben subsidio y cuáles pagan de más?
 
 Los topes máximos de descuento sobre el costo real de la energía son de hasta **60% en estrato 1, hasta 50% en estrato 2 y hasta 15% en estrato 3**.
 
@@ -53,7 +55,7 @@ Los estratos 5 y 6 y el sector comercial están al otro lado: pagan una **contri
 
 Eso significa que el estrato que figura en su factura no es un dato administrativo. Es plata todos los meses.
 
-## Las 10 acciones que sí mueven la aguja
+##### Las 10 acciones que sí mueven la aguja
 
 Van ordenadas por impacto, no por facilidad.
 
@@ -77,7 +79,7 @@ Van ordenadas por impacto, no por facilidad.
 
 **10. Lea los tres renglones del agua por separado.** Acueducto, alcantarillado y aseo se facturan juntos pero se determinan aparte. Saber cuál subió es lo que le permite reclamar ante la empresa correcta.
 
-## Lo que no mueve la aguja
+##### Lo que no mueve la aguja
 
 Conviene decirlo porque circulan muchos consejos que no resisten la cuenta.
 
@@ -85,7 +87,7 @@ Desconectar el televisor una noche no compensa una nevera con el empaque vencido
 
 Y una advertencia sobre lo que viene: si el fenómeno de El Niño se confirma con la intensidad que proyectan las autoridades, la presión sobre la tarifa eléctrica va a llegar por el lado de la generación, no del consumo. Ese escenario está desarrollado en [El Niño en Santander: la cuenta la cobra la luz](/noticias/fenomeno-nino-santander-2026/).
 
-## Cómo encaja esto en el presupuesto del hogar
+##### Cómo encaja esto en el presupuesto del hogar
 
 Los servicios rara vez se contabilizan cuando alguien calcula cuánto puede pagar de vivienda, y ahí se rompen muchas cuentas familiares. Un canon de arriendo cómodo deja de serlo cuando se le suman administración y servicios, un cálculo desarrollado en la nota sobre [cuánto arriendo se puede pagar en Bucaramanga sin ahogarse](/noticias/arriendo-bucaramanga-cuanto-pagar/).
 
