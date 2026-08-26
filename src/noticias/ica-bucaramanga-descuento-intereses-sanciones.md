@@ -1,6 +1,5 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
 title: "Impuesto industria y comercio en Bucaramanga: 80% de rebaja"
 date: 2026-08-26T07:00:00.000-05:00
 categoria: Impuestos y regulación
