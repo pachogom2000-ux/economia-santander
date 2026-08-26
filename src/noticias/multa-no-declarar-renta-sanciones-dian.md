@@ -2,14 +2,14 @@
 layout: noticia.njk
 eleventyExcludeFromCollections: true
 title: "Multa por no declarar renta: desde $524.000 en 2026"
-date: 2026-08-25T08:00:00.000-05:00
+date: 2026-08-25T21:34:00.000-05:00
 categoria: Impuestos y regulación
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: La sanción mínima de la DIAN en 2026 es $524.000, así no deba un peso de
-  impuesto. Cuánto cuesta declarar tarde, corregir mal o no presentarla.
+excerpt: La sanción mínima de la DIAN en 2026 es $524.000, así no deba un peso
+  de impuesto. Cuánto cuesta declarar tarde, corregir mal o no presentarla.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/multa-no-declarar-renta-dian.jpg
+imagen: /assets/uploads/financiero.jpg
 imagenAlt: Formulario de declaración de renta de la DIAN sobre un escritorio
 imagenTitle: Sanciones de la DIAN por no declarar renta en 2026
 imagenPie: La sanción mínima para el año 2026 es de 10 UVT, equivalentes a $524.000.
@@ -35,7 +35,10 @@ Ninguna sanción puede quedar por debajo de esa cifra. Si el cálculo da menos, 
 
 Es el piso, no el techo. A partir de ahí todo depende de cuánto se demore y de quién dé el primer paso.
 
-## ¿Cuánto sube la multa por cada mes de retraso?
+***Siga leyendo: [Moto y carro en Santander: el calendario de gastos 2026](https://economiasantander.com/noticias/calendario-gastos-moto-carro-santander/)***
+
+
+### ¿Cuánto sube la multa por cada mes de retraso?
 
 **5% del impuesto a cargo por cada mes o fracción de mes**, con tope del 100% del impuesto. Lo fija el [artículo 641 del Estatuto Tributario](https://estatuto.co/641).
 
@@ -45,7 +48,7 @@ Si la declaración no arroja impuesto a cargo, la base cambia: la sanción es de
 
 Por eso no sirve el razonamiento de «no debo nada, no pasa nada». La ley previó los tres escenarios.
 
-## ¿Qué pasa si la DIAN se le adelanta?
+#### ¿Qué pasa si la DIAN se le adelanta?
 
 La sanción se duplica. Cuando la entidad envía primero un emplazamiento —la comunicación formal que le advierte que no ha declarado—, el artículo 642 sube el castigo al **10% por cada mes de retraso**, con tope del 200%.
 
@@ -55,7 +58,7 @@ Esa última es la más cara del listado, y se calcula sobre movimientos bancario
 
 La lectura práctica es sencilla: **declarar tarde por iniciativa propia siempre cuesta menos que esperar a que la DIAN toque la puerta.**
 
-## ¿Y si declaró, pero se equivocó?
+##### ¿Y si declaró, pero se equivocó?
 
 Depende de quién detecte el error.
 
@@ -63,7 +66,7 @@ Corregir de forma voluntaria activa la sanción por corrección del artículo 64
 
 El artículo 640 contempla reducciones cuando el contribuyente corrige antes de que la administración actúe y no tiene sanciones previas del mismo tipo. Los porcentajes dependen de condiciones específicas: esa cuenta la debe hacer un contador con el caso en la mano.
 
-## Los intereses de mora se cobran aparte
+##### Los intereses de mora se cobran aparte
 
 La sanción no incluye los intereses. Son dos cobros distintos y se suman.
 
@@ -71,7 +74,7 @@ El artículo 635 los liquida día a día sobre el saldo pendiente. **En agosto d
 
 Es una tasa que se mueve todos los meses. Si quiere entender de dónde sale ese cálculo, está el [glosario de IPC, DTF y tasa de usura](/noticias/glosario-ipc-dtf-usura-spread-bancario/).
 
-## ¿El aplazamiento por el sismo cubre a Santander?
+##### ¿El aplazamiento por el sismo cubre a Santander?
 
 **No.** Conviene decirlo con claridad porque circula la idea contraria.
 
@@ -85,13 +88,13 @@ La pregunta llega tarde para muchos, porque los topes del año gravable 2025 se 
 
 Bastaba con superar uno solo de estos cinco límites durante 2025:
 
-| Condición | Tope en UVT | En pesos |
-| --- | --- | --- |
-| Patrimonio bruto a 31 de diciembre | 4.500 | $224.096.000 |
-| Ingresos brutos del año | 1.400 | $69.719.000 |
-| Consumos con tarjeta de crédito | 1.400 | $69.719.000 |
-| Compras y consumos totales | 1.400 | $69.719.000 |
-| Consignaciones, depósitos e inversiones | 1.400 | $69.719.000 |
+| Condición                               | Tope en UVT | En pesos     |
+| --------------------------------------- | ----------- | ------------ |
+| Patrimonio bruto a 31 de diciembre      | 4.500       | $224.096.000 |
+| Ingresos brutos del año                 | 1.400       | $69.719.000  |
+| Consumos con tarjeta de crédito         | 1.400       | $69.719.000  |
+| Compras y consumos totales              | 1.400       | $69.719.000  |
+| Consignaciones, depósitos e inversiones | 1.400       | $69.719.000  |
 
 Las consignaciones son la trampa más común. No son ingresos: son movimientos. Un independiente que recibe y devuelve dinero, o que le prestan la cuenta, puede cruzar el tope sin haber ganado esa plata.
 
@@ -105,4 +108,4 @@ Segundo, presente aunque no tenga con qué pagar. La declaración y el pago son 
 
 Tercero, revise si de verdad estaba obligado antes de liquidar cualquier cosa. Presentar una declaración que no debía presentar también tiene costo.
 
-***Siga leyendo: [Declaración de renta 2026: los vencimientos comienzan el 12 de agosto](/noticias/declaracion-renta-2026-vencimientos-agosto/)***
+***Siga leyendo: [Declaración de renta 2026: los vencimientos comienzan el 12 de agosto](https://economiasantander.com/noticias/declaracion-renta-2026-vencimientos-agosto/)***
