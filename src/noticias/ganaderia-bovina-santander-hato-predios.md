@@ -1,6 +1,5 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
 title: "Ganadería bovina en Santander: 37 reses por predio"
 date: 2026-08-31T08:00:00.000-05:00
 categoria: Agro
@@ -44,8 +43,7 @@ Un hato de 37 animales no da para lo que da uno de 135. No sostiene un veterinar
 
 Cada una de esas carencias tiene un costo, y el costo lo absorbe el productor.
 
-***Le contamos:** [Cacao de Santander: 41% del país con el precio en caída](https://economiasantander.com/noticias/cacao-santander-produccion-nacional/)
-*
+***Le contamos: [Cacao de Santander: 41% del país con el precio en caída](https://economiasantander.com/noticias/cacao-santander-produccion-nacional/)***
 
 
 ### Qué le hace el minifundio a los costos

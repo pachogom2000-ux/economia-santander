@@ -1,6 +1,5 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
 title: "Minería de oro en Santander: el sector sin cifra oficial"
 date: 2026-08-31T07:00:00.000-05:00
 categoria: Industria
