@@ -2,23 +2,25 @@
 layout: noticia.njk
 eleventyExcludeFromCollections: true
 title: "Café de Santander: el precio sube, el margen no"
-date: 2026-08-26T11:00:00.000-05:00
+date: 2026-08-31T06:00:00.000-05:00
 categoria: Agro
 chipTipo: propio
 chipLabel: Redacción propia
 excerpt: La carga cerró en $2.330.000, el mejor del año. Pero la recolección se
-  lleva buena parte y el 64% de las familias cafeteras no llega al ingreso vital.
+  lleva buena parte y el 64% de las familias cafeteras no llega al ingreso
+  vital.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/cafe-santander-cafetales-altura.jpg
+imagen: /assets/uploads/recolector-de-cafe-en-un-cafetal.webp
 imagenAlt: Recolector de café en un cafetal de altura en Santander
 imagenTitle: Costos de producción y recolección del café en Santander
-imagenPie: El precio interno de referencia cerró el 25 de agosto de 2026 en $2.330.000 por carga de 125 kilos.
+imagenPie: El precio interno de referencia cerró el 25 de agosto de 2026 en
+  $2.330.000 por carga de 125 kilos.
 imagenCredito: Archivo particular
 tags: noticias
 ---
-El precio interno de referencia del café cerró el **25 de agosto de 2026 en $2.330.000 por carga de 125 kilos** de pergamino seco, según la [Federación Nacional de Cafeteros](https://federaciondecafeteros.org/wp-content/uploads/2026/03/precio_cafe.pdf).
+El precio interno de referencia del café cerró el **28 de agosto de 2026 en $2.250.000 por carga de 125 kilos** de pergamino seco, según la [Federación Nacional de Cafeteros](https://federaciondecafeteros.org/wp-content/uploads/2026/03/precio_cafe.pdf).
 
-Es el mejor nivel del año. En febrero la carga había tocado **$2.080.000**, su punto más bajo en dieciséis meses, y el 2 de agosto estaba en $2.225.000.
+Es el segundo mejor nivel del año, el primero fue el 25 de agosto de 2026, cuando cerró en $2.330.000. En febrero la carga había tocado **$2.080.000**, su punto más bajo en dieciséis meses, y el 2 de agosto estaba en $2.225.000.
 
 Y sin embargo el caficultor santandereano no está celebrando. La razón no está en el precio: está en lo que cuesta llegar a esa carga.
 
@@ -32,7 +34,7 @@ Ese valor de la carga **incluye $10.000 por cada kilo de pasilla** contenida en 
 
 Es la primera brecha entre el precio publicado y el precio recibido, y depende por completo del trabajo en la finca.
 
-## ¿Cuánto cuesta producir esa carga?
+### ¿Cuánto cuesta producir esa carga?
 
 Aquí está el hueco de información que define la discusión.
 
@@ -42,7 +44,7 @@ Lo que no existe es una medición pública, reciente y desagregada del costo de 
 
 Esa ausencia no es un detalle técnico. Sin ella, cada vez que sube la carga se anuncia como buena noticia sin que nadie pueda decir cuánto de ese aumento le queda al productor.
 
-## La recolección: el costo que no baja
+#### La recolección: el costo que no baja
 
 En un cafetal de altura la cosecha se hace a mano, grano por grano, y no hay forma de mecanizarla. Eso convierte la recolección en el costo más rígido de todo el negocio: sube con el salario y con la escasez de brazos, y no baja nunca.
 
@@ -50,7 +52,7 @@ El problema no es solo cuánto cuesta el jornal. Es que cada vez cuesta más con
 
 Un cafetal de altura, además, exige más pases de recolección porque la maduración es más despareja. Más calidad y más precio potencial, sí, pero también más jornales por carga.
 
-## El 64% que no llega al ingreso vital
+#### El 64% que no llega al ingreso vital
 
 Un estudio del sector encontró que el **64% de las familias caficultoras del país no alcanza el ingreso vital**, el nivel mínimo para cubrir necesidades básicas con dignidad.
 
@@ -60,7 +62,7 @@ Y explica por qué el debate cafetero vuelve siempre al mismo punto. El precio d
 
 Sobre cómo la tasa de cambio le quita margen a esa misma carga —y qué pasó con la prima del suave colombiano— está la nota sobre [el café especial de Santander en los mercados europeos](/noticias/cafe-especial-santander-mercados-europeos/).
 
-## La renovación: el reloj que corre callado
+##### La renovación: el reloj que corre callado
 
 Hay un costo más, y es el que menos se ve porque no llega en una factura mensual.
 
@@ -70,7 +72,7 @@ El problema es el calendario. Un lote renovado tarda cerca de dos años en entra
 
 Cuando el precio está bueno, renovar duele menos. Cuando está bajo, se aplaza. Y aplazar la renovación es la decisión que explica por qué la productividad de una zona cafetera puede caer justo después de varios años difíciles, aunque el precio ya se haya recuperado.
 
-## Lo que hay que vigilar
+##### Lo que hay que vigilar
 
 Tres cosas, y ninguna es el precio del día.
 
