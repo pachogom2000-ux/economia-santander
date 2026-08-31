@@ -41,7 +41,7 @@ La lógica es sencilla: la ley describe los hechos económicos de 2025, así que
 
 Un detalle que ayuda a entenderlo: **los rangos de la tabla del artículo 241 están fijos en UVT y no cambian.** Lo que cambia cada año es cuánto vale cada UVT en pesos. Por eso los tramos del impuesto se corren solos con la inflación sin que haya que reformar la ley.
 
-## La excepción: las sanciones van con la UVT del año en que paga
+### La excepción: las sanciones van con la UVT del año en que paga
 
 Aquí es donde entra la de 2026 y donde más gente se equivoca.
 
@@ -51,7 +51,7 @@ La sanción mínima del artículo 639 es de 10 UVT. En 2026 eso son **$524.000**
 
 Quien en 2026 ponga al día una declaración de 2023 paga la mínima de 2026, no la de aquel año. El detalle completo de esa escala está en la nota sobre [las multas por no declarar renta](/noticias/multa-no-declarar-renta-sanciones-dian/).
 
-## ¿Cómo se calcula la UVT?
+#### ¿Cómo se calcula la UVT?
 
 No la fija nadie a criterio. Sale de una fórmula que está en el **artículo 868 del Estatuto Tributario**, modificado por la Ley 1111 de 2006.
 
@@ -69,13 +69,13 @@ Conviene no confundir ese cálculo con otra regla del mismo artículo 868, que e
 
 Esa aproximación **no se le aplica a la UVT**, que quedó fijada al peso en $52.374. Se le aplica a los resultados. Por eso 10 UVT no son $523.740 sino **$524.000**, y por eso los topes oficiales terminan siempre en ceros.
 
-## ¿Cuándo se conoce la UVT de 2027?
+###### ¿Cuándo se conoce la UVT de 2027?
 
 La norma es explícita: el Director de la DIAN debe publicar por resolución el valor de la UVT **antes del 1 de enero** de cada año.
 
 En la práctica sale antes. La de 2026 se expidió el **15 de diciembre de 2025**, y la de 2027 debería conocerse en un plazo parecido: **mediados de diciembre de 2026**.
 
-## El dato ya está casi cocinado el 1 de octubre
+##### El dato ya está casi cocinado el 1 de octubre
 
 Esta es la parte útil para quien planea.
 
@@ -85,7 +85,7 @@ Es decir: en octubre, cualquiera que consulte el IPC de ingresos medios certific
 
 Para una empresa que está armando presupuesto del año siguiente, o para quien planea una venta de activos, ese adelanto de dos meses y medio no es un detalle menor.
 
-## No la confunda con la UVR ni con la UVB
+###### No la confunda con la UVR ni con la UVB
 
 Son tres unidades distintas y la confusión es frecuente, sobre todo en esta época.
 
@@ -101,7 +101,7 @@ La **UVB** es la de los comparendos y las tarifas administrativas que no son de 
 
 El error que más cuesta es calcular una obligación con la DIAN en UVB en vez de UVT: la UVT vale más de cuatro veces lo que vale la UVB, así que quien haga esa cuenta creerá que está al día y no lo estará.
 
-## Dónde consultarla
+###### Dónde consultarla
 
 La UVT vigente la publica la DIAN por resolución en diciembre, para el año siguiente. Conviene guardar el número de la resolución, porque es lo que respalda el cálculo ante cualquier revisión.
 
