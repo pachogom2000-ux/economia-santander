@@ -6,6 +6,7 @@
     "start": "eleventy --serve",
     "indexnow": "node scripts/indexnow.mjs",
     "mensaje-canal": "node scripts/mensaje-canal.mjs",
+    "mensaje-facebook": "node scripts/mensaje-facebook.mjs",
     "cf:dev": "eleventy && wrangler dev",
     "cf:deploy": "eleventy && wrangler deploy && node scripts/indexnow.mjs",
     "cf:preview": "eleventy && wrangler versions upload",
