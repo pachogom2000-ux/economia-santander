@@ -32,7 +32,7 @@ Aquí está la letra menuda que decide si el beneficio le sirve o no.
 
 Esa condición define quién puede aprovecharlo. Un comerciante que debe capital y no tiene con qué cubrirlo entero no alcanza el beneficio, por más que el 80% suene atractivo. La rebaja premia a quien tiene la plata disponible, no a quien está más ahogado.
 
-### ¿Esto es un descuento por declarar a tiempo?
+## ¿Esto es un descuento por declarar a tiempo?
 
 **No, y conviene no confundirlo.** Son dos cosas distintas y llegan en momentos distintos del año.
 
@@ -40,7 +40,7 @@ El calendario ordinario de industria y comercio del año gravable 2025 ya se cer
 
 Lo que está abierto ahora es otra cosa: un alivio para **deudas viejas**, de 2025 y años anteriores. Si usted declaró y pagó a tiempo en marzo, este beneficio no le aplica porque no tiene mora que aliviar.
 
-#### ¿Cuánto se debe en Bucaramanga?
+## ¿Cuánto se debe en Bucaramanga?
 
 La cartera morosa de industria y comercio llega a **$34.000 millones**, repartida entre cerca de **20.000 contribuyentes**.
 
@@ -48,13 +48,13 @@ El predial suma otros **$27.000 millones** en unos 40.000 predios. Entre los dos
 
 Puesto en perspectiva: es plata que el municipio ya contó como suya y no ha entrado. De ahí que el descuento sea agresivo — a la administración le conviene recuperar el capital aunque renuncie a los intereses.
 
-##### ¿Qué impuestos cubre el beneficio?
+## ¿Qué impuestos cubre el beneficio?
 
 Además de industria y comercio, el alivio aplica al **Impuesto Predial Unificado**, a **Avisos y Tableros** y a la **Sobretasa Bomberil**, [según Vanguardia](https://www.vanguardia.com/area-metropolitana/bucaramanga/2026/05/26/bucaramanga-conceden-descuento-del-80-para-los-morosos-de-impuestos-asi-puede-acceder/). El anuncio de la Alcaldía menciona también la contribución por valorización.
 
 Ese detalle importa para un comerciante: avisos y tableros y la sobretasa bomberil se liquidan junto con el ICA, así que la deuda de un local suele traer los tres renglones. El descuento los cubre todos.
 
-##### ¿Cómo se accede?
+## ¿Cómo se accede?
 
 El primer paso es pedir el **estado de cuenta** en la Secretaría de Hacienda. Sin ese documento no se sabe cuánto es capital y cuánto es interés, que es justo lo que define el ahorro.
 
@@ -69,7 +69,7 @@ El descuento se aplica de forma automática sobre la liquidación una vez se sol
 
 Quienes ya tienen un acuerdo de pago vigente también pueden acogerse.
 
-##### Si no alcanza a pagar todo el capital
+## Si no alcanza a pagar todo el capital
 
 Vale la pena hacer la cuenta antes de descartar el beneficio.
 
@@ -79,7 +79,7 @@ La comparación honesta es esta: ¿cuánto cuesta financiar el capital cinco dí
 
 Y si el capital simplemente no está, el segundo tramo del 70% da treinta días más de margen. Es menos descuento, pero sigue siendo mejor que la tarifa plena de octubre.
 
-###### Lo que hay detrás del dato
+## Lo que hay detrás del dato
 
 Que 20.000 de los contribuyentes de industria y comercio estén en mora dice algo sobre el comercio de la ciudad, no solo sobre la disciplina tributaria.
 

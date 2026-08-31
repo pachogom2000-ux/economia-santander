@@ -45,7 +45,7 @@ El **interés bancario corriente**, que es el promedio del mercado, quedó en **
 ***Siga leyendo: [Empresas más grandes de Santander: ventas suben 13,1%](https://economiasantander.com/noticias/empresas-mas-grandes-santander-ventas-2025/)***
 
 
-### ¿Cuánta deuda aguanta un hogar?
+## ¿Cuánta deuda aguanta un hogar?
 
 La regla más usada dice que el pago mensual de todas las deudas no debe pasar del **30% del ingreso**. Los bancos suelen aprobar hasta el 40%, y ahí está el malentendido: **que se lo aprueben no significa que le convenga.**
 
@@ -64,7 +64,7 @@ Una forma práctica de hacer la cuenta:
 
 Sume **todas** las cuotas: tarjetas, libranza, libre inversión, el celular a cuotas, la moto, el crédito educativo. Si el total pasa de la columna del medio, el hogar está apretado. Si pasa de la derecha, está en problemas.
 
-#### ¿Por qué el 30% se queda corto en Santander?
+## ¿Por qué el 30% se queda corto en Santander?
 
 Porque supone un ingreso estable, y buena parte del empleo del área metropolitana no lo es.
 
@@ -72,7 +72,7 @@ El área metropolitana de Bucaramanga tiene una **informalidad del 44,5%**, seg�
 
 Para un contratista o un comerciante, el 30% del "ingreso promedio" es una trampa: el promedio incluye los meses buenos. **La regla útil para un ingreso variable es calcular sobre el peor mes de los últimos doce**, no sobre el promedio.
 
-##### ¿Cuándo una deuda deja de ser sana?
+## ¿Cuándo una deuda deja de ser sana?
 
 No es una cifra, son cinco señales. Con dos ya hay que actuar:
 
@@ -89,7 +89,7 @@ No es una cifra, son cinco señales. Con dos ya hay que actuar:
 ***Le contamos: [Wiltech: el taller en Bucaramanga que desafió a Apple y se volvió una marca en 9 países](https://economiasantander.com/noticias/wiltech-bucaramanga-apple-derecho-reparar/)***
 
 
-##### ¿Qué hacer si ya se pasó?
+## ¿Qué hacer si ya se pasó?
 
 Tres movimientos, en este orden:
 

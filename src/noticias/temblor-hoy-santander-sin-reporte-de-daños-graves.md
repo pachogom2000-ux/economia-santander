@@ -32,7 +32,7 @@ El funcionario indicó que solo se presentaron afectaciones menores en algunas f
 
 Ciudadanos de Bucaramanga observaron cómo el agua de la piscina de un edificio situado en la carrera 27 con calle 54 se **desbordaba desde el último piso,** dando cuenta de la magnitud del fuerte temblor.
 
-### ¿Qué hacer en caso de un evento sísmico? 
+## ¿Qué hacer en caso de un evento sísmico? 
 
 La seguridad y mantener la serenidad es lo más importante al momento de encontrarse en una situación como la de este lunes, 10 de agosto de 2026. A continuación, le contamos cómo debe prepararse y actuar cuando ocurre un sismo. 
 

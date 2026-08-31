@@ -76,7 +76,7 @@ Esa última fila es la que casi nunca se muestra: **la plata creció $1,25 millo
 ***Siga leyendo: [Inversión inmobiliaria en Bucaramanga: el mapa de los fondos](https://economiasantander.com/noticias/tres-fondos-inmobiliarios-bucaramanga/)***
 
 
-### ¿Entonces cuál elegir, según el plazo?
+## ¿Entonces cuál elegir, según el plazo?
 
 **A tres meses.** Si es un fondo para emergencias o la plata de la matrícula de enero, **no la amarre**. Un CDT a 90 días paga poco y le quita la liquidez justo cuando la necesita. Ahorro programado o una cuenta de alto rendimiento.
 
@@ -86,7 +86,7 @@ Esa última fila es la que casi nunca se muestra: **la plata creció $1,25 millo
 
 Y una combinación que funciona bien: **ahorro programado para juntar durante el año, y al final trasladar el total a un CDT.** Cada producto en la etapa para la que sirve.
 
-#### Tres cosas que conviene mirar antes de firmar
+## Tres cosas que conviene mirar antes de firmar
 
 **Que la entidad esté vigilada por la Superintendencia Financiera.** Es lo que le da el seguro de depósitos de Fogafín. Una tasa muy por encima del mercado en una entidad no vigilada no es una oportunidad: es una alerta.
 

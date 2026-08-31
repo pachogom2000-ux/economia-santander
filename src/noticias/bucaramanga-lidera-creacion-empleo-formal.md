@@ -33,13 +33,13 @@ El desafío central del mercado laboral local es la calidad del empleo. El DANE 
 
 Investigaciones del Banco de la República sobre el mercado laboral regional señalan que la informalidad actúa como un mecanismo de ajuste económico. Ante la contracción en la creación de empleo corporativo, una parte significativa de la fuerza laboral transita hacia el **trabajo por cuenta propia para generar ingresos;** una dinámica estructural que afecta con mayor proporción a la población femenina y reduce el ingreso per cápita de los hogares.
 
-### La posición de los gremios
+## La posición de los gremios
 
 Desde el sector privado, **Fenalco Santander** ha señalado que la **carga tributaria y los costos laborales** no salariales limitan la capacidad de los empleadores de los sectores de comercio y servicios para generar nuevas vacantes formales. Por su parte, la **[Cámara de Comercio de Bucaramanga](https://www.camaradirecta.com/)** promueve estrategias de conexión laboral y desarrollo empresarial, argumentando que el fortalecimiento **financiero y técnico** de las microempresas es el camino viable hacia la formalización de las nóminas.
 
 Desde el análisis estadístico, Camilo Herrera, director de investigaciones de la firma Radar, aporta una lectura sobre este fenómeno: *"La baja desocupación en Bucaramanga responde a una economía de supervivencia. Las cifras oficiales reflejan que las personas ingresan rápidamente a esquemas de empleo precario o cuentapropismo porque no tienen el respaldo financiero para permanecer cesantes, lo que no equivale a una expansión real de la economía formal ni a una mejora en la capacidad adquisitiva"*.
 
-#### Bucaramanga: una buena plaza
+## Bucaramanga: una buena plaza
 
 Bucaramanga sigue siendo considerada una ciudad con **altos índices de calidad de vida,** un clima favorable, excelencia en servicios de salud y sólidas instituciones de educación superior. Sin embargo, por la falta de oportunidades laborales estables para los más jóvenes, vive amenazada por la escasez de talento. Estudios de los gremios locales **advierten que cerca del 45% de las empresas** de la región enfrentan dificultades para encontrar mano de obra especializada, generando un desajuste profundo entre la oferta académica y la demanda corporativa.
 

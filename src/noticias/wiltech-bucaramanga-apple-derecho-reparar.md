@@ -29,7 +29,7 @@ La reclamación tenía tres frentes: el uso de los signos distintivos de la marc
 
 No era una demanda ante un juez. Era un requerimiento privado, de los que buscan que el destinatario ceda antes de que exista un proceso.
 
-### ¿Qué respondió el bumangués?
+## ¿Qué respondió el bumangués?
 
 Becerra no cerró. Puso en público la carta y devolvió la pregunta:
 
@@ -39,7 +39,7 @@ Y propuso lo contrario de lo que le pedían: **una alianza** entre Apple y Wilte
 
 El caso se volvió viral. Y ahí cambió el pulso.
 
-#### ¿Cómo terminó de verdad?
+## ¿Cómo terminó de verdad?
 
 Aquí conviene ser preciso, porque la versión que circula suele acortar el final.
 
@@ -53,7 +53,7 @@ Y sobre la figura misma: *"Ese servicio IRP, ahorita en Colombia no funciona, po
 
 **No hubo demanda, no hubo fallo y no hubo acuerdo firmado.** Lo que hubo fue un requerimiento que se retiró después de la presión pública, y una propuesta que —en palabras del propio empresario— se quedó en el anuncio. Él siguió reparando. Eso es lo que ocurrió.
 
-#### ¿Y qué pasó tres años después?
+## ¿Y qué pasó tres años después?
 
 En **agosto de 2025**, la Superintendencia de Industria y Comercio abrió investigación y formuló pliego de cargos contra **Apple Inc.** y **Apple Services Latam** por presunto abuso de posición de dominio, [según informó Vanguardia](https://www.vanguardia.com/economia/nacional/2025/08/26/colombia-investiga-a-apple-por-posible-abuso-de-posicion-dominante-en-ios/).
 
@@ -61,7 +61,7 @@ El expediente no es sobre reparaciones: apunta a la App Store y a la obligación
 
 Son dos asuntos distintos con una raíz común: **hasta dónde puede una empresa controlar lo que pasa dentro de un aparato que ya vendió.** Becerra lo planteó en 2023 desde un taller de Bucaramanga. El regulador colombiano lo planteó en 2025 desde una resolución.
 
-##### ¿Qué es Wiltech hoy?
+## ¿Qué es Wiltech hoy?
 
 La empresa opera desde **2012** y repara iPhone, iPad, MacBook, iMac, Apple Watch y cargadores. Tiene además una línea de formación, **Wiltech Academy**, con cursos de reparación.
 
@@ -86,7 +86,7 @@ Según su propio sitio, tiene presencia en nueve países:
 
 No hay cifras públicas de facturación, número de empleados ni de sedes por ciudad. Este portal no las encontró en ninguna fuente verificable, y prefiere señalar el vacío antes que estimarlo.
 
-##### Lo que este caso deja para Santander
+## Lo que este caso deja para Santander
 
 Una empresa de servicios técnicos nacida en Bucaramanga llegó a diez mercados de América Latina reparando aparatos de la compañía más valiosa del mundo. Ese es el dato económico, y no depende de quién ganó el pulso.
 

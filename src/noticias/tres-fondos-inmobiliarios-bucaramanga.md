@@ -34,7 +34,7 @@ La ocupación estimada del portafolio es **93,9%** y los inmuebles tienen capaci
 
 Pei administra hoy **$10,31 billones** en más de 150 activos y 1,15 millones de metros cuadrados, en más de 30 ciudades, según su sitio oficial. La República registra que se trata de un acuerdo vinculante y que la adquisición todavía no se concreta; la nota no detalla las condiciones de cierre.
 
-### ¿Qué tienen de verdad los fondos en Bucaramanga?
+## ¿Qué tienen de verdad los fondos en Bucaramanga?
 
 Menos de lo que suena. El **Fondo Inmobiliario Colombia**, de **Fiduciaria Bancolombia**, tiene un centro de distribución que llama [CEDI Bucaramanga](https://fondoinmobiliariocolombia.com/proyecto/cedi-bucaramanga/), pero queda en zona rural de **Lebrija**, sobre la vía a Barrancabermeja, a unos 2,5 km del aeropuerto Palonegro.
 
@@ -48,7 +48,7 @@ Lo más visible aquí es el **Único Outlet**, que abrió el 6 de diciembre de 2
 
 En diciembre de 2025, **Jairo Corrales**, presidente de **Pei Asset Management**, dijo a [La República](https://www.larepublica.co/finanzas/entrevista-con-jairo-corrales-presidente-de-pei-asset-management-sobre-sus-adquisiciones-4281587) que "…deberíamos concretar la adquisición de una participación en Único de 85%, ubicado en Bucaramanga". A hoy, casi ocho meses después, no hay comunicado de información relevante que confirme el cierre: los de 2026 llegan hasta el 5 de junio y ninguno menciona el Único.
 
-#### ¿Por qué compran bodegas y comercio, y casi nada de oficinas?
+## ¿Por qué compran bodegas y comercio, y casi nada de oficinas?
 
 Porque en Santander ya casi no se construyen oficinas. En 2025 el departamento produjo en promedio **611 m² de oficinas por trimestre**, según el Censo de Edificaciones del **DANE** con cálculos de **Camacol Santander**.
 
@@ -60,7 +60,7 @@ Y aun así el peso de lo no residencial subió: llegó a **33,1%** del área cau
 
 Ahí está la paradoja. Se construye menos de todo, pero la vivienda cae más rápido que el comercio y las bodegas.
 
-##### ¿Qué dice el DANE sobre los precios de la vivienda en Bucaramanga?
+## ¿Qué dice el DANE sobre los precios de la vivienda en Bucaramanga?
 
 Varios medios nacionales publicaron que la vivienda nueva en Bucaramanga subió **4,07%** anual en el primer trimestre de 2026. La tabla del [boletín del DANE](https://www.dane.gov.co/files/operaciones/IPVN/bol-IPVN-Itrim2026.pdf) dice otra cosa.
 
@@ -68,7 +68,7 @@ Ese 4,07% es solo el dato de estratos 1, 2 y 3. El total del municipio fue **6,3
 
 El dato trimestral de la ciudad es más filoso. Entre diciembre y marzo, el precio de la vivienda nueva de estratos bajos en Bucaramanga **cayó 6,49%**, mientras el de estratos altos subió 5,06%. El total del municipio en ese trimestre apenas se movió: 0,47%.
 
-##### ¿Qué significa esto para el bolsillo santandereano?
+## ¿Qué significa esto para el bolsillo santandereano?
 
 Que el mercado se partió en dos. El inventario de vivienda nueva del área metropolitana supera las **6.600 unidades** y 61% es VIS, según Camacol Santander.
 
@@ -76,7 +76,7 @@ Las unidades terminadas sin vender del segmento VIS escalaron a **6,08%** al cie
 
 Mientras tanto, el eslabón de "Uso" de la cadena —arrendamiento inmobiliario, mantenimiento y reparación— facturó **$767.000 millones** con 1.842 empresas y creció **29,5%** en ventas durante el año. El negocio de administrar y mantener lo ya construido crece más rápido que el de levantarlo. Compáralo con lo que pasa en [las licencias de construcción en Bucaramanga](/noticias/licencias-construccion-bucaramanga-crecen/).
 
-##### ¿Cómo entra un inversionista común y dónde está el riesgo?
+## ¿Cómo entra un inversionista común y dónde está el riesgo?
 
 Hay tres puertas, con liquidez muy distinta.
 

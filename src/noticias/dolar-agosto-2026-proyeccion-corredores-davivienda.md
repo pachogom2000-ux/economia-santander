@@ -28,7 +28,7 @@ El informe sostiene que la tasa de cambio está por debajo de su nivel de equili
 
 Dos decisiones recientes enmarcan esa lectura: el **Banco de la República** sostuvo su tasa de interés en **12%** y anunció un programa de acumulación de reservas por **USD 4.000 millones**, que compra divisas de forma gradual cuando la tasa se ubica por debajo de su promedio de los últimos 20 días.
 
-### ¿Y qué ha hecho el dólar en agosto?
+## ¿Y qué ha hecho el dólar en agosto?
 
 Esta es la TRM certificada por la Superintendencia Financiera, día por día:
 
@@ -51,7 +51,7 @@ Esta es la TRM certificada por la Superintendencia Financiera, día por día:
 
 El mes arrancó cerca de $3.230 y se fue para abajo. **Desde el 11 de agosto la TRM no ha vuelto a superar los $3.130.**
 
-#### ¿Qué tendría que pasar para que se cumpla la proyección?
+## ¿Qué tendría que pasar para que se cumpla la proyección?
 
 Aquí está el punto que conviene mirar antes de tomar cualquier decisión con dólares.
 
@@ -61,7 +61,7 @@ Hay un dato más incómodo para la proyección: **el piso de su propio rango son
 
 Nada de esto invalida el análisis de fondo —una moneda puede estar por debajo de su equilibrio durante meses—, pero sí obliga a leer la cifra de $3.310 como lo que es: **una proyección hecha a comienzos de mes, no una descripción de lo que está pasando.**
 
-#### ¿Qué significa esto para Santander?
+## ¿Qué significa esto para Santander?
 
 Un dólar barato tiene dos caras en esta región, y no son la misma para todos.
 

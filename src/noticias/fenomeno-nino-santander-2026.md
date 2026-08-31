@@ -34,7 +34,7 @@ El estado oficial es **Aviso de El Niño**, con el fenómeno ya presente y forta
 
 El IDEAM añade el dato que importa acá: prevé **reducción significativa de las precipitaciones** en las regiones Pacífica, Andina y Caribe, con mayor evaporación, episodios de estrés hídrico y reducción de caudales y de niveles de embalses. Santander está en la región Andina.
 
-### La lección de 2024: el golpe no llegó por los alimentos
+## La lección de 2024: el golpe no llegó por los alimentos
 
 Esta es la parte contraintuitiva, y está en las cifras del **[DANE](https://www.dane.gov.co/files/operaciones/IPC/bol-IPC-dic2023.pdf)**.
 
@@ -46,7 +46,7 @@ En Bucaramanga la señal fue más fuerte que en el país. En julio de 2024 los s
 
 El daño en alimentos existió, pero fue quirúrgico y con rezago. La **papa** pasó de -18,13% anual en enero de 2024 a **+97,39% en julio**. El **arroz**, del que más se habló, se movió +1,47% en ese mismo julio.
 
-#### Por qué Santander no es espectador
+## Por qué Santander no es espectador
 
 Santander no solo consume energía en un Niño: la genera. **Hidrosogamoso** produjo **5.367 GWh** entre agosto de 2025 y julio de 2026, el **6,16% de toda la electricidad del país**, según los registros de **XM**, el operador del sistema. Es la cuarta central del país.
 
@@ -54,7 +54,7 @@ Y produce por encima de su tamaño: con el **3,75%** de la capacidad instalada n
 
 El departamento tenía **1.319 megavatios** instalados en 2024 —881 hidráulicos y 436 a gas—, según el [boletín estadístico de la **UPME**](https://docs.upme.gov.co/SIMEC/Boletin-estadistico/Boletin_Estadistico_2020-2024_S1VF_Abril_VFD-07abr25.pdf). Es una pieza del [mapa productivo que va más allá de Ecopetrol](/noticias/santander-mas-alla-ecopetrol-palma-mapa-productivo/), y en un Niño es la que primero se siente en las facturas de todo el país.
 
-#### La señal que ya se ve en el río
+## La señal que ya se ve en el río
 
 Los datos de XM al 13 de agosto de 2026 muestran dos cosas que conviene leer juntas.
 
@@ -66,7 +66,7 @@ Ya pasó antes, y con más fuerza que en el resto del país: en abril de 2024 To
 
 El precio ya se movió. El promedio de bolsa de los primeros once días de agosto de 2026 fue **966,67 pesos por kilovatio hora**, cuatro veces el de agosto de 2025 (241,39). En febrero de este año iba en 124,42.
 
-#### ¿Y el agua de Bucaramanga?
+## ¿Y el agua de Bucaramanga?
 
 El área metropolitana llegó mejor parada que buena parte del departamento. El acueducto metropolitano, **amb**, [informó el 30 de julio de 2026](https://www.amb.com.co/amb/bucaramanga-floridablanca-y-giron-llegan-preparadas-al-fenomeno-de-el-nino/) que tiene **4.600 litros por segundo** de capacidad instalada de tratamiento frente a una oferta mínima de las fuentes cercana a **2.400 litros por segundo**, para 1,2 millones de habitantes.
 
@@ -77,7 +77,7 @@ La provincia es otra historia. En febrero de 2024, **[más de 20 municipios de S
 ***Le puede interesar: [Bucaramanga lidera la creación de empleo formal ](https://economiasantander.com/noticias/bucaramanga-lidera-creacion-empleo-formal/)***
 
 
-##### Qué pasó con el cacao y la palma
+## Qué pasó con el cacao y la palma
 
 Aquí hay que separar dos historias que suelen contarse como una sola.
 
@@ -85,7 +85,7 @@ El **cacao** santandereano no cayó con el Niño anterior: subió. Las [Evaluaci
 
 La **palma** sí sintió el golpe, aunque medido a escala nacional: la producción colombiana de aceite crudo cayó **6,6% en 2024** —121.000 toneladas menos que en 2023—, y [**Fedepalma** lo atribuyó explícitamente](https://fedepalma.org/noticias/la-produccion-de-aceite-de-palma-fue-de-172-millones-de-toneladas-en-2024/) a El Niño y a la sequía en las zonas palmeras.
 
-##### Qué revisar de aquí a diciembre
+## Qué revisar de aquí a diciembre
 
 Si usted tiene un negocio en Santander, hay tres cifras que valen más que cualquier pronóstico.
 

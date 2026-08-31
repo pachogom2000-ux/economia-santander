@@ -37,7 +37,7 @@ Tres reglas de la **Ley 820 de 2003** que conviene tener presentes antes de firm
 
 Esa tercera regla es la que casi nadie usa y es la más poderosa. Si un apartamento vale $250 millones, el canon no debería pasar de **$2,5 millones al mes**. Es un argumento legal, no una opinión sobre el mercado.
 
-### ¿Cuánto vale hoy un arriendo en Bucaramanga?
+## ¿Cuánto vale hoy un arriendo en Bucaramanga?
 
 Aquí hay que ser cuidadoso con las cifras, y este portal lo va a ser.
 
@@ -50,7 +50,7 @@ Léalas entonces como referencia de mercado, no como el valor de su apartamento.
 *Recomendamos: [Dónde poner los ahorros en Bucaramanga con tasas del 12%
 ](https://economiasantander.com/noticias/donde-rinde-mas-tu-plata-cdt-santander/)*
 
-### ¿Qué parte del sueldo se puede destinar al arriendo?
+## ¿Qué parte del sueldo se puede destinar al arriendo?
 
 La regla que circula es el **30% del ingreso**. Sirve como punto de partida y se queda corta como diagnóstico.
 
@@ -73,7 +73,7 @@ Una forma más honesta de mirarlo:
 
 Compare esa columna de la derecha con los precios de oferta de la ciudad y verá el problema real: **con un ingreso de dos salarios mínimos, el mercado formal de arriendo de Bucaramanga queda prácticamente fuera de alcance.**
 
-#### ¿Cómo se negocia el ajuste anual?
+## ¿Cómo se negocia el ajuste anual?
 
 El aumento es una facultad del arrendador, no una obligación. Y se negocia. Cuatro argumentos que funcionan mejor que pedir rebaja:
 
@@ -87,13 +87,13 @@ El aumento es una facultad del arrendador, no una obligación. Y se negocia. Cua
 
 Y una que no es negociación sino derecho: **el aumento debe avisarse.** Un arrendador no puede subir el canon de un mes a otro sin comunicarlo.
 
-##### ¿Qué pasa si le suben más de lo permitido?
+## ¿Qué pasa si le suben más de lo permitido?
 
 Un aumento por encima del IPC del año anterior no es válido. Si ya lo pagó, ese excedente es un pago de lo no debido.
 
 El camino es reclamar por escrito al arrendador o a la inmobiliaria, dejando constancia. Si no hay acuerdo, la vía es la autoridad de policía del municipio o la jurisdicción civil. Guarde el contrato, los comprobantes de pago y la comunicación del aumento: sin papeles no hay reclamación.
 
-##### Lo que este portal no le va a decir
+## Lo que este portal no le va a decir
 
 No le vamos a decir si le conviene arrendar o comprar. Depende de su tasa, de su cuota inicial y de cuánto tiempo piense quedarse, y cualquiera que se lo resuelva en una frase le está vendiendo algo.
 

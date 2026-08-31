@@ -35,7 +35,7 @@ El desplome se concentra en el centro. **Bucaramanga** licenció 58% menos que e
 
 Para el departamento completo, el boletín sí trae el dato: **\-21,8%** en el año corrido, con una contribución de **\-1,6 puntos porcentuales** a la variación nacional. En ese mismo cuadro, Bolívar, Atlántico y Santander restaron en conjunto 8,8 puntos porcentuales al resultado del país.
 
-### ¿Por qué el país crece 29% y aquí no?
+## ¿Por qué el país crece 29% y aquí no?
 
 Porque el crecimiento se está armando en otra parte. Según ese boletín, **Tolima** aportó 9,8 puntos porcentuales a la variación del año corrido. **Risaralda**, 6,7. **Quindío**, 5,6.
 

@@ -33,7 +33,7 @@ Con una tarifa promedio de **$264.230** por noche, esos $20.532 millones equival
 
 La ciudad tenía entonces **4.284 empresas activas** del sector: 3.328 establecimientos gastronómicos, 496 bares y apenas **460 de alojamiento**.
 
-### ¿Cuántos empleos sostiene el sector?
+## ¿Cuántos empleos sostiene el sector?
 
 Acá no hay una cifra actualizada. La medición departamental que más circula —**$776.000 millones** en ventas anuales y **8.247 empleos**, atribuida a la **Cámara de Comercio de Bucaramanga**— fue publicada por La República en junio de 2023. Tiene tres años encima.
 
@@ -54,7 +54,7 @@ Los dos datos no son del mismo mes: el alza de los Santanderes es de abril y la 
 
 **Cotelco Santander** cerró 2025 con **55 hoteles afiliados** —sexto capítulo del país entre 21— y pasó de facturar $136 millones en 2021 a **$551 millones en 2025**.
 
-#### ¿Qué tan llenos están los hoteles de Santander?
+## ¿Qué tan llenos están los hoteles de Santander?
 
 En abril de 2026 la ocupación hotelera de los Santanderes fue **34,8%**, apenas por encima del 34,5% de abril de 2025. De cada 100 habitaciones disponibles, **65 quedaron vacías**.
 
@@ -66,7 +66,7 @@ Pero el promedio nacional proyectado fue **55,9%**. Bucaramanga sube y sigue **4
 
 En enero la ocupación de la ciudad fue **41,28%** con tarifa de $264.230, frente a **40%** de las viviendas turísticas con tarifa de **$160.740**. El hotel cuesta 64% más que el apartamento, según cálculos de Economía Santander sobre esas dos tarifas.
 
-##### ¿De dónde vienen los extranjeros que llegan a Santander?
+## ¿De dónde vienen los extranjeros que llegan a Santander?
 
 En 2025 Santander recibió **38.458 turistas internacionales**, **5,5%** más que el año anterior, según las cifras publicadas por [Vanguardia](https://www.vanguardia.com/santander/2026/03/22/topocoro-el-mar-dulce-que-impulsa-el-turismo-en-santander/). Son unos **105 extranjeros por día** para 87 municipios, según cálculos de Economía Santander sobre esa cifra.
 
@@ -108,7 +108,7 @@ La ministra **Diana Marcela Morales Rojas** dijo que "el turismo colombiano atra
 ***Siga leyendo: [Licencias de construcción en Bucaramanga caen 43% en 2026](https://economiasantander.com/noticias/licencias-construccion-bucaramanga-crecen/)***
 
 
-###### ¿Sirvieron las nuevas rutas del aeropuerto Palonegro?
+## ¿Sirvieron las nuevas rutas del aeropuerto Palonegro?
 
 El **aeropuerto Palonegro** cerró 2025 con más de **75.000 viajeros internacionales** y en lo corrido de 2026 suma más de **24.000**. Esas dos cifras, y solo esas, las reporta [Corrillos](https://www.corrillos.com.co/al-aeropuerto-palonegro-no-solo-llegan-mas-rutas-y-pasajeros-tambien-la-modernidad/): no hay publicado un total de pasajeros movilizados que permita ponerlas en contexto.
 
@@ -118,7 +118,7 @@ La ruta a Aruba arrancó con tarifas desde **US$116** por trayecto, según esa m
 
 Pero avión no es turista. En enero de 2026 se movilizaron cerca de **600.000 viajeros** por el aeropuerto y la terminal de Bucaramanga —cifra que cuenta entradas y salidas—, y solo **2.475 extranjeros** se hospedaron en la ciudad.
 
-###### ¿Por qué San Gil y Barichara no repuntaron en vacaciones?
+## ¿Por qué San Gil y Barichara no repuntaron en vacaciones?
 
 El eje **San Gil–Barichara–Cañón del Chicamocha** es la marca turística del departamento. En las vacaciones de mitad de 2026 no le fue bien.
 
@@ -130,7 +130,7 @@ Los empresarios culpan a la falta de promoción institucional, no a una pérdida
 
 Hay un segundo cuello de botella y es de asfalto. **Raúl Gutiérrez**, del hotel Cacique Charalá, lo planteó en la asamblea de **Cotelco Santander**: "Las vías son importantísimas. Para mí la prioridad hoy es el turismo".
 
-###### ¿Qué sigue para el turismo santandereano?
+## ¿Qué sigue para el turismo santandereano?
 
 Tres fechas para marcar.
 

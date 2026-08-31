@@ -29,7 +29,7 @@ Hablar de "la minería de Santurbán" en singular confunde, porque en ese territ
 
 Una es el megaproyecto de capital internacional. Otra es la minería tradicional de pequeña escala, la que sostiene a Vetas y California desde hace generaciones. La tercera es la ilegal. Las tres sacan oro del mismo macizo y solo una está hoy en discusión pública.
 
-### El megaproyecto: suspendido por dos años
+## El megaproyecto: suspendido por dos años
 
 El 3 de marzo de 2025 el Ministerio de Ambiente expidió la **Resolución 0221**, que declaró una **Zona de Reserva Temporal de Recursos Naturales Renovables** sobre el flanco occidental del macizo de Santurbán.
 
@@ -44,7 +44,7 @@ La medida tiene detractores institucionales. La Procuraduría y la Defensoría d
 ***Siga leyendo: [Joyería en Bucaramanga: comprar oro legal y poder probarlo](https://economiasantander.com/noticias/joyeria-bucaramanga-oro-cadena/)***
 
 
-#### La tradicional: la excepción que la mantiene viva
+## La tradicional: la excepción que la mantiene viva
 
 Aquí está el matiz que suele perderse en el debate, y que cambia el sentido de la noticia.
 
@@ -52,7 +52,7 @@ La resolución **no congeló toda la minería del páramo**. Los titulares de mi
 
 Es decir: lo que se detuvo fue la gran minería y la entrada de nuevos títulos, no la actividad histórica de los dos municipios. Para Vetas y California, que han vivido del oro durante generaciones, esa distinción es la diferencia entre seguir trabajando y no hacerlo.
 
-#### La ilegal: un kilo diario
+## La ilegal: un kilo diario
 
 Mientras el proyecto grande espera y el pequeño tramita, la extracción ilegal opera sin pausa.
 
@@ -62,7 +62,7 @@ La Unidad de Información y Análisis Financiero estima que ese circuito mueve a
 
 Ese es, hasta donde llega la información pública, el único dato de producción con orden de magnitud que existe sobre el oro de esa zona. Y corresponde justamente a la actividad que nadie registra.
 
-#### El mercurio: prohibido desde 2018
+## El mercurio: prohibido desde 2018
 
 El costo ambiental tiene una medida concreta y está en el agua.
 
@@ -72,7 +72,7 @@ El mercurio se consigue en Bucaramanga a unos **$650.000 el kilo**, pese a que l
 
 Aguas abajo de esa cuenca está el sistema que abastece al área metropolitana de Bucaramanga. Por eso el asunto dejó de ser una discusión minera y pasó a ser una discusión sobre el agua de más de un millón de personas.
 
-##### Las dos orillas del debate
+## Las dos orillas del debate
 
 Conviene decirlo sin tapujos, porque este es un asunto donde es fácil repartir villanos.
 
@@ -91,7 +91,7 @@ Economía Santander encontró que para cerrar esta historia hay cuatro datos que
 
 Los tiene la Agencia Nacional de Minería. Sin ellos, cualquier discusión sobre si conviene o no la minería en Santurbán se hace comparando un costo ambiental medido contra un beneficio económico que nadie ha cuantificado.
 
-###### Dónde termina ese oro
+## Dónde termina ese oro
 
 La cadena no se acaba en la bocamina. El oro de Santurbán llega a los talleres y las vitrinas del centro de Bucaramanga, y ahí aparece el problema del joyero: comprar oro legal y **poder demostrar** que lo es, cuando buena parte del metal que circula no tiene trazabilidad.
 

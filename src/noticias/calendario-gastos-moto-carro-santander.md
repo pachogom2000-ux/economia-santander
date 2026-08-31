@@ -22,7 +22,7 @@ Tener moto o carro en Santander cuesta tres pagos al año que no coinciden entre
 
 Y hay una fecha que corre ya: quien deba el impuesto vehicular tiene hasta el **30 de septiembre** para pagarlo con el descuento más alto del año.
 
-### El impuesto vehicular: la fecha que aprieta
+## El impuesto vehicular: la fecha que aprieta
 
 El plazo para pagar el impuesto vehicular de 2026 **sin sanciones venció el 30 de junio**. Desde el 1 de julio corren multas e intereses, según la Gobernación de Santander. A diferencia de años anteriores, en 2026 **no hubo descuento por pronto pago**.
 
@@ -39,7 +39,7 @@ El descuento aplica sobre intereses y sanciones, no sobre el impuesto. Esperar d
 ***Le puede interesar: [Comercio en Santander: ventas suben 10,6% y el empleo cae](https://economiasantander.com/noticias/comercio-consumo-santander-2026/)***
 
 
-#### El SOAT: tarifa fija, según el cilindraje
+## El SOAT: tarifa fija, según el cilindraje
 
 El SOAT lo fija la Superintendencia Financiera y rige desde el **1 de enero de 2026**. Para motos, estas son las tarifas máximas del año, que ya incluyen el aporte al ADRES y la tarifa del RUNT:
 
@@ -54,7 +54,7 @@ Conviene fijarse en los saltos. La tarifa **solo cambia en dos umbrales**: al pa
 
 El SOAT subió cerca del **5% para motos** y **0,3% para carros** frente a 2025. En carros la tarifa depende del cilindraje y de la antigüedad del vehículo, así que hay que consultarla caso por caso.
 
-##### La tecnomecánica: el pago más caro
+## La tecnomecánica: el pago más caro
 
 La revisión técnico-mecánica subió alrededor del **5,8%** en 2026, ajustada con la Unidad de Valor Base:
 
@@ -67,7 +67,7 @@ El rango depende de la antigüedad del vehículo. En esos precios ya vienen incl
 
 Circular sin el certificado vigente cuesta **$875.452** —quince salarios mínimos diarios— más la **inmovilización inmediata** del vehículo. Es decir, la multa sale más cara que hacer la revisión.
 
-##### Cómo no quedar colgado
+## Cómo no quedar colgado
 
 Los tres gastos no se vencen el mismo día, y ahí está la trampa. El impuesto tiene fecha fija de calendario. El SOAT y la tecnomecánica se vencen en el aniversario de cada vehículo, que es distinto para cada propietario.
 
@@ -79,6 +79,6 @@ Tres cosas prácticas:
 * **Sume el año completo antes de enero.** Entre SOAT, tecnomecánica e impuesto, una moto de más de 200 c.c. supera fácilmente el millón de pesos.
 * **Si debe el impuesto, no espere.** Cada tramo del alivio que se vence le cuesta plata.
 
-##### Advertencia
+## Advertencia
 
 Las tarifas de SOAT y tecnomecánica son topes nacionales del año 2026 y pueden variar por antigüedad y tipo de vehículo. Antes de pagar, confirme el valor exacto de su vehículo en el RUNT y el estado de su impuesto en la Secretaría de Hacienda de la Gobernación de Santander.
