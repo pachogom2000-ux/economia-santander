@@ -6,15 +6,14 @@ date: 2026-08-31T06:00:00.000-05:00
 categoria: Agro
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: La carga cerró en $2.330.000, el mejor del año. Pero la recolección se
-  lleva buena parte y el 64% de las familias cafeteras no llega al ingreso
-  vital.
+excerpt: La carga cerró en $2.250.000, casi el tope del año. Pero la recolección
+  se lleva buena parte y el 64% de los cafeteros no llega al ingreso vital.
 autor: Francisco Gómez - Director
 imagen: /assets/uploads/recolector-de-cafe-en-un-cafetal.webp
 imagenAlt: Recolector de café en un cafetal de altura en Santander
 imagenTitle: Costos de producción y recolección del café en Santander
-imagenPie: El precio interno de referencia cerró el 25 de agosto de 2026 en
-  $2.330.000 por carga de 125 kilos.
+imagenPie: El precio interno de referencia cerró el 28 de agosto de 2026 en
+  $2.250.000 por carga de 125 kilos.
 imagenCredito: Archivo particular
 tags: noticias
 ---
@@ -30,7 +29,7 @@ Conviene entender la cifra antes de discutirla, porque el número que publica la
 
 El precio de referencia se arma con el cierre del día en la Bolsa de Nueva York, la tasa de cambio y el diferencial o prima del café colombiano. Sobre eso, la Federación garantiza la compra.
 
-Ese valor de la carga **incluye $10.000 por cada kilo de pasilla** contenida en el pergamino. La pasilla es el grano defectuoso, y entra en el peso que se entrega. Un café mal beneficiado o mal secado llega con más pasilla, y aunque el papel diga $2.330.000, la liquidación real baja.
+Ese valor de la carga **incluye $10.000 por cada kilo de pasilla** contenida en el pergamino. La pasilla es el grano defectuoso, y entra en el peso que se entrega. Un café mal beneficiado o mal secado llega con más pasilla, y aunque el papel diga $2.250.000, la liquidación real baja.
 
 Es la primera brecha entre el precio publicado y el precio recibido, y depende por completo del trabajo en la finca.
 
