@@ -2,7 +2,7 @@
 layout: noticia.njk
 eleventyExcludeFromCollections: true
 title: "Empleos que van a desaparecer: qué arriesga Bucaramanga"
-date: 2026-08-31T13:00:00.000-05:00
+date: 2026-09-01T06:00:00.000-05:00
 categoria: Empleo
 chipTipo: propio
 chipLabel: Redacción propia
@@ -67,13 +67,13 @@ A eso se suma el otro extremo del mismo sector: los [6.444 vendedores informales
 
 Iván Daniel Jaramillo Jassir, profesor de la Universidad del Rosario, exdirector de su Observatorio Laboral y exviceministro de Empleo y Pensiones, considera que el cambio tecnológico ha obligado a replantear el modelo de aprendizaje para la formación de futuros profesionales, basándose en un esquema que pone énfasis en el aprendizaje de habilidades duras y blandas. 
 
-Para el experto, "se ha observado que la demanda de trabajo se ha ido modificando de forma muy acelerada dada la automatización y la digitalización de todo el desarrollo que caracteriza las actividades de este nuevo tiempo, entonces claramente hay una reformulación de toda la formación en habilidades blandas y duras que ha impuesto a los modelos de formación un paso acelerado de la tradicional formación de conceptos, saberes, conocimientos a la incorporación de elementos nuevos como la adaptación al cambio, liderazgo, la gestión de las nuevas realidades digitales y tecnológicas, toda la orientación a resultados", afirma. 
+Para el experto, "se ha observado que la demanda de trabajo se ha ido modificando de forma muy acelerada dada la automatización y la digitalización de todo el desarrollo que caracteriza las actividades de este nuevo tiempo. Entonces claramente hay una reformulación de toda la formación en habilidades blandas y duras que ha impuesto a los modelos de formación un paso acelerado de la tradicional formación de conceptos, saberes, conocimientos a la incorporación de elementos nuevos como la adaptación al cambio, liderazgo, la gestión de las nuevas realidades digitales y tecnológicas, toda la orientación a resultados", afirma. 
 
 ![Iván Jaramillo Jassir, exviceministro de Empleo y Pensiones. Foto: archivo particular. ](/assets/uploads/ivan-jaramillo-foto-interna.jpeg "Iván Jaramillo Jassir, exviceministro de Empleo y Pensiones. Foto: archivo particular. ")
 
-Agrega que en el modelo de aprendizaje colombiano, en todos los sistemas de formación para el trabajo se ha ido acentuando en su importancia lo relacionado con temas de tecnología y técnico. "Con el Ministerio de Trabajo de reconocimiento de aprendizajes previos, con los programas de 'Saber Hacer Vale', se ha mostrado resultados muy positivos sobre todo en la adecuación de poblaciones que tienen especiales dificultades, como es el caso de población migrante, de cara a la acreditación de sus saberes frente al mercado laboral", añadió. 
+Agrega que en el modelo de aprendizaje colombiano, en todos los sistemas de formación para el trabajo se ha ido acentuando en su importancia lo relacionado con temas de tecnología y nivel técnico. "Con el Ministerio de Trabajo de reconocimiento de aprendizajes previos, con los programas de 'Saber Hacer Vale', se ha mostrado resultados muy positivos sobre todo en la adecuación de poblaciones que tienen especiales dificultades, como es el caso de población migrante, de cara a la acreditación de sus saberes frente al mercado laboral", añadió. 
 
-## Lo que la formación tendría que estar haciendo
+##### Lo que la formación tendría que estar haciendo
 
 Si el recambio es de 22% de los puestos, el sistema educativo tiene un problema de calendario: **una carrera dura cinco años y el mercado se está moviendo más rápido que eso.**
 
@@ -81,7 +81,7 @@ Las competencias que el informe destaca no son solo técnicas. Junto a datos, in
 
 Eso apunta menos a crear carreras nuevas y más a que la formación corta, certificable y actualizable —la que se toma trabajando— sea tan accesible como el pregrado. En un mercado con 44,5% de informalidad, esa es además la única que muchos pueden pagar.
 
-## Lo que hay que vigilar
+##### Lo que hay que vigilar
 
 **La desocupación juvenil del área metropolitana.** Es el primer indicador que se mueve cuando una economía deja de crear los empleos de entrada, que son justamente los administrativos y de caja.
 
