@@ -11,8 +11,9 @@ excerpt: El Foro Económico Mundial calcula 92 millones de empleos desplazados a
 autor: Francisco Gómez - Director
 imagen: /assets/uploads/empleos-futuro-bucaramanga.jpg
 imagenAlt: Cajera atendiendo en un almacén del centro de Bucaramanga
-imagenTitle: "Empleos que van a desaparecer y su efecto en Bucaramanga"
-imagenPie: Los roles administrativos y de caja encabezan la lista de ocupaciones en declive hasta 2030.
+imagenTitle: Empleos que van a desaparecer y su efecto en Bucaramanga
+imagenPie: Los roles administrativos y de caja encabezan la lista de ocupaciones
+  en declive hasta 2030.
 imagenCredito: Archivo particular
 tags: noticias
 ---
@@ -30,13 +31,13 @@ En proporción, los 170 millones de empleos nuevos equivalen al 14% del empleo a
 
 Conviene leer esas cifras con cuidado. No describen un apocalipsis laboral: describen un recambio. Lo que decide si a un país le va bien o mal en ese recambio es qué tan rápido puede mover a la gente de una casilla a otra.
 
-## Los oficios que se están apagando
+### Los oficios que se están apagando
 
 La lista de ocupaciones en declive es consistente y no sorprende a nadie que trabaje en ellas: **cajeros, asistentes administrativos, empleados de correo y digitadores de datos**.
 
 Tienen algo en común. Son tareas repetitivas, con reglas claras y sin necesidad de criterio, que es exactamente lo que un sistema automatiza primero. No desaparecen de golpe: se van adelgazando, un puesto que no se reemplaza cuando alguien renuncia.
 
-## La paradoja que casi nadie menciona
+#### La paradoja que casi nadie menciona
 
 Aquí está el matiz que cambia la lectura del informe.
 
@@ -48,7 +49,7 @@ Es decir: la nota de prensa habla de programadores, pero el grueso del empleo nu
 
 Esa distinción importa para un departamento como Santander, donde el agro pesa. Puede haber más empleo del que sugiere el titular tecnológico, pero no necesariamente mejor pagado ni más formal.
 
-## Qué se juega el área metropolitana de Bucaramanga
+#### Qué se juega el área metropolitana de Bucaramanga
 
 Aquí el dato global aterriza y se pone concreto.
 
@@ -62,9 +63,15 @@ No es una hipótesis lejana: el comercio de Santander ya viene mostrando [ventas
 
 A eso se suma el otro extremo del mismo sector: los [6.444 vendedores informales](/noticias/comercio-bucaramanga-mall-y-calle/) que el Censo Económico contó en las calles de Bucaramanga. Un mercado laboral que ya expulsa gente hacia el andén tiene menos colchón para absorber una transición tecnológica.
 
-## La voz del especialista
+#### La voz del especialista
 
-[PENDIENTE: incorporar la declaración de Iván Daniel Jaramillo Jassir, profesor de la Universidad del Rosario, exdirector de su Observatorio Laboral y exviceministro de Empleo y Pensiones. Verificar el cargo con el que prefiere ser citado antes de publicar.]
+Iván Daniel Jaramillo Jassir, profesor de la Universidad del Rosario, exdirector de su Observatorio Laboral y exviceministro de Empleo y Pensiones, considera que el cambio tecnológico ha obligado a replantear el modelo de aprendizaje para la formación de futuros profesionales, basándose en un esquema que pone énfasis en el aprendizaje de habilidades duras y blandas. 
+
+Para el experto, "se ha observado que la demanda de trabajo se ha ido modificando de forma muy acelerada dada la automatización y la digitalización de todo el desarrollo que caracteriza las actividades de este nuevo tiempo, entonces claramente hay una reformulación de toda la formación en habilidades blandas y duras que ha impuesto a los modelos de formación un paso acelerado de la tradicional formación de conceptos, saberes, conocimientos a la incorporación de elementos nuevos como la adaptación al cambio, liderazgo, la gestión de las nuevas realidades digitales y tecnológicas, toda la orientación a resultados", afirma. 
+
+![Iván Jaramillo Jassir, exviceministro de Empleo y Pensiones. Foto: archivo particular. ](/assets/uploads/ivan-jaramillo-foto-interna.jpeg "Iván Jaramillo Jassir, exviceministro de Empleo y Pensiones. Foto: archivo particular. ")
+
+Agrega que en el modelo de aprendizaje colombiano, en todos los sistemas de formación para el trabajo se ha ido acentuando en su importancia lo relacionado con temas de tecnología y técnico. "Con el Ministerio de Trabajo de reconocimiento de aprendizajes previos, con los programas de 'Saber Hacer Vale', se ha mostrado resultados muy positivos sobre todo en la adecuación de poblaciones que tienen especiales dificultades, como es el caso de población migrante, de cara a la acreditación de sus saberes frente al mercado laboral", añadió. 
 
 ## Lo que la formación tendría que estar haciendo
 
