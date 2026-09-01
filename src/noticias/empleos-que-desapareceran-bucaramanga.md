@@ -1,6 +1,5 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
 title: "Empleos que van a desaparecer: qué arriesga Bucaramanga"
 date: 2026-09-01T06:01:00.000-05:00
 categoria: Empleo
