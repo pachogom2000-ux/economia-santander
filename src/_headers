@@ -33,7 +33,15 @@
 /assets/style.css
   Cache-Control: public, max-age=0, must-revalidate
 
-# El JS no lleva huella todavía: se revalida siempre.
+# El comportamiento del sitio YA lleva huella (/assets/js/app.<huella>.js), así
+# que se congela un año por la misma razón que el CSS: si cambia el contenido,
+# cambia el nombre. Antes vivía en línea dentro del HTML —26 KB que volvían a
+# viajar en cada página— y así no había forma de cachearlo.
+/assets/js/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# El resto del JS (dolar.js, indicadores.js) todavía no lleva huella y las
+# copias sin huella tampoco: se revalidan siempre.
 /assets/*.js
   Cache-Control: public, max-age=0, must-revalidate
 

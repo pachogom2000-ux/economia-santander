@@ -51,6 +51,19 @@ const cssHuella = crypto
   .slice(0, 10);
 const CSS_SALIDA = `assets/css/style.${cssHuella}.css`;
 
+// El comportamiento del sitio (cinta, pico y placa, menú, compartir, cookies)
+// vivía en línea dentro de layout.njk: 26 KB que volvían a viajar en CADA
+// página, porque el JavaScript en línea no se puede cachear ni diferir. Con
+// huella en el nombre se baja una sola vez y se congela un año, igual que el
+// CSS de arriba.
+const JS_ORIGEN = "src/assets/app.js";
+const jsHuella = crypto
+  .createHash("sha256")
+  .update(fsSync.readFileSync(JS_ORIGEN, "utf8").replace(/\r\n/g, "\n"))
+  .digest("hex")
+  .slice(0, 10);
+const JS_SALIDA = `assets/js/app.${jsHuella}.js`;
+
 module.exports = function (eleventyConfig) {
   // La copia con huella va a su propia carpeta para que la regla de caché de
   // un año en _headers apunte SOLO a archivos con huella. /assets/style.css
@@ -59,6 +72,13 @@ module.exports = function (eleventyConfig) {
   // algún navegador no se queda sin estilos.
   eleventyConfig.addPassthroughCopy({ [CSS_ORIGEN]: CSS_SALIDA });
   eleventyConfig.addGlobalData("cssUrl", `/${CSS_SALIDA}`);
+
+  // Misma jugada para el JavaScript del sitio. La copia sin huella
+  // (/assets/app.js) la sigue publicando el passthrough de la carpeta y
+  // conserva su cabecera de revalidar siempre, por si quedó HTML viejo
+  // cacheado apuntando a ella.
+  eleventyConfig.addPassthroughCopy({ [JS_ORIGEN]: JS_SALIDA });
+  eleventyConfig.addGlobalData("jsUrl", `/${JS_SALIDA}`);
 
   // Todas las <img> del sitio se reescriben en el build con varias medidas.
   // Antes se servía el original a cualquier tamaño: una foto de 4,5 MB y
