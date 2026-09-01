@@ -2,14 +2,14 @@
 layout: noticia.njk
 eleventyExcludeFromCollections: true
 title: "Empleos que van a desaparecer: qué arriesga Bucaramanga"
-date: 2026-09-01T06:00:00.000-05:00
+date: 2026-09-01T06:01:00.000-05:00
 categoria: Empleo
 chipTipo: propio
 chipLabel: Redacción propia
 excerpt: El Foro Económico Mundial calcula 92 millones de empleos desplazados a
   2030. Los oficios en declive son los que más ocupan en el comercio del área.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/empleos-futuro-bucaramanga.jpg
+imagen: /assets/uploads/cajera-centro-de-bucaramanga.webp
 imagenAlt: Cajera atendiendo en un almacén del centro de Bucaramanga
 imagenTitle: Empleos que van a desaparecer y su efecto en Bucaramanga
 imagenPie: Los roles administrativos y de caja encabezan la lista de ocupaciones
@@ -65,13 +65,13 @@ A eso se suma el otro extremo del mismo sector: los [6.444 vendedores informales
 
 #### La voz del especialista
 
-Iván Daniel Jaramillo Jassir, profesor de la Universidad del Rosario, exdirector de su Observatorio Laboral y exviceministro de Empleo y Pensiones, considera que el cambio tecnológico ha obligado a replantear el modelo de aprendizaje para la formación de futuros profesionales, basándose en un esquema que pone énfasis en el aprendizaje de habilidades duras y blandas. 
+Iván Daniel Jaramillo Jassir, profesor de la Universidad del Rosario, exdirector de su Observatorio Laboral y exviceministro de Empleo y Pensiones, considera que el cambio tecnológico ha obligado a replantear el modelo de aprendizaje para la formación de futuros profesionales, basándose en un esquema que pone énfasis en el desarrollo de habilidades duras y blandas. 
 
-Para el experto, "se ha observado que la demanda de trabajo se ha ido modificando de forma muy acelerada dada la automatización y la digitalización de todo el desarrollo que caracteriza las actividades de este nuevo tiempo. Entonces claramente hay una reformulación de toda la formación en habilidades blandas y duras que ha impuesto a los modelos de formación un paso acelerado de la tradicional formación de conceptos, saberes, conocimientos a la incorporación de elementos nuevos como la adaptación al cambio, liderazgo, la gestión de las nuevas realidades digitales y tecnológicas, toda la orientación a resultados", afirma. 
+Para el experto, "se ha observado que la demanda de trabajo se ha ido modificando de forma muy acelerada dada la automatización y la digitalización de todo el desarrollo que caracteriza las actividades de este nuevo tiempo. Entonces claramente hay una reformulación de toda la formación en habilidades blandas y duras que ha impuesto a los modelos de formación un paso acelerado de la tradicional educación de conceptos, saberes, conocimientos a la incorporación de elementos nuevos como la adaptación al cambio, liderazgo, la gestión de las nuevas realidades digitales y tecnológicas", afirma. 
 
 ![Iván Jaramillo Jassir, exviceministro de Empleo y Pensiones. Foto: archivo particular. ](/assets/uploads/ivan-jaramillo-foto-interna.jpeg "Iván Jaramillo Jassir, exviceministro de Empleo y Pensiones. Foto: archivo particular. ")
 
-Agrega que en el modelo de aprendizaje colombiano, en todos los sistemas de formación para el trabajo se ha ido acentuando en su importancia lo relacionado con temas de tecnología y nivel técnico. "Con el Ministerio de Trabajo de reconocimiento de aprendizajes previos, con los programas de 'Saber Hacer Vale', se ha mostrado resultados muy positivos sobre todo en la adecuación de poblaciones que tienen especiales dificultades, como es el caso de población migrante, de cara a la acreditación de sus saberes frente al mercado laboral", añadió. 
+Agrega que en el modelo de aprendizaje colombiano, en todos los sistemas de formación para el trabajo se ha ido acentuando en su importancia en lo relacionado con temas de tecnología y nivel técnico. "Con el Ministerio de Trabajo de reconocimiento de aprendizajes previos, con los programas de 'Saber Hacer Vale', se ha mostrado resultados muy positivos sobre todo en la adecuación de poblaciones que tienen especiales dificultades, como es el caso de población migrante, de cara a la acreditación de sus saberes frente al mercado laboral", añadió. 
 
 ##### Lo que la formación tendría que estar haciendo
 
