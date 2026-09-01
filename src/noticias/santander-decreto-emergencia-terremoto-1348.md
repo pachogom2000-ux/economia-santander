@@ -1,6 +1,5 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
 title: Santander entra al decreto de emergencia por el terremoto del 10 de
   agosto de 2026
 date: 2026-09-01T08:00:00.000-05:00

@@ -1,6 +1,5 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
 title: "UVT 2026: cuál aplica y cuándo sale la de 2027"
 date: 2026-09-01T07:05:00.000-05:00
 categoria: Impuestos y regulación
