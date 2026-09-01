@@ -2,19 +2,19 @@
 layout: noticia.njk
 eleventyExcludeFromCollections: true
 title: "UVT 2026: cuál aplica y cuándo sale la de 2027"
-date: 2026-08-31T09:00:00.000-05:00
+date: 2026-09-01T07:05:00.000-05:00
 categoria: Impuestos y regulación
 chipTipo: propio
 chipLabel: Redacción propia
 excerpt: Para declarar el año gravable 2025 se usa la UVT de 2025, no la de
   2026. Cómo se calcula, por qué hay dos en juego y cuándo se conoce la de 2027.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/uvt-2026-declaracion-renta.jpg
+imagen: /assets/uploads/declaracion-impuestos-colombia.webp
 imagenAlt: Calculadora y formulario de declaración de renta de la DIAN
 imagenTitle: "UVT 2026: cuál se aplica en la declaración de renta"
-imagenPie: La UVT de 2026 quedó en $52.374, pero la declaración del año gravable
-  2025 se liquida con la de 2025, que era $49.799.
-imagenCredito: Archivo particular
+imagenPie: "Si está declarando renta en 2026, las cuentas las debe hacer con la
+  UVT de 2025, la correspondiente al año gravable que está liquidando. "
+imagenCredito: "Imagen propia con elaboración de ChatGPT. "
 guia: true
 tags: noticias
 ---
@@ -30,12 +30,12 @@ Las dos conviven en el mismo formulario. Saber cuál va en cada renglón es la d
 
 La declaración que vence entre agosto y el 26 de octubre de 2026 corresponde al **año gravable 2025**. Todo lo que mide hechos ocurridos en 2025 se convierte a pesos con la UVT de ese año:
 
-| Renglón                                         | UVT que aplica | Valor   |
-| ----------------------------------------------- | -------------- | ------- |
-| Topes que definen si estaba obligado a declarar | 2025           | $49.799 |
-| Tabla de tarifas del artículo 241               | 2025           | $49.799 |
-| Límites de deducciones y rentas exentas         | 2025           | $49.799 |
-| Umbrales de retención del año                   | 2025           | $49.799 |
+| **Renglón**                                     | **UVT que aplica** | **Valor** |
+| ----------------------------------------------- | ------------------ | --------- |
+| Topes que definen si estaba obligado a declarar | 2025               | $49.799   |
+| Tabla de tarifas del artículo 241               | 2025               | $49.799   |
+| Límites de deducciones y rentas exentas         | 2025               | $49.799   |
+| Umbrales de retención del año                   | 2025               | $49.799   |
 
 La lógica es sencilla: la ley describe los hechos económicos de 2025, así que se miden con la vara de 2025. Es el mismo criterio del año pasado, cuando la declaración del año gravable 2024 se liquidó con la UVT de 2024, que era $47.065.
 
@@ -89,11 +89,11 @@ Para una empresa que está armando presupuesto del año siguiente, o para quien 
 
 Son tres unidades distintas y la confusión es frecuente, sobre todo en esta época.
 
-| Unidad  | Para qué sirve                   | Quién la fija          | Valor 2026               |
-| ------- | -------------------------------- | ---------------------- | ------------------------ |
-| **UVT** | Impuestos y sanciones de la DIAN | DIAN                   | $52.374                  |
-| **UVR** | Créditos de vivienda indexados   | Banco de la República  | $417,6948 (31 de agosto) |
-| **UVB** | Multas y tarifas no tributarias  | Ministerio de Hacienda | $12.110                  |
+| **Unidad** | **Para qué sirve**               | **Quién la fija**      | **Valor 2026**           |
+| ---------- | -------------------------------- | ---------------------- | ------------------------ |
+| **UVT**    | Impuestos y sanciones de la DIAN | DIAN                   | $52.374                  |
+| **UVR**    | Créditos de vivienda indexados   | Banco de la República  | $417,6948 (31 de agosto) |
+| **UVB**    | Multas y tarifas no tributarias  | Ministerio de Hacienda | $12.110                  |
 
 La **UVR** no tiene nada que ver con impuestos: mantiene el poder adquisitivo de los créditos hipotecarios y se mueve todos los días. Esa comparación está resuelta en la nota sobre [qué es la UVR y cómo afecta el crédito hipotecario](/noticias/uvr-que-es-como-afecta-credito-hipotecario/).
 
@@ -109,4 +109,4 @@ Y una advertencia práctica: **desconfíe de las calculadoras en línea que no m
 
 Si quiere el resto del vocabulario —IPC, DTF, tasa de usura, TRM— está reunido en el [glosario de tasas](/noticias/glosario-ipc-dtf-usura-spread-bancario/).
 
-***Siga leyendo: [Facilidades de pago DIAN: hasta 5 años para pagar](/noticias/facilidades-pago-dian-renta-plazos/)***
+*Siga leyendo: [Multa por no declarar renta: desde $524.000 en 2026](https://economiasantander.com/noticias/multa-no-declarar-renta-sanciones-dian/)*
