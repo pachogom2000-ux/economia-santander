@@ -40,9 +40,21 @@
 /assets/js/*
   Cache-Control: public, max-age=31536000, immutable
 
-# El resto del JS (dolar.js, indicadores.js) todavía no lleva huella y las
-# copias sin huella tampoco: se revalidan siempre.
-/assets/*.js
+# El resto del JS todavía no lleva huella: se revalida siempre.
+#
+# Van nombrados uno por uno A PROPÓSITO. Con el comodín /assets/*.js la regla
+# también atrapaba /assets/js/app.<huella>.js, y las dos cabeceras no se
+# excluyen: se CONCATENAN. El archivo con huella salió servido con
+# "max-age=0, must-revalidate, public, max-age=31536000, immutable", y como el
+# max-age=0 va primero, el año de caché no valía nada. Si añades un .js suelto
+# en /assets/, agrégalo a esta lista; no vuelvas al comodín.
+/assets/app.js
+  Cache-Control: public, max-age=0, must-revalidate
+
+/assets/dolar.js
+  Cache-Control: public, max-age=0, must-revalidate
+
+/assets/indicadores.js
   Cache-Control: public, max-age=0, must-revalidate
 
 # Las fuentes SÍ llevan huella en el nombre (barlow-400.81419bf5ab.woff2), así
