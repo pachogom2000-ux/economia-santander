@@ -1,19 +1,22 @@
 ---
 layout: noticia.njk
-title: "Desempleo en Bucaramanga cae a 7,2% en mayo-julio"
-date: 2026-09-02
-categoria: "Empleo"
-chipTipo: "propio"
-chipLabel: "Redacción propia"
-excerpt: "El DANE confirma que la desocupación en Bucaramanga bajó a 7,2% en mayo-julio de 2026, la segunda tasa más baja entre las 23 ciudades del país."
-autor: "Francisco Gómez - Director"
-imagen: "/assets/uploads/empleo-formal-bucaramanga-area-metropolitana-2026.jpg"
-imagenAlt: "Vista panorámica del área metropolitana de Bucaramanga, relacionada con la caída del desempleo en mayo-julio de 2026"
+eleventyExcludeFromCollections: true
+title: Desempleo bajó 1,3% en Bucaramanga en mayo-julio de 2026
+date: 2026-09-02T06:11:00.000-05:00
+categoria: Empleo
+chipTipo: propio
+chipLabel: Redacción propia
+excerpt: El DANE confirma que la desocupación en Bucaramanga quedó en 7,2% en
+  mayo-julio de 2026, la segunda tasa más baja entre las 23 ciudades del país.
+autor: Francisco Gómez - Director
+imagen: /assets/uploads/panoramica-bucaramanga-archivoparticular-economiasantander.webp
+imagenAlt: Vista panorámica del área metropolitana de Bucaramanga, relacionada
+  con la caída del desempleo en mayo-julio de 2026
 imagenTitle: "Desempleo en Bucaramanga: cifras del DANE para mayo-julio de 2026"
-imagenPie: "El área metropolitana de Bucaramanga cerró el trimestre móvil mayo-julio con la segunda tasa de desempleo más baja del país, según el DANE."
+imagenPie: El área metropolitana de Bucaramanga cerró el trimestre móvil
+  mayo-julio con la segunda tasa de desempleo más baja del país, según el DANE.
 imagenCredito: "Foto: Economía Santander"
 tags: noticias
-eleventyExcludeFromCollections: true
 ---
 La tasa de desempleo en **Bucaramanga y su área metropolitana** se ubicó en **7,2%** en el trimestre móvil mayo-julio de 2026, según el boletín técnico ["Principales indicadores del mercado laboral, julio de 2026"](https://www.dane.gov.co/files/operaciones/GEIH/bol-GEIH-jul2026.pdf) del **DANE**, publicado el 31 de agosto. Un año atrás, en mayo-julio de 2025, la ciudad estaba en **8,5%**: la caída es de **1,3 puntos porcentuales exactos**.
 
@@ -33,6 +36,9 @@ Eso confirma con fuente primaria el titular que circuló en la prensa local: Buc
 
 En el otro extremo, **Quibdó** encabezó la lista con 23,0% de desocupación, seguida de **Cartagena** (13,6%) y **Sincelejo** (13,0%).
 
+***Siga viendo: [Empleos que van a desaparecer: qué arriesga Bucaramanga](https://economiasantander.com/noticias/empleos-que-desapareceran-bucaramanga/)***
+
+
 ## ¿Por qué hay dos cifras distintas para las 13 áreas metropolitanas?
 
 El boletín del DANE reporta dos números distintos para el mismo grupo de 13 ciudades y áreas metropolitanas principales —donde Bucaramanga está incluida—, y no son una contradicción entre fuentes: miden periodos distintos.
@@ -47,13 +53,13 @@ El boletín del DANE **no desagrega la población ocupada por rama de actividad 
 
 Las ramas que más aportaron a ese crecimiento, a nivel nacional, fueron:
 
-- **Administración pública, defensa, educación y salud humana:** de 2.824.000 a 3.229.000 ocupados (+1,7 puntos porcentuales de contribución).
-- **Comercio y reparación de vehículos:** de 4.062.000 a 4.219.000 ocupados (+0,7 p.p.).
-- **Construcción:** de 1.667.000 a 1.823.000 ocupados (+0,6 p.p.).
+* **Administración pública, defensa, educación y salud humana:** de 2.824.000 a 3.229.000 ocupados (+1,7 puntos porcentuales de contribución).
+* **Comercio y reparación de vehículos:** de 4.062.000 a 4.219.000 ocupados (+0,7 p.p.).
+* **Construcción:** de 1.667.000 a 1.823.000 ocupados (+0,6 p.p.).
 
-Vanguardia publicó una tabla con cifras específicas para Bucaramanga —**623.000 ocupados** en total y variaciones por sector como +13.000 en administración/salud/educación o +12.000 en alojamiento y comida— que coinciden en dirección con las ramas nacionales, pero **no aparecen en el boletín técnico del DANE consultado para esta nota**. Es posible que salgan de un anexo estadístico en Excel que el DANE no incluye en el PDF del boletín; esta redacción no pudo abrirlo ni confirmarlo de forma directa.
+Vanguardia publicó una tabla con cifras específicas para Bucaramanga —**623.000 ocupados** en total y variaciones por sector como +13.000 en administración/salud/educación o +12.000 en alojamiento y comida— que coinciden en dirección con las ramas nacionales, pero **no aparecen en el boletín técnico del DANE consultado para esta nota**. 
 
-`[VERIFICAR: la desagregación sectorial de ocupados específica de Bucaramanga A.M. —la tabla que reprodujo Vanguardia— queda pendiente de contraste con el anexo estadístico original del DANE o con el DANE Territorial Bucaramanga.]`
+*(NOTA de esta redacción. El dato desagregado por sectores es tomado de información recirculada de Vanguardia. Es posible que salgan de un anexo estadístico en Excel que el DANE no incluye en el PDF del boletín; esta redacción no pudo abrirlo ni confirmarlo de forma directa).*
 
 Esa pérdida de empleo en construcción que reporta Vanguardia para Bucaramanga, si se confirma, no sería un dato aislado: el área metropolitana ya venía licenciando [43% menos metros cuadrados que en 2025](/noticias/licencias-construccion-bucaramanga-crecen/) entre enero y mayo. Menos obra nueva termina, tarde o temprano, en menos empleo del sector.
 
@@ -71,11 +77,11 @@ El hallazgo más fuerte de esta nota no es que Bucaramanga tenga poco desempleo 
 
 Lo que ese salto no explica es la calidad de esos empleos. El propio portal ya había documentado que algunos de los oficios que más pesan en el comercio de la ciudad —cajeros, auxiliares administrativos— están entre los que [el mundo espera que se automaticen antes de 2030](/noticias/empleos-que-desapareceran-bucaramanga/). Bajar el desempleo y sostenerlo en el tiempo, con empleo formal y de calidad, no son la misma tarea.
 
----
+- - -
 
 **Pendiente de confirmar antes de publicar:**
 
-- La desagregación sectorial de ocupados por rama de actividad específica para Bucaramanga A.M. (la tabla de +13.000, +12.000, +10.000 que publicó Vanguardia): no está en el boletín técnico nacional del DANE consultado; contrastar con el anexo estadístico original o con el DANE Territorial Bucaramanga.
-- La tasa de informalidad de Bucaramanga A.M. para mayo-julio de 2026: no aparece en este boletín, que es de un módulo distinto al de informalidad (GEIHEISS); pendiente de buscar el boletín GEIHEISS del trimestre correspondiente.
-- El número de ocupados y la PEA específicos de Bucaramanga A.M.: el boletín consultado solo reporta la tasa de desocupación del ranking de ciudades, no estas cifras absolutas por ciudad.
-- El desempleo juvenil específico de Bucaramanga para este trimestre (el 14,1% que circuló esa semana es una cifra nacional, no de la ciudad).
+* La desagregación sectorial de ocupados por rama de actividad específica para Bucaramanga A.M. (la tabla de +13.000, +12.000, +10.000 que publicó Vanguardia): no está en el boletín técnico nacional del DANE consultado; contrastar con el anexo estadístico original o con el DANE Territorial Bucaramanga.
+* La tasa de informalidad de Bucaramanga A.M. para mayo-julio de 2026: no aparece en este boletín, que es de un módulo distinto al de informalidad (GEIHEISS); pendiente de buscar el boletín GEIHEISS del trimestre correspondiente.
+* El número de ocupados y la PEA específicos de Bucaramanga A.M.: el boletín consultado solo reporta la tasa de desocupación del ranking de ciudades, no estas cifras absolutas por ciudad.
+* El desempleo juvenil específico de Bucaramanga para este trimestre (el 14,1% que circuló esa semana es una cifra nacional, no de la ciudad).
