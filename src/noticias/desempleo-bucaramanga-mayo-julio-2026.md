@@ -92,5 +92,3 @@ Para referencia, en el trimestre abril-junio de 2026 —uno anterior al que cubr
 El hallazgo más fuerte de esta nota no es que Bucaramanga tenga poco desempleo —eso ya lo venía diciendo la prensa local—, sino cuánto cambió su posición en solo un año: de una ciudad empatada a mitad de tabla en mayo-julio de 2025 a la segunda con menor desocupación del país en el mismo trimestre de 2026.
 
 Lo que ese salto no explica es la calidad de esos empleos. El propio portal ya había documentado que algunos de los oficios que más pesan en el comercio de la ciudad —cajeros, auxiliares administrativos— están entre los que [el mundo espera que se automaticen antes de 2030](/noticias/empleos-que-desapareceran-bucaramanga/). Bajar el desempleo y sostenerlo en el tiempo, con empleo formal y de calidad, no son la misma tarea.
-
-**Nota sobre fuente:** la desagregación sectorial y el total de ocupados de Bucaramanga A.M. de esta nota provienen del anexo estadístico de la GEIH de julio de 2026, DANE, entregado por la dirección editorial. No se encontró el enlace directo al archivo del anexo en dane.gov.co; queda pendiente agregarlo cuando se ubique.
