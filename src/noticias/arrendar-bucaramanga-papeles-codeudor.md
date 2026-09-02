@@ -32,7 +32,7 @@ La lógica de la norma es proteger la liquidez de quien arrienda. Un depósito i
 
 Lo que sí puede pedirle el arrendador es una garantía que no sea dinero suyo retenido.
 
-### Las garantías que sí son legales
+## Las garantías que sí son legales
 
 Hay tres caminos, y conviene saber cuál le conviene según su situación:
 
@@ -46,7 +46,7 @@ Esa tercera opción es la que casi nadie propone y la que mejor resuelve el prob
 
 Si le exigen depósito, ofrecer un CDT a su nombre suele destrabar la conversación.
 
-#### ¿El codeudor es obligatorio?
+## ¿El codeudor es obligatorio?
 
 **No por ley.** La Ley 820 no lo establece como requisito. Es una exigencia contractual del propietario o de la inmobiliaria, y por eso mismo es negociable.
 
@@ -57,7 +57,7 @@ La alternativa habitual cuando no hay codeudor es la póliza. Su aprobación tom
 ***Siga leyendo: [Arriendo en Bucaramanga: cuánto pagar sin ahogarse](https://economiasantander.com/noticias/arriendo-bucaramanga-cuanto-pagar/)***
 
 
-#### Los papeles que le van a pedir
+## Los papeles que le van a pedir
 
 Aquí conviene distinguir: esto no es la ley, es la práctica del mercado. Las inmobiliarias piden lo que necesitan para el estudio, y suele ser esto:
 
@@ -79,7 +79,7 @@ Aquí conviene distinguir: esto no es la ley, es la práctica del mercado. Las i
 
 A eso se suma el **estudio en centrales de riesgo**, que es donde se cae buena parte de las solicitudes. Un reporte negativo no siempre descalifica, pero cambia las condiciones: puede aparecer la exigencia de un segundo codeudor o de una póliza más costosa.
 
-##### Cuánto ingreso le van a exigir
+## Cuánto ingreso le van a exigir
 
 La regla de mercado más extendida es que el ingreso mensual acredite **entre dos y tres veces el valor del canon**.
 
@@ -87,7 +87,7 @@ Con el salario mínimo de 2026 en **$1.750.905**, eso significa que un canon de 
 
 Y ojo con la cuenta completa: el ingreso tiene que alcanzar para el canon, la administración y los servicios, no solo para el canon. Esa diferencia está desarrollada en la nota sobre [cuánto arriendo se puede pagar en Bucaramanga sin ahogarse](/noticias/arriendo-bucaramanga-cuanto-pagar/).
 
-##### Cómo evitar que le ganen el inmueble
+## Cómo evitar que le ganen el inmueble
 
 Los apartamentos bien ubicados y bien tasados se van rápido, y casi siempre por la misma razón: **el que llega con la carpeta lista se lo lleva.**
 
@@ -99,7 +99,7 @@ Tres cosas que se preparan antes de ir a ver:
 
 **Tres. El estudio propio.** Revise su reporte en centrales de riesgo antes de empezar a buscar. Si hay algo que corregir, corregirlo toma semanas y es mejor descubrirlo antes que en medio de una solicitud.
 
-###### Antes de firmar
+## Antes de firmar
 
 Dos verificaciones que toman diez minutos y evitan problemas de años.
 

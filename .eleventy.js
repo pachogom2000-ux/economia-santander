@@ -166,6 +166,38 @@ module.exports = function (eleventyConfig) {
     return renderPorDefecto(tokens, idx, options, env, self);
   };
 
+  // El editor del CMS hunde los encabezados en cascada. Una nota escrita con
+  // H2 hermanos —"¿Qué es una facilidad de pago?", "Cómo se pide", "Qué pasa si
+  // incumple"— vuelve del CMS como H2 > H3 > H4 > H5 > H6, anunciando una
+  // jerarquía que el texto no tiene. Ya pasó en 20 notas, se corrigieron a mano
+  // y el CMS volvió a romper las dos siguientes en cuanto se editaron.
+  //
+  // No sirve un hook de git: los guardados del CMS son commits hechos por la
+  // API de GitHub, no por la máquina de nadie. Aquí, en el build, se atrapan
+  // todos por igual, venga la edición de donde venga.
+  //
+  // Solo se aplana el patrón enfermo: una secuencia de niveles que NUNCA vuelve
+  // a subir y que baja de H3. Una jerarquía de verdad (2,3,3,2) sí vuelve a
+  // subir, así que no se toca y se puede seguir usando un H3 legítimo.
+  md.core.ruler.push("aplanar_cascada_del_cms", function (state) {
+    const encabezados = state.tokens.filter((t) => t.type === "heading_open");
+    if (encabezados.length < 3) return;
+
+    const niveles = encabezados.map((t) => Number(t.tag.slice(1)));
+    const nuncaSube = niveles.every((n, i) => i === 0 || n >= niveles[i - 1]);
+    const bajaDeH3 = Math.max(...niveles) > 3;
+    if (!nuncaSube || !bajaDeH3) return;
+
+    for (const token of state.tokens) {
+      if (token.type === "heading_open" || token.type === "heading_close") {
+        if (Number(token.tag.slice(1)) > 2) {
+          token.tag = "h2";
+          if (token.markup) token.markup = "##";
+        }
+      }
+    }
+  });
+
   // IDs automáticos en los encabezados, para poder enlazar a una sección
   // concreta: el pie apunta al aviso financiero y al derecho de rectificación.
   // Se hace a mano en vez de con markdown-it-anchor para no sumar dependencia.

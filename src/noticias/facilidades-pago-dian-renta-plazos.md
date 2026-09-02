@@ -23,7 +23,7 @@ Hay una confusión que le sale cara a mucha gente en esta época: **presentar la
 
 No tener el dinero no lo exime de presentar. Y presentar sin pagar es mucho más barato que no presentar.
 
-El calendario del año gravable 2025 va hasta el **26 de octubre de 2026**, y para quien no reúna el dinero antes de su fecha existe una salida formal: las facilidades de pago del **artículo 814 del Estatuto Tributario**, que permiten diferir la deuda **hasta cinco años**.
+El calendario del año gravable 2025 va hasta el **26 de octubre de 2026**, y para quien no reúna el dinero antes de su fecha existe una salida formal: las facilidades de pago del [artículo 814 del Estatuto Tributario](http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario_pr033.html), que permiten diferir la deuda **hasta cinco años**.
 
 ## Primero presente, aunque no tenga con qué pagar
 
@@ -35,7 +35,7 @@ Quien no presenta acumula las dos cosas a la vez y además queda expuesto a que 
 
 La regla práctica: **presente en su fecha y negocie el pago después.**
 
-### ¿Qué es una facilidad de pago?
+## ¿Qué es una facilidad de pago?
 
 Es un acuerdo formal con la DIAN para cancelar la deuda en cuotas. El trámite es **gratuito y no necesita intermediarios**.
 
@@ -43,7 +43,7 @@ Mientras el acuerdo esté vigente, la DIAN no inicia el proceso de cobro coactiv
 
 Cubre las obligaciones administradas por la entidad —renta, IVA, patrimonio y las demás— que estén en mora.
 
-#### Sin garantía: hasta un año
+## Sin garantía: hasta un año
 
 El artículo 814, modificado por la Ley 2277 de 2022, permite conceder la facilidad **sin garantía** cuando se cumplen dos condiciones al tiempo:
 
@@ -54,7 +54,7 @@ Además, el deudor debe denunciar bienes que puedan ser embargados si el acuerdo
 
 Es la vía natural para una deuda de renta de una persona natural que puede ordenar su flujo de caja en doce meses.
 
-#### Con garantía: hasta cinco años, y dos más
+## Con garantía: hasta cinco años, y dos más
 
 Cuando el plazo pedido supera el año, la DIAN exige garantías. A cambio, el horizonte se abre: **hasta cinco años**, con la posibilidad de una prórroga de **dos años adicionales** a criterio de la entidad.
 
@@ -62,7 +62,7 @@ Hay un matiz que conviene conocer. Con garantía, la administración **sí puede
 
 Dicho de otra forma: haber fallado una vez no lo deja por fuera para siempre, pero sí le sube el costo de entrada.
 
-##### Los intereses no se detienen
+## Los intereses no se detienen
 
 Este es el punto donde más gente se lleva una sorpresa.
 
@@ -72,7 +72,7 @@ En agosto de 2026 la tasa de interés moratorio se ubicó cerca del **27,66% efe
 
 Por eso la facilidad de pago resuelve un problema de liquidez, no un problema de costo. Es una herramienta para no perder los bienes ni entrar en cobro coactivo, no para pagar menos.
 
-##### Cómo se pide
+## Cómo se pide
 
 La solicitud se radica por los buzones electrónicos de la DIAN o en las ventanillas de correspondencia de cualquier sede del país. Debe incluir:
 
@@ -86,7 +86,7 @@ La solicitud se radica por los buzones electrónicos de la DIAN o en las ventani
 
 El plazo que finalmente se concede depende del monto y de la capacidad de pago que el contribuyente logre demostrar. No es automático.
 
-##### Qué pasa si incumple
+## Qué pasa si incumple
 
 El acuerdo se deja sin efecto y todo vuelve al punto de partida, con agravantes.
 
@@ -94,7 +94,7 @@ La DIAN reanuda el cobro coactivo, hace efectiva la garantía si la hay, y puede
 
 Hay una condición que se olvida con frecuencia: **mientras el acuerdo esté vigente hay que seguir pagando puntualmente las obligaciones corrientes.** Ponerse al día con lo viejo y atrasarse con lo nuevo también rompe el acuerdo.
 
-###### Antes de firmar, haga esta cuenta
+## Antes de firmar, haga esta cuenta
 
 Una facilidad de pago a cinco años con intereses cercanos al 28% anual puede terminar costando más que un crédito bancario, según su perfil.
 
