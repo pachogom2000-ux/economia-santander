@@ -1,6 +1,5 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
 title: Desempleo cae 1,3% en Bucaramanga en mayo-julio de 2026
 date: 2026-09-02T06:12:00.000-05:00
 categoria: Empleo
