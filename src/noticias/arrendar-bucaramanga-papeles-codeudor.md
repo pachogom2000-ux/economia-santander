@@ -1,6 +1,5 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
 title: "Arrendar en Bucaramanga: los papeles y el codeudor"
 date: 2026-09-02T05:05:00.000-05:00
 categoria: Finanzas personales

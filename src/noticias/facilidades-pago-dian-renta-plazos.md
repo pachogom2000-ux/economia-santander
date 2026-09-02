@@ -1,6 +1,5 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
 title: "Facilidades de pago DIAN: hasta 5 años para pagar"
 date: 2026-09-02T06:01:00.000-05:00
 categoria: Impuestos y regulación
