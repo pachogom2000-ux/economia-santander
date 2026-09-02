@@ -2,7 +2,7 @@
 layout: noticia.njk
 eleventyExcludeFromCollections: true
 title: "Facilidades de pago DIAN: hasta 5 años para pagar"
-date: 2026-08-31T08:00:00.000-05:00
+date: 2026-09-02T06:01:00.000-05:00
 categoria: Impuestos y regulación
 chipTipo: propio
 chipLabel: Redacción propia
@@ -10,7 +10,7 @@ excerpt: Presentar y pagar la declaración son obligaciones distintas. Si no
   tiene el dinero, la DIAN concede plazos de hasta cinco años. Qué exige y qué
   cuesta.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/facilidades-pago-dian.jpg
+imagen: /assets/uploads/facilidades-pago-dian.webp
 imagenAlt: Contribuyente revisando su declaración de renta y una calculadora
 imagenTitle: "Facilidades de pago con la DIAN: plazos, requisitos y garantías"
 imagenPie: Sin garantía el plazo máximo es de un año; con garantía llega a cinco
