@@ -43,23 +43,41 @@ A nivel nacional, la tasa de desocupación del trimestre móvil mayo-julio de 20
 
 ## ¿Qué sectores impulsaron la generación de empleo?
 
-El boletín del DANE **no desagrega la población ocupada por rama de actividad para cada ciudad**; esa tabla solo existe a nivel nacional. En julio de 2026, el país sumó **24.547.000 personas ocupadas**, 578.000 más que en julio de 2025.
+Bucaramanga A.M. sumó **623.000 ocupados** en mayo-julio de 2026, frente a **599.000** en el mismo trimestre de 2025: **24.000 empleos más** en un año, según el anexo estadístico de la GEIH de julio de 2026, DANE, con desagregación por rama de actividad para el área metropolitana.
 
-Las ramas que más aportaron a ese crecimiento, a nivel nacional, fueron:
+Esa cifra global esconde un reparto desigual entre sectores. Tres ramas jalonaron casi toda la ganancia:
 
-- **Administración pública, defensa, educación y salud humana:** de 2.824.000 a 3.229.000 ocupados (+1,7 puntos porcentuales de contribución).
-- **Comercio y reparación de vehículos:** de 4.062.000 a 4.219.000 ocupados (+0,7 p.p.).
-- **Construcción:** de 1.667.000 a 1.823.000 ocupados (+0,6 p.p.).
+- **Administración pública, educación y salud:** de 94.000 a 107.000 ocupados (+13.000).
+- **Alojamiento y servicios de comida:** de 46.000 a 58.000 ocupados (+12.000).
+- **Actividades profesionales, científicas y técnicas:** de 56.000 a 66.000 ocupados (+10.000).
 
-Vanguardia publicó una tabla con cifras específicas para Bucaramanga —**623.000 ocupados** en total y variaciones por sector como +13.000 en administración/salud/educación o +12.000 en alojamiento y comida— que coinciden en dirección con las ramas nacionales, pero **no aparecen en el boletín técnico del DANE consultado para esta nota**. Es posible que salgan de un anexo estadístico en Excel que el DANE no incluye en el PDF del boletín; esta redacción no pudo abrirlo ni confirmarlo de forma directa.
+En el extremo contrario, **transporte y almacenamiento** fue el único sector que perdió una cantidad grande de empleo: pasó de 63.000 a 51.000 ocupados, **12.000 menos**, casi lo mismo que ganó alojamiento y comida. Construcción (−4.000) e industrias manufactureras (−4.000) también cayeron.
 
-`[VERIFICAR: la desagregación sectorial de ocupados específica de Bucaramanga A.M. —la tabla que reprodujo Vanguardia— queda pendiente de contraste con el anexo estadístico original del DANE o con el DANE Territorial Bucaramanga.]`
+La lectura no es que "todo mejoró" en el mercado laboral de Bucaramanga, sino que unos pocos sectores compensaron las pérdidas de otros. Esa caída en construcción no es un dato aislado: el área metropolitana ya venía licenciando [43% menos metros cuadrados que en 2025](/noticias/licencias-construccion-bucaramanga-crecen/) entre enero y mayo. Menos obra nueva termina, tarde o temprano, en menos empleo del sector.
 
-Esa pérdida de empleo en construcción que reporta Vanguardia para Bucaramanga, si se confirma, no sería un dato aislado: el área metropolitana ya venía licenciando [43% menos metros cuadrados que en 2025](/noticias/licencias-construccion-bucaramanga-crecen/) entre enero y mayo. Menos obra nueva termina, tarde o temprano, en menos empleo del sector.
+| Sector | May-jul 2025 | May-jul 2026 | Variación |
+|---|---|---|---|
+| Administración pública, educación y salud | 94.000 | 107.000 | +13.000 |
+| Alojamiento y servicios de comida | 46.000 | 58.000 | +12.000 |
+| Actividades profesionales, científicas y técnicas | 56.000 | 66.000 | +10.000 |
+| Comercio y reparación de vehículos | 113.000 | 118.000 | +5.000 |
+| Agricultura, ganadería, caza, silvicultura y pesca | 9.000 | 13.000 | +4.000 |
+| Actividades financieras y de seguros | 10.000 | 14.000 | +4.000 |
+| Actividades artísticas y de entretenimiento | 49.000 | 50.000 | +1.000 |
+| Información y comunicaciones | 12.000 | 12.000 | 0 |
+| Actividades inmobiliarias | 14.000 | 13.000 | −1.000 |
+| Explotación de minas y canteras | 3.000 | 2.000 | −1.000 |
+| Suministro de electricidad, gas, agua y desechos | 10.000 | 7.000 | −3.000 |
+| Industrias manufactureras | 84.000 | 80.000 | −4.000 |
+| Construcción | 36.000 | 32.000 | −4.000 |
+| Transporte y almacenamiento | 63.000 | 51.000 | −12.000 |
+| **Total ocupados** | **599.000** | **623.000** | **+24.000** |
+
+Para contexto nacional, el país sumó **24.547.000 personas ocupadas** en julio de 2026, 578.000 más que en julio de 2025, jalonado también por administración pública/educación/salud (+1,7 puntos porcentuales de contribución), comercio (+0,7 p.p.) y construcción (+0,6 p.p.), según el [boletín técnico del DANE](https://www.dane.gov.co/files/operaciones/GEIH/bol-GEIH-jul2026.pdf). A escala nacional la construcción sumó empleo; en Bucaramanga, lo perdió: otra muestra de que la foto de la ciudad no calca la del país.
 
 ## ¿Qué pasa con la informalidad y el desempleo juvenil?
 
-El boletín técnico de mercado laboral que sustenta esta nota **no incluye la tasa de informalidad**, que el DANE publica en un módulo distinto (GEIHEISS, Empleo Informal y Seguridad Social) con su propio boletín trimestral, ni el número de ocupados o de población económicamente activa (PEA) por ciudad.
+El boletín técnico de mercado laboral que sustenta esta nota **no incluye la tasa de informalidad**, que el DANE publica en un módulo distinto (GEIHEISS, Empleo Informal y Seguridad Social) con su propio boletín trimestral.
 
 Los datos nacionales que circularon esa misma semana —informalidad de 54,5% a nivel país y 40,5% en las 13 áreas metropolitanas, desempleo juvenil de 14,1%— corresponden al **total nacional**, no a Bucaramanga puntualmente, y esta nota no se los atribuye a la ciudad para no mezclar cifras que miden cosas distintas.
 
@@ -75,7 +93,7 @@ Lo que ese salto no explica es la calidad de esos empleos. El propio portal ya h
 
 **Pendiente de confirmar antes de publicar:**
 
-- La desagregación sectorial de ocupados por rama de actividad específica para Bucaramanga A.M. (la tabla de +13.000, +12.000, +10.000 que publicó Vanguardia): no está en el boletín técnico nacional del DANE consultado; contrastar con el anexo estadístico original o con el DANE Territorial Bucaramanga.
-- La tasa de informalidad de Bucaramanga A.M. para mayo-julio de 2026: no aparece en este boletín, que es de un módulo distinto al de informalidad (GEIHEISS); pendiente de buscar el boletín GEIHEISS del trimestre correspondiente.
-- El número de ocupados y la PEA específicos de Bucaramanga A.M.: el boletín consultado solo reporta la tasa de desocupación del ranking de ciudades, no estas cifras absolutas por ciudad.
+- La tasa de informalidad de Bucaramanga A.M. para mayo-julio de 2026: no aparece en el boletín técnico de mercado laboral ni en el anexo por ramas de actividad; es de un módulo distinto (GEIHEISS, Empleo Informal y Seguridad Social); pendiente de buscar el boletín GEIHEISS del trimestre correspondiente.
 - El desempleo juvenil específico de Bucaramanga para este trimestre (el 14,1% que circuló esa semana es una cifra nacional, no de la ciudad).
+
+**Nota sobre fuente:** la desagregación sectorial y el total de ocupados de Bucaramanga A.M. de esta nota provienen del anexo estadístico de la GEIH de julio de 2026, DANE, entregado por la dirección editorial. No se encontró el enlace directo al archivo del anexo en dane.gov.co; queda pendiente agregarlo cuando se ubique.
