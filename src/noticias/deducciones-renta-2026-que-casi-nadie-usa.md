@@ -1,6 +1,5 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
 title: "Deducciones de renta: las que casi nadie usa"
 date: 2026-09-03T06:01:00.000-05:00
 categoria: Impuestos y regulación

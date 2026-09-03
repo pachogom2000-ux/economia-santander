@@ -1,6 +1,5 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
 title: Claro anuncia inversiones para llegada de la IA en Santander
 date: 2026-09-03T06:17:00.000-05:00
 categoria: Industria
