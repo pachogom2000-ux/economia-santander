@@ -2,17 +2,19 @@
 layout: noticia.njk
 eleventyExcludeFromCollections: true
 title: "Presupuesto del hogar: la regla del 30% no alcanza"
-date: 2026-08-31T16:00:00.000-05:00
+date: 2026-09-03T07:00:00.000-05:00
 categoria: Finanzas personales
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: Con dos millones de ingreso, el 30% para vivienda no cubre un arriendo en
-  Bucaramanga. Un método que arranca por el piso de gastos y no por porcentajes.
+excerpt: Con dos millones de ingreso, el 30% para vivienda no cubre un arriendo
+  en Bucaramanga. Un método que arranca por el piso de gastos y no por
+  porcentajes.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/presupuesto-hogar-santander.jpg
+imagen: /assets/uploads/mujer-revisando-facturas-presupuesto-hogar.webp
 imagenAlt: Persona organizando facturas y recibos sobre una mesa
-imagenTitle: "Cómo hacer un presupuesto del hogar en Bucaramanga"
-imagenPie: Dos pasajes diarios de Metrolínea durante un mes hábil suman $132.000 por persona en 2026.
+imagenTitle: Cómo hacer un presupuesto del hogar en Bucaramanga
+imagenPie: Dos pasajes diarios de bus durante un mes hábil suman $132.000 por
+  persona en 2026.
 imagenCredito: Archivo particular
 guia: true
 tags: noticias
@@ -33,7 +35,7 @@ La alternativa es simple y poco popular, porque obliga a mirar cifras exactas en
 
 **Después se compara con el ingreso.** Lo que sobra es el presupuesto real, y esa cifra —no un porcentaje— es la que manda.
 
-Si el piso se come el ingreso completo, el problema no se arregla con disciplina. Se arregla cambiando una variable grande: la vivienda, el transporte o la deuda. Nada más mueve la aguja.
+Si el arriendo se come el ingreso completo, el problema no se arregla con disciplina. Se arregla cambiando una variable grande: la vivienda, el transporte o la deuda. Nada más mueve la aguja.
 
 ## Los cuatro números que hay que tener antes de empezar
 
