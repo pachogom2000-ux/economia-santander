@@ -1,26 +1,37 @@
 ---
 layout: noticia.njk
 eleventyExcludeFromCollections: true
-title: "Claro: USD 20 millones en 5G y fibra óptica en Santander"
-date: 2026-09-02T11:00:00.000-05:00
+title: Claro anuncia inversiones para llegada de la IA en Santander
+date: 2026-09-03T06:17:00.000-05:00
 categoria: Industria
 chipTipo: recirc
 chipLabel: "Fuente: Claro Colombia"
-excerpt: Claro invirtió más de USD 20 millones en Santander entre 2025 y 2026 en
-  red móvil y fibra óptica, y se suma como patrocinador de la Feria Bonita 2026.
+excerpt: "El director regional de Santander de Claro Colombia, Diego Jaimes
+  Vega, indicó que la compañía fortaleció sus Datacenters para los desafíos que
+  plantea la Inteligencia Artificial en el departamento. "
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/PENDIENTE-claro-5g-santander.webp
-imagenAlt: Técnico de telecomunicaciones trabajando en una antena de telefonía móvil
+imagen: /assets/uploads/rueda-de-prensa-claro.webp
+imagenAlt: Diego Jaimes, director regional Claro Colombia
 imagenTitle: Inversión de Claro en 5G y fibra óptica en Santander
 imagenPie: Claro desplegó 108 estaciones base 5G en el departamento y modernizó otras 96.
 imagenCredito: Archivo particular
 tags: noticias
 ---
-**Claro invirtió más de USD 20 millones en Santander** entre 2025 y lo corrido de 2026 en despliegue de tecnología 5G, modernización de su red móvil y expansión de fibra óptica, según el balance que la compañía presentó en Bucaramanga.
+La **inteligencia artificial y la revolución tecnológica** no es ajena en Santander, motivo por el cual la compañía de tecnología y telecomunicaciones, Claro Colombia, decidió fortalecer sus Datacenters en Bucaramanga para las soluciones que necesitan las pymes, empresas y usuarios en el departamento.
+
+Así lo indicó el director regional de Claro Colombia, Diego Jaimes, quien presentó un balance de la compañía sobre las principales inversiones en el departamento, las cuales ascienden a más de US$ 20 millones en 2025 y lo que va corrido de 2026. 
+
+"Claro dejó de ser solo una empresa que vende minutos o planes para chatear por Whatsapp. Por eso, nos hemos dedicado a fortalecer nuestros Datacenters de cara a las necesidades que plantea la inteligencia artificial para las pymes, empresas y personas de Santander", indicó el directivo. 
+
+El balance fue presentado durante una rueda de prensa este 2 de septiembre, en el marco de la alianza de Claro Colombia con las actividades que se realizarán durante la 75a. edición de la Feria Bonita 2026 de Bucaramanga, en conjunto con el Instituto Municipal de Cultura de la ciudad santandereana. 
+
+## US $20 millones de inversión de Claro en Santander
+
+**Claro invirtió más de US $20 millones en Santander** entre 2025 y lo corrido de 2026 en despliegue de tecnología 5G, modernización de su red móvil y expansión de fibra óptica, según el balance que la compañía presentó en Bucaramanga.
 
 El anuncio llega envuelto en la Feria Bonita: el operador se suma como patrocinador de la fiesta de la ciudad, que va del 3 al 13 de septiembre.
 
-La cifra se reparte en dos frentes. **USD 11,3 millones** fueron a la red móvil y **USD 9,55 millones** a fibra óptica. De estos últimos, **USD 5,1 millones** se quedaron en Bucaramanga.
+La cifra se reparte en dos frentes. **US $11,3 millones** fueron a la red móvil y **US $9,55 millones** a fibra óptica. De estos últimos, **US $5,1 millones** se quedaron en Bucaramanga.
 
 ## ¿Qué se construyó con esa plata?
 
@@ -38,11 +49,7 @@ Son nueve de los 87 municipios de Santander. El área metropolitana está cubier
 
 ## ¿Cuánta cobertura hay realmente?
 
-Aquí conviene leer con cuidado, porque la cifra tiene un autor.
-
 Claro reporta una cobertura 5G **de hasta 82% en Bucaramanga**, similar en Floridablanca y **superior a 70% en Girón**. Pero esos porcentajes salen de **mediciones de campo hechas por la propia compañía**, no de una verificación independiente ni de un reporte del regulador.
-
-No significa que sean falsos. Significa que son el dato del interesado, y que no hay todavía una medición externa que los confirme o los corrija.
 
 Para dimensionar el despliegue sirve un contraste oficial: según el balance del **MinTIC**, en todo el país hay **3.063 estaciones base 5G** en 184 municipios, y los accesos móviles con esa tecnología llegan a **9,26 millones**, apenas el **18,6% de las conexiones móviles** de Colombia.
 
@@ -59,16 +66,6 @@ Estará en el **Superconcierto del 5 de septiembre** —el de Silvestre Dangond,
 A eso suma una campaña en espacios publicitarios de la ciudad y acciones en redes sociales.
 
 **Diego Jaimes**, director regional de Claro Colombia, enmarcó así la apuesta: *"Santander es una región que impulsa el desarrollo económico, la innovación y el emprendimiento en Colombia. Por eso seguimos invirtiendo en infraestructura de telecomunicaciones de última generación que permita conectar a más personas con oportunidades de educación, productividad y crecimiento"*.
-
-## ¿Y la inteligencia artificial?
-
-Jaimes señaló que la compañía tiene actualizados y equipados los centros de datos de su edificio **La Triada**, en Bucaramanga, para atender el crecimiento de la inteligencia artificial en la región.
-
-Y usó una comparación para explicar la urgencia: mientras la telefonía celular tardó **30 años** en alcanzar 100 millones de usuarios, la inteligencia artificial lo hizo en **dos meses**.
-
-La cifra de los dos meses conviene precisarla, porque circula mucho y suele citarse mal: corresponde a **ChatGPT**, que se lanzó en noviembre de 2022 y llegó a 100 millones de usuarios en enero de 2023, convirtiéndose entonces en la aplicación de consumo de crecimiento más rápido de la historia. No es una cifra de "la inteligencia artificial" como categoría. Para comparar, TikTok tardó nueve meses en el mismo hito e Instagram dos años y medio.
-
-El punto de fondo del directivo, en todo caso, se sostiene: la curva de adopción de estas herramientas no se parece a ninguna anterior.
 
 ***Siga leyendo: [Empleos que van a desaparecer: qué arriesga Bucaramanga](/noticias/empleos-que-desapareceran-bucaramanga/)***
 
