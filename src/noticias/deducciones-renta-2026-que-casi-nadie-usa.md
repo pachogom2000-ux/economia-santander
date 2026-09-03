@@ -2,24 +2,25 @@
 layout: noticia.njk
 eleventyExcludeFromCollections: true
 title: "Deducciones de renta: las que casi nadie usa"
-date: 2026-08-31T14:00:00.000-05:00
+date: 2026-09-03T06:01:00.000-05:00
 categoria: Impuestos y regulación
 chipTipo: propio
 chipLabel: Redacción propia
 excerpt: Una deducción por dependientes de 72 UVT y otra del 1% por comprar con
   factura electrónica se escapan del tope del 40%. Casi nadie las reclama.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/deducciones-declaracion-renta.jpg
+imagen: /assets/uploads/deducciones-renta.webp
 imagenAlt: Persona revisando facturas y documentos para su declaración de renta
-imagenTitle: "Deducciones en la declaración de renta del año gravable 2025"
-imagenPie: El tope general de deducciones y rentas exentas es del 40% de la renta líquida, sin superar $66.731.000.
+imagenTitle: Deducciones en la declaración de renta del año gravable 2025
+imagenPie: El tope general de deducciones y rentas exentas es del 40% de la
+  renta líquida, sin superar $66.731.000.
 imagenCredito: Archivo particular
 guia: true
 tags: noticias
 ---
 Casi todo lo que usted puede restar en la declaración de renta choca contra el mismo muro: **el 40% de la renta líquida, sin pasar de 1.340 UVT**, que para el año gravable 2025 son **$66.731.000**.
 
-Ese tope del artículo 336 se traga la mayoría de los beneficios. Los intereses de vivienda, la medicina prepagada, los aportes voluntarios, la renta exenta del 25% y la deducción tradicional por dependientes van todos al mismo saco.
+Ese tope del artículo 336 se consume la mayoría de los beneficios. Los intereses de vivienda, la medicina prepagada, los aportes voluntarios, la renta exenta del 25% y la deducción tradicional por dependientes van todos al mismo saco.
 
 Pero hay dos que no. Y son justamente las que casi nadie reclama.
 
@@ -43,12 +44,12 @@ Puede deducir el **1% del valor de sus compras** pagadas con factura electrónic
 
 Los requisitos son cuatro y hay que cumplirlos todos:
 
-| Requisito | Qué significa |
-| --- | --- |
-| **Factura electrónica válida** | Con validación previa y con su nombre y documento identificados |
-| **Pago electrónico** | Tarjeta débito, crédito u otro medio de una entidad vigilada por la Superfinanciera |
-| **Mismo año** | El pago debe hacerse dentro del período gravable que declara |
-| **Sin duplicar** | La compra no puede estar ya declarada como costo, deducción o IVA descontable |
+| Requisito                      | Qué significa                                                                       |
+| ------------------------------ | ----------------------------------------------------------------------------------- |
+| **Factura electrónica válida** | Con validación previa y con su nombre y documento identificados                     |
+| **Pago electrónico**           | Tarjeta débito, crédito u otro medio de una entidad vigilada por la Superfinanciera |
+| **Mismo año**                  | El pago debe hacerse dentro del período gravable que declara                        |
+| **Sin duplicar**               | La compra no puede estar ya declarada como costo, deducción o IVA descontable       |
 
 El detalle que descalifica a la mayoría es el segundo. **Pagar en efectivo mata la deducción**, aunque le den factura electrónica. Y pedir la factura a nombre propio en el supermercado o el restaurante es un hábito que casi nadie tiene.
 
@@ -58,13 +59,13 @@ Esta deducción tampoco entra en el límite del 40%.
 
 Conviene saber cuáles van al saco común, porque ahí es donde hay que priorizar:
 
-| Concepto | Tope propio |
-| --- | --- |
-| Renta exenta del 25% de rentas de trabajo | 790 UVT · $39.341.000 |
-| Intereses de crédito de vivienda | 1.200 UVT · $59.759.000 |
-| Medicina prepagada o póliza de salud | 192 UVT al año · $9.561.000 |
-| Dependientes del artículo 387 | 384 UVT · $19.123.000 |
-| Aportes voluntarios a pensión y AFC | 30% del ingreso, hasta 3.800 UVT |
+| Concepto                                  | Tope propio                      |
+| ----------------------------------------- | -------------------------------- |
+| Renta exenta del 25% de rentas de trabajo | 790 UVT · $39.341.000            |
+| Intereses de crédito de vivienda          | 1.200 UVT · $59.759.000          |
+| Medicina prepagada o póliza de salud      | 192 UVT al año · $9.561.000      |
+| Dependientes del artículo 387             | 384 UVT · $19.123.000            |
+| Aportes voluntarios a pensión y AFC       | 30% del ingreso, hasta 3.800 UVT |
 
 Todos esos conceptos, sumados, no pueden superar el 40% de la renta líquida ni los $66.731.000. Tener derecho a un beneficio no significa poder usarlo entero: significa que compite.
 
@@ -82,10 +83,10 @@ Si le quedan dudas sobre cuál UVT va en cada renglón —porque en la misma dec
 
 Ninguna de estas deducciones se aplica sola. Todas exigen soporte:
 
-- **Dependientes:** registro civil, certificado médico o la prueba que corresponda según el tipo de dependiente.
-- **Vivienda:** certificado del banco con los intereses pagados en el año.
-- **Salud:** certificado de la entidad de medicina prepagada.
-- **Factura electrónica:** las facturas a su nombre y el respaldo de que se pagaron por medio electrónico.
+* **Dependientes:** registro civil, certificado médico o la prueba que corresponda según el tipo de dependiente.
+* **Vivienda:** certificado del banco con los intereses pagados en el año.
+* **Salud:** certificado de la entidad de medicina prepagada.
+* **Factura electrónica:** las facturas a su nombre y el respaldo de que se pagaron por medio electrónico.
 
 La DIAN puede pedir esos documentos después. Restar sin poder probar es lo que convierte una deducción en una sanción por inexactitud, y esa cuenta está en la nota sobre [las multas por no declarar renta](/noticias/multa-no-declarar-renta-sanciones-dian/).
 
