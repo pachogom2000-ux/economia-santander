@@ -1,22 +1,22 @@
 ---
 layout: noticia.njk
+eleventyExcludeFromCollections: true
 title: "Claro: USD 20 millones en 5G y fibra óptica en Santander"
 date: 2026-09-02T11:00:00.000-05:00
 categoria: Industria
-chipTipo: propio
-chipLabel: Redacción propia
+chipTipo: recirc
+chipLabel: "Fuente: Claro Colombia"
 excerpt: Claro invirtió más de USD 20 millones en Santander entre 2025 y 2026 en
   red móvil y fibra óptica, y se suma como patrocinador de la Feria Bonita 2026.
 autor: Francisco Gómez - Director
 imagen: /assets/uploads/PENDIENTE-claro-5g-santander.webp
 imagenAlt: Técnico de telecomunicaciones trabajando en una antena de telefonía móvil
-imagenTitle: "Inversión de Claro en 5G y fibra óptica en Santander"
+imagenTitle: Inversión de Claro en 5G y fibra óptica en Santander
 imagenPie: Claro desplegó 108 estaciones base 5G en el departamento y modernizó otras 96.
 imagenCredito: Archivo particular
 tags: noticias
-eleventyExcludeFromCollections: true
 ---
-**Claro invirtió más de USD 20 millones en Santander** entre 2025 y lo corrido de 2026 en despliegue de tecnología 5G, modernización de su red móvil y expansión de fibra óptica, según el balance que la compañía presentó este miércoles en una rueda de prensa en el hotel Sonesta de Bucaramanga.
+**Claro invirtió más de USD 20 millones en Santander** entre 2025 y lo corrido de 2026 en despliegue de tecnología 5G, modernización de su red móvil y expansión de fibra óptica, según el balance que la compañía presentó en Bucaramanga.
 
 El anuncio llega envuelto en la Feria Bonita: el operador se suma como patrocinador de la fiesta de la ciudad, que va del 3 al 13 de septiembre.
 
@@ -62,7 +62,7 @@ A eso suma una campaña en espacios publicitarios de la ciudad y acciones en red
 
 ## ¿Y la inteligencia artificial?
 
-En la rueda de prensa, Jaimes señaló que la compañía tiene actualizados y equipados los centros de datos de su edificio **La Triada**, en Bucaramanga, para atender el crecimiento de la inteligencia artificial en la región.
+Jaimes señaló que la compañía tiene actualizados y equipados los centros de datos de su edificio **La Triada**, en Bucaramanga, para atender el crecimiento de la inteligencia artificial en la región.
 
 Y usó una comparación para explicar la urgencia: mientras la telefonía celular tardó **30 años** en alcanzar 100 millones de usuarios, la inteligencia artificial lo hizo en **dos meses**.
 
@@ -80,4 +80,4 @@ Para las pymes del área metropolitana —los talleres de calzado, la bisutería
 
 Queda la otra mitad del mapa. **Nueve municipios con 5G de 87** es un punto de partida, no una cobertura departamental. Y la brecha entre el área metropolitana y la provincia —García Rovira, el sur, el Magdalena Medio rural— sigue siendo la pregunta abierta de la conectividad en Santander.
 
-*Reportería de Economía Santander en la rueda de prensa de Claro Colombia del 2 de septiembre de 2026, en el hotel Sonesta de Bucaramanga. Las cifras de inversión, estaciones base, kilómetros de fibra y cobertura son mediciones de la propia compañía. Los datos nacionales de 5G corresponden al balance del MinTIC. La programación de la Feria Bonita es de la Alcaldía de Bucaramanga.*
+*Las cifras de inversión, estaciones base, kilómetros de fibra y cobertura provienen del comunicado de Claro Colombia del 2 de septiembre de 2026 y son mediciones de la propia compañía. Los datos nacionales de 5G corresponden al balance del MinTIC. La programación de la Feria Bonita es de la Alcaldía de Bucaramanga.*
