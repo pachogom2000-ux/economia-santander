@@ -1,6 +1,5 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
 title: "Presupuesto del hogar: la regla del 30% no alcanza"
 date: 2026-09-03T07:00:00.000-05:00
 categoria: Finanzas personales
