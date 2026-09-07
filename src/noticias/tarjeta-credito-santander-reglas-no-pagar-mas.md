@@ -1,6 +1,5 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
 title: "Tarjeta de crédito: 7 reglas para no pagar de más"
 date: 2026-09-07T06:25:00.000-05:00
 categoria: Finanzas personales

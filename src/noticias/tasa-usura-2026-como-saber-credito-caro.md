@@ -1,6 +1,5 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
 title: "Tasa de usura 2026: cómo saber si su crédito está caro"
 date: 2026-09-07T06:13:00.000-05:00
 categoria: Educación financiera
