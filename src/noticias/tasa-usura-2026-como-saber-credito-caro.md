@@ -1,7 +1,8 @@
 ---
 layout: noticia.njk
+eleventyExcludeFromCollections: true
 title: "Tasa de usura 2026: cómo saber si su crédito está caro"
-date: 2026-09-03T06:05:00.000-05:00
+date: 2026-09-07T06:13:00.000-05:00
 categoria: Educación financiera
 chipTipo: propio
 chipLabel: Redacción propia
@@ -9,14 +10,14 @@ excerpt: La usura de septiembre quedó en 29,24% efectivo anual. Cómo convertir
   la tasa que le cotizaron, con qué techo compararla y qué hacer si se la
   pasaron.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/PENDIENTE-tasa-usura-credito.webp
+imagen: /assets/uploads/tasa-usura-en-colombia.webp
 imagenAlt: Persona revisando el extracto de un crédito con una calculadora
 imagenTitle: "Tasa de usura en Colombia: cómo calcularla y compararla"
-imagenPie: "La usura no es un número arbitrario: es el interés bancario corriente multiplicado por 1,5."
+imagenPie: "La usura no es un número arbitrario: es el interés bancario
+  corriente multiplicado por 1,5."
 imagenCredito: Archivo particular
 guia: true
 tags: noticias
-eleventyExcludeFromCollections: true
 ---
 La **tasa de usura para crédito de consumo y ordinario quedó en 29,24% efectivo anual** en septiembre de 2026, el nivel más bajo de lo que va del año. Es el techo legal: por encima de ahí, el cobro es un delito.
 
