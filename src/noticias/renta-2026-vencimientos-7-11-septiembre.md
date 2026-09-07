@@ -1,6 +1,5 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
 title: "Renta 2026: los vencimientos del 7 al 11 de septiembre"
 date: 2026-09-07T08:01:00.000-05:00
 categoria: Impuestos y regulación
