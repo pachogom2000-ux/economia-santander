@@ -1,7 +1,8 @@
 ---
 layout: noticia.njk
+eleventyExcludeFromCollections: true
 title: "Renta 2026: los vencimientos del 7 al 11 de septiembre"
-date: 2026-09-04T06:00:00.000-05:00
+date: 2026-09-07T08:01:00.000-05:00
 categoria: Impuestos y regulación
 chipTipo: propio
 chipLabel: Redacción propia
@@ -9,14 +10,14 @@ excerpt: Del 7 al 11 de septiembre declaran las cédulas terminadas en 35 a 44.
   Los dígitos día por día, quién está obligado y qué hacer si la fecha ya se le
   pasó.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/PENDIENTE-vencimientos-renta-septiembre.webp
+imagen: /assets/uploads/vencimientos-renta-7-11-septiembre-2026.webp
 imagenAlt: Persona revisando el calendario de vencimientos de la declaración de renta
-imagenTitle: "Vencimientos de la declaración de renta del 7 al 11 de septiembre de 2026"
-imagenPie: Del 7 al 11 de septiembre declaran las cédulas terminadas en 35, 36, 37, 38, 39, 40, 41, 42, 43 y 44.
-imagenCredito: Archivo particular
+imagenTitle: Vencimientos de la declaración de renta del 7 al 11 de septiembre de 2026
+imagenPie: Del 7 al 11 de septiembre declaran las cédulas terminadas en 35, 36,
+  37, 38, 39, 40, 41, 42, 43 y 44.
+imagenCredito: Pixabay-Firmbee con edición de ChatGPT/Economía Santander
 guia: true
 tags: noticias
-eleventyExcludeFromCollections: true
 ---
 Entre el **lunes 7 y el viernes 11 de septiembre** vencen los plazos para declarar renta de las personas naturales cuya cédula termina en **35 a 44**.
 
