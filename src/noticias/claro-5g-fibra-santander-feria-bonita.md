@@ -22,7 +22,7 @@ Así lo indicó el director regional de Claro Colombia, Diego Jaimes, quien pres
 
 "Claro dejó de ser solo una empresa que vende minutos o planes para chatear por Whatsapp. Por eso, nos hemos dedicado a fortalecer nuestros Datacenters de cara a las necesidades que plantea la inteligencia artificial para las pymes, empresas y personas de Santander", indicó el directivo. 
 
-El balance fue presentado durante una rueda de prensa este 2 de septiembre, en el marco de la alianza de Claro Colombia con las actividades que se realizarán durante la 75a. edición de la Feria Bonita 2026 de Bucaramanga, en conjunto con el Instituto Municipal de Cultura de la ciudad santandereana. 
+El balance fue presentado durante una rueda de prensa este 2 de septiembre, en el marco de la alianza de Claro Colombia con las actividades que se realizarán durante la edición 77 de la Feria Bonita de Colombia, en conjunto con el Instituto Municipal de Cultura de la ciudad santandereana. 
 
 ## US $20 millones de inversión de Claro en Santander
 
