@@ -1,7 +1,8 @@
 ---
 layout: noticia.njk
+eleventyExcludeFromCollections: true
 title: "Tarjeta de crédito: 7 reglas para no pagar de más"
-date: 2026-09-03T06:00:00.000-05:00
+date: 2026-09-07T06:25:00.000-05:00
 categoria: Finanzas personales
 chipTipo: propio
 chipLabel: Redacción propia
@@ -9,14 +10,14 @@ excerpt: La usura de septiembre quedó en 29,24% y la cuota de manejo llega a
   $55.000 al mes. Siete reglas para que la tarjeta no le cueste más de lo
   necesario.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/PENDIENTE-tarjeta-de-credito.webp
+imagen: /assets/uploads/tarjeta-de-credito-en-colombia.webp
 imagenAlt: Persona pagando con tarjeta de crédito en un comercio
 imagenTitle: "Tarjeta de crédito en Colombia: intereses y cuota de manejo"
-imagenPie: Con la usura en 29,24% efectivo anual, un saldo de $2.000.000 sin abonar cuesta unos $43.000 al mes.
-imagenCredito: Archivo particular
+imagenPie: Con la usura en 29,24% efectivo anual, un saldo de $2.000.000 sin
+  abonar cuesta unos $43.000 al mes.
+imagenCredito: Pixabay-Tumisu, edición Economía Santander
 guia: true
 tags: noticias
-eleventyExcludeFromCollections: true
 ---
 Una tarjeta de crédito bien usada no cuesta nada. Mal usada, es el crédito más caro al que tiene acceso un hogar en Colombia.
 
