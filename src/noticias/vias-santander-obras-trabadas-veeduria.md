@@ -10,7 +10,7 @@ excerpt: La Cámara de Comercio auditó 13 obras viales de Santander. En tres
   corredores el alcance se recortó 42% y la plata avanza más rápido que el
   pavimento.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/PENDIENTE-vias-santander-obras.webp
+imagen: /assets/uploads/vias-en-santander.webp
 imagenAlt: Obras de pavimentación en una vía de montaña en Santander
 imagenTitle: Estado de las obras viales de Santander en 2026
 imagenPie: En la Variante de San Gil se ejecutó el 100% del dinero y se
