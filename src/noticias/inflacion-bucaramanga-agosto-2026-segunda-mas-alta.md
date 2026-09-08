@@ -1,6 +1,7 @@
 ---
 layout: noticia.njk
-title: "Inflación en Bucaramanga: 7,03%, la segunda del país"
+eleventyExcludeFromCollections: true
+title: "Inflación de agosto en Bucaramanga: 7,03%, la segunda más alta del país"
 date: 2026-09-08T06:00:00.000-05:00
 categoria: Indicadores económicos
 chipTipo: propio
@@ -9,13 +10,13 @@ excerpt: El DANE reportó una inflación anual de 7,03% en Bucaramanga, 0,79
   puntos sobre el promedio nacional. Qué la empuja y qué hará el Banco de la
   República.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/PENDIENTE-inflacion-bucaramanga-agosto.webp
-imagenAlt: Compradora revisando precios en una plaza de mercado de Bucaramanga
-imagenTitle: "Inflación en Bucaramanga en agosto de 2026"
-imagenPie: Los alimentos subieron 8,09% anual en Bucaramanga, dos puntos por encima del promedio nacional.
+imagen: /assets/uploads/empleo-formal-bucaramanga-area-metropolitana-2026.jpg
+imagenAlt: Panorámica de Bucaramanga con la segunda inflación más alta en agosto
+imagenTitle: Inflación en Bucaramanga en agosto de 2026
+imagenPie: Los alimentos subieron 8,09% anual en Bucaramanga, dos puntos por
+  encima del promedio nacional.
 imagenCredito: Archivo particular
 tags: noticias
-eleventyExcludeFromCollections: true
 ---
 **La inflación anual en Bucaramanga llegó a 7,03% en agosto**, la segunda más alta entre los 24 dominios geográficos que mide el DANE. Solo Medellín la supera, y por **cuatro centésimas**.
 
