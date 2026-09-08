@@ -1,6 +1,5 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
 title: "Vías de Santander: $11,8 billones y 50 km recortados"
 date: 2026-09-08T05:05:00.000-05:00
 categoria: Construcción
