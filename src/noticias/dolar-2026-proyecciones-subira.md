@@ -1,27 +1,27 @@
 ---
 layout: noticia.njk
 title: "Dólar 2026: el consenso se equivocó $500 en ocho meses"
-date: 2026-08-31T06:00:00.000-05:00
+date: 2026-09-08T07:00:00.000-05:00
 categoria: Indicadores económicos
 chipTipo: propio
 chipLabel: Redacción propia
 excerpt: El consenso proyectó el dólar en $4.000 para 2026 y ya lo bajó a
-  $3.300. La TRM va en $3.202 tras rebotar 5,1% en cinco días. Qué mueve la tasa
-  ahora.
+  $3.300. La TRM va en $3.126 tras deshacerse el rebote de agosto. Qué mueve la
+  tasa ahora.
 autor: Francisco Gómez - Director
 imagen: /assets/uploads/foto-dolar-bajista-2026-colombia.webp
 imagenAlt: Billetes de dólar y peso colombiano sobre una mesa
 imagenTitle: Proyecciones del dólar en Colombia para 2026
-imagenPie: El dólar tocó su piso del año el 24 de agosto y desde ahí subió todos los días.
+imagenPie: El rebote de finales de agosto llegó a +5,4% sobre el piso del año y ya devolvió más de la mitad.
 imagenCredito: Elaboración propia con ayuda de ChatGPT. Economía Santander.
 tags: noticias
 eleventyExcludeFromCollections: true
 ---
-El dólar tocó su piso del año el **24 de agosto en $3.048,12** y desde ahí subió todos los días. La TRM del 29 al 31 quedó en **$3.202,79**: un rebote de **5,1% en cinco días**.
+El dólar tocó su piso del año el **24 de agosto en $3.048,12**, rebotó hasta **$3.213,97 el 1 de septiembre** y desde ahí volvió a caer. La TRM vigente desde el 5 de septiembre es **$3.126,08**.
 
-Así que la pregunta de si el dólar subirá en 2026 ya tiene media respuesta. Empezó a subir la última semana de agosto.
+Es decir: el repunte que a finales de agosto parecía el giro del ciclo **ya devolvió más de la mitad de lo que había ganado**. Del piso del año la tasa está apenas 2,6% arriba.
 
-Lo que sigue abierto es cuánto más. Y ahí conviene mirar primero el historial de quienes se dedican a pronosticarlo.
+Ese vaivén de tres semanas es, en pequeño, la historia de todo el año. Y explica por qué conviene mirar primero el historial de quienes se dedican a pronosticar esta tasa.
 
 ## ¿Qué proyectan los analistas para el dólar a diciembre de 2026?
 
@@ -29,17 +29,17 @@ Lo que sigue abierto es cuánto más. Y ahí conviene mirar primero el historial
 
 | Quién                     | Cuándo  | Cierre 2026     | Falta desde hoy |
 | ------------------------- | ------- | --------------- | --------------- |
-| Goldman Sachs (12 meses)  | agosto  | **$3.200**      | −0,1%           |
-| Fedesarrollo y la bvc     | agosto  | **$3.300**      | +3,0%           |
-| Encuesta de Citi          | agosto  | **$3.629**      | +13,3%          |
-| Arena Alfa                | marzo   | $3.600 – $3.700 | +15,5%          |
-| Fedesarrollo (EOF)        | marzo   | **$3.800**      | +18,6%          |
-| Inverxia                  | marzo   | $3.700 – $3.900 | +21,8%          |
+| Goldman Sachs (12 meses)  | agosto  | **$3.200**      | +2,4%           |
+| Fedesarrollo y la bvc     | agosto  | **$3.300**      | +5,6%           |
+| Arena Alfa                | marzo   | $3.600 – $3.700 | +15,2%          |
+| Encuesta de Citi          | agosto  | **$3.629**      | +16,1%          |
+| Inverxia                  | marzo   | $3.700 – $3.900 | +18,4%          |
+| Fedesarrollo (EOF)        | marzo   | **$3.800**      | +21,6%          |
 | Consenso de mercado       | enero   | $4.000 – $4.100 | +28,0%          |
 
 </div>
 
-La columna de la derecha es de Economía Santander, calculada sobre la TRM del 29 de agosto.
+La columna de la derecha es de Economía Santander, calculada sobre la TRM del 5 de septiembre.
 
 ## ¿Por qué se equivocaron las proyecciones?
 
@@ -51,7 +51,9 @@ Y el error se repitió mes a mes. Esa misma encuesta proyectó **$3.260 para jul
 
 Quien más se acercó durante el año fue el más bajista de todos. **Goldman Sachs** tiene hoy el pronóstico más bajo del mercado —$3.200 a doce meses— y es el único que la TRM ya alcanzó.
 
-Llegar a los $3.300 de Fedesarrollo exige que el dólar suba **0,75% mensual** en los cuatro meses que quedan. Llegar a los $3.629 de Citi exige **3,17% mensual sostenido**. Volver a $4.000, **5,71% mensual**.
+Quedan menos de cuatro meses para el cierre. Llegar a los $3.300 de Fedesarrollo exige que el dólar suba **1,44% mensual** de aquí a diciembre. Llegar a los $3.629 de Citi exige **4% mensual sostenido**. Volver a $4.000, **6,70% mensual**.
+
+Para dimensionarlo: el rebote más fuerte del año —el de finales de agosto— fue de 5,4% y duró seis días antes de deshacerse.
 
 ***Le puede interesar: [Dólar barato: el ciclo anterior duró 63 meses, este va en 45](https://economiasantander.com/noticias/ciclo-dolar-barato-colombia-cuanto-dura/)***
 
@@ -61,7 +63,7 @@ Lo contrario de lo que suele suponerse: **no está recortando tasas**.
 
 La Fed mantuvo su tasa en **3,5% – 3,75%** el 28 y 29 de julio, la **quinta reunión consecutiva sin cambios**. Y hubo tres disidencias, todas pidiendo **subirla**: la mayor cantidad de votos en esa dirección desde septiembre de 2016.
 
-La inflación estadounidense va en **3,5%**, lejos de la meta de 2%, empujada por los choques de oferta de la guerra con Irán. El mercado le asignaba **34% de probabilidad** a un alza en la reunión del 15 y 16 de septiembre.
+La inflación estadounidense va en **3,5%**, lejos de la meta de 2%, empujada por los choques de oferta de la guerra con Irán. El mercado le asignaba **34% de probabilidad** a un alza en la reunión del **15 y 16 de septiembre**, que es la semana entrante y el próximo dato que puede mover la tasa.
 
 Esto importa para Colombia por una razón: si la Fed sube, el diferencial de tasas que sostiene al peso se estrecha.
 
@@ -69,7 +71,9 @@ Esto importa para Colombia por una razón: si la Fed sube, el diferencial de tas
 
 Aquí la intuición falla, y vale la pena detenerse.
 
-La inflación colombiana **subió** en 2026: de **4,90%** en julio de 2025 a **6,03%** en julio de 2026, con pico de 6,14% en junio. El equipo técnico del Banco de la República proyecta que el año cierre en **6,9%**.
+La inflación colombiana **subió** en 2026 y el dato de agosto, publicado el 7 de septiembre, lo confirmó: **6,24% anual**, frente a 5,10% un año atrás. Es el nivel más alto desde julio de 2024. En Bucaramanga fue todavía peor —**7,03%**, la segunda del país—, como documentó el portal en la [nota sobre la inflación del área metropolitana](/noticias/inflacion-bucaramanga-agosto-2026-segunda-mas-alta/).
+
+El equipo técnico del Banco de la República proyecta que el año cierre en **6,9%**.
 
 Eso suena a mala noticia para el peso. Ha sido lo contrario.
 
@@ -87,7 +91,7 @@ La tenencia de deuda pública en manos de extranjeros pasó de **$105 billones e
 
 El mayor tenedor sigue siendo local: las **AFP**, con **$244,10 billones**, el **30,59%** del saldo, según el informe de tenedores de TES de julio. Pero el mayor **acumulador** de 2026 es el capital extranjero, y esa es la diferencia que cuenta.
 
-El mecanismo funciona así: el fondo extranjero vende sus TES, recibe pesos, compra dólares y los saca del país. Eso aumenta la demanda de dólares en el mercado local y empuja la TRM hacia arriba. Al revés —el capital entrando— es lo que ha abaratado el dólar durante 45 meses.
+El mecanismo funciona así: el fondo extranjero vende sus TES, recibe pesos, compra dólares y los saca del país. Eso aumenta la demanda de dólares en el mercado local y empuja la TRM hacia arriba. Al revés —el capital entrando— es lo que ha abaratado el dólar durante 46 meses.
 
 **Y en julio ya hubo una primera señal.** Los fondos de capital extranjero fueron los mayores vendedores netos del mes, con una desinversión de **$1,74 billones**: sus primeras ventas netas en tres meses.
 
@@ -99,7 +103,9 @@ Comprándolo. El **31 de julio** anunció un programa para acumular hasta **US$4
 
 El solo anuncio subió el dólar **$86 en una jornada**.
 
-El programa tiene un detalle que explica buena parte del rebote de agosto: **solo se activa cuando la TRM está por debajo de su promedio móvil de 20 ruedas**. El repunte de finales de mes llevó la tasa justo a ese umbral y desactivó el mecanismo solo. Hay, en la práctica, un piso institucional bajo el dólar que se apaga cuando deja de hacer falta.
+El programa tiene un detalle que explica buena parte del vaivén: **solo se activa cuando la TRM está por debajo de su promedio móvil de 20 ruedas**. El repunte de finales de agosto llevó la tasa a ese umbral y desactivó el mecanismo solo; la caída de septiembre lo vuelve a poner en juego.
+
+**El Banco ya subastó las opciones put de septiembre, por US$400 millones.** Hay, en la práctica, un piso institucional bajo el dólar que se enciende y se apaga según dónde esté la tasa.
 
 ***Siga leyendo: [Dólar en agosto: la proyección dice $3.310, va en $3.128](https://economiasantander.com/noticias/dolar-agosto-2026-proyeccion-corredores-davivienda/)***
 
@@ -133,8 +139,10 @@ Un dólar que sube reparte al revés que uno que baja, y el departamento tiene l
 
 Que el dólar suba o baje de aquí a diciembre. Las proyecciones de este año son la mejor prueba de que ese pronóstico no está disponible, ni siquiera para quienes lo hacen de oficio.
 
-Lo que sí queda claro es el mapa de fuerzas. Empujan hacia arriba una Fed que discute subir tasas, un petróleo barato, un capital extranjero que en julio empezó a vender y un Banco de la República comprando dólares. Empujan hacia abajo unas remesas en récord, una tasa de 12% que sigue siendo imán y un gobierno nuevo que anunció ajuste.
+Lo que sí queda claro es el mapa de fuerzas. Empujan hacia arriba una Fed que discute subir tasas la semana entrante, un petróleo barato, un capital extranjero que en julio empezó a vender y un Banco de la República comprando dólares. Empujan hacia abajo unas remesas en récord, una tasa de 12% que sigue siendo imán —y que con la inflación de agosto en 6,24% tiene menos margen que nunca para bajar— y un gobierno nuevo que anunció ajuste.
+
+El rebote de agosto es el mejor recordatorio de por qué no conviene leer seis días de mercado como un cambio de ciclo.
 
 **Esto es periodismo económico, no asesoría de inversión**, y así está declarado en los [términos de uso](/legal/terminos/) del portal. La tasa del día se puede seguir en [dólar hoy](/dolar-hoy/).
 
-*Cifras de la Superintendencia Financiera, el Banco de la República, el DANE, el Ministerio de Hacienda, Fedesarrollo y la Reserva Federal. Los porcentajes que faltan para cada proyección son cálculos de Economía Santander sobre la TRM del 29 de agosto de 2026.*
+*Cifras de la Superintendencia Financiera, el Banco de la República, el DANE, el Ministerio de Hacienda, Fedesarrollo y la Reserva Federal. Los porcentajes que faltan para cada proyección son cálculos de Economía Santander sobre la TRM del 5 de septiembre de 2026.*
