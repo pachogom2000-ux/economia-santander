@@ -1,7 +1,8 @@
 ---
 layout: noticia.njk
+eleventyExcludeFromCollections: true
 title: "Vías de Santander: $11,8 billones y 50 km recortados"
-date: 2026-09-07T12:00:00.000-05:00
+date: 2026-09-08T05:05:00.000-05:00
 categoria: Construcción
 chipTipo: propio
 chipLabel: Redacción propia
@@ -11,11 +12,11 @@ excerpt: La Cámara de Comercio auditó 13 obras viales de Santander. En tres
 autor: Francisco Gómez - Director
 imagen: /assets/uploads/PENDIENTE-vias-santander-obras.webp
 imagenAlt: Obras de pavimentación en una vía de montaña en Santander
-imagenTitle: "Estado de las obras viales de Santander en 2026"
-imagenPie: En la Variante de San Gil se ejecutó el 100% del dinero y se construyó el 42,7% de la obra.
+imagenTitle: Estado de las obras viales de Santander en 2026
+imagenPie: En la Variante de San Gil se ejecutó el 100% del dinero y se
+  construyó el 42,7% de la obra.
 imagenCredito: Archivo particular
 tags: noticias
-eleventyExcludeFromCollections: true
 ---
 Las 13 obras viales que se ejecutan hoy en Santander suman **$11,8 billones** en contratos. De ese total, **$8,7 billones están en obras que no llegan ni a la mitad de su avance físico**, según cálculos de Economía Santander sobre el primer informe de veeduría de infraestructura de la **Cámara de Comercio de Bucaramanga**.
 
