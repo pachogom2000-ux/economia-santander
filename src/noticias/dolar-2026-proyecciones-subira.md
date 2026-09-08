@@ -1,5 +1,6 @@
 ---
 layout: noticia.njk
+eleventyExcludeFromCollections: true
 title: "Dólar 2026: el consenso se equivocó $500 en ocho meses"
 date: 2026-09-08T07:00:00.000-05:00
 categoria: Indicadores económicos
@@ -9,15 +10,15 @@ excerpt: El consenso proyectó el dólar en $4.000 para 2026 y ya lo bajó a
   $3.300. La TRM va en $3.126 tras deshacerse el rebote de agosto. Qué mueve la
   tasa ahora.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/foto-dolar-bajista-2026-colombia.webp
+imagen: /assets/uploads/dolar-septiembre.webp
 imagenAlt: Billetes de dólar y peso colombiano sobre una mesa
 imagenTitle: Proyecciones del dólar en Colombia para 2026
-imagenPie: El rebote de finales de agosto llegó a +5,4% sobre el piso del año y ya devolvió más de la mitad.
+imagenPie: El rebote de finales de agosto llegó a +5,4% sobre el piso del año y
+  ya devolvió más de la mitad.
 imagenCredito: Elaboración propia con ayuda de ChatGPT. Economía Santander.
 tags: noticias
-eleventyExcludeFromCollections: true
 ---
-El dólar tocó su piso del año el **24 de agosto en $3.048,12**, rebotó hasta **$3.213,97 el 1 de septiembre** y desde ahí volvió a caer. La TRM vigente desde el 5 de septiembre es **$3.126,08**.
+El dólar tocó su piso del año el **24 de agosto en $3.048,12**, rebotó hasta **$3.213,97 el 1 de septiembre** y desde ahí volvió a caer. La TRM vigente para este 8 de septiembre es **$3.126,08**.
 
 Es decir: el repunte que a finales de agosto parecía el giro del ciclo **ya devolvió más de la mitad de lo que había ganado**. Del piso del año la tasa está apenas 2,6% arriba.
 
@@ -27,15 +28,15 @@ Ese vaivén de tres semanas es, en pequeño, la historia de todo el año. Y expl
 
 <div class="tabla-wrap">
 
-| Quién                     | Cuándo  | Cierre 2026     | Falta desde hoy |
-| ------------------------- | ------- | --------------- | --------------- |
-| Goldman Sachs (12 meses)  | agosto  | **$3.200**      | +2,4%           |
-| Fedesarrollo y la bvc     | agosto  | **$3.300**      | +5,6%           |
-| Arena Alfa                | marzo   | $3.600 – $3.700 | +15,2%          |
-| Encuesta de Citi          | agosto  | **$3.629**      | +16,1%          |
-| Inverxia                  | marzo   | $3.700 – $3.900 | +18,4%          |
-| Fedesarrollo (EOF)        | marzo   | **$3.800**      | +21,6%          |
-| Consenso de mercado       | enero   | $4.000 – $4.100 | +28,0%          |
+| Quién                    | Cuándo | Cierre 2026     | Falta desde hoy |
+| ------------------------ | ------ | --------------- | --------------- |
+| Goldman Sachs (12 meses) | agosto | **$3.200**      | +2,4%           |
+| Fedesarrollo y la bvc    | agosto | **$3.300**      | +5,6%           |
+| Arena Alfa               | marzo  | $3.600 – $3.700 | +15,2%          |
+| Encuesta de Citi         | agosto | **$3.629**      | +16,1%          |
+| Inverxia                 | marzo  | $3.700 – $3.900 | +18,4%          |
+| Fedesarrollo (EOF)       | marzo  | **$3.800**      | +21,6%          |
+| Consenso de mercado      | enero  | $4.000 – $4.100 | +28,0%          |
 
 </div>
 
