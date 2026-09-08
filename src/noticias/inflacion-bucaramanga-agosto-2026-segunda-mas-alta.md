@@ -1,6 +1,5 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
 title: "Inflación de agosto en Bucaramanga: 7,03%, la segunda más alta del país"
 date: 2026-09-08T06:00:00.000-05:00
 categoria: Indicadores económicos

@@ -1,6 +1,5 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
 title: "Dólar 2026: el consenso se equivocó $500 en ocho meses"
 date: 2026-09-08T07:00:00.000-05:00
 categoria: Indicadores económicos
