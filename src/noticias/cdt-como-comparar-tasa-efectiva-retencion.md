@@ -8,7 +8,7 @@ chipLabel: Redacción propia
 excerpt: Las tasas de CDT van de 8,15% a 13,50% en septiembre. Cómo comparar
   efectivo anual contra nominal, qué descuenta la retención y qué cubre Fogafín.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/gettyimages-1204261194.jpg
+imagen: /assets/uploads/ahorro-cdt-colombia.webp
 imagenAlt: Persona comparando tasas de CDT en la pantalla de un computador
 imagenTitle: "CDT en Colombia: tasa efectiva, retención en la fuente y Fogafín"
 imagenPie: "La retención de un CDT es 4%, no 7%: el Decreto 2418 de 2013 la bajó
