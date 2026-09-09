@@ -10,7 +10,7 @@ excerpt: "La segunda inflación más alta del país, $11,8 billones en obras
   trabadas y un dólar que no arranca: tres cifras de la misma semana en
   Santander."
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/PENDIENTE-columna-director.webp
+imagen: /assets/uploads/panoramica-bucaramanga-archivoparticular-economiasantander.webp
 imagenAlt: Panorámica del área metropolitana de Bucaramanga al atardecer
 imagenTitle: "Columna: tres datos de la economía de Santander en septiembre"
 imagenPie: Bucaramanga tuvo la segunda inflación anual más alta del país en
@@ -18,7 +18,7 @@ imagenPie: Bucaramanga tuvo la segunda inflación anual más alta del país en
 imagenCredito: Archivo particular
 tags: noticias
 ---
-Esta semana pasaron tres cosas en Santander que la prensa contó por separado. Vale la pena ponerlas en la misma página, porque cuentan lo mismo.
+Esta semana resumo tres cosas en Santander que la prensa contó por separado. Vale la pena ponerlas en la misma página, porque cuentan lo mismo.
 
 **Una.** El DANE reportó que Bucaramanga tuvo la **segunda inflación anual más alta del país** en agosto: 7,03%, contra 6,24% del promedio nacional. Solo Medellín la superó, por cuatro centésimas.
 
