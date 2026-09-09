@@ -1,6 +1,5 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
 title: "Cacao en Rionegro: tres generaciones y el salto al chocolate"
 date: 2026-09-09T06:00:00.000-05:00
 categoria: Agro
@@ -14,7 +13,7 @@ imagen: /assets/uploads/cacao-maliflac-pixabay.webp
 imagenAlt: Manos abriendo una mazorca de cacao en una finca de Santander
 imagenTitle: "Cacao en Rionegro, Santander: de grano seco a chocolate"
 imagenPie: En Rionegro la finca cacaotera promedio tiene 4,6 hectáreas.
-imagenCredito: SENA Regional Santander
+imagenCredito: Pixabay-maliflac
 tags: noticias
 ---
 Durante décadas, la familia Guerrero hizo lo mismo que hace la mayoría de cacaoteros de Santander: secar el grano y venderlo. Hoy hacen chocolate, y con la baba que antes botaban preparan postres.
