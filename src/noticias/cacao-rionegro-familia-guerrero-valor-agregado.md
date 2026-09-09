@@ -1,5 +1,6 @@
 ---
 layout: noticia.njk
+eleventyExcludeFromCollections: true
 title: "Cacao en Rionegro: tres generaciones y el salto al chocolate"
 date: 2026-09-09T06:00:00.000-05:00
 categoria: Agro
@@ -9,13 +10,12 @@ excerpt: La familia Guerrero, de Rionegro, dejó de vender solo grano seco y
   empezó a transformar su cacao. Cuánto vale ese salto y por qué llega en el
   momento justo.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/PENDIENTE-cacao-rionegro-guerrero.webp
+imagen: /assets/uploads/cacao-maliflac-pixabay.webp
 imagenAlt: Manos abriendo una mazorca de cacao en una finca de Santander
 imagenTitle: "Cacao en Rionegro, Santander: de grano seco a chocolate"
-imagenPie: En Rionegro la finca cacaotera promedio tiene 4,6 hectáreas. El municipio es el cuarto productor del departamento.
+imagenPie: En Rionegro la finca cacaotera promedio tiene 4,6 hectáreas.
 imagenCredito: SENA Regional Santander
 tags: noticias
-eleventyExcludeFromCollections: true
 ---
 Durante décadas, la familia Guerrero hizo lo mismo que hace la mayoría de cacaoteros de Santander: secar el grano y venderlo. Hoy hacen chocolate, y con la baba que antes botaban preparan postres.
 
