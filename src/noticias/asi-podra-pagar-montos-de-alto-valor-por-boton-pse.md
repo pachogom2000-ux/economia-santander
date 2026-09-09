@@ -1,7 +1,7 @@
 ---
 layout: noticia.njk
 eleventyExcludeFromCollections: false
-title: Así podrá pagar montos de alto valor por botón PSE
+title: Ahora podrá pagar montos de alto valor por botón PSE
 date: 2026-09-09T06:40:00.000-05:00
 categoria: Educación financiera
 chipTipo: recirc
