@@ -1,6 +1,5 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
 title: "CDT: cómo leer la tasa y comparar ofertas sin enredos"
 date: 2026-09-09T06:25:00.000-05:00
 categoria: Educación financiera
