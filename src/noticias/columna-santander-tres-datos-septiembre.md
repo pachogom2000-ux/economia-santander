@@ -1,7 +1,8 @@
 ---
 layout: noticia.njk
-title: "Tres datos que cuentan la misma historia en Santander"
-date: 2026-09-10T07:00:00.000-05:00
+eleventyExcludeFromCollections: true
+title: Tres datos que cuentan la misma historia en Santander
+date: 2026-09-10T05:00:00.000-05:00
 categoria: Opinión
 chipTipo: propio
 chipLabel: Columna del director
@@ -12,10 +13,10 @@ autor: Francisco Gómez - Director
 imagen: /assets/uploads/PENDIENTE-columna-director.webp
 imagenAlt: Panorámica del área metropolitana de Bucaramanga al atardecer
 imagenTitle: "Columna: tres datos de la economía de Santander en septiembre"
-imagenPie: Bucaramanga tuvo la segunda inflación anual más alta del país en agosto, con 7,03%.
+imagenPie: Bucaramanga tuvo la segunda inflación anual más alta del país en
+  agosto, con 7,03%.
 imagenCredito: Archivo particular
 tags: noticias
-eleventyExcludeFromCollections: true
 ---
 Esta semana pasaron tres cosas en Santander que la prensa contó por separado. Vale la pena ponerlas en la misma página, porque cuentan lo mismo.
 
