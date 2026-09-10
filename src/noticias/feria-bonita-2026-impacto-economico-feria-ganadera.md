@@ -1,6 +1,5 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
 title: "Feria Bonita: $67.000 millones y 18 días seguidos de feria"
 date: 2026-09-10T06:00:00.000-05:00
 categoria: Turismo y hotelería
@@ -15,7 +14,7 @@ imagenAlt: Feria Bonita en las calles de Bucaramanga
 imagenTitle: "Feria Bonita 2026: impacto económico en Bucaramanga"
 imagenPie: La edición 77 de la Feria Bonita cierra el domingo 13 con el desfile
   de los Picos de Oro.
-imagenCredito: Archivo Alcaldia de Bucaramanga
+imagenCredito: Archivo Alcaldía de Bucaramanga
 tags: noticias
 ---
 La **edición 77 de la Feria Bonita** proyecta mover **más de $67.000 millones** en Bucaramanga. Repartido entre los once días del evento, son cerca de **$6.100 millones diarios**.

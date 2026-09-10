@@ -1,6 +1,5 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
 title: Cierre de empresas en Bucaramanga subió 46,2% en 2025
 date: 2026-09-10T08:00:00.000-05:00
 categoria: Emprendimiento y pymes

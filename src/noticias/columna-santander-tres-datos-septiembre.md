@@ -1,6 +1,5 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
 title: Tres datos que cuentan la misma historia en Santander
 date: 2026-09-10T05:00:00.000-05:00
 categoria: Opinión
@@ -20,11 +19,11 @@ tags: noticias
 ---
 Esta semana resumo tres cosas en Santander que la prensa contó por separado. Vale la pena ponerlas en la misma página, porque cuentan lo mismo.
 
-**Una.** El DANE reportó que Bucaramanga tuvo la **segunda inflación anual más alta del país** en agosto: 7,03%, contra 6,24% del promedio nacional. Solo Medellín la superó, por cuatro centésimas.
+**Una.** El DANE reportó que Bucaramanga tuvo la [**segunda inflación anual más alta del país**](/noticias/inflacion-bucaramanga-agosto-2026-segunda-mas-alta/) en agosto: 7,03%, contra 6,24% del promedio nacional. Solo Medellín la superó, por cuatro centésimas.
 
-**Dos.** La Cámara de Comercio publicó su primer informe de veeduría de infraestructura. Las trece obras viales que se ejecutan en el departamento suman **$11,8 billones**, y de esos, **$8,7 billones están en obras que no llegan ni a la mitad de su avance físico**.
+**Dos.** La Cámara de Comercio publicó su primer informe de veeduría de infraestructura. Las [trece obras viales que se ejecutan en el departamento](/noticias/vias-santander-obras-trabadas-veeduria/) suman **$11,8 billones**, y de esos, **$8,7 billones están en obras que no llegan ni a la mitad de su avance físico**.
 
-**Tres.** El dólar sigue sin arrancar. El consenso del mercado proyectaba $4.000 para diciembre y ya lo bajó a $3.300; la TRM va en $3.126.
+**Tres.** El dólar sigue sin arrancar. El [consenso del mercado](/noticias/dolar-2026-proyecciones-subira/) proyectaba $4.000 para diciembre y ya lo bajó a $3.300; la TRM va en $3.126.
 
 Tres noticias distintas. Un solo problema de fondo.
 
@@ -60,7 +59,7 @@ Ninguna de esas tensiones se arregla con un anuncio. Pero hay tres cosas concret
 
 **Que la feria se mida.** Bucaramanga proyecta $67.000 millones de movimiento en la Feria Bonita y nadie ha publicado nunca cuánto se movió de verdad. Sin medición no hay forma de saber si el evento crece o se estanca, ni de defender el presupuesto que lo financia.
 
-**Que la transformación deje de ser una anécdota.** Esta semana el SENA contó la historia de una familia de Rionegro que pasó de vender grano seco a hacer chocolate. Es una historia bonita y es también una estadística de una sola familia. En las exportaciones colombianas el grano crudo vale el 33% y el transformado más del 60%. Ese salto no lo dan las historias: lo dan el registro sanitario, el empaque, el canal de venta y el capital de trabajo.
+**Que la transformación deje de ser una anécdota.** Esta semana el SENA contó la historia de [una familia de Rionegro que pasó de vender grano seco a hacer chocolate](/noticias/cacao-rionegro-familia-guerrero-valor-agregado/). Es una historia bonita y es también una estadística de una sola familia. En las exportaciones colombianas el grano crudo vale el 33% y el transformado más del 60%. Ese salto no lo dan las historias: lo dan el registro sanitario, el empaque, el canal de venta y el capital de trabajo.
 
 ## La cifra que falta
 
