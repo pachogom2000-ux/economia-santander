@@ -1,19 +1,21 @@
 ---
 layout: noticia.njk
 eleventyExcludeFromCollections: true
-title: "Cierre de empresas en Bucaramanga subió 46,2% en 2025"
-date: 2026-09-09T08:00:00.000-05:00
+title: Cierre de empresas en Bucaramanga subió 46,2% en 2025
+date: 2026-09-10T08:00:00.000-05:00
 categoria: Emprendimiento y pymes
 chipTipo: propio
 chipLabel: Redacción propia
 excerpt: El Informe de Calidad de Vida cuenta 8.723 empresas canceladas y un
-  registro que cayó 11,8%. Subió el empleo, pero dos de cada tres son autoempleo.
+  registro que cayó 11,8%. Subió el empleo, pero dos de cada tres son
+  autoempleo.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/cierre-empresas-bucaramanga-2025.jpg
+imagen: /assets/uploads/cierre-empresas-bucaramanga.webp
 imagenAlt: Local comercial cerrado en el centro de Bucaramanga
-imagenTitle: "Cierre de empresas en el área metropolitana de Bucaramanga en 2025"
-imagenPie: La tasa de mortalidad empresarial se disparó en los cuatro municipios del área metropolitana durante 2025.
-imagenCredito: Archivo particular
+imagenTitle: Cierre de empresas en el área metropolitana de Bucaramanga en 2025
+imagenPie: La tasa de mortalidad empresarial se disparó en los cuatro municipios
+  del área metropolitana durante 2025.
+imagenCredito: Pixabay-Tattybadger
 tags: noticias
 ---
 El área metropolitana de Bucaramanga registró **8.723 empresas canceladas en 2025**, un **46,2% más** que el año anterior. En el mismo periodo el registro empresarial total cayó a **65.753 empresas, un 11,8% menos** que en 2024.
