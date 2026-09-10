@@ -12,8 +12,8 @@ autor: Francisco Gómez - Director
 imagen: /assets/uploads/turismo-santander.webp
 imagenAlt: Panorámica del área metropolitana de Bucaramanga al atardecer
 imagenTitle: "Columna: tres datos de la economía de Santander en septiembre"
-imagenPie: Bucaramanga tuvo la segunda inflación anual más alta del país en
-  agosto, con 7,03%.
+imagenPie: "Vías, inflación y dólar marcan el rumbo de la economía de Santander
+  este mes. "
 imagenCredito: Archivo particular
 tags: noticias
 ---
