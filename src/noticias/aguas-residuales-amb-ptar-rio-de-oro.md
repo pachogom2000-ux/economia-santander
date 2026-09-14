@@ -11,7 +11,7 @@ autor: Francisco Gómez - Director
 imagen: /assets/uploads/grifo-agua.webp
 imagenAlt: Cauce del río de Oro a su paso por el área metropolitana de Bucaramanga
 imagenTitle: Tratamiento de aguas residuales en el área metropolitana de Bucaramanga
-imagenPie: "Ninguno de los 39 puntos de monitoero alcanzó buena o aceptable
+imagenPie: "Ninguno de los 39 puntos de monitoreo alcanzó buena o aceptable
   calidad de agua en 2025. "
 imagenCredito: Archivo particular
 tags: noticias
