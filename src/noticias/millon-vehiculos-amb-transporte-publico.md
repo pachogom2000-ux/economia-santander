@@ -1,6 +1,5 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
 title: El AMB cruzó el millón de vehículos y perdió pasajeros
 date: 2026-09-14T08:59:00.000-05:00
 categoria: Indicadores económicos

@@ -1,6 +1,5 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
 title: "Hoja de vida: cómo pasar el filtro que no es humano"
 date: 2026-09-14T07:13:00.000-05:00
 categoria: Empleo

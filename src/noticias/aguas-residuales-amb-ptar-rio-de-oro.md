@@ -1,6 +1,5 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
 title: "Aguas residuales: el AMB retrocedió a 35,8% de tratamiento"
 date: 2026-09-14T05:04:00.000-05:00
 categoria: Construcción
