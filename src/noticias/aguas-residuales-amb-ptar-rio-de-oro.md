@@ -2,17 +2,18 @@
 layout: noticia.njk
 eleventyExcludeFromCollections: true
 title: "Aguas residuales: el AMB retrocedió a 35,8% de tratamiento"
-date: 2026-09-10T09:00:00.000-05:00
+date: 2026-09-14T05:04:00.000-05:00
 categoria: Construcción
 chipTipo: propio
 chipLabel: Redacción propia
 excerpt: El tratamiento cayó desde 50,1% en un año y ningún punto de monitoreo
   alcanzó calidad aceptable. La solución cuesta $1,29 billones y llega en 2035.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/aguas-residuales-rio-de-oro.jpg
+imagen: /assets/uploads/grifo-agua.webp
 imagenAlt: Cauce del río de Oro a su paso por el área metropolitana de Bucaramanga
-imagenTitle: "Tratamiento de aguas residuales en el área metropolitana de Bucaramanga"
-imagenPie: La PTAR Río de Oro se construirá en un predio de 38 hectáreas en Girón, con capacidad de 2,08 metros cúbicos por segundo.
+imagenTitle: Tratamiento de aguas residuales en el área metropolitana de Bucaramanga
+imagenPie: "Ninguno de los 39 puntos de monitoero alcanzó buena o aceptable
+  calidad de agua en 2025. "
 imagenCredito: Archivo particular
 tags: noticias
 ---
