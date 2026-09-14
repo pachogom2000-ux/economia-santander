@@ -149,12 +149,18 @@ collections:
       # (renta el 6 de agosto, cacao el 10, PIB el 14): Francisco las editaba y
       # publicaba una y otra vez, y la marca seguía ahí sin que nadie pudiera
       # verla ni quitarla. Estando a la vista, se controla desde aquí.
-      - label: "Dejar como borrador (no sale en el portal)"
+      #
+      # Actualización 14 de septiembre: aun a la vista, volvió a pasar cinco
+      # veces más. La causa es de diseño, no de atención: el botón verde
+      # "Publicar" de Decap fusiona la rama pero NO apaga este interruptor, y
+      # la lectura natural es que Publicar = sale al portal. Por eso el rótulo
+      # ahora dice explícitamente que Publicar no basta.
+      - label: "⛔ OCULTA DEL PORTAL — apágalo ANTES de dar Publicar"
         name: "eleventyExcludeFromCollections"
         widget: "boolean"
         default: false
         required: false
-        hint: "Encendido, la nota NO aparece en la portada, ni en su sección, ni en el sitemap, y se marca noindex. Apágalo cuando la nota esté lista para salir."
+        hint: "Mientras esté ENCENDIDO, el botón Publicar NO saca la nota: se fusiona pero sigue fuera de portada, sección y sitemap. Para que salga, apágalo primero y después publica. Si lo dejas encendido, la nota queda invisible aunque la publiques."
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Fecha", name: "date", widget: "datetime" }
       - label: "Categoría"
