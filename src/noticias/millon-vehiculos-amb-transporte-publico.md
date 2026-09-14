@@ -1,18 +1,20 @@
 ---
 layout: noticia.njk
 eleventyExcludeFromCollections: true
-title: "El AMB cruzó el millón de vehículos y perdió pasajeros"
-date: 2026-09-10T10:00:00.000-05:00
+title: El AMB cruzó el millón de vehículos y perdió pasajeros
+date: 2026-09-14T08:59:00.000-05:00
 categoria: Indicadores económicos
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: Hay 1.003.067 vehículos registrados, 8,3% más que en 2024. El transporte
-  público perdió 22,2% de pasajeros y Metrolínea sigue 73,2% bajo su nivel.
+excerpt: Hay 1.003.067 vehículos registrados, 8,3% más que en 2024. El
+  transporte público perdió 22,2% de pasajeros y Metrolínea sigue 73,2% bajo su
+  nivel.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/parque-automotor-bucaramanga.jpg
+imagen: /assets/uploads/conductor-carro.jpg
 imagenAlt: Tráfico vehicular en una avenida del área metropolitana de Bucaramanga
-imagenTitle: "Parque automotor y transporte público en el área metropolitana de Bucaramanga"
-imagenPie: De los 1.003.067 vehículos registrados en el área metropolitana, 638.514 son motocicletas.
+imagenTitle: Parque automotor y transporte público en el área metropolitana de Bucaramanga
+imagenPie: "Solo 4 de cada 10 vehículos registrados en el área de Bucaramanga
+  son automóviles, el resto son motocicletas. "
 imagenCredito: Archivo particular
 tags: noticias
 ---
