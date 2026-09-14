@@ -2,17 +2,19 @@
 layout: noticia.njk
 eleventyExcludeFromCollections: true
 title: "Hoja de vida: cómo pasar el filtro que no es humano"
-date: 2026-09-10T13:00:00.000-05:00
+date: 2026-09-14T07:13:00.000-05:00
 categoria: Empleo
 chipTipo: propio
 chipLabel: Redacción propia
 excerpt: En el área metropolitana hay 610.002 ocupados y casi la mitad en la
-  informalidad. Cómo armar una hoja de vida y cómo acreditar lo que no tuvo papel.
+  informalidad. Cómo armar una hoja de vida y cómo acreditar lo que no tuvo
+  papel.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/hoja-de-vida-empleo-bucaramanga.jpg
+imagen: /assets/uploads/curriculum.webp
 imagenAlt: Persona preparando su hoja de vida frente a un computador
-imagenTitle: "Cómo hacer una hoja de vida para conseguir empleo en Bucaramanga"
-imagenPie: El área metropolitana de Bucaramanga cerró 2025 con 610.002 personas ocupadas y una informalidad del 45,7%.
+imagenTitle: Cómo hacer una hoja de vida para conseguir empleo en Bucaramanga
+imagenPie: El área metropolitana de Bucaramanga cerró 2025 con 610.002 personas
+  ocupadas y una informalidad del 45,7%.
 imagenCredito: Archivo particular
 guia: true
 tags: noticias
