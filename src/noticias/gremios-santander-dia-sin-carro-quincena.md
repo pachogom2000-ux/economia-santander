@@ -27,6 +27,8 @@ Lo firman, entre otros, **Fenalco Santander**, la **ANDI seccional Santander**, 
 
 El pronunciamiento se apoya en dos argumentos, ambos con fecha.
 
+![Pronunciamiento gremios de Santander](/assets/uploads/gremios-santander-dia-sin-carro-sin-moto.png "Día sin carro: Pronunciamiento gremios de Santander")
+
 **El primero es el calendario.** El 30 de septiembre es miércoles y coincide con el pago de la quincena, «un día de alto gasto de los hogares». Restringir la movilidad ese día, dice el Comité, «dificulta el acceso de los consumidores al comercio formal, con un efecto negativo sobre los ingresos de miles de negocios».
 
 **El segundo es la logística.** La restricción «incide sobre la distribución de mercancías e insumos en una jornada de alta demanda comercial». El cierre de mes es también el día en que muchos negocios reciben inventario para arrancar octubre.
