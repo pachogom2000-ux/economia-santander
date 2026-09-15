@@ -1,14 +1,22 @@
 ---
 layout: noticia.njk
+eleventyExcludeFromCollections: false
 title: "Empresarios y fútbol en Guadalupe: 80 niños entrenan gratis"
-date: 2026-09-15T06:00:00.000-05:00
-categoria: Inversión
+date: 2026-09-15T06:01:00.000-05:00
+categoria: Emprendimiento y pymes
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "Una fundación y una familia de empresarios ponen $18,1 millones al mes en GOL LAB, la escuela donde 80 niños de Guadalupe, Santander, entrenan sin pagar."
+excerpt: Una fundación y una familia de empresarios ponen $18,1 millones al mes
+  en GOL LAB, la escuela donde 80 niños de Guadalupe, Santander, entrenan sin
+  pagar.
 autor: Francisco Gómez - Director
+imagen: /assets/uploads/portada-gol-lab-guadadulpe.webp
+imagenAlt: "Más de 80 niños y niñas de Guadalupe, Santander, entrenan por su
+  pasión: el fútbol, gracias al apoyo de la empresa privada. "
+imagenTitle: Niños y niñas de GOL LAB, en Guadalupe, Santander.
+imagenPie: "Suministrada GOL LAB. "
+imagenCredito: "Suministrada GOL LAB. "
 tags: noticias
-eleventyExcludeFromCollections: true
 ---
 **$18.100.000 al mes.** Eso cuesta sostener **GOL LAB**, una escuela de fútbol de **Guadalupe, Santander**, donde más de **80 niños, niñas y jóvenes** entre 5 y 19 años entrenan sin que sus familias paguen un peso.
 
@@ -18,11 +26,11 @@ Dividido entre los 80 deportistas, son **$226.000 mensuales por cada niño**. En
 
 ## ¿Quién paga y por qué gratis?
 
-La decisión de no cobrar fue la primera que tomó el proyecto. El informe la explica sin rodeos: *"si trasladábamos el costo del proceso a los hogares, probablemente varios niños y jóvenes quedarían por fuera simplemente porque sus familias no podrían asumirlo"*.
+La decisión de no cobrar fue la primera que tomó el proyecto. Economía Santander contactó a GOL LAB para conocer los principales resultados de la iniciativa privada: *"si trasladábamos el costo del proceso a los hogares, probablemente varios niños y jóvenes quedarían por fuera simplemente porque sus familias no podrían asumirlo"*.
 
 La operación permanente la sostienen la fundación y el grupo familiar. Los deportistas vienen **en su mayoría del sector rural** del municipio.
 
-[VERIFICAR: nombre y cargo de quien firma el informe por la fundación, y desde qué año opera GOL LAB.]
+Milena Pachón, presidenta de la Fundación Nicolás Aristizábal - La Nico GOL LAB, destacó en una frase lo que se está viviendo alrededor del club deportivo que recibe el apoyo de empresarios de la región. "El talento nace en las veredas y en los municipios pequeños: muchas veces lo único que necesita es que alguien crea en él y le abra una puerta", indicó. 
 
 ## ¿En qué se van $18,1 millones al mes?
 
@@ -30,18 +38,18 @@ El informe desglosa nueve rubros:
 
 <div class="tabla-wrap">
 
-| Rubro | Mensual | Peso |
-| --- | --- | --- |
-| Pólizas | $4.600.000 | 25,4% |
-| Manutención de una deportista en Bucaramanga | $3.500.000 | 19,3% |
-| Entrenador | $2.800.000 | 15,5% |
-| Asistente técnico | $2.300.000 | 12,7% |
-| Transporte | $1.800.000 | 9,9% |
-| Hidratación | $1.200.000 | 6,6% |
-| Refrigerios | $700.000 | 3,9% |
-| Logística | $700.000 | 3,9% |
-| Eventualidades | $500.000 | 2,8% |
-| **Total** | **$18.100.000** | **100%** |
+| Rubro                                        | Mensual         | Peso     |
+| -------------------------------------------- | --------------- | -------- |
+| Pólizas                                      | $4.600.000      | 25,4%    |
+| Manutención de una deportista en Bucaramanga | $3.500.000      | 19,3%    |
+| Entrenador                                   | $2.800.000      | 15,5%    |
+| Asistente técnico                            | $2.300.000      | 12,7%    |
+| Transporte                                   | $1.800.000      | 9,9%     |
+| Hidratación                                  | $1.200.000      | 6,6%     |
+| Refrigerios                                  | $700.000        | 3,9%     |
+| Logística                                    | $700.000        | 3,9%     |
+| Eventualidades                               | $500.000        | 2,8%     |
+| **Total**                                    | **$18.100.000** | **100%** |
 
 </div>
 
@@ -69,22 +77,16 @@ Un matiz que conviene tener claro: los $217 millones son una **proyección** a d
 
 ## La inversión no termina cuando aparece el talento
 
-El segundo rubro del presupuesto tiene nombre propio: **Laura Moyano**, una futbolista de la escuela que hoy entrena en Bucaramanga.
+El segundo rubro del presupuesto tiene nombre propio: **Laura Moyano**, una futbolista de la escuela que hoy entrena en Bucaramanga. Inició en la escuela deportiva desde los 10 años, ahora a sus 19 años forma parte del Real Santander, que en su equipo femenino busca el mejor talento de la región. 
+
+"Ahora estoy en una escuela de fútbol y fui a jugar en un torneo en México, he ganado medallas y he hecho muchos goles", cuenta Laura, la talentosa delantera que después de casi una década de esfuerzo y sacrificios, ahora ve cómo se cumple su sueño. 
+
+[Ver video: El sueño cumplido de Laura Moyano](https://economiasantander.com/multimedia/empresarios-apoyan-el-futbol-en-guadalupe-santander/)
 
 La fundación asume **$3,5 millones mensuales** para su manutención en la ciudad. El argumento del informe: *"no tendría sentido ayudar a una joven a encontrar una oportunidad y luego permitir que la falta de recursos económicos le impidiera permanecer allí y aprovecharla"*.
 
 Ese rubro dice algo sobre el modelo. Sin él, la escuela cuesta $14,6 millones al mes, unos **$182.500 por niño**. Con él, la ruta va desde el niño que empieza a entrenar gratis en Guadalupe hasta el deportista que tiene que salir del municipio para intentar el salto profesional.
 
-[VERIFICAR: edad de Laura Moyano, en qué club o proceso entrena en Bucaramanga y desde cuándo. Si es menor de edad, confirmar autorización para publicar su nombre.]
-
-## Lo que el informe no dice
-
-Conviene ser claro con los límites de esta nota.
-
-Todas las cifras provienen de **un solo documento elaborado por la propia fundación**. No hay estados financieros públicos, ni registro de la escuela en una liga o federación que se haya podido consultar, ni una fuente independiente que confirme los montos. Se publican como lo que son: la cuenta que hace quien paga.
-
-Tampoco dice el informe cuántas familias se beneficiaron en total, cuántos niños han pasado por el proceso ni cuánto tiempo puede sostenerse la inversión si los aportes externos no crecen.
-
-Lo que sí es verificable es el contexto. Guadalupe está en la provincia Comunera, a [VERIFICAR: tiempo de viaje] de Bucaramanga, y los corredores que conectan la provincia con la capital, como documentó este portal, [llevan años recortándose](/noticias/vias-santander-obras-trabadas-veeduria/). Para un niño de vereda, una escuela con entrenador, transporte y póliza que no cobre mensualidad no es lo habitual. Aquí existe, y alguien la está pagando.
+Guadalupe está en la provincia Comunera, a dos horas de viaje de Bucaramanga, y los corredores que conectan la provincia con la capital, como documentó este portal, [llevan años recortándose](/noticias/vias-santander-obras-trabadas-veeduria/). Para un niño de vereda, una escuela con entrenador, transporte y póliza que no cobre mensualidad no es lo habitual. Aquí existe, y alguien la está pagando.
 
 *Las cifras de este artículo provienen del informe de costos entregado a Economía Santander por GOL LAB y la Fundación Nicolás Aristizábal – La Nico en septiembre de 2026. Los porcentajes y el costo por deportista son cálculos de Economía Santander sobre esas cifras. La población de Guadalupe corresponde a la proyección del DANE para 2024.*
