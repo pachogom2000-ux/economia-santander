@@ -47,7 +47,11 @@
 <meta property="og:description" content="{{ pageDescription }}">
 <meta property="og:url" content="https://economiasantander.com{{ page.url }}">
 <meta property="og:locale" content="es_CO">
-{% set ogImagen = imagen or "/assets/uploads/empleo-formal-bucaramanga-area-metropolitana-2026.jpg" %}
+{# Sin `imagen` (portada, secciones, páginas legales) la vista previa es el
+   cabezote del portal, no la foto de una nota cualquiera. El archivo se
+   generó desde el propio cabezote (fuentes y colores de style.css) a
+   1200×630, la medida estándar de las tarjetas de WhatsApp y Facebook. #}
+{% set ogImagen = imagen or "/assets/og-cabezote.jpg" %}
 {# Versión de 1200 px en JPEG en vez del original: hay fotos de 4,5 MB y
    WhatsApp no las descarga para la vista previa, así que el enlace salía sin
    foto. Las medidas se declaran de verdad, no quemadas en 1200x700. #}
