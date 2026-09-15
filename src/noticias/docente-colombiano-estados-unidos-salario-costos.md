@@ -12,7 +12,7 @@ excerpt: Un programa privado ofrece entre US$42.000 y US$70.000 al año a
 autor: Francisco Gómez - Director
 imagen: /assets/uploads/docente-escuela-publica-estados-unidos.webp
 imagenAlt: Un docente colombiano en Estados Unidos puede ganar entre $42.000 y
-  $75.000 dólares brutos al año, pero no son valores netos.
+  $70.000 dólares brutos al año, pero no son valores netos.
 imagenTitle: "Docente en escuela pública en Estados Unidos. "
 imagenPie: Los docentes colombianos pueden tener una experiencia en Estados
   Unidos, por dos años y regresar al país.
