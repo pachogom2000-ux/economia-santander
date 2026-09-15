@@ -81,7 +81,7 @@ El segundo rubro del presupuesto tiene nombre propio: **Laura Moyano**, una futb
 
 "Ahora estoy en una escuela de fútbol y fui a jugar en un torneo en México, he ganado medallas y he hecho muchos goles", cuenta Laura, la talentosa delantera que después de casi una década de esfuerzo y sacrificios, ahora ve cómo se cumple su sueño. 
 
-<https://economiasantander.com/multimedia/empresarios-apoyan-el-futbol-en-guadalupe-santander/>
+[Ver video: El sueño cumplido de Laura Moyano](https://economiasantander.com/multimedia/empresarios-apoyan-el-futbol-en-guadalupe-santander/)
 
 La fundación asume **$3,5 millones mensuales** para su manutención en la ciudad. El argumento del informe: *"no tendría sentido ayudar a una joven a encontrar una oportunidad y luego permitir que la falta de recursos económicos le impidiera permanecer allí y aprovecharla"*.
 
