@@ -13,7 +13,8 @@ autor: Francisco Gómez - Director
 imagen: /assets/uploads/portada-gol-lab-guadadulpe.webp
 imagenAlt: "Más de 80 niños y niñas de Guadalupe, Santander, entrenan por su
   pasión: el fútbol, gracias al apoyo de la empresa privada. "
-imagenTitle: Niños y niñas de GOL LAB, en Guadalupe, Santander.
+imagenTitle: "Más de 80 niños y niñas de Guadalupe, Santander, entrenan por su
+  pasión: el fútbol, por el apoyo de la empresa privada."
 imagenPie: "Suministrada GOL LAB. "
 imagenCredito: "Suministrada GOL LAB. "
 tags: noticias
