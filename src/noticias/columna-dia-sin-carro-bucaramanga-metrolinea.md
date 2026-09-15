@@ -1,8 +1,8 @@
 ---
 layout: noticia.njk
 eleventyExcludeFromCollections: true
-title: "Día sin carro con el mismo Metrolínea que lo suspendió"
-date: 2026-09-14T15:00:00.000-05:00
+title: "Mi opinión: Día sin carro con el mismo Metrolínea que lo suspendió"
+date: 2026-09-15T04:00:00.000-05:00
 categoria: Opinión
 chipTipo: propio
 chipLabel: Columna del director
@@ -10,7 +10,8 @@ excerpt: En 2025 la Junta Metropolitana suspendió la jornada porque Metrolínea
   no tenía flota. Un año después la hace obligatoria con el sistema igual.
 autor: Francisco Gómez - Director
 imagen: /assets/uploads/columna-dia-sin-carro-bucaramanga.jpg
-imagenAlt: Estación de Metrolínea con usuarios esperando en el área metropolitana de Bucaramanga
+imagenAlt: Estación de Metrolínea con usuarios esperando en el área
+  metropolitana de Bucaramanga
 imagenTitle: "Columna: el día sin carro y la movilidad en Bucaramanga"
 imagenPie: Metrolínea movió 27.096 pasajeros diarios en 2025, un 73,2% menos que en 2016.
 imagenCredito: Archivo particular
