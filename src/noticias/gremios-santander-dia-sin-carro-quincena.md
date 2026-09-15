@@ -27,6 +27,10 @@ Lo firman, entre otros, **Fenalco Santander**, la **ANDI seccional Santander**, 
 
 El pronunciamiento se apoya en dos argumentos, ambos con fecha.
 
+```
+<blockquote class="twitter-tweet"><p lang="es" dir="ltr"><a href="https://x.com/hashtag/Comunicado?src=hash&amp;ref_src=twsrc%5Etfw">#Comunicado</a> | PREOCUPACIÓN POR LAS AFECTACIONES ECONÓMICAS DE LA JORNADA “DÍA<br>SIN CARRO” DEL 30 DE SEPTIEMBRE. <a href="https://t.co/3lUnGsPzgH">pic.twitter.com/3lUnGsPzgH</a></p>&mdash; Comité Intergremial de Santander - Oficial (@IntergremialSAN) <a href="https://x.com/IntergremialSAN/status/2099588772014739589?ref_src=twsrc%5Etfw">September 14, 2026</a></blockquote> <script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
+```
+
 **El primero es el calendario.** El 30 de septiembre es miércoles y coincide con el pago de la quincena, «un día de alto gasto de los hogares». Restringir la movilidad ese día, dice el Comité, «dificulta el acceso de los consumidores al comercio formal, con un efecto negativo sobre los ingresos de miles de negocios».
 
 **El segundo es la logística.** La restricción «incide sobre la distribución de mercancías e insumos en una jornada de alta demanda comercial». El cierre de mes es también el día en que muchos negocios reciben inventario para arrancar octubre.
