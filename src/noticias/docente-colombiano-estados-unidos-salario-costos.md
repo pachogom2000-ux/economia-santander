@@ -80,7 +80,7 @@ La organización dice haber llevado a **más de 1.800 docentes colombianos** des
 
 Cuatro cosas que un docente de Santander debería resolver antes de aplicar, y que no están en la información de la organización.
 
-**La visa es de intercambio, no de trabajo.** Participate Learning es patrocinador del programa **BridgeUSA**, que opera con visa **J-1**. Esa visa tiene tope de años y, en varios casos, obliga a regresar al país de origen por dos años al terminar antes de poder pedir otra visa. \[VERIFICAR: duración máxima de la categoría Teacher del J-1 y si a los colombianos les aplica la regla de los dos años de retorno, 22 CFR 62.24 y sección 212(e).]
+**La visa es de intercambio, no de trabajo.** Participate Learning es patrocinador del programa **BridgeUSA**, que opera con visa **J-1**. Esa visa tiene tope de años y, en varios casos, obliga a regresar al país de origen por dos años al terminar antes de poder pedir otra visa.
 
 **El puesto en Colombia.** Un docente oficial vinculado por el Decreto 1278 no tiene una figura de comisión para irse dos años a enseñar afuera. 
 
