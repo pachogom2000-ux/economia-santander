@@ -1,7 +1,7 @@
 ---
 layout: noticia.njk
 eleventyExcludeFromCollections: false
-title: "Día sin carro: gremios alertan por ventas y abastecimiento"
+title: Gremios de Santander, preocupados por día sin carro en Bucaramanga
 date: 2026-09-15T08:01:00.000-05:00
 categoria: Comercio y consumo
 chipTipo: propio
