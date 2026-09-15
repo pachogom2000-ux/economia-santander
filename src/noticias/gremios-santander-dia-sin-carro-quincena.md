@@ -1,20 +1,20 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
-title: "Día sin carro: gremios alertan por ventas y abastecimiento"
-date: 2026-09-15T06:00:00.000-05:00
+eleventyExcludeFromCollections: false
+title: Gremios de Santander, preocupados por día sin carro en Bucaramanga
+date: 2026-09-15T08:01:00.000-05:00
 categoria: Comercio y consumo
 chipTipo: propio
 chipLabel: Redacción propia
 excerpt: Más de 20 gremios del Comité Intergremial de Santander piden al AMB una
   mesa de diálogo. El 30 de septiembre cae en quincena y frena la logística.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/comercio-bucarama.jpg
-imagenAlt: Comercio en el centro de Bucaramanga en un día de alta afluencia
+imagen: /assets/uploads/panoramica-viaducto-bucaramanga.webp
+imagenAlt: Bucaramanga en un día de alta afluencia
 imagenTitle: Gremios de Santander y la jornada del día sin carro y sin moto
 imagenPie: Los gremios advierten que el 30 de septiembre coincide con el pago de
   la quincena, uno de los días de mayor gasto de los hogares.
-imagenCredito: Archivo particular
+imagenCredito: Archivo Tránsito Bucaramanga
 tags: noticias
 ---
 El **Comité Intergremial de Santander**, que agrupa a más de veinte gremios y entidades del sector productivo, pidió el **14 de septiembre** al **Área Metropolitana de Bucaramanga** abrir una mesa de diálogo sobre la jornada del **día sin carro y sin moto del 30 de septiembre**.
