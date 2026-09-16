@@ -5,7 +5,7 @@ date: 2026-09-16T07:00:00.000-05:00
 categoria: Impuestos y regulación
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "Si su negocio le paga a un independiente que no factura, el gasto solo vale ante la DIAN con documento soporte electrónico. Requisitos, plazos y qué se pierde."
+excerpt: "Si su negocio le paga a un independiente que no factura, el gasto solo vale ante la DIAN con documento soporte electrónico. Requisitos, plazos y sanción."
 autor: Francisco Gómez - Director
 guia: true
 tags: noticias
