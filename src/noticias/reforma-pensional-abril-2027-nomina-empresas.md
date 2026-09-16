@@ -18,7 +18,7 @@ Y hay un frente que en Santander pesa más que en otras regiones: los **contrati
 
 ## ¿Qué decidió la Corte y qué falta?
 
-Unos **90 artículos** de la ley quedaron en firme frente a los cuestionamientos de procedimiento. Pero la Corte devolvió a la **Cámara de Representantes** tres artículos completos, seis apartes de otros y una proposición de artículo nuevo, para que se repita el trámite que se saltó en 2024. La Cámara tiene **30 días hábiles** desde la notificación, que se cumplió el 17 de septiembre.
+Unos **90 artículos** de la ley quedaron en firme frente a los cuestionamientos de procedimiento. Pero la Corte devolvió a la **Cámara de Representantes** tres artículos completos, seis apartes de otros y una proposición de artículo nuevo, para que se repita el trámite que se saltó en 2024. La Cámara tiene **30 días hábiles** desde la notificación, que se cumple el 17 de septiembre.
 
 Lo avalado rige el 1 de abril de 2027. Lo devuelto dependerá de que la Cámara lo corrija a tiempo.
 
@@ -74,7 +74,7 @@ El orden que propone KPMG es este, y conviene tomarlo literalmente:
 
 El área metropolitana de Bucaramanga cerró 2025 con **610.002 ocupados**, de los cuales **278.738 están en la informalidad**. Los otros **331.264** son, en principio, la población que una empresa tiene que reclasificar antes de abril.
 
-Y la mayoría queda de un solo lado del umbral. Con el mínimo en $1.750.905, cualquier trabajador que gane hasta **$4.027.082** cotiza completo a Colpensiones: en una región donde [dos de cada tres empresas son de una sola persona](/noticias/cierre-empresas-amb-2025-icv/) y el empleo formal se concentra en salarios cercanos al mínimo, el componente de ahorro individual será la excepción, no la regla.
+Y la mayoría queda de un solo lado del umbral. Con el mínimo en $1.750.905, cualquier trabajador que gane hasta **$4.027.082** cotiza completo a Colpensiones: en una región donde [dos de cada tres empresas son de una sola persona](/noticias/cierre-empresas-amb-2025-icv/) es razonable esperar que el componente de ahorro individual sea la excepción y no la regla. [VERIFICAR: distribución salarial del empleo formal en el AMB, GEIH del DANE.]
 
 El otro frente es el de los contratistas. El área metropolitana tiene una nómina pública —Gobernación, alcaldías, universidades, hospitales— y una privada de servicios que funcionan en buena parte por prestación de servicios. Para esas entidades, el descuento y pago de la cotización es el cambio operativo más grande de la reforma, y a la vez el que menos se ha discutido.
 
