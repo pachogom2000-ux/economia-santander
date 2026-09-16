@@ -1,15 +1,18 @@
 ---
 layout: noticia.njk
+eleventyExcludeFromCollections: false
 title: "Documento soporte DIAN: la cuenta de cobro ya no basta"
 date: 2026-09-16T07:00:00.000-05:00
 categoria: Impuestos y regulación
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "Si su negocio le paga a un independiente que no factura, el gasto solo vale ante la DIAN con documento soporte electrónico. Requisitos, plazos y sanción."
+excerpt: Si su negocio le paga a un independiente que no factura, el gasto solo
+  vale ante la DIAN con documento soporte electrónico. Requisitos, plazos y
+  sanción.
 autor: Francisco Gómez - Director
+imagen: /assets/uploads/facturacion-electronica-dian.webp
 guia: true
 tags: noticias
-eleventyExcludeFromCollections: true
 ---
 Un negocio le paga **$2 millones a un electricista** por transferencia. El electricista entrega una cuenta de cobro, el pago queda en el extracto y en la contabilidad. Y en la declaración de renta, la **DIAN** puede rechazar ese gasto como si nunca hubiera existido.
 
