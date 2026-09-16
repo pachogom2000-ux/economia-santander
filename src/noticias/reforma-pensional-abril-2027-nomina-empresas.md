@@ -1,14 +1,21 @@
 ---
 layout: noticia.njk
+eleventyExcludeFromCollections: false
 title: "Reforma pensional: qué cambia en su nómina el 1 de abril"
-date: 2026-09-16T08:00:00.000-05:00
+date: 2026-09-16T06:07:00.000-05:00
 categoria: Impuestos y regulación
 chipTipo: recirc
 chipLabel: "Fuente: KPMG"
-excerpt: "La Corte fijó el 1 de abril de 2027 para la reforma pensional. Quién queda en transición, cómo se parte el 16% en $4.027.082 y qué cambia para contratistas."
+excerpt: La Corte fijó el 1 de abril de 2027 para la reforma pensional. Quién
+  queda en transición, cómo se parte el 16% en $4.027.082 y qué cambia para
+  contratistas.
 autor: Francisco Gómez - Director
+imagen: /assets/uploads/reforma-pensional-colombia.webp
+imagenAlt: "Dos pensionados miran sus ingresos ¿qué cambia la reforma pensional? "
+imagenTitle: Cambios en la reforma pensional desde el 1 de abril de 2027
+imagenPie: "Lo avalado por la reforma pensional cambia el 1 de abril de 2027. "
+imagenCredito: Suminisitrada KPMG
 tags: noticias
-eleventyExcludeFromCollections: true
 ---
 La reforma pensional ya tiene fecha: **1 de abril de 2027**. La **Corte Constitucional** publicó el 15 de septiembre el texto de la **Sentencia C-264 de 2026**, que declaró exequible la mayor parte de la **Ley 2381 de 2024** frente a los vicios de trámite que se le reprochaban, por **siete votos contra uno**.
 
