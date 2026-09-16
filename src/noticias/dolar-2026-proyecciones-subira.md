@@ -61,9 +61,9 @@ Para dimensionarlo: el rebote más fuerte del año —el de finales de agosto—
 
 Lo contrario de lo que suele suponerse: **no está recortando tasas**.
 
-La Fed mantuvo su tasa en **3,5% – 3,75%** el 28 y 29 de julio, la **quinta reunión consecutiva sin cambios**. Y hubo tres disidencias, todas pidiendo **subirla**: la mayor cantidad de votos en esa dirección desde septiembre de 2016.
+**El 16 de septiembre la Fed subió su tasa 25 puntos básicos, a 3,75% – 4,00%**, por unanimidad: la primera alza desde julio de 2023. Rompió una racha de cinco reuniones sin cambios, y en la de julio ya había habido tres disidencias pidiendo subir, la mayor cantidad en esa dirección desde 2016. Las proyecciones del Comité apuntan a **una subida más antes de que termine 2026**. El detalle está en [la nota sobre la decisión y su efecto en el peso](/noticias/fed-septiembre-2026-decision-tasas-dolar/).
 
-La inflación estadounidense va en **3,5%**, lejos de la meta de 2%, empujada por los choques de oferta de la guerra con Irán. El mercado le asignaba **34% de probabilidad** a un alza en la reunión del **15 y 16 de septiembre**, que es la semana entrante y el próximo dato que puede mover la tasa.
+La inflación estadounidense va en **3,5%**, lejos de la meta de 2%, empujada por los choques de oferta de la guerra con Irán. El 7 de septiembre el mercado le asignaba apenas **34% de probabilidad** a esa alza; una semana después era 91%, y la Fed la confirmó.
 
 Esto importa para Colombia por una razón: si la Fed sube, el diferencial de tasas que sostiene al peso se estrecha.
 
@@ -139,7 +139,7 @@ Un dólar que sube reparte al revés que uno que baja, y el departamento tiene l
 
 Que el dólar suba o baje de aquí a diciembre. Las proyecciones de este año son la mejor prueba de que ese pronóstico no está disponible, ni siquiera para quienes lo hacen de oficio.
 
-Lo que sí queda claro es el mapa de fuerzas. Empujan hacia arriba una Fed que discute subir tasas la semana entrante, un petróleo barato, un capital extranjero que en julio empezó a vender y un Banco de la República comprando dólares. Empujan hacia abajo unas remesas en récord, una tasa de 12% que sigue siendo imán —y que con la inflación de agosto en 6,24% tiene menos margen que nunca para bajar— y un gobierno nuevo que anunció ajuste.
+Lo que sí queda claro es el mapa de fuerzas. Empujan hacia arriba una Fed que ya subió tasas y proyecta otra alza, un petróleo barato, un capital extranjero que en julio empezó a vender y un Banco de la República comprando dólares. Empujan hacia abajo unas remesas en récord, una tasa de 12% que sigue siendo imán —y que con la inflación de agosto en 6,24% tiene menos margen que nunca para bajar— y un gobierno nuevo que anunció ajuste.
 
 El rebote de agosto es el mejor recordatorio de por qué no conviene leer seis días de mercado como un cambio de ciclo.
 
