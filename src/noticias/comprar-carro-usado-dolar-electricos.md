@@ -1,23 +1,25 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Carro usado: el dólar barato no le bajó el precio"
-date: 2026-09-10T12:00:00.000-05:00
+date: 2026-09-16T05:04:00.000-05:00
 categoria: Comercio y consumo
 chipTipo: propio
 chipLabel: Redacción propia
 excerpt: Los usados están estables desde febrero. Lo que abarató la revaluación
-  fue el carro nuevo, justo cuando la mitad de los que se venden ya son híbridos.
+  fue el carro nuevo, justo cuando la mitad de los que se venden ya son
+  híbridos.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/comprar-carro-usado-2026.jpg
-imagenAlt: Vitrina de venta de vehículos usados en Bucaramanga
-imagenTitle: "¿Es buen momento para comprar un carro usado en 2026?"
-imagenPie: En agosto de 2026, los vehículos eléctricos e híbridos fueron el 50,6% de los carros nuevos matriculados en Colombia.
-imagenCredito: Archivo particular
+imagen: /assets/uploads/carro-usado-fotorech-pixabay.webp
+imagenAlt: Vehículos usados en Bucaramanga
+imagenTitle: ¿Es buen momento para comprar un carro usado en 2026?
+imagenPie: En agosto de 2026, los vehículos eléctricos e híbridos fueron el
+  50,6% de los carros nuevos matriculados en Colombia.
+imagenCredito: Banco de imágenes Pixabay/Fotorech libre de derechos
 guia: true
 tags: noticias
 ---
-La pregunta circula desde que el dólar bajó a la franja de los $3.100: si importar salió más barato, ¿ya bajaron los carros usados?
+La pregunta circula desde que el dólar está en la franja de los $3.100: si importar salió más barato, ¿ya bajaron los carros usados?
 
 **No. Y esa es la parte contraintuitiva.**
 
@@ -50,9 +52,9 @@ En **agosto de 2026, los vehículos eléctricos e híbridos fueron el 50,6% de t
 En lo corrido del año hasta agosto:
 
 | Tecnología | Matrículas | Variación anual |
-| --- | --- | --- |
-| Eléctricos | 33.889 | **+222,5%** |
-| Híbridos | 63.210 | +61% |
+| ---------- | ---------- | --------------- |
+| Eléctricos | 33.889     | **+222,5%**     |
+| Híbridos   | 63.210     | +61%            |
 
 Eso significa que **el carro de combustión que usted compre hoy va a competir, cuando quiera revenderlo, con un mercado de usados eléctricos e híbridos que hoy casi no existe.**
 
