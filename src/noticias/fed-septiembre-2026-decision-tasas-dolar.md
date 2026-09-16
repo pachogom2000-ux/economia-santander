@@ -1,11 +1,11 @@
 ---
 layout: noticia.njk
-title: "Fed sube tasas por primera vez desde 2023: efecto en el dólar"
+title: "Fed sube tasas por primera vez desde 2023 y mueve el dólar"
 date: 2026-09-16T13:30:00.000-05:00
 categoria: Indicadores económicos
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "La Reserva Federal subió su tasa a 3,75%–4,00% por unanimidad y proyecta otra alza en 2026. Qué significa para el peso, el Emisor y el bolsillo santandereano."
+excerpt: "La Reserva Federal subió su tasa a 3,75%–4,00% por unanimidad y proyecta otra alza en 2026. Qué significa para el peso, el Emisor y su bolsillo."
 autor: Francisco Gómez - Director
 tags: noticias
 ---
