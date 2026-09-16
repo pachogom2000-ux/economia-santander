@@ -5,7 +5,7 @@ date: 2026-09-16T08:00:00.000-05:00
 categoria: Impuestos y regulación
 chipTipo: recirc
 chipLabel: "Fuente: KPMG"
-excerpt: "La Corte fijó el 1 de abril de 2027 para la reforma pensional. Quién queda en transición, cómo se reparte el 16% desde $4.027.082 y qué cambia para contratistas."
+excerpt: "La Corte fijó el 1 de abril de 2027 para la reforma pensional. Quién queda en transición, cómo se parte el 16% en $4.027.082 y qué cambia para contratistas."
 autor: Francisco Gómez - Director
 tags: noticias
 eleventyExcludeFromCollections: true
