@@ -1,12 +1,20 @@
 ---
 layout: noticia.njk
-title: "Fed sube tasas por primera vez desde 2023 y mueve el dólar"
-date: 2026-09-16T13:30:00.000-05:00
+title: Fed sube tasas por primera vez desde 2023 y mueve el dólar
+date: 2026-09-16T13:02:00.000-05:00
 categoria: Indicadores económicos
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "La Reserva Federal subió su tasa a 3,75%–4,00% por unanimidad y proyecta otra alza en 2026. Qué significa para el peso, el Emisor y su bolsillo."
+excerpt: La Reserva Federal subió su tasa a 3,75%–4,00% por unanimidad y
+  proyecta otra alza en 2026. Qué significa para el peso, el Emisor y su
+  bolsillo.
 autor: Francisco Gómez - Director
+imagen: /assets/uploads/fed-estados-unidos.webp
+imagenAlt: Kevin Warsh, presidente de la FED, Estados Unidos
+imagenTitle: El presidente de la Reserva Federal de Estados Unidos (FED), Kevin
+  Warsh, anunció el incremento de 25 pb en las tasas de interés.
+imagenPie: "Kevin Warsh, presidente de la FED. "
+imagenCredito: "Tomada del sitio oficial de la FED. "
 tags: noticias
 ---
 La **Reserva Federal** subió su tasa de interés **25 puntos básicos**, a un rango de **3,75% – 4,00%**, este miércoles 16 de septiembre. La decisión fue **unánime, 12 votos contra 0**, y es la **primera alza desde julio de 2023**.
