@@ -5,9 +5,7 @@ date: 2026-09-16T13:02:00.000-05:00
 categoria: Indicadores económicos
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: La Reserva Federal subió su tasa a 3,75%–4,00% por unanimidad y
-  proyecta otra alza en 2026. Qué significa para el peso, el Emisor y su
-  bolsillo.
+excerpt: "La Reserva Federal subió su tasa a 3,75%–4,00% por unanimidad y proyecta otra alza en 2026. Qué significa para el peso, el Emisor y para su bolsillo."
 autor: Francisco Gómez - Director
 imagen: /assets/uploads/fed-estados-unidos.webp
 imagenAlt: Kevin Warsh, presidente de la FED, Estados Unidos
@@ -31,7 +29,7 @@ Sobre el empleo, la Fed anota que *"las ganancias de empleo han seguido el ritmo
 
 Las proyecciones de los miembros del Comité, el llamado *dot plot*, apuntan más lejos: la **mediana proyecta una tasa de 4,125% al cierre de 2026**, es decir, **una subida más** en las dos reuniones que quedan del año. Cuatro miembros ven dos alzas adicionales; solo dos no ven ninguna.
 
-El presidente de la Fed, **Kevin Warsh**, habla a la 1:30 p. m. hora de Colombia. Esta nota se actualizará con lo que diga sobre el ritmo de las próximas decisiones.
+El presidente de la Fed, **Kevin Warsh**, no dejó dudas en la rueda de prensa sobre por dónde va: *"Las lecturas de inflación de este verano no me dicen que las tendencias de fondo hayan mejorado de forma significativa"*. Mientras hablaba, el S&P 500 borró la subida que traía. El mensaje fue leído como una puerta abierta a la segunda alza, sin compromiso con un ciclo largo.
 
 ## ¿Qué esperaba el mercado?
 
@@ -51,7 +49,7 @@ Y porque el empleo aguanta. Ya en julio hubo **tres disidencias pidiendo subir**
 
 La mecánica es esta. El capital extranjero que compra deuda colombiana lo hace por la diferencia entre lo que paga Colombia (12%) y lo que paga Estados Unidos. Cada punto que la Fed sube es un punto menos de atractivo para el peso, y por eso una subida en Washington empuja el dólar hacia arriba en Bogotá.
 
-Pero el efecto ya estaba descontado. La **TRM de hoy es $3.109,30**, y si el mercado le daba 91% a la subida, el dólar de esta semana ya la traía incorporada. La TRM que rija el jueves 17 dirá si hubo sorpresa; la nota se actualizará con ese dato.
+Pero el efecto ya estaba descontado. La **TRM de hoy es $3.100,45**, $8,85 por debajo de la del martes, y si el mercado le daba 91% a la subida, el dólar de esta semana ya la traía incorporada. La TRM que rija el jueves 17, que se certifica esta tarde con el cierre del mercado, dirá si hubo sorpresa; la nota se actualizará con ese dato.
 
 Lo que sí puede mover la tasa de cambio es la señal de **una alza más este año**. Un diferencial que se estrecha dos veces antes de diciembre es un argumento más para que el dólar deje la franja de los $3.100, que es lo que las proyecciones del consenso —$3.300 para diciembre— venían anticipando sin que el mercado les hiciera caso.
 
@@ -75,4 +73,4 @@ La Fed acaba de darle un argumento a los miembros de la Junta que no quieren rec
 
 **Crédito en Colombia**: la decisión de hoy no toca la tasa de usura de octubre ni las tasas de los bancos, que dependen del Banco de la República. Lo que hace es alejar el recorte que muchos esperaban para fin de año.
 
-*La decisión corresponde al comunicado del Comité Federal de Mercado Abierto del 16 de septiembre de 2026, aprobado por 12 votos contra 0. Las proyecciones de tasa son las del Resumen de Proyecciones Económicas de la misma fecha. Las probabilidades de mercado son de CME FedWatch al 14 de septiembre. La TRM es la certificada por la Superintendencia Financiera para el 16 de septiembre. La reacción de mercados es la reportada por Yahoo Finance en los minutos posteriores al anuncio.*
+*La decisión corresponde al comunicado del Comité Federal de Mercado Abierto del 16 de septiembre de 2026, aprobado por 12 votos contra 0. Las proyecciones de tasa son las del Resumen de Proyecciones Económicas de la misma fecha. Las probabilidades de mercado son de CME FedWatch al 14 de septiembre. La TRM es la certificada por la Superintendencia Financiera para el 16 de septiembre ($3.100,45). Las declaraciones de Kevin Warsh son de la rueda de prensa posterior a la reunión, según la cobertura de CNBC. La reacción de mercados es la reportada por Yahoo Finance en los minutos posteriores al anuncio.*
