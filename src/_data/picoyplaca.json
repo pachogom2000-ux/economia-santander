@@ -46,7 +46,19 @@
         { "fecha": "2026-09-12", "digitos": "1 y 2" },
         { "fecha": "2026-09-19", "digitos": "3 y 4" },
         { "fecha": "2026-09-26", "digitos": "5 y 6" },
-        { "fecha": "2026-10-03", "digitos": "7 y 8" }
+        { "fecha": "2026-10-03", "digitos": "7 y 8" },
+        { "fecha": "2026-10-10", "digitos": "9 y 0" },
+        { "fecha": "2026-10-17", "digitos": "1 y 2" },
+        { "fecha": "2026-10-24", "digitos": "3 y 4" },
+        { "fecha": "2026-10-31", "digitos": "5 y 6" },
+        { "fecha": "2026-11-07", "digitos": "7 y 8" },
+        { "fecha": "2026-11-14", "digitos": "9 y 0" },
+        { "fecha": "2026-11-21", "digitos": "1 y 2" },
+        { "fecha": "2026-11-28", "digitos": "3 y 4" },
+        { "fecha": "2026-12-05", "digitos": "5 y 6" },
+        { "fecha": "2026-12-12", "digitos": "7 y 8" },
+        { "fecha": "2026-12-19", "digitos": "9 y 0" },
+        { "fecha": "2026-12-26", "digitos": "1 y 2" }
       ]
     },
     {
