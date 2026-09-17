@@ -5,7 +5,7 @@ date: 2026-09-17T06:00:00.000-05:00
 categoria: Impuestos y regulación
 chipTipo: recirc
 chipLabel: "Fuente: Tránsito de Bucaramanga"
-excerpt: "Desde el lunes 5 de octubre cambian los dígitos del pico y placa en Bucaramanga: cada placa pasa al día siguiente. Tabla completa, sábados y multa de $875.453."
+excerpt: "Desde el lunes 5 de octubre cambian los dígitos del pico y placa en Bucaramanga: cada placa pasa al día siguiente. Tabla completa, sábados y multa."
 autor: Francisco Gómez - Director
 guia: true
 tags: noticias
