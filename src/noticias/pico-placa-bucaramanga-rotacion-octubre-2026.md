@@ -1,15 +1,23 @@
 ---
 layout: noticia.njk
+eleventyExcludeFromCollections: false
 title: "Pico y placa Bucaramanga: así rota desde el 5 de octubre"
 date: 2026-09-17T06:00:00.000-05:00
-categoria: Impuestos y regulación
+categoria: Comercio y consumo
 chipTipo: recirc
 chipLabel: "Fuente: Tránsito de Bucaramanga"
-excerpt: "Desde el lunes 5 de octubre cambian los dígitos del pico y placa en Bucaramanga: cada placa pasa al día siguiente. Tabla completa, sábados y multa."
+excerpt: "Desde el lunes 5 de octubre cambian los dígitos del pico y placa en
+  Bucaramanga: cada placa pasa al día siguiente. Tabla completa, sábados y
+  multa."
 autor: Francisco Gómez - Director
+imagen: /assets/uploads/panoramica-bucaramanga-archivoparticular-economiasantander.webp
+imagenAlt: "El pico y placa en Bucaramanga se actualizará el próximo 5 de
+  octubre de 2026. "
+imagenTitle: Movilidad en Bucaramanga.
+imagenPie: "Cada trimestre cambia la rotación del pico y placa en Bucaramanga. "
+imagenCredito: "Archivo particular. "
 guia: true
 tags: noticias
-eleventyExcludeFromCollections: true
 ---
 Desde el **lunes 5 de octubre** el pico y placa de Bucaramanga cambia de dígitos. Es la **cuarta y última rotación de 2026**, y la regla para no equivocarse cabe en una frase: **cada placa pasa al día siguiente.**
 
