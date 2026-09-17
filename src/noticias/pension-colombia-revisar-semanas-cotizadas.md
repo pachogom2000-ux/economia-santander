@@ -1,15 +1,23 @@
 ---
 layout: noticia.njk
+eleventyExcludeFromCollections: false
 title: "Pensión en Colombia: cómo revisar sus semanas cotizadas"
-date: 2026-09-17
-categoria: "Finanzas personales"
-chipTipo: "propio"
-chipLabel: "Redacción propia"
-excerpt: "Cómo pedir la historia laboral en Colpensiones y en los fondos privados, leer sus semanas cotizadas y qué hacer si faltan semanas que sí trabajó."
-autor: "Francisco Gómez - Director"
+date: 2026-09-17T05:42:00.000-05:00
+categoria: Finanzas personales
+chipTipo: propio
+chipLabel: Redacción propia
+excerpt: Cómo pedir la historia laboral en Colpensiones y en los fondos
+  privados, leer sus semanas cotizadas y qué hacer si faltan semanas que sí
+  trabajó.
+autor: Francisco Gómez - Director
+imagen: /assets/uploads/historia-laboral.webp
+imagenAlt: La historia laboral de cada afiliado sigue siendo el dato que se debe revisar.
+imagenTitle: "Revisar cuántas semanas tiene cotizadas en su historial laboral
+  define su pensión. "
+imagenPie: Semanas cotizadas a pensión en Colombia.
+imagenCredito: Pixabay-taniarose.
 guia: true
 tags: noticias
-eleventyExcludeFromCollections: true
 ---
 Revisar cuántas **semanas cotizadas** tiene un afiliado a pensión en Colombia dejó de ser un trámite para la vejez. Con la reforma pensional en camino, esa cifra decide en qué sistema queda cada persona.
 
@@ -49,10 +57,10 @@ Para dudas o fallas de la plataforma, Colpensiones atiende por la línea gratuit
 
 El trámite, según la información publicada por cada fondo, es similar en todos:
 
-- **Porvenir:** en [su sitio de certificados y extractos](https://www.porvenir.com.co/en/web/certificados-y-extractos/certificado-de-historia-laboral), o desde la Zona Transaccional, en "Pensiones obligatorias" > "Historia laboral".
-- **Protección:** Zona Transaccional en proteccion.com, con cédula y clave, en "Pensiones" > "Historia laboral".
-- **Colfondos:** desde "Mi Cuenta" en [colfondos.com.co](https://www.colfondos.com.co/dxp/personas/pensiones-obligatorias/historia-laboral).
-- **Skandia:** iniciando sesión en skandia.co, en "Pensión obligatoria y cesantías" > "Historia laboral".
+* **Porvenir:** en [su sitio de certificados y extractos](https://www.porvenir.com.co/en/web/certificados-y-extractos/certificado-de-historia-laboral), o desde la Zona Transaccional, en "Pensiones obligatorias" > "Historia laboral".
+* **Protección:** Zona Transaccional en proteccion.com, con cédula y clave, en "Pensiones" > "Historia laboral".
+* **Colfondos:** desde "Mi Cuenta" en [colfondos.com.co](https://www.colfondos.com.co/dxp/personas/pensiones-obligatorias/historia-laboral).
+* **Skandia:** iniciando sesión en skandia.co, en "Pensión obligatoria y cesantías" > "Historia laboral".
 
 Quien no recuerda en qué fondo o régimen ha cotizado puede empezar por el **Sistema de Información de la Protección Social (SISPRO)** o por el mismo Colpensiones, que informa el historial de traslados entre administradoras.
 
@@ -77,7 +85,7 @@ El **parágrafo del artículo 2 de la Resolución 247 de 2013** de Colpensiones 
 
 Si Colpensiones no resuelve de fondo dentro de ese plazo, el afiliado puede insistir con un derecho de petición y, si persiste el silencio, con una acción de tutela por violación al debido proceso, como ocurrió en el caso resuelto por la Corte.
 
-`[VERIFICAR]`: ninguna de las fuentes oficiales consultadas fija un plazo límite —en años— para que el propio afiliado radique la solicitud de corrección; lo que existe es el término de respuesta de la entidad. Conviene confirmar con un abogado laboralista si existe algún término de caducidad distinto.
+Ninguna de las fuentes oficiales consultadas fija un plazo límite —en años— para que el propio afiliado radique la solicitud de corrección; lo que existe es el término de respuesta de la entidad. Conviene que usted haga una consulta con un abogado laboralista si existe algún término de caducidad distinto.
 
 ## ¿Qué cambia para el contratista del área metropolitana?
 
@@ -101,4 +109,4 @@ Para el contratista independiente, eso hace más importante revisar la historia 
 
 **Cinco.** Si Colpensiones no responde de fondo en 60 días hábiles, radique un derecho de petición insistiendo en la respuesta.
 
-*Esta guía se apoya en la información publicada por Colpensiones sobre consulta y corrección de historia laboral, en la Sentencia T-160 de 2025 y la Sentencia C-264 de 2026 de la Corte Constitucional, en la Ley 1955 de 2019 (artículo 244) y en los sitios de Porvenir, Protección, Colfondos y Skandia, consultados el 17 de septiembre de 2026. Quedan pendientes de confirmar con un abogado laboralista de Bucaramanga: si existe un término de caducidad para que el afiliado radique la corrección, y los casos más frecuentes de corrección de historia laboral entre contratistas de la región. También queda pendiente una consulta directa a Asofondos y al Ministerio del Trabajo sobre el estado de implementación de la reforma para independientes, y una fotografía propia para ilustrar la nota.*
+*Esta guía se apoya en la información publicada por Colpensiones sobre consulta y corrección de historia laboral, en la Sentencia T-160 de 2025 y la Sentencia C-264 de 2026 de la Corte Constitucional, en la Ley 1955 de 2019 (artículo 244) y en los sitios de Porvenir, Protección, Colfondos y Skandia, consultados el 17 de septiembre de 2026.*
