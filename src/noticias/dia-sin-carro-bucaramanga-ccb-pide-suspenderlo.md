@@ -6,16 +6,14 @@ date: 2026-09-17T12:00:00.000-05:00
 categoria: Comercio y consumo
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "La Cámara de Comercio de Bucaramanga pidió suspender el día sin
-  carro del 30 de septiembre por su impacto en el comercio y la economía de
-  la región."
+excerpt: La Cámara de Comercio de Bucaramanga pidió suspender el día sin carro
+  del 30 de septiembre por su impacto en el comercio y la economía de la región.
 autor: Francisco Gómez - Director
 imagen: /assets/uploads/panoramica-viaducto-bucaramanga.webp
-imagenAlt: Vista panorámica del viaducto de Bucaramanga, sin restricción
-  vehicular
+imagenAlt: Vista panorámica del viaducto de Bucaramanga, sin restricción vehicular
 imagenTitle: Día sin carro en Bucaramanga, la CCB pide suspenderlo
-imagenPie: La Cámara de Comercio de Bucaramanga pidió suspender la jornada
-  del 30 de septiembre por su efecto en el comercio local.
+imagenPie: La Cámara de Comercio de Bucaramanga pidió suspender la jornada del
+  30 de septiembre por su efecto en el comercio local.
 imagenCredito: Archivo Tránsito Bucaramanga
 tags: noticias
 ---
@@ -28,6 +26,8 @@ Es un paso más fuerte que el que había dado el gremio apenas tres días antes.
 El texto, fechado en Bucaramanga el 17 de septiembre, hace "un respetuoso llamado a la empatía, la conciencia colectiva y la solidaridad de las autoridades metropolitanas" para suspender la jornada.
 
 La CCB no cuestiona el fin de la medida: reconoce "la importancia de avanzar en acciones de sostenibilidad y cuidado del medio ambiente". Pero sostiene que esos objetivos "pueden abordarse mediante otras estrategias, igualmente contundentes, que no afecten la economía local", y pide que se concilien con "la protección de la dinámica económica y el tejido empresarial de la región".
+
+https://economiasantander.com/assets/uploads/juan-carlos-rinco-n-lie-vano-presidente-ejecutivo-ccb-di-a-sin-carro.m4a.mp4
 
 ## La jornada, en contexto
 
