@@ -595,6 +595,7 @@
 // ---------------------------------------------------------------------
   (function () {
     var LLAVE = 'es-consent-analitica';
+    var LLAVE_PUBLICIDAD = 'es-consent-publicidad';
     var aviso = document.getElementById('cookie-aviso');
     if (!aviso) return;
 
@@ -603,6 +604,9 @@
     }
     function guardar(valor) {
       try { window.localStorage.setItem(LLAVE, valor); } catch (e) {}
+    }
+    function guardarPublicidad(valor) {
+      try { window.localStorage.setItem(LLAVE_PUBLICIDAD, valor); } catch (e) {}
     }
     function mostrar() { aviso.hidden = false; }
     function ocultar() { aviso.hidden = true; }
@@ -613,12 +617,20 @@
     aviso.querySelectorAll('[data-cookies]').forEach(function (b) {
       b.addEventListener('click', function () {
         var valor = b.getAttribute('data-cookies');
-        guardar(valor);
+        // Tres respuestas posibles: "no" apaga todo; "medicion" deja la
+        // analítica y niega la publicidad personalizada; "si" acepta las dos.
+        // Sin AdSense activo solo existen "no" y "si", y "si" no enciende nada
+        // de publicidad porque el interruptor del <head> lo impide.
+        var analitica = valor === 'no' ? 'no' : 'si';
+        var publicidad = valor === 'si' ? 'si' : 'no';
+        guardar(analitica);
+        guardarPublicidad(publicidad);
         ocultar();
         // La analítica ya venía corriendo: aceptar no hace nada nuevo y
         // rechazar la apaga de inmediato, sin necesidad de recargar.
-        if (valor === 'no' && window.esApagarAnalitica) window.esApagarAnalitica();
-        if (valor === 'si' && window.esCargarAnalitica) window.esCargarAnalitica();
+        if (analitica === 'no' && window.esApagarAnalitica) window.esApagarAnalitica();
+        if (analitica === 'si' && window.esCargarAnalitica) window.esCargarAnalitica();
+        if (window.esActualizarPublicidad) window.esActualizarPublicidad(publicidad);
       });
     });
 

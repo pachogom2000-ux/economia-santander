@@ -319,6 +319,15 @@
   .ad-leaderboard { min-height: 106px; }
   .ad-rectangle { min-height: 258px; }
   .ad-wrap { padding: 26px 0; }
+  /* Unidades de AdSense: alto reservado antes de que cargue el anuncio, para
+     que no haya salto de diseño (CLS). Las medidas son las del cajón vacío. */
+  .adsense { text-align: center; }
+  .adsense > .ad-tag { display: block; margin-bottom: 6px; font-size: 9px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-muted); }
+  .adsense .adsbygoogle { margin: 0 auto; }
+  .adsense-rectangulo .adsbygoogle { width: 336px; max-width: 100%; height: 280px; }
+  .adsense-billboard .adsbygoogle { width: 970px; max-width: 100%; height: 250px; }
+  @media (max-width: 1000px) { .adsense-billboard .adsbygoogle { height: 100px; } }
+  .cookie-btn-medicion { background: transparent; }
   .ad-wrap.tight { padding: 0 0 26px; }
 
   /* ---------- anuncios vendidos ---------- */

@@ -118,14 +118,10 @@ ogType: website
     </div>
   </section>
 
-  <!-- Espacio publicitario: rectángulo. Ideal para patrocinio del bloque de tasas (bancos, fiduciarias, fintech). -->
-  <div class="wrap ad-wrap">
-    <div class="ad-slot ad-rectangle">
-      <span class="ad-label">Espacio publicitario · patrocinio de sección</span>
-      <span class="ad-size">Rectángulo · 300 × 250 o 336 × 280</span>
-      <span class="ad-hint">Contexto financiero: bancos, fiduciarias, fintech y constructoras</span>
-    </div>
-  </div>
+  {# Espacio publicitario: rectángulo antes del bloque de tasas. Con AdSense
+     activo (_data/publicidad.json) pinta la unidad; si no, el cajón vacío. #}
+  {% set adFormato = 'rectangulo' %}
+  {% include "adsense-unidad.njk" %}
 
   <section class="section-block wrap" id="tasas">
     <div class="section-head">
@@ -446,11 +442,6 @@ ogType: website
     </div>
   </section>
   {% endif %}
-  <!-- Espacio publicitario: banner de cierre, antes del pie de página. -->
-  <div class="wrap ad-wrap">
-    <div class="ad-slot ad-billboard">
-      <span class="ad-label">Espacio publicitario</span>
-      <span class="ad-size">Billboard de cierre · 970 × 250</span>
-      <span class="ad-hint">Último impacto antes del pie de página</span>
-    </div>
-  </div>
+  {# Espacio publicitario: billboard de cierre, antes del pie de página. #}
+  {% set adFormato = 'billboard' %}
+  {% include "adsense-unidad.njk" %}

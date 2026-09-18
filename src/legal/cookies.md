@@ -2,9 +2,9 @@
 layout: legal.njk
 tituloLegal: Cookies y analítica
 title: Política de cookies | Economía Santander
-description: Qué cookies usa Economía Santander, para qué sirven y cómo rechazarlas. Solo se usan cookies de analítica de Google Analytics 4; no hay publicidad comportamental.
-resumen: Este sitio usa cookies de analítica y nada más. No hay rastreadores publicitarios, ni redes de anunciantes, ni venta de datos. Puede rechazarlas y el portal funciona igual.
-actualizado: 28 de julio de 2026
+description: Qué cookies usa Economía Santander, para qué sirven y cómo rechazarlas. Analítica de Google Analytics 4 y, si se activa y usted lo acepta, publicidad de Google AdSense.
+resumen: Este sitio usa cookies de analítica y, cuando la publicidad de Google esté activa, cookies publicitarias solo si usted las acepta por separado. No hay venta de datos. Puede rechazarlas y el portal funciona igual.
+actualizado: 17 de septiembre de 2026
 ---
 
 ## Qué es una cookie, sin rodeos
@@ -49,16 +49,35 @@ No es propiamente una cookie, pero conviene declararlo. La promoción del tinto 
 
 **Ese dato nunca sale de su equipo.** No viaja a ningún servidor, yo no lo veo y no se puede asociar con usted. Se borra cuando limpia los datos de navegación.
 
+### Publicidad — Google AdSense
+
+{% if publicidad.adsense.activo and publicidad.adsense.cliente %}
+**Está activa.** En dos espacios de la portada se muestran anuncios servidos por Google. Cómo funcionan depende de lo que usted decida en el aviso de cookies:
+
+| | |
+|---|---|
+| **Quién la pone** | Google (`_gcl_*`, `IDE`, `test_cookie` y similares) |
+| **Para qué** | Mostrar anuncios y, si usted acepta, elegirlos según su navegación |
+| **Duración** | Hasta 13 meses |
+| **¿Se puede rechazar?** | Sí. Los anuncios salen igual, pero sin cookies y sin basarse en lo que usted ve |
+
+- Si elige **"Aceptar todo"**, Google puede guardar cookies publicitarias y mostrarle anuncios personalizados.
+- Si elige **"Solo medición"** o **"Rechazar"**, Google no guarda cookies publicitarias en su navegador y los anuncios que vea son genéricos: dependen de la página, no de usted.
+
+Es una decisión separada de la analítica, y se cambia cuando quiera con el botón de abajo. Los anuncios los sirve Google bajo sus [condiciones de privacidad](https://policies.google.com/technologies/ads); este portal bloquea desde el panel de AdSense las categorías de préstamos rápidos, criptomonedas, apuestas y "hágase rico", porque no caben en un medio que explica cómo cuidar la plata.
+{% else %}
+**Hoy no está activa.** Los avisos que ve —Tienda Sinestrés y Central de Pirotecnia— son imágenes y enlaces fijos: no vienen de una red de anunciantes y no lo rastrean.
+
+El portal está preparado para incorporar publicidad servida por Google AdSense, que sí usa cookies. Cuando se active, esta página lo dirá aquí mismo y el aviso de cookies le pedirá **una decisión aparte** para la publicidad, distinta de la de analítica. Rechazarla no quita los anuncios: los deja genéricos y sin cookies.
+{% endif %}
+
 ### Lo que NO hay
 
 Vale la pena decirlo porque es raro:
 
-- **No hay cookies de publicidad.** Los avisos de Tienda Sinestrés y Central de Pirotecnia son imágenes y enlaces fijos, no vienen de una red de anunciantes y no lo rastrean.
 - **No hay botones de redes sociales** incrustados que reporten su visita a Facebook o a X.
-- **No hay mapas de calor, grabación de sesión ni herramientas que reconstruyan lo que usted hace en la pantalla.** Las dos herramientas que se usan cuentan visitas de forma agregada; ninguna reproduce su sesión.
+- **No hay mapas de calor, grabación de sesión ni herramientas que reconstruyan lo que usted hace en la pantalla.** Las herramientas de medición cuentan visitas de forma agregada; ninguna reproduce su sesión.
 - **No se venden ni se ceden sus datos a nadie.**
-
-Si algún día se incorpora publicidad servida por Google u otra red —que sí usa cookies de seguimiento—, este documento se actualizará **antes** de activarla y se le pedirá su consentimiento por separado.
 
 ## Cómo cambiar de opinión
 

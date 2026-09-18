@@ -4,7 +4,7 @@ tituloLegal: Publicidad y contenido patrocinado
 title: Publicidad y contenido patrocinado | Economía Santander
 description: Cómo funciona la publicidad en Economía Santander, la separación entre pauta y contenido periodístico, y los términos de las promociones vigentes.
 resumen: Cómo se identifica la publicidad, por qué la pauta no compra cobertura y cuáles son las condiciones de las promociones que aparecen en el portal.
-actualizado: 28 de julio de 2026
+actualizado: 17 de septiembre de 2026
 ---
 
 ## 1. La publicidad se identifica siempre
@@ -33,9 +33,15 @@ Dicho eso: si un anunciante de este portal lo trata mal, **quiero saberlo**. Esc
 
 ## 4. Cookies y publicidad
 
-Los avisos actuales son **imágenes y enlaces fijos**. No provienen de una red publicitaria, no usan cookies y no lo rastrean.
+Hay dos clases de avisos en el portal.
 
-Si en el futuro se incorpora publicidad servida por Google u otra red —que sí usa cookies de seguimiento—, se actualizará la [política de cookies](/legal/cookies/) **antes** de activarla y se le pedirá su consentimiento por separado.
+**Los vendidos directamente** —hoy, Tienda Sinestrés y Central de Pirotecnia— son imágenes y enlaces fijos. No provienen de una red publicitaria, no usan cookies y no lo rastrean.
+
+{% if publicidad.adsense.activo and publicidad.adsense.cliente %}
+**Los servidos por Google AdSense**, en dos espacios de la portada, sí pueden usar cookies. Solo lo hacen si usted acepta la publicidad personalizada en el aviso de cookies; si no, los anuncios salen genéricos y sin cookies. El detalle está en la [política de cookies](/legal/cookies/). Google elige esos anuncios, no yo; lo que sí controlo es qué categorías se bloquean, y están bloqueadas las de préstamos rápidos, criptomonedas, apuestas y esquemas de enriquecimiento.
+{% else %}
+**Los servidos por Google AdSense** todavía no están activos. El portal está preparado para incorporarlos; cuando ocurra, la [política de cookies](/legal/cookies/) lo dirá y el aviso le pedirá su consentimiento **por separado**, como se prometió desde el principio.
+{% endif %}
 
 ---
 

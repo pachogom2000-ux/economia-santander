@@ -84,22 +84,36 @@
      Encendida por defecto: en Colombia la Ley 1581 exige informar y permitir
      el rechazo, no pedir permiso previo para analítica propia. Quien rechaza
      en /legal/cookies/ queda registrado y a partir de ahí no se mide.
-     La publicidad personalizada sigue denegada siempre. -->
+     La publicidad personalizada está denegada salvo que AdSense esté activo
+     (_data/publicidad.json) Y el lector la haya aceptado en el aviso: es la
+     decisión "por separado" que prometen /legal/cookies/ y /legal/publicidad/. -->
 <script>
   (function () {
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     window.gtag = gtag;
+    window.__ADSENSE_ACTIVO__ = {{ 'true' if publicidad.adsense.activo and publicidad.adsense.cliente else 'false' }};
 
-    var decision = null;
-    try { decision = window.localStorage.getItem('es-consent-analitica'); } catch (e) {}
+    var decision = null, publicidad = null;
+    try {
+      decision = window.localStorage.getItem('es-consent-analitica');
+      publicidad = window.localStorage.getItem('es-consent-publicidad');
+    } catch (e) {}
+    var anunciosPersonales = window.__ADSENSE_ACTIVO__ && publicidad === 'si' ? 'granted' : 'denied';
 
     gtag('consent', 'default', {
-      ad_storage: 'denied',
-      ad_user_data: 'denied',
-      ad_personalization: 'denied',
+      ad_storage: anunciosPersonales,
+      ad_user_data: anunciosPersonales,
+      ad_personalization: anunciosPersonales,
       analytics_storage: decision === 'no' ? 'denied' : 'granted'
     });
+
+    // Cambia la decisión de publicidad sin recargar. Con "no", Google sigue
+    // pudiendo mostrar anuncios, pero sin cookies y sin basarse en la navegación.
+    window.esActualizarPublicidad = function (valor) {
+      var estado = window.__ADSENSE_ACTIVO__ && valor === 'si' ? 'granted' : 'denied';
+      gtag('consent', 'update', { ad_storage: estado, ad_user_data: estado, ad_personalization: estado });
+    };
 
     window.esCargarAnalitica = function () {
       if (window.esAnaliticaCargada) return;
@@ -130,6 +144,13 @@
     if (decision !== 'no') window.esCargarAnalitica();
   })();
 </script>
+{% if publicidad.adsense.activo and publicidad.adsense.cliente %}
+<!-- Google AdSense. Se carga siempre que esté activo; lo que cambia con el
+     consentimiento es si los anuncios son personalizados o no. Sin "anuncios
+     automáticos": las unidades son las de tamaño fijo de adsense-unidad.njk,
+     para que no muevan el diseño. -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ publicidad.adsense.cliente }}" crossorigin="anonymous"></script>
+{% endif %}
 
 <script type="application/ld+json">
 {
@@ -414,11 +435,20 @@
      aria-label="Aviso de cookies" hidden>
   <div class="cookie-aviso-texto">
     <p class="cookie-aviso-pregunta">¿Acepta el uso de cookies para navegar este sitio?</p>
+    {% if publicidad.adsense.activo and publicidad.adsense.cliente %}
+    <p>Se usan para medir la audiencia de forma anónima y, si usted lo acepta, para que Google muestre publicidad según su navegación. Si elige solo medición, los anuncios salen igual pero sin cookies ni perfil. No le pedimos datos personales ni registro. <a href="/legal/cookies/">Política de cookies</a>.</p>
+    {% else %}
     <p>Se usan solo para medir la audiencia de forma anónima. No le pedimos datos personales ni registro. Puede rechazarlas y seguir leyendo con normalidad. <a href="/legal/cookies/">Política de cookies</a>.</p>
+    {% endif %}
   </div>
   <div class="cookie-aviso-botones">
     <button type="button" class="cookie-btn cookie-btn-no" data-cookies="no">Rechazar</button>
+    {% if publicidad.adsense.activo and publicidad.adsense.cliente %}
+    <button type="button" class="cookie-btn cookie-btn-medicion" data-cookies="medicion">Solo medición</button>
+    <button type="button" class="cookie-btn cookie-btn-si" data-cookies="si">Aceptar todo</button>
+    {% else %}
     <button type="button" class="cookie-btn cookie-btn-si" data-cookies="si">Aceptar</button>
+    {% endif %}
   </div>
 </div>
 

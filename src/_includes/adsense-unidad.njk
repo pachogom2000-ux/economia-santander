@@ -1,0 +1,35 @@
+{# Unidad de Google AdSense de tamaño fijo. Variables:
+     adFormato — "rectangulo" o "billboard" (define el slot y el alto reservado)
+   Con AdSense apagado (o sin slot) pinta el cajón de siempre, para que el
+   diseño no cambie al encenderlo: el alto ya está reservado y no hay salto. #}
+{% set adSlot = publicidad.adsense.slots[adFormato] %}
+{% if publicidad.adsense.activo and publicidad.adsense.cliente and adSlot %}
+  <div class="wrap ad-wrap">
+    <div class="adsense adsense-{{ adFormato }}">
+      <span class="ad-tag">Publicidad</span>
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="{{ publicidad.adsense.cliente }}"
+           data-ad-slot="{{ adSlot }}"
+           data-ad-format="{% if adFormato == 'rectangulo' %}rectangle{% else %}horizontal{% endif %}"
+           data-full-width-responsive="false"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+  </div>
+{% elif adFormato == 'rectangulo' %}
+  <div class="wrap ad-wrap">
+    <div class="ad-slot ad-rectangle">
+      <span class="ad-label">Espacio publicitario · patrocinio de sección</span>
+      <span class="ad-size">Rectángulo · 300 × 250 o 336 × 280</span>
+      <span class="ad-hint">Contexto financiero: bancos, fiduciarias, fintech y constructoras</span>
+    </div>
+  </div>
+{% else %}
+  <div class="wrap ad-wrap">
+    <div class="ad-slot ad-billboard">
+      <span class="ad-label">Espacio publicitario</span>
+      <span class="ad-size">Billboard de cierre · 970 × 250</span>
+      <span class="ad-hint">Último impacto antes del pie de página</span>
+    </div>
+  </div>
+{% endif %}

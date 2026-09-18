@@ -68,6 +68,29 @@ collections:
               widget: "select"
               # OPCIONES-GENERADAS-EN-EL-BUILD
 
+      - name: "publicidad"
+        label: "Google AdSense"
+        file: "src/_data/publicidad.json"
+        format: "json"
+        description: >-
+          Interruptor de la publicidad de Google. Con "Activo" apagado no se
+          carga nada de Google y los cajones de la portada siguen vacíos.
+          Para encenderlo hacen falta el identificador de editor (ca-pub-…)
+          y los dos códigos de unidad que da AdSense. Las páginas legales y
+          el aviso de cookies cambian solos al activarlo.
+        fields:
+          - label: "AdSense"
+            name: "adsense"
+            widget: "object"
+            fields:
+              - { label: "Activo", name: "activo", widget: "boolean", default: false, hint: "Solo cuando la cuenta esté aprobada y las categorías sensibles bloqueadas en el panel de AdSense." }
+              - { label: "Identificador de editor", name: "cliente", widget: "string", required: false, hint: "Empieza por ca-pub-. También genera el archivo ads.txt." }
+              - label: "Códigos de unidad"
+                name: "slots"
+                widget: "object"
+                fields:
+                  - { label: "Rectángulo de portada (336×280)", name: "rectangulo", widget: "string", required: false }
+                  - { label: "Billboard de cierre (970×250)", name: "billboard", widget: "string", required: false }
       - name: "picoyplaca"
         label: "Pico y placa"
         file: "src/_data/picoyplaca.json"

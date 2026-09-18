@@ -192,6 +192,10 @@ Tres cosas que conviene saber:
   hacia la publicación original, que es lo que pide la política editorial para
   todo lo que no es propio.
 
+### Publicidad de Google (AdSense)
+
+Está cableada pero **apagada**: `src/_data/publicidad.json` (editable en el CMS, "Datos del sitio → Google AdSense"). Con `activo: false` no se carga ningún script de Google, los dos cajones de la portada siguen vacíos y el aviso de cookies pregunta solo por analítica. Al encenderlo con el `cliente` (ca-pub-…) y los dos códigos de unidad: se carga el script, las unidades de tamaño fijo reemplazan los cajones (`_includes/adsense-unidad.njk`), se escribe `/ads.txt` (`src/ads.txt.11ty.js`), el aviso de cookies gana el botón "Solo medición" y las páginas de cookies y publicidad cambian de texto solas. El consentimiento publicitario es una decisión aparte de la analítica (`es-consent-publicidad`); sin ella Google sirve anuncios no personalizados. **Nunca activar los "anuncios automáticos" de AdSense**: rompen el CLS que costó bajar. Y el día que se encienda, bloquear en el panel de AdSense préstamos rápidos, cripto, apuestas y "hágase rico": la política de cookies ya lo promete.
+
 ### Flujo de publicación del CMS
 
 Decap está en `publish_mode: editorial_workflow`. Los guardados van a una rama con pull request, no directo a `main`. Redactar y revisar genera *deploy previews*, que no consumen créditos de Netlify; solo el paso final a "Listo" publica y cuesta un despliegue de producción.
