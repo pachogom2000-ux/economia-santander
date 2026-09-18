@@ -29,6 +29,8 @@ La CCB no cuestiona el fin de la medida: reconoce "la importancia de avanzar en 
 
 https://economiasantander.com/assets/uploads/juan-carlos-rinco-n-lie-vano-presidente-ejecutivo-ccb-di-a-sin-carro.m4a.mp4
 
+Declaración Juan Carlos Rincón, presidente ejecutivo de la Cámara de Comercio de Bucaramanga.
+
 ## La jornada, en contexto
 
 El día sin carro y sin moto del 30 de septiembre está fijado por el **Acuerdo Metropolitano 008 del 6 de septiembre de 2024**, y aplica en **Bucaramanga, Floridablanca, Girón y Piedecuesta** para todo tipo de vehículo particular.
