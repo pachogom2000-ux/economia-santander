@@ -1,18 +1,20 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Vender su carro usado: los papeles y el traspaso"
-date: 2026-09-10T11:00:00.000-05:00
+date: 2026-09-18T05:00:00.000-05:00
 categoria: Finanzas personales
 chipTipo: propio
 chipLabel: Redacción propia
 excerpt: El mercado de usados va en récord con más de 1.300.000 traspasos. Pero
-  hasta que no registre el traspaso, los comparendos siguen llegando a su nombre.
+  hasta que no registre el traspaso, los comparendos siguen llegando a su
+  nombre.
 autor: Francisco Gómez - Director
 imagen: /assets/uploads/vender-carro-usado-traspaso.jpg
 imagenAlt: Entrega de llaves en la venta de un vehículo usado
 imagenTitle: "Cómo vender un carro usado en Colombia: papeles y traspaso"
-imagenPie: Entre enero y agosto de 2026 se registraron más de 1.300.000 traspasos de vehículos usados en Colombia.
+imagenPie: Entre enero y agosto de 2026 se registraron más de 1.300.000
+  traspasos de vehículos usados en Colombia.
 imagenCredito: Archivo particular
 guia: true
 tags: noticias
