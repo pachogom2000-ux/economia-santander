@@ -5,7 +5,7 @@ date: 2026-09-17T08:00:00.000-05:00
 categoria: Comercio y consumo
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "Las ventas del comercio en Santander subieron 5,5% en julio, menos que el país, y el personal ocupado cayó 0,5%. Es el único departamento con empleo comercial en rojo."
+excerpt: "Las ventas del comercio en Santander subieron 5,5% en julio, menos que el país, y el empleo cayó 0,5%. Es el único departamento con empleo comercial en rojo."
 autor: Francisco Gómez - Director
 tags: noticias
 eleventyExcludeFromCollections: true
