@@ -144,6 +144,12 @@
     if (decision !== 'no') window.esCargarAnalitica();
   })();
 </script>
+{% if publicidad.adsense.cliente %}
+<!-- Verificación del sitio ante AdSense. Con esta etiqueta y /ads.txt Google
+     comprueba que el dominio es del editor sin cargar ningún script; el de
+     anuncios solo entra cuando el interruptor está activo. -->
+<meta name="google-adsense-account" content="{{ publicidad.adsense.cliente }}">
+{% endif %}
 {% if publicidad.adsense.activo and publicidad.adsense.cliente %}
 <!-- Google AdSense. Se carga siempre que esté activo; lo que cambia con el
      consentimiento es si los anuncios son personalizados o no. Sin "anuncios
