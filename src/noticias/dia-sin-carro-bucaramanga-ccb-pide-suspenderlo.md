@@ -2,7 +2,7 @@
 layout: noticia.njk
 eleventyExcludeFromCollections: true
 title: "Día sin carro en Bucaramanga: la CCB pide suspenderlo"
-date: 2026-09-17T12:00:00.000-05:00
+date: 2026-09-18T05:00:00.000-05:00
 categoria: Comercio y consumo
 chipTipo: propio
 chipLabel: Redacción propia
