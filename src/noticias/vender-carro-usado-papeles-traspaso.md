@@ -10,8 +10,8 @@ excerpt: El mercado de usados va en récord con más de 1.300.000 traspasos. Per
   hasta que no registre el traspaso, los comparendos siguen llegando a su
   nombre.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/vender-carro-usado-traspaso.jpg
-imagenAlt: Entrega de llaves en la venta de un vehículo usado
+imagen: /assets/uploads/vender-carro.webp
+imagenAlt: Venta de un vehículo usado
 imagenTitle: "Cómo vender un carro usado en Colombia: papeles y traspaso"
 imagenPie: Entre enero y agosto de 2026 se registraron más de 1.300.000
   traspasos de vehículos usados en Colombia.
