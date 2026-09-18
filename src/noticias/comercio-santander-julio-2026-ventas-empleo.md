@@ -1,14 +1,21 @@
 ---
 layout: noticia.njk
+eleventyExcludeFromCollections: true
 title: "Comercio en Santander: crece 5,5% y sigue perdiendo empleo"
-date: 2026-09-17T08:00:00.000-05:00
+date: 2026-09-18T06:00:00.000-05:00
 categoria: Comercio y consumo
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "Las ventas del comercio en Santander subieron 5,5% en julio, menos que el país, y el empleo cayó 0,5%. Es el único departamento con empleo comercial en rojo."
+excerpt: Las ventas del comercio en Santander subieron 5,5% en julio, menos que
+  el país, y el empleo cayó 0,5%. Es el único departamento con empleo comercial
+  en rojo.
 autor: Francisco Gómez - Director
+imagen: /assets/uploads/cajera-centro-de-bucaramanga.webp
+imagenAlt: "Persona realizando un pago en el paseo del comercio en Bucaramanga. "
+imagenTitle: "Sigue cayendo el empleo en el comercio en Santander. "
+imagenPie: El comercio santandereano vende más, pero emplea menos
+imagenCredito: "Archivo particular. "
 tags: noticias
-eleventyExcludeFromCollections: true
 ---
 Las ventas reales del comercio minorista en **Santander** crecieron **5,5%** en julio frente al mismo mes de 2025. Y el personal ocupado por ese comercio **cayó 0,5%**.
 
@@ -22,15 +29,15 @@ Menos que el promedio. Sin combustibles, que es la medida comparable entre depar
 
 <div class="tabla-wrap">
 
-| Departamento | Ventas, julio | Ventas, enero-julio | Empleo, julio | Empleo, enero-julio |
-| --- | --- | --- | --- | --- |
-| Cundinamarca | 14,2% | 19,5% | 2,8% | 7,1% |
-| Antioquia | 9,9% | 14,8% | 2,2% | 2,8% |
-| Bogotá | 6,1% | 16,8% | 0,6% | 0,7% |
-| **Santander** | **5,5%** | **13,6%** | **−0,5%** | **−1,2%** |
-| Valle del Cauca | 3,6% | 10,0% | 0,4% | 1,2% |
-| Atlántico | 3,4% | 10,7% | −0,6% | 1,4% |
-| **Total nacional** | **7,3%** | **14,2%** | **1,0%** | **1,8%** |
+| Departamento       | Ventas, julio | Ventas, enero-julio | Empleo, julio | Empleo, enero-julio |
+| ------------------ | ------------- | ------------------- | ------------- | ------------------- |
+| Cundinamarca       | 14,2%         | 19,5%               | 2,8%          | 7,1%                |
+| Antioquia          | 9,9%          | 14,8%               | 2,2%          | 2,8%                |
+| Bogotá             | 6,1%          | 16,8%               | 0,6%          | 0,7%                |
+| **Santander**      | **5,5%**      | **13,6%**           | **−0,5%**     | **−1,2%**           |
+| Valle del Cauca    | 3,6%          | 10,0%               | 0,4%          | 1,2%                |
+| Atlántico          | 3,4%          | 10,7%               | −0,6%         | 1,4%                |
+| **Total nacional** | **7,3%**      | **14,2%**           | **1,0%**      | **1,8%**            |
 
 </div>
 
@@ -52,7 +59,7 @@ El DANE no desagrega las líneas de mercancía por departamento, así que lo que
 
 **Lo que cae:** los **combustibles**, −3,6%; las **prendas de vestir y textiles**, −3,0%; los repuestos, −2,0%; el **calzado**, −0,2%. Y los alimentos apenas crecen 0,3%.
 
-Ahí hay una pista, aunque el boletín no permita confirmarla: dos de las líneas en caída —confección y calzado— son justamente las que más peso tienen en el comercio tradicional de Bucaramanga. En el país, los establecimientos especializados en prendas y calzado **recortaron 4,5% de su personal** en julio. [VERIFICAR con Fenalco Santander o la Cámara de Comercio si la caída del empleo comercial en Santander se concentra en esas líneas.]
+Ahí hay una pista, aunque el boletín no permita confirmarla: dos de las líneas en caída —confección y calzado— son justamente las que más peso tienen en el comercio tradicional de Bucaramanga. En el país, los establecimientos especializados en prendas y calzado **recortaron 4,5% de su personal** en julio. 
 
 ## El empleo que se pierde es el temporal
 
