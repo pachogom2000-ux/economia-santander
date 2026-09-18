@@ -1,6 +1,6 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Comercio en Santander: crece 5,5% y sigue perdiendo empleo"
 date: 2026-09-18T06:00:00.000-05:00
 categoria: Comercio y consumo
