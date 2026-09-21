@@ -49,7 +49,7 @@ Y porque el empleo aguanta. Ya en julio hubo **tres disidencias pidiendo subir**
 
 La mecánica es esta. El capital extranjero que compra deuda colombiana lo hace por la diferencia entre lo que paga Colombia (12%) y lo que paga Estados Unidos. Cada punto que la Fed sube es un punto menos de atractivo para el peso, y por eso una subida en Washington empuja el dólar hacia arriba en Bogotá.
 
-Pero el efecto ya estaba descontado. La **TRM de hoy es $3.100,45**, $8,85 por debajo de la del martes, y si el mercado le daba 91% a la subida, el dólar de esta semana ya la traía incorporada. La TRM que rija el jueves 17, que se certifica esta tarde con el cierre del mercado, dirá si hubo sorpresa; la nota se actualizará con ese dato.
+Pero el efecto ya estaba descontado. La **TRM del día de la decisión fue $3.100,45**, $8,85 por debajo de la del martes: si el mercado le daba 91% a la subida, el dólar ya la traía incorporada. La sorpresa llegó después. **Actualización del 21 de septiembre:** la TRM subió a $3.128,46 el jueves, $3.151,73 el viernes y **$3.192,92** para el lunes, un alza de 2,98% en tres jornadas. [El detalle del salto, día por día, está en esta nota](/noticias/dolar-sube-tres-dias-fed-trm-3192/).
 
 Lo que sí puede mover la tasa de cambio es la señal de **una alza más este año**. Un diferencial que se estrecha dos veces antes de diciembre es un argumento más para que el dólar deje la franja de los $3.100, que es lo que las proyecciones del consenso —$3.300 para diciembre— venían anticipando sin que el mercado les hiciera caso.
 
