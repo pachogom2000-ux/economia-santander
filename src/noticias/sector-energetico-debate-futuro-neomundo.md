@@ -1,21 +1,21 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
-title: "Sector energético debate su futuro en Neomundo"
-date: 2026-09-21T09:00:00.000-05:00
+eleventyExcludeFromCollections: false
+title: Sector energético debate su futuro en Neomundo
+date: 2026-09-21T07:00:00.000-05:00
 categoria: Industria
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "El XXIII Congreso Colombiano de Petróleo, Gas y Energía llega a
+excerpt: El XXIII Congreso Colombiano de Petróleo, Gas y Energía llega a
   Bucaramanga del 22 al 24 de septiembre, 42 años después de nacer en
-  Barrancabermeja."
+  Barrancabermeja.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/energia-santander-terranaut-pixabay.webp
-imagenAlt: Torre de transmisión eléctrica en Santander
+imagen: /assets/uploads/hidrosogamoso-archivo-particular.webp
+imagenAlt: Embalse de Topocoro, Hidrosogamoso en Santander
 imagenTitle: Congreso Colombiano de Petróleo, Gas y Energía 2026 en Bucaramanga
-imagenPie: El sector energético colombiano se reúne en Bucaramanga del 22 al
-  24 de septiembre en el XXIII Congreso Colombiano de Petróleo, Gas y Energía.
-imagenCredito: Pixabay-Terranaut
+imagenPie: El sector energético colombiano se reúne en Bucaramanga del 22 al 24
+  de septiembre en el XXIII Congreso Colombiano de Petróleo, Gas y Energía.
+imagenCredito: Archivo particular
 tags: noticias
 ---
 Bucaramanga recibe desde este martes 22 de septiembre y hasta el jueves 24 el **XXIII Congreso Colombiano de Petróleo, Gas y Energía**, en el centro de convenciones **Neomundo**. Es, según la propia Asociación Colombiana de Ingenieros de Petróleos (**ACIPET**), "el evento técnico y académico más importante del sector energético" del país.
