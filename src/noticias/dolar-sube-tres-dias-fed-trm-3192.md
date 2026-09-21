@@ -1,14 +1,21 @@
 ---
 layout: noticia.njk
-title: "Dólar sube $92 en tres días tras la Fed y ya va en $3.192"
+eleventyExcludeFromCollections: false
+title: Dólar sube $92 en tres días tras la Fed y ya va en $3.192
 date: 2026-09-21T07:00:00.000-05:00
 categoria: Indicadores económicos
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "La TRM pasó de $3.100 a $3.192,92 entre el miércoles y el viernes: 3% en tres días y el nivel más alto desde el 1 de septiembre. Qué lo empujó y qué sigue."
+excerpt: "La TRM pasó de $3.100 a $3.192,92 entre el miércoles y el viernes: 3%
+  en tres días y el nivel más alto desde el 1 de septiembre. Qué lo empujó y qué
+  sigue."
 autor: Francisco Gómez - Director
+imagen: /assets/uploads/dolar-sube-septiembre.webp
+imagenAlt: "El dólar viene en alza tras los recientes hechos macroeconómicos. "
+imagenTitle: "Dólar gana terreno frente al peso colombiano en estos últimos días. "
+imagenPie: "El dólar viene en alza tras los recientes hechos macroeconómicos. "
+imagenCredito: PIxabay- ericdunham
 tags: noticias
-eleventyExcludeFromCollections: true
 ---
 La **TRM que rige este lunes es $3.192,92**. El miércoles, el día que la Reserva Federal subió su tasa, era $3.100,45. Son **$92,47 más en tres jornadas**, un salto de **2,98%**, y el nivel más alto del dólar desde el 1 de septiembre.
 
