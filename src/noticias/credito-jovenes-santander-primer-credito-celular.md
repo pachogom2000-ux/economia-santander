@@ -1,14 +1,23 @@
 ---
 layout: noticia.njk
+eleventyExcludeFromCollections: false
 title: "Crédito joven: 4 de cada 10 préstamos, 18% de la deuda"
 date: 2026-09-21T06:00:00.000-05:00
 categoria: Educación financiera
 chipTipo: recirc
 chipLabel: "Fuente: PayJoy"
-excerpt: "Los menores de 35 años tienen el 37,7% de los créditos del país y solo el 18,1% del saldo. Cómo entran al crédito, por qué el banco no los ve y qué mirar."
+excerpt: Los menores de 35 años tienen el 37,7% de los créditos del país y solo
+  el 18,1% del saldo. Cómo entran al crédito, por qué el banco no los ve y qué
+  mirar.
 autor: Francisco Gómez - Director
+imagen: /assets/uploads/celular-tookapic.webp
+imagenAlt: "El primer crédito de los más jóvenes (entre 18 y 28 años) es para
+  financiar la compra de un celular. "
+imagenTitle: "Joven adquiriendo un celular a crédito en Colombia. "
+imagenPie: Los jóvenes acceder a comprar un celular a crédito porque no tienen
+  historial crediticio o soportes.
+imagenCredito: PIxabay - Tookapic. Editada por Economía Santander.
 tags: noticias
-eleventyExcludeFromCollections: true
 ---
 Los **menores de 35 años** tienen el **37,7% de los créditos** otorgados en Colombia, pero apenas el **18,1% del saldo** de la deuda. Es decir: piden prestado seguido y piden poco.
 
@@ -36,7 +45,7 @@ Conviene leer esa frase sabiendo quién la dice: PayJoy vende exactamente el pro
 
 ## Lo que esto significa en Santander
 
-**El acceso es alto, el crédito no tanto.** El **90,9% de los adultos de Santander** tenía al menos un producto financiero a septiembre de 2023, según Banca de las Oportunidades; el promedio nacional llegó a 96,3% en 2024. Pero tener una cuenta no es tener crédito: en el país, solo el **35,5% de los adultos** tiene un crédito vigente con el sistema financiero. [VERIFICAR: porcentaje de adultos con crédito vigente en Santander, tabla departamental del Reporte de Inclusión Financiera 2024.]
+**El acceso es alto, el crédito no tanto.** El **90,9% de los adultos de Santander** tenía al menos un producto financiero a septiembre de 2023, según Banca de las Oportunidades; el promedio nacional llegó a 96,3% en 2024. Pero tener una cuenta no es tener crédito: en el país, solo el **35,5% de los adultos** tiene un crédito vigente con el sistema financiero. 
 
 **El desempleo juvenil del área metropolitana está por encima del nacional.** El último dato que registró el portal fue de [15,7% para los jóvenes de Bucaramanga](/noticias/comercio-consumo-santander-2026/), 4,2 puntos más que un año antes, frente al 15,3% nacional que cita el informe.
 
