@@ -12,7 +12,7 @@ eleventyExcludeFromCollections: true
 ---
 La **TRM que rige este lunes es $3.192,92**. El miércoles, el día que la Reserva Federal subió su tasa, era $3.100,45. Son **$92,47 más en tres jornadas**, un salto de **2,98%**, y el nivel más alto del dólar desde el 1 de septiembre.
 
-Frente al viernes anterior la subida es mayor: **$120,65, un 3,93% en una semana**. El dólar barato que el portal venía documentando no se acabó —sigue **15% por debajo** de los $3.757 con que arrancó el año—, pero acaba de tener una semana de 3,93% al alza, la primera en esa dirección desde que el portal sigue la cifra.
+Frente al viernes anterior la subida es mayor: **$120,65, un 3,93% en una semana**. El dólar barato que el portal venía documentando no se acabó —sigue **15% por debajo** de los $3.757 con que arrancó el año—, pero acaba de tener una semana de 3,93% al alza.
 
 Y lo hizo con el petróleo cerca de **US$100**, que debería haberlo frenado. Ese es el dato que conviene entender.
 
@@ -65,7 +65,7 @@ Según Suárez, el Emisor mira *"la inflación, la tasa de cambio y la actividad
 
 **Importadores**: el maíz y la soya de la avicultura, los sintéticos del calzado y las aleaciones de la bisutería cuestan hoy 3% más en pesos que hace una semana. No es un salto que se traslade de inmediato al precio, pero sí al siguiente pedido.
 
-**Exportadores de café y cacao**: la misma carga vale 3% más en pesos. Es el primer alivio del año.
+**Exportadores de café y cacao**: la misma carga vale 3% más en pesos que hace una semana.
 
 **Quien recibe remesas o dólares de afuera**, como [los docentes que se van a enseñar a Estados Unidos](/noticias/docente-colombiano-estados-unidos-salario-costos/): US$1.000 son hoy $92.470 más que el miércoles.
 
