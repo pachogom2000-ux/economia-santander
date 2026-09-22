@@ -1,21 +1,21 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
-title: "Fracking: el gobernador promete $1,2 billones al año"
-date: 2026-09-22T16:00:00.000-05:00
+eleventyExcludeFromCollections: false
+title: "Fracking Santander: gobernador Díaz promete $1,2 billones al año"
+date: 2026-09-22T14:00:00.000-05:00
 categoria: Industria
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "El gobernador Juvenal Díaz afirmó que el fracking le dejaría a
-  Santander $1,2 billones de pesos al año en regalías e inversión, sin
-  citar la fuente."
+excerpt: El gobernador Juvenal Díaz afirmó que el fracking le dejaría a
+  Santander $1,2 billones de pesos al año en regalías e inversión, según estima
+  el mandatario departamental.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/energia-santander-terranaut-pixabay.webp
-imagenAlt: Torre de transmisión eléctrica en Santander
+imagen: /assets/uploads/petroleo-santander-moni49.webp
+imagenAlt: Imagen alusiva a campo de petróleo en Santander.
 imagenTitle: El gobernador de Santander y la promesa del fracking
-imagenPie: El gobernador Juvenal Díaz afirmó que el fracking podría
-  dejarle a Santander $1,2 billones de pesos al año.
-imagenCredito: Pixabay-Terranaut
+imagenPie: El gobernador Juvenal Díaz afirmó que el fracking podría dejarle a
+  Santander $1,2 billones de pesos al año.
+imagenCredito: Pixabay-moni49
 tags: noticias
 ---
 El gobernador de Santander, **Juvenal Díaz**, afirmó este martes 22 de septiembre que el fracking podría dejarle al departamento **$1,2 billones de pesos al año** en regalías e inversión. Lo dijo en X, el mismo día en que Bucaramanga abrió el **XXIII Congreso Colombiano de Petróleo, Gas y Energía**, el evento que este portal ya había anticipado como el escenario donde se discutiría, entre otros temas, el futuro de los [yacimientos no convencionales en Santander](/noticias/sector-energetico-debate-futuro-neomundo/).
@@ -26,9 +26,11 @@ El mensaje, publicado a la 1:24 p. m., dice textualmente:
 
 *"El fracking podría convertir la riqueza de Santander en obras para su gente. Santander no solo produce energía para Colombia; también tiene la oportunidad de transformar esos recursos en desarrollo para sus 87 municipios. Hoy con especialistas del país, dialogamos sobre los beneficios del fracking. Los yacimientos no convencionales podrían aumentar significativamente para Santander los recursos provenientes de regalías e inversión, permitiendo financiar más acueductos, hospitales, vías rurales, infraestructura educativa, proyectos de agua potable y obras que hoy esperan recursos para hacerse realidad. El debate debe darse con responsabilidad, rigor técnico y garantías ambientales, pero también pensando en lo que significarían $1,2 billones de pesos al año para invertir en nuestra propia gente."*
 
+*https://x.com/GralJuvenalDiaz/status/2102388692232950026*
+
 ## De dónde sale la cifra
 
-El gobernador no cita en su publicación ni el estudio ni la metodología detrás del cálculo de **$1,2 billones de pesos al año**. No hay, en el mensaje ni en la Gobernación de Santander, un documento técnico público que sustente esa cifra puntual. **[VERIFICAR: pedir a la Gobernación de Santander la fuente del cálculo de $1,2 billones/año antes de dar la cifra por confirmada.]**
+El gobernador no cita en su publicación ni el estudio ni la metodología detrás del cálculo de **$1,2 billones de pesos al año**. No hay, en el mensaje ni en la Gobernación de Santander, un documento técnico público que sustente esa cifra puntual. 
 
 ## No es la primera vez que lo dice
 
