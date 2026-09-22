@@ -1,25 +1,23 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
-title: "Día sin carro en Bucaramanga se aplaza al 6 de octubre"
-date: 2026-09-22T08:00:00.000-05:00
+eleventyExcludeFromCollections: false
+title: Día sin carro en Bucaramanga se aplaza al 6 de octubre
+date: 2026-09-22T05:00:00.000-05:00
 categoria: Comercio y consumo
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "El día sin carro y sin moto en Bucaramanga se aplazó del 30 de
-  septiembre al 6 de octubre, tras la presión de los gremios y la Cámara
-  de Comercio."
+excerpt: El día sin carro y sin moto en Bucaramanga se aplazó del 30 de
+  septiembre al 6 de octubre, tras la presión de los gremios y la Cámara de
+  Comercio.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/panoramica-viaducto-bucaramanga.webp
-imagenAlt: Vista panorámica del viaducto de Bucaramanga, sin restricción
-  vehicular
+imagen: /assets/uploads/panoramica-bucaramanga-archivoparticular-economiasantander.webp
+imagenAlt: Vista panorámica del viaducto de Bucaramanga, sin restricción vehicular
 imagenTitle: Día sin carro y sin moto en Bucaramanga, nueva fecha 6 de octubre
-imagenPie: La Junta Metropolitana aplazó la jornada del 30 de septiembre al
-  6 de octubre.
-imagenCredito: Archivo Tránsito Bucaramanga
+imagenPie: La Junta Metropolitana aplazó la jornada del 30 de septiembre al 6 de octubre.
+imagenCredito: Archivo particular
 tags: noticias
 ---
-El **día sin carro y sin moto** en Bucaramanga y su área metropolitana ya no es el 30 de septiembre. La Junta Metropolitana lo aplazó este lunes 21 de septiembre para el **martes 6 de octubre**, de **9:00 a. m. a 4:00 p. m.**, en **Bucaramanga, Floridablanca, Girón y Piedecuesta**.
+El **día sin carro y sin moto** en Bucaramanga y su área metropolitana ya no es el 30 de septiembre. La Junta Metropolitana lo aplazó para el **martes 6 de octubre**, de **9:00 a. m. a 4:00 p. m.**, en **Bucaramanga, Floridablanca, Girón y Piedecuesta**.
 
 La decisión la tomaron en conjunto el **Área Metropolitana de Bucaramanga (AMB)** y los alcaldes de los cuatro municipios, en sesión de la Junta Metropolitana. El cambio se ampara en el mismo **Acuerdo Metropolitano 008 del 6 de septiembre de 2024** que fijaba la fecha original.
 
@@ -33,7 +31,7 @@ El concejal de Bucaramanga **Cristian Reyes** (Cambio Radical) confirmó el apla
 
 https://www.tiktok.com/@cristianreyescr_/video/7688167483684965639
 
-*"Aplazado el Día sin carro y sin moto en Bucaramanga y el área metropolitana. La nueva fecha es el 6 de octubre (9:00 a.m. a 4:00 p.m.). Buscamos proteger el comercio local, dar tiempo para organizarnos y construir mesas de trabajo por una movilidad sostenible real"*, escribió Reyes en la publicación.
+*"Es una decisión tomada en conjunto con el área metropolitana de Bucaramanga, posteriormente se realizarán mesas de trabajo con los sectores gremiales, con las autoridades ambientales, con el fin de hacer acciones de promoción, protección del medio ambiente, movilidad sostenible pero concertadas con los gremios"*, dijo Reyes en la publicación. El político indicó que se concertarán mesas de trabajo con el propósito de medir el impacto de la medida en los diferentes aspectos de movilidad, medio ambiente y comercio en el área metropolitana. 
 
 ## Lo que sigue igual
 
