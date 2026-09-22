@@ -1,14 +1,22 @@
 ---
 layout: noticia.njk
+eleventyExcludeFromCollections: false
 title: "Estafas de inversión: 5 señales que las delatan"
-date: 2026-09-21
-categoria: "Inversión"
-chipTipo: "propio"
-chipLabel: "Redacción propia"
-excerpt: "Con el dólar barato y las tasas altas, más ofertas prometen ganancias fijas. Las cinco señales que delatan una estafa de inversión y cómo verificarla."
-autor: "Francisco Gómez - Director"
+date: 2026-09-22T06:02:00.000-05:00
+categoria: Inversión
+chipTipo: propio
+chipLabel: Redacción propia
+excerpt: Con el dólar barato y las tasas altas, más ofertas prometen ganancias
+  fijas. Las cinco señales que delatan una estafa de inversión y cómo
+  verificarla.
+autor: Francisco Gómez - Director
+imagen: /assets/uploads/deuda-santandereanos.webp
+imagenAlt: Persona sacando dinero de su billetera, víctima de una estafa
+imagenTitle: "Atento a las señales que pueden verse cuando es víctima de una
+  estafa de inversión. "
+imagenPie: Señales para detectar una estafa de inversión
+imagenCredito: Pixabay
 tags: noticias
-eleventyExcludeFromCollections: true
 ---
 El dólar sigue en su nivel más bajo en casi ocho años y el Banco de la República mantiene la tasa de intervención en **12%**, según documentó Economía Santander en su nota sobre el [ciclo del dólar barato](/noticias/ciclo-dolar-barato-colombia-cuanto-dura/). Esa mezcla de tasa alta e incertidumbre sobre cuánto dura la baja del dólar es, precisamente, el terreno donde más crecen las ofertas de "aproveche antes de que suba".
 
@@ -58,6 +66,4 @@ La misma lógica aplica al miedo a quedarse por fuera que ya analizó la nota so
 
 Los pasos son los mismos que ya explicó Economía Santander para el fraude digital: bloquear de inmediato en el banco, reportar al **CAI Virtual de la Policía**, denunciar ante la Fiscalía por **ADenunciar** y radicar reclamación escrita ante la entidad. El detalle completo está en la nota sobre [cómo protegerse del fraude digital en Santander](/noticias/fraude-digital-santander-como-protegerse/).
 
-*Cifras de captación ilegal a nivel nacional según la Superintendencia Financiera de Colombia, citadas por El Espectador (16 de agosto de 2025). Casos individuales según resoluciones de la Superintendencia Financiera, reportados por Vanguardia (28 de octubre de 2024) y La República (6 de julio de 2026). La cifra del CDT es de la nota de Economía Santander sobre ahorro con corte a julio de 2026.*
-
-**Pendiente de verificar con la Superintendencia Financiera y con la Cámara de Comercio de Bucaramanga:** si existe algún caso de captación ilegal o pirámide con víctimas confirmadas y domiciliadas en Santander en lo corrido de 2026, más allá de la presencia anunciada (no confirmada en víctimas) de Gobank Inversiones en Bucaramanga en 2024. También queda pendiente confirmar si la Superintendencia Financiera tiene programada alguna jornada de la campaña "Me informo y cuido mi dinero" en Bucaramanga para 2026.
+*Cifras de captación ilegal a nivel nacional según la Superintendencia Financiera de Colombia, citadas por El Espectador (16 de agosto de 2025). Casos individuales según resoluciones de la Superintendencia Financiera, reportados por Vanguardia (28 de octubre de 2024) y La República (6 de julio de 2026).*
