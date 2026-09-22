@@ -1,8 +1,8 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: Santander, el que mejor resiste las subidas de tasas
-date: 2026-09-21T14:00:00.000-05:00
+date: 2026-09-22T06:01:00.000-05:00
 categoria: Indicadores económicos
 chipTipo: propio
 chipLabel: Redacción propia
