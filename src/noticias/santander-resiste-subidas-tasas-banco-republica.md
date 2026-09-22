@@ -1,21 +1,21 @@
 ---
 layout: noticia.njk
 eleventyExcludeFromCollections: true
-title: "Santander, el que mejor resiste las subidas de tasas"
+title: Santander, el que mejor resiste las subidas de tasas
 date: 2026-09-21T14:00:00.000-05:00
 categoria: Indicadores económicos
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "Un estudio de investigadores del Banco de la República encontró
-  que Santander es de los departamentos que menos sienten un apretón de
-  tasas de interés."
+excerpt: Un estudio de investigadores del Banco de la República encontró que
+  Santander es de los departamentos que menos sienten un apretón de tasas de
+  interés.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/foto-jd-tasas-banrep-archivo-particular.jpg
-imagenAlt: Junta Directiva del Banco de la República de Colombia
+imagen: /assets/uploads/inversion-tasas-printablue.webp
+imagenAlt: "Efecto de tasas de interés del Banco de la República en Santander. "
 imagenTitle: Efectos regionales de la política monetaria en Santander
-imagenPie: Un estudio del Banco de la República mide, por primera vez con
-  este detalle, cómo golpea una subida de tasas a cada departamento.
-imagenCredito: Archivo particular
+imagenPie: Un estudio del Banco de la República mide, por primera vez con este
+  detalle, cómo golpea una subida de tasas a cada departamento.
+imagenCredito: PIxabay - printablue. Editada por Economía Santander
 tags: noticias
 ---
 Cuando el Banco de la República sube la tasa de interés, no todo el país lo siente igual. Un estudio de dos de sus investigadores encontró que **Santander es uno de los departamentos que menos se contrae** cuando eso ocurre, junto con Tolima, mientras La Guajira, Meta, Bolívar y Cesar son los que más sufren.
