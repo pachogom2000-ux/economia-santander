@@ -1,6 +1,6 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Fracking en Puerto Wilches: Bayón pide reactivarlo"
 date: 2026-09-23T06:00:00.000-05:00
 categoria: Industria
@@ -9,12 +9,14 @@ chipLabel: Redacción propia
 excerpt: Felipe Bayón, CEO de GeoPark, pide reactivar en Puerto Wilches los
   pilotos de fracking que él mismo frenó siendo presidente de Ecopetrol.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/petroleo-santander-moni49.webp
-imagenAlt: Imagen alusiva a campo de petróleo en Santander
-imagenTitle: Fracking en Puerto Wilches, la paradoja de Felipe Bayón
-imagenPie: Felipe Bayón pide reactivar en Puerto Wilches los pilotos de fracking
-  que él mismo frenó como presidente de Ecopetrol.
-imagenCredito: Pixabay-moni49
+imagen: /assets/uploads/martha-villarreal-felipe-bayon.webp
+imagenAlt: "Martha Villarreal, pdt de junta directiva de Acipet (izq) y Felipe
+  Bayón, CEO de Geopark. "
+imagenTitle: "Martha Villarreal, pdt de junta directiva de Acipet (izq) y Felipe
+  Bayón, CEO de Geopark. "
+imagenPie: Felipe Bayón (der) pide reactivar en Puerto Wilches los pilotos de
+  fracking que él mismo frenó como presidente de Ecopetrol.
+imagenCredito: Economía Santander
 tags: noticias
 ---
 **Felipe Bayón** le pidió al país reactivar los pilotos de fracking en **Puerto Wilches**, Santander. Lo llamativo es que son los mismos proyectos que él mismo, como presidente de Ecopetrol, tuvo que frenar hace apenas tres años. 
