@@ -1,6 +1,6 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Capex Energy: familia santandereana con energía en su ADN"
 date: 2026-09-23T03:03:00.000-05:00
 categoria: Entrevistas
@@ -40,9 +40,19 @@ El momento no ayudó después. **"Hubo un boom en el año 2010, que el crudo alc
 
 ## El regreso, ahora en familia
 
-La reactivación llegó por decisión de Katherine, socia y gerente general de la firma, con más de 10 años de experiencia en planeación estratégica y cadena de abastecimiento para el sector de hidrocarburos. Hoy Capex  Energy Advisory tiene cuatro líneas de negocio: consultoría técnica bajo metodología **PMI** para gestión de proyectos, consultoría especializada en **yacimientos no convencionales**, consultoría corporativa en planeación estratégica y contratación, y cursos de educación no formal, estos últimos con un convenio vigente con la **Universidad EAN**.
+La reactivación llegó por decisión de Katherine, socia y gerente general de la firma, con más de 10 años de experiencia en planeación estratégica y cadena de abastecimiento para el sector de hidrocarburos. Hoy Capex  Energy Advisory tiene cuatro líneas de negocio: consultoría técnica bajo metodología **PMI** para gestión de proyectos, consultoría especializada en **yacimientos no convencionales**, consultoría corporativa en planeación estratégica y contratación, y cursos de educación no formal.
 
 Trabajar juntos, dice Katherine, no es un asunto menor: **"Nuestro nombre y nuestro apellido tienen que significar absolutamente todo para nosotros; no podemos vivir escondidos detrás de otra empresa"**. Y resume el propósito de la compañía sin rodeos: **"Nuestro propósito no es hacernos multimillonarios, es servir, es poder compartir nuestro conocimiento"**.
+
+## Las líneas de negocio
+
+Katherine, como gerente general, explicó que la clave del crecimiento de la empresa y su dirección estratégica está en cuatro líneas de negocio principales. La primera, la consultoría técnica que tiene que ver con proyectos de superficie y subsuelo: "Estamos trabajando en todo el tema de estructuración de proyectos en dónde están esos retos, esos dolores que tienen las empresas en ejecución de proyectos", indicó. 
+
+La segunda línea es la consultoría que nace de la realidad actual del Gobierno y su interés en volver a activar los proyectos de yacimientos no convencionales. Para eso tienen un grupo de asesores expertos aliados en este campo. 
+
+La tercera es donde Katherine se mueve como pez en el agua, el **área de consultoría especializada** en planeación estratégica y cadena de abastecimiento del sector de hidrocarburos. "Tengo una experiencia cercana a los doce años trabajando con tres operadoras en las cuales he podido identificar las mejores prácticas en temas de licitaciones, compras, contratación y cómo favorecer la mano de obra local", afirmó. 
+
+Y la cuarta es la de educación no formal donde Capex Energy Advisory ofrece los servicios de lo que han probado en el mundo real lo que funciona para la industria y transmiten ese conocimiento **a los clientes y proveedores** que los contratan, incluyendo temas de gestión de proyectos, yacimientos, planeación, licitaciones, contratación de mano de obra local, entre otros. 
 
 ## La apuesta por Santander
 
