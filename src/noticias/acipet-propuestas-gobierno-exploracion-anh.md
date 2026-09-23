@@ -1,6 +1,6 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "ANH admite en Bucaramanga: se renunció a explorar"
 date: 2026-09-23T05:00:00.000-05:00
 categoria: Industria
@@ -10,6 +10,11 @@ excerpt: El presidente de la ANH reconoció que el país abandonó la exploraci�
   en cuatro años. Acipet respondió con tres propuestas y Santander quedó en el
   centro.
 autor: Francisco Gómez - Director
+imagen: /assets/uploads/ernesto-forero-pdt-anh.webp
+imagenAlt: "Ernesto Forero, presidente de la Agencia Nacional de Hidrocarburos- ANH. "
+imagenTitle: "Ernesto Forero, presidente de la Agencia Nacional de Hidrocarburos- ANH. "
+imagenPie: "Ernesto Forero, presidente de la Agencia Nacional de Hidrocarburos- ANH. "
+imagenCredito: "Suministrada Prensa Acipet. "
 tags: noticias
 ---
 *"Necesitamos recuperar la actividad exploratoria a la que renunciamos."*
