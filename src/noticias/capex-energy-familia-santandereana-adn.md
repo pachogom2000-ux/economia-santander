@@ -30,6 +30,10 @@ Hoy la firma tiene su sede en Bogotá, pero sus raíces están en Santander: Ped
 
 Economía Santander charló con esta familia en el **XXIII Congreso Colombiano de Petróleo, Gas y Energía**, en Neomundo, Bucaramanga, y  conversó sobre las [oportunidades energéticas de Santander](/noticias/sector-energetico-debate-futuro-neomundo/). 
 
+![Inauguración del XXIII Congreso de Energía, Petróleo y Gas](/assets/uploads/xxiii-congreso-acipet.webp "Inauguración del XXIII Congreso de Energía, Petróleo y Gas")
+
+*Capex Energy Advisory formó parte de los patrocinadores del XXIII Congreso de Energía, Petróleo y Gas que se realiza en Neomundo, Bucaramanga, hasta el jueves 24 de septiembre. Foto: Economía Santander.* 
+
 ## De pensionarse de Ecopetrol a fundar una consultoría
 
 Pedro Quintero se pensionó de Ecopetrol después de casi 25 años en la empresa, por un cambio de régimen pensional que lo obligó a salir siendo joven. **"Nosotros tuvimos que salir, no porque se nos hubiera acabado la energía de trabajo, sino para garantizar una vejez tranquila"**, cuenta.
