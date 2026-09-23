@@ -12,9 +12,9 @@ excerpt: "CAPEX Energy Advisory, la consultora familiar de Pedro y
 autor: Francisco Gómez - Director
 tags: noticias
 ---
-Los proyectos que ha asesorado **CAPEX Energy Advisory** a lo largo de su trayectoria suman **más de 100 millones de dólares**, sumando la experiencia de sus dos socios: **Pedro Quintero**, ingeniero de petróleos con 25 años en Ecopetrol, y su hija **Katherine Quintero**, administradora de negocios internacionales con MBA. Es una firma familiar, con sede en Bogotá, que esta semana estuvo en el **XXIII Congreso Colombiano de Petróleo, Gas y Energía**, en Neomundo, Bucaramanga, hablando de las [oportunidades energéticas de Santander](/noticias/sector-energetico-debate-futuro-neomundo/).
+Los proyectos que ha asesorado **CAPEX Energy Advisory** a lo largo de su trayectoria suman **más de 100 millones de dólares**, sumando la experiencia de sus dos socios: **Pedro Quintero**, ingeniero de petróleos con 25 años en Ecopetrol, y su hija **Katherine Quintero**, administradora de negocios internacionales con MBA. Hoy la firma tiene su sede en Bogotá, pero sus raíces están en Santander: Pedro es santandereano y trabajó buena parte de su carrera en Ecopetrol en **Barrancabermeja**, y Katherine nació en esa misma ciudad —su familia se trasladó a Bogotá cuando ella era niña, pero dice sentirse "más santandereana que bogotana".
 
-Economía Santander conversó con ellos en el evento.
+Padre e hija estuvieron esta semana en el **XXIII Congreso Colombiano de Petróleo, Gas y Energía**, en Neomundo, Bucaramanga, hablando de las [oportunidades energéticas de Santander](/noticias/sector-energetico-debate-futuro-neomundo/). Economía Santander conversó con ellos en el evento.
 
 ## De pensionarse de Ecopetrol a fundar una consultoría
 
