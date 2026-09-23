@@ -2,23 +2,24 @@
 layout: noticia.njk
 eleventyExcludeFromCollections: true
 title: "Fracking en Puerto Wilches: Bayón pide reactivarlo"
-date: 2026-09-22T20:00:00.000-05:00
+date: 2026-09-23T06:00:00.000-05:00
 categoria: Industria
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "Felipe Bayón, ahora CEO de GeoPark, pide reactivar en Puerto
-  Wilches los pilotos de fracking que él mismo frenó siendo presidente
-  de Ecopetrol."
+excerpt: Felipe Bayón, CEO de GeoPark, pide reactivar en Puerto Wilches los
+  pilotos de fracking que él mismo frenó siendo presidente de Ecopetrol.
 autor: Francisco Gómez - Director
 imagen: /assets/uploads/petroleo-santander-moni49.webp
 imagenAlt: Imagen alusiva a campo de petróleo en Santander
 imagenTitle: Fracking en Puerto Wilches, la paradoja de Felipe Bayón
-imagenPie: Felipe Bayón pide reactivar en Puerto Wilches los pilotos de
-  fracking que él mismo frenó como presidente de Ecopetrol.
+imagenPie: Felipe Bayón pide reactivar en Puerto Wilches los pilotos de fracking
+  que él mismo frenó como presidente de Ecopetrol.
 imagenCredito: Pixabay-moni49
 tags: noticias
 ---
-**Felipe Bayón** le pidió al país reactivar los pilotos de fracking en **Puerto Wilches**, Santander. Lo llamativo es que son los mismos proyectos que él mismo, como presidente de Ecopetrol, tuvo que frenar hace apenas tres años. Lo dijo en rueda de prensa durante el **XXIII Congreso Colombiano de Petróleo, Gas y Energía**, en Neomundo, Bucaramanga, el mismo evento donde este portal ya había registrado el respaldo del [gobernador Juvenal Díaz al fracking](/noticias/fracking-gobernador-santander-1-2-billones/) y las [voces del sector que piden reactivar la industria](/noticias/sector-energetico-debate-futuro-neomundo/).
+**Felipe Bayón** le pidió al país reactivar los pilotos de fracking en **Puerto Wilches**, Santander. Lo llamativo es que son los mismos proyectos que él mismo, como presidente de Ecopetrol, tuvo que frenar hace apenas tres años. 
+
+Lo dijo en rueda de prensa durante el **XXIII Congreso Colombiano de Petróleo, Gas y Energía**, en Neomundo, Bucaramanga, el mismo evento donde este portal ya había registrado el respaldo del [gobernador Juvenal Díaz al fracking](/noticias/fracking-gobernador-santander-1-2-billones/) y las [voces del sector que piden reactivar la industria](/noticias/sector-energetico-debate-futuro-neomundo/).
 
 ## De impulsar Kalé y Platero a "pisar el freno"
 
@@ -36,7 +37,9 @@ Bayón fue explícito en que Santander no es la única región que le interesa: 
 
 ## El diálogo social, el pendiente de siempre
 
-Bayón reconoció que el diálogo con las comunidades sigue siendo la condición central para que cualquier proyecto avance: *"Tenemos un diálogo permanente con las comunidades en las zonas donde operamos, y va a ser fundamental ese trabajo conjunto de sentarse con las comunidades"*. Sobre las objeciones ambientales que han rodeado al fracking en Colombia, su lectura es que el rechazo ha perdido fuerza: *"Parte de la mitificación que se hizo sobre el fracking en algún momento, la gente la ha podido entender; la tecnología ha avanzado"*.
+Bayón reconoció que el diálogo con las comunidades sigue siendo la condición central para que cualquier proyecto avance: *"Tenemos un diálogo permanente con las comunidades en las zonas donde operamos, y va a ser fundamental ese trabajo conjunto de sentarse con las comunidades"*. 
+
+Sobre las objeciones ambientales que han rodeado al fracking en Colombia, su lectura es que el rechazo ha perdido fuerza: *"Parte de la mitificación que se hizo sobre el fracking en algún momento, la gente la ha podido entender; la tecnología ha avanzado"*.
 
 Es, en todo caso, su propia valoración —no hay en sus declaraciones una cifra o estudio que mida qué tanto ha cambiado, en Puerto Wilches, la percepción de las comunidades sobre la técnica.
 
