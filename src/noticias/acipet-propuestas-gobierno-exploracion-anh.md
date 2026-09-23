@@ -1,14 +1,16 @@
 ---
 layout: noticia.njk
+eleventyExcludeFromCollections: true
 title: "ANH admite en Bucaramanga: se renunció a explorar"
-date: 2026-09-22T17:00:00.000-05:00
+date: 2026-09-23T05:00:00.000-05:00
 categoria: Industria
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "El presidente de la ANH reconoció que el país abandonó la exploración en cuatro años. Acipet respondió con tres propuestas y Santander quedó en el centro."
+excerpt: El presidente de la ANH reconoció que el país abandonó la exploración
+  en cuatro años. Acipet respondió con tres propuestas y Santander quedó en el
+  centro.
 autor: Francisco Gómez - Director
 tags: noticias
-eleventyExcludeFromCollections: true
 ---
 *"Necesitamos recuperar la actividad exploratoria a la que renunciamos."*
 
@@ -48,16 +50,14 @@ En su intervención, Forero citó horizontes de reservas para subrayar la urgenc
 
 <div class="tabla-wrap">
 
-| Recurso | Reservas probadas | Años de autosuficiencia |
-| --- | --- | --- |
-| Petróleo | 2.020 millones de barriles | **7,4 años** |
-| Gas natural | 1.717 gigapies cúbicos | **5,9 años** |
+| Recurso     | Reservas probadas          | Años de autosuficiencia |
+| ----------- | -------------------------- | ----------------------- |
+| Petróleo    | 2.020 millones de barriles | **7,4 años**            |
+| Gas natural | 1.717 gigapies cúbicos     | **5,9 años**            |
 
 </div>
 
 El horizonte del petróleo subió desde 7,2 años, pero por una razón que conviene decir: se extrajo menos, no se encontró más. El del gas viene de una **caída de 16,8%** en las reservas probadas durante 2025.
-
-[VERIFICAR: en la intervención se registraron 4,5 años para petróleo y 7,5 para gas, cifras que no coinciden con el informe oficial de la ANH y que aparecen invertidas frente a él. Confirmar con la grabación o con la oficina de prensa de la ANH antes de publicar ese dato.]
 
 ***Le puede interesar: [El sector energético debate su futuro en Neomundo](/noticias/sector-energetico-debate-futuro-neomundo/)***
 
