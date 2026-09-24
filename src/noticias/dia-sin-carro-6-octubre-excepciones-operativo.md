@@ -1,6 +1,6 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Día sin carro 6 de octubre: 17 excepciones y el operativo"
 date: 2026-09-24T06:00:00.000-05:00
 categoria: Comercio y consumo
