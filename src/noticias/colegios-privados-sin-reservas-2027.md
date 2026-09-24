@@ -1,15 +1,20 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Colegios privados: 70,8% sin reservas para 2027"
-date: 2026-09-21T11:00:00.000-05:00
+date: 2026-09-24T06:02:00.000-05:00
 categoria: Emprendimiento y pymes
 chipTipo: recirc
 chipLabel: "Fuente: mattilda / Acopricol"
-excerpt: "Un informe de la fintech mattilda revela que el 95,9% de los
-  colegios privados en Colombia es optimista, pero el 70,8% no tiene
-  reservas para 2027."
+excerpt: Un informe de la fintech mattilda revela que el 95,9% de los colegios
+  privados en Colombia es optimista, pero el 70,8% no tiene reservas para 2027.
 autor: Francisco Gómez - Director
+imagen: /assets/uploads/docente-escuela-publica-estados-unidos.webp
+imagenAlt: Las finanzas de los colegios privados están en crisis para el 2027.
+imagenTitle: "Colegios privados atraviesan duras pruebas económicas. "
+imagenPie: "El 70% de los colegios privados en Colombia no tiene recursos para
+  sostenerse. "
+imagenCredito: Archivo particular
 tags: noticias
 ---
 El **70,8%** de los colegios privados en Colombia no tiene reservas para sostenerse en 2027, según el informe *"mattilda 2026: el cambio que viene"*, de la fintech mattilda. La cifra convive con otra que parece contradecirla: el **95,9%** de esas mismas instituciones cree que estará mejor dentro de cinco años.
