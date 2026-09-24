@@ -1,62 +1,50 @@
 ---
 layout: noticia.njk
-title: "Dólar cruza los $3.300 y le da la razón al consenso"
+eleventyExcludeFromCollections: false
+title: Dólar se transa en $3.300 este jueves; promedio supera TRM hoy
 date: 2026-09-24T07:00:00.000-05:00
 categoria: Indicadores económicos
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "El dólar se negocia este jueves por encima de $3.300, el nivel que el mercado proyectaba para diciembre. La TRM subió $163,94 desde la decisión de la Fed."
+excerpt: La TRM subió $163,94 desde la decisión de la Fed. Es el nivel más alto
+  desde julio y deja la proyección de $3.300 para diciembre a solo 1,09% de
+  distancia.
 autor: Francisco Gómez - Director
+imagen: /assets/uploads/dolar-pixabay-geralt.webp
+imagenAlt: Imagen de dólar al alza en Colombia
+imagenTitle: "Dólar llega a $3.264 en Colombia el 23 de septiembre de 2026. "
+imagenPie: El dólar cruzó la barrera de los $3.300 el 23 de septiembre, el techo
+  dejó de ser teórico.
+imagenCredito: Pixabay-Geralt
 tags: noticias
-eleventyExcludeFromCollections: true
 ---
-El dólar se está negociando este jueves **por encima de $3.300**. A las 8:33 de la mañana el mercado interbancario registraba **$3.303,33**, después de abrir en $3.280 y de tocar un máximo de **$3.305**.
+En la jornada interbancaria de este 24 de septiembre, el **dólar se transa por arriba de los $3.300** en su último precio y el promedio supera los $32 frente a la TRM vigente de $3.264, según datos recopilados por Economía Santander desde el sistema de negociación de divisas Set-FX en Colombia. 
 
-Ese es el nivel que el consenso de analistas proyectaba **para diciembre**. Llegó en septiembre.
+![dolar jueves 24 de septiembre 2026](/assets/uploads/dolar-jueves-24-de-sp-stfx.webp "dolar jueves 24 de septiembre 2026 en sistema Set-FX")
 
-La **TRM de hoy es $3.264,39**, el nivel más alto desde el **10 de julio**, y ya quedó $39 por debajo de lo que el mercado está pagando en este momento. Frente al miércoles 16 —el día en que la Reserva Federal subió su tasa— la TRM acumula **$163,94 más, un alza de 5,29% en seis jornadas**.
+***Captura saca del sistema interbancario Set-FX.*** 
+
+En la jornada intradía de este jueves, el dólar ha superado el techo técnico de $3.300, cumpliendo con las expectativas de los analistas, aunque el consenso esperaba este comportamiento para diciembre de 2026. 
+
+En la apertura, el dólar abrió a $3.280 y registró un máximo de $3.327 y un mínimo de $3.276. Se ha **negociado un volumen de US$ 245.393.000** en 453 operaciones. 
+
+La **TRM de hoy es $3.264,39**, el nivel más alto del dólar desde el **10 de julio**. Son **$163,94 más** que el miércoles 16, el día en que la Reserva Federal subió su tasa: un alza de **5,29% en seis jornadas**.
 
 El lunes este portal preguntó si el salto del fin de semana era un pico o el comienzo de una escalera. Ya hay respuesta: **escalera**, y con un escalón cada día.
 
-## La jornada de hoy, minuto a minuto
-
-![Pantalla del sistema de negociación Set-FX con la evolución intradía del dólar el 24 de septiembre de 2026](/assets/uploads/dolar-intradia-setfx-24-septiembre-2026.png)
-
-*El dólar sobre $3.300 en la mañana de este jueves. Fuente: Set-FX, sistema de negociación interbancario.*
-
-Así iba la sesión al corte de las **8:33 a. m.**, según el sistema de negociación **Set-FX**, donde los bancos compran y venden dólares entre ellos:
-
-<div class="tabla-wrap">
-
-| Indicador | Valor |
-| --- | --- |
-| Apertura | $3.280,00 |
-| Mínimo | $3.276,00 |
-| Máximo | **$3.305,00** |
-| Último negociado | **$3.303,33** |
-| Promedio | $3.296,08 |
-| Monto negociado | US$92,29 millones |
-| Transacciones | 167 |
-
-</div>
-
-Dos cosas que conviene leer de esa pantalla. La primera: **el mínimo de la jornada, $3.276, está por encima de la TRM del día**. Es decir, en ningún momento de la mañana el dólar se negoció tan barato como dice la tasa oficial.
-
-La segunda: el movimiento no fue un pico aislado. El dólar subió $23 desde la apertura y se sostuvo en la franja de los $3.300 durante la última media hora de la muestra, con 167 operaciones y US$92 millones transados.
-
-Como la TRM de mañana se calcula con las operaciones de hoy, **el dato del viernes debería reflejar ese nivel.**
+Pero el dato que cambia la conversación es otro. El consenso del mercado proyectaba **$3.300 para diciembre**, una cifra que durante ocho meses pareció imposible. Hoy está a **1,09% de distancia**, unos $35. Y el miércoles el dólar ya la tocó.
 
 ## ¿Cómo va la escalera?
 
 <div class="tabla-wrap">
 
-| TRM vigente | Valor | Variación |
-| --- | --- | --- |
-| Miércoles 16 (día de la Fed) | $3.100,45 | −$8,85 |
-| Lunes 21 | $3.192,92 | +$41,19 |
-| Martes 22 | $3.192,53 | −$0,39 |
-| Miércoles 23 | $3.208,66 | +$16,13 |
-| **Jueves 24** | **$3.264,39** | **+$55,73** |
+| TRM vigente                  | Valor         | Variación   |
+| ---------------------------- | ------------- | ----------- |
+| Miércoles 16 (día de la Fed) | $3.100,45     | −$8,85      |
+| Lunes 21                     | $3.192,92     | +$41,19     |
+| Martes 22                    | $3.192,53     | −$0,39      |
+| Miércoles 23                 | $3.208,66     | +$16,13     |
+| **Jueves 24**                | **$3.264,39** | **+$55,73** |
 
 </div>
 
@@ -78,26 +66,23 @@ La subida de la Fed fue el disparador, pero ya no es la única explicación. Los
 
 ***Le puede interesar: [Dólar sube $92 en tres días tras la Fed y ya va en $3.192](/noticias/dolar-sube-tres-dias-fed-trm-3192/)***
 
-## El consenso que se equivocaba acabó acertando
+## El consenso que se equivocaba ya casi acierta
 
 Vale la pena mirar cómo cambió la aritmética en tres semanas.
 
 <div class="tabla-wrap">
 
-| Fecha | TRM | Cuánto faltaba para $3.300 |
-| --- | --- | --- |
-| 5 de septiembre | $3.126,08 | 5,56% |
-| 21 de septiembre | $3.192,92 | 3,35% |
-| 24 de septiembre | $3.264,39 | 1,09% |
-| **24 de septiembre, en el mercado** | **$3.303,33** | **cumplido** |
+| Fecha                | TRM           | Cuánto faltaba para $3.300 |
+| -------------------- | ------------- | -------------------------- |
+| 5 de septiembre      | $3.126,08     | 5,56%                      |
+| 21 de septiembre     | $3.192,92     | 3,35%                      |
+| **24 de septiembre** | **$3.264,39** | **1,09%**                  |
 
 </div>
 
 Cuando el portal revisó en septiembre [las proyecciones del dólar para 2026](/noticias/dolar-2026-proyecciones-subira/), el hallazgo era que el consenso se había equivocado **$500 en ocho meses**: de $3.800 en marzo bajó a $3.300 en agosto, corrigiendo hacia abajo mientras el dólar seguía cayendo.
 
-Hoy la historia se invirtió: los que proyectaban $3.300 para diciembre acertaron el número **en septiembre**.
-
-Conviene decirlo con cuidado. Acertar la cifra tres meses antes no es lo mismo que acertar la trayectoria: el consenso llegó a ese número **bajando** desde $3.800, no subiendo. Y el dólar sigue **13% por debajo** de los $3.757 con que arrancó el año.
+Hoy la historia se invirtió. Los que proyectaban $3.300 para diciembre pueden acertar **en septiembre**. Conviene decirlo con cuidado: acertar el número tres meses antes no es lo mismo que acertar la trayectoria, y el dólar sigue **13% por debajo** de los $3.757 con que arrancó el año.
 
 ## ¿Qué va a hacer el Banco de la República?
 
@@ -119,10 +104,10 @@ La lógica es la del diferencial. Con la inflación en 6,24% nacional y [7,03% e
 
 ## Lo que hay que vigilar
 
-**Si el dólar cierra sobre $3.300.** El miércoles lo tocó y retrocedió; este jueves abrió cerca y se sostuvo toda la mañana. El cierre de hoy y la TRM de mañana dirán si el nivel se consolidó.
+**Si el dólar se queda sobre $3.300.** El miércoles lo tocó y retrocedió. Sostenerse por encima sería la señal de que el mercado ya asumió el escenario de diciembre.
 
 **El 30 de septiembre.** Si la Junta llegara a subir la tasa —hoy es la hipótesis minoritaria—, sería la confirmación de que la defensa del peso pasó a ser prioridad.
 
 **El riesgo fiscal.** Es la única de las tres fuerzas que depende de decisiones colombianas, y la que puede corregirse o agravarse con un anuncio.
 
-*Las TRM son las certificadas por la Superintendencia Financiera, consultadas en el portal de datos abiertos del Estado. Las variaciones porcentuales, la distancia frente a la proyección de $3.300 y la comparación con el inicio del año ($3.757,08) son cálculos de Economía Santander. Los datos de la jornada del 24 de septiembre —apertura, máximo, mínimo, último negociado, promedio, monto y número de transacciones— corresponden al sistema de negociación interbancario Set-FX, con corte a las 8:33 a. m. La imagen es una captura de la plataforma de Set-FX. Los datos de cierre del 23 de septiembre, las razones señaladas por analistas y las expectativas sobre la decisión del Banco de la República provienen de la prensa económica nacional de esta semana.*
+*Las TRM son las certificadas por la Superintendencia Financiera, consultadas en el portal de datos abiertos del Estado. Las variaciones porcentuales, la distancia frente a la proyección de $3.300 y la comparación con el inicio del año ($3.757,08) son cálculos de Economía Santander. Los datos de cierre, máximo y mínimo de la jornada del 23 de septiembre, las razones señaladas por analistas y las expectativas sobre la decisión del Banco de la República provienen de la prensa económica nacional de esta semana.*
