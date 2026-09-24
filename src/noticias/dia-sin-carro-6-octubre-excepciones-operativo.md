@@ -2,15 +2,14 @@
 layout: noticia.njk
 eleventyExcludeFromCollections: true
 title: "Día sin carro 6 de octubre: 17 excepciones y el operativo"
-date: 2026-09-24T08:00:00.000-05:00
+date: 2026-09-24T06:00:00.000-05:00
 categoria: Comercio y consumo
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "El AMB confirmó las 17 excepciones y los 7.883 vehículos de
-  transporte público disponibles para el día sin carro del 6 de octubre
-  en Bucaramanga."
+excerpt: El AMB confirmó las 17 excepciones y los 7.883 vehículos de transporte
+  público disponibles para el día sin carro del 6 de octubre en Bucaramanga.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/panoramica-bucaramanga-archivoparticular-economiasantander.webp
+imagen: /assets/uploads/movilidad-bucaramanga-autopista-floridablanca.webp
 imagenAlt: Vista panorámica del área metropolitana de Bucaramanga
 imagenTitle: Operativo del día sin carro y sin moto, 6 de octubre de 2026
 imagenPie: El AMB confirmó las 17 excepciones y los 7.883 vehículos de
