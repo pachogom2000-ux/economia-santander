@@ -1,7 +1,7 @@
 ---
 layout: noticia.njk
 eleventyExcludeFromCollections: false
-title: Dólar llega a $3.264 y alcanza al consenso tres meses antes
+title: Dólar se transa en $3.300 este jueves; promedio supera TRM hoy
 date: 2026-09-24T07:00:00.000-05:00
 categoria: Indicadores económicos
 chipTipo: propio
@@ -18,6 +18,16 @@ imagenPie: El dólar cruzó la barrera de los $3.300 el 23 de septiembre, el tec
 imagenCredito: Pixabay-Geralt
 tags: noticias
 ---
+En la jornada interbancaria de este 24 de septiembre, el **dólar se transa por arriba de los $3.300** en su último precio y el promedio supera los $32 frente a la TRM vigente de $3.264, según datos recopilados por Economía Santander desde el sistema de negociación de divisas Set-FX en Colombia. 
+
+![dolar jueves 24 de septiembre 2026](/assets/uploads/dolar-jueves-24-de-sp-stfx.webp "dolar jueves 24 de septiembre 2026 en sistema Set-FX")
+
+***Captura saca del sistema interbancario Set-FX.*** 
+
+En la jornada intradía de este jueves, el dólar ha superado el techo técnico de $3.300, cumpliendo con las expectativas de los analistas, aunque el consenso esperaba este comportamiento para diciembre de 2026. 
+
+En la apertura, el dólar abrió a $3.280 y registró un máximo de $3.327 y un mínimo de $3.276. Se ha **negociado un volumen de US$ 245.393.000** en 453 operaciones. 
+
 La **TRM de hoy es $3.264,39**, el nivel más alto del dólar desde el **10 de julio**. Son **$163,94 más** que el miércoles 16, el día en que la Reserva Federal subió su tasa: un alza de **5,29% en seis jornadas**.
 
 El lunes este portal preguntó si el salto del fin de semana era un pico o el comienzo de una escalera. Ya hay respuesta: **escalera**, y con un escalón cada día.
@@ -28,13 +38,13 @@ Pero el dato que cambia la conversación es otro. El consenso del mercado proyec
 
 <div class="tabla-wrap">
 
-| TRM vigente | Valor | Variación |
-| --- | --- | --- |
-| Miércoles 16 (día de la Fed) | $3.100,45 | −$8,85 |
-| Lunes 21 | $3.192,92 | +$41,19 |
-| Martes 22 | $3.192,53 | −$0,39 |
-| Miércoles 23 | $3.208,66 | +$16,13 |
-| **Jueves 24** | **$3.264,39** | **+$55,73** |
+| TRM vigente                  | Valor         | Variación   |
+| ---------------------------- | ------------- | ----------- |
+| Miércoles 16 (día de la Fed) | $3.100,45     | −$8,85      |
+| Lunes 21                     | $3.192,92     | +$41,19     |
+| Martes 22                    | $3.192,53     | −$0,39      |
+| Miércoles 23                 | $3.208,66     | +$16,13     |
+| **Jueves 24**                | **$3.264,39** | **+$55,73** |
 
 </div>
 
@@ -62,11 +72,11 @@ Vale la pena mirar cómo cambió la aritmética en tres semanas.
 
 <div class="tabla-wrap">
 
-| Fecha | TRM | Cuánto faltaba para $3.300 |
-| --- | --- | --- |
-| 5 de septiembre | $3.126,08 | 5,56% |
-| 21 de septiembre | $3.192,92 | 3,35% |
-| **24 de septiembre** | **$3.264,39** | **1,09%** |
+| Fecha                | TRM           | Cuánto faltaba para $3.300 |
+| -------------------- | ------------- | -------------------------- |
+| 5 de septiembre      | $3.126,08     | 5,56%                      |
+| 21 de septiembre     | $3.192,92     | 3,35%                      |
+| **24 de septiembre** | **$3.264,39** | **1,09%**                  |
 
 </div>
 
