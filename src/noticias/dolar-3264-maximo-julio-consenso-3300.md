@@ -22,7 +22,7 @@ El lunes este portal preguntó si el salto del fin de semana era un pico o el co
 
 ![Pantalla del sistema de negociación Set-FX con la evolución intradía del dólar el 24 de septiembre de 2026](/assets/uploads/dolar-intradia-setfx-24-septiembre-2026.png)
 
-*El dólar sobre $3.300 en la pantalla de Set-FX, el sistema de negociación interbancario, en la mañana de este jueves. Registro de Economía Santander.*
+*El dólar sobre $3.300 en la mañana de este jueves. Fuente: Set-FX, sistema de negociación interbancario.*
 
 Así iba la sesión al corte de las **8:33 a. m.**, según el sistema de negociación **Set-FX**, donde los bancos compran y venden dólares entre ellos:
 
@@ -125,4 +125,4 @@ La lógica es la del diferencial. Con la inflación en 6,24% nacional y [7,03% e
 
 **El riesgo fiscal.** Es la única de las tres fuerzas que depende de decisiones colombianas, y la que puede corregirse o agravarse con un anuncio.
 
-*Las TRM son las certificadas por la Superintendencia Financiera, consultadas en el portal de datos abiertos del Estado. Las variaciones porcentuales, la distancia frente a la proyección de $3.300 y la comparación con el inicio del año ($3.757,08) son cálculos de Economía Santander. Los datos de la jornada del 24 de septiembre —apertura, máximo, mínimo, último negociado, promedio, monto y número de transacciones— corresponden al sistema de negociación interbancario Set-FX, con corte a las 8:33 a. m., registrados directamente por Economía Santander. Los datos de cierre del 23 de septiembre, las razones señaladas por analistas y las expectativas sobre la decisión del Banco de la República provienen de la prensa económica nacional de esta semana.*
+*Las TRM son las certificadas por la Superintendencia Financiera, consultadas en el portal de datos abiertos del Estado. Las variaciones porcentuales, la distancia frente a la proyección de $3.300 y la comparación con el inicio del año ($3.757,08) son cálculos de Economía Santander. Los datos de la jornada del 24 de septiembre —apertura, máximo, mínimo, último negociado, promedio, monto y número de transacciones— corresponden al sistema de negociación interbancario Set-FX, con corte a las 8:33 a. m. La imagen es una captura de la plataforma de Set-FX. Los datos de cierre del 23 de septiembre, las razones señaladas por analistas y las expectativas sobre la decisión del Banco de la República provienen de la prensa económica nacional de esta semana.*
