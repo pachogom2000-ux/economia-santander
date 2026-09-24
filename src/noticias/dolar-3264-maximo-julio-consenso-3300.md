@@ -22,7 +22,7 @@ En la jornada interbancaria de este 24 de septiembre, el **dólar se transa por 
 
 ![dolar jueves 24 de septiembre 2026](/assets/uploads/dolar-jueves-24-de-sp-stfx.webp "dolar jueves 24 de septiembre 2026 en sistema Set-FX")
 
-***Captura saca del sistema interbancario Set-FX.*** 
+***Captura del sistema interbancario Set-FX.*** 
 
 En la jornada intradía de este jueves, el dólar ha superado el techo técnico de $3.300, cumpliendo con las expectativas de los analistas, aunque el consenso esperaba este comportamiento para diciembre de 2026. 
 
