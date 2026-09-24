@@ -1,6 +1,6 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Colegios privados: 70,8% sin reservas para 2027"
 date: 2026-09-24T06:02:00.000-05:00
 categoria: Emprendimiento y pymes
