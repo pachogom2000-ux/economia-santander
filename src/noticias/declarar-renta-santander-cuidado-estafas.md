@@ -1,20 +1,20 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Declarar renta en Santander: cuidado con las estafas"
-date: 2026-09-25T09:00:00.000-05:00
+date: 2026-09-25T07:00:00.000-05:00
 categoria: Impuestos y regulación
 chipTipo: recirc
 chipLabel: "Fuente: Kaspersky / DIAN"
-excerpt: "Kaspersky advierte que los ciberdelincuentes aprovechan la
-  declaración de renta para lanzar estafas; la DIAN ya confirmó denuncias
-  en Barrancabermeja."
+excerpt: Kaspersky advierte que los ciberdelincuentes aprovechan la declaración
+  de renta para lanzar estafas; la DIAN ya confirmó denuncias en
+  Barrancabermeja.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/celular-tookapic.webp
+imagen: /assets/uploads/fraude-pymes.webp
 imagenAlt: Persona revisando mensajes sospechosos en el celular
 imagenTitle: Cuidado con las estafas durante la declaración de renta 2026
-imagenPie: Los ciberdelincuentes aprovechan la temporada de declaración de
-  renta para enviar correos y mensajes falsos que suplantan a la DIAN.
+imagenPie: Los ciberdelincuentes aprovechan la temporada de declaración de renta
+  para enviar correos y mensajes falsos que suplantan a la DIAN.
 imagenCredito: Pixabay - Tookapic. Editada por Economía Santander.
 tags: noticias
 ---
