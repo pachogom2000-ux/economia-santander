@@ -2,20 +2,20 @@
 layout: noticia.njk
 eleventyExcludeFromCollections: true
 title: "Terremoto: exención de copagos para damnificados en salud"
-date: 2026-09-25T10:00:00.000-05:00
+date: 2026-09-25T05:30:00.000-05:00
 categoria: Impuestos y regulación
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "Un decreto del Gobierno exime por 12 meses de copagos y cuotas
-  moderadoras a los damnificados del terremoto del 10 de agosto, incluidos
-  en Santander."
+excerpt: Un decreto del Gobierno exime por 12 meses de copagos y cuotas
+  moderadoras a los damnificados del terremoto del 10 de agosto, incluidos en
+  Santander.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/santander-decreto-terremoto.webp
-imagenAlt: Diario Oficial con un decreto sobre la emergencia por el terremoto
+imagen: /assets/uploads/copagos-salud.webp
+imagenAlt: Médico en Colombia copagos y cuota moderadora en salud
 imagenTitle: Exención de copagos y cuotas moderadoras para damnificados del terremoto
-imagenPie: El Decreto 1415 de 2026 exime de copagos y cuotas moderadoras a
-  los damnificados del terremoto del 10 de agosto, por 12 meses.
-imagenCredito: "Foto Presidencia, editada por Economía Santander con ChatGPT."
+imagenPie: El Decreto 1415 de 2026 exime de copagos y cuotas moderadoras a los
+  damnificados del terremoto del 10 de agosto, por 12 meses.
+imagenCredito: Pixabay editada por Economía Santander
 tags: noticias
 ---
 Los **damnificados del terremoto del 10 de agosto** no tendrán que pagar **copagos ni cuotas moderadoras** en salud durante los próximos **12 meses**, sin importar en qué parte del país reciban la atención. Lo dispuso el **Decreto 1415 del 17 de septiembre de 2026**, del Ministerio de Salud, en desarrollo del Estado de Emergencia que ya incluye a [Santander](/noticias/santander-decreto-emergencia-terremoto-1348/).
