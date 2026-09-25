@@ -99,7 +99,7 @@ Entre los firmantes está el ministro de Vivienda, Ciudad y Territorio, **Jaime 
 
 ###### Cómo llegamos hasta aquí
 
-El 10 de agosto, cuando ocurrió el sismo, [Santander no aparecía con reporte de daños graves](/noticias/temblor-hoy-santander-sin-reporte-de-danos-graves/). Tres semanas después el departamento entró al decreto de emergencia.
+El 10 de agosto, cuando ocurrió el sismo, [Santander no aparecía con reporte de daños graves](/noticias/temblor-hoy-santander-sin-reporte-de-daños-graves/). Tres semanas después el departamento entró al decreto de emergencia.
 
 Esa distancia entre el primer balance y el definitivo es exactamente lo que el propio decreto reconoce: los reportes de una catástrofe se construyen por capas, y las cifras del primer día casi nunca son las últimas.
 
