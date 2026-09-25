@@ -1,6 +1,6 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Terremoto: exención de copagos para damnificados en salud"
 date: 2026-09-25T05:30:00.000-05:00
 categoria: Impuestos y regulación
