@@ -1,17 +1,24 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
-title: "Recesión 2027: los 7 consejos que dio ChatGPT"
+eleventyExcludeFromCollections: false
+title: "¿Recesión 2027?: los 7 consejos que dio ChatGPT"
 date: 2026-09-27T13:00:00.000-05:00
 categoria: Finanzas personales
 chipTipo: recirc
 chipLabel: "Fuente: GoBankingRates / ChatGPT"
-excerpt: "Un medio de EE.UU. le preguntó a ChatGPT cómo preparar las
-  finanzas para una recesión; así se traducen esos siete consejos a la
-  realidad de Santander."
+excerpt: Un medio de EE.UU. le preguntó a ChatGPT cómo preparar las finanzas
+  para una recesión; así se traducen esos siete consejos a la realidad de
+  Santander.
 autor: Francisco Gómez - Director
-tags: noticias
+imagen: /assets/uploads/recesion-pixabay-tungart7.webp
+imagenAlt: Hombre mirando una pantalla de operaciones en medio de una recesión en 2027.
+imagenTitle: ¿Qué hacer ante una recesión económica? ChatGPT dió 7 consejos para
+  las finanzas personales.
+imagenPie: Un medio estadounidense le preguntó a ChatGPT los consejos para
+  prepararse en caso de una recesión.
+imagenCredito: Pixabay tungart7
 guia: true
+tags: noticias
 ---
 El medio estadounidense **GoBankingRates** le preguntó a **ChatGPT** cómo debería prepararse la clase media de Estados Unidos ante una posible recesión, y publicó las siete respuestas que dio la herramienta. El experimento se volvió viral en un momento en que las búsquedas en Google por "¿habrá recesión en 2026?" subieron más del **5.000%** en ese país.
 
