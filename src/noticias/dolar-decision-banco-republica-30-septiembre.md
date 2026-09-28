@@ -1,14 +1,13 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Dólar: qué se juega el 30 con el Banco de la República"
 date: 2026-09-28T06:00:00.000-05:00
 categoria: Indicadores económicos
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "Con la inflación en 6,24% y la Junta dividida 4 a 3, los
-  analistas se inclinan por otro alto en la tasa el 30 de septiembre,
-  clave para el dólar."
+excerpt: Con la inflación en 6,24% y la Junta dividida 4 a 3, los analistas se
+  inclinan por otro alto en la tasa el 30 de septiembre, clave para el dólar.
 autor: Francisco Gómez - Director
 imagen: /assets/uploads/dolar-sube-septiembre.webp
 imagenAlt: El dólar viene en alza tras los recientes hechos macroeconómicos
