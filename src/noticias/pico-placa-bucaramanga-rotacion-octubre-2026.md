@@ -64,10 +64,12 @@ La franja superior de este portal muestra cada día los dígitos vigentes en Buc
 
 ## Lo que hay que tener presente antes de octubre
 
-**El 30 de septiembre es el día sin carro y sin moto**, cinco días antes de la rotación. Ese día la restricción es total y no depende del dígito; [la columna del director](/noticias/columna-dia-sin-carro-bucaramanga-metrolinea/) explicó por qué llega con el mismo Metrolínea que motivó suspenderlo en 2025.
+**El martes 6 de octubre es el día sin carro y sin moto**, un día después de la rotación. Estaba programado para el 30 de septiembre, pero la Junta Metropolitana [lo aplazó al 6 de octubre](/noticias/dia-sin-carro-bucaramanga-nueva-fecha-6-octubre/). Entre las 9:00 a. m. y las 4:00 p. m. la restricción es total y no depende del dígito; [la columna del director](/noticias/columna-dia-sin-carro-bucaramanga-metrolinea/) explicó por qué llega con el mismo Metrolínea que motivó suspenderlo en 2025.
 
 **El lunes 12 de octubre es festivo** (Día de la Raza), así que la primera semana completa de la rotación nueva es la del 13 al 16.
 
 **El parque automotor sigue creciendo.** El área metropolitana [cruzó el millón de vehículos registrados](/noticias/millon-vehiculos-amb-transporte-publico/) en 2025, y la restricción por dígito es la herramienta con la que la ciudad reparte las vías que no crecen al mismo ritmo.
 
 *La rotación, el horario, los sábados de octubre y la multa provienen del comunicado de la Dirección de Tránsito de Bucaramanga del 15 de septiembre de 2026 y de la Resolución 854 de 2025. El valor de la multa en pesos es cálculo de Economía Santander sobre el salario mínimo diario de 2026 ($58.363,50, Decreto 1469 de 2025).*
+
+*Actualizada el 28 de septiembre de 2026: el día sin carro y sin moto se aplazó del 30 de septiembre al 6 de octubre.*
