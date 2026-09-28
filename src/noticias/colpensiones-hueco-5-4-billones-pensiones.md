@@ -1,20 +1,20 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Colpensiones: el hueco de $5,4 billones en las pensiones"
 date: 2026-09-28T09:00:00.000-05:00
 categoria: Impuestos y regulación
 chipTipo: recirc
 chipLabel: "Fuente: ANIF / Ministerio de Trabajo"
-excerpt: "El Gobierno confirmó un faltante de $5,4 billones para pagar las
-  mesadas de noviembre y diciembre; ANIF ya lo había advertido desde
-  febrero de 2026."
+excerpt: El Gobierno confirmó un faltante de $5,4 billones para pagar las
+  mesadas de noviembre y diciembre; ANIF ya lo había advertido desde febrero de
+  2026.
 autor: Francisco Gómez - Director
 imagen: /assets/uploads/reforma-pensional-colombia.webp
 imagenAlt: Dos pensionados miran sus ingresos, en medio del hueco fiscal de Colpensiones
 imagenTitle: El hueco fiscal de Colpensiones para las mesadas de fin de año
-imagenPie: El Gobierno confirmó un faltante de $5,4 billones para garantizar
-  las mesadas pensionales de noviembre y diciembre de 2026.
+imagenPie: El Gobierno confirmó un faltante de $5,4 billones para garantizar las
+  mesadas pensionales de noviembre y diciembre de 2026.
 imagenCredito: Suministrada KPMG
 tags: noticias
 ---
