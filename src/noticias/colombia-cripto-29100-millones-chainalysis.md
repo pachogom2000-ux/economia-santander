@@ -1,8 +1,8 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Colombia cripto: USD 29.100 millones y creció 13,8%"
-date: 2026-09-29T10:00:00.000-05:00
+date: 2026-09-29T07:00:00.000-05:00
 categoria: Inversión
 chipTipo: recirc
 chipLabel: "Fuente: Chainalysis / Bitso"
@@ -13,8 +13,8 @@ autor: Francisco Gómez - Director
 imagen: /assets/uploads/financiero.jpg
 imagenAlt: Pantalla con gráficos de mercados financieros y criptomonedas
 imagenTitle: Colombia y el crecimiento de la economía cripto en América Latina
-imagenPie: Colombia es hoy la quinta economía cripto de América Latina, según
-  el nuevo capítulo regional de Chainalysis.
+imagenPie: Colombia es hoy la quinta economía cripto de América Latina, según el
+  nuevo capítulo regional de Chainalysis.
 imagenCredito: Pixabay
 tags: noticias
 ---
