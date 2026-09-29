@@ -57,6 +57,9 @@
 /assets/indicadores.js
   Cache-Control: public, max-age=0, must-revalidate
 
+/assets/archivo.js
+  Cache-Control: public, max-age=0, must-revalidate
+
 # Las fuentes SÍ llevan huella en el nombre (barlow-400.81419bf5ab.woff2), así
 # que se pueden congelar un año: si el archivo cambia, cambia el nombre y el
 # navegador pide el nuevo. Sin la huella esto sería la trampa de servir un

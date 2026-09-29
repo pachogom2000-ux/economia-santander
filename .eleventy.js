@@ -4,6 +4,7 @@ const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 const crypto = require("node:crypto");
 const fsSync = require("node:fs");
 const { incrustar, reconocer } = require("./lib/incrustar");
+const { normalizarBusqueda } = require("./lib/buscar");
 
 // ID de un video de YouTube a partir de una URL completa o del ID pelado (el
 // CMS acepta las dos formas). Devuelve cadena vacía si lo pegado NO es un
@@ -446,6 +447,35 @@ module.exports = function (eleventyConfig) {
       .sort((a, b) => new Date(b.date) - new Date(a.date));
     return cuantas ? encontradas.slice(0, cuantas) : encontradas;
   });
+
+  // Notas agrupadas por mes, de la más reciente a la más vieja:
+  // [{ mes: "septiembre de 2026", notas: [...] }, …]. Arma el archivo. El mes
+  // se calcula en hora de Bogotá: una nota de las 11 p. m. del 31 no puede
+  // irse al mes siguiente por culpa del UTC del servidor de build.
+  eleventyConfig.addFilter("porMes", (lista) => {
+    const mesDe = (fecha) =>
+      new Date(fecha).toLocaleDateString("es-CO", {
+        month: "long",
+        year: "numeric",
+        timeZone: "America/Bogota",
+      });
+    const grupos = [];
+    [...(lista || [])]
+      .sort((a, b) => new Date(b.date) - new Date(a.date))
+      .forEach((nota) => {
+        const mes = mesDe(nota.date);
+        const ultimo = grupos[grupos.length - 1];
+        if (ultimo && ultimo.mes === mes) ultimo.notas.push(nota);
+        else grupos.push({ mes, notas: [nota] });
+      });
+    return grupos;
+  });
+
+  // Texto preparado para el buscador del archivo: minúsculas y sin tildes, para
+  // que "credito" encuentre "crédito". El navegador aplica la MISMA limpieza a
+  // lo que escribe el lector (src/assets/archivo.js); si una cambia, la otra
+  // también.
+  eleventyConfig.addFilter("paraBuscar", (texto) => normalizarBusqueda(texto));
 
   // Guías y glosarios: contenido de consulta permanente, marcado con
   // "guia: true" en el front matter.

@@ -88,12 +88,17 @@ src/
     mm-card.njk          tarjeta de multimedia (lleva a la ficha, no reproduce)
   noticias/*.md          las notas
   multimedia/*.md        los contenidos multimedia; cada uno con su dirección
+  archivo.njk            /archivo/: todas las notas por mes, con buscador
+  archivo-indice.11ty.js /archivo/indice.json: palabras del texto de cada nota
+  assets/archivo.js      el buscador; filtra en el navegador, sin servidor
   assets/style.css       todo el CSS
   assets/uploads/        imágenes del CMS
   admin/config.yml       configuración de Decap CMS
 .eleventy.js             config; enlaces externos abren en pestaña nueva
 lib/incrustar.js         convierte un enlace de YouTube, TikTok, X… en el
                          contenido montado dentro de la nota
+lib/buscar.js            normalización del buscador (sin tildes); la misma
+                         que aplica assets/archivo.js — si cambia una, la otra
 ```
 
 ### Comandos

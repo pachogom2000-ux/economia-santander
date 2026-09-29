@@ -1,0 +1,70 @@
+---
+layout: layout.njk
+title: "Archivo de noticias económicas de Santander | Economía Santander"
+description: "Todas las noticias publicadas en Economía Santander, de la más reciente a la más antigua. Busque por palabra clave o filtre por sección."
+permalink: /archivo/
+---
+{#- Histórico completo del portal. Sale de collections.noticias, así que los
+    borradores (eleventyExcludeFromCollections: true) no aparecen.
+
+    La lista viene COMPLETA en el HTML: sin JavaScript se puede recorrer toda,
+    y Google la ve como una página de enlaces a cada nota. El buscador solo
+    esconde lo que no coincide (src/assets/archivo.js).
+
+    Va sin fotos a propósito: con cien notas, una miniatura por fila volvería
+    pesada una página que se usa para buscar, no para mirar. -#}
+{%- set grupos = collections.noticias | porMes %}
+<section class="section-block wrap archivo">
+  <div class="section-head">
+    <h1 class="seccion-titulo">Archivo de noticias</h1>
+    <span class="sub">{{ collections.noticias.length }} publicaciones</span>
+  </div>
+  <p class="seccion-desc">Todo lo publicado en Economía Santander, de lo más reciente a lo más antiguo. Busque por palabra clave: el buscador revisa el titular, el resumen y el texto de cada nota.</p>
+
+  <form class="archivo-buscador" role="search" action="/archivo/" method="get" id="archivo-form">
+    <div class="archivo-campo">
+      <label for="archivo-q">Palabra clave</label>
+      <input type="search" id="archivo-q" name="q" placeholder="Ej.: cacao, empleo, vivienda, TRM" autocomplete="off" enterkeyhint="search">
+    </div>
+    <div class="archivo-campo archivo-campo-seccion">
+      <label for="archivo-seccion">Sección</label>
+      <select id="archivo-seccion" name="seccion">
+        <option value="">Todas</option>
+        {%- for s in collections.secciones %}
+        <option value="{{ s.nombre | paraBuscar }}">{{ s.nombre }}</option>
+        {%- endfor %}
+      </select>
+    </div>
+  </form>
+  <p class="archivo-estado" id="archivo-estado" aria-live="polite"></p>
+
+  <div class="archivo-lista" id="archivo-lista">
+    {%- for g in grupos %}
+    <section class="archivo-mes" aria-labelledby="mes-{{ loop.index }}">
+      <h2 class="archivo-mes-titulo" id="mes-{{ loop.index }}">{{ g.mes }}</h2>
+      <ol class="archivo-notas">
+        {%- for n in g.notas %}
+        <li class="archivo-item" data-url="{{ n.url }}" data-seccion="{{ n.data.categoria | paraBuscar }}" data-texto="{{ [n.data.title, n.data.excerpt, n.data.categoria, n.data.chipLabel] | join(' ') | paraBuscar }}">
+          <div class="archivo-meta">
+            <time datetime="{{ n.date | isoDate }}">{{ n.date | readableDate }}</time>
+            {%- if n.data.categoria %}
+            <a class="archivo-cat" href="/seccion/{{ n.data.categoria | slugify }}/">{{ n.data.categoria }}</a>
+            {%- endif %}
+          </div>
+          <h3><a href="{{ n.url }}">{{ n.data.title }}</a></h3>
+          {%- if n.data.excerpt %}
+          <p class="archivo-resumen">{{ n.data.excerpt }}</p>
+          {%- endif %}
+        </li>
+        {%- endfor %}
+      </ol>
+    </section>
+    {%- endfor %}
+  </div>
+
+  <div class="seccion-vacia" id="archivo-vacio" hidden>
+    <p>No encontramos notas con esa búsqueda.</p>
+    <p>Pruebe con una palabra más corta o más general, o quite el filtro de sección.</p>
+  </div>
+</section>
+<script src="/assets/archivo.js" defer></script>

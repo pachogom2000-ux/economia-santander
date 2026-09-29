@@ -1729,6 +1729,70 @@
   }
 
   /* ==========================================================
+     Archivo: histórico de notas con buscador (/archivo/)
+     ========================================================== */
+  /* El buscador esconde filas y meses con el atributo hidden. Cualquier
+     display de abajo le ganaría a la regla del navegador, así que se fuerza. */
+  .archivo [hidden] { display: none !important; }
+  .archivo-buscador {
+    display: grid;
+    grid-template-columns: 1fr 240px;
+    gap: 14px;
+    align-items: end;
+    background: var(--bg-raised);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 16px;
+  }
+  .archivo-campo { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+  .archivo-campo label { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-muted); }
+  .archivo-campo input,
+  .archivo-campo select {
+    font: inherit;
+    font-size: 16px; /* 16 px o más: por debajo, el iPhone hace zoom al tocar el campo */
+    color: var(--text);
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 10px 12px;
+    width: 100%;
+  }
+  .archivo-campo input:focus,
+  .archivo-campo select:focus { outline: 2px solid var(--accent); outline-offset: 1px; border-color: var(--accent); }
+  .archivo-estado { min-height: 1.4em; margin: 12px 0 4px; font-size: 14px; color: var(--text-soft); font-weight: 600; }
+  .archivo-mes { margin-top: 22px; }
+  .archivo-mes-titulo {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--line);
+  }
+  .archivo-notas { list-style: none; margin: 0; padding: 0; }
+  .archivo-item { padding: 14px 0; border-bottom: 1px solid var(--line); }
+  .archivo-item:last-child { border-bottom: 0; }
+  .archivo-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; font-size: 12px; color: var(--text-muted); }
+  .archivo-cat {
+    color: var(--accent-strong);
+    background: var(--accent-tint);
+    border-radius: 999px;
+    padding: 2px 9px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .archivo-cat:hover { text-decoration: underline; }
+  .archivo-item h3 { font-size: clamp(17px, 2vw, 20px); line-height: 1.25; margin: 6px 0 4px; }
+  .archivo-item h3 a { text-decoration: none; }
+  .archivo-item h3 a:hover { color: var(--accent); }
+  .archivo-resumen { font-size: 14.5px; color: var(--text-soft); line-height: 1.55; max-width: 72ch; }
+  .archivo .seccion-vacia { margin-top: 18px; }
+  @media (max-width: 640px) {
+    .archivo-buscador { grid-template-columns: 1fr; padding: 14px; }
+    .archivo-resumen { display: none; }
+  }
+
+  /* ==========================================================
      "Sigue leyendo": tres notas al final de cada artículo
      ========================================================== */
   .sigue-leyendo { border-top: 1px solid var(--line); }
