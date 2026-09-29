@@ -1,8 +1,8 @@
 ---
 layout: noticia.njk
 eleventyExcludeFromCollections: false
-title: "Pico y placa Bucaramanga: así rota desde el 5 de octubre"
-date: 2026-09-17T06:00:00.000-05:00
+title: "Ojito: semana de 5 de octubre es sin carro y sin moto y rota pico y placa"
+date: 2026-09-29T06:05:00.000-05:00
 categoria: Comercio y consumo
 chipTipo: recirc
 chipLabel: "Fuente: Tránsito de Bucaramanga"
@@ -10,7 +10,7 @@ excerpt: "Desde el lunes 5 de octubre cambian los dígitos del pico y placa en
   Bucaramanga: cada placa pasa al día siguiente. Tabla completa, sábados y
   multa."
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/panoramica-bucaramanga-archivoparticular-economiasantander.webp
+imagen: /assets/uploads/conductor-carro.jpg
 imagenAlt: "El pico y placa en Bucaramanga se actualizará el próximo 5 de
   octubre de 2026. "
 imagenTitle: Movilidad en Bucaramanga.
@@ -19,6 +19,10 @@ imagenCredito: "Archivo particular. "
 guia: true
 tags: noticias
 ---
+La rotación del pico y placa en **Bucaramanga, Floridablanca, Piedecuesta y Girón** se hace cada trimestre y el primer lunes hábil del mes. Eso quiere decir que a partir del 5 de octubre cambia el día que usted tiene pico y placa, pero además esa misma semana se realizará la jornada del día sin carro y sin moto metropolitano, por lo cual miles de vehículos y motocicletas tendrán una restricción más, todo junto y sin rodeos. Así que ¡Cuidado al salir! No sea que termine siendo sorprendido, como ya es habitual, por los retenes de las autoridades de tránsito que salen a cazar desprevenidos que no están enterados de esta información. 
+
+Las multas son dolorosas para cualquier bolsillo (hasta 15 salarios mínimos diarios), adicional a la inmovilización del vehículo, la grúa, el pago de parqueadero en los patios de tránsito y lo que es peor: hacer un curso de normas de tránsito que toma tiempo, toda la mañana o tarde, para obtener un descuento de 50%. 
+
 Desde el **lunes 5 de octubre** el pico y placa de Bucaramanga cambia de dígitos. Es la **cuarta y última rotación de 2026**, y la regla para no equivocarse cabe en una frase: **cada placa pasa al día siguiente.**
 
 Quien hoy tiene restricción el lunes la tendrá el martes; quien la tiene el martes pasa al miércoles, y así hasta el viernes, que regresa al lunes. Lo anunció la **Dirección de Tránsito de Bucaramanga** el 15 de septiembre.
@@ -29,13 +33,13 @@ La multa por incumplir es de **15 salarios mínimos diarios**: **$875.453** en 2
 
 <div class="tabla-wrap">
 
-| Día | Hasta el 3 de octubre | **Desde el 5 de octubre** |
-| --- | --- | --- |
-| Lunes | 7 y 8 | **5 y 6** |
-| Martes | 9 y 0 | **7 y 8** |
-| Miércoles | 1 y 2 | **9 y 0** |
-| Jueves | 3 y 4 | **1 y 2** |
-| Viernes | 5 y 6 | **3 y 4** |
+| Día       | Hasta el 3 de octubre | **Desde el 5 de octubre** |
+| --------- | --------------------- | ------------------------- |
+| Lunes     | 7 y 8                 | **5 y 6**                 |
+| Martes    | 9 y 0                 | **7 y 8**                 |
+| Miércoles | 1 y 2                 | **9 y 0**                 |
+| Jueves    | 3 y 4                 | **1 y 2**                 |
+| Viernes   | 5 y 6                 | **3 y 4**                 |
 
 </div>
 
@@ -45,10 +49,10 @@ El horario no cambia: **de 6:00 a. m. a 8:00 p. m.** los días hábiles. La rota
 
 Los sábados la restricción va **de 9:00 a. m. a 1:00 p. m.** y los dígitos siguen su propio orden consecutivo, que no se altera con la rotación. En octubre:
 
-- **Sábado 10:** 9 y 0
-- **Sábado 17:** 1 y 2
-- **Sábado 24:** 3 y 4
-- **Sábado 31:** 5 y 6
+* **Sábado 10:** 9 y 0
+* **Sábado 17:** 1 y 2
+* **Sábado 24:** 3 y 4
+* **Sábado 31:** 5 y 6
 
 Ese orden continúa los sábados siguientes del trimestre: 7 y 8, luego 9 y 0, y vuelve a empezar.
 
