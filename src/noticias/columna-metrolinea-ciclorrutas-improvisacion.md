@@ -1,6 +1,6 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Mi opinión: Metrolínea y ciclorruta, el mismo fracaso"
 date: 2026-09-29T06:00:00.000-05:00
 categoria: Opinión
@@ -49,7 +49,7 @@ Ese reparto no lo decidió ningún plan de movilidad. Lo decidió la ausencia de
 
 ## No son dos fracasos. Es un solo patrón
 
-Escribí hace dos semanas que el día sin carro del 30 de septiembre se hacía con Metrolínea en las mismas condiciones que motivaron su suspensión un año antes, tal como conté en la columna sobre [el día sin carro con el mismo Metrolínea que lo suspendió](/noticias/columna-dia-sin-carro-bucaramanga-metrolinea/). El patrón se repite ahora con la ciclorruta: una decisión de infraestructura, tomada por presión legal o política, sin el estudio previo que debería sustentarla y sin el indicador posterior que diría si funcionó.
+Escribí hace dos semanas que el día sin carro del 6 de octubre se hacía con Metrolínea en las mismas condiciones que motivaron su suspensión un año antes, tal como conté en la columna sobre [el día sin carro con el mismo Metrolínea que lo suspendió](/noticias/columna-dia-sin-carro-bucaramanga-metrolinea/). El patrón se repite ahora con la ciclorruta: una decisión de infraestructura, tomada por presión legal o política, sin el estudio previo que debería sustentarla y sin el indicador posterior que diría si funcionó.
 
 No pido que se congele el desmonte de la carrera 21 ni que se reviva Metrolínea como estaba. Pido lo mismo que pedí la vez pasada: que antes de mover un separador o una ruta, alguien publique el dato que justifica la decisión, y que después de moverlo, alguien mida qué pasó. Mientras eso no exista, Bucaramanga no va a dejar de improvisar su movilidad calle por calle. Solo va a cambiar cuál calle le toca esta semana.
 
