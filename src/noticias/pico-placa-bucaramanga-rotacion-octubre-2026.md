@@ -1,7 +1,8 @@
 ---
 layout: noticia.njk
 eleventyExcludeFromCollections: false
-title: "Ojito: semana de 5 de octubre es sin carro y sin moto y rota pico y placa"
+title: "Ojito: semana de 5 de octubre es sin carro y sin moto, también rota pico
+  y placa"
 date: 2026-09-29T06:05:00.000-05:00
 categoria: Comercio y consumo
 chipTipo: recirc
