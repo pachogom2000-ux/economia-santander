@@ -33,7 +33,11 @@ Economía Santander se permite **reproducir el comunicado del Banco de la Repúb
 
 *La decisión adoptada por la Junta Directiva mantiene una política monetaria restrictiva, consistente con la perspectiva de una senda de inflación decreciente en 2027. La información futura sobre los efectos del fenómeno de El Niño, el proceso de recuperación después del terremoto, y las medidas de política fiscal, serán importantes para las próximas decisiones de política monetaria".*
 
-Fue una sorpresa para la mayoría. El 78%\*\* de las entidades que consulta Citi, 18 de 23, esperaba que la tasa se quedara en 12%. Solo \*\*Anif\*\* y \*\*Banco Popular\*\* acertaron el 12,25%.
+Fue una sorpresa para la mayoría. El 78%\*\* de las entidades que consulta Citi, 18 de 23, esperaba que la tasa se quedara en 12%. Solo \*\*Anif\*\* y \*\*Banco Popular\*\* acertaron el 12,25%. 
+
+Vea la rueda de prensa: 
+
+https://www.youtube.com/watch?v=2_GEJS9TmFA
 
 El motivo de fondo es el mismo en cualquier caso: la inflación sigue lejos de la meta de **3%**. En agosto llegó a **6,24%** anual, según el **DANE**. En Bucaramanga fue más alta: **7,03%**.
 
