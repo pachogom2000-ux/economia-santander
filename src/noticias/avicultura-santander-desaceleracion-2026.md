@@ -2,7 +2,7 @@
 layout: noticia.njk
 eleventyExcludeFromCollections: true
 title: "Avicultura en Santander: la desaceleración ya llegó"
-date: 2026-09-30T14:00:00.000-05:00
+date: 2026-10-01T06:00:00.000-05:00
 categoria: Agro
 chipTipo: propio
 chipLabel: "Fuente: Fenavi / Bancolombia"
