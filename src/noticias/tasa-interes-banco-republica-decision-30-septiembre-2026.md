@@ -77,7 +77,7 @@ En junio la ciudad había tenido la inflación más alta del país, **7,05%**, c
 
 ## ¿Qué significa para su crédito?
 
-La tasa del Banco de la República es la referencia a la que les presta dinero a los bancos. Mientras siga en **\[12% / 12,25% / 12,5%]**, las tasas de los créditos de consumo, vivienda y tarjetas de crédito tienen poco margen para bajar.
+La tasa del Banco de la República es la referencia a la que les presta dinero a los bancos. Mientras siga en **12,25%,** las tasas de los créditos de consumo, vivienda y tarjetas de crédito tienen poco margen para bajar.
 
 No todas las regiones lo sienten igual. Como ya explicó este portal, [Santander es uno de los departamentos que menos siente el golpe](/noticias/santander-resiste-subidas-tasas-banco-republica/) cuando el Banco aprieta la tasa.
 
