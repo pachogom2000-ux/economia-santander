@@ -1,6 +1,6 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Ciberataques: 31% de las pymes en LatAm pierde plata"
 date: 2026-09-30T07:00:00.000-05:00
 categoria: Emprendimiento y pymes
@@ -10,12 +10,12 @@ excerpt: Un estudio de Kaspersky halló que 31% de las pymes de América Latina
   perdió dinero por su peor ciberataque del año; el phishing lidera las
   amenazas.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/fraude-pymes.webp
+imagen: /assets/uploads/ciberseguridad.webp
 imagenAlt: Persona frente a un computador, en referencia a un ciberataque a una pyme
 imagenTitle: Ciberataques y pérdidas económicas en las pymes de América Latina
 imagenPie: El 31% de las pymes de la región reportó pérdidas económicas por su
   incidente de ciberseguridad más grave del último año.
-imagenCredito: Pixabay
+imagenCredito: Archivo particular
 tags: noticias
 ---
 El **31%** de las pequeñas y medianas empresas de América Latina reportó pérdidas económicas por el incidente de ciberseguridad más grave que sufrió en los últimos doce meses. Es el daño más frecuente, por encima de la interrupción de procesos internos (27%) y de la suspensión temporal de servicios a clientes (25%), según un estudio de **Kaspersky** publicado el 22 de septiembre de 2026.
