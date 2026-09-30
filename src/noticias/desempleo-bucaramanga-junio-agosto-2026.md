@@ -20,7 +20,9 @@ tags: noticias
 ---
 El área metropolitana de **Bucaramanga** tuvo la tasa de desocupación más baja del país entre junio y agosto de 2026: **7,3%**. Así lo muestra el boletín del mercado laboral que el **DANE** publicó este 30 de septiembre.
 
-Detrás quedaron **Medellín A.M.** (7,5%) y **Bogotá** (7,9%). El promedio nacional fue **8,5%**, y el de las 23 ciudades, **8,8%**.
+Detrás quedaron **Medellín A.M.** (7,5%) y **Bogotá** (7,9%). Para el mes de agosto de 2026, la tasa de desocupación del total nacional fue 9,4%, mientras que en el mismo mes de 2025 fue 8,6%. En agosto de 2026, la tasa de desocupación en el total de las 13 ciudades y áreas metropolitanas fue 9,1%, lo que representó un aumento de 1,3 puntos porcentuales respecto al mismo mes de 2025 (7,8%). 
+
+En el trimestre móvil junio - agosto 2026, la tasa de desocupación de las 13 ciudades y áreas metropolitanas fue 8,6%, mientras que en el trimestre móvil junio - agosto 2025 fue 8,2%.  
 
 ## ¿Cuánto bajó el desempleo en un año?
 
@@ -28,12 +30,12 @@ Hace un año, en junio-agosto de 2025, el área metropolitana estaba en **8,6%**
 
 <div class="tabla-wrap">
 
-| Bucaramanga A.M. | Jun–Ago 2025 | Jun–Ago 2026 | Cambio |
-| --- | --- | --- | --- |
-| Tasa de desocupación | 8,6% | **7,3%** | −1,3 puntos |
-| Ocupados | 607.000 | **616.000** | +9.000 |
-| Desocupados | 58.000 | **48.000** | −10.000 |
-| Tasa de subocupación | 5,6% | **4,8%** | −0,8 puntos |
+| Bucaramanga A.M.     | Jun–Ago 2025 | Jun–Ago 2026 | Cambio      |
+| -------------------- | ------------ | ------------ | ----------- |
+| Tasa de desocupación | 8,6%         | **7,3%**     | −1,3 puntos |
+| Ocupados             | 607.000      | **616.000**  | +9.000      |
+| Desocupados          | 58.000       | **48.000**   | −10.000     |
+| Tasa de subocupación | 5,6%         | **4,8%**     | −0,8 puntos |
 
 </div>
 
