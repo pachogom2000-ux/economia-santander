@@ -6,12 +6,15 @@ date: 2026-09-30T19:00:00.000-05:00
 categoria: Glosario y guías
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "Cancelar la matrícula en Cámara de Comercio no cierra su registro de industria y comercio. Si no avisa a la Alcaldía, las multas se acumulan mes a mes."
+excerpt: Cancelar la matrícula en Cámara de Comercio no cierra su registro de
+  industria y comercio. Si no avisa a la Alcaldía, las multas se acumulan mes a
+  mes.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/impuestos-bucaramanga-sanciones.webp
+imagen: /assets/uploads/gettyimages-878980416.jpg
 imagenAlt: Trámite de cancelación del impuesto de industria y comercio en Bucaramanga
 imagenTitle: Cómo cerrar una empresa en Bucaramanga sin multas de industria y comercio
-imagenPie: Cerrar un negocio en Bucaramanga exige dos trámites distintos, uno en la Cámara de Comercio y otro en la Secretaría de Hacienda.
+imagenPie: Cerrar un negocio en Bucaramanga exige dos trámites distintos, uno en
+  la Cámara de Comercio y otro en la Secretaría de Hacienda.
 imagenCredito: Pixabay
 guia: true
 tags: noticias
@@ -28,8 +31,6 @@ Durante los años siguientes renovó cada año la matrícula mercantil, convenci
 
 En **2026** canceló por fin la matrícula en la Cámara. Entonces apareció la cuenta: una sanción millonaria por no declarar industria y comercio, más intereses de mora. La deuda ya estaba en **cobro coactivo**, con la advertencia de embargar sus cuentas bancarias.
 
-[OPCIONAL: monto de la deuda antes y después del descuento, si el director quiere publicarlo.]
-
 Lo salvó a medias el **descuento del 80%** en sanciones e intereses que aprobó el Concejo este año. Aun con esa rebaja, la multa le salió costosa. Faltó una sola cosa: un contador que le advirtiera a tiempo.
 
 ## ¿Por qué cancelar en la Cámara de Comercio no es suficiente?
@@ -38,9 +39,9 @@ Porque son **dos registros distintos**, en dos entidades distintas:
 
 <div class="tabla-wrap">
 
-| Registro | Quién lo lleva | Qué implica |
-| --- | --- | --- |
-| **Matrícula mercantil** | Cámara de Comercio de Bucaramanga | Renovación anual |
+| Registro                             | Quién lo lleva                        | Qué implica                           |
+| ------------------------------------ | ------------------------------------- | ------------------------------------- |
+| **Matrícula mercantil**              | Cámara de Comercio de Bucaramanga     | Renovación anual                      |
 | **Registro de industria y comercio** | Secretaría de Hacienda de Bucaramanga | Declaración o pago anual del impuesto |
 
 </div>
@@ -55,10 +56,10 @@ Depende de quién se dé cuenta primero: usted o la Alcaldía. Para un negocio q
 
 <div class="tabla-wrap">
 
-| Situación | Sanción por cada mes de retraso |
-| --- | --- |
-| Usted declara tarde, **antes** de que la Alcaldía lo emplace | **0,5 UVT** ($26.187 en 2026) |
-| La Alcaldía le impone la **sanción por no declarar** | **1,5 UVT** ($78.561 en 2026) |
+| Situación                                                    | Sanción por cada mes de retraso |
+| ------------------------------------------------------------ | ------------------------------- |
+| Usted declara tarde, **antes** de que la Alcaldía lo emplace | **0,5 UVT** ($26.187 en 2026)   |
+| La Alcaldía le impone la **sanción por no declarar**         | **1,5 UVT** ($78.561 en 2026)   |
 
 </div>
 
@@ -68,11 +69,11 @@ La diferencia es de tres veces. Si el negocio sí tenía impuesto a cargo, la sa
 
 <div class="tabla-wrap">
 
-| Escenario | Sanción aproximada |
-| --- | --- |
-| Declarar voluntariamente antes del emplazamiento (0,5 UVT) | **$3,9 millones** |
-| Sanción impuesta por la Alcaldía (1,5 UVT) | **$11,8 millones** |
-| Sanción impuesta, con el descuento del 80% de 2026 | **$2,4 millones** |
+| Escenario                                                  | Sanción aproximada |
+| ---------------------------------------------------------- | ------------------ |
+| Declarar voluntariamente antes del emplazamiento (0,5 UVT) | **$3,9 millones**  |
+| Sanción impuesta por la Alcaldía (1,5 UVT)                 | **$11,8 millones** |
+| Sanción impuesta, con el descuento del 80% de 2026         | **$2,4 millones**  |
 
 </div>
 
@@ -108,4 +109,4 @@ Y busque asesoría. Un **contador** puede revisar qué declaraciones faltan y li
 
 Para quien apenas está abriendo su negocio, la lección llega antes: industria y comercio es una obligación de todos los años, no un trámite de una sola vez, como se explicó en la nota sobre [crear empresa en Santander](/noticias/emprendimiento-pymes-bucaramanga-2026/).
 
-*Fuentes: Alcaldía de Bucaramanga, Decreto 0040 de 2022, que compila el Estatuto Tributario Municipal (artículos 83, 275, 305, 308 y 310); ficha del trámite de cancelación del registro de industria y comercio; Cámara de Comercio de Bucaramanga. El ejemplo es un cálculo ilustrativo de Economía Santander con la UVT de 2026 ($52.374), para un contribuyente sin impuesto a cargo; los meses de retraso reales dependen del calendario tributario de cada año. [VERIFICAR con la Secretaría de Hacienda que los artículos citados no hayan cambiado después de 2022.] Esta guía es informativa; cada caso debe revisarse con un contador.*
+*Fuentes: Alcaldía de Bucaramanga, Decreto 0040 de 2022, que compila el Estatuto Tributario Municipal (artículos 83, 275, 305, 308 y 310); ficha del trámite de cancelación del registro de industria y comercio; Cámara de Comercio de Bucaramanga. El ejemplo es un cálculo ilustrativo de Economía Santander con la UVT de 2026 ($52.374), para un contribuyente sin impuesto a cargo; los meses de retraso reales dependen del calendario tributario de cada año. \[VERIFICAR con la Secretaría de Hacienda que los artículos citados no hayan cambiado después de 2022.] Esta guía es informativa; cada caso debe revisarse con un contador.*
