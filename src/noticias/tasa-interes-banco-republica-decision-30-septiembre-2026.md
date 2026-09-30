@@ -1,56 +1,41 @@
 ---
 layout: noticia.njk
 eleventyExcludeFromCollections: true
-title: "Tasa de interés se queda en 12%: qué implica en Santander"
+title: "BanRep incrementa 25 pb su tasa: qué implica en Santander"
 date: 2026-09-30T13:30:00.000-05:00
 categoria: Indicadores económicos
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "[ELEGIR SEGÚN ESCENARIO, 145-155 caracteres. Ver opciones en el bloque de escenarios.]"
+excerpt: "El Banco de la República de Colombia incrementó su tasa de
+  intervención en 25 pb dejando así en 12,25% la tasa de política monetaria. "
 autor: Francisco Gómez - Director
 imagen: /assets/uploads/foto-jd-tasas-banrep-archivo-particular.jpg
 imagenAlt: Junta Directiva del Banco de la República de Colombia
 imagenTitle: Decisión de tasas del Banco de la República, 30 de septiembre de 2026
-imagenPie: La Junta Directiva del Banco de la República decidió su tasa de interés el 30 de septiembre, con Bucaramanga entre las ciudades de mayor inflación.
+imagenPie: La Junta Directiva del Banco de la República decidió su tasa de
+  interés el 30 de septiembre, con Bucaramanga entre las ciudades de mayor
+  inflación.
 imagenCredito: Archivo particular
 tags: noticias
 ---
-<!--
-=====================  BORRAR ESTE BLOQUE ANTES DE PUBLICAR  =====================
-Elegir UN escenario según el comunicado del Banco de la República. Copiar su
-titular al campo title, su resumen al campo excerpt y su entrada en lugar del
-bloque [ENTRADA] de abajo.
+La Junta Directiva del Banco de la República subió este 30 de septiembre su tasa de interés en 25 puntos básicos, hasta  12,25%. La decisión se tomó analizando el contexto macroeconómico, como precios altos del petróleo, el incremento de la inflación en Estados Unidos y la propia decisión de la Reserva Federal de Estados Unidos (FED) de subir su tasa de interés, indicó el Ministro de Hacienda, Miguel Gómez Martínez.
 
-ESCENARIO A: MANTIENE EN 12% (78% de la encuesta de Citi)
-Titular (57): Tasa de interés se queda en 12%: qué implica en Santander
-Resumen (147): El Banco de la República mantuvo su tasa de interés en 12% por segunda vez seguida. Bucaramanga, con 7,03% de inflación, paga el mismo crédito.
-Entrada:
-La **Junta Directiva del Banco de la República** mantuvo este 30 de septiembre su tasa de interés en **12%**. Es la segunda reunión seguida sin cambios, después de la del 31 de julio. La decisión se tomó con **[VERIFICAR: votación, p. ej. 4 votos contra 3]**.
-Ganó la opción que esperaba el mercado. El **78%** de las entidades que consulta Citi, 18 de 23, anticipaba que la tasa se quedaría quieta.
+Economía Santander se permite **reproducir el comunicado del Banco de la República** donde informa su decisión: 
 
-ESCENARIO B: SUBE 25 PUNTOS BÁSICOS, A 12,25%
-Titular (54): Tasa de interés sube a 12,25%: qué cambia en Santander
-Resumen (149): El Banco de la República subió la tasa de interés a 12,25% y sorprendió al 78% de los analistas. Bucaramanga, con 7,03% de inflación, lo siente.
-Entrada:
-La **Junta Directiva del Banco de la República** subió este 30 de septiembre su tasa de interés en **25 puntos básicos**, hasta **12,25%**. La decisión se tomó con **[VERIFICAR: votación]**.
-Fue una sorpresa para la mayoría. El **78%** de las entidades que consulta Citi, 18 de 23, esperaba que la tasa se quedara en 12%. Solo **Anif** y **Banco Popular** acertaron el 12,25%.
+*"La Junta Directiva del Banco de la República decidió por mayoría aumentar en 25 puntos básicos (pbs) la tasa de interés de política monetaria a 12,25%*
 
-ESCENARIO C: SUBE 50 PUNTOS BÁSICOS, A 12,5%
-Titular (53): Tasa de interés sube a 12,5%: qué cambia en Santander
-Resumen (155): El Banco de la República subió la tasa de interés a 12,5%, un alza que solo esperaban 3 de 23 analistas. Bucaramanga, con 7,03% de inflación, lo siente.
-Entrada:
-La **Junta Directiva del Banco de la República** subió este 30 de septiembre su tasa de interés en **50 puntos básicos**, hasta **12,5%**. La decisión se tomó con **[VERIFICAR: votación]**.
-Pocos lo vieron venir. De las 23 entidades que consulta Citi, solo **Bancóldex**, **Corficolombiana** y **Credicorp Capital** proyectaban un alza de ese tamaño; el 78% esperaba que la tasa se quedara en 12%.
+*Cuatro directores votaron a favor de esta decisión, dos por mantenerla inalterada y uno por incrementarla en 50 pbs. En su discusión de política la Junta Directiva tuvo en cuenta los siguientes elementos:Fecha de publicación: Miércoles, 30 de septiembre de 2026 13:50*
 
-Revisar el resumen: debe quedar entre 145 y 155 caracteres.
-==================================================================================
--->
+* *La inflación total en agosto volvió a aumentar y se ubicó en 6,2% anual. Las principales presiones provinieron de los grupos de alimentos y regulados cuyas inflaciones se situaron en 6,1% y 6,8% respectivamente. La inflación de servicios repuntó a 7,2% anual. La inflación básica -sin alimentos ni regulados- aumentó a 6,1% alcanzando su nivel más alto durante el último año. La materialización del Fenómeno de El Niño podría continuar presionando al alza las sendas de alimentos y regulados.*
+* *Las expectativas de inflación de los analistas económicos para diciembre de 2026, según la encuesta de septiembre, registraron un nuevo aumento y se situaron en 6,8%, mientras que para un horizonte de dos años se redujeron a 4,0%. Las expectativas que se derivan del mercado de deuda pública se mantienen considerablemente arriba de la meta.*
+* *El PIB en su serie desestacionalizada registró un crecimiento anual del 3,4% en el segundo trimestre. El índice de seguimiento de la economía (ISE) sugiere que la actividad económica se habría desacelerado al arrojar en julio una variación anual de 1,1%. La industria manufacturera registró una caída anual de 2.3%. Las ventas reales del comercio minorista total presentaron en julio un incremento anual de 5.3%, lo que es consistente con el crecimiento anual de 22,3% de las importaciones en dólares.*
+* *El entorno financiero internacional se ha tornado algo más apretado ante las perspectivas de una política monetaria más restrictiva por parte de los bancos centrales de las economías avanzadas.*
 
-[ENTRADA: pegar aquí la entrada del escenario elegido]
+*La decisión adoptada por la Junta Directiva mantiene una política monetaria restrictiva, consistente con la perspectiva de una senda de inflación decreciente en 2027. La información futura sobre los efectos del fenómeno de El Niño, el proceso de recuperación después del terremoto, y las medidas de política fiscal, serán importantes para las próximas decisiones de política monetaria".*
+
+Fue una sorpresa para la mayoría. El 78%\*\* de las entidades que consulta Citi, 18 de 23, esperaba que la tasa se quedara en 12%. Solo \*\*Anif\*\* y \*\*Banco Popular\*\* acertaron el 12,25%.
 
 El motivo de fondo es el mismo en cualquier caso: la inflación sigue lejos de la meta de **3%**. En agosto llegó a **6,24%** anual, según el **DANE**. En Bucaramanga fue más alta: **7,03%**.
-
-[VERIFICAR: agregar 1 o 2 frases con el argumento del comunicado de hoy, citado textualmente.]
 
 ## ¿Cómo llegó dividida la Junta a esta reunión?
 
@@ -66,11 +51,11 @@ La encuesta de **Citi**, publicada el 28 de septiembre, mostró un mercado casi 
 
 <div class="tabla-wrap">
 
-| Pronóstico | Entidades |
-| --- | --- |
-| Se mantiene en 12% | 18 de 23 (78%) |
-| Sube a 12,25% | **Anif** y **Banco Popular** |
-| Sube a 12,5% | **Bancóldex**, **Corficolombiana** y **Credicorp Capital** |
+| Pronóstico         | Entidades                                                  |
+| ------------------ | ---------------------------------------------------------- |
+| Se mantiene en 12% | 18 de 23 (78%)                                             |
+| Sube a 12,25%      | **Anif** y **Banco Popular**                               |
+| Sube a 12,5%       | **Bancóldex**, **Corficolombiana** y **Credicorp Capital** |
 
 </div>
 
@@ -88,7 +73,7 @@ En junio la ciudad había tenido la inflación más alta del país, **7,05%**, c
 
 ## ¿Qué significa para su crédito?
 
-La tasa del Banco de la República es la referencia a la que les presta dinero a los bancos. Mientras siga en **[12% / 12,25% / 12,5%]**, las tasas de los créditos de consumo, vivienda y tarjetas de crédito tienen poco margen para bajar.
+La tasa del Banco de la República es la referencia a la que les presta dinero a los bancos. Mientras siga en **\[12% / 12,25% / 12,5%]**, las tasas de los créditos de consumo, vivienda y tarjetas de crédito tienen poco margen para bajar.
 
 No todas las regiones lo sienten igual. Como ya explicó este portal, [Santander es uno de los departamentos que menos siente el golpe](/noticias/santander-resiste-subidas-tasas-banco-republica/) cuando el Banco aprieta la tasa.
 
@@ -96,8 +81,8 @@ Quien tenga un crédito hipotecario en UVR debe revisar también la inflación: 
 
 ## ¿Qué sigue?
 
-Las **minutas** de la reunión, con el detalle de la discusión, se publicarán alrededor del **5 de octubre**. La próxima decisión de tasas será el **[VERIFICAR: fecha de la próxima reunión en el calendario de la Junta Directiva]**.
+Las **minutas** de la reunión, con el detalle de la discusión, se publicarán alrededor del **5 de octubre**. La próxima decisión de tasas será el **\[VERIFICAR: fecha de la próxima reunión en el calendario de la Junta Directiva]**.
 
 El efecto sobre el dólar, que llegó a esta reunión en **$3.306,86**, se analizó en la nota sobre [lo que se jugaba el dólar el 30 de septiembre](/noticias/dolar-decision-banco-republica-30-septiembre/).
 
-*Fuentes: Banco de la República, comunicado de la Junta Directiva del 31 de julio de 2026 y [VERIFICAR: comunicado del 30 de septiembre de 2026]; DANE, boletín del IPC de agosto de 2026; encuestas de Citi (28 de septiembre de 2026) y Anif (septiembre de 2026); Corficolombiana, declaraciones a Semana del 30 de septiembre de 2026.*
+*Fuentes: Banco de la República, comunicado de la Junta Directiva del 31 de julio de 2026 y \[VERIFICAR: comunicado del 30 de septiembre de 2026]; DANE, boletín del IPC de agosto de 2026; encuestas de Citi (28 de septiembre de 2026) y Anif (septiembre de 2026); Corficolombiana, declaraciones a Semana del 30 de septiembre de 2026.*
