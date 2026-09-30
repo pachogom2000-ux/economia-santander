@@ -1,6 +1,6 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "BanRep incrementa 25 pb su tasa: qué implica en Santander"
 date: 2026-09-30T13:30:00.000-05:00
 categoria: Indicadores económicos
