@@ -1,21 +1,23 @@
 ---
 layout: noticia.njk
+eleventyExcludeFromCollections: false
 title: "Feria ferretera: se viene la primera Expo Remodelación"
 date: 2026-09-30T06:00:00.000-05:00
 categoria: Construcción
 chipTipo: recirc
 chipLabel: "Fuente: Cámara de Comercio de Bucaramanga"
-excerpt: "Más de 100 empresas de ferreterías, muebles, diseño y remodelación
+excerpt: Más de 100 empresas de ferreterías, muebles, diseño y remodelación
   exhibirán el 3 de octubre en Neomundo, en la primera feria del sector de la
-  CCB."
+  CCB.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/expo-remodelacion-ferreterias-diseno-conversatorio-bucaramanga.jpg
-imagenAlt: "Pieza del conversatorio de la Expo Remodelación, Ferreterías & Diseño con los cinco panelistas invitados"
-imagenTitle: "Conversatorio El futuro del entorno construido en la Expo Remodelación"
-imagenPie: "El conversatorio sobre sostenibilidad, digitalización y diseño será a las 4:15 p. m. del 3 de octubre en Neomundo."
-imagenCredito: "Cámara de Comercio de Bucaramanga"
+imagen: /assets/uploads/expoferreteria.webp
+imagenAlt: Pieza del conversatorio de la Expo Remodelación, Ferreterías & Diseño
+  con los cinco panelistas invitados
+imagenTitle: Conversatorio El futuro del entorno construido en la Expo Remodelación
+imagenPie: El conversatorio sobre sostenibilidad, digitalización y diseño será a
+  las 4:15 p. m. del 3 de octubre en Neomundo.
+imagenCredito: Cámara de Comercio de Bucaramanga
 tags: noticias
-eleventyExcludeFromCollections: false
 ---
 Más de **100 empresarios** de ferreterías, muebles, diseño y remodelación exhibirán sus productos el **3 de octubre** en Neomundo, en Bucaramanga. Es la primera edición de la **Expo Remodelación, Ferreterías & Diseño**, que organiza la **Cámara de Comercio de Bucaramanga (CCB)**.
 
