@@ -85,8 +85,8 @@ Quien tenga un crédito hipotecario en UVR debe revisar también la inflación: 
 
 ## ¿Qué sigue?
 
-Las **minutas** de la reunión, con el detalle de la discusión, se publicarán alrededor del **5 de octubre**. La próxima decisión de tasas será el **\[VERIFICAR: fecha de la próxima reunión en el calendario de la Junta Directiva]**.
+Las **minutas** de la reunión, con el detalle de la discusión, se publicarán alrededor del **5 de octubre**. La próxima decisión de tasas será el **30 de octubre de 2026.** 
 
 El efecto sobre el dólar, que llegó a esta reunión en **$3.306,86**, se analizó en la nota sobre [lo que se jugaba el dólar el 30 de septiembre](/noticias/dolar-decision-banco-republica-30-septiembre/).
 
-*Fuentes: Banco de la República, comunicado de la Junta Directiva del 31 de julio de 2026 y \[VERIFICAR: comunicado del 30 de septiembre de 2026]; DANE, boletín del IPC de agosto de 2026; encuestas de Citi (28 de septiembre de 2026) y Anif (septiembre de 2026); Corficolombiana, declaraciones a Semana del 30 de septiembre de 2026.*
+*Fuentes: Banco de la República, comunicado de la Junta Directiva del 31 de julio de 2026; DANE, boletín del IPC de agosto de 2026; encuestas de Citi (28 de septiembre de 2026) y Anif (septiembre de 2026); Corficolombiana, declaraciones a Semana del 30 de septiembre de 2026.*
