@@ -1,18 +1,21 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
-title: "Desempleo en Bucaramanga baja a 7,3%, el menor del país"
-date: 2026-09-30T18:00:00.000-05:00
+eleventyExcludeFromCollections: false
+title: Desempleo en Bucaramanga baja a 7,3%, el menor del país
+date: 2026-09-30T10:01:00.000-05:00
 categoria: Empleo
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "Bucaramanga tiene el menor desempleo de 23 ciudades: 7,3% en junio-agosto, frente a 8,6% hace un año. Pero en el último trimestre perdió 7.000 empleos."
+excerpt: "Bucaramanga tiene el menor desempleo de 23 ciudades: 7,3% en
+  junio-agosto, frente a 8,6% hace un año. Pero en el último trimestre perdió
+  7.000 empleos."
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/empleo-formal-bucaramanga-area-metropolitana-2026.jpg
+imagen: /assets/uploads/buscar-empleo.webp
 imagenAlt: Trabajadores en el área metropolitana de Bucaramanga
 imagenTitle: Desempleo en Bucaramanga, trimestre junio-agosto de 2026
-imagenPie: El área metropolitana de Bucaramanga registró la tasa de desocupación más baja entre las 23 ciudades que mide el DANE.
-imagenCredito: Archivo particular
+imagenPie: El área metropolitana de Bucaramanga registró la tasa de desocupación
+  más baja entre las 23 ciudades que mide el DANE.
+imagenCredito: Pixabay-Magnetme
 tags: noticias
 ---
 El área metropolitana de **Bucaramanga** tuvo la tasa de desocupación más baja del país entre junio y agosto de 2026: **7,3%**. Así lo muestra el boletín del mercado laboral que el **DANE** publicó este 30 de septiembre.
