@@ -1,6 +1,6 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Gasolina en Bucaramanga sube $46: el galón queda en $16.135"
 date: 2026-10-01T07:00:00.000-05:00
 categoria: Indicadores económicos
