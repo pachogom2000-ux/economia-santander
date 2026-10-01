@@ -1,8 +1,8 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Avicultura en Santander: la desaceleración ya llegó"
-date: 2026-09-30T14:00:00.000-05:00
+date: 2026-10-01T06:00:00.000-05:00
 categoria: Agro
 chipTipo: propio
 chipLabel: "Fuente: Fenavi / Bancolombia"
@@ -10,7 +10,7 @@ excerpt: El sector avícola pasó de crecer 9,1% a solo 2% en 2026. El
   encasetamiento ya cayó 12% y el paro de abril mostró qué tan frágil es
   Santander.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/avicultura-santander.jpg
+imagen: /assets/uploads/avicultura-santander-andreas-goellner.webp
 imagenAlt: Galpón de gallinas ponedoras en una granja avícola de Santander
 imagenTitle: Desaceleración del sector avícola en Santander en 2026
 imagenPie: Santander produce el 23% del huevo y el 25% del pollo del país, pero
