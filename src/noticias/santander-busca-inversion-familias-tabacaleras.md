@@ -1,8 +1,8 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
-title: "Santander busca inversión para familias tabacaleras"
-date: 2026-10-01T08:00:00.000-05:00
+eleventyExcludeFromCollections: false
+title: Santander busca inversión para familias tabacaleras
+date: 2026-10-01T07:00:00.000-05:00
 categoria: Agro
 chipTipo: propio
 chipLabel: "Fuente: Gobernación de Santander"
@@ -10,13 +10,12 @@ excerpt: La Gobernación llevó a Suiza, Alemania e Italia la búsqueda de
   inversión para 1.270 familias tabacaleras de Santander, con Philip Morris en
   la mesa.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/recolector-de-cafe-en-un-cafetal.webp
-imagenAlt: Trabajador agrícola en un cultivo en una zona rural de Santander
-imagenTitle: Santander busca inversión internacional para familias
-  tabacaleras
+imagen: /assets/uploads/mision-tabacalera.webp
+imagenAlt: Misión internacional tabacalera Gobernación de Santander
+imagenTitle: Santander busca inversión internacional para familias tabacaleras
 imagenPie: La Gobernación de Santander adelantó una misión en Europa buscando
   inversión y alternativas productivas para las familias tabacaleras.
-imagenCredito: Pixabay
+imagenCredito: "Archivo particular "
 tags: noticias
 ---
 La Gobernación de Santander cerró septiembre con una misión internacional en **Suiza, Alemania e Italia** buscando inversión y alternativas productivas para **1.270 familias tabacaleras** del departamento. Es poco más de la mitad de las **2.200 familias** afectadas que hay en total en los cinco departamentos tabacaleros del país.
