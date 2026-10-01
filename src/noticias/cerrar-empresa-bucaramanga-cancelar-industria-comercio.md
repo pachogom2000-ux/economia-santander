@@ -1,8 +1,8 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Cerrar empresa en Bucaramanga: el trámite que evita multas"
-date: 2026-09-30T19:00:00.000-05:00
+date: 2026-10-01T05:59:00.000-05:00
 categoria: Glosario y guías
 chipTipo: propio
 chipLabel: Redacción propia
