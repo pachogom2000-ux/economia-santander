@@ -6,7 +6,7 @@ date: 2026-10-01T10:30:00.000-05:00
 categoria: Indicadores económicos
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "El presidente De la Espriella ordenó revertir el alza de $46 en la gasolina. Desde el 2 de octubre, el galón en Bucaramanga volvió a $16.089."
+excerpt: "El presidente De la Espriella ordenó revertir el alza de $46 en la gasolina. Desde el 2 de octubre, el galón en Bucaramanga ya volvió a $16.089."
 autor: Francisco Gómez - Director
 imagen: /assets/uploads/minminas-y-presidente-de-la-espriella.webp
 imagenAlt: Ministra de Minas, María Arboleda y el Presidente Abelardo De La Espriella
