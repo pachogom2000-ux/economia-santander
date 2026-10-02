@@ -2,11 +2,13 @@
 layout: noticia.njk
 eleventyExcludeFromCollections: false
 title: "Gasolina en Bucaramanga: el alza de $46 solo duró un día"
-date: 2026-10-01T07:00:00.000-05:00
+date: 2026-10-02T05:44:00.000-05:00
 categoria: Indicadores económicos
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "La gasolina en Bucaramanga subió a $16.135 el 1 de octubre, pero el Gobierno nacional frenó el alza: desde el 2 de octubre el galón vuelve a $16.089."
+excerpt: "La gasolina en Bucaramanga subió a $16.135 el 1 de octubre, pero el
+  Gobierno nacional frenó el alza: desde el 2 de octubre el galón vuelve a
+  $16.089."
 autor: Francisco Gómez - Director
 imagen: /assets/uploads/gasolinera-engin-akyurt.webp
 imagenAlt: Estación de servicio en Bucaramanga
