@@ -1,8 +1,8 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Zapatoca: 1.000 visitantes en el Foro de Turismo"
-date: 2026-10-02T09:00:00.000-05:00
+date: 2026-10-02T07:00:00.000-05:00
 categoria: Turismo y hotelería
 chipTipo: recirc
 chipLabel: "Fuente: Cámara de Comercio de Bucaramanga"
@@ -10,7 +10,7 @@ excerpt: Zapatoca reunió cerca de 1.000 visitantes en su Foro Regional de
   Turismo, casi el 10% de la población del municipio, y firmó un convenio con
   Costa Rica.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/turismo-santander.webp
+imagen: /assets/uploads/zapatoca-turismo.webp
 imagenAlt: Panorámica de un municipio turístico de Santander
 imagenTitle: 4º Foro Regional de Turismo en Zapatoca, Santander
 imagenPie: Zapatoca, el municipio del "clima de seda", fue sede del 4º Foro
