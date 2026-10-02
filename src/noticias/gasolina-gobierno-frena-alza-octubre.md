@@ -1,17 +1,19 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Gasolina: Gobierno frena alza y el galón vuelve a $16.089"
-date: 2026-10-02T09:00:00.000-05:00
+date: 2026-10-02T05:00:00.000-05:00
 categoria: Indicadores económicos
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "El Gobierno frenó el alza de $46 en la gasolina tras la orden de De la Espriella. Desde el 2 de octubre, el galón en Bucaramanga vuelve a $16.089."
+excerpt: El Gobierno frenó el alza de $46 en la gasolina tras la orden de De la
+  Espriella. Desde el 2 de octubre, el galón en Bucaramanga vuelve a $16.089.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/conductor-carro.jpg
+imagen: /assets/uploads/gasolinera-engin-akyurt.webp
 imagenAlt: Conductor de carro en Bucaramanga
 imagenTitle: Gobierno frena el alza de la gasolina de octubre de 2026
-imagenPie: Desde el 2 de octubre, el galón de gasolina corriente en Bucaramanga vuelve a costar $16.089 como precio de referencia.
+imagenPie: Desde el 2 de octubre, el galón de gasolina corriente en Bucaramanga
+  vuelve a costar $16.089 como precio de referencia.
 imagenCredito: Archivo particular
 tags: noticias
 ---
@@ -24,9 +26,9 @@ El 1 de octubre había subido a **$16.135**. Los ministerios de **Minas y Energ�
 <div class="tabla-wrap">
 
 | Bucaramanga, precio por galón | 1 de octubre | **Desde el 2 de octubre** |
-| --- | --- | --- |
-| Gasolina corriente | $16.135 | **$16.089** |
-| ACPM | $11.364 | **$11.364** |
+| ----------------------------- | ------------ | ------------------------- |
+| Gasolina corriente            | $16.135      | **$16.089**               |
+| ACPM                          | $11.364      | **$11.364**               |
 
 </div>
 
@@ -39,8 +41,6 @@ Son precios de referencia; el valor en cada estación puede variar un poco segú
 El Gobierno. Según el comunicado conjunto de los dos ministerios, citado por [El Heraldo](https://www.elheraldo.co/economia/2026/10/02/ministerios-de-minas-y-hacienda-revierten-el-aumento-de-octubre-en-el-precio-de-la-gasolina/) y [Semana](https://www.semana.com/economia/macroeconomia/articulo/gobierno-reverso-aumento-de-46-por-galon-en-la-gasolina-tras-orden-del-presidente-abelardo-de-la-espriella/202635/), *"el reconocimiento a los productores de etanol se mantiene. El costo de $8.300 millones lo asume el Gobierno nacional como subsidio"*.
 
 Es decir, los cañeros del Valle del Cauca siguen recibiendo el mayor precio por el etanol, pero ese valor no llega al surtidor: lo cubre el presupuesto nacional durante octubre.
-
-[VERIFICAR: enlace al comunicado conjunto en el sitio de MinEnergía o MinHacienda, cuando se publique.]
 
 ## ¿Por qué había subido?
 
