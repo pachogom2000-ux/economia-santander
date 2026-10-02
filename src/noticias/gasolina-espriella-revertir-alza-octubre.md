@@ -6,9 +6,7 @@ date: 2026-10-01T10:30:00.000-05:00
 categoria: Indicadores económicos
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: El presidente De la Espriella ordenó revertir el alza de $46 en la
-  gasolina. En Bucaramanga, el galón sigue en $16.135 hasta que se fije un nuevo
-  precio.
+excerpt: "El presidente De la Espriella ordenó revertir el alza de $46 en la gasolina. Desde el 2 de octubre, el galón en Bucaramanga volvió a $16.089."
 autor: Francisco Gómez - Director
 imagen: /assets/uploads/minminas-y-presidente-de-la-espriella.webp
 imagenAlt: Ministra de Minas, María Arboleda y el Presidente Abelardo De La Espriella
@@ -20,7 +18,7 @@ tags: noticias
 ---
 El presidente **Abelardo de la Espriella** ordenó revertir el alza de **$46 por galón** en la gasolina que empezó a regir este **1 de octubre**. Lo anunció en su cuenta de X, después de citar a la ministra de Minas y Energía, **María Nohemí Arboleda**.
 
-Para Bucaramanga, revertir el alza significaría que el galón de corriente vuelva de **$16.135** a **$16.089**, el precio de septiembre.
+La orden se cumplió al día siguiente: desde el **2 de octubre**, el galón de corriente en Bucaramanga volvió de **$16.135** a **$16.089**, el precio de septiembre.
 
 https://x.com/ABDELAESPRIELLA/status/2105681391295869153
 
@@ -28,11 +26,9 @@ https://x.com/ABDELAESPRIELLA/status/2105681391295869153
 
 ## ¿Ya bajó la gasolina?
 
-**Todavía no.** Hasta la mañana de este jueves, la **Comisión de Regulación de Energía y Gas (CREG)** mantenía publicados los precios vigentes desde el 1 de octubre: **$16.135** el galón de corriente en Bucaramanga y **$11.364** el de ACPM.
+**Sí, desde el 2 de octubre.** La **Comisión de Regulación de Energía y Gas (CREG)** publicó una nueva tabla de precios de referencia: el galón de corriente en Bucaramanga vuelve a **$16.089** y el ACPM sigue en **$11.364**. El promedio de las 13 principales ciudades regresa a **$15.886**.
 
-El precio no cambia con un anuncio. Los ministerios de **Hacienda** y de **Minas y Energía** fijan por resolución el ingreso al productor, y con base en eso la CREG publica los precios de referencia por ciudad. Hasta que salga ese nuevo acto, en las estaciones rige el precio de octubre.
-
-\[ACTUALIZAR: fecha y número de la resolución o circular que revierta el alza, cuando se publique.]
+El alza no desaparece: la paga el Gobierno. Según el comunicado conjunto de los ministerios de **Minas y Energía** y de **Hacienda**, citado por [Semana](https://www.semana.com/economia/macroeconomia/articulo/gobierno-reverso-aumento-de-46-por-galon-en-la-gasolina-tras-orden-del-presidente-abelardo-de-la-espriella/202635/), *"el reconocimiento a los productores de etanol se mantiene. El costo de $8.300 millones lo asume el Gobierno nacional como subsidio"*.
 
 ## ¿Por qué había subido?
 

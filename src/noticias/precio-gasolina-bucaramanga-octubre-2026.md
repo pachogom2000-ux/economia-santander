@@ -1,22 +1,23 @@
 ---
 layout: noticia.njk
 eleventyExcludeFromCollections: false
-title: "Gasolina en Bucaramanga sube $46: el galón queda en $16.135"
+title: "Gasolina en Bucaramanga: alza de $46 en octubre duró un día"
 date: 2026-10-01T07:00:00.000-05:00
 categoria: Indicadores económicos
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: El galón de gasolina corriente en Bucaramanga pasa de $16.089 a $16.135
-  desde el 1 de octubre. El ACPM se mantiene en $11.364 por quinto mes seguido.
+excerpt: "La gasolina en Bucaramanga subió a $16.135 el 1 de octubre, pero el Gobierno frenó el alza: desde el 2 de octubre el galón vuelve a $16.089."
 autor: Francisco Gómez - Director
 imagen: /assets/uploads/gasolinera-engin-akyurt.webp
 imagenAlt: Estación de servicio en Bucaramanga
 imagenTitle: Precio de la gasolina en Bucaramanga, octubre de 2026
-imagenPie: Desde el 1 de octubre, el galón de gasolina corriente en Bucaramanga
-  cuesta $16.135 como precio de referencia.
+imagenPie: Desde el 2 de octubre, el galón de gasolina corriente en Bucaramanga
+  vuelve a costar $16.089 como precio de referencia.
 imagenCredito: Pixabay-Eryin Akyurt
 tags: noticias
 ---
+***Actualización, 2 de octubre:** el Gobierno revirtió el alza por orden del presidente Abelardo de la Espriella. Desde el **2 de octubre**, el galón de corriente en Bucaramanga vuelve a **$16.089**, según la nueva tabla de la CREG, y el Gobierno asume la diferencia como subsidio. El texto que sigue describe el precio que rigió el 1 de octubre.*
+
 Desde este **1 de octubre**, el galón de **gasolina corriente** en Bucaramanga cuesta **$16.135**, frente a $16.089 en septiembre. Es un alza de **$46**, la misma que el promedio nacional.
 
 El **ACPM** no cambia: sigue en **$11.364** por galón en la ciudad, el mismo precio que rige desde junio.
