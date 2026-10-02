@@ -1,12 +1,12 @@
 ---
 layout: noticia.njk
 title: "Tasa de usura 2026: cómo saber si su crédito está caro"
-date: 2026-09-07T06:13:00.000-05:00
+date: 2026-10-02T11:00:00.000-05:00
 categoria: Educación financiera
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: La usura de septiembre quedó en 29,24% efectivo anual. Cómo convertir
-  la tasa que le cotizaron, con qué techo compararla y qué hacer si se la
+excerpt: La usura de octubre quedó en 28,59% efectivo anual. Cómo convertir la
+  tasa que le cotizaron, con qué techo compararla y qué hacer si se la
   pasaron.
 autor: Francisco Gómez - Director
 imagen: /assets/uploads/tasa-usura-en-colombia.webp
@@ -18,21 +18,21 @@ imagenCredito: Archivo particular
 guia: true
 tags: noticias
 ---
-La **tasa de usura para crédito de consumo y ordinario quedó en 29,24% efectivo anual** en septiembre de 2026, el nivel más bajo de lo que va del año. Es el techo legal: por encima de ahí, el cobro es un delito.
+La **tasa de usura para crédito de consumo y ordinario quedó en 28,59% efectivo anual** en octubre de 2026, la cifra más baja desde julio, cuando estaba en 28,79%. Es el techo legal: por encima de ahí, el cobro es un delito.
 
 El problema es que casi nadie puede verificar si su crédito lo pasa, porque la tasa que le cotizan y el techo con el que hay que compararla suelen venir en unidades distintas.
 
 Esta es la cuenta, y no necesita más que una calculadora.
 
-## ¿De dónde sale el 29,24%?
+## ¿De dónde sale el 28,59%?
 
 No es un número que alguien escoja. **Es el interés bancario corriente multiplicado por 1,5.**
 
-La Superintendencia Financiera certifica cada mes el **interés bancario corriente** —lo que en promedio cobra el sistema— con base en lo que le reportan los establecimientos de crédito. Para septiembre de 2026 lo fijó en **19,49% efectivo anual**, 28 puntos básicos menos que en agosto.
+La Superintendencia Financiera certifica cada mes el **interés bancario corriente** —lo que en promedio cobra el sistema— con base en lo que le reportan los establecimientos de crédito, esta vez con corte entre el 28 de agosto y el 18 de septiembre. Para octubre de 2026 lo fijó en **19,06% efectivo anual**, 43 puntos básicos menos que en septiembre (19,49%).
 
-De ahí sale el techo: 19,49% × 1,5 = **29,24%**.
+De ahí sale el techo: 19,06% × 1,5 = **28,59%**.
 
-Por eso la usura cambia cada mes y por eso baja cuando baja el costo promedio del crédito. La certificación de septiembre quedó en la **Resolución 1260 de 2026** y rige del 1 al 30 de septiembre.
+Por eso la usura cambia cada mes y por eso baja cuando baja el costo promedio del crédito. La certificación de octubre quedó en la **Resolución 1472 de 2026** y rige del 1 al 31 de octubre.
 
 ## ¿Cuál es el techo de su crédito?
 
@@ -42,15 +42,15 @@ Aquí está el primer error frecuente: **no hay una sola tasa de usura**. Hay va
 
 | Modalidad                        | Interés corriente | Tasa de usura  |
 | -------------------------------- | ----------------- | -------------- |
-| **Consumo y ordinario**          | 19,49%            | **29,24%**     |
-| Crédito popular productivo rural | 44,80%            | **67,20%**     |
-| Crédito popular productivo urbano| 58,75%            | **88,13%**     |
+| **Consumo y ordinario**          | 19,06%            | **28,59%**     |
+| Crédito popular productivo rural | 43,63%            | **65,45%**     |
+| Crédito popular productivo urbano| 58,41%            | **87,62%**     |
 
 </div>
 
-Todas en efectivo anual, vigentes en septiembre de 2026.
+Todas en efectivo anual, vigentes en octubre de 2026.
 
-Un microcrédito popular urbano puede cobrar legalmente hasta **88,13%** efectivo anual. No es un abuso: es una modalidad distinta, con su propio techo, pensada para créditos pequeños y de alto costo operativo. Pero conviene saberlo antes de firmar creyendo que el límite es 29%.
+Un microcrédito popular urbano puede cobrar legalmente hasta **87,62%** efectivo anual. No es un abuso: es una modalidad distinta, con su propio techo, pensada para créditos pequeños y de alto costo operativo. Pero conviene saberlo antes de firmar creyendo que el límite es 29%.
 
 ## ¿Cómo convertir la tasa que le cotizaron?
 
@@ -69,13 +69,13 @@ En la práctica queda así:
 | 1,0%              | 12,68%            | Sí                 |
 | 1,5%              | 19,56%            | Sí                 |
 | 2,0%              | 26,82%            | Sí                 |
-| **2,161%**        | **29,24%**        | **Justo en el tope** |
+| **2,118%**        | **28,59%**        | **Justo en el tope** |
 | 2,5%              | 34,49%            | **No**             |
 | 3,0%              | 42,58%            | **No**             |
 
 </div>
 
-La cifra que conviene memorizar es **2,161% mensual**. Ese es el tope de septiembre expresado al mes. Si le cotizan más de eso en un crédito de consumo, ya se pasaron.
+La cifra que conviene memorizar es **2,118% mensual**. Ese es el tope de octubre expresado al mes. Si le cotizan más de eso en un crédito de consumo, ya se pasaron.
 
 Un 3% mensual suena inofensivo. Son **42,58% efectivo anual** y es ilegal en esta modalidad.
 
@@ -105,6 +105,6 @@ Un departamento de micro y pequeña empresa es terreno natural del crédito info
 
 La cuenta de este artículo sirve justo para eso: convertir el "2 por ciento semanal" que le ofrecen en la cifra anual que de verdad significa. Un 2% semanal, compuesto, llega al **180% efectivo anual**.
 
-La usura de septiembre está en 29,24%. Todo lo que se aleje mucho de ahí, en cualquier modalidad, merece una segunda mirada antes de la firma.
+La usura de octubre está en 28,59%. Todo lo que se aleje mucho de ahí, en cualquier modalidad, merece una segunda mirada antes de la firma.
 
-*Tasas certificadas por la Superintendencia Financiera de Colombia mediante la Resolución 1260 de 2026, vigentes del 1 al 30 de septiembre de 2026. El delito de usura está tipificado en el artículo 305 del [Código Penal](https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=6388). Las conversiones de tasa son cálculos de Economía Santander.*
+*Tasas certificadas por la Superintendencia Financiera de Colombia mediante la Resolución 1472 de 2026, con base en la información reportada entre el 28 de agosto y el 18 de septiembre de 2026, vigentes del 1 al 31 de octubre de 2026. El delito de usura está tipificado en el artículo 305 del [Código Penal](https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=6388). Las conversiones de tasa son cálculos de Economía Santander.*

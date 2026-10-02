@@ -34,8 +34,8 @@ Aquí están los que importan, con su valor vigente, su fecha de corte y el siti
 | Rango meta de inflación             | 3% ± 1 punto (2% a 4%) | vigente               | Banco de la República |
 | Tasa de intervención                | 12,00%                 | 30 jun 2026           | Banco de la República |
 | DTF                                 | 10,24% E.A.            | semana 27 jul – 2 ago | Banco de la República |
-| Interés bancario corriente          | 19,19% E.A.            | julio 2026            | Superfinanciera       |
-| Tasa de usura (consumo y ordinario) | 28,79% E.A.            | julio 2026            | Superfinanciera       |
+| Interés bancario corriente          | 19,06% E.A.            | octubre 2026          | Superfinanciera       |
+| Tasa de usura (consumo y ordinario) | 28,59% E.A.            | octubre 2026          | Superfinanciera       |
 | UVR                                 | $416,3866              | 28 jul 2026           | Banco de la República |
 | TRM                                 | $3.205,80              | 28 jul 2026           | Superfinanciera       |
 
@@ -79,15 +79,17 @@ Dónde aparece: en créditos empresariales, leasing y algunos hipotecarios pacta
 
 ## ¿Cuánto le pueden cobrar? Interés corriente, usura y la brecha
 
-El **interés bancario corriente** es el promedio de lo que los bancos cobran en consumo y crédito ordinario. La **Superfinanciera** lo certificó en **19,19% E.A.** para julio, con la Resolución 0965 de 2026, sin cambio frente a junio.
+El **interés bancario corriente** es el promedio de lo que los bancos cobran en consumo y crédito ordinario. La **Superfinanciera** lo certificó en **19,06% E.A.** para octubre, con la Resolución 1472 de 2026, 43 puntos básicos menos que en septiembre (19,49%).
 
-La **tasa de usura** sale de multiplicar ese número por 1,5: **28,79% efectivo anual**. Es un límite penal, no una sugerencia. Equivale a 2,13% mensual.
+La **tasa de usura** sale de multiplicar ese número por 1,5: **28,59% efectivo anual**. Es un límite penal, no una sugerencia. Equivale a 2,12% mensual. El detalle completo de cómo se calcula, con la tabla de conversión mes a mes, está en la [guía de tasa de usura](/noticias/tasa-usura-2026-como-saber-credito-caro/).
 
-Si deja $3.000.000 rotando en la tarjeta un año a la tasa máxima, paga $863.700 solo en intereses. Es casi medio salario mínimo mensual, que en 2026 quedó en $1.750.905.
+Si deja $3.000.000 rotando en la tarjeta un año a la tasa máxima, paga $857.700 solo en intereses. Es casi medio salario mínimo mensual, que en 2026 quedó en $1.750.905.
 
-Cada modalidad tiene su techo. Consumo de bajo monto: 62,66%. Productivo urbano: 58,16%. Productivo rural: 32,75%.
+Cada modalidad tiene su techo. Consumo de bajo monto: 66,66%. Productivo urbano: 57,39%. Productivo rural: 30,95%.
 
-La brecha entre lo que le pagan y lo que le cobran se ve fácil con dos cifras de hoy: los mismos diez millones rinden $1.024.000 si se los presta al banco, con DTF de 10,24%, y le cuestan $1.919.000 si el banco se los presta a usted, con interés corriente de 19,19%. Son 8,95 puntos de diferencia. Es un cálculo de Economía Santander y no corresponde al margen de intermediación oficial, que la Superfinanciera construye sobre las tasas efectivas de colocación y captación de la cartera real y arroja un número distinto.
+La brecha entre lo que le pagan y lo que le cobran se ve fácil con dos cifras: los mismos diez millones rendían $1.024.000 si se los prestaba al banco, con la DTF de julio en 10,24%, y le cuestan $1.906.000 si el banco se los presta a usted, con el interés corriente de octubre en 19,06%. Es un cálculo de Economía Santander y no corresponde al margen de intermediación oficial, que la Superfinanciera construye sobre las tasas efectivas de colocación y captación de la cartera real y arroja un número distinto.
+
+*Nota: el interés bancario corriente y la tasa de usura de esta sección están actualizados al 2 de octubre de 2026 (Resolución 1472 de 2026). El resto de los indicadores de esta guía —DTF, tasa de intervención, UVR, TRM, IPC— sigue con corte a julio de 2026 y está pendiente de actualización aparte.*
 
 ## ¿Qué son la UVR y la TRM, y dónde te aparecen?
 
