@@ -1,6 +1,6 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Semana de receso 2026: cómo viajar seguro desde Santander"
 date: 2026-10-03T06:00:00.000-05:00
 categoria: Turismo y hotelería
