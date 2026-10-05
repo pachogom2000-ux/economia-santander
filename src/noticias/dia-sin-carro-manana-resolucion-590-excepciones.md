@@ -1,21 +1,20 @@
 ---
 layout: noticia.njk
 eleventyExcludeFromCollections: true
-title: "Día sin carro mañana: la Resolución 590 completa"
+title: "Día sin carro este 06 de octubre: inicia a las 9:00 a.m."
 date: 2026-10-05T16:00:00.000-05:00
 categoria: Comercio y consumo
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "Mañana rige el día sin carro y sin moto en Bucaramanga, de 9 a. m. a
-  4 p. m. La Resolución 590 dice quién puede circular y qué debe llevar
-  encima."
+excerpt: Este 6 de octubre rige el día sin carro y sin moto en Bucaramanga, de 9
+  a. m. a 4 p. m. La Resolución 590 dice quién puede circular y qué debe llevar
+  encima.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/movilidad-bucaramanga-autopista-floridablanca.webp
-imagenAlt: Vista panorámica del área metropolitana de Bucaramanga en el día
-  sin carro
+imagen: /assets/uploads/dia-sin-carro-sin-moto.webp
+imagenAlt: Vista de Bucaramanga en el día sin carro
 imagenTitle: Resolución 590 de 2026, día sin carro y sin moto en Bucaramanga
-imagenPie: La Dirección de Tránsito de Bucaramanga expidió la Resolución 590
-  con las excepciones para el día sin carro del 6 de octubre.
+imagenPie: La Dirección de Tránsito de Bucaramanga expidió la Resolución 590 con
+  las excepciones para el día sin carro del 6 de octubre.
 imagenCredito: Archivo particular
 tags: noticias
 ---
