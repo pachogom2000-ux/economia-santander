@@ -1,8 +1,8 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
-title: "Por qué Colombia no le quita tres ceros al peso"
-date: 2026-10-05T10:00:00.000-05:00
+eleventyExcludeFromCollections: false
+title: Por qué Colombia no le quita tres ceros al peso
+date: 2026-10-05T06:00:00.000-05:00
 categoria: Indicadores económicos
 chipTipo: propio
 chipLabel: Redacción propia
@@ -10,12 +10,12 @@ excerpt: Con la inflación en 6,24% y la tasa en 12,25%, vuelve el debate de
   quitarle tres ceros al peso. Van siete intentos en el Congreso, y ninguno
   sobrevivió.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/financiero.jpg
+imagen: /assets/uploads/peso-colombiano.webp
 imagenAlt: Billetes colombianos de distintas denominaciones
 imagenTitle: El debate sobre quitarle tres ceros al peso colombiano
 imagenPie: Los billetes colombianos ya imprimen la palabra "MIL" en vez de los
   tres ceros desde el rediseño de 2015-2016.
-imagenCredito: Pixabay
+imagenCredito: Pixabay - caruizp
 tags: noticias
 ---
 La inflación de Colombia está en **6,24% anual** a agosto de 2026, más del doble de la meta del 3% del Banco de la República. La [tasa de intervención subió a 12,25%](/noticias/tasa-interes-banco-republica-decision-30-septiembre-2026/) el 30 de septiembre. Y con esa combinación, vuelve a circular una pregunta que lleva más de dos décadas sin respuesta: ¿por qué Colombia no le ha quitado tres ceros al peso?
@@ -64,6 +64,8 @@ Los argumentos a favor no han cambiado mucho en veinte años: alinearía a Colom
 
 En contra, la voz más documentada es la de **Mario Valencia**, de la Red de Justicia Tributaria, quien en 2018 advirtió que la medida es innecesaria, que genera un incentivo a subir precios por redondeo, y que su efecto contra el lavado de dinero es limitado porque esos recursos suelen estar en dólares y activos externos, no en efectivo en pesos.
 
-El argumento del "empobrecimiento" psicológico —que un salario de $3.000.000 se vea como "3" genera una sensación distinta a verlo en millones— está documentado en casos como el de Venezuela, pero no se encontró una declaración de un economista colombiano aplicándolo puntualmente al peso.
+El argumento del "empobrecimiento" psicológico —que un salario de $3.000.000 se vea como "3" genera una sensación distinta a verlo en millones— está documentado en casos como el de Venezuela. Un artículo de Semana  ("Los pros y contra de quitarle tres ceros al peso colombiano") explica la teoría de 'nudgets', del investigador Richard Taler, premio nobel de Economía en 2027. Según este autor, las decisiones no siempre obedecen a criterios racionales, sino que también entran en juego variables sicológicas que las desvían de un comportamiento económico racional. 
+
+Un ‘nudgets’ con este cambio podría ser el empobrecimiento sicológico que sentirían los colombianos al ver que **sus bienes y sus ingresos quedarían reducidos a miles de pesos.** Por ejemplo, una casa de 200 millones, pasaría a valer 200.000. Una persona que gana 2 millones, tendría un salario de 2.000. Eso ha pasado en países como México o Ghana
 
 *Fuentes: Banco de la República, "Consideraciones sobre la eliminación de los tres ceros del peso" (28 de febrero de 2018); Cámara de Representantes de Colombia (11 de abril y 9 de mayo de 2018); Infobae (21 de junio de 2018, 12 de noviembre de 2020 y 18 de septiembre de 2023); Portafolio; ABC Color, Paraguay (5 de octubre de 2026); Enciclopedia Banrepcultural.*
