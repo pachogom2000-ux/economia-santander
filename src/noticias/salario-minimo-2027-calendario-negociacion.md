@@ -1,8 +1,8 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Salario mínimo 2027: el calendario de la negociación"
-date: 2026-10-05T08:00:00.000-05:00
+date: 2026-10-05T07:00:00.000-05:00
 categoria: Empleo
 chipTipo: propio
 chipLabel: "Fuente: Ministerio del Trabajo"
@@ -10,8 +10,8 @@ excerpt: "El Gobierno abrió la negociación del salario mínimo 2027. Tres fech
   marcan el calendario: 30 de noviembre, 15 y 30 de diciembre, límite del
   decreto."
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/buscar-empleo.webp
-imagenAlt: Persona revisando su salario y gastos del mes en Colombia
+imagen: /assets/uploads/reunion-salario-minimo-2027.webp
+imagenAlt: "Arrancan reuniones para el incremento del salario mínimo 2027 en Colombia. "
 imagenTitle: Calendario de la negociación del salario mínimo 2027 en Colombia
 imagenPie: El Gobierno, los gremios y las centrales obreras abrieron la
   negociación del salario mínimo 2027 el 1 de octubre.
