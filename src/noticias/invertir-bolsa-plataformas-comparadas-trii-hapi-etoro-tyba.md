@@ -1,8 +1,8 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Invertir en bolsa desde $500.000: 5 plataformas comparadas"
-date: 2026-10-03T06:00:00.000-05:00
+date: 2026-10-05T05:40:00.000-05:00
 categoria: Inversión
 chipTipo: propio
 chipLabel: Redacción propia
