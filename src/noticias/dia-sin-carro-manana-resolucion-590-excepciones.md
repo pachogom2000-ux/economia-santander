@@ -18,7 +18,7 @@ imagenPie: La Dirección de Tránsito de Bucaramanga expidió la Resolución 590
 imagenCredito: Archivo particular
 tags: noticias
 ---
-**Mañana, 6 de octubre**, Bucaramanga y los demás municipios del área metropolitana viven un nuevo día sin carro y sin moto. La restricción rige de **9:00 a. m. a 4:00 p. m.**, según la **Resolución 590**, expedida el 29 de septiembre por la Dirección de Tránsito de Bucaramanga.
+**Este martes, 6 de octubre**, Bucaramanga y los demás municipios del área metropolitana viven un nuevo día sin carro y sin moto. La restricción rige de **9:00 a. m. a 4:00 p. m.**, según la **Resolución 590**, expedida el 29 de septiembre por la Dirección de Tránsito de Bucaramanga.
 
 La medida cobija automóviles, camionetas, camperos, motocicletas, motociclos, moto triciclos y demás vehículos particulares que circulen por el municipio.
 
@@ -26,14 +26,14 @@ La medida cobija automóviles, camionetas, camperos, motocicletas, motociclos, m
 
 La resolución exceptúa, siempre que estén debidamente identificados y en uso efectivo de la actividad que los justifica:
 
-- Transporte público de pasajeros —masivo, colectivo e individual—, incluido el de radio de acción intermunicipal, departamental o nacional.
-- Organismos de socorro y emergencias, y servicios médicos.
-- Autoridades y organismos de seguridad, tránsito y control operativo.
-- Servicios públicos esenciales, asistencia mecánica y vial, servicios funerarios.
-- Vigilancia privada, transporte escolar, prensa y comunicaciones.
-- Transporte de valores y vehículos blindados.
-- Vehículos eléctricos y de cero emisiones.
-- Vehículos de personas con discapacidad, adaptados o en uso efectivo para su transporte.
+* Transporte público de pasajeros —masivo, colectivo e individual—, incluido el de radio de acción intermunicipal, departamental o nacional.
+* Organismos de socorro y emergencias, y servicios médicos.
+* Autoridades y organismos de seguridad, tránsito y control operativo.
+* Servicios públicos esenciales, asistencia mecánica y vial, servicios funerarios.
+* Vigilancia privada, transporte escolar, prensa y comunicaciones.
+* Transporte de valores y vehículos blindados.
+* Vehículos eléctricos y de cero emisiones.
+* Vehículos de personas con discapacidad, adaptados o en uso efectivo para su transporte.
 
 ## La ruta especial para la carga
 
