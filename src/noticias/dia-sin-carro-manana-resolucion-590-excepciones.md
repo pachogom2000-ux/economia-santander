@@ -1,6 +1,6 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Día sin carro este 06 de octubre: inicia a las 9:00 a.m."
 date: 2026-10-05T16:00:00.000-05:00
 categoria: Comercio y consumo
