@@ -2,7 +2,7 @@
 layout: noticia.njk
 eleventyExcludeFromCollections: false
 title: "Día sin carro este 06 de octubre: inicia a las 9:00 a.m."
-date: 2026-10-05T16:00:00.000-05:00
+date: 2026-10-06T05:00:00.000-05:00
 categoria: Comercio y consumo
 chipTipo: propio
 chipLabel: Redacción propia
@@ -34,6 +34,12 @@ La resolución exceptúa, siempre que estén debidamente identificados y en uso 
 * Transporte de valores y vehículos blindados.
 * Vehículos eléctricos y de cero emisiones.
 * Vehículos de personas con discapacidad, adaptados o en uso efectivo para su transporte.
+
+Además, la Dirección de Tránsito de Bucaramanga expidió en las últimas horas la resolución 610 de octubre 5 de 2026 donde estableció medidas especiales para los motorizados pertenecientes a aplicaciones de domicilios (Rappi, empresas de domicilios constituidas) para el transporte de alimentos, medicamentos y mascotas. 
+
+Dice la resolución también que "Los vehículos de servicio público individual tipo taxi estarán exentos de la restricción fijada para la jornada del Día sin Carro y sin Moto. Asimismo, durante la realización de dicha jornada se suspende temporalmente la medida de Pico y Placa ordinario aplicable a esta modalidad de servicio, con el fin de garantizar la máxima disponibilidad, continuidad y cobertura del servicio público de transporte".
+
+En la tarde de lunes 5 de octubre también se mencionó la posibilidad de aplazar de nuevo la jornada del día sin carro debido a una **tutela interpuesta a las 6:00 a.m**. que pedía que la jornada ampliara su **horario desde las 6:00 a.m. a 8:00 p.m**. igual que el horario de pico y placa convencional, pero esas informaciones al final no pudieron ser confirmadas al final del día. 
 
 ## La ruta especial para la carga
 
