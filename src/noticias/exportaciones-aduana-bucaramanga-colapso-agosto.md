@@ -1,8 +1,8 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Exportaciones: la aduana de Bucaramanga casi desaparece"
-date: 2026-10-06T08:00:00.000-05:00
+date: 2026-10-06T07:00:00.000-05:00
 categoria: Indicadores económicos
 chipTipo: recirc
 chipLabel: "Fuente: DANE"
@@ -10,12 +10,12 @@ excerpt: "Colombia exportó 15,1% más en agosto de 2026, pero por la aduana de
   Bucaramanga casi no pasó nada: la cifra cayó 99,6%, de USD160 a USD0,6
   millones."
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/financiero.jpg
+imagen: /assets/uploads/tungart7-e-commerce-8656646.jpg
 imagenAlt: Gráficos de comercio exterior y exportaciones de Colombia
 imagenTitle: Exportaciones de Colombia y la caída de la aduana de Bucaramanga
-imagenPie: La aduana de Bucaramanga pasó de USD 160,3 millones en agosto de
-  2025 a apenas USD 0,7 millones en agosto de 2026.
-imagenCredito: Pixabay
+imagenPie: La aduana de Bucaramanga pasó de USD 160,3 millones en agosto de 2025
+  a apenas USD 0,7 millones en agosto de 2026.
+imagenCredito: Pixabay-TungArt7
 tags: noticias
 ---
 Colombia exportó **USD 4.456,2 millones FOB** en agosto de 2026, un **15,1% más** que en agosto de 2025, según el boletín técnico de Exportaciones (EXPO) del **DANE**, publicado el 5 de octubre. Pero esa cifra nacional en alza esconde un desplome local: por la **aduana de Bucaramanga** pasaron apenas **USD 652.000** en todo el mes, **99,6% menos** que los USD 160,3 millones que registró un año antes.
