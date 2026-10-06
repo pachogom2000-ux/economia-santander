@@ -1,25 +1,24 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
-title: "Día sin carro mañana: la Resolución 590 completa"
-date: 2026-10-05T16:00:00.000-05:00
+eleventyExcludeFromCollections: false
+title: "Día sin carro este 06 de octubre: inicia a las 9:00 a.m."
+date: 2026-10-06T05:00:00.000-05:00
 categoria: Comercio y consumo
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "Mañana rige el día sin carro y sin moto en Bucaramanga, de 9 a. m. a
-  4 p. m. La Resolución 590 dice quién puede circular y qué debe llevar
-  encima."
+excerpt: Este 6 de octubre rige el día sin carro y sin moto en Bucaramanga, de 9
+  a. m. a 4 p. m. La Resolución 590 dice quién puede circular y qué debe llevar
+  encima.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/movilidad-bucaramanga-autopista-floridablanca.webp
-imagenAlt: Vista panorámica del área metropolitana de Bucaramanga en el día
-  sin carro
+imagen: /assets/uploads/dia-sin-carro-sin-moto.webp
+imagenAlt: Vista de Bucaramanga en el día sin carro
 imagenTitle: Resolución 590 de 2026, día sin carro y sin moto en Bucaramanga
-imagenPie: La Dirección de Tránsito de Bucaramanga expidió la Resolución 590
-  con las excepciones para el día sin carro del 6 de octubre.
+imagenPie: La Dirección de Tránsito de Bucaramanga expidió la Resolución 590 con
+  las excepciones para el día sin carro del 6 de octubre.
 imagenCredito: Archivo particular
 tags: noticias
 ---
-**Mañana, 6 de octubre**, Bucaramanga y los demás municipios del área metropolitana viven un nuevo día sin carro y sin moto. La restricción rige de **9:00 a. m. a 4:00 p. m.**, según la **Resolución 590**, expedida el 29 de septiembre por la Dirección de Tránsito de Bucaramanga.
+**Este martes, 6 de octubre**, Bucaramanga y los demás municipios del área metropolitana viven un nuevo día sin carro y sin moto. La restricción rige de **9:00 a. m. a 4:00 p. m.**, según la **Resolución 590**, expedida el 29 de septiembre por la Dirección de Tránsito de Bucaramanga.
 
 La medida cobija automóviles, camionetas, camperos, motocicletas, motociclos, moto triciclos y demás vehículos particulares que circulen por el municipio.
 
@@ -27,14 +26,20 @@ La medida cobija automóviles, camionetas, camperos, motocicletas, motociclos, m
 
 La resolución exceptúa, siempre que estén debidamente identificados y en uso efectivo de la actividad que los justifica:
 
-- Transporte público de pasajeros —masivo, colectivo e individual—, incluido el de radio de acción intermunicipal, departamental o nacional.
-- Organismos de socorro y emergencias, y servicios médicos.
-- Autoridades y organismos de seguridad, tránsito y control operativo.
-- Servicios públicos esenciales, asistencia mecánica y vial, servicios funerarios.
-- Vigilancia privada, transporte escolar, prensa y comunicaciones.
-- Transporte de valores y vehículos blindados.
-- Vehículos eléctricos y de cero emisiones.
-- Vehículos de personas con discapacidad, adaptados o en uso efectivo para su transporte.
+* Transporte público de pasajeros —masivo, colectivo e individual—, incluido el de radio de acción intermunicipal, departamental o nacional.
+* Organismos de socorro y emergencias, y servicios médicos.
+* Autoridades y organismos de seguridad, tránsito y control operativo.
+* Servicios públicos esenciales, asistencia mecánica y vial, servicios funerarios.
+* Vigilancia privada, transporte escolar, prensa y comunicaciones.
+* Transporte de valores y vehículos blindados.
+* Vehículos eléctricos y de cero emisiones.
+* Vehículos de personas con discapacidad, adaptados o en uso efectivo para su transporte.
+
+Además, la Dirección de Tránsito de Bucaramanga expidió en las últimas horas la resolución 610 de octubre 5 de 2026 donde estableció medidas especiales para los motorizados pertenecientes a aplicaciones de domicilios (Rappi, empresas de domicilios constituidas) para el transporte de alimentos, medicamentos y mascotas. 
+
+Dice la resolución también que "Los vehículos de servicio público individual tipo taxi estarán exentos de la restricción fijada para la jornada del Día sin Carro y sin Moto. Asimismo, durante la realización de dicha jornada se suspende temporalmente la medida de Pico y Placa ordinario aplicable a esta modalidad de servicio, con el fin de garantizar la máxima disponibilidad, continuidad y cobertura del servicio público de transporte".
+
+En la tarde de lunes 5 de octubre también se mencionó la posibilidad de aplazar de nuevo la jornada del día sin carro debido a una **tutela interpuesta a las 6:00 a.m**. que pedía que la jornada ampliara su **horario desde las 6:00 a.m. a 8:00 p.m**. igual que el horario de pico y placa convencional, pero esas informaciones al final no pudieron ser confirmadas al final del día. 
 
 ## La ruta especial para la carga
 
