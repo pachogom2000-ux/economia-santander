@@ -1,6 +1,6 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Expo Remodelación: 1.000 visitantes, 54 empresarios"
 date: 2026-10-05T17:00:00.000-05:00
 categoria: Construcción
@@ -9,9 +9,8 @@ chipLabel: "Fuente: Cámara de Comercio de Bucaramanga"
 excerpt: "La Expo Remodelación superó la meta de visitantes, con más de 1.000,
   pero se quedó a la mitad de empresarios: 54 de los más de 100 proyectados."
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/expoferreteria.webp
-imagenAlt: Pieza del conversatorio de la Expo Remodelación, Ferreterías &
-  Diseño con los panelistas invitados
+imagen: /assets/uploads/expo-diseno-ferreteria.webp
+imagenAlt: Panorámica de Expo Remodelación, Ferretería y Diseño de la CCB.
 imagenTitle: Resultados de la primera Expo Remodelación, Ferreterías & Diseño
 imagenPie: La primera edición de la Expo Remodelación reunió a más de 1.000
   visitantes y 54 empresarios expositores en Neomundo.
