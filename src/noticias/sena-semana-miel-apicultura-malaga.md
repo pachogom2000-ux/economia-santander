@@ -1,21 +1,21 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
-title: "SENA Santander lleva formación en apicultura a Málaga"
+eleventyExcludeFromCollections: false
+title: SENA Santander lleva formación en apicultura a Málaga
 date: 2026-10-07T09:00:00.000-05:00
 categoria: Agro
 chipTipo: recirc
 chipLabel: "Fuente: SENA"
-excerpt: El SENA desarrolló la Semana de la Miel en Málaga, con un instructor
-  de Buga que trajo tres reinas mejoradas para el apiario de la Granja de los
+excerpt: El SENA desarrolló la Semana de la Miel en Málaga, con un instructor de
+  Buga que trajo tres reinas mejoradas para el apiario de la Granja de los
   Andes.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/recolector-de-cafe-en-un-cafetal.webp
-imagenAlt: Trabajador agrícola en una zona rural de Santander
+imagen: /assets/uploads/apicultura-sena-santander.webp
+imagenAlt: Trabajadores de apicultura reciben formación del SENA Santander.
 imagenTitle: Semana de la Miel del SENA en Málaga, Santander
 imagenPie: El Centro Agroempresarial y Turístico de los Andes del SENA
   desarrolló la Semana de la Miel en Málaga, provincia de García Rovira.
-imagenCredito: Pixabay
+imagenCredito: "SENA Archivo particular "
 tags: noticias
 ---
 El **Centro Agroempresarial y Turístico de los Andes** del SENA Santander, en articulación con la Alcaldía de Málaga, desarrolló la **Semana de la Miel** el 2 de octubre, una semana de formación, cata y promoción de la apicultura dirigida a productores y comunidad de la provincia de **García Rovira**.
