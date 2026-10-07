@@ -1,14 +1,13 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
-title: "DIAN restablece servicios tras caída en plena renta"
+eleventyExcludeFromCollections: false
+title: DIAN restablece servicios tras caída en plena renta
 date: 2026-10-07T08:00:00.000-05:00
 categoria: Impuestos y regulación
 chipTipo: recirc
 chipLabel: "Fuente: DIAN"
-excerpt: "La DIAN restableció sus servicios tras una falla eléctrica que dejó
-  la página caída justo el día en que vencía la renta para las cédulas 73 y
-  74."
+excerpt: La DIAN restableció sus servicios tras una falla eléctrica que dejó la
+  página caída justo el día en que vencía la renta para las cédulas 73 y 74.
 autor: Francisco Gómez - Director
 imagen: /assets/uploads/declaracion-impuestos-colombia.webp
 imagenAlt: Persona declarando renta en Colombia en un computador
