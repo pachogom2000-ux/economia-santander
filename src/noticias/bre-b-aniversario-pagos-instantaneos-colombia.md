@@ -2,7 +2,7 @@
 layout: noticia.njk
 eleventyExcludeFromCollections: false
 title: "Bre-B cumple un año: 264 billones movidos en Colombia"
-date: 2026-10-07T12:00:00.000-05:00
+date: 2026-10-07T09:00:00.000-05:00
 categoria: Indicadores económicos
 chipTipo: propio
 chipLabel: Redacción propia
