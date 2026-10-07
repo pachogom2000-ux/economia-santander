@@ -1,20 +1,17 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Bre-B cumple un año: 264 billones movidos en Colombia"
-date: 2026-10-07T12:00:00.000-05:00
+date: 2026-10-07T09:00:00.000-05:00
 categoria: Indicadores económicos
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "Bre-B cumplió un año con 264 billones movidos y 36 millones de
-  usuarios en Colombia. Es la versión local de una tendencia bancaria ya
-  mundial."
+excerpt: Bre-B cumplió un año con 264 billones movidos y 36 millones de usuarios
+  en Colombia. Es la versión local de una tendencia bancaria ya mundial.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/topes-nequi-daviplata.webp
-imagenAlt: Persona haciendo una transferencia de pago inmediato desde el
-  celular en Colombia
-imagenTitle: Bre-B cumple un año y los pagos instantáneos se consolidan en
-  Colombia
+imagen: /assets/uploads/bre-b-banrep.webp
+imagenAlt: "Imagen de aniversario Bre-B que movió $264 billones en un año. "
+imagenTitle: Bre-B cumple un año y los pagos instantáneos se consolidan en Colombia
 imagenPie: Bre-B movió $264 billones en su primer año, con 36 millones de
   usuarios con llave registrada.
 imagenCredito: Archivo particular
