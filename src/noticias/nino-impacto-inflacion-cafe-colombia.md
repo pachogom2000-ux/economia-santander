@@ -1,21 +1,19 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
-title: "El Niño podría sumar 3,26 puntos a la inflación"
-date: 2026-10-08T10:00:00.000-05:00
+eleventyExcludeFromCollections: false
+title: El Niño podría sumar 3,26 puntos a la inflación
+date: 2026-10-08T07:00:00.000-05:00
 categoria: Indicadores económicos
 chipTipo: recirc
 chipLabel: "Fuente: Deloitte"
-excerpt: "Deloitte advierte que El Niño podría sumarle hasta 3,26 puntos a la
-  inflación de Colombia y golpear la cosecha de café con caídas de hasta
-  14,6%."
+excerpt: Deloitte advierte que El Niño podría sumarle hasta 3,26 puntos a la
+  inflación de Colombia y golpear la cosecha de café con caídas de hasta 14,6%.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/embalse-hidroelectrico-nino-2026.jpg
-imagenAlt: Embalse de una central hidroeléctrica con el nivel del agua bajo
-imagenTitle: El impacto económico de El Niño en la inflación y el café de
-  Colombia
-imagenPie: Deloitte advierte que un Niño fuerte podría sumar hasta 3,26 puntos
-  a la inflación nacional entre el último trimestre de 2026 e inicios de 2027.
+imagen: /assets/uploads/agro.webp
+imagenAlt: Productos agrícolas son los más afectados por el Fenómeno de El Niño.
+imagenTitle: El impacto económico de El Niño en la inflación y el café de Colombia
+imagenPie: Deloitte advierte que un Niño fuerte podría sumar hasta 3,26 puntos a
+  la inflación nacional entre el último trimestre de 2026 e inicios de 2027.
 imagenCredito: Archivo particular
 tags: noticias
 ---
@@ -45,7 +43,7 @@ Es el mecanismo que ya explicó este portal con el caso de [Hidrosogamoso, la ce
 
 ## Lo que dice Deloitte sobre la tasa de interés
 
-**"El fenómeno de El Niño representa uno de los principales riesgos macroeconómicos para Colombia en el corto plazo porque tiene la capacidad de impactar simultáneamente la producción agropecuaria, los costos de energía y la inflación"**, dijo **Daniel Zaga**, socio economista en jefe de Deloitte Spanish Latin America. **"La experiencia histórica demuestra que estos choques climáticos pueden extender sus efectos sobre la actividad económica y las decisiones de política monetaria mucho más allá de la duración del propio evento climático"**.
+"El fenómeno de El Niño representa uno de los principales riesgos macroeconómicos para Colombia en el corto plazo porque tiene la capacidad de impactar simultáneamente la producción agropecuaria, los costos de energía y la inflación", dijo **Daniel Zaga**, socio economista en jefe de Deloitte Spanish Latin America. "La experiencia histórica demuestra que estos choques climáticos pueden extender sus efectos sobre la actividad económica y las decisiones de política monetaria mucho más allá de la duración del propio evento climático".
 
 El Banco de la República ya subió su tasa de intervención a **12,25%** el 30 de septiembre, como [contó este portal](/noticias/tasa-interes-banco-republica-decision-30-septiembre-2026/), citando entre otras razones la presión de El Niño sobre los precios. Según Deloitte, si el fenómeno se confirma con la intensidad que proyecta la NOAA, esa tasa alta tendría que sostenerse más tiempo del previsto, con el consumo, la inversión y el crecimiento pagando la cuenta.
 
