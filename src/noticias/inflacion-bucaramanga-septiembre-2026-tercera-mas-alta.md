@@ -1,22 +1,20 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Inflación de septiembre en Bucaramanga: 6,98%"
 date: 2026-10-08T06:00:00.000-05:00
 categoria: Indicadores económicos
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "La inflación anual de Bucaramanga bajó apenas a 6,98%, pero sigue
-  entre las tres más altas del país. Qué la explica y qué cambió frente a
-  agosto."
+excerpt: La inflación anual de Bucaramanga bajó apenas a 6,98%, pero sigue entre
+  las tres más altas del país. Qué la explica y qué cambió frente a agosto.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/empleo-formal-bucaramanga-area-metropolitana-2026.jpg
-imagenAlt: Panorámica de Bucaramanga con la tercera inflación más alta del país
-  en septiembre
+imagen: /assets/uploads/mercado-pixabay-vickyhevia.webp
+imagenAlt: Bucaramanga con la tercera inflación más alta del país en septiembre
 imagenTitle: Inflación en Bucaramanga en septiembre de 2026
-imagenPie: Restaurantes y hoteles subió 10,62% anual en Bucaramanga, la
-  división que más se despegó del promedio nacional.
-imagenCredito: Archivo particular
+imagenPie: "La inflación en Bucaramanga de septiembre bajó frente a agosto, pero
+  se mantiene en las más altas del país. "
+imagenCredito: Pixabay Vicky Hevia
 tags: noticias
 ---
 **La inflación anual en Bucaramanga llegó a 6,98% en septiembre**, la tercera más alta entre los 24 dominios geográficos que mide el DANE. Solo la superan Medellín (7,04%) y Armenia (7,00%).
