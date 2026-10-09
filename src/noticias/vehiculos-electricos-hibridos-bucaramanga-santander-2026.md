@@ -1,22 +1,21 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
-title: "Bucaramanga casi duplica sus carros eléctricos en 2026"
-date: 2026-10-09T13:00:00.000-05:00
+eleventyExcludeFromCollections: false
+title: Bucaramanga casi duplica sus carros eléctricos en 2026
+date: 2026-10-09T01:01:00.000-05:00
 categoria: Comercio y consumo
 chipTipo: recirc
 chipLabel: "Fuente: Fenalco-ANDI"
-excerpt: "Bucaramanga matriculó 456 carros eléctricos y 1.440 híbridos entre
+excerpt: Bucaramanga matriculó 456 carros eléctricos y 1.440 híbridos entre
   enero y agosto de 2026, mientras el país roza el 50% en ventas con motor
-  verde."
+  verde.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/conductor-carro.jpg
+imagen: /assets/uploads/carro-electrico.webp
 imagenAlt: Conductor al volante de un vehículo eléctrico en Bucaramanga
-imagenTitle: Matrículas de vehículos eléctricos e híbridos en Bucaramanga y
-  Santander, 2026
-imagenPie: Bucaramanga y Santander casi duplicaron sus matrículas de
-  vehículos eléctricos en lo corrido de 2026, según el boletín de
-  Fenalco-ANDI con datos del RUNT.
+imagenTitle: Matrículas de vehículos eléctricos e híbridos en Bucaramanga y Santander, 2026
+imagenPie: Bucaramanga y Santander casi duplicaron sus matrículas de vehículos
+  eléctricos en lo corrido de 2026, según el boletín de Fenalco-ANDI con datos
+  del RUNT.
 imagenCredito: Archivo particular
 tags: noticias
 ---
