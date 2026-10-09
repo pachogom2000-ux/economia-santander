@@ -1,15 +1,22 @@
 ---
 layout: noticia.njk
-title: "Cambiar euros cuesta 69 veces más que cambiar dólares"
-date: 2026-10-09T07:00:00.000-05:00
+eleventyExcludeFromCollections: false
+title: Cambiar euros cuesta 69 veces más que cambiar dólares
+date: 2026-10-09T03:10:00.000-05:00
 categoria: Finanzas personales
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "La pregunta no es cuánto le cobran por cambiar su plata, sino cuántos dólares recibe. El margen de la casa de cambio es el costo que casi nadie mira."
+excerpt: La pregunta no es cuánto le cobran por cambiar su plata, sino cuántos
+  dólares recibe. El margen de la casa de cambio es el costo que casi nadie
+  mira.
 autor: Francisco Gómez - Director
+imagen: /assets/uploads/casa-cambio.webp
+imagenAlt: Costos de cambiar divisas en casas de cambio
+imagenTitle: Billetes de euros y dólar en casas de cambio
+imagenPie: el margen del euro es 69 veces más ancho que el dólar.
+imagenCredito: "Archivo particular. "
 guia: true
 tags: noticias
-eleventyExcludeFromCollections: true
 ---
 Cambiar **US$1.000** en una casa de cambio le cuesta cerca de **$3.500** en margen. Cambiar **€1.000** le cuesta **$259.400**.
 
