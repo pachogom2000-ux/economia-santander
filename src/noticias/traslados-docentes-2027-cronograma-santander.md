@@ -1,22 +1,22 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Traslados docentes 2027: el cronograma en Santander"
-date: 2026-10-09T11:00:00.000-05:00
+date: 2026-10-09T03:10:00.000-05:00
 categoria: Empleo
 chipTipo: recirc
 chipLabel: "Fuente: MinEducación"
-excerpt: "El cronograma de traslados docentes 2027 ya salió: inscripción del
-  2 al 13 de noviembre, para las seis entidades oficiales certificadas de
+excerpt: "El cronograma de traslados docentes 2027 ya salió: inscripción del 2
+  al 13 de noviembre, para las seis entidades oficiales certificadas de
   Santander."
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/historia-laboral.webp
+imagen: /assets/uploads/docente.webp
 imagenAlt: Docente de carrera que participa en el proceso de traslados del
   Ministerio de Educación
 imagenTitle: Cronograma de traslados de docentes y directivos docentes 2027
-imagenPie: El Ministerio de Educación fijó las fechas del proceso ordinario
-  de traslados que define dónde quedan ubicados los docentes de carrera al
-  inicio del año escolar 2027.
+imagenPie: El Ministerio de Educación fijó las fechas del proceso ordinario de
+  traslados que define dónde quedan ubicados los docentes de carrera al inicio
+  del año escolar 2027.
 imagenCredito: Archivo particular
 tags: noticias
 ---
