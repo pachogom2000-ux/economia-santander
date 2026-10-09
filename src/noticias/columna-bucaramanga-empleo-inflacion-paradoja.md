@@ -1,16 +1,16 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Bucaramanga: el empleo sube, el bolsillo no da tregua"
-date: 2026-10-09T07:00:00.000-05:00
+date: 2026-10-09T03:00:00.000-05:00
 categoria: Opinión
 chipTipo: propio
 chipLabel: Columna del director
-excerpt: "Bucaramanga tiene el menor desempleo del país, 7,3%, y la tercera
+excerpt: Bucaramanga tiene el menor desempleo del país, 7,3%, y la tercera
   inflación más alta, 6,98%. Por qué tener trabajo ya no alcanza para vivir
-  mejor."
+  mejor.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/empleo-formal-bucaramanga-area-metropolitana-2026.jpg
+imagen: /assets/uploads/cierre-empresas-bucaramanga.webp
 imagenAlt: Trabajadores del área metropolitana de Bucaramanga, que tiene el
   menor desempleo del país
 imagenTitle: "Columna: el empleo y la inflación en Bucaramanga, octubre de 2026"
