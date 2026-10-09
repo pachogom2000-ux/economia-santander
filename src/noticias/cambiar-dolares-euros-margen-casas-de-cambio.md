@@ -1,6 +1,6 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: Cambiar euros cuesta 69 veces más que cambiar dólares
 date: 2026-10-09T03:10:00.000-05:00
 categoria: Finanzas personales
