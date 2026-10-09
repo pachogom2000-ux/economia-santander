@@ -1,5 +1,5 @@
 {
-  "actualizado": "Cierres del 24 y 25 de julio de 2026, salvo indicación distinta",
+  "actualizado": "Dólar, euro, oro y bitcoin en vivo. Tasas, inflación, COLCAP, UVR y S&P 500 al 6-9 de octubre de 2026. Acciones individuales, TES 10 años, café y Brent: cierres de julio de 2026, pendientes de refrescar",
   "indicadores": [
     {
       "id": "usd-cop",
@@ -141,12 +141,12 @@
     {
       "id": "colcap",
       "nombre": "COLCAP",
-      "valor": "2.274,53",
-      "delta": "▼ 0,38%",
-      "dir": "down",
+      "valor": "2.589,04",
+      "delta": "▲ 0,25%",
+      "dir": "up",
       "yahoo": "ICOLCAP.CL",
       "yahooNota": "Gráfica de referencia: ETF iShares COLCAP (ICOLCAP, BVC, en pesos), que replica el índice MSCI COLCAP.",
-      "title": "Índice MSCI COLCAP de la Bolsa de Valores de Colombia (puntos). Cierre del 25 de julio de 2026.",
+      "title": "Índice MSCI COLCAP de la Bolsa de Valores de Colombia (puntos). Cierre del 6 de octubre de 2026. Fuente: Banco de la República.",
       "grupo": "Índices y tasas"
     },
     {
@@ -161,10 +161,10 @@
     {
       "id": "tasa-usura",
       "nombre": "Tasa de usura",
-      "valor": "28,79%",
+      "valor": "28,59%",
       "delta": "tope legal",
       "dir": "flat",
-      "title": "Tasa de usura para crédito de consumo y ordinario, certificada por la Superintendencia Financiera para julio de 2026. Es el interés máximo legal.",
+      "title": "Tasa de usura para crédito de consumo y ordinario, certificada por la Superintendencia Financiera mediante la Resolución 1472 de 2026, vigente del 1 al 31 de octubre de 2026. Es el interés máximo legal.",
       "grupo": "Índices y tasas"
     },
     {
@@ -191,40 +191,40 @@
     {
       "id": "sp500",
       "nombre": "S&P 500",
-      "valor": "7.533,77",
-      "delta": "16 jul",
-      "dir": "flat",
+      "valor": "7.818,93",
+      "delta": "▲ 0,58%",
+      "dir": "up",
       "yahoo": "^GSPC",
       "yahooMismo": true,
       "yahooNota": "Índice S&P 500 (EE. UU.), en puntos.",
-      "title": "Índice S&P 500 (EE. UU.), en puntos. Referencia del 16 de julio de 2026.",
+      "title": "Índice S&P 500 (EE. UU.), en puntos. Cierre histórico del 6 de octubre de 2026.",
       "grupo": "Índices y tasas"
     },
     {
       "id": "uvr",
       "nombre": "UVR",
-      "valor": "$416,19",
-      "delta": "25 jul",
+      "valor": "$419,34",
+      "delta": "9 oct",
       "dir": "flat",
-      "title": "Valor aproximado de la UVR al 25 de julio de 2026. Fuente: Banco de la República.",
+      "title": "Valor de la UVR al 9 de octubre de 2026. Fuente: Banco de la República.",
       "grupo": "Índices y tasas"
     },
     {
       "id": "inflacion",
       "nombre": "Inflación anual",
-      "valor": "6,14%",
-      "delta": "▲ 0,30 pp",
+      "valor": "6,29%",
+      "delta": "▲ 0,05 pp",
       "dir": "up",
-      "title": "IPC — variación anual de junio de 2026. Fuente: DANE.",
+      "title": "IPC — variación anual de septiembre de 2026. Fuente: DANE.",
       "grupo": "Índices y tasas"
     },
     {
       "id": "tasa-banrep",
       "nombre": "Tasa BanRep",
-      "valor": "12,00%",
-      "delta": "▲ 0,75 pp",
+      "valor": "12,25%",
+      "delta": "▲ 0,25 pp",
       "dir": "up",
-      "title": "Tasa de intervención de política monetaria, vigente desde el 3 de julio de 2026. Fuente: Banco de la República.",
+      "title": "Tasa de intervención de política monetaria, vigente desde el 30 de septiembre de 2026. Fuente: Banco de la República.",
       "grupo": "Índices y tasas"
     }
   ]
