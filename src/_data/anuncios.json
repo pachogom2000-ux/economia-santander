@@ -23,12 +23,16 @@
         "Indicadores económicos",
         "Opinión",
         "Entrevistas",
-        "Glosario y guías"
+        "Glosario y guías",
+        "Finanzas personales",
+        "Educación financiera",
+        "Empleo",
+        "Comercio y consumo"
       ]
     },
     {
       "id": "tinto",
-      "activo": true,
+      "activo": false,
       "marca": "Tienda Sinestrés · Bucaramanga",
       "titular": "Tu tinto va por la casa",
       "texto": "Genera tu cupón, muéstralo en caja y reclama un tinto gratis. <strong>Solo 100 cupones</strong>, uno por dispositivo.",
