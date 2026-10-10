@@ -1,24 +1,22 @@
 ---
 layout: noticia.njk
 eleventyExcludeFromCollections: true
-title: "5 negocios para montar desde la casa en Santander"
+title: 5 negocios para montar desde la casa en Santander
 date: 2026-10-10T09:00:00.000-05:00
 categoria: Emprendimiento y pymes
 chipTipo: recirc
 chipLabel: "Fuente: Fast Company"
-guia: true
-excerpt: "Tutoría, diseño web, e-commerce, asesoría tributaria y diseño
-  gráfico: cinco negocios que se pueden montar desde la casa en Bucaramanga,
-  con las plataformas y trámites que aplican aquí."
+excerpt: "Tutoría, diseño web, e-commerce, asesoría tributaria y diseño gráfico:
+  cinco negocios que se pueden montar desde la casa en Bucaramanga, con las
+  plataformas y trámites que aplican aquí."
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/bisuteria-archivoparticular.webp
-imagenAlt: Emprendedora elaborando bisutería como negocio desde casa en
-  Santander
+imagen: /assets/uploads/negocio-casa-pixabay-oakywood.webp
+imagenAlt: Emprendedora elaborando bisutería como negocio desde casa en Santander
 imagenTitle: Negocios para montar desde la casa en Bucaramanga y Santander
-imagenPie: Tutoría, diseño, comercio electrónico, asesoría tributaria y
-  diseño gráfico son cinco negocios que no necesitan local propio para
-  arrancar.
+imagenPie: Tutoría, diseño, comercio electrónico, asesoría tributaria y diseño
+  gráfico son cinco negocios que no necesitan local propio para arrancar.
 imagenCredito: Archivo particular
+guia: true
 tags: noticias
 ---
 No hace falta alquilar un local para montar un negocio. La revista estadounidense **Fast Company** publicó una lista de cinco ideas que arrancan desde la casa, firmada por el periodista **Chris Morris**. Esta es esa lista, adaptada a lo que de verdad aplica en Bucaramanga: qué plataformas existen aquí, qué trámites hay que hacer ante la **DIAN** y dónde está la demanda local.
