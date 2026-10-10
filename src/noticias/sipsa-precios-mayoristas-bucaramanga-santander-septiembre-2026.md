@@ -1,22 +1,20 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
-title: "Bucaramanga lidera el alza nacional en arracacha y tomate"
+eleventyExcludeFromCollections: false
+title: Bucaramanga lidera el alza nacional en arracacha y tomate
 date: 2026-10-10T07:00:00.000-05:00
 categoria: Agro
 chipTipo: recirc
 chipLabel: "Fuente: DANE-SIPSA"
-excerpt: "La arracacha subió 188% en un año en Bucaramanga, la mayor alza del
-  país según el DANE. También lidera en tomate, pimentón, naranja y mango
-  Tommy."
+excerpt: La arracacha subió 188% en un año en Bucaramanga, la mayor alza del
+  país según el DANE. También lidera en tomate, pimentón, naranja y mango Tommy.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/hunterproducciones-farming-6959629.jpg
-imagenAlt: Cultivo agrícola en Santander, origen de varios productos que
-  encarecen en el mercado mayorista
+imagen: /assets/uploads/mercado-bucaramanga.webp
+imagenAlt: Cultivo agrícola en Santander
 imagenTitle: Precios mayoristas en Bucaramanga, SIPSA del DANE, septiembre 2026
-imagenPie: El boletín SIPSA del DANE ubica a Bucaramanga a la cabeza del país
-  en el alza anual de arracacha, tomate y pimentón.
-imagenCredito: Archivo particular
+imagenPie: El boletín SIPSA del DANE ubica a Bucaramanga a la cabeza del país en
+  el alza anual de arracacha, tomate y pimentón.
+imagenCredito: Pixabay-SvenHilker
 tags: noticias
 ---
 La **arracacha** subió **188,10%** en Bucaramanga entre septiembre de 2025 y septiembre de 2026: la mayor variación de las ocho ciudades que mide el **DANE** en su boletín de precios mayoristas (SIPSA), publicado el 8 de octubre. No es el único producto en el que la ciudad lidera el alza nacional: también el **tomate** (131,58%), el **pimentón** (50,39%), la **naranja** (62,53%) y el **mango Tommy** (30,70%) subieron más en Bucaramanga que en cualquiera de los otros siete mercados que compara el boletín.
