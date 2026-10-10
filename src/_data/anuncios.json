@@ -1,6 +1,32 @@
 {
   "anuncios": [
     {
+      "id": "casa-pauta",
+      "activo": true,
+      "etiqueta": "Espacio propio",
+      "marca": "Economía Santander",
+      "titular": "Pague 2 meses y el tercero va por nuestra cuenta",
+      "texto": "Pauta de <strong>$500.000 al mes</strong> en el portal de economía y negocios de Santander. Diseño incluido y el clic va a su WhatsApp, su web o su Google Business.",
+      "tipo": "estandar",
+      "tema": "ad-casa",
+      "url": "/pautar/",
+      "cta": "Ver la promoción →",
+      "sello": {
+        "cifra": "3x2",
+        "texto": "Promoción válida hasta el 31 de octubre"
+      },
+      "categorias": [
+        "Portada",
+        "Emprendimiento y pymes",
+        "Turismo y hotelería",
+        "Impuestos y regulación",
+        "Indicadores económicos",
+        "Opinión",
+        "Entrevistas",
+        "Glosario y guías"
+      ]
+    },
+    {
       "id": "tinto",
       "activo": true,
       "marca": "Tienda Sinestrés · Bucaramanga",
@@ -12,7 +38,13 @@
       "url": "https://maps.app.goo.gl/8Lopf2Nfjzwn2ymj7",
       "cta": "Generar mi cupón",
       "ctaSecundario": "Cómo llegar →",
-      "categorias": ["Portada", "Finanzas personales", "Educación financiera", "Empleo", "Comercio y consumo"]
+      "categorias": [
+        "Portada",
+        "Finanzas personales",
+        "Educación financiera",
+        "Empleo",
+        "Comercio y consumo"
+      ]
     },
     {
       "id": "pirotecnia",
@@ -27,7 +59,15 @@
       "cta": "Ver el catálogo →",
       "sitio": "centraldepirotecnia.com",
       "notaLateral": "Venta segura y asesorada",
-      "categorias": ["Portada", "Inversión", "Industria", "Agro", "Construcción", "Nacional", "Comercio y consumo"]
+      "categorias": [
+        "Portada",
+        "Inversión",
+        "Industria",
+        "Agro",
+        "Construcción",
+        "Nacional",
+        "Comercio y consumo"
+      ]
     }
   ]
 }

@@ -36,8 +36,11 @@
     </div>
   </div>
   {% else %}
-  <a class="ad-unit {{ anuncio.tema }}{% if anuncioCompacto %} ad-compacto{% endif %}" href="{{ anuncio.url }}" target="_blank" rel="noopener sponsored">
-    <span class="ad-tag">Publicidad</span>
+  {# Un aviso propio apunta al mismo sitio: ni se abre en pestaña nueva ni
+     lleva rel="sponsored", que es para enlaces pagados hacia terceros. #}
+  {% set esPropio = anuncio.url and anuncio.url.startsWith("/") %}
+  <a class="ad-unit {{ anuncio.tema }}{% if anuncioCompacto %} ad-compacto{% endif %}" href="{{ anuncio.url }}"{% if not esPropio %} target="_blank" rel="noopener sponsored"{% endif %}>
+    <span class="ad-tag">{{ anuncio.etiqueta or "Publicidad" }}</span>
     {% if anuncio.imagen %}
     <div class="ad-media" aria-hidden="true">
       <img src="{{ anuncio.imagen }}" alt="" loading="lazy" decoding="async">
@@ -50,6 +53,12 @@
         <p class="ad-text">{{ anuncio.texto | safe }}</p>
         <span class="ad-cta">{{ anuncio.cta }}</span>
       </div>
+      {% if anuncio.sello %}
+      <div class="ad-sello" aria-hidden="true">
+        <b class="ad-sello-cifra">{{ anuncio.sello.cifra }}</b>
+        <span class="ad-sello-texto">{{ anuncio.sello.texto }}</span>
+      </div>
+      {% endif %}
       {% if anuncio.sitio and not anuncioCompacto %}
       <div class="ad-piro-side">
         <span class="site">{{ anuncio.sitio }}</span>

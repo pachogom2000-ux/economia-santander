@@ -99,4 +99,6 @@ La venta y el uso de artículos pirotécnicos están regulados en Colombia por l
 
 ¿Quiere anunciar aquí? **directoreconomiasantander@gmail.com** · +57 311 286 5169
 
+Las tarifas vigentes y la promoción de cierre de año están en la [página de pauta](/pautar/).
+
 Antes de cerrar cualquier acuerdo conviene que sepa lo que dice la sección 2 de esta página: la pauta compra un espacio, no compra la cobertura.
