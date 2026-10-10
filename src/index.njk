@@ -442,6 +442,15 @@ ogType: website
     </div>
   </section>
   {% endif %}
-  {# Espacio publicitario: billboard de cierre, antes del pie de página. #}
+  {# Cierre, antes del pie. Con AdSense apagado el cajón quedaba vacío, así que
+     se aprovecha para el aviso del inventario; si algún día se enciende Google,
+     manda la unidad de AdSense. #}
+  {% if publicidad.adsense.activo and publicidad.adsense.cliente %}
   {% set adFormato = 'billboard' %}
   {% include "adsense-unidad.njk" %}
+  {% else %}
+  {% set anuncio = anuncios.anuncios | anuncioPara('Portada', 'portada-cierre') %}
+  {% set anuncioCompacto = false %}
+  {% include "anuncio.njk" %}
+  {% set anuncio = null %}
+  {% endif %}

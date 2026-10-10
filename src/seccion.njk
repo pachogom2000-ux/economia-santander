@@ -37,6 +37,15 @@ eleventyComputed:
         {% if n.data.excerpt %}<p class="seccion-resumen">{{ n.data.excerpt }}</p>{% endif %}
       </div>
     </article>
+    {#- Tras la tercera nota: es el punto del listado donde el lector todavía
+        está mirando y el aviso no interrumpe la entrada a la sección. -#}
+    {% if loop.index == 3 and notas.length > 3 %}
+    {% set anuncio = anuncios.anuncios | anuncioPara(seccion.nombre, page.url) %}
+    {% set anuncioCompacto = true %}
+    {% include "anuncio.njk" %}
+    {% set anuncio = null %}
+    {% set anuncioCompacto = false %}
+    {% endif %}
     {% endfor %}
   </div>
   {% else %}
@@ -46,3 +55,12 @@ eleventyComputed:
   </div>
   {% endif %}
 </section>
+
+{#- En secciones con tres notas o menos el aviso no cupo arriba: va al cierre. -#}
+{% if notas.length <= 3 %}
+{% set anuncio = anuncios.anuncios | anuncioPara(seccion.nombre, page.url) %}
+{% set anuncioCompacto = true %}
+{% include "anuncio.njk" %}
+{% set anuncio = null %}
+{% set anuncioCompacto = false %}
+{% endif %}

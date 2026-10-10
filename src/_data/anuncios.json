@@ -17,17 +17,22 @@
       },
       "categorias": [
         "Portada",
-        "Emprendimiento y pymes",
+        "Inversión",
+        "Educación financiera",
+        "Empleo",
+        "Finanzas personales",
+        "Construcción",
+        "Industria",
+        "Agro",
+        "Comercio y consumo",
         "Turismo y hotelería",
+        "Emprendimiento y pymes",
         "Impuestos y regulación",
         "Indicadores económicos",
         "Opinión",
         "Entrevistas",
         "Glosario y guías",
-        "Finanzas personales",
-        "Educación financiera",
-        "Empleo",
-        "Comercio y consumo"
+        "Nacional"
       ]
     },
     {
@@ -52,7 +57,7 @@
     },
     {
       "id": "pirotecnia",
-      "activo": true,
+      "activo": false,
       "marca": "Central de Pirotecnia",
       "titular": "Que la fiesta se vea desde lejos",
       "texto": "Pólvora de bajo ruido, espectáculos con manejo profesional y parqueadero propio en Bucaramanga.",

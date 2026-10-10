@@ -319,6 +319,10 @@
   .ad-leaderboard { min-height: 106px; }
   .ad-rectangle { min-height: 258px; }
   .ad-wrap { padding: 26px 0; }
+  /* El aviso trae su propio .wrap. Cuando va dentro de otro .wrap —en las
+     páginas de sección y de servicio— la medida se aplicaría dos veces y el
+     bloque saldría más angosto que el contenido. Aquí se anula el de adentro. */
+  .wrap .ad-wrap { max-width: none; width: 100%; margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0; }
   /* Unidades de AdSense: alto reservado antes de que cargue el anuncio, para
      que no haya salto de diseño (CLS). Las medidas son las del cajón vacío. */
   .adsense { text-align: center; }

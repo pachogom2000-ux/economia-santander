@@ -123,3 +123,12 @@ permalink: /dolar-hoy/
 </section>
 
 <script src="/assets/dolar.js" defer></script>
+
+{# Espacio publicitario. El inventario vive en _data/anuncios.json y se edita
+   en el CMS, en "Datos del sitio". Si no hay aviso activo para la categoría,
+   no se pinta nada. #}
+{% set anuncio = anuncios.anuncios | anuncioPara('Portada', page.url) %}
+{% set anuncioCompacto = true %}
+{% include "anuncio.njk" %}
+{% set anuncio = null %}
+{% set anuncioCompacto = false %}
