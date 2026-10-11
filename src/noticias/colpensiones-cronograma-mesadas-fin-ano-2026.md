@@ -1,8 +1,8 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Colpensiones: el 30 de noviembre llegan dos mesadas"
-date: 2026-10-10T07:00:00.000-05:00
+date: 2026-10-11T05:10:00.000-05:00
 categoria: Finanzas personales
 chipTipo: recirc
 chipLabel: "Fuente: Colpensiones"
@@ -11,6 +11,11 @@ excerpt: Colpensiones confirmó las fechas de pago de octubre, noviembre y
   pensionados.
 autor: Francisco Gómez - Director
 imagen: /assets/uploads/pensionado-pixabay-stevepb.webp
+imagenAlt: Pensionado esperando mesada de Colpensiones
+imagenTitle: Colpensiones confirmó el cronograma de las mesadas que recibirán
+  sus afiliados en noviembre y diciembre
+imagenPie: El cronograma de pago de las pensiones no cambió.
+imagenCredito: Pixabay
 guia: true
 tags: noticias
 ---
