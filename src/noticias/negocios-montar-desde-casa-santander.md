@@ -1,8 +1,8 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: 5 negocios para montar desde la casa en Santander
-date: 2026-10-10T09:00:00.000-05:00
+date: 2026-10-12T06:05:00.000-05:00
 categoria: Emprendimiento y pymes
 chipTipo: recirc
 chipLabel: "Fuente: Fast Company"
