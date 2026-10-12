@@ -169,11 +169,47 @@
 
     var elLive = document.getElementById('trm-live');
 
+    // ---------- Caché corta de los datos de mercado ----------
+    // Sin esto el portal salía a dos servicios externos en CADA página que
+    // abre el lector: quien lee tres notas hacía seis peticiones para pintar
+    // la misma cinta. Los precios no se mueven en minutos, así que la primera
+    // respuesta se guarda y las páginas siguientes la reutilizan.
+    //
+    // Va en localStorage y no en sessionStorage a propósito: así sirve también
+    // cuando el lector vuelve al rato desde WhatsApp, que abre pestaña nueva.
+    // Lo guardado son precios públicos, no datos del lector.
+    var MKT_MINUTOS = 10;
+
+    function mktLeer(clave) {
+      try {
+        var crudo = window.localStorage.getItem('es-mkt-' + clave);
+        if (!crudo) return null;
+        var o = JSON.parse(crudo);
+        if (!o || typeof o.t !== 'number') return null;
+        if (Date.now() - o.t > MKT_MINUTOS * 60000) return null;
+        return o.d;
+      } catch (e) { return null; }
+    }
+
+    function mktGuardar(clave, datos) {
+      try {
+        window.localStorage.setItem('es-mkt-' + clave, JSON.stringify({ t: Date.now(), d: datos }));
+      } catch (e) {}
+    }
+
+    // Devuelve lo guardado si sigue fresco; si no, lo pide y lo guarda.
+    function mktTraer(clave, url) {
+      var guardado = mktLeer(clave);
+      if (guardado) return Promise.resolve(guardado);
+      return fetch(url)
+        .then(function (r) { return r.ok ? r.json() : Promise.reject(); })
+        .then(function (j) { mktGuardar(clave, j); return j; });
+    }
+
     // ---------- 4) Monedas en vivo (dolarapi.com) ----------
     // Una sola petición trae el dólar y el euro. Se tratan distinto a
     // propósito: ver el bloque del euro más abajo.
-    fetch('https://co.dolarapi.com/v1/cotizaciones')
-      .then(function (r) { return r.ok ? r.json() : Promise.reject(); })
+    mktTraer('divisas', 'https://co.dolarapi.com/v1/cotizaciones')
       .then(function (list) {
         function moneda(codigo) {
           for (var i = 0; i < list.length; i++) {
@@ -249,8 +285,7 @@
         });
       }
     }
-    fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,pax-gold&vs_currencies=usd&include_24hr_change=true')
-      .then(function (r) { return r.ok ? r.json() : Promise.reject(); })
+    mktTraer('cripto', 'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,pax-gold&vs_currencies=usd&include_24hr_change=true')
       .then(function (j) {
         if (j.bitcoin) setCripto('btc', parseFloat(j.bitcoin.usd), parseFloat(j.bitcoin.usd_24h_change));
         if (j['pax-gold']) setCripto('oro', parseFloat(j['pax-gold'].usd), parseFloat(j['pax-gold'].usd_24h_change));
