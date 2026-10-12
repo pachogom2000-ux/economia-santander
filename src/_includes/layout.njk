@@ -141,7 +141,45 @@
       gtag('consent', 'update', { analytics_storage: 'denied' });
     };
 
-    if (decision !== 'no') window.esCargarAnalitica();
+    // La analítica no se carga de entrada. gtag.js pesa 179 KB y era el
+    // archivo más grande del portal: pedirlo mientras el lector espera el
+    // texto retrasaba la carga sin darle nada a él. Se pide cuando el
+    // navegador ya terminó y está libre, lo que primero ocurra de:
+    //   · el navegador queda ocioso después de 'load';
+    //   · el lector toca, teclea o hace scroll;
+    //   · la página se va a ocultar o cerrar —ahí se pide de inmediato, para
+    //     no perder la visita de quien entra y sale rápido;
+    //   · 4 segundos, como red de seguridad.
+    // Mide exactamente lo mismo: GA4 cuenta la visita cuando llega, no cuando
+    // se pidió el script.
+    if (decision !== 'no') {
+      var yaPedida = false;
+      var pedirAnalitica = function () {
+        if (yaPedida) return;
+        yaPedida = true;
+        window.esCargarAnalitica();
+      };
+
+      ['pointerdown', 'keydown', 'touchstart', 'scroll'].forEach(function (ev) {
+        window.addEventListener(ev, pedirAnalitica, { once: true, passive: true });
+      });
+      window.addEventListener('pagehide', pedirAnalitica, { once: true });
+      document.addEventListener('visibilitychange', function () {
+        if (document.visibilityState === 'hidden') pedirAnalitica();
+      });
+
+      var alQuedarLibre = function () {
+        if ('requestIdleCallback' in window) {
+          requestIdleCallback(pedirAnalitica, { timeout: 2000 });
+        } else {
+          setTimeout(pedirAnalitica, 800);
+        }
+      };
+      if (document.readyState === 'complete') alQuedarLibre();
+      else window.addEventListener('load', alQuedarLibre, { once: true });
+
+      setTimeout(pedirAnalitica, 4000);
+    }
   })();
 </script>
 {% if publicidad.adsense.cliente %}
