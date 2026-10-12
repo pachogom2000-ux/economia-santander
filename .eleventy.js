@@ -439,6 +439,29 @@ module.exports = function (eleventyConfig) {
     return pool[h % pool.length];
   });
 
+  // Variante de anuncioPara que devuelve varios anunciantes DISTINTOS para la
+  // misma página, en vez de uno solo. Sirve para las posiciones que conviven
+  // en la misma vista (carril lateral de una nota + cierre, por ejemplo):
+  // rota el mismo fondo de anuncios activos de la categoría, pero arrancando
+  // en un punto distinto según la URL, y nunca repite un id dentro del mismo
+  // arreglo. Con un solo anunciante activo en el inventario, el arreglo
+  // devuelto trae un elemento y el resto de posiciones simplemente no
+  // pintan nada (anuncio.njk ya no renderiza si `anuncio` es null).
+  eleventyConfig.addFilter("anunciosPara", (lista, categoria, semilla, cantidad) => {
+    const activos = (lista || []).filter((a) => a.activo !== false);
+    const cat = String(categoria || "").toLowerCase();
+    const pool = activos.filter((a) =>
+      (a.categorias || []).some((c) => String(c).toLowerCase() === cat)
+    );
+    if (!pool.length) return [];
+    const s = String(semilla || "");
+    let h = 0;
+    for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) >>> 0;
+    const inicio = h % pool.length;
+    const rotado = pool.slice(inicio).concat(pool.slice(0, inicio));
+    return rotado.slice(0, cantidad || 1);
+  });
+
   // Notas de una categoría, de la más reciente a la más vieja.
   eleventyConfig.addFilter("porCategoria", (lista, categoria, cuantas) => {
     const cat = String(categoria || "").toLowerCase();

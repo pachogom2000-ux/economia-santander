@@ -1969,9 +1969,54 @@
   .archivo-item h3 a:hover { color: var(--accent); }
   .archivo-resumen { font-size: 14.5px; color: var(--text-soft); line-height: 1.55; max-width: 72ch; }
   .archivo .seccion-vacia { margin-top: 18px; }
+
+  /* Paginación del archivo, estilo resultados de Google: anterior, números
+     con salto (…) cuando hay muchas páginas, siguiente. archivo.js la pinta
+     y la mantiene oculta mientras no haga falta (una sola página). */
+  .archivo-paginacion {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+  }
+  .archivo-pag-btn {
+    min-width: 36px;
+    height: 36px;
+    padding: 0 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .archivo-pag-btn:hover { border-color: var(--accent); color: var(--accent); }
+  .archivo-pag-btn.actual {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+    cursor: default;
+  }
+  .archivo-pag-btn.deshabilitado {
+    color: var(--text-muted);
+    border-color: var(--line);
+    opacity: 0.5;
+    cursor: default;
+  }
+  .archivo-pag-salto { padding: 0 4px; color: var(--text-muted); }
+
   @media (max-width: 640px) {
     .archivo-buscador { grid-template-columns: 1fr; padding: 14px; }
     .archivo-resumen { display: none; }
+    .archivo-pag-btn { min-width: 32px; height: 32px; font-size: 13px; }
   }
 
   /* ==========================================================
@@ -2251,6 +2296,30 @@
   @media (max-width: 640px) {
     .noticia-articulo { padding-top: 24px; padding-bottom: 36px; }
     .noticia-cuerpo { font-size: 16.5px; line-height: 1.7; }
+  }
+
+  /* Carril lateral de publicidad en la nota. Solo aparece en pantallas
+     anchas: el cuerpo del texto mide 760px dentro de un wrap de 1180px, así
+     que hasta ahí sobra espacio real al lado sin tocar el ancho de lectura.
+     Por debajo de 1240px no hay margen cómodo para una columna de 300px más
+     separación, así que el carril se oculta entero — no se apila debajo del
+     texto, porque ahí ya está la posición de cierre que cumple ese papel. */
+  .noticia-lateral { display: none; }
+
+  @media (min-width: 1240px) {
+    .noticia-layout {
+      display: grid;
+      grid-template-columns: 760px minmax(260px, 340px);
+      gap: 32px;
+      align-items: start;
+    }
+    .noticia-lateral {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      position: sticky;
+      top: 24px;
+    }
   }
 
   /* ==========================================================

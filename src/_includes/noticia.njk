@@ -52,9 +52,29 @@ ogType: article
   </figure>
   {% endif %}
 
+  {# Hasta 4 anunciantes distintos pueden convivir en una nota: el de abajo
+     del cuerpo (ya existía), dos en el carril lateral (solo en pantallas
+     anchas, donde sobra espacio real al lado del texto de 760px) y uno de
+     cierre, después de "Sigue leyendo". Con un solo anuncio activo en el
+     inventario, las posiciones de más simplemente no pintan nada. #}
+  {% set anunciosNota = anuncios.anuncios | anunciosPara(categoria, page.url, 4) %}
+  {% set lateral1 = anunciosNota[1] %}
+  {% set lateral2 = anunciosNota[2] %}
+  {% if lateral1 or lateral2 %}
+  <div class="noticia-layout">
+    <div class="noticia-cuerpo">
+      {{ content | safe }}
+    </div>
+    <aside class="noticia-lateral" aria-label="Publicidad">
+      {% if lateral1 %}{% set anuncio = lateral1 %}{% set anuncioCompacto = true %}{% include "anuncio.njk" %}{% endif %}
+      {% if lateral2 %}{% set anuncio = lateral2 %}{% set anuncioCompacto = true %}{% include "anuncio.njk" %}{% endif %}
+    </aside>
+  </div>
+  {% else %}
   <div class="noticia-cuerpo">
     {{ content | safe }}
   </div>
+  {% endif %}
 
   {% include "compartir.njk" %}
 
@@ -62,8 +82,9 @@ ogType: article
 </article>
 
 {# Publicidad contextual: se elige según la categoría de la noticia y rota por URL,
-   de modo que cada nota muestra un solo anuncio afín a su tema, sin duplicados. #}
-{% set anuncio = anuncios.anuncios | anuncioPara(categoria, page.url) %}
+   de modo que esta posición muestre un anuncio afín a su tema, sin repetir el
+   que ya haya salido en el carril lateral o en el cierre. #}
+{% set anuncio = anunciosNota[0] %}
 {% set anuncioCompacto = true %}
 {% include "anuncio.njk" %}
 {% set anuncio = null %}
@@ -95,6 +116,12 @@ ogType: article
   </div>
 </section>
 {% endif %}
+
+{# Cuarta y última posición de la nota: cierre, después de "Sigue leyendo". #}
+{% set anuncio = anunciosNota[3] %}
+{% set anuncioCompacto = true %}
+{% include "anuncio.njk" %}
+{% set anuncio = null %}
 
 <script type="application/ld+json">
 {

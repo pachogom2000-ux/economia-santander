@@ -66,6 +66,12 @@ permalink: /archivo/
     <p>No encontramos notas con esa búsqueda.</p>
     <p>Pruebe con una palabra más corta o más general, o quite el filtro de sección.</p>
   </div>
+
+  {# JavaScript la llena con los números de página (estilo resultados de
+     Google): vacía y oculta hasta que archivo.js calcula cuántas páginas
+     hay. Sin JavaScript la lista completa queda visible igual, así que no
+     hace falta una alternativa sin script. #}
+  <nav class="archivo-paginacion" id="archivo-paginacion" aria-label="Paginación del archivo" hidden></nav>
 </section>
 <script src="/assets/archivo.js" defer></script>
 
