@@ -37,6 +37,14 @@
    700) no se precargan a propósito: van más abajo y precargar de más compite
    por el ancho de banda con lo que sí urge.
    El nombre lleva huella, así que se pueden cachear un año sin miedo. #}
+{# La cinta superior pide el dólar y el euro a dolarapi y el bitcoin y el oro
+   a CoinGecko. Esas peticiones salen desde app.js, que va con defer, así que
+   el navegador descubre los dos dominios tarde y gasta ~250 ms en resolver
+   DNS y negociar TLS con cada uno. Avisarle aquí le permite ir abriendo la
+   conexión mientras lee el HTML. Solo cuenta en la primera visita: a partir
+   de ahí los valores salen de la caché de app.js y no se piden de nuevo. #}
+<link rel="preconnect" href="https://co.dolarapi.com" crossorigin>
+<link rel="preconnect" href="https://api.coingecko.com" crossorigin>
 <link rel="preload" href="/assets/fonts/barlow-400.81419bf5ab.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/oswald-600.5f49329007.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{{ cssUrl }}">
