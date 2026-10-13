@@ -1,6 +1,6 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Marchas 14 de octubre en Bucaramanga: cierres viales"
 date: 2026-10-13T02:49:00.000-05:00
 categoria: Comercio y consumo
