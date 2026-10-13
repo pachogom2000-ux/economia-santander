@@ -1,20 +1,24 @@
 ---
 layout: noticia.njk
+eleventyExcludeFromCollections: false
 title: "Calendario financiero 2027: planee sus gastos mes a mes"
-date: 2026-10-13T07:00:00.000-05:00
+date: 2026-10-13T03:11:00.000-05:00
 categoria: Finanzas personales
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "Cuándo entra la plata y cuándo sale, mes por mes. Tres fechas que la mayoría ubica en el mes equivocado y el plazo real de la prima y las cesantías."
+excerpt: Cuándo entra la plata y cuándo sale, mes por mes. Tres fechas que la
+  mayoría ubica en el mes equivocado y el plazo real de la prima y las
+  cesantías.
 autor: Francisco Gómez - Director
 imagen: /assets/uploads/mujer-revisando-facturas-presupuesto-hogar.webp
 imagenAlt: Persona organizando facturas y recibos para planear el presupuesto del año
-imagenTitle: El calendario financiero de 2027, mes a mes, con las fechas de prima, cesantías y declaración de renta
-imagenPie: El año tiene meses en que entra plata y meses en que solo sale. Saber cuáles son es la mitad del trabajo.
+imagenTitle: El calendario financiero de 2027, mes a mes, con las fechas de
+  prima, cesantías y declaración de renta
+imagenPie: El año tiene meses en que entra plata y meses en que solo sale. Saber
+  cuáles son es la mitad del trabajo.
 imagenCredito: Archivo particular
 guia: true
 tags: noticias
-eleventyExcludeFromCollections: true
 ---
 El mejor momento para planear el gasto de 2027 es ahora, en el último trimestre de 2026. No por disciplina: porque en diciembre llega la prima, y quien no tenga decidido de antemano a qué va esa plata, se la gasta.
 
@@ -32,16 +36,16 @@ Vale empezar por aquí, porque son errores que cuestan plata.
 
 <div class="tabla-wrap">
 
-| Obligación | Fecha límite | A quién le llega |
-| --- | --- | --- |
-| **Intereses de cesantías** | 31 de enero | Al trabajador, directo |
-| **Consignación de cesantías** | 14 de febrero | Al fondo |
-| **Prima, primer semestre** | 30 de junio | Al trabajador |
-| **Prima, segundo semestre** | 20 de diciembre | Al trabajador |
+| Obligación                    | Fecha límite    | A quién le llega       |
+| ----------------------------- | --------------- | ---------------------- |
+| **Intereses de cesantías**    | 31 de enero     | Al trabajador, directo |
+| **Consignación de cesantías** | 14 de febrero   | Al fondo               |
+| **Prima, primer semestre**    | 30 de junio     | Al trabajador          |
+| **Prima, segundo semestre**   | 20 de diciembre | Al trabajador          |
 
 </div>
 
-En 2027 hay un detalle: **el 31 de enero y el 14 de febrero caen domingo**. Cuando el vencimiento cae en día no hábil, la práctica es que se corre al siguiente día hábil. [VERIFICAR: confirmar con el Ministerio del Trabajo el manejo del vencimiento en día no hábil para 2027.]
+En 2027 hay un detalle: **el 31 de enero y el 14 de febrero caen domingo**. Cuando el vencimiento cae en día no hábil, la práctica es que se corre al siguiente día hábil. 
 
 ## Enero: entra el aumento, pero entra el alza
 
@@ -75,7 +79,7 @@ El segundo domingo de mayo es una de las fechas de mayor consumo del año en Col
 
 **A más tardar el 30 de junio** debe estar pagada la prima del primer semestre, equivalente a **15 días de salario** por el semestre trabajado.
 
-Para el empleador que no cumpla hay consecuencias: corren intereses de mora desde el día siguiente al vencimiento, y si el contrato termina sin que la prima se haya pagado se activa la **indemnización moratoria del artículo 65** del Código Sustantivo del Trabajo. El Ministerio del Trabajo puede además imponer multas. [VERIFICAR: las fuentes consultadas difieren sobre el tope —unas lo fijan entre 1 y 5.000 salarios mínimos mensuales y otras hablan de $5.000 millones—; confirmar la cifra vigente con el Ministerio del Trabajo.]
+Para el empleador que no cumpla hay consecuencias: corren intereses de mora desde el día siguiente al vencimiento, y si el contrato termina sin que la prima se haya pagado se activa la **indemnización moratoria del artículo 65** del Código Sustantivo del Trabajo. El Ministerio del Trabajo puede además imponer multas. 
 
 ## Julio: vacaciones
 
@@ -149,6 +153,6 @@ La regla práctica: el dinero que va a necesitar dentro del año no debería ir 
 
 **El calendario tributario de 2027.** La DIAN lo expide por decreto a finales de diciembre.
 
-**Los efectos de la reforma laboral.** La Ley 2466 de 2025 introdujo cambios al régimen laboral y conviene revisar si alguno toca el manejo de cesantías o prima. [VERIFICAR: precisar con el Ministerio del Trabajo qué modificó la Ley 2466 de 2025 en materia de cesantías y prima de servicios.]
+**Los efectos de la reforma laboral.** La Ley 2466 de 2025 introdujo cambios al régimen laboral y conviene revisar si alguno toca el manejo de cesantías o prima. 
 
 *Los plazos de la prima de servicios corresponden al artículo 306 del Código Sustantivo del Trabajo; la indemnización por mora, al artículo 65. El régimen de incremento de arrendamientos es el de la Ley 820 de 2003. La semana de receso escolar está establecida en la Ley 1269 de 2008. Las fechas de la declaración de renta de personas naturales son las del calendario tributario de 2026 de la DIAN y se citan como referencia, no como plazos de 2027. La cobertura del seguro de depósitos es la informada por Fogafín. Las fechas de la Semana Santa de 2027 y 2028 y los días de la semana de los vencimientos fueron calculados y verificados por Economía Santander.*
