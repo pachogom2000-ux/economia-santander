@@ -1,15 +1,26 @@
 ---
 layout: noticia.njk
+eleventyExcludeFromCollections: false
 title: "Bancos en fin de año: cuatro días seguidos sin oficinas"
-date: 2026-10-12T07:00:00.000-05:00
+date: 2026-10-13T02:55:00.000-05:00
 categoria: Finanzas personales
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "Por cómo caen los días, del 31 de diciembre al 3 de enero no habría atención presencial. El miércoles 30 sería el último día hábil del año. Qué dejar listo."
+excerpt: Por cómo caen los días, del 31 de diciembre al 3 de enero no habría
+  atención presencial. El miércoles 30 sería el último día hábil del año. Qué
+  dejar listo.
 autor: Francisco Gómez - Director
+imagen: /assets/uploads/cajero-atm-peggy-marco-pixabay.webp
+imagenAlt: "Prepare con antelación sus finanzas del 31 de diciembre y viernes 1
+  de enero de 2027. "
+imagenTitle: "Ningún banco ha publicado las fechas de atención en diciembre por
+  los festivos del mes, pero tienen canales digitales y cajeros para las
+  operaciones más comunes. "
+imagenPie: "Martes 8 y viernes 25 y 31 de diciembre son las fechas claves para
+  los bancos en 2026. "
+imagenCredito: "Pixabay. "
 guia: true
 tags: noticias
-eleventyExcludeFromCollections: true
 ---
 Faltan **73 días** para la Nochebuena y conviene mirar el calendario desde ya, porque este año los festivos caen de una forma incómoda: **el 31 de diciembre es jueves y el 1 de enero es viernes**.
 
