@@ -1,15 +1,23 @@
 ---
 layout: noticia.njk
+eleventyExcludeFromCollections: false
 title: "Marchas 14 de octubre en Bucaramanga: cierres viales"
-date: 2026-10-12T16:30:00.000-05:00
+date: 2026-10-13T02:49:00.000-05:00
 categoria: Comercio y consumo
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "La movilización sale a las 9:00 a. m. de Puerta del Sol, sube por la carrera 27 y la calle 36 y llega al parque García Rovira. Qué esperar en el Centro."
+excerpt: La movilización sale a las 9:00 a. m. de Puerta del Sol, sube por la
+  carrera 27 y la calle 36 y llega al parque García Rovira. Qué esperar en el
+  Centro.
 autor: Francisco Gómez - Director
+imagen: /assets/uploads/protesta-colombia.webp
+imagenAlt: Protestas en Bucaramanga este miércoles 14 de octubre
+imagenTitle: "El miércoles 14 de octubre habrá movilización sindical en Bucaramanga. "
+imagenPie: La concentración está convocada para las 9:00 a. m. en Puerta del
+  Sol, el recorrido sube por la carrera 27 y la calle 36,.
+imagenCredito: Pixabay
 guia: true
 tags: noticias
-eleventyExcludeFromCollections: true
 ---
 El **miércoles 14 de octubre** habrá movilización sindical en Bucaramanga. La concentración está convocada para las **9:00 a. m. en Puerta del Sol**, el recorrido sube por la **carrera 27** y la **calle 36**, y termina en el **parque García Rovira**, en pleno Centro.
 
@@ -21,11 +29,11 @@ El punto de llegada no es casual: el parque García Rovira está flanqueado por 
 
 <div class="tabla-wrap">
 
-| Momento | Punto |
-| --- | --- |
+| Momento        | Punto                               |
+| -------------- | ----------------------------------- |
 | **9:00 a. m.** | Concentración en **Puerta del Sol** |
-| Recorrido | **Carrera 27** y **calle 36** |
-| Llegada | **Parque García Rovira**, Centro |
+| Recorrido      | **Carrera 27** y **calle 36**       |
+| Llegada        | **Parque García Rovira**, Centro    |
 
 </div>
 
@@ -45,11 +53,11 @@ El **Sindicato de los Trabajadores del Sector Educativo de Santander (SES)**, fi
 
 El documento plantea cinco puntos:
 
-- **Educación pública** como derecho fundamental, con financiación suficiente.
-- **Infraestructura escolar** digna.
-- **Derechos laborales** y carrera docente.
-- **Régimen especial de salud del magisterio**, con mención expresa a las responsabilidades de la **Fiduprevisora**.
-- **Derecho a la protesta.**
+* **Educación pública** como derecho fundamental, con financiación suficiente.
+* **Infraestructura escolar** digna.
+* **Derechos laborales** y carrera docente.
+* **Régimen especial de salud del magisterio**, con mención expresa a las responsabilidades de la **Fiduprevisora**.
+* **Derecho a la protesta.**
 
 El comunicado precisa un punto que conviene no perder de vista: la movilización "no se reduce a una discusión salarial". Es el pliego completo del sector, no una negociación de aumento.
 
@@ -81,15 +89,17 @@ Bucaramanga es una de las ciudades donde el recorrido ya quedó definido. En bue
 
 **Si tiene domicilios o despachos, muévalos de hora.** Un repartidor atrapado en un desvío cuesta más que una entrega reprogramada.
 
+En los colegios y universidades públicas se suspenderán las clases, debido al paro de 24 convocado para este miércoles 14 de octubre. 
+
 ## Lo que todavía no está confirmado
 
-**No hay plan de desvíos publicado.** Hasta el cierre de esta nota, la Dirección de Tránsito de Bucaramanga no había divulgado el manejo vial de la jornada ni los cierres puntuales. [VERIFICAR: consultar con la Dirección de Tránsito de Bucaramanga el plan de desvíos y las horas de cierre.]
+**No hay plan de desvíos publicado.** Hasta el cierre de esta nota, la Dirección de Tránsito de Bucaramanga no había divulgado el manejo vial de la jornada ni los cierres puntuales. 
 
-**El plantón frente a las sedes de gobierno.** El cartel fija la llegada en el parque García Rovira, que es donde están las dos sedes, pero los convocantes no han anunciado formalmente una permanencia frente a la Gobernación y la Alcaldía. [VERIFICAR: confirmar con CUT Santander si está prevista permanencia o entrega de pliego en las sedes.]
+**El plantón frente a las sedes de gobierno.** El cartel fija la llegada en el parque García Rovira, que es donde están las dos sedes, pero los convocantes no han anunciado formalmente una permanencia frente a la Gobernación y la Alcaldía. 
 
-**El efecto sobre el transporte público.** No hay pronunciamiento de Metrolínea sobre desvíos de rutas ese día. [VERIFICAR: consultar a Metrolínea por ajustes de operación el 14 de octubre.]
+**El efecto sobre el transporte público.** No hay pronunciamiento de Metrolínea sobre desvíos de rutas ese día. 
 
-**La atención en Gobernación y Alcaldía.** Ninguna de las dos entidades ha informado si modifica horarios de atención al público. [VERIFICAR: confirmar con ambas entidades.]
+**La atención en Gobernación y Alcaldía.** Ninguna de las dos entidades ha informado si modifica horarios de atención al público. 
 
 Este portal actualizará la nota cuando las autoridades publiquen el manejo vial.
 
