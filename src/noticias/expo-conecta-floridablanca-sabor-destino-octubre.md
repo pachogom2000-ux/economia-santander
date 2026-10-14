@@ -1,22 +1,20 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
-title: "Expo Conecta llega a Floridablanca el 18 de octubre"
-date: 2026-10-14T08:00:00.000-05:00
+eleventyExcludeFromCollections: false
+title: Expo Conecta llega a Floridablanca el 18 de octubre
+date: 2026-10-14T07:41:00.000-05:00
 categoria: Emprendimiento y pymes
 chipTipo: recirc
 chipLabel: "Fuente: Cámara de Comercio de Bucaramanga"
-excerpt: "Más de 40 empresarios de Floridablanca exhibirán su oferta el 18
-  de octubre en Expo Conecta Sabor y Destino, con la meta de cerrar 20
-  alianzas comerciales."
+excerpt: Más de 40 empresarios de Floridablanca exhibirán su oferta el 18 de
+  octubre en Expo Conecta Sabor y Destino, con la meta de cerrar 20 alianzas
+  comerciales.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/comercio-bucarama.jpg
-imagenAlt: Comerciantes de Floridablanca que participarán en Expo Conecta
-  Sabor y Destino
-imagenTitle: Expo Conecta Floridablanca, feria de la Cámara de Comercio de
-  Bucaramanga
-imagenPie: La Cámara de Comercio de Bucaramanga lleva por primera vez su
-  formato Expo Conecta al Parque Principal de Floridablanca.
+imagen: /assets/uploads/expo-conecta.webp
+imagenAlt: Comerciantes de Floridablanca que participarán en Expo Conecta Sabor y Destino
+imagenTitle: Expo Conecta Floridablanca, feria de la Cámara de Comercio de Bucaramanga
+imagenPie: La Cámara de Comercio de Bucaramanga lleva por primera vez su formato
+  Expo Conecta al Parque Principal de Floridablanca.
 imagenCredito: Archivo particular
 tags: noticias
 ---
