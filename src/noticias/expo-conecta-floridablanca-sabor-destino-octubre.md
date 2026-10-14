@@ -28,6 +28,8 @@ Más de **40 empresarios** de los sectores de alimentos, agencias de viajes, mod
 
 La CCB proyecta cerrar más de **20 alianzas estratégicas** y recibir a más de **2.000 visitantes** durante el día. Entre las marcas que participan están **Productos Vicky**, **Colanta** y **Flips**, con el respaldo adicional de la **Gobernación de Santander**, a través de su Secretaría de Competitividad.
 
+![Programación Expoconecta 2026](/assets/uploads/agenda-expoconecta-floridablanca.jpeg "Agenda de Expoconecta 2026 Floridablanca")
+
 ## Lo que busca la Cámara
 
 La feria se apoya en tres objetivos, según el boletín de la entidad: fortalecer redes entre empresarios, emprendedores e instituciones locales; impulsar iniciativas que aporten a la competitividad del municipio y del departamento; y dar visibilidad a la oferta comercial local mediante vitrinas de alto impacto.
