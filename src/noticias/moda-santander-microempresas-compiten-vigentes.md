@@ -1,21 +1,21 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Moda en Santander: cómo sobreviven las microempresas"
-date: 2026-10-14T06:00:00.000-05:00
+date: 2026-10-14T06:20:00.000-05:00
 categoria: Comercio y consumo
 chipTipo: recirc
 chipLabel: "Fuente: River Max"
-excerpt: "El sistema moda de Santander cerró 2025 con 7.640 empresas activas,
-  pero solo 36,6% de las creadas en 2020 sigue activa cinco años después,
-  según la CCB."
+excerpt: El sistema moda de Santander cerró 2025 con 7.640 empresas activas,
+  pero solo 36,6% de las creadas en 2020 sigue activa cinco años después, según
+  la CCB.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/san-francisco-distrito-calzado-marroquineria-bucaramanga.jpg
-imagenAlt: Distrito de calzado y marroquinería de Bucaramanga, parte del
-  sistema moda de Santander
+imagen: /assets/uploads/pexels-hangers-1850082.jpg
+imagenAlt: Distrito de calzado y marroquinería de Bucaramanga, parte del sistema
+  moda de Santander
 imagenTitle: Moda en Santander, microempresas y permanencia en el mercado
-imagenPie: El sistema moda de Santander reúne confecciones, calzado y
-  joyería, un sector donde casi todas las empresas son microempresas.
+imagenPie: El sistema moda de Santander reúne confecciones, calzado y joyería,
+  un sector donde casi todas las empresas son microempresas.
 imagenCredito: Archivo particular
 tags: noticias
 ---
@@ -33,7 +33,7 @@ El interés por fortalecer este tejido también apareció en la agenda de 2026. 
 
 El comercio regional ofrece otro contraste. En julio de 2026, las [ventas reales del comercio minorista en Santander aumentaron 5,5%](/noticias/comercio-santander-julio-2026-ventas-empleo/) frente al mismo mes de 2025, mientras el personal ocupado disminuyó 0,5%, de acuerdo con la Encuesta Mensual de Comercio del DANE. En el acumulado de enero a julio, el empleo comercial del departamento cayó 1,2%.
 
-Estas cifras corresponden al comercio minorista general. El DANE no desagrega por departamento las ventas de cada línea de mercancía, de modo que no es correcto concluir que la moda santandereana creció al mismo ritmo. En el agregado nacional de julio, por ejemplo, prendas de vestir y textiles registraron una variación de **-3,0%**, y calzado de **-0,2%**.
+Estas cifras corresponden al comercio minorista general. El DANE no desagrega por departamento las ventas de cada línea de mercancía, de modo que no es correcto concluir que la moda santandereana creció al mismo ritmo. En el agregado nacional de julio, por ejemplo, prendas de vestir y textiles registraron una variación de **\-3,0%**, y calzado de **\-0,2%**.
 
 ## Moi Colombia: el cliente que regresa
 
@@ -57,4 +57,4 @@ Los datos de supervivencia muestran que sostener un negocio es un desafío, pero
 
 En el sistema moda santandereano, donde predominan las microempresas, la discusión va más allá de abrir establecimientos o acumular visualizaciones en redes sociales. Pregunta cómo identificar lo que el consumidor necesita, elegir una oferta pertinente y construir una relación que pueda continuar después de la primera compra. Conocer al cliente no reemplaza los demás desafíos del negocio, pero ayuda a formular mejores preguntas para competir.
 
-*Esta nota se basa en una propuesta editorial enviada a Economía Santander por River Max, con datos de la Cámara de Comercio de Bucaramanga ("Demografía y Dinámica Empresarial 2025", Registro Mercantil, capítulo 4, sistema moda), el DANE (Encuesta Mensual de Comercio, julio de 2026), el IMEBU ("Nuevos talentos de la moda en Santander Fashion Week", 3 de agosto de 2026) y la entrevista de GAT Fashion Lab a Moi Colombia ("Los cuatro engranajes de marketing", 23 de julio de 2026).*
+*Información suministrada por River Max para Economía Santander, no es contenido comercial y los datos de Santander fueron recopilados de fuentes verificadas oficiales.*
