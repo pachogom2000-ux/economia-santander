@@ -1,16 +1,15 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Bucaramanga: el arriendo sube más que en casi todo el país"
-date: 2026-10-13T10:00:00.000-05:00
+date: 2026-10-14T07:34:00.000-05:00
 categoria: Finanzas personales
 chipTipo: recirc
 chipLabel: "Fuente: Davivienda-El Libertador"
-excerpt: "En Bucaramanga, el arriendo de casas subió 11,5% en un año, la
-  segunda alza más alta del país. En oficinas y apartamentos también lidera
-  el ranking."
+excerpt: En Bucaramanga, el arriendo de casas subió 11,5% en un año, la segunda
+  alza más alta del país. En oficinas y apartamentos también lidera el ranking.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/firma-de-un-contrato-de-arrendamiento-de-vivienda.webp
+imagen: /assets/uploads/arriendo-pixabay-mastersenaiper.webp
 imagenAlt: Firma de un contrato de arrendamiento de vivienda en Bucaramanga
 imagenTitle: Arriendo en Bucaramanga, la segunda mayor alza del país
 imagenPie: El canon de arriendo de una casa en Bucaramanga subió 11,5% en un
@@ -26,13 +25,13 @@ El patrón se repite en casi todas las categorías que mide el índice. Bucarama
 
 <div class="tabla-wrap">
 
-| Tipo de inmueble | Alza anual en Bucaramanga | Lugar en el país | Promedio nacional |
-| ----------------- | -------------------------- | ------------------ | -------------------- |
-| Casas             | **11,5%**                  | 2.° (tras Armenia)  | 9,5%                  |
-| Apartamentos      | **10,6%**                  | 3.° (tras Armenia y Manizales) | 6,5%      |
-| Oficinas          | **13,2%**                  | 2.° (tras Manizales) | 6,7%                 |
-| Locales           | **6,8%**                   | —                   | 5,2%                  |
-| Bodegas           | **7,2%**                   | —                   | 6,9%                  |
+| Tipo de inmueble | Alza anual en Bucaramanga | Lugar en el país               | Promedio nacional |
+| ---------------- | ------------------------- | ------------------------------ | ----------------- |
+| Casas            | **11,5%**                 | 2.° (tras Armenia)             | 9,5%              |
+| Apartamentos     | **10,6%**                 | 3.° (tras Armenia y Manizales) | 6,5%              |
+| Oficinas         | **13,2%**                 | 2.° (tras Manizales)           | 6,7%              |
+| Locales          | **6,8%**                  | —                              | 5,2%              |
+| Bodegas          | **7,2%**                  | —                              | 6,9%              |
 
 </div>
 
@@ -40,7 +39,7 @@ En las cinco categorías que mide el Eldri, Bucaramanga quedó por encima del pr
 
 ## La cifra que no cuadra con la ley
 
-Aquí aparece una confusión frecuente, y vale la pena aclararla. El portal ya explicó que [el arriendo de vivienda en Colombia solo puede subir 5,10% en 2026](/noticias/arriendo-bucaramanga-cuanto-pagar/), el techo que fija la Ley 820 de 2003 con base en el IPC del año anterior. Esa cifra no contradice el 11,5% del Eldri: son dos cosas distintas.
+Cabe hacer una aclaración sobre el incremento en 2026. El portal ya explicó que [el arriendo de vivienda en Colombia solo puede subir 5,10% en 2026](/noticias/arriendo-bucaramanga-cuanto-pagar/), el techo que fija la Ley 820 de 2003 con base en el IPC del año anterior. Esa cifra no contradice el 11,5% del Eldri: son dos cosas distintas.
 
 El **5,10%** es el tope para la **renovación de un contrato ya firmado**, con el mismo arrendatario. El **11,5%** que mide el Eldri refleja lo que piden los propietarios en **contratos nuevos**, donde no hay techo legal: el canon se pacta libremente entre las partes. Quien renueva está protegido por la ley; quien se muda y firma un contrato nuevo paga lo que de verdad cobra el mercado, y en Bucaramanga ese mercado subió más del doble del límite legal para renovaciones.
 
