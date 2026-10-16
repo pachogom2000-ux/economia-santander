@@ -1,16 +1,15 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Rentas cortas: por qué crecen los hostales en Bucaramanga"
-date: 2026-10-16T11:00:00.000-05:00
+date: 2026-10-16T09:04:00.000-05:00
 categoria: Turismo y hotelería
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "Colombia ya supera 141.000 alojamientos de renta corta. En
-  Bucaramanga, el turismo de eventos y de salud empuja la ocupación de
-  hostales como Antigua."
+excerpt: Colombia ya supera 141.000 alojamientos de renta corta. En Bucaramanga,
+  el turismo de eventos y de salud empuja la ocupación de hostales como Antigua.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/vacaciones-michelle-maria-pixabay.webp
+imagen: /assets/uploads/estancia-hostel-pixabay-izhar-ahamed.webp
 imagenAlt: Habitación de un hostal de renta corta en Bucaramanga
 imagenTitle: Rentas cortas y hostales en Bucaramanga, 2026
 imagenPie: El mercado colombiano de rentas cortas supera los 141.000
@@ -21,7 +20,7 @@ tags: noticias
 ---
 Colombia pasó de cerca de **94.000 anuncios activos** de renta corta a finales de 2023 a **141.241 alojamientos** listados en plataformas digitales en septiembre de 2026, un crecimiento acumulado cercano al **50%**, según cifras de **Asohost** divulgadas por ExpoHost. En Bucaramanga, ese crecimiento nacional tiene nombre propio: **Óscar Gómez**, dueño del hostal **Antigua**, cerca del centro comercial Cacique y del centro de convenciones Neomundo.
 
-**"El negocio de rentas cortas es atractivo. Bucaramanga es un destino no solo turístico, sino que también mueve muchos visitantes por los eventos que se realizan en Neomundo, seminarios y convenciones de negocio"**, le dijo Gómez a Economía Santander. **"Mi pequeño hostal está situado en una zona privilegiada cerca al centro comercial Cacique y Neomundo, y tenemos temporadas al máximo de ocupación. Vamos a ampliar las instalaciones para recibir pronto más visitantes"**.
+**"El negocio de rentas cortas es atractivo. Bucaramanga es un destino no solo turístico, sino que también mueve muchos visitantes por los eventos que se realizan en Neomundo, seminarios y convenciones de negocio"**, le dijo Gómez a Economía Santander. **"Mi negocio está situado en una zona privilegiada cerca al centro comercial Cacique y Neomundo, y tenemos temporadas al máximo de ocupación. Vamos a ampliar las instalaciones para recibir pronto más visitantes"**.
 
 ## Bucaramanga, entre eventos y turismo de salud
 
