@@ -1,21 +1,21 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Pescadero: ya pasan camiones sin carga hacia San Gil"
-date: 2026-10-16T08:00:00.000-05:00
+date: 2026-10-16T06:04:00.000-05:00
 categoria: Construcción
 chipTipo: recirc
 chipLabel: "Fuente: Invías"
-excerpt: "Invías habilitó el paso de camiones C4, C5 y superiores sin carga
-  por Pescadero, en la vía Bucaramanga-San Gil. Los que llevan carga siguen
-  restringidos."
+excerpt: Invías habilitó el paso de camiones C4, C5 y superiores sin carga por
+  Pescadero, en la vía Bucaramanga-San Gil. Los que llevan carga siguen
+  restringidos.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/vias-en-santander.webp
+imagen: /assets/uploads/pescadero-invias.webp
 imagenAlt: Vía Bucaramanga-San Gil en el sector de Pescadero, con paso
   restringido por obras de estabilización
 imagenTitle: Invías habilita paso de camiones sin carga en Pescadero
-imagenPie: El Invías avanza en la estabilización del terreno en el
-  kilómetro 53 de la vía San Gil-Bucaramanga, sector Pescadero.
+imagenPie: El Invías avanza en la estabilización del terreno en el kilómetro 53
+  de la vía San Gil-Bucaramanga, sector Pescadero.
 imagenCredito: Archivo particular
 tags: noticias
 ---
