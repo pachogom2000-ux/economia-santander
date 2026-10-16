@@ -45,7 +45,7 @@ Moi Colombia diseña, fabrica y comercializa sus prendas. Su experiencia no repr
 
 ## Quince años aprendiendo del mostrador
 
-En Medellín, **River Max**, una tienda multimarca de ropa con 15 años de trayectoria comercial, aporta otra perspectiva sobre la adaptación del negocio. A diferencia de una marca que desarrolla prendas propias, su trabajo parte de seleccionar mercancía de diferentes proveedores y reconocer qué productos responden a las preferencias de quienes visitan el local.
+En Medellín, **[River Max](https://rivermax.com.co/)**, una tienda multimarca de ropa con 15 años de trayectoria comercial, aporta otra perspectiva sobre la adaptación del negocio. A diferencia de una marca que desarrolla prendas propias, su trabajo parte de seleccionar mercancía de diferentes proveedores y reconocer qué productos responden a las preferencias de quienes visitan el local.
 
 **Diego Rivera**, vinculado a la operación de River Max, cuenta que escuchar las preguntas de los compradores y observar qué buscan ha sido una referencia para decidir qué mercancía incorporar y cómo ajustar el surtido. Es conocimiento construido en el contacto diario con el cliente, no un resultado de mercado que pueda trasladarse automáticamente a Santander.
 
