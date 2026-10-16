@@ -36,6 +36,25 @@
       ]
     },
     {
+      "id": "ambar-leather",
+      "activo": true,
+      "marca": "Ámbar Leather · Bucaramanga",
+      "titular": "Cuero colombiano, diseño de autor",
+      "texto": "Calzado 100% en cuero para mujer, diseñado por <strong>Raisa Agámez</strong>. Envíos a todo el país.",
+      "tipo": "estandar",
+      "tema": "ad-ambar",
+      "imagen": "/assets/ad-ambar.jpg",
+      "url": "https://wa.me/573175266589?text=Hola%20Raisa%2C%20vi%20el%20anuncio%20de%20%C3%81mbar%20Leather%20en%20Econom%C3%ADa%20Santander%20y%20quiero%20ver%20el%20cat%C3%A1logo.",
+      "cta": "Escribir por WhatsApp →",
+      "categorias": [
+        "Portada",
+        "Comercio y consumo",
+        "Emprendimiento y pymes",
+        "Industria",
+        "Finanzas personales"
+      ]
+    },
+    {
       "id": "tinto",
       "activo": false,
       "marca": "Tienda Sinestrés · Bucaramanga",
