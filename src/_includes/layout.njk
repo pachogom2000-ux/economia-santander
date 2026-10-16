@@ -361,9 +361,11 @@
 </nav>
 
 {% if page.url == '/' %}
-{# Anuncio superior de portada: contextual y compacto para no robar pantalla.
-   El inventario vive en _data/anuncios.json y se edita en el CMS ("Publicidad"). #}
-{% set anuncio = anuncios.anuncios | anuncioPara('Portada', 'portada-superior') %}
+{# Anuncio superior de portada: compacto para no robar pantalla. Es la posición
+   más vista del portal, así que no rota: siempre la ocupa el aviso principal,
+   el de menor `prioridad` en el inventario (_data/anuncios.json, editable en el
+   CMS en "Publicidad"). #}
+{% set anuncio = anuncios.anuncios | anuncioPrincipal('Portada') %}
 {% set anuncioCompacto = true %}
 {% include "anuncio.njk" %}
 {% set anuncio = null %}

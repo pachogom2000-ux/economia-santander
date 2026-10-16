@@ -3,6 +3,7 @@
     {
       "id": "casa-pauta",
       "activo": true,
+      "prioridad": 1,
       "etiqueta": "Espacio propio",
       "marca": "Economía Santander",
       "titular": "Pague 2 meses y el tercero va por nuestra cuenta",
@@ -38,6 +39,7 @@
     {
       "id": "ambar-leather",
       "activo": true,
+      "prioridad": 2,
       "marca": "Ámbar Leather · Bucaramanga",
       "titular": "Cuero colombiano, diseño de autor",
       "texto": "Calzado 100% en cuero para mujer, diseñado por <strong>Raisa Agámez</strong>. Envíos a todo el país.",

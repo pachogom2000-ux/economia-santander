@@ -447,19 +447,37 @@ module.exports = function (eleventyConfig) {
   // arreglo. Con un solo anunciante activo en el inventario, el arreglo
   // devuelto trae un elemento y el resto de posiciones simplemente no
   // pintan nada (anuncio.njk ya no renderiza si `anuncio` es null).
-  eleventyConfig.addFilter("anunciosPara", (lista, categoria, semilla, cantidad) => {
-    const activos = (lista || []).filter((a) => a.activo !== false);
+  // `prioridad` fija el orden del inventario: 1 es el aviso principal. Un
+  // anuncio sin el campo va detrás de los que sí lo declaran.
+  const prioridadDe = (a) =>
+    Number.isFinite(a && a.prioridad) ? a.prioridad : 50;
+
+  const poolDe = (lista, categoria) => {
     const cat = String(categoria || "").toLowerCase();
-    const pool = activos.filter((a) =>
-      (a.categorias || []).some((c) => String(c).toLowerCase() === cat)
-    );
+    return (lista || [])
+      .filter((a) => a.activo !== false)
+      .filter((a) => (a.categorias || []).some((c) => String(c).toLowerCase() === cat));
+  };
+
+  // El aviso principal de una categoría: el de menor `prioridad`. A diferencia
+  // de anuncioPara NO rota, y por eso se usa solo donde la posición debe ser
+  // siempre la misma —la cabecera de la portada—, no en las páginas de sección,
+  // que siguen rotando para repartir impresiones entre los anunciantes.
+  eleventyConfig.addFilter("anuncioPrincipal", (lista, categoria) => {
+    const pool = poolDe(lista, categoria);
+    if (!pool.length) return null;
+    return pool.slice().sort((a, b) => prioridadDe(a) - prioridadDe(b))[0];
+  });
+
+  eleventyConfig.addFilter("anunciosPara", (lista, categoria, semilla, cantidad) => {
+    const pool = poolDe(lista, categoria);
     if (!pool.length) return [];
-    const s = String(semilla || "");
-    let h = 0;
-    for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) >>> 0;
-    const inicio = h % pool.length;
-    const rotado = pool.slice(inicio).concat(pool.slice(0, inicio));
-    return rotado.slice(0, cantidad || 1);
+    // Ordenado por prioridad y no por un hash de la URL: dentro de una nota
+    // conviven varias posiciones y las dos que importan se llenan siempre, así
+    // que rotar no repartía impresiones, solo hacía que el mismo anuncio
+    // cambiara de sitio entre una nota y otra.
+    const ordenado = pool.slice().sort((a, b) => prioridadDe(a) - prioridadDe(b));
+    return ordenado.slice(0, cantidad || 1);
   });
 
   // Parte el cuerpo ya convertido a HTML en dos, para poder meter un aviso a

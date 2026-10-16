@@ -66,18 +66,30 @@ ogType: article
   {% set partes = content | partirParaAnuncio %}
   {% set partible = anunciosNota[0] and partes[1] %}
 
-  {# Las posiciones se reparten entre anunciantes DISTINTOS, en orden de
-     visibilidad. Cuando la nota no admite el corte, la posición de media
-     lectura desaparece y las demás corren un puesto: así no se desperdicia un
-     anunciante en una nota corta. #}
-  {% if partible %}
-  {% set adCuerpo = anunciosNota[0] %}
-  {% set adPie    = anunciosNota[1] %}
+  {# Las posiciones se reparten entre anunciantes DISTINTOS, en el orden de
+     `prioridad` del inventario, y media lectura es la que más se ve.
+
+     Con dos o más anunciantes en la categoría, el principal ya abre la portada:
+     aquí cierra el cuerpo y deja media lectura al siguiente. Con uno solo
+     —pasa en las categorías donde ese único anunciante no compra— ese va a
+     media lectura en vez de quedarse abajo, para no desaprovechar la posición.
+     Y si la nota es corta y no admite el corte, media lectura desaparece y las
+     demás corren un puesto. #}
+  {% if partible and anunciosNota[1] %}
+  {% set adPie    = anunciosNota[0] %}
+  {% set adCuerpo = anunciosNota[1] %}
   {% set lateral1 = anunciosNota[2] %}
   {% set lateral2 = anunciosNota[3] %}
   {% set adCierre = anunciosNota[4] %}
+  {% elif partible %}
+  {% set adPie    = null %}
+  {% set adCuerpo = anunciosNota[0] %}
+  {% set lateral1 = anunciosNota[1] %}
+  {% set lateral2 = anunciosNota[2] %}
+  {% set adCierre = anunciosNota[3] %}
   {% else %}
   {% set adPie    = anunciosNota[0] %}
+  {% set adCuerpo = null %}
   {% set lateral1 = anunciosNota[1] %}
   {% set lateral2 = anunciosNota[2] %}
   {% set adCierre = anunciosNota[3] %}

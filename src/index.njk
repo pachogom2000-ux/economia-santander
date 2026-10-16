@@ -72,8 +72,9 @@ ogType: website
   {# Las cuatro posiciones de la portada van en cadena: cada una descarta la
      anterior. Con pocos anunciantes en el inventario eso las hace alternar en
      vez de repetir el mismo aviso media portada abajo. El superior lo pinta
-     layout.njk; aquí se recalcula solo para saber cuál salió. #}
-  {% set adSuperior = anuncios.anuncios | anuncioPara('Portada', 'portada-superior') %}
+     layout.njk y es fijo —el aviso principal del inventario—; aquí se
+     recalcula igual para saber a cuál le toca ceder el paso. #}
+  {% set adSuperior = anuncios.anuncios | anuncioPrincipal('Portada') %}
   {% set adMedia = anuncios.anuncios | anuncioPara('Portada', 'portada-media', adSuperior.id) %}
   {% set adCentro = anuncios.anuncios | anuncioPara('Portada', 'portada-centro', adMedia.id) %}
   {% set adCierre = anuncios.anuncios | anuncioPara('Portada', 'portada-cierre', adCentro.id) %}
