@@ -96,7 +96,7 @@
       "notaLateral": "Venta segura y asesorada",
       "url": "https://centraldepirotecnia.com",
       "cta": "Ver el catálogo →",
-      "activo": false,
+      "activo": true,
       "imagen": "/assets/ad-pirotecnia.jpg",
       "tipo": "estandar",
       "id": "pirotecnia",
