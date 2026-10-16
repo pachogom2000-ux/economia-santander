@@ -1,16 +1,16 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
-title: "San Gil reunió a 300 expertos en turismo e innovación"
-date: 2026-10-16T13:00:00.000-05:00
+eleventyExcludeFromCollections: false
+title: San Gil reunió a 300 expertos en turismo e innovación
+date: 2026-10-16T08:45:00.000-05:00
 categoria: Turismo y hotelería
 chipTipo: recirc
 chipLabel: "Fuente: Cámara de Comercio de Bucaramanga"
-excerpt: "San Gil reunió a más de 300 asistentes en el XI Foro Internacional
-  de Innovación Turística, con expertos de España, Costa Rica y Colombia, el
-  14 de octubre."
+excerpt: San Gil reunió a más de 300 asistentes en el XI Foro Internacional de
+  Innovación Turística, con expertos de España, Costa Rica y Colombia, el 14 de
+  octubre.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/turismo-santander.webp
+imagen: /assets/uploads/foro-turismo-san-gil.webp
 imagenAlt: Foro Internacional de Innovación Turística en San Gil, Santander
 imagenTitle: XI Foro Internacional de Innovación Turística, San Gil 2026
 imagenPie: San Gil fue sede de la undécima edición del Foro Internacional de
