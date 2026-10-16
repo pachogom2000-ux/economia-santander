@@ -403,6 +403,7 @@ collections:
             fields:
               - { label: "Identificador", name: "id", widget: "string", hint: "Corto, sin espacios y único. Ej: tinto" }
               - { label: "Activo", name: "activo", widget: "boolean", default: true }
+              - { label: "Prioridad", name: "prioridad", widget: "number", default: 50, value_type: "int", min: 1, hint: "1 es el aviso principal: el que abre la portada, siempre, sin rotar. Dentro de una noticia el principal cierra el texto y el siguiente ocupa la mitad de la lectura, que es la posición más vista. Número más bajo, mejor posición." }
               - { label: "Marca / anunciante", name: "marca", widget: "string" }
               - { label: "Titular", name: "titular", widget: "string" }
               - { label: "Texto", name: "texto", widget: "text" }
@@ -419,6 +420,8 @@ collections:
                 widget: "select"
                 default: "ad-cafe"
                 options:
+                  - { label: "Verde del portal (aviso propio)", value: "ad-casa" }
+                  - { label: "Cuero (marrón oscuro con ámbar)", value: "ad-ambar" }
                   - { label: "Café (tonos cálidos)", value: "ad-cafe" }
                   - { label: "Nocturno (azul con destellos)", value: "ad-piro" }
               - { label: "Imagen de fondo", name: "imagen", widget: "image", required: false }
@@ -427,6 +430,16 @@ collections:
               - { label: "Botón secundario (solo cupón)", name: "ctaSecundario", widget: "string", required: false }
               - { label: "Sitio (texto lateral)", name: "sitio", widget: "string", required: false }
               - { label: "Nota lateral", name: "notaLateral", widget: "string", required: false }
+              - { label: "Etiqueta de la esquina", name: "etiqueta", widget: "string", required: false, hint: "Lo que dice el rótulo pequeño del aviso. Vacío pone 'Publicidad', que es lo correcto para un anunciante que paga. Solo se cambia en avisos propios del portal." }
+              - label: "Sello (el recuadro grande de la derecha)"
+                name: "sello"
+                widget: "object"
+                required: false
+                collapsed: true
+                hint: "Opcional. Es el cuadro que detiene el ojo, como el 3x2 de la promoción. Déjelo vacío si el aviso no lo lleva."
+                fields:
+                  - { label: "Cifra", name: "cifra", widget: "string", required: false, hint: "Corto y grande. Ej: 3x2, 100%, -30%" }
+                  - { label: "Texto debajo", name: "texto", widget: "string", required: false }
               - label: "Categorías donde puede aparecer"
                 name: "categorias"
                 widget: "select"
