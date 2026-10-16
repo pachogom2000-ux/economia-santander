@@ -400,10 +400,10 @@ collections:
             name: "anuncios"
             widget: "list"
             summary: "{{fields.marca}} — {{fields.titular}}"
+            hint: "EL ORDEN MANDA. Arrastre los anuncios para cambiarlo. El primero activo es el principal: abre la portada y no rota. Dentro de una noticia el principal cierra el texto y el siguiente ocupa la mitad de la lectura, que es la posición que más se ve; los que sigan caen en el carril lateral, que no aparece en celular. Los apagados no cuentan: puede dejarlos donde estén."
             fields:
               - { label: "Identificador", name: "id", widget: "string", hint: "Corto, sin espacios y único. Ej: tinto" }
               - { label: "Activo", name: "activo", widget: "boolean", default: true }
-              - { label: "Prioridad", name: "prioridad", widget: "number", default: 50, value_type: "int", min: 1, hint: "1 es el aviso principal: el que abre la portada, siempre, sin rotar. Dentro de una noticia el principal cierra el texto y el siguiente ocupa la mitad de la lectura, que es la posición más vista. Número más bajo, mejor posición." }
               - { label: "Marca / anunciante", name: "marca", widget: "string" }
               - { label: "Titular", name: "titular", widget: "string" }
               - { label: "Texto", name: "texto", widget: "text" }
