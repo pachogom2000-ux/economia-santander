@@ -1,20 +1,20 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Hospital Universitario de Santander: multa de $558 millones"
-date: 2026-10-02T09:00:00.000-05:00
+date: 2026-10-16T06:14:00.000-05:00
 categoria: Impuestos y regulación
 chipTipo: recirc
 chipLabel: "Fuente: SIC"
-excerpt: "La SIC sancionó al Hospital Universitario de Santander con $558,8
-  millones por vender 37 medicamentos por encima del precio máximo regulado
-  por ley."
+excerpt: La SIC sancionó al Hospital Universitario de Santander con $558,8
+  millones por vender 37 medicamentos por encima del precio máximo regulado por
+  ley.
 autor: Francisco Gómez - Director
 imagen: /assets/uploads/copagos-salud.webp
 imagenAlt: Medicamentos y atención en salud en Bucaramanga
 imagenTitle: Sanción de la SIC al Hospital Universitario de Santander
-imagenPie: La Superintendencia de Industria y Comercio dejó en firme una
-  sanción de $558.793.344 contra el Hospital Universitario de Santander.
+imagenPie: La Superintendencia de Industria y Comercio dejó en firme una sanción
+  de $558.793.344 contra el Hospital Universitario de Santander.
 imagenCredito: Archivo particular
 tags: noticias
 ---
