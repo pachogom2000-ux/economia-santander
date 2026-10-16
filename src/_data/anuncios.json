@@ -1,21 +1,6 @@
 {
   "anuncios": [
     {
-      "id": "casa-pauta",
-      "activo": true,
-      "prioridad": 1,
-      "etiqueta": "Espacio propio",
-      "marca": "Economía Santander",
-      "titular": "Pague 2 meses y el tercero va por nuestra cuenta",
-      "texto": "Pauta de <strong>$500.000 al mes</strong> en el portal de economía y negocios de Santander. Diseño incluido y el clic va a su WhatsApp, su web o su Google Business.",
-      "tipo": "estandar",
-      "tema": "ad-casa",
-      "url": "/pautar/",
-      "cta": "Ver la promoción →",
-      "sello": {
-        "cifra": "3x2",
-        "texto": "Promoción válida hasta el 31 de octubre"
-      },
       "categorias": [
         "Portada",
         "Inversión",
@@ -34,61 +19,67 @@
         "Entrevistas",
         "Glosario y guías",
         "Nacional"
-      ]
+      ],
+      "texto": "Pauta de <strong>$500.000 al mes</strong> en el portal de economía y negocios de Santander. Diseño incluido y el clic va a su WhatsApp, su web o su Google Business.",
+      "tema": "ad-casa",
+      "titular": "Pague 2 meses y el tercero va por nuestra cuenta",
+      "prioridad": 1,
+      "url": "/pautar/",
+      "cta": "Ver la promoción →",
+      "activo": true,
+      "tipo": "estandar",
+      "etiqueta": "Espacio propio",
+      "id": "casa-pauta",
+      "marca": "Economía Santander",
+      "sello": {
+        "cifra": "3x2",
+        "texto": "Promoción válida hasta el 31 de octubre"
+      }
     },
     {
-      "id": "ambar-leather",
-      "activo": true,
-      "prioridad": 2,
-      "marca": "Ámbar Leather · Bucaramanga",
-      "titular": "Cuero colombiano, diseño de autor",
-      "texto": "Calzado 100% en cuero para mujer, diseñado por <strong>Raisa Agámez</strong>. Envíos a todo el país.",
-      "tipo": "estandar",
-      "tema": "ad-ambar",
-      "imagen": "/assets/ad-ambar.jpg",
-      "url": "https://wa.me/573175266589?text=Hola%20Raisa%2C%20vi%20el%20anuncio%20de%20%C3%81mbar%20Leather%20en%20Econom%C3%ADa%20Santander%20y%20quiero%20ver%20el%20cat%C3%A1logo.",
-      "cta": "Escribir por WhatsApp →",
       "categorias": [
         "Portada",
         "Comercio y consumo",
         "Emprendimiento y pymes",
         "Industria",
-        "Finanzas personales"
-      ]
+        "Finanzas personales",
+        "Glosario y guías",
+        "Empleo",
+        "Turismo y hotelería"
+      ],
+      "texto": "Calzado 100% en cuero para mujer, diseñado por <strong>Raisa Agámez</strong>. Envíos a todo el país.",
+      "tema": "ad-ambar",
+      "titular": "Cuero colombiano, diseño de autor",
+      "prioridad": 2,
+      "url": "https://wa.me/573175266589?text=Hola%20Raisa%2C%20vi%20el%20anuncio%20de%20%C3%81mbar%20Leather%20en%20Econom%C3%ADa%20Santander%20y%20quiero%20ver%20el%20cat%C3%A1logo.",
+      "cta": "Escribir por WhatsApp →",
+      "activo": true,
+      "imagen": "/assets/ad-ambar.jpg",
+      "tipo": "estandar",
+      "id": "ambar-leather",
+      "marca": "Ámbar Leather · Bucaramanga"
     },
     {
-      "id": "tinto",
-      "activo": false,
-      "marca": "Tienda Sinestrés · Bucaramanga",
-      "titular": "Tu tinto va por la casa",
-      "texto": "Genera tu cupón, muéstralo en caja y reclama un tinto gratis. <strong>Solo 100 cupones</strong>, uno por dispositivo.",
-      "tipo": "cupon",
-      "tema": "ad-cafe",
-      "imagen": "/assets/ad-tinto.jpg",
-      "url": "https://maps.app.goo.gl/8Lopf2Nfjzwn2ymj7",
-      "cta": "Generar mi cupón",
-      "ctaSecundario": "Cómo llegar →",
       "categorias": [
         "Portada",
         "Finanzas personales",
         "Educación financiera",
         "Empleo",
         "Comercio y consumo"
-      ]
+      ],
+      "ctaSecundario": "Cómo llegar →",
+      "texto": "Genera tu cupón, muéstralo en caja y reclama un tinto gratis. <strong>Solo 100 cupones</strong>, uno por dispositivo.",
+      "tema": "ad-cafe",
+      "titular": "Tu tinto va por la casa",
+      "url": "https://maps.app.goo.gl/8Lopf2Nfjzwn2ymj7",
+      "cta": "Generar mi cupón",
+      "activo": false,
+      "imagen": "/assets/ad-tinto.jpg",
+      "tipo": "cupon",
+      "id": "tinto",
+      "marca": "Tienda Sinestrés · Bucaramanga"
     },
     {
-      "id": "pirotecnia",
-      "activo": false,
-      "marca": "Central de Pirotecnia",
-      "titular": "Que la fiesta se vea desde lejos",
-      "texto": "Pólvora de bajo ruido, espectáculos con manejo profesional y parqueadero propio en Bucaramanga.",
-      "tipo": "estandar",
-      "tema": "ad-piro",
-      "imagen": "/assets/ad-pirotecnia.jpg",
-      "url": "https://centraldepirotecnia.com",
-      "cta": "Ver el catálogo →",
-      "sitio": "centraldepirotecnia.com",
-      "notaLateral": "Venta segura y asesorada",
       "categorias": [
         "Portada",
         "Inversión",
@@ -97,7 +88,19 @@
         "Construcción",
         "Nacional",
         "Comercio y consumo"
-      ]
+      ],
+      "texto": "Pólvora de bajo ruido, espectáculos con manejo profesional y parqueadero propio en Bucaramanga.",
+      "sitio": "centraldepirotecnia.com",
+      "tema": "ad-piro",
+      "titular": "Que la fiesta se vea desde lejos",
+      "notaLateral": "Venta segura y asesorada",
+      "url": "https://centraldepirotecnia.com",
+      "cta": "Ver el catálogo →",
+      "activo": false,
+      "imagen": "/assets/ad-pirotecnia.jpg",
+      "tipo": "estandar",
+      "id": "pirotecnia",
+      "marca": "Central de Pirotecnia"
     }
   ]
 }
