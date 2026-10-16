@@ -462,6 +462,51 @@ module.exports = function (eleventyConfig) {
     return rotado.slice(0, cantidad || 1);
   });
 
+  // Parte el cuerpo ya convertido a HTML en dos, para poder meter un aviso a
+  // media lectura. Devuelve [antes, despues]; si no hay un punto seguro para
+  // cortar, devuelve [todo, ""] y la plantilla no pinta nada.
+  //
+  // Corta SIEMPRE justo antes de un <h2>, nunca a mitad de párrafo: un <h2> es
+  // un cambio de tema, así que el aviso cae en una pausa de lectura y no
+  // interrumpe una idea. Descarta el primero y el último para que no quede
+  // pegado al arranque ni al cierre.
+  //
+  // Antes de aceptar un corte comprueba que lo que queda detrás tenga las
+  // etiquetas de bloque cerradas. Un <h2> dentro de un <div class="tabla-wrap">
+  // o de un <figure> partiría el HTML en dos mitades inválidas.
+  const CORTE_MINIMO = 3500; // una nota corta no lleva aviso intercalado
+  const BLOQUES = ["div", "table", "figure", "blockquote", "ul", "ol", "pre", "aside"];
+
+  const bloquesCerrados = (html) =>
+    BLOQUES.every((t) => {
+      const abre = (html.match(new RegExp(`<${t}\\b`, "gi")) || []).length;
+      const cierra = (html.match(new RegExp(`</${t}>`, "gi")) || []).length;
+      return abre === cierra;
+    });
+
+  eleventyConfig.addFilter("partirParaAnuncio", (contenido) => {
+    const html = String(contenido || "");
+    if (html.length < CORTE_MINIMO) return [html, ""];
+
+    const titulos = [];
+    const busca = /<h2\b/gi;
+    let m;
+    while ((m = busca.exec(html)) !== null) titulos.push(m.index);
+    if (titulos.length < 3) return [html, ""];
+
+    // De los candidatos, el más cercano a la mitad del texto.
+    const mitad = html.length / 2;
+    const candidatos = titulos
+      .slice(1, -1)
+      .sort((a, b) => Math.abs(a - mitad) - Math.abs(b - mitad));
+
+    for (const corte of candidatos) {
+      const antes = html.slice(0, corte);
+      if (bloquesCerrados(antes)) return [antes, html.slice(corte)];
+    }
+    return [html, ""];
+  });
+
   // Notas de una categoría, de la más reciente a la más vieja.
   eleventyConfig.addFilter("porCategoria", (lista, categoria, cuantas) => {
     const cat = String(categoria || "").toLowerCase();

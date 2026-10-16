@@ -52,18 +52,47 @@ ogType: article
   </figure>
   {% endif %}
 
-  {# Hasta 4 anunciantes distintos pueden convivir en una nota: el de abajo
-     del cuerpo (ya existía), dos en el carril lateral (solo en pantallas
-     anchas, donde sobra espacio real al lado del texto de 760px) y uno de
-     cierre, después de "Sigue leyendo". Con un solo anuncio activo en el
-     inventario, las posiciones de más simplemente no pintan nada. #}
-  {% set anunciosNota = anuncios.anuncios | anunciosPara(categoria, page.url, 4) %}
+  {# Hasta 5 anunciantes distintos pueden convivir en una nota: uno a media
+     lectura (dentro del cuerpo, la posición más vista), el de abajo del
+     cuerpo, dos en el carril lateral (solo en pantallas anchas, donde sobra
+     espacio real al lado del texto de 760px) y uno de cierre, después de
+     "Sigue leyendo". Con pocos anuncios activos en el inventario, las
+     posiciones de más simplemente no pintan nada. #}
+  {% set anunciosNota = anuncios.anuncios | anunciosPara(categoria, page.url, 5) %}
+
+  {# El aviso de media lectura parte el cuerpo antes de un <h2>. Si la nota es
+     corta o no hay un corte seguro, `partes[1]` viene vacío y el cuerpo se
+     pinta entero, sin aviso: vale más una nota limpia que un aviso forzado. #}
+  {% set partes = content | partirParaAnuncio %}
+  {% set partible = anunciosNota[0] and partes[1] %}
+
+  {# Las posiciones se reparten entre anunciantes DISTINTOS, en orden de
+     visibilidad. Cuando la nota no admite el corte, la posición de media
+     lectura desaparece y las demás corren un puesto: así no se desperdicia un
+     anunciante en una nota corta. #}
+  {% if partible %}
+  {% set adCuerpo = anunciosNota[0] %}
+  {% set adPie    = anunciosNota[1] %}
+  {% set lateral1 = anunciosNota[2] %}
+  {% set lateral2 = anunciosNota[3] %}
+  {% set adCierre = anunciosNota[4] %}
+  {% else %}
+  {% set adPie    = anunciosNota[0] %}
   {% set lateral1 = anunciosNota[1] %}
   {% set lateral2 = anunciosNota[2] %}
+  {% set adCierre = anunciosNota[3] %}
+  {% endif %}
+
   {% if lateral1 or lateral2 %}
   <div class="noticia-layout">
     <div class="noticia-cuerpo">
+      {% if partible %}
+      {{ partes[0] | safe }}
+      {% set anuncio = adCuerpo %}{% set anuncioCompacto = true %}{% include "anuncio.njk" %}{% set anuncio = null %}
+      {{ partes[1] | safe }}
+      {% else %}
       {{ content | safe }}
+      {% endif %}
     </div>
     <aside class="noticia-lateral" aria-label="Publicidad">
       {% if lateral1 %}{% set anuncio = lateral1 %}{% set anuncioCompacto = true %}{% include "anuncio.njk" %}{% endif %}
@@ -72,7 +101,13 @@ ogType: article
   </div>
   {% else %}
   <div class="noticia-cuerpo">
+    {% if partible %}
+    {{ partes[0] | safe }}
+    {% set anuncio = adCuerpo %}{% set anuncioCompacto = true %}{% include "anuncio.njk" %}{% set anuncio = null %}
+    {{ partes[1] | safe }}
+    {% else %}
     {{ content | safe }}
+    {% endif %}
   </div>
   {% endif %}
 
@@ -83,8 +118,8 @@ ogType: article
 
 {# Publicidad contextual: se elige según la categoría de la noticia y rota por URL,
    de modo que esta posición muestre un anuncio afín a su tema, sin repetir el
-   que ya haya salido en el carril lateral o en el cierre. #}
-{% set anuncio = anunciosNota[0] %}
+   que ya haya salido a media lectura, en el carril lateral o en el cierre. #}
+{% set anuncio = adPie %}
 {% set anuncioCompacto = true %}
 {% include "anuncio.njk" %}
 {% set anuncio = null %}
@@ -117,8 +152,8 @@ ogType: article
 </section>
 {% endif %}
 
-{# Cuarta y última posición de la nota: cierre, después de "Sigue leyendo". #}
-{% set anuncio = anunciosNota[3] %}
+{# Última posición de la nota: cierre, después de "Sigue leyendo". #}
+{% set anuncio = adCierre %}
 {% set anuncioCompacto = true %}
 {% include "anuncio.njk" %}
 {% set anuncio = null %}

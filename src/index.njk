@@ -69,9 +69,16 @@ ogType: website
   </section>
   {% endif %}
 
-  {# Anuncio intermedio de portada: distinto al superior, elegido del inventario #}
+  {# Las cuatro posiciones de la portada van en cadena: cada una descarta la
+     anterior. Con pocos anunciantes en el inventario eso las hace alternar en
+     vez de repetir el mismo aviso media portada abajo. El superior lo pinta
+     layout.njk; aquí se recalcula solo para saber cuál salió. #}
   {% set adSuperior = anuncios.anuncios | anuncioPara('Portada', 'portada-superior') %}
-  {% set anuncio = anuncios.anuncios | anuncioPara('Portada', 'portada-media', adSuperior.id) %}
+  {% set adMedia = anuncios.anuncios | anuncioPara('Portada', 'portada-media', adSuperior.id) %}
+  {% set adCentro = anuncios.anuncios | anuncioPara('Portada', 'portada-centro', adMedia.id) %}
+  {% set adCierre = anuncios.anuncios | anuncioPara('Portada', 'portada-cierre', adCentro.id) %}
+
+  {% set anuncio = adMedia %}
   {% set anuncioCompacto = false %}
   {% include "anuncio.njk" %}
   {% set anuncio = null %}
@@ -118,10 +125,19 @@ ogType: website
     </div>
   </section>
 
-  {# Espacio publicitario: rectángulo antes del bloque de tasas. Con AdSense
-     activo (_data/publicidad.json) pinta la unidad; si no, el cajón vacío. #}
+  {# Espacio publicitario del centro, antes del bloque de tasas. Con AdSense
+     activo (_data/publicidad.json) pinta la unidad de Google. Con AdSense
+     apagado aquí quedaba un cajón vacío en mitad de la portada: ahora lo llena
+     el inventario propio, evitando repetir el aviso que ya salió arriba. #}
+  {% if publicidad.adsense.activo and publicidad.adsense.cliente %}
   {% set adFormato = 'rectangulo' %}
   {% include "adsense-unidad.njk" %}
+  {% else %}
+  {% set anuncio = adCentro %}
+  {% set anuncioCompacto = false %}
+  {% include "anuncio.njk" %}
+  {% set anuncio = null %}
+  {% endif %}
 
   <section class="section-block wrap" id="tasas">
     <div class="section-head">
@@ -449,7 +465,7 @@ ogType: website
   {% set adFormato = 'billboard' %}
   {% include "adsense-unidad.njk" %}
   {% else %}
-  {% set anuncio = anuncios.anuncios | anuncioPara('Portada', 'portada-cierre') %}
+  {% set anuncio = adCierre %}
   {% set anuncioCompacto = false %}
   {% include "anuncio.njk" %}
   {% set anuncio = null %}
