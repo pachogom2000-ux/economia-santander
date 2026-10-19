@@ -1,6 +1,6 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: CUT propone subir el salario mínimo 38,5% para 2027
 date: 2026-10-19T06:00:00.000-05:00
 categoria: Empleo
