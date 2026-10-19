@@ -2,28 +2,38 @@
 layout: noticia.njk
 eleventyExcludeFromCollections: false
 title: "Pescadero: ya pasan camiones sin carga hacia San Gil"
-date: 2026-10-16T06:04:00.000-05:00
+date: 2026-10-19T06:01:00.000-05:00
 categoria: Construcción
 chipTipo: recirc
 chipLabel: "Fuente: Invías"
-excerpt: Invías habilitó el paso de camiones C4, C5 y superiores sin carga por
-  Pescadero, en la vía Bucaramanga-San Gil. Los que llevan carga siguen
-  restringidos.
+excerpt: Invías recomienda a los usuarios planear sus recorridos, transitar con
+  precaución, reducir la velocidad y seguir las instrucciones de las autoridades
+  viales.
 autor: Francisco Gómez - Director
 imagen: /assets/uploads/pescadero-invias.webp
 imagenAlt: Vía Bucaramanga-San Gil en el sector de Pescadero, con paso
   restringido por obras de estabilización
-imagenTitle: Invías habilita paso de camiones sin carga en Pescadero
+imagenTitle: Invías habilita paso de vehículos sin restricción en Pescadero
 imagenPie: El Invías avanza en la estabilización del terreno en el kilómetro 53
   de la vía San Gil-Bucaramanga, sector Pescadero.
 imagenCredito: Archivo particular
 tags: noticias
 ---
-Desde el **1 de octubre**, los camiones articulados tipo **C4, C5 y superiores que circulen sin carga** pueden volver a pasar por el **kilómetro 53** de la vía San Gil-Bucaramanga, en el sector de **Pescadero**. Los que llevan carga siguen sin poder cruzar, según informó el **Invías** el 30 de septiembre.
+Desde el pasado viernes, 16 de octubre, el Invías autorizó la circulación de vehículos particulares, vehículos de transporte de pasajeros intermunicipales, camiones con y sin carga, a partir de las 2:00 p.m.. Sin embargo, mantuvo **el paso restringido a un solo carril en la vía San Gil-Bucaramanga, a la altura del km. 53** en el sector de Pescadero. 
 
-Es un ajuste, no la reapertura total que algunos transportadores esperaban. El paso sigue operando a **un solo carril**, con señalización y control permanente.
+Por esta razón, los conductores deberán atender las indicaciones del personal encargado de regular el tránsito y respetar la señalización instalada en el sector.
 
-## Por qué sigue cerrado para los que cargan
+La medida permitirá avanzar en la recuperación de la movilidad por este corredor estratégico para Santander, afectado por la socavación del río Chicamocha y la pérdida de banca, situación que hizo necesario establecer restricciones mientras se adelantaban las intervenciones para atender la emergencia y estabilizar la falla sobre la vía.
+
+Con la habilitación, se facilitará el desplazamiento de vehículos particulares, transporte público de pasajeros y vehículos de carga sin restricciones, de acuerdo con las condiciones operativas establecidas para el sector. 
+
+## Antecedentes
+
+Desde el **1 de octubre**, los camiones articulados tipo **C4, C5 y superiores que circulen sin carga** volvieron a pasar por el **kilómetro 53** de la vía San Gil-Bucaramanga, en el sector de **Pescadero**. Sin embargo, los que llevaban carga seguían sin poder pasar, de acuerdo con el comunicado de Invías del pasado 30 de septiembre. 
+
+Invías recomienda a los usuarios planear sus recorridos, transitar con precaución, reducir la velocidad y seguir las instrucciones de las autoridades viales. Debido a las condiciones de circulación restringida en la calzada afectada, es importante prever posibles tiempos de espera y evitar maniobras que pongan en riesgo la seguridad de los demás usuarios.
+
+## Por qué sigue cerrado el paso
 
 El origen del problema no cambió: el **río Chicamocha** sigue socavando la banca de la vía en ese punto, y el Invías continúa con los trabajos de mitigación. Según la entidad, los estudios geotécnicos más recientes exigen terminar un mayor número de **pernos de anclaje** antes de autorizar el paso de vehículos cargados de cuatro ejes o más.
 
@@ -38,12 +48,6 @@ El Invías atribuye la apertura parcial a tres obras ya adelantadas en el sector
 * El inicio de la instalación de **pernos de anclaje de hasta 12 metros** de longitud.
 
 Para vigilar cómo se comporta la vía mientras avanzan las obras, la entidad instaló puntos de control topográfico **cada cinco metros** a lo largo del carril habilitado.
-
-## Qué cambió frente a la restricción que ya conocía este portal
-
-Este portal ya había reportado, durante la [semana de receso de octubre](/noticias/semana-receso-2026-viajar-seguro-santander/), que por Pescadero no podían pasar los vehículos de más de cuatro ejes ni los camiones C3, C4 y C5 **cargados**. Esa restricción general sigue en pie para los vehículos con carga; lo nuevo es la excepción para los que circulan vacíos.
-
-Un detalle que vale la pena señalar: el propio comunicado del Invías no es consistente en un punto. El resumen inicial menciona camiones **C3, C4 y C5** sin carga, pero el cuerpo del texto solo detalla la excepción para **C4, C5 y superiores**. No queda claro si un C3 vacío también puede pasar. Quien maneje ese tipo de vehículo debería confirmar directamente con el personal en la vía antes de intentar el cruce.
 
 ## Las rutas alternas siguen vigentes
 
