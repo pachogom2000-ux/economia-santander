@@ -1,20 +1,19 @@
 ---
 layout: noticia.njk
 eleventyExcludeFromCollections: true
-title: "CUT propone subir el salario mínimo 38,5% para 2027"
-date: 2026-10-19T09:00:00.000-05:00
+title: CUT propone subir el salario mínimo 38,5% para 2027
+date: 2026-10-19T06:00:00.000-05:00
 categoria: Empleo
 chipTipo: recirc
 chipLabel: "Fuente: El Tiempo"
-excerpt: "La CUT contempla pedir un alza de 38,5% para el salario mínimo de
-  2027, casi el doble del aumento de 2026. El mínimo llegaría a $2,42
-  millones."
+excerpt: La CUT contempla pedir un alza de 38,5% para el salario mínimo de 2027,
+  casi el doble del aumento de 2026. El mínimo llegaría a $2,42 millones.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/reunion-salario-minimo-2027.webp
-imagenAlt: Mesa de concertación del salario mínimo 2027 en Colombia
+imagen: /assets/uploads/peso-colombiano.webp
+imagenAlt: "El incremento de 38,5% llevaría el salario mínimo a los $2,42 millones. "
 imagenTitle: Propuesta de la CUT para el salario mínimo de 2027
-imagenPie: La CUT contempla llevar a la mesa de concertación una propuesta
-  de incremento del 38,5% para el salario mínimo de 2027.
+imagenPie: La CUT contempla llevar a la mesa de concertación una propuesta de
+  incremento del 38,5% para el salario mínimo de 2027.
 imagenCredito: Archivo particular
 tags: noticias
 ---
