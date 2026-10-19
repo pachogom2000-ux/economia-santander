@@ -1,20 +1,23 @@
 ---
 layout: noticia.njk
+eleventyExcludeFromCollections: false
 title: "Alivios DIAN: sanciones al 15% hasta el 19 de noviembre"
-date: 2026-10-19T07:00:00.000-05:00
+date: 2026-10-19T05:47:00.000-05:00
 categoria: Impuestos y regulación
 chipTipo: recirc
 chipLabel: "Fuente: KPMG"
-excerpt: "El Decreto 1419 deja pagar 15% de las sanciones e intereses al 4,5% anual, pero exige pagar todo el impuesto. Aplica en todo el país, no solo donde tembló."
+excerpt: El Decreto 1419 deja pagar 15% de las sanciones e intereses al 4,5%
+  anual, pero exige pagar todo el impuesto. Aplica en todo el país, no solo
+  donde tembló.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/facilidades-pago-dian.webp
+imagen: /assets/uploads/declaracion-impuestos-colombia.webp
 imagenAlt: Contribuyente revisando obligaciones pendientes con la DIAN y una calculadora
 imagenTitle: Los alivios tributarios del Decreto 1419 de 2026 vencen el 19 de noviembre
-imagenPie: "El beneficio rebaja la sanción, no la deuda: el impuesto hay que pagarlo completo."
+imagenPie: "El beneficio rebaja la sanción, no la deuda: el impuesto hay que
+  pagarlo completo."
 imagenCredito: Archivo particular
 guia: true
 tags: noticias
-eleventyExcludeFromCollections: true
 ---
 Queda **un mes exacto**. Las empresas que tengan cuentas pendientes con la **DIAN** tienen hasta el **jueves 19 de noviembre** para acogerse a los alivios del **Decreto Legislativo 1419 de 2026**: pagar solo el **15% de las sanciones** y liquidar intereses de mora a una tasa de **4,5% anual**.
 
@@ -28,12 +31,12 @@ Para las obligaciones tributarias, aduaneras y cambiarias que estaban **en mora 
 
 <div class="tabla-wrap">
 
-| Concepto | Régimen ordinario | Con el Decreto 1419 |
-| --- | --- | --- |
-| **Sanciones** | 100% | **15%** (rebaja del 85%) |
-| **Intereses de mora** | Tasa de usura menos puntos | **4,5% anual** |
-| **Impuesto o retención** | 100% | **100%** |
-| **Plazo** | — | **19 de noviembre de 2026** |
+| Concepto                 | Régimen ordinario          | Con el Decreto 1419         |
+| ------------------------ | -------------------------- | --------------------------- |
+| **Sanciones**            | 100%                       | **15%** (rebaja del 85%)    |
+| **Intereses de mora**    | Tasa de usura menos puntos | **4,5% anual**              |
+| **Impuesto o retención** | 100%                       | **100%**                    |
+| **Plazo**                | —                          | **19 de noviembre de 2026** |
 
 </div>
 
@@ -59,7 +62,7 @@ El decreto no es un bloque único, y confundir sus dos vías puede hacer que una
 
 Esa diferencia es la que KPMG subraya: **no hay que asumir que una empresa queda por fuera solo por no estar en la zona del desastre.**
 
-Para Santander el matiz se invierte y juega a favor. El departamento [entró al ámbito de la emergencia con el Decreto 1348 del 31 de agosto](/noticias/santander-decreto-emergencia-terremoto-1348/), así que a las empresas de aquí no solo les sirve la vía nacional: según dónde esté su domicilio fiscal, podrían caber también en la segunda. [VERIFICAR: confirmar con la DIAN qué municipios de Santander quedaron en el listado de zonas afectadas de los decretos 1261 y 1348 para efectos de las facilidades de pago.]
+Para Santander el matiz se invierte y juega a favor. El departamento [entró al ámbito de la emergencia con el Decreto 1348 del 31 de agosto](/noticias/santander-decreto-emergencia-terremoto-1348/), así que a las empresas de aquí no solo les sirve la vía nacional: según dónde esté su domicilio fiscal, podrían caber también en la segunda. 
 
 ## También se pueden cerrar pleitos
 
@@ -103,4 +106,6 @@ La recomendación de KPMG es no dejarlo para las últimas semanas, porque el dia
 
 Para quien no tenga claro de dónde salen las cifras de una sanción, aquí explicamos [cómo se calculan las multas por no declarar](/noticias/multa-no-declarar-renta-sanciones-dian/).
 
-*Esta nota se basa en el boletín de prensa de **KPMG en Colombia** de octubre de 2026 sobre el Decreto Legislativo 1419 de 2026, incluidas las declaraciones de Camilo Rodríguez, socio de Impuestos y Servicios Legales de la firma. La fecha de expedición del decreto —17 de septiembre de 2026— y el detalle de la sanción mínima fueron verificados por Economía Santander en análisis públicos de firmas tributarias. El ámbito territorial de la emergencia es el del Decreto 1261 de 2026, modificado por el Decreto 1348 del 31 de agosto. Economía Santander no tiene relación comercial con KPMG. Esta información es de carácter general y no constituye asesoría tributaria.*
+*Esta nota se basa en el boletín de prensa de **KPMG en Colombia** de octubre de 2026 sobre el Decreto Legislativo 1419 de 2026, incluidas las declaraciones de Camilo Rodríguez, socio de Impuestos y Servicios Legales de la firma. La fecha de expedición del decreto —17 de septiembre de 2026— y el detalle de la sanción mínima fueron verificados por Economía Santander en análisis públicos de firmas tributarias.* 
+
+*El ámbito territorial de la emergencia es el del Decreto 1261 de 2026, modificado por el Decreto 1348 del 31 de agosto. Economía Santander no tiene relación comercial con KPMG. Esta información es de carácter general y no constituye asesoría tributaria.*
