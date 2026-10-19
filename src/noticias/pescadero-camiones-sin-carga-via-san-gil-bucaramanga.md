@@ -1,7 +1,7 @@
 ---
 layout: noticia.njk
 eleventyExcludeFromCollections: false
-title: "Pescadero: ya pasan camiones sin carga hacia San Gil"
+title: "Pescadero: carga pesada ya puede transitar hacia San Gil"
 date: 2026-10-19T06:01:00.000-05:00
 categoria: Construcción
 chipTipo: recirc
