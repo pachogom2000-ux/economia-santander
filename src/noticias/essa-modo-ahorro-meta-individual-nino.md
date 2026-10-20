@@ -1,25 +1,25 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "ESSA activa modo ahorro: así es la meta de cada usuario"
-date: 2026-10-20T08:00:00.000-05:00
+date: 2026-10-20T07:00:00.000-05:00
 categoria: Finanzas personales
 chipTipo: recirc
 chipLabel: "Fuente: ESSA"
-excerpt: "ESSA fija una meta de consumo individual por usuario ante El
-  Niño: quien ahorre puede recibir saldo a favor, y quien se exceda paga un
-  cobro adicional."
+excerpt: "ESSA fija una meta de consumo individual por usuario ante El Niño:
+  quien ahorre puede recibir saldo a favor, y quien se exceda paga un cobro
+  adicional."
 autor: Francisco Gómez - Director
 imagen: /assets/uploads/energia-santander-terranaut-pixabay.webp
-imagenAlt: Consumo de energía eléctrica en hogares de Santander ante el
-  fenómeno de El Niño
+imagenAlt: Consumo de energía eléctrica en hogares de Santander ante el fenómeno
+  de El Niño
 imagenTitle: ESSA activa el Programa de Incentivos al Uso Eficiente de Energía
-imagenPie: ESSA invita a cada usuario a conocer su meta individual de
-  consumo y adoptar hábitos de ahorro de energía ante El Niño.
+imagenPie: ESSA invita a cada usuario a conocer su meta individual de consumo y
+  adoptar hábitos de ahorro de energía ante El Niño.
 imagenCredito: Archivo particular
 tags: noticias
 ---
-La **Electrificadora de Santander (ESSA)**, del Grupo EPM, activó un plan para enfrentar el **fenómeno de El Niño** que le pone una meta de consumo a cada usuario, no una recomendación general. Quien consuma por debajo de esa meta puede ganar un saldo a favor; quien se exceda, paga un cobro adicional.
+La **Electrificadora de Santander (ESSA)**, del Grupo EPM, activó un plan para enfrentar el **fenómeno de El Niño** que le pone una meta de consumo a cada usuario. Quien consuma por debajo de esa meta puede ganar un saldo a favor; quien se exceda, paga un cobro adicional.
 
 ## Cómo funciona la meta individual
 
@@ -29,11 +29,11 @@ El mecanismo se llama **Programa Transitorio de Incentivos al Uso Eficiente de E
 
 <div class="tabla-wrap">
 
-| Consumo frente a la meta | Qué pasa |
-| -------------------------- | ---------- |
-| **Menos del 90%**          | El ahorro puede generar **saldo a favor** al finalizar el programa, sujeto a condiciones y recursos disponibles |
-| **Entre 90% y 110%**       | **No hay beneficio ni cobro adicional** |
-| **Más del 110%**           | Se aplica un **cobro adicional**, pero solo sobre lo que exceda ese 110%, no sobre toda la factura |
+| Consumo frente a la meta | Qué pasa                                                                                                        |
+| ------------------------ | --------------------------------------------------------------------------------------------------------------- |
+| **Menos del 90%**        | El ahorro puede generar **saldo a favor** al finalizar el programa, sujeto a condiciones y recursos disponibles |
+| **Entre 90% y 110%**     | **No hay beneficio ni cobro adicional**                                                                         |
+| **Más del 110%**         | Se aplica un **cobro adicional**, pero solo sobre lo que exceda ese 110%, no sobre toda la factura              |
 
 </div>
 
