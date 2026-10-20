@@ -1,20 +1,25 @@
 ---
 layout: noticia.njk
+eleventyExcludeFromCollections: false
 title: "Becas Google: 15.000 cupos y 7 millones de licencias"
-date: 2026-10-20T07:00:00.000-05:00
+date: 2026-10-20T06:00:00.000-05:00
 categoria: Empleo
 chipTipo: recirc
 chipLabel: "Fuente: MinEducación"
-excerpt: "Gobierno y Google anunciaron becas y licencias para colegios públicos. Arranca en Chocó y Buenaventura, y Santander no está entre los territorios citados."
+excerpt: Gobierno y Google anunciaron becas y licencias para colegios públicos.
+  Arranca en Chocó y Buenaventura, y Santander no está entre los territorios
+  citados.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/docente.webp
-imagenAlt: Docente de colegio público frente a un computador en el aula
-imagenTitle: Google y el Ministerio de Educación anunciaron becas y licencias en inteligencia artificial para colegios públicos
-imagenPie: La formación llega primero a los equipos departamentales y de ahí baja a los maestros.
+imagen: /assets/uploads/ciberseguridad.webp
+imagenAlt: "Gobierno y Google anunciaron 15.000 becas en formación para
+  inteligencia artificial. "
+imagenTitle: Google y el Ministerio de Educación anunciaron becas y licencias en
+  inteligencia artificial para colegios públicos
+imagenPie: La formación llega primero a los equipos departamentales y de ahí
+  baja a los maestros.
 imagenCredito: Archivo particular
 guia: true
 tags: noticias
-eleventyExcludeFromCollections: true
 ---
 El Gobierno y **Google** anunciaron **15.000 becas** para los Certificados de Carrera de la compañía y **hasta 7 millones de licencias** de su plataforma educativa para colegios públicos, que se entregarán de forma progresiva **en los próximos cuatro años**.
 
@@ -26,11 +31,11 @@ Para Santander hay un dato que conviene leer con atención: **el departamento no
 
 <div class="tabla-wrap">
 
-| Qué | Cuánto | Plazo |
-| --- | --- | --- |
-| **Becas** para Certificados de Carrera de Google | **15.000** | Sin fecha anunciada |
-| **Licencias** de Google Workspace for Education | **Hasta 7 millones** | **4 años**, progresivas |
-| **Alcance declarado** | Más de 7 millones de estudiantes y docentes | — |
+| Qué                                              | Cuánto                                      | Plazo                   |
+| ------------------------------------------------ | ------------------------------------------- | ----------------------- |
+| **Becas** para Certificados de Carrera de Google | **15.000**                                  | Sin fecha anunciada     |
+| **Licencias** de Google Workspace for Education  | **Hasta 7 millones**                        | **4 años**, progresivas |
+| **Alcance declarado**                            | Más de 7 millones de estudiantes y docentes | —                       |
 
 </div>
 
@@ -52,8 +57,6 @@ Sin embargo, el departamento **no figura en la lista de seis territorios** que e
 
 Conviene no sacar de ahí una conclusión apresurada. El texto del Ministerio usa la palabra **"como"** antes de enumerarlos, lo que sugiere que es una lista de ejemplos y no un listado cerrado. Dicho de otro modo: el comunicado **no dice que Santander quede por fuera**, pero tampoco lo incluye.
 
-[VERIFICAR: preguntar al Ministerio de Educación y al Ministerio de TIC si los municipios de Santander incluidos en la emergencia entran en la priorización de las 15.000 becas y en las fases siguientes de las licencias.]
-
 La pregunta tiene consecuencias prácticas. Son licencias y becas gratuitas para colegios oficiales y para sus maestros, los mismos que cada año pasan por el [proceso de traslados docentes del departamento](/noticias/traslados-docentes-2027-cronograma-santander/). Quedar o no en la priorización decide si la formación llega este año o dentro de cuatro.
 
 ## Cómo se formará a los docentes
@@ -62,15 +65,15 @@ El modelo anunciado es de **"train the trainers"**: Google capacita a un equipo 
 
 La formación tiene dos componentes:
 
-- **Técnico**, sobre el manejo de la plataforma.
-- **Pedagógico**, sobre ciudadanía digital, escenarios híbridos y uso de la inteligencia artificial para la gestión del aula.
+* **Técnico**, sobre el manejo de la plataforma.
+* **Pedagógico**, sobre ciudadanía digital, escenarios híbridos y uso de la inteligencia artificial para la gestión del aula.
 
 Todo se enmarca en la estrategia que el Gobierno llama **Talento ColombIA**, con participación del Ministerio de Educación, el Ministerio de TIC y el **SENA**.
 
 ## Lo que dijeron
 
 > "Para nosotros es primordial fortalecer una inteligencia cívica y una inteligencia ética que nos ayude a liderar la inteligencia artificial porque es el futuro de Colombia y del mundo", dijo **Álvaro José Cifuentes**, viceministro de Educación Preescolar, Básica y Media.
-
+>
 > "En Colombia, cuando la tecnología se une con la creatividad y el talento, se crean oportunidades y nuevos futuros. La tecnología y la formación muestran que la IA no es una promesa: sino una realidad en manos de los jóvenes, los docentes y los estudiantes de todas las edades", afirmó **Edgardo Frías**, director general de Google para la Región Andina.
 
 ***Le puede interesar: [Bucaramanga lidera la creación de empleo formal](/noticias/bucaramanga-lidera-creacion-empleo-formal/)***
@@ -89,4 +92,4 @@ Conviene decirlo con claridad, porque un anuncio de esta escala suele interpreta
 
 Para quien busque formación ahora, la vía disponible sigue siendo la oferta abierta del SENA y los cursos gratuitos que Google ya tiene publicados, mientras el programa define sus reglas.
 
-*La información proviene del comunicado del **Ministerio de Educación Nacional** publicado en Bogotá el 16 de octubre de 2026, disponible en [mineducacion.gov.co](https://www.mineducacion.gov.co/portal/salaprensa/Comunicados/431156:Gobierno-Nacional-y-Google-se-unen-para-transformar-la-educacion-en-Colombia-con-nuevas-rutas-formativas-en-inteligencia-artificial). Las cifras, los nombres de los programas y las declaraciones son las de ese documento. El ámbito territorial de la emergencia por el terremoto del 10 de agosto de 2026 es el del Decreto 1261, modificado por el Decreto 1348 del 31 de agosto. Economía Santander no tiene relación comercial con Google.*
+*La información proviene del comunicado del **Ministerio de Educación Nacional** publicado en Bogotá el 16 de octubre de 2026, disponible en [mineducacion.gov.co](https://www.mineducacion.gov.co/portal/salaprensa/Comunicados/431156:Gobierno-Nacional-y-Google-se-unen-para-transformar-la-educacion-en-Colombia-con-nuevas-rutas-formativas-en-inteligencia-artificial). Las cifras, los nombres de los programas y las declaraciones son las de ese documento. El ámbito territorial de la emergencia por el terremoto del 10 de agosto de 2026 es el del Decreto 1261, modificado por el Decreto 1348 del 31 de agosto.*
