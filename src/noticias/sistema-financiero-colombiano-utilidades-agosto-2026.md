@@ -1,20 +1,20 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Sistema financiero: utilidades casi iguales a 2025"
-date: 2026-10-19T07:00:00.000-05:00
+date: 2026-10-20T06:01:00.000-05:00
 categoria: Indicadores económicos
 chipTipo: recirc
 chipLabel: "Fuente: Superintendencia Financiera"
-excerpt: "Las utilidades del sistema financiero llegaron a $95,5 billones en
+excerpt: Las utilidades del sistema financiero llegaron a $95,5 billones en
   agosto, casi igual a 2025. La cartera de crédito completa 16 meses de
-  crecimiento."
+  crecimiento.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/financiero.jpg
+imagen: /assets/uploads/ganancias-bancos.webp
 imagenAlt: Sistema financiero colombiano, cifras de agosto de 2026
 imagenTitle: Utilidades y cartera del sistema financiero colombiano, agosto 2026
-imagenPie: El sistema financiero colombiano ganó $95,5 billones en agosto,
-  una cifra prácticamente igual a la de 2025.
+imagenPie: El sistema financiero colombiano ganó $95,5 billones en agosto, una
+  cifra prácticamente igual a la de 2025.
 imagenCredito: Archivo particular
 tags: noticias
 ---
