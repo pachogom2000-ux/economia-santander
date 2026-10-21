@@ -2,7 +2,7 @@
 layout: noticia.njk
 eleventyExcludeFromCollections: false
 title: Los monstruos financieros que deberían asustarnos
-date: 2026-10-21T07:14:00.000-05:00
+date: 2026-10-21T08:24:00.000-05:00
 categoria: Educación financiera
 chipTipo: recirc
 chipLabel: "Fuente: Universidad Politécnico Grancolombiano"
