@@ -1,22 +1,21 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
-title: "Vestir bien para el primer empleo, clave en Santander"
+eleventyExcludeFromCollections: false
+title: Vestir bien para el primer empleo, clave en Santander
 date: 2026-10-21T11:00:00.000-05:00
 categoria: Empleo
 chipTipo: recirc
 chipLabel: "Fuente: Arturo Calle"
-excerpt: "El 16,5% de desempleo juvenil en Bucaramanga hace que la primera
+excerpt: El 16,5% de desempleo juvenil en Bucaramanga hace que la primera
   impresión cuente más. Arturo Calle lanza ropa de grado pensada para la
-  Generación Z."
+  Generación Z.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/curriculum.webp
-imagenAlt: Joven profesional preparándose para su primera entrevista de
-  trabajo en Bucaramanga
+imagen: /assets/uploads/arturo-calle.webp
+imagenAlt: Joven profesional preparándose para su primera entrevista de trabajo
+  en Bucaramanga
 imagenTitle: Vestir bien para el primer empleo en Santander
-imagenPie: En un mercado laboral juvenil competido, la imagen profesional
-  vuelve a ser parte de la conversación sobre cómo conseguir el primer
-  empleo.
+imagenPie: En un mercado laboral juvenil competido, la imagen profesional vuelve
+  a ser parte de la conversación sobre cómo conseguir el primer empleo.
 imagenCredito: Archivo particular
 tags: noticias
 ---
