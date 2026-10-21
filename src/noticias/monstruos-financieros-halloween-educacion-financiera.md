@@ -1,25 +1,26 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
-title: "Los monstruos financieros que deberían asustarnos"
-date: 2026-10-21T08:00:00.000-05:00
+eleventyExcludeFromCollections: false
+title: Los monstruos financieros que deberían asustarnos
+date: 2026-10-21T08:24:00.000-05:00
 categoria: Educación financiera
 chipTipo: recirc
 chipLabel: "Fuente: Universidad Politécnico Grancolombiano"
 excerpt: "En octubre, mes de disfraces, un contador advierte sobre los
-  verdaderos monstruos financieros: del gota a gota a la falta de
-  educación financiera."
+  verdaderos monstruos financieros: del gota a gota a la falta de educación
+  financiera."
 autor: Iván Francisco Tunjano
-imagen: /assets/uploads/tarjeta-de-credito-en-colombia.webp
-imagenAlt: Tarjeta de crédito y decisiones financieras en octubre, mes de
-  Halloween
+imagen: /assets/uploads/deudas-asustan.webp
+imagenAlt: Tarjeta de crédito y decisiones financieras en octubre, mes de Halloween
 imagenTitle: Los monstruos financieros que deberían asustarnos
-imagenPie: Entre disfraces y casas embrujadas, octubre también es un buen
-  mes para reconocer los monstruos que viven en las finanzas personales.
+imagenPie: Entre disfraces y casas embrujadas, octubre también es un buen mes
+  para reconocer los monstruos que viven en las finanzas personales.
 imagenCredito: Archivo particular
 tags: noticias
 ---
-Octubre es el mes de los disfraces. Las vitrinas se llenan de telarañas falsas, las calles de niños vestidos de fantasmas y las conversaciones, inevitablemente, de Halloween: esa fecha que nos recuerda los miedos, los temores y los monstruos que —de una forma u otra— todos cargamos. Pero hay una categoría de monstruos que no desaparece el 1 de noviembre, y que rara vez se disfraza de algo reconocible. Son los monstruos financieros, y conviene aprender a identificarlos antes de que toquen a la puerta.
+Octubre es el mes de los disfraces. Las vitrinas se llenan de telarañas falsas, las calles de niños vestidos de fantasmas y las conversaciones, inevitablemente, de Halloween: esa fecha que nos recuerda los miedos, los temores y los monstruos que —de una forma u otra— todos cargamos. 
+
+Pero hay una categoría de monstruos que no desaparece el 1 de noviembre, y que rara vez se disfraza de algo reconocible. Son los monstruos financieros, y conviene aprender a identificarlos antes de que toquen a la puerta.
 
 Hay cosas que parecen venir del más allá: fantasmas que aparecen cuando menos los esperamos y demonios que resultan difíciles de expulsar. En las finanzas también existen. Solo que no llegan envueltos en niebla ni aparecen a medianoche; suelen presentarse justo cuando más necesitamos dinero. Y no todos los monstruos son igual de peligrosos.
 
