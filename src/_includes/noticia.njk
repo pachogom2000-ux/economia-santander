@@ -183,8 +183,12 @@ ogType: article
      Google ve una cadena de texto distinta en cada nota y no la conecta con
      nadie. Con @id, todas las notas cuelgan de la misma persona.
      Si algún día firma otra persona, se emite un Person normal en vez de
-     atribuirle a Francisco algo que no escribió. #}
-  {% if not autor or "Francisco" in autor %}
+     atribuirle a Francisco algo que no escribió.
+     OJO: la comparación es con el nombre completo, no "Francisco" suelto.
+     Un columnista invitado que se llame Francisco (de nombre o de segundo
+     nombre, como pasó con Iván Francisco Tunjano) no es el director, y un
+     contains() lo colgaba igual de su ficha. #}
+  {% if not autor or autor == "Francisco Gómez - Director" or autor == "Francisco Javier Gómez" %}
   "author": { "@id": "https://economiasantander.com/#periodista" },
   {% else %}
   "author": { "@type": "Person", "name": {{ autor | jsonify | safe }} },
