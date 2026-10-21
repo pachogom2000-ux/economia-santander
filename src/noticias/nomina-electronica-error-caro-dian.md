@@ -1,21 +1,20 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Nómina electrónica: el error que sale caro ante la DIAN"
-date: 2026-10-20T10:00:00.000-05:00
+date: 2026-10-20T07:00:00.000-05:00
 categoria: Impuestos y regulación
 chipTipo: recirc
 chipLabel: "Fuente: Facturatech"
 excerpt: "Pagar el salario no basta: la DIAN exige el documento soporte de
-  nómina electrónica. En Bucaramanga, 8 de cada 10 empresas nuevas son
-  persona natural."
+  nómina electrónica. En Bucaramanga, 8 de cada 10 empresas nuevas son persona
+  natural."
 autor: Francisco Gómez - Director
 imagen: /assets/uploads/facturacion-electronica-dian.webp
-imagenAlt: Empresario revisando la nómina electrónica y sus obligaciones
-  ante la DIAN
+imagenAlt: Empresario revisando la nómina electrónica y sus obligaciones ante la DIAN
 imagenTitle: Nómina electrónica, el documento soporte que exige la DIAN
-imagenPie: Pagar el salario a tiempo no sustituye el documento soporte de
-  nómina electrónica que exige la DIAN para respaldar el gasto fiscalmente.
+imagenPie: Pagar el salario a tiempo no sustituye el documento soporte de nómina
+  electrónica que exige la DIAN para respaldar el gasto fiscalmente.
 imagenCredito: Archivo particular
 tags: noticias
 ---
