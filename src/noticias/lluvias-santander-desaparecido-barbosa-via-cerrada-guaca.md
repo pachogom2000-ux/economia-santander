@@ -22,7 +22,7 @@ Cinco municipios de Santander reportan emergencias por las fuertes lluvias de la
 
 Barbosa concentra el caso más grave. Una persona de **23 años** está desaparecida desde la noche del **20 de octubre**, tras una creciente de cañadas y arroyos en el municipio. Los organismos de socorro, el Consejo Municipal de Gestión del Riesgo de Desastres (CMGRD) y la Policía Nacional adelantan la búsqueda.
 
-
+/assets/uploads/lluvias3.mp4
 
 ## Vía cerrada y puente averiado en Guaca
 
