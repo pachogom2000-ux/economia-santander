@@ -1,16 +1,16 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
-title: "Lluvias en Santander: un desaparecido, 5 municipios"
+eleventyExcludeFromCollections: false
+title: "Lluvias en Santander: 5 municipios afectados"
 date: 2026-10-22T07:00:00.000-05:00
-categoria: Comercio y consumo
+categoria: Agro
 chipTipo: recirc
 chipLabel: "Fuente: OGRD Santander"
 excerpt: "Balance preliminar de la Gobernación: un desaparecido en Barbosa,
   vivienda y puente afectados en Guaca, y crecientes en cinco municipios de
   Santander."
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/balance-de-lluvias-en-santander.webp
+imagen: /assets/uploads/balance-de-lluvias-en-santander-1-.webp
 imagenAlt: Creciente súbita por fuertes lluvias en un municipio de Santander
 imagenTitle: Balance de lluvias en Santander, 21 de octubre de 2026
 imagenPie: San Andrés y Guaca, entre los municipios con crecientes súbitas por
@@ -21,6 +21,8 @@ tags: noticias
 Cinco municipios de Santander reportan emergencias por las fuertes lluvias de las últimas horas. El balance preliminar que entregó este miércoles la **Oficina para la Gestión del Riesgo de Desastres (OGRD)** de la Gobernación de Santander deja una persona desaparecida, una vivienda afectada y un puente vehicular averiado.
 
 Barbosa concentra el caso más grave. Una persona de **23 años** está desaparecida desde la noche del **20 de octubre**, tras una creciente de cañadas y arroyos en el municipio. Los organismos de socorro, el Consejo Municipal de Gestión del Riesgo de Desastres (CMGRD) y la Policía Nacional adelantan la búsqueda.
+
+
 
 ## Vía cerrada y puente averiado en Guaca
 
