@@ -1,20 +1,24 @@
 ---
 layout: noticia.njk
+eleventyExcludeFromCollections: false
 title: "Ahorro de energía ante El Niño: guía para casa y empresa"
 date: 2026-10-22T07:00:00.000-05:00
 categoria: Finanzas personales
 chipTipo: recirc
 chipLabel: "Fuente: Centelsa by Nexans"
-excerpt: "El Ministerio ubica el mayor estrés del sistema entre octubre y diciembre. En Santander ahorrar ya no es un consejo: le baja o le sube la factura."
+excerpt: "El Ministerio ubica el mayor estrés del sistema entre octubre y
+  diciembre. En Santander ahorrar ya no es un consejo: le baja o le sube la
+  factura."
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/cluster-energia.webp
+imagen: /assets/uploads/servicios-publicos.webp
 imagenAlt: Torres de transmisión eléctrica al atardecer
-imagenTitle: Recomendaciones de ahorro de energía para hogares y empresas ante el fenómeno de El Niño
-imagenPie: "El mayor estrés del sistema llega en el último trimestre del año, según el Ministerio de Minas y Energía."
-imagenCredito: "Pixabay-Terrenaut."
+imagenTitle: Recomendaciones de ahorro de energía para hogares y empresas ante
+  el fenómeno de El Niño
+imagenPie: El mayor estrés del sistema llega en el último trimestre del año,
+  según el Ministerio de Minas y Energía.
+imagenCredito: Pixabay-Terrenaut.
 guia: true
 tags: noticias
-eleventyExcludeFromCollections: true
 ---
 El **fenómeno de El Niño** podría alcanzar su punto más fuerte **entre octubre y diciembre**, y el Ministerio de Minas y Energía ubicó ahí el mayor estrés del sistema eléctrico. La ministra **María Nohemí Arboleda** describió el escenario climático como **"muy exigente, de una intensidad fuerte"**.
 
@@ -26,10 +30,10 @@ Y aquí hay una diferencia que conviene no pasar por alto. En el resto del país
 
 El Ministerio explicó que se juntan cuatro cosas:
 
-- **Menos generación hidroeléctrica**, por la sequía.
-- **Más uso de plantas térmicas**, que son más caras de operar.
-- **Alza en los costos del gas**, que alimenta esas térmicas.
-- **Retrasos** en proyectos de generación y transmisión, y en iniciativas de suministro e importación de gas.
+* **Menos generación hidroeléctrica**, por la sequía.
+* **Más uso de plantas térmicas**, que son más caras de operar.
+* **Alza en los costos del gas**, que alimenta esas térmicas.
+* **Retrasos** en proyectos de generación y transmisión, y en iniciativas de suministro e importación de gas.
 
 A eso la ministra sumó un riesgo operativo: los **ciclos de mantenimiento y las fallas** que suelen aparecer en temporada seca.
 
@@ -39,15 +43,15 @@ El Ministerio expuso una brecha en la disponibilidad futura de **energía firme*
 
 <div class="tabla-wrap">
 
-| Periodo | Brecha |
-| --- | --- |
-| 2026 – 2027 | **7.207 GWh** |
-| 2027 – 2028 | **7.180 GWh** |
+| Periodo             | Brecha         |
+| ------------------- | -------------- |
+| 2026 – 2027         | **7.207 GWh**  |
+| 2027 – 2028         | **7.180 GWh**  |
 | **Suma de los dos** | **14.387 GWh** |
 
 </div>
 
-Conviene precisar algo, porque la cifra circula de dos formas distintas. El comunicado que divulga estos datos habla de "un total de 14.387 GWh **por año** durante ese periodo", pero **14.387 es justamente la suma de los dos periodos** (7.207 + 7.180), no una cifra anual. [VERIFICAR: confirmar con el Ministerio de Minas y Energía si la brecha anual es de ~7.200 GWh por periodo o si el total de 14.387 GWh corresponde a cada año.]
+Conviene precisar algo, porque la cifra circula de dos formas distintas. El comunicado que divulga estos datos habla de "un total de 14.387 GWh **por año** durante ese periodo", pero **14.387 es justamente la suma de los dos periodos** (7.207 + 7.180), no una cifra anual. XM confirma en su [boletín energético 359](https://www.xm.com.co/nuestra-empresa/informes/informes-de-la-operacion-y-el-mercado/boletin-energetico) la brecha en demanda energética. 
 
 Energía firme es la que una central puede garantizar incluso en condiciones críticas. Una brecha ahí no significa que vaya a faltar la luz mañana: significa que el sistema tiene menos colchón del que debería para un año seco.
 
