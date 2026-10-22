@@ -36,9 +36,9 @@ En total, el reporte preliminar contabiliza **cinco fuentes hídricas** con crec
 
 /assets/uploads/lluvias2.mp4
 
-## Más lluvia prevista para la noche
+## Más lluvia prevista 
 
-El **IDEAM** pronostica que las lluvias continuarán durante la noche en varios municipios del departamento, lo que podría elevar los niveles de ríos y quebradas, generar nuevas crecientes súbitas y movimientos en masa, en especial cerca de fuentes hídricas con antecedentes de emergencias.
+El **IDEAM** pronostica que las lluvias continuarán en varios municipios del departamento, lo que podría elevar los niveles de ríos y quebradas, generar nuevas crecientes súbitas y movimientos en masa, en especial cerca de fuentes hídricas con antecedentes de emergencias.
 
 Ante ese panorama, la OGRD recomienda evitar transitar por vías afectadas, puentes averiados y sectores con riesgo de inundación o deslizamiento, y mantenerse alejado de las riberas de ríos y quebradas mientras continúen las crecientes. Pide además seguir los canales oficiales para información actualizada.
 
