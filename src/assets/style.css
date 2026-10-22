@@ -3055,12 +3055,32 @@
   .incrusta-fuente:hover { text-decoration: underline; text-underline-offset: 3px; }
   .incrusta-propio video,
   .incrusta-propio audio { width: 100%; display: block; border-radius: 10px; background: #000; }
-  /* Con póster no hace falta nada: medido en Chrome, el navegador reserva la
-     caja con la proporción del póster aunque el video no se haya cargado
-     (preload="none", readyState 0). SIN póster sí colapsa a 300x150 y el texto
-     salta cuando llegan los metadatos, así que a esos —y solo a esos— se les
-     reserva una caja apaisada. */
-  .incrusta-propio video:not([poster]) { aspect-ratio: 16 / 9; height: auto; }
+
+  /* Cuando el build pudo leer las medidas del archivo (lib/incrustar.js las
+     escribe como width y height), manda el ALTO y el ancho sale solo.
+     Esto es lo que hace que un video vertical de celular no se coma la pantalla
+     dentro de una nota: a 760 px de ancho, un 9:16 medía más de 1.300 px de
+     alto y había que hacer scroll para pasarlo. Ahora queda del tamaño de un
+     teléfono, centrado, y uno apaisado sigue ocupando toda la columna. */
+  .incrusta-propio video[width][height] {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 520px;
+    margin-inline: auto;
+    object-fit: contain;
+  }
+
+  /* Sin medidas no se puede saber la proporción. Con póster, el navegador
+     reserva la caja con la del póster aunque el video no se haya cargado
+     (preload="none", readyState 0); sin póster colapsa a 300x150 y el texto
+     salta cuando llegan los metadatos, así que a esos se les reserva una caja
+     apaisada. */
+  .incrusta-propio video:not([width]):not([poster]) { aspect-ratio: 16 / 9; height: auto; }
+
+  @media (max-width: 640px) {
+    .incrusta-propio video[width][height] { max-height: 70vh; }
+  }
   .incrusta-propio audio { background: none; }
 
   /* Red conocida de la que no se puede sacar el identificador (los enlaces
