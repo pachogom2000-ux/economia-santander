@@ -1,25 +1,27 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Presupuesto 2027: Santander pierde $538.000 millones"
-date: 2026-10-23T07:00:00.000-05:00
+date: 2026-10-23T06:03:00.000-05:00
 categoria: Indicadores económicos
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "El Congreso no concilió el presupuesto 2027 a tiempo y el Gobierno
-  lo decretó. Santander perdería entre $538.000 y $580.000 millones ganados
-  en plenaria."
+excerpt: El Congreso no concilió el presupuesto 2027 a tiempo y el Gobierno lo
+  decretó. Santander perdería entre $538.000 y $580.000 millones ganados en
+  plenaria.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/peso-colombiano.webp
-imagenAlt: Billetes de peso colombiano, presupuesto general de la Nación 2027
+imagen: /assets/uploads/turismo-santander.webp
+imagenAlt: Santander, con menos recursos en presupuesto general de la Nación 2027
 imagenTitle: Presupuesto General de la Nación 2027 y el efecto en Santander
-imagenPie: El Gobierno nacional expidió por decreto el Presupuesto General de
-  la Nación para 2027, después de que el Senado y la Cámara no conciliaran
-  sus textos a tiempo.
+imagenPie: El Gobierno nacional expidió por decreto el Presupuesto General de la
+  Nación para 2027, después de que el Senado y la Cámara no conciliaran sus
+  textos a tiempo.
 imagenCredito: Archivo particular
 tags: noticias
 ---
-El **Gobierno nacional** expidió el **Decreto 1599 del 22 de octubre de 2026** para fijar el Presupuesto General de la Nación de **2027** en **$634,95 billones**, después de que el Congreso no lograra conciliar sus propias versiones del proyecto a tiempo. La consecuencia para Santander: el departamento se quedaría sin los recursos adicionales que sus congresistas habían logrado sumarle al presupuesto en la recta final del trámite legislativo.
+El **Gobierno nacional** expidió el **Decreto 1599 del 22 de octubre de 2026** para fijar el Presupuesto General de la Nación de **2027** en **$634,95 billones**, después de que el Congreso no lograra conciliar sus propias versiones del proyecto a tiempo. 
+
+La consecuencia para Santander: el departamento se quedaría sin los recursos adicionales que sus congresistas habían logrado sumarle al presupuesto en la recta final del trámite legislativo.
 
 ## Por qué terminó decretado y no aprobado por ley
 
@@ -37,10 +39,10 @@ Ya expedido el decreto, la cifra que circula para el aumento perdido es otra: **
 
 ## Los proyectos puntuales que quedan en el aire
 
-- **Variante de San Gil:** $100.000 millones adicionados en plenaria por gestión del representante Pinto Rueda y el gobernador **Juvenal Díaz Mateus**, para destrabar una obra que arrancó en 2018 y de 9,6 kilómetros solo tiene 4,4 construidos. Fuentes cercanas a Invías estiman que terminarla completa costaría unos $280.000 millones.
-- **Agua potable y saneamiento básico:** $312.421 millones, una partida que no existía en el primer debate y que la región ganó por completo en la plenaria.
-- **Acueductos municipales:** $150.000 millones en una proposición del representante **Diego Fran Ariza**, repartidos entre Vélez ($35.000 millones), Barichara ($35.000 millones) y la línea general de acueductos ($80.000 millones).
-- **Vía Curos-Málaga:** quedaría en $70.000 millones, $15.000 millones por debajo de lo previsto en primer debate.
+* **Variante de San Gil:** $100.000 millones adicionados en plenaria por gestión del representante Pinto Rueda y el gobernador **Juvenal Díaz Mateus**, para destrabar una obra que arrancó en 2018 y de 9,6 kilómetros solo tiene 4,4 construidos. Fuentes cercanas a Invías estiman que terminarla completa costaría unos $280.000 millones.
+* **Agua potable y saneamiento básico:** $312.421 millones, una partida que no existía en el primer debate y que la región ganó por completo en la plenaria.
+* **Acueductos municipales:** $150.000 millones en una proposición del representante **Diego Fran Ariza**, repartidos entre Vélez ($35.000 millones), Barichara ($35.000 millones) y la línea general de acueductos ($80.000 millones).
+* **Vía Curos-Málaga:** quedaría en $70.000 millones, $15.000 millones por debajo de lo previsto en primer debate.
 
 Del lado de lo que sí sobrevive por estar incluido desde el primer debate, Santander mantiene partidas como el corredor férreo La Dorada-Chiriguaná ($250.630 millones), la vía Bucaramanga-Barrancabermeja-Yondó ($247.438 millones) y la Troncal del Magdalena 1 ($158.923 millones), dentro de un sector transporte que concentra alrededor del 38% del presupuesto regionalizado del departamento.
 
