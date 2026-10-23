@@ -156,11 +156,22 @@ module.exports = function (eleventyConfig) {
   // arreglan en el build a propósito: así vale también para lo que se pegue
   // mañana desde el CMS, sin tener que acordarse de la regla.
   const DEL_PORTAL = /^https?:\/\/(www\.)?(economiasantander\.com|economiasantander\.netlify\.app)(\/|$)/i;
+  // Un PDF propio (el listado descargable de una nota, por ejemplo) no es
+  // navegación dentro del sitio: es una descarga. Si se abre en la misma
+  // pestaña, el lector "sale" de la nota y Analytics cuenta la visita como
+  // rebote, aunque siga leyendo el documento. Se abre aparte para conservar
+  // la pestaña de la nota y no perder la sesión.
+  const ES_DESCARGABLE = /\.(pdf|docx?|xlsx?|pptx?|zip)(\?|#|$)/i;
   md.renderer.rules.link_open = function (tokens, idx, options, env, self) {
-    const href = tokens[idx].attrGet("href") || "";
+    let href = tokens[idx].attrGet("href") || "";
     if (DEL_PORTAL.test(href)) {
-      tokens[idx].attrSet("href", href.replace(/^https?:\/\/[^/]+/i, "") || "/");
+      href = href.replace(/^https?:\/\/[^/]+/i, "") || "/";
+      tokens[idx].attrSet("href", href);
     } else if (/^https?:\/\//i.test(href)) {
+      tokens[idx].attrSet("target", "_blank");
+      tokens[idx].attrSet("rel", "noopener noreferrer");
+    }
+    if (ES_DESCARGABLE.test(href)) {
       tokens[idx].attrSet("target", "_blank");
       tokens[idx].attrSet("rel", "noopener noreferrer");
     }
