@@ -22,7 +22,7 @@ tags: noticias
 ---
 Cobrarle cuota de manejo a una tarjeta de crédito que nunca se activó. Negarle un crédito sin decirle por qué. Subirle la tasa de interés sin avisarle antes. Son prácticas que muchas personas dan por normales, pero que la **Superintendencia Financiera de Colombia (SFC)** declara expresamente **abusivas** y, por tanto, prohibidas.
 
-Economía Santander elaboró un listado descargable donde se puede ver con detalle las cláusulas y prácticas abusivas prohibidas por la SFC. [Descargue el documento aquí.](src/assets/uploads/clausulas-y-practicas-abusivas.pdf) 
+Economía Santander elaboró un listado descargable donde se puede ver con detalle las cláusulas y prácticas abusivas prohibidas por la SFC. [Descargue el documento aquí.](/assets/uploads/clausulas-y-practicas-abusivas.pdf) 
 
 El listado sale de la **Ley 1328 de 2009**, la norma de protección al consumidor financiero. Sus artículos 7, 11 y 12 le dieron a la SFC la facultad de fijar, de forma previa y general, qué cláusulas y qué prácticas de las entidades vigiladas se consideran abusivas. La Superintendencia lo desarrolló en el numeral 6 del Capítulo I, Título III, Parte I de su Circular Básica Jurídica: en total, **54 cláusulas** y **54 prácticas** prohibidas.
 
