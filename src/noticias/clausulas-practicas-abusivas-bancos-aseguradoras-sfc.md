@@ -1,16 +1,16 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
-title: "Cláusulas abusivas en bancos y aseguradoras, según la SFC"
-date: 2026-10-22T08:00:00.000-05:00
+eleventyExcludeFromCollections: false
+title: Cláusulas abusivas en bancos y aseguradoras, según la SFC
+date: 2026-10-23T07:21:00.000-05:00
 categoria: Educación financiera
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "La Ley 1328 de 2009 prohíbe cobrar cuotas de manejo con tarjeta
+excerpt: La Ley 1328 de 2009 prohíbe cobrar cuotas de manejo con tarjeta
   inactiva o negar crédito sin explicar por qué. Sus derechos ante bancos y
-  aseguradoras."
+  aseguradoras.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/tarjeta-de-credito-en-colombia.webp
+imagen: /assets/uploads/letra-menuda-bancos.webp
 imagenAlt: Tarjeta de crédito y contrato financiero en Colombia
 imagenTitle: Cláusulas y prácticas abusivas en el sistema financiero colombiano
 imagenPie: La Superintendencia Financiera tiene un listado oficial de qué
