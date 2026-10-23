@@ -1,20 +1,24 @@
 ---
 layout: noticia.njk
+eleventyExcludeFromCollections: false
 title: "Bre-B con tarjeta de crédito: cuánto cuesta ese avance"
-date: 2026-10-23T07:00:00.000-05:00
+date: 2026-10-23T08:38:00.000-05:00
 categoria: Finanzas personales
 chipTipo: recirc
 chipLabel: "Fuente: Nu Colombia"
-excerpt: "Nu permite pagar transferencias de Bre-B con el cupo de la tarjeta, hasta en 36 cuotas. Es un avance, y los avances son el crédito más caro que hay."
+excerpt: Nu permite pagar transferencias de Bre-B con el cupo de la tarjeta,
+  hasta en 36 cuotas. Es un avance, y los avances son el crédito más caro que
+  hay.
 autor: Francisco Gómez - Director
 imagen: /assets/uploads/celular-tookapic.webp
 imagenAlt: Persona revisando el saldo de su cuenta en el celular
-imagenTitle: Transferir por Bre-B con el cupo de la tarjeta de crédito es un avance, y conviene saber qué cuesta
-imagenPie: "Bre-B llegó a 116 millones de llaves en su primer año: siete de cada diez transferencias son de menos de $100.000."
-imagenCredito: "Pixabay - Tookapic. Editada por Economía Santander."
+imagenTitle: Transferir por Bre-B con el cupo de la tarjeta de crédito es un
+  avance, y conviene saber qué cuesta
+imagenPie: "Bre-B llegó a 116 millones de llaves en su primer año: siete de cada
+  diez transferencias son de menos de $100.000."
+imagenCredito: Pixabay - Tookapic. Editada por Economía Santander.
 guia: true
 tags: noticias
-eleventyExcludeFromCollections: false
 ---
 **Nu Colombia** habilitó una función que permite pagar una transferencia de **Bre-B** con el cupo de la tarjeta de crédito y diferirla **hasta en 36 cuotas**. Se llama *Transfiere tu Avance* y aparece dentro del mismo flujo de transferencia, sin trámite aparte.
 
@@ -36,12 +40,12 @@ El sistema de pagos inmediatos del Banco de la República dejó de ser una noved
 
 <div class="tabla-wrap">
 
-| Bre-B, al cumplir un año | |
-| --- | --- |
-| Llaves registradas | **116 millones** |
-| Clientes vinculados | **36 millones** |
+| Bre-B, al cumplir un año            |                   |
+| ----------------------------------- | ----------------- |
+| Llaves registradas                  | **116 millones**  |
+| Clientes vinculados                 | **36 millones**   |
 | Transferencias de menos de $100.000 | **cerca del 70%** |
-| Valor promedio de un pago | **unos $140.000** |
+| Valor promedio de un pago           | **unos $140.000** |
 
 </div>
 
@@ -53,10 +57,10 @@ En Nu, la compañía reporta más de **170 millones de transacciones** por Bre-B
 
 El **Reporte de Inclusión Financiera 2025**, de Banca de las Oportunidades y la Superintendencia Financiera, muestra hasta dónde llegó ese cambio:
 
-- **37,9 millones de adultos** (el **96,5%**) tienen al menos un producto de depósito.
-- **33,5 millones** (el **85,5%**) lo tienen activo, es decir, lo usan.
-- Los **canales digitales concentraron el 81,7%** de todas las operaciones, frente al 69% de 2019.
-- Esos canales movieron el **65,2% del monto** total.
+* **37,9 millones de adultos** (el **96,5%**) tienen al menos un producto de depósito.
+* **33,5 millones** (el **85,5%**) lo tienen activo, es decir, lo usan.
+* Los **canales digitales concentraron el 81,7%** de todas las operaciones, frente al 69% de 2019.
+* Esos canales movieron el **65,2% del monto** total.
 
 En crédito el cuadro es distinto: **20,3 millones de adultos**, el **51,6%**, accedieron a algún crédito del sector formal en 2025, y **1,2 millones** llegaron a su primer crédito formal ese año, un **26,6% más** que en 2024.
 
@@ -70,17 +74,17 @@ Para dimensionarlo, esta es la cuenta con la **tasa de usura de octubre, 28,59% 
 
 <div class="tabla-wrap">
 
-| Transfiere | A | Cuota | Termina pagando | Intereses |
-| --- | --- | --- | --- | --- |
-| $140.000 | 36 cuotas | $5.597 | **$201.487** | $61.487 (+44%) |
-| $140.000 | 12 cuotas | $13.334 | $160.010 | $20.010 (+14%) |
-| $100.000 | 36 cuotas | $3.998 | $143.919 | $43.919 (+44%) |
+| Transfiere | A         | Cuota   | Termina pagando | Intereses      |
+| ---------- | --------- | ------- | --------------- | -------------- |
+| $140.000   | 36 cuotas | $5.597  | **$201.487**    | $61.487 (+44%) |
+| $140.000   | 12 cuotas | $13.334 | $160.010        | $20.010 (+14%) |
+| $100.000   | 36 cuotas | $3.998  | $143.919        | $43.919 (+44%) |
 
 </div>
 
 **Una transferencia promedio diferida a tres años puede terminar costando casi la mitad más de lo que usted mandó.** Y la cuota de $5.597 parece inofensiva: ese es justamente el riesgo.
 
-Conviene aclarar de dónde sale la tabla. **No es la tarifa de Nu**: es el cálculo al máximo legal, hecho por este portal, para mostrar el techo. La tasa real la fija cada emisor y puede ser menor. [VERIFICAR: solicitar a Nu Colombia la tasa efectiva anual del avance y si cobra cuota de manejo por esta operación.]
+Conviene aclarar de dónde sale la tabla. **No es la tarifa de Nu**: es el cálculo al máximo legal, hecho por este portal, para mostrar el techo. La tasa real la fija cada emisor y puede ser menor. 
 
 ***Le puede interesar: [Tasa de usura 2026: cómo saber si su crédito está caro](/noticias/tasa-usura-2026-como-saber-credito-caro/)***
 
@@ -113,7 +117,3 @@ Y vale la pena recordar lo que decía esta semana una [columna sobre los monstru
 **La tasa y los cargos de Nu** para esta operación, que son los que definen el costo real.
 
 **Si el avance tiene periodo de gracia.** Se consultó la comunicación de la compañía y no lo precisa.
-
-**Cuántos usuarios hay en Santander.** Ni Nu ni el Banco de la República publican el dato desagregado por departamento, así que no se puede dimensionar el alcance regional de la medida.
-
-*La descripción de la funcionalidad y la declaración de Santiago Matamoros provienen del comunicado de prensa de Nu Colombia de octubre de 2026, que también aporta las cifras de uso de Bre-B dentro de esa entidad. Las cifras nacionales de Bre-B —116 millones de llaves, 36 millones de clientes, el 70% de transacciones por debajo de $100.000 y un promedio cercano a $140.000— corresponden al balance del primer año del sistema reportado por el Banco de la República y divulgado por la prensa económica. Los datos de inclusión financiera son del Reporte de Inclusión Financiera 2025 de Banca de las Oportunidades y la Superintendencia Financiera de Colombia. La tasa de usura de octubre de 2026 es la certificada por la Superintendencia Financiera. Los cálculos de cuota, total e intereses son de Economía Santander, al máximo legal, y no corresponden a la tarifa de ninguna entidad en particular. Economía Santander no tiene relación comercial con Nu Colombia.*
