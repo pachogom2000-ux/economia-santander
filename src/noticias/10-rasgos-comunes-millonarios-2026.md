@@ -1,16 +1,16 @@
 ---
 layout: noticia.njk
 eleventyExcludeFromCollections: true
-title: "10 rasgos en común de los millonarios, según estudios"
+title: 10 rasgos en común de los millonarios, según estudios
 date: 2026-10-24T07:00:00.000-05:00
 categoria: Educación financiera
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "El 1,5% de los adultos del mundo ya concentra el 48,4% de toda la
+excerpt: El 1,5% de los adultos del mundo ya concentra el 48,4% de toda la
   riqueza global, según UBS. Estos son los diez rasgos que comparten los
-  millonarios."
+  millonarios.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/financiero.jpg
+imagen: /assets/uploads/millonario-andres-meneses.webp
 imagenAlt: Persona revisando inversiones y patrimonio financiero
 imagenTitle: Rasgos en común de las personas millonarias en el mundo
 imagenPie: El número de millonarios en dólares llegó a un récord en 2025, con
