@@ -14,7 +14,7 @@ imagenPie: "Bre-B llegó a 116 millones de llaves en su primer año: siete de ca
 imagenCredito: "Pixabay - Tookapic. Editada por Economía Santander."
 guia: true
 tags: noticias
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 ---
 **Nu Colombia** habilitó una función que permite pagar una transferencia de **Bre-B** con el cupo de la tarjeta de crédito y diferirla **hasta en 36 cuotas**. Se llama *Transfiere tu Avance* y aparece dentro del mismo flujo de transferencia, sin trámite aparte.
 
