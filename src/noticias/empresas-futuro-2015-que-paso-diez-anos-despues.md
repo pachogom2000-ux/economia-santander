@@ -1,22 +1,26 @@
 ---
 layout: noticia.njk
+eleventyExcludeFromCollections: false
 title: "Empresas del futuro de 2015: 3 de 10 ya no existen"
-date: 2026-10-23T11:00:00.000-05:00
+date: 2026-10-24T06:48:00.000-05:00
 categoria: Inversión
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "Este portal publicó en 2015 la lista de las 10 empresas con el éxito asegurado. Diez años después, el marcador: tres desaparecieron y una casi se destruye."
+excerpt: "Este portal publicó en 2015 la lista de las 10 empresas con el éxito
+  asegurado. Diez años después, el marcador: tres desaparecieron y una casi se
+  destruye."
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/recesion-pixabay-tungart7.webp
+imagen: /assets/uploads/tesla-empresas-2026.webp
 imagenAlt: Hombre mirando una pantalla con la cotización de las acciones
-imagenTitle: Qué pasó diez años después con las 10 empresas que en 2015 tenían el futuro asegurado
-imagenPie: "De las diez que la lista daba por ganadoras, tres dejaron de existir como empresa independiente."
+imagenTitle: Qué pasó diez años después con las 10 empresas que en 2015 tenían
+  el futuro asegurado
+imagenPie: De las diez que la lista daba por ganadoras, tres dejaron de existir
+  como empresa independiente.
 imagenCredito: Pixabay tungart7
 guia: true
 tags: noticias
-eleventyExcludeFromCollections: true
 ---
-En 2015 este portal publicó una lista con un título que hoy da para pensar: **"Estas son 10 empresas que tienen asegurado su éxito en el futuro"**. La lista no era nuestra: la tomamos de la bitácora de noviembre de **Fenalco**, con base en el portal español **Expansión.com**. Y la nota invitaba, textualmente, a "empezar a invertir en ellas".
+En 2015 se publicó una lista con un título que hoy da para pensar: **"Estas son 10 empresas que tienen asegurado su éxito en el futuro"**. Ese año, cuando era editor de Finanzas Personales, recirculé la noticia que originalmente se tomó de la bitácora de noviembre de **Fenalco**, con base en el portal español **Expansión.com**. Y la nota invitaba, textualmente, a "empezar a invertir en ellas".
 
 Han pasado diez años. Las predicciones de ese tipo casi nunca se revisan, y ahí está justamente su problema: se publican, se olvidan y al año siguiente se publica otra.
 
@@ -26,12 +30,12 @@ Esta es la revisión. **Tres de las diez ya no existen como empresa independient
 
 <div class="tabla-wrap">
 
-| Qué pasó | Cuántas | Cuáles |
-| --- | --- | --- |
-| **Dejaron de existir** | **3** | SolarCity, Juno, Counsyl |
-| Prosperaron | 4 | Uber, Tencent, Airbnb, Xiaomi |
-| Frenadas por reguladores | 2 | Alibaba, Illumina |
-| Acertó en grande, hoy en reversa | 1 | Tesla |
+| Qué pasó                         | Cuántas | Cuáles                        |
+| -------------------------------- | ------- | ----------------------------- |
+| **Dejaron de existir**           | **3**   | SolarCity, Juno, Counsyl      |
+| Prosperaron                      | 4       | Uber, Tencent, Airbnb, Xiaomi |
+| Frenadas por reguladores         | 2       | Alibaba, Illumina             |
+| Acertó en grande, hoy en reversa | 1       | Tesla                         |
 
 </div>
 
@@ -87,20 +91,14 @@ Según su propio informe anual ante la SEC, en 2025 Tesla entregó **cerca de 1,
 
 <div class="tabla-wrap">
 
-| | 2024 | 2025 | Variación |
-| --- | --- | --- | --- |
-| **Ingresos** | $97.690 millones | $94.827 millones | **−3%** |
-| **Utilidad neta** | $7.091 millones | $3.790 millones | **−47%** |
+|                   | 2024             | 2025             | Variación |
+| ----------------- | ---------------- | ---------------- | --------- |
+| **Ingresos**      | $97.690 millones | $94.827 millones | **−3%**   |
+| **Utilidad neta** | $7.091 millones  | $3.790 millones  | **−47%**  |
 
 </div>
 
 Es la primera caída de ingresos de la compañía y la utilidad se redujo a la mitad.
-
-## Una corrección nuestra
-
-Hay algo que conviene decir antes de sacar conclusiones ajenas. **La nota de 2015 tenía un error.** Decía que SolarCity era "uno de los mayores fabricantes de silicio del mundo". No lo era: instalaba y financiaba paneles solares, no fabricaba el material.
-
-Ese error estaba en la fuente original y pasó sin filtro. Lo corregimos aquí, diez años tarde.
 
 ## Qué deja esto para quien invierte hoy
 
@@ -113,5 +111,3 @@ Ese error estaba en la fuente original y pasó sin filtro. Lo corregimos aquí, 
 **Y el que la advertencia señala no siempre es el que cae.** A Xiaomi le pronosticaron morir de éxito. Es de las que mejor le fue.
 
 Si va a poner plata en acciones, aquí comparamos las [plataformas para invertir en bolsa desde Colombia](/noticias/invertir-bolsa-plataformas-comparadas-trii-hapi-etoro-tyba/), y conviene recordar la regla básica: el dinero que va a necesitar dentro del año no debería estar en renta variable.
-
-*La lista original fue publicada por este portal en 2015, tomada de la bitácora de noviembre de Fenalco con base en el portal Expansión.com. La verificación de 2026 es de Economía Santander. Las cifras de Tesla provienen de su formulario 10-K del año fiscal 2025 ante la SEC. Las de Uber, de su 10-K de 2025 y de sus resultados de 2023. Las de Airbnb, de su 10-K de 2022 y de sus resultados anuales de 2025. Los datos de usuarios de Tencent son los reportados por la compañía al 30 de septiembre de 2025 y corresponden a cuentas activas, no a personas. La multa a Illumina y la orden de desinversión de GRAIL son de la Comisión Europea; la multa a Alibaba, del regulador antimonopolio chino. Las operaciones de compra de SolarCity, Juno y Counsyl, y la venta del negocio prenatal de Myriad a Labcorp, corresponden a los anuncios de las compañías involucradas. Esta nota es información general y no constituye una recomendación de inversión.*
