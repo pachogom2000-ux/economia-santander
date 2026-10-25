@@ -1,8 +1,8 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: 10 rasgos en común de los millonarios, según estudios
-date: 2026-10-24T07:00:00.000-05:00
+date: 2026-10-25T08:54:00.000-05:00
 categoria: Educación financiera
 chipTipo: propio
 chipLabel: Redacción propia
