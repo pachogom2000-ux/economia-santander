@@ -1,7 +1,7 @@
 ---
 layout: noticia.njk
 eleventyExcludeFromCollections: false
-title: "Prespuesto Santander 2027: así se reparten $3,1 billones "
+title: "Presupuesto Santander 2027: así se reparten $3,1 billones "
 date: 2026-10-26T07:00:00.000-05:00
 categoria: Indicadores económicos
 chipTipo: propio
