@@ -2,7 +2,7 @@
 layout: noticia.njk
 eleventyExcludeFromCollections: false
 title: "Comprar cartera por celular: la opción de Falabella"
-date: 2026-10-27T07:00:00.000-05:00
+date: 2026-10-26T07:18:00.000-05:00
 categoria: Finanzas personales
 chipTipo: recirc
 chipLabel: "Fuente: Banco Falabella"
