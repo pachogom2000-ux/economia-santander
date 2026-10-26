@@ -1,20 +1,24 @@
 ---
 layout: noticia.njk
-title: "Híbridos y eléctricos ya son el 46% de los carros nuevos"
+eleventyExcludeFromCollections: false
+title: Híbridos y eléctricos ya son el 46% de los carros nuevos
 date: 2026-10-26T07:00:00.000-05:00
 categoria: Comercio y consumo
 chipTipo: recirc
 chipLabel: "Fuente: ANIF"
-excerpt: "Hace diez años eran el 1% de las ventas. Las matrículas nuevas subieron 36,1% en septiembre y China ya pone tres de cada diez carros que entran al país."
+excerpt: Hace diez años eran el 1% de las ventas. Las matrículas nuevas subieron
+  36,1% en septiembre y China ya pone tres de cada diez carros que entran al
+  país.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/carro-electrico.webp
+imagen: /assets/uploads/carro-electrico-pixabay-andreas160578.webp
 imagenAlt: Vehículo eléctrico conectado a un punto de carga
-imagenTitle: Los híbridos y eléctricos ya representan el 46% de las ventas de vehículos nuevos en Colombia
-imagenPie: "En 2016, el 99% de los carros nuevos vendidos en Colombia era de gasolina o diésel."
+imagenTitle: Los híbridos y eléctricos ya representan el 46% de las ventas de
+  vehículos nuevos en Colombia
+imagenPie: En 2016, el 99% de los carros nuevos vendidos en Colombia era de
+  gasolina o diésel.
 imagenCredito: Archivo particular
-guia: true
+guia: false
 tags: noticias
-eleventyExcludeFromCollections: true
 ---
 El mercado de carros nuevos en Colombia cambió de forma, y el dato que lo resume es este: **los híbridos y eléctricos ya son el 46% de las ventas**. Hace diez años eran el **1%**.
 
@@ -26,12 +30,12 @@ Detrás de ese salto hay dos cosas que conviene separar: **un peso fuerte que ab
 
 <div class="tabla-wrap">
 
-| Tecnología | 2016 | 2026 (enero–septiembre) |
-| --- | --- | --- |
-| **Gasolina** | 87% | **38,6%** |
-| **Híbridos** | — | **30,1%** |
-| **Eléctricos** | — | **16,1%** |
-| Gasolina + diésel | **99%** | — |
+| Tecnología        | 2016    | 2026 (enero–septiembre) |
+| ----------------- | ------- | ----------------------- |
+| **Gasolina**      | 87%     | **38,6%**               |
+| **Híbridos**      | —       | **30,1%**               |
+| **Eléctricos**    | —       | **16,1%**               |
+| Gasolina + diésel | **99%** | —                       |
 
 </div>
 
@@ -57,12 +61,12 @@ Aquí está el cambio que menos se nota y más consecuencias tiene.
 
 <div class="tabla-wrap">
 
-| Origen | 2022 | 2026 |
-| --- | --- | --- |
-| **China** | 16,1% | **30,1%** |
-| **Corea del Sur** | 2,5% | **11,6%** |
-| Brasil | — | mayor pérdida de participación |
-| México | — | pierde participación |
+| Origen            | 2022  | 2026                           |
+| ----------------- | ----- | ------------------------------ |
+| **China**         | 16,1% | **30,1%**                      |
+| **Corea del Sur** | 2,5%  | **11,6%**                      |
+| Brasil            | —     | mayor pérdida de participación |
+| México            | —     | pierde participación           |
 
 </div>
 
@@ -82,10 +86,10 @@ En el agregado, China ya captura **uno de cada cuatro dólares** que Colombia de
 
 ## Lo que el informe no responde
 
-**Cuántos de esos carros se matricularon en Santander.** ANIF trabaja con el agregado nacional y no desagrega por departamento, así que no se puede medir qué tanto de ese 36,1% ocurrió aquí. [VERIFICAR: solicitar a Andemos y a la Dirección de Tránsito de Bucaramanga las matrículas nuevas del área metropolitana por tipo de tecnología.]
+**Cuántos de esos carros se matricularon en Santander.** ANIF trabaja con el agregado nacional y no desagrega por departamento, así que no se puede medir qué tanto de ese 36,1% ocurrió aquí. \[VERIFICAR: solicitar a Andemos y a la Dirección de Tránsito de Bucaramanga las matrículas nuevas del área metropolitana por tipo de tecnología.]
 
 **Qué pasa cuando el dólar suba.** El informe explica el impulso, pero no proyecta qué ocurre con la demanda si la tasa de cambio se devuelve.
 
 **Si la infraestructura de carga va al ritmo de las ventas.** Un 16,1% de eléctricos en matrículas nuevas supone una red que el informe no evalúa.
 
-*Las cifras provienen del comentario económico **"Más importaciones y un nuevo mercado automotor"**, publicado por **ANIF** el 22 de octubre de 2026, elaborado con datos del DANE y de Andemos. ANIF advierte que, en promedio, las importaciones de vehículos han representado entre el 75% y el 80% del valor total del capítulo arancelario que incluye partes y accesorios. Las variaciones porcentuales del informe fueron verificadas aritméticamente por Economía Santander. Economía Santander no tiene relación comercial con ANIF.*
+*Las cifras provienen del comentario económico **"Más importaciones y un nuevo mercado automotor"**, publicado por **ANIF** el 22 de octubre de 2026, elaborado con datos del DANE y de Andemos. ANIF advierte que, en promedio, las importaciones de vehículos han representado entre el 75% y el 80% del valor total del capítulo arancelario que incluye partes y accesorios. Las variaciones porcentuales del informe fueron verificadas aritméticamente por Economía Santander.*
