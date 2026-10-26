@@ -626,14 +626,17 @@
   .ad-piro-side .site { font-family: var(--font-display); font-size: 17px; font-weight: 600; color: #ffd166; letter-spacing: 0.03em; }
   .ad-piro-side .note { font-size: 11.5px; color: rgba(238,242,255,0.6); }
 
-  /* Ámbar Leather — cuero. El aviso lleva foto de producto recortada contra
-     fondo, y el degradado termina justo en el tono sobre el que se aplanó ese
-     recorte (#2e1a11): así la máscara de .ad-media funde la foto con el aviso
-     sin dejar costura. Si se cambia la foto, hay que mantener ese mismo fondo.
+  /* Ámbar Leather — cuero. La foto es un PNG con el fondo quitado
+     (ad-ambar-ruth.png): el par completo flota sobre el degradado, sin caja y
+     sin la máscara de .ad-media, que difuminaba la foto y con el recorte
+     anterior dejaba el zapato partido. La sombra del estudio viene dentro del
+     PNG como negro semitransparente, así que funciona sobre cualquier tono
+     oscuro. Si se cambia la foto, que siga siendo un recorte transparente.
      El ámbar #f0b429 es el acento de la marca y no se repite en otro aviso. */
   .ad-ambar {
     background: linear-gradient(118deg, #140d0a 0%, #241510 56%, #2e1a11 100%);
     color: #f7ece0;
+    container-type: inline-size;
   }
   .ad-ambar .ad-tag { background: rgba(247,236,224,0.16); color: #f7ece0; }
   .ad-ambar .ad-brand { color: #f0b429; }
@@ -647,14 +650,36 @@
     transition: transform 0.15s ease, background 0.15s ease;
   }
   .ad-ambar:hover .ad-cta { background: #ffcc5c; transform: translateX(3px); }
-  /* El texto no se mete debajo de la foto, que ocupa el 46% de la derecha. */
-  .ad-ambar .ad-copy { flex: 1 1 320px; max-width: 54%; }
+  .ad-unit.ad-ambar .ad-media {
+    top: 34px; bottom: 14px; right: 28px;
+    width: 38%;
+    opacity: 1;
+  }
+  .ad-unit.ad-ambar .ad-media img {
+    object-fit: contain;
+    object-position: right center;
+    -webkit-mask-image: none;
+    mask-image: none;
+    transition: transform 0.4s ease;
+  }
+  .ad-ambar:hover .ad-media img { transform: scale(1.04); }
+  /* El texto no se mete debajo del zapato. */
+  .ad-ambar .ad-copy { max-width: 58%; }
 
-  @media (max-width: 720px) {
-    .ad-ambar .ad-copy { max-width: none; }
+  /* Aviso angosto (celular o carril lateral de la nota): el zapato se achica
+     y se centra a la derecha, y el texto deja libre esa columna. Mide el
+     ancho del aviso, no el de la pantalla, porque el carril es angosto aun en
+     escritorio. */
+  @container (max-width: 560px) {
+    .ad-unit.ad-ambar .ad-media {
+      top: 30%; bottom: 30%; right: 12px;
+      width: 36%;
+    }
+    .ad-ambar .ad-copy { max-width: 62%; }
+    .ad-unit.ad-ambar.ad-compacto .ad-text { -webkit-line-clamp: 4; }
   }
   @media (prefers-reduced-motion: reduce) {
-    .ad-ambar:hover .ad-cta { transform: none; }
+    .ad-ambar:hover .ad-cta, .ad-ambar:hover .ad-media img { transform: none; }
   }
 
   @media (max-width: 640px) {
@@ -665,32 +690,6 @@
        para no competir con la lectura. */
     .ad-media { width: 62%; opacity: 0.5; }
 
-    /* Ámbar en móvil: con la regla de arriba el "cover" centraba una foto de
-       1000×360 en una caja casi cuadrada y el zapato, que vive a la derecha
-       del archivo (x 615–885, y 78–295), quedaba cortado detrás del titular.
-       Aquí el texto deja una columna libre y la foto se encuadra a mano sobre
-       el zapato, completo y sin transparencia. La columna va pegada al borde
-       derecho y a todo el alto: ahí el degradado ya está en #2e1a11, el fondo
-       del recorte, y no se nota la caja. Los px de la imagen dependen de esas
-       coordenadas: si se cambia ad-ambar.jpg, hay que recalcularlos. */
-    .ad-ambar .ad-copy { max-width: calc(100% - 92px); }
-    .ad-unit.ad-ambar.ad-compacto .ad-text { -webkit-line-clamp: 3; }
-    .ad-unit.ad-ambar .ad-media {
-      width: 110px;
-      opacity: 1;
-      /* El recorte del archivo deja un borde recto a la izquierda del zapato;
-         el desvanecido lo esconde. */
-      -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 25%);
-      mask-image: linear-gradient(90deg, transparent 0%, #000 25%);
-    }
-    .ad-unit.ad-ambar .ad-media img {
-      position: absolute;
-      width: 330px; height: auto; max-width: none;
-      left: -192px; top: 50%;
-      transform: translateY(-50%);
-      -webkit-mask-image: none;
-      mask-image: none;
-    }
   }
 
   /* ---------- masthead ---------- */
