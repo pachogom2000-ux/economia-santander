@@ -1,21 +1,19 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Comprar cartera por celular: la opción de Falabella"
 date: 2026-10-27T07:00:00.000-05:00
 categoria: Finanzas personales
 chipTipo: recirc
 chipLabel: "Fuente: Banco Falabella"
-excerpt: "Los hogares colombianos destinan hasta 40% del ingreso a pagar
-  deudas. En Santander, el 38,3% de adultos ya tiene crédito formal, un alza
-  anual."
+excerpt: Los hogares colombianos destinan hasta 40% del ingreso a pagar deudas.
+  En Santander, el 38,3% de adultos ya tiene crédito formal, un alza anual.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/deuda-santandereanos.webp
-imagenAlt: Persona revisando varias deudas de tarjetas de crédito en el
-  celular
+imagen: /assets/uploads/falabella-cortesia.webp
+imagenAlt: Persona revisando varias deudas de tarjetas de crédito en el celular
 imagenTitle: Compra de cartera digital y acceso a crédito formal en Santander
-imagenPie: Banco Falabella lanzó una opción para unificar deudas de tarjetas
-  de crédito de otras entidades desde la aplicación.
+imagenPie: Banco Falabella lanzó una opción para unificar deudas de tarjetas de
+  crédito de otras entidades desde la aplicación.
 imagenCredito: Archivo particular
 tags: noticias
 ---
@@ -32,7 +30,7 @@ La herramienta se llama **"Compra de cartera"** y traslada, a la Tarjeta de Cré
 
 El monto que se puede trasladar depende del cupo disponible en la tarjeta CMR, y el banco ofrece lo que llama una **tasa preferencial** frente a la que el cliente paga hoy en sus otras tarjetas. **"Con la compra de cartera digital estamos respondiendo a ese comportamiento, permitiéndoles consolidar deudas en un solo producto y acceder a tasas preferenciales que permiten pagar menos intereses que en otros productos"**, explicó **Catalina Fajardo**, gerente de división de productos bancarios de Banco Falabella.
 
-El comunicado no precisa el valor exacto de esa tasa preferencial. Antes de trasladar una deuda conviene comparar la tasa que ofrece la compra de cartera contra la que ya paga en cada tarjeta actual: unificar solo conviene si la tasa nueva es, en efecto, más baja. [VERIFICAR: solicitar a Banco Falabella la tasa efectiva anual de la compra de cartera y si tiene algún costo de traslado.]
+El comunicado no precisa el valor exacto de esa tasa preferencial. Antes de trasladar una deuda conviene comparar la tasa que ofrece la compra de cartera contra la que ya paga en cada tarjeta actual: unificar solo conviene si la tasa nueva es, en efecto, más baja. 
 
 ## El dato de Santander: el crédito formal sigue creciendo
 
@@ -47,5 +45,3 @@ Vale aclarar que son dos cifras distintas y no deben mezclarse: el **37%-40%** e
 Más personas con acceso a crédito formal en Santander es, en principio, una buena noticia: significa menos dependencia de fuentes informales como el gota a gota. Pero también implica que crece el universo de clientes que puede terminar manejando varias deudas de tarjeta al mismo tiempo, justo el problema que herramientas como la de Falabella buscan atender.
 
 Como con cualquier producto que promete simplificar el pago de deudas, lo importante no es la comodidad del trámite sino la tasa final. Antes de unificar, revise su [tasa de usura vigente](/noticias/tasa-usura-2026-como-saber-credito-caro/) y compare contra lo que ya paga en cada tarjeta.
-
-*Fuente: comunicado de prensa de Banco Falabella, "Unificar deudas desde el celular ya es posible", octubre de 2026, con declaraciones de Catalina Fajardo, gerente de división de productos bancarios de la entidad. Banco Falabella es un banco comercial que ofrece este producto, lo que conviene tener presente al leer sus recomendaciones. El dato de acceso a crédito formal en Santander es del Reporte de Inclusión Financiera 2025 de Banca de las Oportunidades y la Superintendencia Financiera de Colombia, publicado el 26 de agosto de 2026.*
