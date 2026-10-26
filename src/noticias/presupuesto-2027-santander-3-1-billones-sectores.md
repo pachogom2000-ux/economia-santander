@@ -1,18 +1,17 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
-title: "Presupuesto 2027: a Santander le tocan $3,1 billones"
+eleventyExcludeFromCollections: false
+title: "Presupuesto Santander 2027: así se reparten $3,1 billones "
 date: 2026-10-26T07:00:00.000-05:00
 categoria: Indicadores económicos
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "El documento de presupuesto regionalizado 2027 le asigna a
-  Santander $3,1 billones en inversión. Transporte y vías se llevan la
-  tercera parte del total."
+excerpt: El documento de presupuesto regionalizado 2027 le asigna a Santander
+  $3,1 billones en inversión. Transporte y vías se llevan la tercera parte del
+  total.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/panoramica-viaducto-bucaramanga.webp
-imagenAlt: Viaducto y vías de Bucaramanga, infraestructura financiada con el
-  Presupuesto General de la Nación
+imagen: /assets/uploads/especial-departamento-santander-archivo-particular.webp
+imagenAlt: Así quedó el reparto de $3,1 billones de presupuesto para Santander
 imagenTitle: Presupuesto de inversión 2027 regionalizado para Santander
 imagenPie: El sector transporte concentra 33,4% de los $3,1 billones que el
   presupuesto de inversión 2027 regionaliza para Santander.
@@ -27,17 +26,17 @@ Es la contraparte en cifras de lo que este portal ya contó sobre el trámite: S
 
 <div class="tabla-wrap">
 
-| Sector | % del total | Monto (millones) |
-| --- | --- | --- |
-| Transporte | 33,4% | $1.058.190 |
-| Inclusión Social y Reconciliación | 22,8% | $720.954 |
-| Educación | 12,6% | $399.312 |
-| Trabajo | 10,6% | $337.305 |
-| Minas y Energía | 2,7% | $86.030 |
-| Justicia y del Derecho | 2,7% | $86.011 |
-| Salud y Protección Social | 1,5% | $48.030 |
-| Agricultura y Desarrollo Rural | 0,9% | $29.012 |
-| Resto de sectores | 2,4% | — |
+| Sector                            | % del total | Monto (millones) |
+| --------------------------------- | ----------- | ---------------- |
+| Transporte                        | 33,4%       | $1.058.190       |
+| Inclusión Social y Reconciliación | 22,8%       | $720.954         |
+| Educación                         | 12,6%       | $399.312         |
+| Trabajo                           | 10,6%       | $337.305         |
+| Minas y Energía                   | 2,7%        | $86.030          |
+| Justicia y del Derecho            | 2,7%        | $86.011          |
+| Salud y Protección Social         | 1,5%        | $48.030          |
+| Agricultura y Desarrollo Rural    | 0,9%        | $29.012          |
+| Resto de sectores                 | 2,4%        | —                |
 
 </div>
 
@@ -47,15 +46,15 @@ Dos de cada tres pesos del presupuesto santandereano están en solo cuatro secto
 
 El sector transporte es, con diferencia, el más grande: **$1.058.190 millones**, casi todos en la red vial primaria a cargo de Invías. Los proyectos puntuales más grandes para Santander:
 
-- **Bucaramanga-Barrancabermeja-Yondó:** $247.438 millones.
-- **Puerto Salgar-Barrancabermeja:** $158.923 millones.
-- **Santa Fe de Bogotá-Chiquinquirá-Bucaramanga-San Alberto (Troncal Central):** $111.843 millones.
-- **Los Curos-Málaga:** $85.000 millones.
-- **Autopista al Río Magdalena 2:** $40.653 millones.
-- **Transversal San Gil-Mogotes-La Rosita:** $23.835 millones.
-- **Aeropuerto Palonegro de Bucaramanga:** $22.184 millones.
-- **Transversal del Carare (Puerto Araujo-Cimitarra-Landázuri-Vélez-Barbosa-Tunja):** $9.579 millones.
-- **San Gil-Barichara-Guane:** $2.500 millones.
+* **Bucaramanga-Barrancabermeja-Yondó:** $247.438 millones.
+* **Puerto Salgar-Barrancabermeja:** $158.923 millones.
+* **Santa Fe de Bogotá-Chiquinquirá-Bucaramanga-San Alberto (Troncal Central):** $111.843 millones.
+* **Los Curos-Málaga:** $85.000 millones.
+* **Autopista al Río Magdalena 2:** $40.653 millones.
+* **Transversal San Gil-Mogotes-La Rosita:** $23.835 millones.
+* **Aeropuerto Palonegro de Bucaramanga:** $22.184 millones.
+* **Transversal del Carare (Puerto Araujo-Cimitarra-Landázuri-Vélez-Barbosa-Tunja):** $9.579 millones.
+* **San Gil-Barichara-Guane:** $2.500 millones.
 
 Por fuera de la carretera, el **corredor férreo La Dorada-Chiriguaná** —que conecta a Santander con Caldas, Antioquia, Norte de Santander y Cesar bajo un modelo de concesión— suma otros **$250.630 millones**.
 
@@ -87,4 +86,6 @@ De esos recursos, más de la mitad —**$15.739 millones**— no son para produc
 
 **Justicia y del derecho** llega a $86.011 millones, dominados por el sistema penitenciario: $63.000 millones para construir nuevos cupos de reclusión y $6.318 millones para infraestructura de los ERON a cargo del INPEC.
 
-*Fuente: documento de presupuesto de inversión regionalizado 2027 para Santander, aprobado en primer debate por las Comisiones Económicas Conjuntas del Congreso de la República, compartido con este portal. Las cifras de población y NBI son del DANE. El monto total y los porcentajes sectoriales son los que trae el propio documento; las cifras de proyectos puntuales de transporte y educación son selección de este portal entre las partidas más altas de cada sector, no el listado completo.*
+*Fuente: documento de presupuesto de inversión regionalizado 2027 para Santander, aprobado en primer debate por las Comisiones Económicas Conjuntas del Congreso de la República, compartido con este portal. Las cifras de población y NBI son del DANE.* 
+
+*El monto total y los porcentajes sectoriales son los que trae el propio documento; las cifras de proyectos puntuales de transporte y educación son selección de este portal entre las partidas más altas de cada sector, no el listado completo.*
