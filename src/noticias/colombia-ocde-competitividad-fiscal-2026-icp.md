@@ -1,20 +1,19 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
-title: "Colombia, penúltima en competitividad fiscal de la OCDE"
+eleventyExcludeFromCollections: false
+title: Colombia, penúltima en competitividad fiscal de la OCDE
 date: 2026-10-27T08:00:00.000-05:00
 categoria: Impuestos y regulación
 chipTipo: recirc
 chipLabel: "Fuente: ICP Hernán Echavarría Olózaga"
-excerpt: "Colombia ocupa el puesto 37 de 38 en competitividad fiscal de la
-  OCDE, según el ICP. La tarifa a las empresas es del 35%, la segunda más
-  alta."
+excerpt: Colombia ocupa el puesto 37 de 38 en competitividad fiscal de la OCDE,
+  según el ICP. La tarifa a las empresas es del 35%, la segunda más alta.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/declaracion-impuestos-colombia.webp
+imagen: /assets/uploads/colombia-competitividad.webp
 imagenAlt: Declaración de impuestos y tributación de empresas en Colombia
 imagenTitle: Índice de Competitividad Fiscal 2026, Colombia frente a la OCDE
-imagenPie: Colombia ocupa el puesto 37 de 38 países de la OCDE en el Índice
-  de Competitividad Fiscal 2026, principalmente por cómo grava el capital.
+imagenPie: Colombia ocupa el puesto 37 de 38 países de la OCDE en el Índice de
+  Competitividad Fiscal 2026, principalmente por cómo grava el capital.
 imagenCredito: Archivo particular
 tags: noticias
 ---
