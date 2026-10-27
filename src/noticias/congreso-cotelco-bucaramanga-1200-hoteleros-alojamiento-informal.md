@@ -1,35 +1,37 @@
 ---
 layout: noticia.njk
+eleventyExcludeFromCollections: false
 title: "Cotelco Bucaramanga: 1.200 hoteleros y la pelea de fondo"
-date: 2026-10-27T15:00:00.000-05:00
+date: 2026-10-27T06:01:00.000-05:00
 categoria: Turismo y hotelería
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "Por primera vez en 70 años, el congreso nacional de la hotelería se hace en Santander. En la agenda hay dos conferencias contra el alojamiento no regulado."
+excerpt: Por primera vez en 70 años, el congreso nacional de la hotelería se
+  hace en Santander. En la agenda hay dos conferencias contra el alojamiento no
+  regulado.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/turismo-santander.webp
-imagenAlt: Vista de Santander como destino turístico
-imagenTitle: Bucaramanga recibe el 32 Congreso Nacional de la Hotelería los días 29 y 30 de octubre
-imagenPie: "La candidatura la lideró Destino Santander y compitió con ciudades como Cartagena."
+imagen: /assets/uploads/congreso-cotelco.webp
+imagenAlt: Poster 32 Congreso Cotelco en Bucaramanga
+imagenTitle: Bucaramanga recibe el 32 Congreso Nacional de la Hotelería los días
+  29 y 30 de octubre
+imagenPie: La candidatura la lideró Destino Santander y compitió con ciudades
+  como Cartagena.
 imagenCredito: Archivo particular
 guia: true
 tags: noticias
-eleventyExcludeFromCollections: true
 ---
 Bucaramanga recibe este **jueves 29 y viernes 30 de octubre** a cerca de **1.200 representantes del sector hotelero** en el **32° Congreso Nacional de la Hotelería**, en el Centro de Convenciones Neomundo.
 
-Es la primera vez que ocurre aquí. En los **70 años de historia de Cotelco**, el congreso nunca había tenido a Santander como escenario.
-
-Pero el dato que conviene mirar no es el de los asistentes. Está en la agenda académica: **dos de las conferencias apuntan al mismo blanco, el alojamiento no regulado.**
+Es la primera vez que ocurre aquí. En los **70 años de historia de Cotelco**, el congreso nunca había tenido a Santander como escenario. Pero el dato que conviene mirar no es el de los asistentes. Está en la agenda académica: **dos de las conferencias apuntan al mismo blanco, el alojamiento no regulado.**
 
 ## Lo que el gremio viene a pedir
 
 <div class="tabla-wrap">
 
-| Cuándo | Qué |
-| --- | --- |
-| **Jueves, 3:00 p. m.** | "Las externalidades negativas del alojamiento no regulado y su impacto en el turismo y la vivienda", con evidencia de Nueva York. **Vijay Dandapani**, presidente de la Hotel Association of New York City |
-| **Viernes, 11:45 a. m.** | "Informalidad, evasión fiscal y competencia desleal en el sector alojamiento de Colombia". **Gral. (r) Juan Carlos Buitrago**, presidente de Strategos BIP |
+| Cuándo                   | Qué                                                                                                                                                                                                        |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Jueves, 3:00 p. m.**   | "Las externalidades negativas del alojamiento no regulado y su impacto en el turismo y la vivienda", con evidencia de Nueva York. **Vijay Dandapani**, presidente de la Hotel Association of New York City |
+| **Viernes, 11:45 a. m.** | "Informalidad, evasión fiscal y competencia desleal en el sector alojamiento de Colombia". **Gral. (r) Juan Carlos Buitrago**, presidente de Strategos BIP                                                 |
 
 </div>
 
@@ -41,19 +43,17 @@ Son fuentes con intereses opuestos. Vale tenerlo presente cuando se escuche la c
 
 ## Por qué esto importa en Bucaramanga
 
-Este portal ya documentó que [las rentas cortas y los hostales vienen creciendo en Bucaramanga](/noticias/rentas-cortas-hostales-bucaramanga-crecimiento/). Es el mismo pulso que se discutirá en Neomundo, pero con el mercado local de por medio.
+Este portal ya documentó que [las rentas cortas y los hostales vienen creciendo en Bucaramanga](/noticias/rentas-cortas-hostales-bucaramanga-crecimiento/). Es el mismo pulso que se discutirá en Neomundo, pero con el mercado local de por medio. La agenda incluye al actual   **Ministro de Vivienda, Ciudad y Territorio, Jaime Andrés Beltrán,  ex alcalde de Bucaramanga, con** su intervención el viernes a las 9:00 a.m. el mismo día de la conferencia sobre informalidad en el alojamiento. 
 
-Y hay un detalle de calendario que no parece casualidad: **el Ministro de Vivienda, Ciudad y Territorio interviene el viernes a las 9:00 a. m.**, el mismo día de la conferencia sobre informalidad en el alojamiento. La regulación de los alquileres cortos toca, al tiempo, al turismo y a la vivienda.
-
-Ese ministro es **Jaime Andrés Beltrán**, exalcalde de Bucaramanga. Volverá a la ciudad en un acto donde también está anunciado **Cristian Fernando Portilla**, el alcalde que lo sucedió.
+La regulación de los alquileres cortos toca, al tiempo, al turismo y a la vivienda. Volverá a la ciudad en un acto donde también está anunciado **Cristian Fernando Portilla**, el alcalde que lo sucedió.
 
 ## El panel que puede dejar inversión
 
 El jueves a las **2:15 p. m.** hay una mesa que merece más atención de la que suele recibir: *"De la hospitalidad a la oportunidad"*, con los responsables de desarrollo de las tres mayores cadenas del mundo.
 
-- **Mauro Rial**, Chief Operating Officer Americas de **Accor**
-- **Joanna Ayala Quintana**, Vice President, Hotel Development de **Marriott International**
-- **Pablo Maturana**, Vice President Development Latin America & The Caribbean de **Hilton**
+* **Mauro Rial**, Chief Operating Officer Americas de **Accor**
+* **Joanna Ayala Quintana**, Vice President, Hotel Development de **Marriott International**
+* **Pablo Maturana**, Vice President Development Latin America & The Caribbean de **Hilton**
 
 Son las personas que deciden dónde se construye un hotel nuevo. Tener a las tres en Bucaramanga es, para la región, la oportunidad concreta del congreso: no el discurso, sino la conversación de pasillo.
 
@@ -86,7 +86,3 @@ Para medir qué deja el congreso en la ciudad faltan cifras que ninguna de las f
 **Cuántos hoteles representa el capítulo Santander**, ni cuántas habitaciones ni empleos tiene el sector en el departamento.
 
 **Cuántos expositores** participan en ExpoCotelco.
-
-[VERIFICAR: solicitar a Cotelco Santander y a Destino Santander el impacto económico estimado, la ocupación hotelera proyectada para el 29 y 30 de octubre, el número de hoteles afiliados y el de expositores de ExpoCotelco.]
-
-*Las fechas, la sede, el lema, la agenda y los nombres y cargos de ponentes e invitados provienen de la agenda académica oficial publicada por **Cotelco** en congreso.cotelco.org. La cifra de cerca de 1.200 asistentes y el dato de que es la primera vez en 70 años que el congreso se realiza en Santander son de la nota de **Caracol Radio** del 27 de octubre de 2026, que también recoge la declaración de Olga Lucía Barrera. La candidatura liderada por Destino Santander y la competencia con Cartagena fueron informadas por **El Frente**. Las cifras del caso de Nueva York corresponden a AirDNA y a la firma JLL, y las objeciones a la medida, a Airbnb; se presentan las dos posiciones porque ambas partes tienen interés en el resultado. Economía Santander no tiene relación comercial con Cotelco.*
