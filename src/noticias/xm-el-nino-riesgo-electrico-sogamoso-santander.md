@@ -1,21 +1,20 @@
 ---
 layout: noticia.njk
 eleventyExcludeFromCollections: true
-title: "El Niño: el riesgo eléctrico que también toca a Santander"
+title: "El Super Niño: el riesgo eléctrico que también toca a Santander"
 date: 2026-10-27T09:00:00.000-05:00
 categoria: Indicadores económicos
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "XM le da 100% de probabilidad a un Niño muy fuerte. Los embalses
-  están al 60,5% y Sogamoso, en Santander, podría caer bajo su mínimo
-  histórico."
+excerpt: XM le da 100% de probabilidad a un Niño muy fuerte. Los embalses están
+  al 60,5% y Sogamoso, en Santander, podría caer bajo su mínimo histórico.
 autor: Francisco Gómez - Director
 imagen: /assets/uploads/hidrosogamoso-archivo-particular.webp
 imagenAlt: Embalse de Topocoro, de la Central Hidrosogamoso, en Santander
 imagenTitle: Riesgo eléctrico por El Niño 2026-2027 y la central Hidrosogamoso
-imagenPie: La central Hidrosogamoso, en Santander, es una de las plantas que
-  XM identifica entre las que podrían operar por debajo de su mínimo
-  histórico si se repite una hidrología tan seca como la de 1991-1993.
+imagenPie: La central Hidrosogamoso, en Santander, es una de las plantas que XM
+  identifica entre las que podrían operar por debajo de su mínimo histórico si
+  se repite una hidrología tan seca como la de 1991-1993.
 imagenCredito: Archivo particular
 tags: noticias
 ---
