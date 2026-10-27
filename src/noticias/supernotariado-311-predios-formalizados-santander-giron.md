@@ -1,20 +1,19 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
-title: "Santander formaliza 311 predios públicos y privados"
+eleventyExcludeFromCollections: false
+title: Santander formaliza 311 predios públicos y privados
 date: 2026-10-27T07:00:00.000-05:00
 categoria: Impuestos y regulación
 chipTipo: recirc
 chipLabel: "Fuente: Supernotariado"
 excerpt: "La Supernotariado entregó títulos de 311 predios en Girón: 154
-  cesiones privadas y 157 bienes públicos, desde colegios hasta parques y
-  vías."
-autor: Francisco Gómez - Director
-imagen: /assets/uploads/firma-de-un-contrato-de-arrendamiento-de-vivienda.webp
+  cesiones privadas y 157 bienes públicos, desde colegios hasta parques y vías."
+autor: ""
+imagen: /assets/uploads/titulos-supernotariado-registro.webp
 imagenAlt: Firma de documentos de titulación de un predio en Santander
 imagenTitle: Formalización de predios públicos y privados en Santander
-imagenPie: La Superintendencia de Notariado y Registro entregó 311 títulos
-  de propiedad en una jornada realizada en San Juan de Girón.
+imagenPie: La Superintendencia de Notariado y Registro entregó 311 títulos de
+  propiedad en una jornada realizada en San Juan de Girón.
 imagenCredito: Archivo particular
 tags: noticias
 ---
@@ -28,22 +27,22 @@ Esos 157 predios públicos se repartieron en 14 municipios de Santander:
 
 <div class="tabla-wrap">
 
-| Municipio | Predios públicos |
-| --- | --- |
-| Bucaramanga | 63 |
-| Girón | 25 |
-| Floridablanca | 15 |
-| Florián | 11 |
-| La Belleza | 8 |
-| El Guacamayo | 7 |
-| Albania | 6 |
-| El Playón | 6 |
-| Piedecuesta | 6 |
-| Confines | 4 |
-| Suratá | 3 |
-| Barichara | 1 |
-| Sabana de Torres | 1 |
-| Socorro | 1 |
+| Municipio        | Predios públicos |
+| ---------------- | ---------------- |
+| Bucaramanga      | 63               |
+| Girón            | 25               |
+| Floridablanca    | 15               |
+| Florián          | 11               |
+| La Belleza       | 8                |
+| El Guacamayo     | 7                |
+| Albania          | 6                |
+| El Playón        | 6                |
+| Piedecuesta      | 6                |
+| Confines         | 4                |
+| Suratá           | 3                |
+| Barichara        | 1                |
+| Sabana de Torres | 1                |
+| Socorro          | 1                |
 
 </div>
 
@@ -56,5 +55,3 @@ La Supernotariado anunció que el proceso continuará en otros municipios del de
 La entidad no precisó fechas para estas jornadas, ni el valor económico que representa la formalización de estos bienes, ni si abre la puerta a créditos o trámites que antes no eran posibles sin un título saneado.
 
 Este tipo de procesos ocurre en paralelo a la actividad del sector constructor en la región: este portal ya reportó que las [licencias de construcción en Bucaramanga cayeron 43% en 2026](/noticias/licencias-construccion-bucaramanga-crecen/), un contexto que hace más relevante resolver la situación legal del suelo urbano ya construido, en lugar de solo la obra nueva.
-
-*Fuente: Superintendencia de Notariado y Registro, comunicado "Más de 300 inmuebles privados y públicos fueron formalizados en Santander", San Juan de Girón, 23 de octubre de 2026, con declaraciones de Yoly Beatriz Illidge Pimienta. El comunicado no precisa fechas para las próximas jornadas ni cifras de valor económico o acceso a crédito derivadas de la formalización.*
