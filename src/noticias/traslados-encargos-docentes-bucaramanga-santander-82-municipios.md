@@ -1,21 +1,20 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Traslados y encargos docentes: las plazas en Santander"
-date: 2026-10-27T10:00:00.000-05:00
+date: 2026-10-28T06:00:00.000-05:00
 categoria: Empleo
 chipTipo: recirc
 chipLabel: "Fuente: MinEducación, Gobernación y Alcaldía de Bucaramanga"
-excerpt: "La Normal Superior de Bucaramanga abre vacantes de traslado y la
+excerpt: La Normal Superior de Bucaramanga abre vacantes de traslado y la
   Gobernación convocó encargos en 82 municipios, con apenas un día para
-  inscribirse."
+  inscribirse.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/docente.webp
-imagenAlt: Docente revisando una convocatoria de traslado o encargo en
-  Santander
+imagen: /assets/uploads/docente-escuela-publica-estados-unidos.webp
+imagenAlt: Docente revisando una convocatoria
 imagenTitle: Traslados y encargos docentes en Santander, octubre de 2026
-imagenPie: Bucaramanga y la Gobernación de Santander abrieron, por separado,
-  dos procesos distintos para proveer plazas docentes y directivas.
+imagenPie: Bucaramanga y la Gobernación de Santander abrieron, por separado, dos
+  procesos distintos para proveer plazas docentes y directivas.
 imagenCredito: Archivo particular
 tags: noticias
 ---
