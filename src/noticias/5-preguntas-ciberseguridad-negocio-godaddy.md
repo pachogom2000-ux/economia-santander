@@ -1,20 +1,19 @@
 ---
 layout: noticia.njk
 eleventyExcludeFromCollections: true
-title: "5 preguntas para blindar su negocio de ciberataques"
-date: 2026-10-28T07:00:00.000-05:00
+title: 5 preguntas para blindar su negocio de ciberataques
+date: 2026-10-28T06:30:00.000-05:00
 categoria: Emprendimiento y pymes
 chipTipo: recirc
 chipLabel: "Fuente: GoDaddy"
-excerpt: "El 64% de los emprendedores colombianos no sabría cómo responder a
-  un ciberataque, según GoDaddy. Cinco preguntas para evaluar su propio
-  negocio."
+excerpt: El 64% de los emprendedores colombianos no sabría cómo responder a un
+  ciberataque, según GoDaddy. Cinco preguntas para evaluar su propio negocio.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/ciberseguridad.webp
-imagenAlt: Emprendedor revisando la seguridad digital de su negocio en línea
+imagen: /assets/uploads/fraude-pymes.webp
+imagenAlt: Ciberataque a la seguridad digital de su negocio en línea
 imagenTitle: Cinco preguntas para evaluar la ciberseguridad de un negocio
-imagenPie: El 91% de los emprendedores colombianos usa al menos un servicio
-  de seguridad digital, pero el 64% no sabría cómo responder a un ciberataque.
+imagenPie: El 91% de los emprendedores colombianos usa al menos un servicio de
+  seguridad digital, pero el 64% no sabría cómo responder a un ciberataque.
 imagenCredito: Archivo particular
 guia: true
 tags: noticias
