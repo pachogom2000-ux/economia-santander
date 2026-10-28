@@ -1,6 +1,6 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: 5 preguntas para blindar su negocio de ciberataques
 date: 2026-10-28T06:30:00.000-05:00
 categoria: Emprendimiento y pymes
