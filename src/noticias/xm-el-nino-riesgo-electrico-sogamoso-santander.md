@@ -1,21 +1,20 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
-title: "El Niño: el riesgo eléctrico que también toca a Santander"
-date: 2026-10-27T09:00:00.000-05:00
+eleventyExcludeFromCollections: false
+title: "El Super Niño: el riesgo eléctrico que también toca a Santander"
+date: 2026-10-28T05:01:00.000-05:00
 categoria: Indicadores económicos
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "XM le da 100% de probabilidad a un Niño muy fuerte. Los embalses
-  están al 60,5% y Sogamoso, en Santander, podría caer bajo su mínimo
-  histórico."
+excerpt: XM le da 100% de probabilidad a un Niño muy fuerte. Los embalses están
+  al 60,5% y Sogamoso, en Santander, podría caer bajo su mínimo histórico.
 autor: Francisco Gómez - Director
 imagen: /assets/uploads/hidrosogamoso-archivo-particular.webp
 imagenAlt: Embalse de Topocoro, de la Central Hidrosogamoso, en Santander
 imagenTitle: Riesgo eléctrico por El Niño 2026-2027 y la central Hidrosogamoso
-imagenPie: La central Hidrosogamoso, en Santander, es una de las plantas que
-  XM identifica entre las que podrían operar por debajo de su mínimo
-  histórico si se repite una hidrología tan seca como la de 1991-1993.
+imagenPie: La central Hidrosogamoso, en Santander, es una de las plantas que XM
+  identifica entre las que podrían operar por debajo de su mínimo histórico si
+  se repite una hidrología tan seca como la de 1991-1993.
 imagenCredito: Archivo particular
 tags: noticias
 ---
@@ -27,10 +26,10 @@ El sistema entra a esta temporada seca con los embalses del país al **60,51% de
 
 XM no atribuye el riesgo solo al clima. Lo explica como la suma de factores que llevan años acumulándose:
 
-- **La demanda eléctrica creció 23,6%** desde diciembre de 2019, y en octubre de 2026 ya se registraron los máximos históricos: **266,56 GWh/día** de demanda y **12.706 MW** de potencia en un mismo periodo.
-- **La energía firme disponible no alcanza a cubrir ese crecimiento.** El faltante proyectado es de **4.979 GWh al año** en 2025-2026 y sube a **7.669 GWh** en 2026-2027, con una tendencia a seguir creciendo hacia 2029-2030.
-- **La mitad de los proyectos de transmisión del país están atrasados** frente a la fecha en que debían entrar en operación.
-- La capacidad de los embalses para regular el sistema, medida en días de respaldo frente a la demanda, **viene en descenso desde 2002**.
+* **La demanda eléctrica creció 23,6%** desde diciembre de 2019, y en octubre de 2026 ya se registraron los máximos históricos: **266,56 GWh/día** de demanda y **12.706 MW** de potencia en un mismo periodo.
+* **La energía firme disponible no alcanza a cubrir ese crecimiento.** El faltante proyectado es de **4.979 GWh al año** en 2025-2026 y sube a **7.669 GWh** en 2026-2027, con una tendencia a seguir creciendo hacia 2029-2030.
+* **La mitad de los proyectos de transmisión del país están atrasados** frente a la fecha en que debían entrar en operación.
+* La capacidad de los embalses para regular el sistema, medida en días de respaldo frente a la demanda, **viene en descenso desde 2002**.
 
 Es, en palabras de XM, un sistema cuya "confiabilidad y resiliencia... son producto de las acciones de años anteriores" —una forma de decir que lo que no se construyó a tiempo se nota justo cuando más se necesita.
 
@@ -40,14 +39,14 @@ Los aportes hídricos no se reparten igual entre regiones. Al 22 de octubre, fre
 
 <div class="tabla-wrap">
 
-| Región | Aportes vs. histórico |
-| --- | --- |
-| Antioquia | 46,76% |
-| Oriente | 69,44% |
-| Caldas | 62,09% |
-| Valle | 79,73% |
-| Centro | 84,20% |
-| Caribe | 83,86% |
+| Región    | Aportes vs. histórico |
+| --------- | --------------------- |
+| Antioquia | 46,76%                |
+| Oriente   | 69,44%                |
+| Caldas    | 62,09%                |
+| Valle     | 79,73%                |
+| Centro    | 84,20%                |
+| Caribe    | 83,86%                |
 
 </div>
 
@@ -65,6 +64,6 @@ Dicho sin tecnicismos: la región depende de que su propia generación y sus lí
 
 ## Lo que ya se siente, y lo que viene
 
-Este portal ya había explicado cómo El Niño [le pasa la cuenta a la factura de luz en Santander](/noticias/fenomeno-nino-santander-2026/), y cómo ESSA [activó un programa de incentivos](/noticias/essa-modo-ahorro-meta-individual-nino/) para que cada usuario modere su consumo frente a esta misma temporada. El boletín de XM es la confirmación, desde el operador del sistema, de que esa cautela tiene una base técnica real: no se trata de un llamado genérico al ahorro, sino de un sistema que XM mismo describe en "riesgo alto" de no poder atender la demanda con la holgura habitual.
+Este portal ya había explicado cómo El Niño [le pasa la cuenta a la factura de luz en Santander](/noticias/fenomeno-nino-santander-2026/), y cómo ESSA [activó un programa de incentivos](/noticias/essa-modo-ahorro-meta-individual-nino/) para que cada usuario modere su consumo frente a esta misma temporada. 
 
-*Fuente: XM, Boletín Energético #365, publicado el 23 de octubre de 2026, con información de aportes hídricos actualizada al 22 de octubre. La calificación de "intensidad muy fuerte" para El Niño 2026-2027 y el "riesgo alto" para el verano 2026-2027 son categorías del propio boletín de XM; la denominación "Súper Niño" que ha circulado en medios y organizaciones ambientales desde mediados de 2026 no aparece en el documento de XM y se usa aquí solo como contexto, no como cita textual de la entidad.*
+El boletín de XM es la confirmación, desde el operador del sistema, de que esa cautela tiene una base técnica real: no se trata de un llamado genérico al ahorro, sino de un sistema que XM mismo describe en "riesgo alto" de no poder atender la demanda con la holgura habitual.
