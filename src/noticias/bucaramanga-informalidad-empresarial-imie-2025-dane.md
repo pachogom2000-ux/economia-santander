@@ -1,17 +1,16 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Bucaramanga: 82,6% de sus micronegocios es informal"
-date: 2026-10-30T07:00:00.000-05:00
+date: 2026-10-29T07:00:00.000-05:00
 categoria: Emprendimiento y pymes
 chipTipo: recirc
 chipLabel: "Fuente: DANE"
-excerpt: "El 82,6% de los micronegocios de Bucaramanga es informal, según el
-  DANE, casi empatado con Bogotá (82,2%). Cúcuta está nueve puntos por
-  detrás."
+excerpt: El 82,6% de los micronegocios de Bucaramanga es informal, según el
+  DANE, casi empatado con Bogotá (82,2%). Cúcuta está nueve puntos por detrás.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/comercio-bucarama.jpg
-imagenAlt: Comercio informal en una calle de Bucaramanga
+imagen: /assets/uploads/empleo-formal-bucaramanga-area-metropolitana-2026.jpg
+imagenAlt: Comercio informal en Bucaramanga
 imagenTitle: Índice Multidimensional de Informalidad Empresarial en Bucaramanga
 imagenPie: El Índice Multidimensional de Informalidad Empresarial (IMIE) 2025
   del DANE ubica a Bucaramanga y su área metropolitana en 82,6%.
@@ -44,6 +43,6 @@ Y por trámite específico, lo que más falla es la **declaración de ICA (94,1%
 
 ## El contexto en Santander
 
-Este portal ya ha documentado varias piezas de este mismo rompecabezas: la [alta tasa de mortalidad de empresas nuevas en el departamento](/noticias/emprendimiento-pymes-bucaramanga-2026/) —solo 34% de las 13.674 creadas en el último registro sigue viva— y la [caída de las licencias de construcción en Bucaramanga](/noticias/licencias-construccion-bucaramanga-crecen/), un sector que a nivel nacional figura entre los más informales del país. El dato del IMIE no explica por sí solo esas dos tendencias, pero sí confirma que buena parte del tejido empresarial de la región arranca, o sobrevive, por fuera de las reglas formales.
+Este portal ya ha documentado varias piezas de este mismo rompecabezas: la [alta tasa de mortalidad de empresas nuevas en el departamento](/noticias/emprendimiento-pymes-bucaramanga-2026/) —solo 34% de las 13.674 creadas en el último registro sigue viva— y la [caída de las licencias de construcción en Bucaramanga](/noticias/licencias-construccion-bucaramanga-crecen/), un sector que a nivel nacional figura entre los más informales del país. 
 
-*Fuente: DANE, Boletín técnico "Índice Multidimensional de Informalidad Empresarial (IMIE) 2025", publicado el 27 de octubre de 2026, con base en la Encuesta de Micronegocios (EMICRON). El índice cubre las 24 ciudades principales y sus áreas metropolitanas; para Santander, el dominio corresponde a Bucaramanga, Girón, Piedecuesta y Floridablanca, y no incluye al resto del departamento.*
+El dato del IMIE no explica por sí solo esas dos tendencias, pero sí confirma que buena parte del tejido empresarial de la región arranca, o sobrevive, por fuera de las reglas formales.
