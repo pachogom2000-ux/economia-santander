@@ -1,25 +1,30 @@
 ---
 layout: noticia.njk
+eleventyExcludeFromCollections: false
 title: "Lluvias en Santander: 11 familias afectadas en Zapatoca"
-date: 2026-10-30T09:00:00.000-05:00
+date: 2026-10-30T06:46:00.000-05:00
 categoria: Agro
 chipTipo: recirc
 chipLabel: "Fuente: OGRD Santander"
-excerpt: "El colapso del alcantarillado inundó el casco urbano de Zapatoca. También llueve en Barrancabermeja, Puerto Wilches y Sabana de Torres, según la OGRD."
+excerpt: El colapso del alcantarillado inundó el casco urbano de Zapatoca.
+  También llueve en Barrancabermeja, Puerto Wilches y Sabana de Torres, según la
+  OGRD.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/pronostico-lluvias-ideam-30-octubre-2026.png
-imagenAlt: Mapa del IDEAM con el pronóstico de lluvias en Colombia para la tarde y la noche del 30 de octubre de 2026
+imagen: /assets/uploads/portada-lluvias-30-de-oct.webp
+imagenAlt: Lluvias en Santander dejan balance de 11 familias afectadas
 imagenTitle: Pronóstico de precipitación del IDEAM, 30 de octubre de 2026
-imagenPie: "Pronóstico de lluvia acumulada en seis horas para la tarde y la noche de este viernes."
+imagenPie: Pronóstico de lluvia acumulada en seis horas para la tarde y la noche
+  de este viernes.
 imagenCredito: IDEAM
 tags: noticias
-eleventyExcludeFromCollections: true
 ---
 Once familias de **Zapatoca** resultaron afectadas por inundaciones en el casco urbano tras las fuertes lluvias de la madrugada de este viernes **30 de octubre**. Así lo reporta el balance de la **Oficina para la Gestión del Riesgo de Desastres (OGRD)** de la Gobernación de Santander.
 
 El agua se acumuló en la **calle 10 con carrera 15** por el **colapso del sistema de alcantarillado**. Las familias reportan daños en muebles y enseres, según el reporte preliminar.
 
 Además, la quebrada **La Uchuala** registra una creciente. La atención está a cargo del **Cuerpo de Bomberos de Zapatoca** y del **Consejo Municipal de Gestión del Riesgo de Desastres (CMGRD)**.
+
+https://economiasantander.com/multimedia/lluvias-santander-30-de-octubre/
 
 ## ¿Dónde llueve hoy en Santander?
 
@@ -30,6 +35,8 @@ El departamento amaneció con lluvias en cuatro municipios: **Puerto Wilches, Ba
 ## ¿Qué dice el pronóstico del IDEAM?
 
 Para el resto de la jornada, el **IDEAM** prevé cielos parcialmente cubiertos, con probabilidad de lluvias hacia el final del día.
+
+![](/assets/uploads/pronostico-lluvias-ideam-30-octubre-2026.png)
 
 La OGRD pide especial atención en la provincia de **García Rovira**, ante la posibilidad de nuevas precipitaciones.
 
