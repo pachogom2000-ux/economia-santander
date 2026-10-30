@@ -1,20 +1,22 @@
 ---
 layout: noticia.njk
-title: "Economía de Santander creció 2,9%, pero el país aceleró más"
-date: 2026-10-30T12:00:00.000-05:00
+eleventyExcludeFromCollections: false
+title: Economía de Santander creció 2,9%, pero el país aceleró más
+date: 2026-10-30T07:01:00.000-05:00
 categoria: Indicadores económicos
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "Santander creció 2,9% en el segundo trimestre, por debajo del 3,6% nacional. En el semestre va en 3,0% y supera al país, según el ITAED del DANE."
+excerpt: Santander creció 2,9% en el segundo trimestre, por debajo del 3,6%
+  nacional. En el semestre va en 3,0% y supera al país, según el ITAED del DANE.
 autor: Francisco Gómez - Director
-# [VERIFICAR: foto provisional; es la misma de la nota del PIB de Santander 2025.]
-imagen: /assets/uploads/pib-santander.webp
+imagen: /assets/uploads/cierre-empresas-bucaramanga.webp
 imagenAlt: Actividad económica en Santander
-imagenTitle: Indicador Trimestral de Actividad Económica Departamental, segundo trimestre de 2026
-imagenPie: "El índice de Santander se ubicó en 123,3 puntos, frente a 127,0 del total nacional (base 2015)."
+imagenTitle: Indicador Trimestral de Actividad Económica Departamental, segundo
+  trimestre de 2026
+imagenPie: El índice de Santander se ubicó en 123,3 puntos, frente a 127,0 del
+  total nacional (base 2015).
 imagenCredito: Archivo particular / Economía Santander
 tags: noticias
-eleventyExcludeFromCollections: true
 ---
 La economía de Santander creció **2,9%** en el segundo trimestre de 2026 frente al mismo periodo de 2025. El país creció **3,6%**, así que el departamento quedó **0,7 puntos porcentuales por debajo** del promedio nacional.
 
@@ -41,23 +43,23 @@ El semestre también es el mejor desde 2022, con **0,9 puntos** más que el de 2
 
 En la parte baja del trimestre y en la alta del semestre. El DANE mide trece departamentos por separado y agrupa al resto del país en un solo bloque.
 
-| Departamento     | Segundo trimestre | Enero-junio |
-| ---------------- | ----------------- | ----------- |
-| Cesar            | 6,8%              | 3,1%        |
-| La Guajira       | 6,7%              | 2,2%        |
-| Resto del país   | 4,5%              | 3,3%        |
-| Bogotá           | 4,3%              | 3,5%        |
-| Valle del Cauca  | 3,7%              | 3,0%        |
-| Boyacá           | 3,6%              | 2,5%        |
-| **Colombia**     | **3,6%**          | **2,9%**    |
-| Cundinamarca     | 3,5%              | 3,0%        |
-| Atlántico        | 3,4%              | 2,6%        |
-| Bolívar          | 3,0%              | 1,7%        |
-| **Santander**    | **2,9%**          | **3,0%**    |
-| Antioquia        | 2,9%              | 2,8%        |
-| Tolima           | 2,0%              | 1,5%        |
-| Meta             | -0,2%             | -0,3%       |
-| Casanare         | -0,7%             | -1,3%       |
+| Departamento    | Segundo trimestre | Enero-junio |
+| --------------- | ----------------- | ----------- |
+| Cesar           | 6,8%              | 3,1%        |
+| La Guajira      | 6,7%              | 2,2%        |
+| Resto del país  | 4,5%              | 3,3%        |
+| Bogotá          | 4,3%              | 3,5%        |
+| Valle del Cauca | 3,7%              | 3,0%        |
+| Boyacá          | 3,6%              | 2,5%        |
+| **Colombia**    | **3,6%**          | **2,9%**    |
+| Cundinamarca    | 3,5%              | 3,0%        |
+| Atlántico       | 3,4%              | 2,6%        |
+| Bolívar         | 3,0%              | 1,7%        |
+| **Santander**   | **2,9%**          | **3,0%**    |
+| Antioquia       | 2,9%              | 2,8%        |
+| Tolima          | 2,0%              | 1,5%        |
+| Meta            | \-0,2%            | \-0,3%      |
+| Casanare        | \-0,7%            | \-1,3%      |
 
 En el trimestre, Santander empató con **Antioquia** y solo superó a **Tolima, Meta y Casanare**. En el semestre, en cambio, es uno de los seis que crecen por encima del país, junto con **Bogotá**, el bloque del resto del país, **Cesar, Cundinamarca** y **Valle del Cauca**.
 
@@ -74,8 +76,6 @@ Es la misma brecha que mostró el PIB anual: un departamento que crece, pero a u
 ## ¿Qué explica el resultado?
 
 El ITAED no lo dice. Es un índice que resume la actividad total de cada departamento y no publica el desglose por sectores.
-
-[VERIFICAR: consultar al Centro de Información Empresarial de la Cámara de Comercio de Bucaramanga qué sectores explican el 2,9% del trimestre y el 3,0% del semestre, y si la construcción, que cayó 5,0% en 2025, sigue restando.]
 
 ## ¿Qué mide el ITAED?
 
