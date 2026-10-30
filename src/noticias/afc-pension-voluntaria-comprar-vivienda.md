@@ -1,25 +1,29 @@
 ---
 layout: noticia.njk
+eleventyExcludeFromCollections: false
 title: "AFC o pensión voluntaria: cuál sirve para comprar vivienda"
 date: 2026-10-30T06:00:00.000-05:00
 categoria: Finanzas personales
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "Las dos bajan el impuesto de renta y se pueden retirar sin castigo para comprar casa. Pero no rinden igual y comparten un tope que pocos calculan bien."
+excerpt: Las dos bajan el impuesto de renta y se pueden retirar sin castigo para
+  comprar casa. Pero no rinden igual y comparten un tope que pocos calculan
+  bien.
 autor: Francisco Gómez - Director
-# [VERIFICAR: falta foto propia de vivienda, mínimo 1200 px. Esta es provisional y ya la usa la nota de CDT.]
-imagen: /assets/uploads/ahorro-cdt-colombia.webp
+imagen: /assets/uploads/firma-de-un-contrato-de-arrendamiento-de-vivienda.webp
 imagenAlt: Ahorro para la compra de vivienda en Colombia
 imagenTitle: Cuenta AFC y fondos de pensiones voluntarias para comprar vivienda
-imagenPie: "Los aportes a AFC y a pensiones voluntarias suman un mismo tope: 30% del ingreso y 3.800 UVT al año."
+imagenPie: "Los aportes a AFC y a pensiones voluntarias suman un mismo tope: 30%
+  del ingreso y 3.800 UVT al año."
 imagenCredito: Archivo particular
 guia: true
 tags: noticias
-eleventyExcludeFromCollections: true
 ---
 Ahorrar para la cuota inicial de una vivienda y pagar menos impuesto de renta al mismo tiempo es posible en Colombia con dos productos: la **cuenta AFC** y los **fondos de pensiones voluntarias**. Los dos permiten restar de la renta hasta el **30% del ingreso**, con un techo de **3.800 UVT al año**.
 
 El creador de contenido **juanpainvierte** los presentó en un video como la salida para quien recibe **$20 millones** y no quiere que se le vayan en impuestos o se le desvaloricen. Guardarlos en efectivo sí es una pérdida segura: con una inflación anual de **6,29%** a septiembre, según el [DANE](https://www.dane.gov.co/index.php/estadisticas-por-tema/precios-y-costos/indice-de-precios-al-consumidor-ipc), esos $20 millones compran hoy lo que $18,8 millones hace un año.
+
+https://www.instagram.com/reels/Ddz3kUBJSYv/
 
 Pero hay dos ideas extendidas que no son exactas. La plata no queda atrapada diez años si va para vivienda. Y el tope de 3.800 UVT no es el que manda para la mayoría de los declarantes.
 
@@ -63,12 +67,12 @@ En ese mismo saco entran la renta exenta del 25% que tienen los asalariados, los
 
 Dentro del cupo, el ahorro depende de su tarifa marginal, según la tabla del [artículo 241](https://estatuto.co/241):
 
-| Base gravable anual | Tarifa marginal | Menos impuesto por cada $1.000.000 aportado |
-| ------------------- | --------------- | ------------------------------------------- |
-| Hasta 1.090 UVT ($57.088.000) | 0% | $0 |
-| De 1.090 a 1.700 UVT | 19% | $190.000 |
-| De 1.700 a 4.100 UVT | 28% | $280.000 |
-| De 4.100 a 8.670 UVT | 33% | $330.000 |
+| Base gravable anual           | Tarifa marginal | Menos impuesto por cada $1.000.000 aportado |
+| ----------------------------- | --------------- | ------------------------------------------- |
+| Hasta 1.090 UVT ($57.088.000) | 0%              | $0                                          |
+| De 1.090 a 1.700 UVT          | 19%             | $190.000                                    |
+| De 1.700 a 4.100 UVT          | 28%             | $280.000                                    |
+| De 4.100 a 8.670 UVT          | 33%             | $330.000                                    |
 
 La primera fila es la que más se olvida. Si su base gravable no pasa de **1.090 UVT**, usted no paga impuesto de renta y la AFC no le ahorra nada: la decisión se reduce a cuál producto rinde más.
 
@@ -76,16 +80,16 @@ Los aportes que haga en 2026 se reflejan en la declaración que presentará en 2
 
 ## AFC o pensión voluntaria: ¿cuál conviene?
 
-|                           | Cuenta AFC                                                 | Pensión voluntaria                                   |
-| ------------------------- | ---------------------------------------------------------- | ---------------------------------------------------- |
-| **Norma**                 | Artículo 126-4                                             | Artículo 126-1                                       |
-| **Dónde se abre**         | Bancos y cooperativas con crédito hipotecario              | Fondos de pensiones y aseguradoras                   |
-| **Dónde va la plata**     | Crédito hipotecario, leasing y títulos de vivienda         | Portafolios según su perfil de riesgo                |
-| **Riesgo**                | Bajo; rinde como una cuenta de ahorros                     | Puede ganar o perder valor                           |
-| **Retiro para vivienda**  | Sin esperar y sin perder el beneficio                      | Sin esperar y sin perder el beneficio                |
-| **Otros retiros sin castigo** | Después de diez años                                   | Diez años, pensión, muerte o incapacidad             |
-| **Retiro sin requisitos** | Pierde el beneficio y retención del 7%                     | Pierde el beneficio y retención del 7%               |
-| **Tope**                  | 30% del ingreso y 3.800 UVT, sumado con pensión voluntaria | 30% del ingreso y 3.800 UVT, sumado con la AFC       |
+|                               | Cuenta AFC                                                 | Pensión voluntaria                             |
+| ----------------------------- | ---------------------------------------------------------- | ---------------------------------------------- |
+| **Norma**                     | Artículo 126-4                                             | Artículo 126-1                                 |
+| **Dónde se abre**             | Bancos y cooperativas con crédito hipotecario              | Fondos de pensiones y aseguradoras             |
+| **Dónde va la plata**         | Crédito hipotecario, leasing y títulos de vivienda         | Portafolios según su perfil de riesgo          |
+| **Riesgo**                    | Bajo; rinde como una cuenta de ahorros                     | Puede ganar o perder valor                     |
+| **Retiro para vivienda**      | Sin esperar y sin perder el beneficio                      | Sin esperar y sin perder el beneficio          |
+| **Otros retiros sin castigo** | Después de diez años                                       | Diez años, pensión, muerte o incapacidad       |
+| **Retiro sin requisitos**     | Pierde el beneficio y retención del 7%                     | Pierde el beneficio y retención del 7%         |
+| **Tope**                      | 30% del ingreso y 3.800 UVT, sumado con pensión voluntaria | 30% del ingreso y 3.800 UVT, sumado con la AFC |
 
 El criterio que más pesa es el plazo. Si la compra va a ser en uno o dos años, la AFC protege la cuota inicial de una caída del mercado justo antes de firmar. Si la fecha de compra no está clara, la pensión voluntaria ofrece más rendimiento posible y sirve también para la vejez si la vivienda no se da.
 
