@@ -24,7 +24,7 @@ El agua se acumuló en la **calle 10 con carrera 15** por el **colapso del siste
 
 Además, la quebrada **La Uchuala** registra una creciente. La atención está a cargo del **Cuerpo de Bomberos de Zapatoca** y del **Consejo Municipal de Gestión del Riesgo de Desastres (CMGRD)**.
 
-/assets/uploads/video-lluvias-santander-30-oct.mp4
+https://economiasantander.com/multimedia/lluvias-santander-30-de-octubre/
 
 ## ¿Dónde llueve hoy en Santander?
 
