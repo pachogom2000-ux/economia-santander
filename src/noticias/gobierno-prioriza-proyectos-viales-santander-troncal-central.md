@@ -9,7 +9,7 @@ chipLabel: "Fuente: ProSantander"
 excerpt: El Gobierno destinó $400.000 millones a terceros carriles y $460.000
   millones a la Troncal Central. El viaje a Bogotá bajaría a 5 horas y media.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/PENDIENTE-troncal-central-45a-santander.jpg
+imagen: /assets/uploads/vias-en-santander.webp
 imagenAlt: Mapa del corredor San Alberto - Bucaramanga - Zipaquirá, ruta 45A
 imagenTitle: Inversión del Gobierno en la Troncal Central de Santander
 imagenPie: El paquete inmediato para el corredor San Alberto - Bucaramanga -
