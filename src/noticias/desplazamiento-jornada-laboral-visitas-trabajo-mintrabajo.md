@@ -1,16 +1,15 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
-title: "¿Debe pagar usted sus desplazamientos a visitas del trabajo?"
-date: 2026-11-02T10:00:00.000-05:00
+eleventyExcludeFromCollections: false
+title: ¿Debe pagar usted sus desplazamientos a visitas del trabajo?
+date: 2026-11-03T06:00:00.000-05:00
 categoria: Glosario y guías
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: El Ministerio del Trabajo dice que el trayecto de la casa al
-  trabajo no se paga, pero el desplazamiento a una sede distinta por orden
-  del jefe sí.
+excerpt: El Ministerio del Trabajo dice que el trayecto de la casa al trabajo no
+  se paga, pero el desplazamiento a una sede distinta por orden del jefe sí.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/PENDIENTE-desplazamiento-jornada-laboral.jpg
+imagen: /assets/uploads/trabajo-pixabay-firmbee-ux.webp
 imagenAlt: Trabajador revisando su celular en un desplazamiento laboral
 imagenTitle: Cuándo se paga el desplazamiento como parte de la jornada laboral
 imagenPie: El Ministerio del Trabajo distingue entre el trayecto diario a la
@@ -19,6 +18,12 @@ imagenCredito: Archivo particular
 guia: true
 tags: noticias
 ---
+En pandemia, las personas se habituaron a trabajar desde su casa, sin necesidad de acudir a citas con clientes o hacer presencia física en la oficina. Pero después de 2020, volvió todo a su "normalidad", incluyendo las visitas a sedes diferentes a la oficina donde se tiene el trabajo. 
+
+Muchas veces, los empleadores (no directamente la empresa) le exigen a su trabajador, especialmente cuando son asesores comerciales, personas que surten negocios o empleados que graban videos o visitan instituciones como organizaciones o colegios para promocionar servicios, que asuman el transporte de su propio bolsillo. 
+
+Esta práctica, aunque haya vuelto, crea un hueco en el presupuesto del trabajador, que la asume sin protestar, por temor a represalias o que sea despedido. **¿Debe el trabajador asumir de su salario los transportes a visitas que le asignan en el trabajo?** 
+
 La respuesta depende de a dónde lo manden. El trayecto diario de su casa al trabajo no se lo pagan, ni como salario ordinario ni como hora extra, así se demore horas en el trancón. Pero si su jefe lo manda a cumplir una visita o una comisión en una sede distinta a la habitual, ese tiempo sí debe remunerársele. Así lo resolvió el **Ministerio del Trabajo** en un concepto del 12 de mayo de 2025, con el respaldo de una sentencia de la **Corte Suprema de Justicia**.
 
 ## Qué preguntó la ciudadana y qué respondió el Ministerio
@@ -59,13 +64,11 @@ Tampoco define un límite de distancia o de tiempo para que un desplazamiento cu
 
 ## En resumen, para un trabajador en Santander
 
-- El trayecto diario entre su casa y su oficina —en Bucaramanga, Floridablanca, Girón o Piedecuesta— no se paga, exista o no ruta de transporte de la empresa.
-- Si su empleador lo manda a una obra, a una sede distinta o a visitar un cliente fuera de su sitio habitual, ese tiempo de desplazamiento cuenta como jornada ordinaria y debe pagarse, aunque no como hora extra.
-- El transporte y los viáticos son obligaciones aparte; no reemplazan el pago de esas horas.
-- Si hay una controversia puntual sobre su caso, el concepto del Ministerio no la resuelve: corresponde a un juez laboral.
+* El trayecto diario entre su casa y su oficina —en Bucaramanga, Floridablanca, Girón o Piedecuesta— no se paga, exista o no ruta de transporte de la empresa.
+* Si su empleador lo manda a una obra, a una sede distinta o a visitar un cliente fuera de su sitio habitual, ese tiempo de desplazamiento cuenta como jornada ordinaria y debe pagarse, aunque no como hora extra.
+* El transporte y los viáticos son obligaciones aparte; no reemplazan el pago de esas horas.
+* Si hay una controversia puntual sobre su caso, el concepto del Ministerio no la resuelve: corresponde a un juez laboral.
 
 ¿Está buscando trabajo o ya tiene uno y quiere entender mejor sus derechos? Este portal también explicó [cómo armar una hoja de vida que pase el primer filtro en el área metropolitana](/noticias/hoja-de-vida-filtro-empleo-bucaramanga/) y [el calendario de negociación del salario mínimo 2027](/noticias/salario-minimo-2027-calendario-negociacion/).
 
 *Fuentes: Ministerio del Trabajo, concepto radicado 08SE2025120300000022884 del 12 de mayo de 2025; Corte Suprema de Justicia, Sala de Casación Laboral, Sentencia SL3385 de 2022 (M.P. Omar Ángel Mejía Amador); análisis de LegalSAS, "El desplazamiento al lugar de trabajo, ¿hace parte de la jornada de trabajo?", 8 de abril de 2025.*
-
-*[VERIFICAR: no fue posible consultar el artículo de Ámbito Jurídico sobre este mismo tema (la página devolvió error de acceso), así que esta nota no usa esa fuente. Falta también la imagen de portada, pendiente de reemplazar la ruta provisional del campo `imagen`.]*
