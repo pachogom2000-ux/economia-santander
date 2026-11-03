@@ -1,7 +1,7 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
-title: "Gobierno prioriza proyectos viales en Santander"
+eleventyExcludeFromCollections: false
+title: Gobierno prioriza proyectos viales en Santander
 date: 2026-11-03T07:00:00.000-05:00
 categoria: Construcción
 chipTipo: recirc
