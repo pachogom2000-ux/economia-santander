@@ -1,8 +1,8 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Talleres mecánicos: el 60% no lleva cuentas formales"
-date: 2026-11-03T08:00:00.000-05:00
+date: 2026-11-03T07:00:00.000-05:00
 categoria: Emprendimiento y pymes
 chipTipo: recirc
 chipLabel: "Fuente: comunicado de Ingo Taller"
@@ -10,7 +10,7 @@ excerpt: Más del 60% de los micronegocios automotrices no lleva registro de
   ingresos y gastos, según el DANE. Una plataforma colombiana apunta a ese
   vacío.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/PENDIENTE-talleres-mecanicos-gestion.jpg
+imagen: /assets/uploads/taller-mecanico.webp
 imagenAlt: Mecánico revisando el motor de un vehículo en un taller
 imagenTitle: Informalidad en la gestión de los talleres mecánicos en Colombia
 imagenPie: Más del 60% de los micronegocios automotrices con menos de diez
@@ -30,10 +30,10 @@ Esa cifra coincide con un dato oficial. Según la **Encuesta de Micronegocios (E
 
 Ingo Taller dice haber identificado, en talleres y servitecas de varias zonas del país, cuatro fugas que se repiten:
 
-- Mezclar el dinero del taller con los gastos personales.
-- Usar repuestos e insumos que después no quedan en la cuenta final del cliente.
-- Calcular de forma imprecisa las horas de mano de obra.
-- Enfrentar reclamos por acuerdos verbales, sin una orden de servicio que deje constancia de en qué condiciones entró el vehículo.
+* Mezclar el dinero del taller con los gastos personales.
+* Usar repuestos e insumos que después no quedan en la cuenta final del cliente.
+* Calcular de forma imprecisa las horas de mano de obra.
+* Enfrentar reclamos por acuerdos verbales, sin una orden de servicio que deje constancia de en qué condiciones entró el vehículo.
 
 "Durante años le vendieron al mecánico la idea de que un software solo sirve para reportarle a la DIAN o para llenarse de pantallas complejas que solo entiende un contador. Eso ha generado miedo y resistencia en la calle", dijo **Caren Contreras Zapata**, CEO de Mundo Ingo, la empresa detrás de la plataforma.
 
@@ -52,5 +52,3 @@ El área metropolitana de Bucaramanga cerró 2025 con **1.003.067 vehículos reg
 Y la informalidad en la gestión de ese tipo de negocios no es un problema exclusivo de los talleres. El **82,6%** de los micronegocios del área metropolitana de Bucaramanga incumple alguna obligación básica para operar formalmente, según el [Índice Multidimensional de Informalidad Empresarial (IMIE) 2025 del DANE](/noticias/bucaramanga-informalidad-empresarial-imie-2025-dane/), casi empatado con Bogotá. El diagnóstico de Ingo Taller —cartones, cuadernos y cuentas mezcladas— describe, con otro nombre, el mismo fenómeno que ya documentó ese índice.
 
 *Fuentes: comunicado de prensa de Ingo Taller, octubre de 2026; Encuesta de Micronegocios (EMICRON) del DANE, citada en el comunicado; Registro Empresarial de Confecámaras, citado en el comunicado.*
-
-*[VERIFICAR: el 70% de pérdida "por fallas de gestión, no por impuestos" y la meta de vincular 3.000 talleres son cifras y proyecciones de la propia compañía, sin fuente externa que las audite; esta nota las presenta como tales, no como dato verificado por Economía Santander. Falta también la imagen de portada, pendiente de reemplazar la ruta provisional del campo `imagen`.]*
