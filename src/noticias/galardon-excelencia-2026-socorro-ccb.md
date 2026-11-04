@@ -1,20 +1,19 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Galardón a la Excelencia 2026: estos son los ganadores"
 date: 2026-11-04T07:00:00.000-05:00
 categoria: Emprendimiento y pymes
 chipTipo: recirc
 chipLabel: "Fuente: Cámara de Comercio de Bucaramanga"
-excerpt: La Cámara de Comercio premió tres proyectos educativos en El
-  Socorro, la primera vez que el Galardón a la Excelencia sale del área
-  metropolitana.
+excerpt: La Cámara de Comercio premió tres proyectos educativos en El Socorro,
+  la primera vez que el Galardón a la Excelencia sale del área metropolitana.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/PENDIENTE-galardon-excelencia-2026.jpg
+imagen: /assets/uploads/galardon-maestros-ccb.webp
 imagenAlt: Entrega del Galardón a la Excelencia 2026 en El Socorro
 imagenTitle: Galardón a la Excelencia 2026 de la Cámara de Comercio de Bucaramanga
-imagenPie: La decimotercera edición del Galardón a la Excelencia se entregó
-  por primera vez fuera del área metropolitana de Bucaramanga.
+imagenPie: La decimotercera edición del Galardón a la Excelencia se entregó por
+  primera vez fuera del área metropolitana de Bucaramanga.
 imagenCredito: Cámara de Comercio de Bucaramanga
 tags: noticias
 ---
@@ -26,11 +25,11 @@ Tres experiencias pedagógicas de las provincias **Comunera** y **Guanentá** se
 
 <div class="tabla-wrap">
 
-| Lugar | Proyecto | Docente(s) | Institución |
-| --- | --- | --- | --- |
-| 1° | "Cazadores de Semillas" | Mariana Urrea Mejía | IE Paramito (Barichara) |
-| 2° | "Del residuo a la raíz" | Lyzeth Uribe López y Nathalia Acevedo Rojas | Instituto Técnico Isaías Ardila Díaz (Mogotes) |
-| 3° | "Del taller al territorio" | Clodomiro Torres Malaver | Instituto Técnico Industrial del Socorro |
+| Lugar | Proyecto                   | Docente(s)                                  | Institución                                    |
+| ----- | -------------------------- | ------------------------------------------- | ---------------------------------------------- |
+| 1°    | "Cazadores de Semillas"    | Mariana Urrea Mejía                         | IE Paramito (Barichara)                        |
+| 2°    | "Del residuo a la raíz"    | Lyzeth Uribe López y Nathalia Acevedo Rojas | Instituto Técnico Isaías Ardila Díaz (Mogotes) |
+| 3°    | "Del taller al territorio" | Clodomiro Torres Malaver                    | Instituto Técnico Industrial del Socorro       |
 
 </div>
 
@@ -51,7 +50,3 @@ Desde su creación, el Galardón ha recibido más de **350 iniciativas** de doce
 ## El Pacto por la Educación Santander 2030
 
 La CCB enmarcó esta edición dentro del **Pacto por la Educación Santander 2030**, la hoja de ruta con la que la entidad busca articular a gobierno, empresa, academia y sociedad civil alrededor de la innovación pedagógica y el desarrollo del talento de las nuevas generaciones en el departamento.
-
-*Fuente: boletín de prensa de la Cámara de Comercio de Bucaramanga, "Galardón a la Excelencia 2026 llegó al Socorro y reconoció a los maestros que transforman la educación en Santander", 3 de noviembre de 2026.*
-
-*[VERIFICAR: falta la imagen de portada, pendiente de reemplazar la ruta provisional del campo `imagen`.]*
