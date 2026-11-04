@@ -1,19 +1,22 @@
 ---
 layout: noticia.njk
-title: "Desempleo en Bucaramanga sube a 8,5% y cae al quinto lugar"
+eleventyExcludeFromCollections: false
+title: Desempleo en Bucaramanga sube a 8,5% y cae al quinto lugar
 date: 2026-11-04T07:00:00.000-05:00
 categoria: Empleo
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: "El área metropolitana pasó de 7,3% a 8,5% en un trimestre y perdió 9.000 ocupados. El municipio de Bucaramanga bajó a 7,1%: el golpe está en su periferia."
+excerpt: "El área metropolitana pasó de 7,3% a 8,5% en un trimestre y perdió
+  9.000 ocupados. El municipio de Bucaramanga bajó a 7,1%: el golpe está en su
+  periferia."
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/buscar-empleo.webp
+imagen: /assets/uploads/despido-santander.webp
 imagenAlt: Trabajadores en el área metropolitana de Bucaramanga
 imagenTitle: Desempleo en Bucaramanga, trimestre julio-septiembre de 2026
-imagenPie: "Bucaramanga A.M. registró la quinta tasa de desocupación más baja entre 23 ciudades, detrás de Bogotá, Villavicencio, Medellín y Florencia."
+imagenPie: Bucaramanga A.M. registró la quinta tasa de desocupación más baja
+  entre 23 ciudades, detrás de Bogotá, Villavicencio, Medellín y Florencia.
 imagenCredito: Pixabay-Magnetme
 tags: noticias
-eleventyExcludeFromCollections: true
 ---
 El desempleo del área metropolitana de **Bucaramanga** subió a **8,5%** entre julio y septiembre de 2026. Un trimestre antes estaba en **7,3%** y era el más bajo del país, según el boletín del mercado laboral que el **DANE** publicó este 30 de octubre.
 
