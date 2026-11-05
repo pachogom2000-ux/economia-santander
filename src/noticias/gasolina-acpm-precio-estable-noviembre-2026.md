@@ -1,6 +1,6 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Gasolina: Gobierno la congela en Bucaramanga otro mes"
 date: 2026-11-05T07:00:00.000-05:00
 categoria: Indicadores económicos
@@ -13,8 +13,8 @@ autor: Francisco Gómez - Director
 imagen: /assets/uploads/gasolinera-engin-akyurt.webp
 imagenAlt: Estación de servicio en Bucaramanga
 imagenTitle: Precio de la gasolina y el ACPM en Bucaramanga, noviembre de 2026
-imagenPie: El galón de gasolina corriente en Bucaramanga se mantiene en
-  $16.089 por segundo mes consecutivo.
+imagenPie: El galón de gasolina corriente en Bucaramanga se mantiene en $16.089
+  por segundo mes consecutivo.
 imagenCredito: Pixabay-Eryin Akyurt
 tags: noticias
 ---
@@ -26,10 +26,10 @@ Es la segunda vez seguida que el Gobierno Nacional decide no trasladarle a los c
 
 <div class="tabla-wrap">
 
-| Bucaramanga, precio por galón | Octubre | **Noviembre** | Cambio |
-| --- | --- | --- | --- |
-| Gasolina corriente | $16.089 | **$16.089** | Sin cambio |
-| ACPM | $11.364 | **$11.364** | Sin cambio |
+| Bucaramanga, precio por galón | Octubre | **Noviembre** | Cambio     |
+| ----------------------------- | ------- | ------------- | ---------- |
+| Gasolina corriente            | $16.089 | **$16.089**   | Sin cambio |
+| ACPM                          | $11.364 | **$11.364**   | Sin cambio |
 
 </div>
 
@@ -54,5 +54,3 @@ El comunicado no lo garantiza. El Gobierno Nacional dijo que evaluará la contin
 El ACPM, además, lleva congelado en Bucaramanga en **$11.364** desde junio, antes incluso del [terremoto del 10 de agosto](/noticias/santander-decreto-emergencia-terremoto-1348/). El Gobierno ha citado la emergencia como justificación para mantener ese congelamiento en los meses siguientes, pero el precio no se ha movido en cinco meses en total.
 
 *Fuente: Ministerios de Minas y Energía y de Hacienda y Crédito Público, comunicado "En noviembre el Gobierno Nacional mantiene estables los precios de la gasolina y el ACPM", 30 de octubre de 2026.*
-
-*[VERIFICAR: falta la tabla con el detalle del porcentaje de ahorro fiscal mensual acumulado desde agosto y la fórmula exacta de la que depende el precio del etanol, que el comunicado de noviembre no detalla.]*
