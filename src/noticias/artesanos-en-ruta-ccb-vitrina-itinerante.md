@@ -1,6 +1,6 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Artesanos en Ruta: la CCB lleva ferias a 8 municipios"
 date: 2026-11-05T07:00:00.000-05:00
 categoria: Emprendimiento y pymes
@@ -10,8 +10,9 @@ excerpt: La CCB lanza una vitrina itinerante con más de 80 productos de 40
   artesanos de Santander, que recorrerá ocho municipios hasta finales de
   diciembre.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/PENDIENTE-artesanos-en-ruta-ccb.jpg
-imagenAlt: Artesanías exhibidas en la vitrina itinerante de la Cámara de Comercio de Bucaramanga
+imagen: /assets/uploads/artesanias-santander.webp
+imagenAlt: Artesanías exhibidas en la vitrina itinerante de la Cámara de
+  Comercio de Bucaramanga
 imagenTitle: Artesanos en Ruta, vitrina itinerante de la Cámara de Comercio de Bucaramanga
 imagenPie: La estrategia Artesanos en Ruta reunirá más de 80 productos de cerca
   de 40 micro, pequeñas y medianas empresas artesanales de Santander.
