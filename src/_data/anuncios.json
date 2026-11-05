@@ -25,7 +25,7 @@
       "titular": "Pague 2 meses y el tercero va por nuestra cuenta",
       "url": "/pautar/",
       "cta": "Ver la promoción →",
-      "activo": true,
+      "activo": false,
       "tipo": "estandar",
       "etiqueta": "Espacio propio",
       "id": "casa-pauta",
