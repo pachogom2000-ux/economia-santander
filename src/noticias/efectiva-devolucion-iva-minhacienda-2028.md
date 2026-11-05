@@ -1,16 +1,15 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "EfectIVA: así devolverá el Gobierno el IVA sin factura"
 date: 2026-11-05T07:00:00.000-05:00
 categoria: Impuestos y regulación
 chipTipo: recirc
 chipLabel: "Fuente: Ministerio de Hacienda"
-excerpt: El Gobierno devolverá el IVA a 35 millones de colombianos, incluso
-  sin factura electrónica, mediante giros de Prosperidad Social desde enero de
-  2028.
+excerpt: El Gobierno devolverá el IVA a 35 millones de colombianos, incluso sin
+  factura electrónica, mediante giros de Prosperidad Social desde enero de 2028.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/PENDIENTE-efectiva-devolucion-iva.jpg
+imagen: /assets/uploads/facturacion-electronica-dian.webp
 imagenAlt: Persona haciendo compras en un supermercado en Colombia
 imagenTitle: EfectIVA, mecanismo de devolución del IVA del Ministerio de Hacienda
 imagenPie: El mecanismo EfectIVA hace parte del proyecto de Ley de Rescate
@@ -57,5 +56,3 @@ Ni este comunicado ni el resumen previo de la Ley de Rescate mencionan a Santand
 Lo que sí hay son cifras locales para dimensionar el universo de hogares al que un mecanismo como este podría llegar: la pobreza monetaria del área metropolitana de Bucaramanga bajó a **26,7%** en 2025 y la pobreza extrema, a **5,6%**, según el [Informe de Calidad de Vida 2026 de Bucaramanga Metropolitana Cómo Vamos](/noticias/cierre-empresas-amb-2025-icv/). Son los hogares que, en principio, estarían más cerca del tramo de devolución total del 100%, aunque el Gobierno no ha dicho qué indicador usará para focalizar el beneficio.
 
 *Fuente: Ministerio de Hacienda y Crédito Público, comunicado de prensa "Aun sin factura electrónica colombianos de menores ingresos recibirán devolución del IVA, a través de EfectIVA", 4 de noviembre de 2026.*
-
-*[VERIFICAR: el comunicado no precisa el instrumento de focalización socioeconómica, el monto mínimo de devolución para quienes no registran compras, ni el artículo exacto del Proyecto de Ley 477 de 2026 donde queda consignado EfectIVA. Falta también contrastar esta cifra de 35 millones de beneficiarios con el texto oficial en la Gaceta del Congreso, y la imagen de portada, pendiente de reemplazar la ruta provisional del campo `imagen`.]*
