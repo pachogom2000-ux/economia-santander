@@ -1,20 +1,20 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
-title: "PMI industrial de Colombia cae a 51,7 puntos en octubre"
+eleventyExcludeFromCollections: false
+title: PMI industrial de Colombia cae a 51,7 puntos en octubre
 date: 2026-11-06T07:00:00.000-05:00
 categoria: Indicadores económicos
 chipTipo: recirc
 chipLabel: "Fuente: Davivienda - S&P Global"
 excerpt: La industria colombiana se desaceleró en octubre y el empleo
-  manufacturero cayó por primera vez en siete meses, según el PMI de
-  Davivienda y S&P Global.
+  manufacturero cayó por primera vez en siete meses, según el PMI de Davivienda
+  y S&P Global.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/PENDIENTE-pmi-industrial-colombia.jpg
+imagen: /assets/uploads/cierre-empresas-bucaramanga.webp
 imagenAlt: Planta de manufactura en Colombia
 imagenTitle: Índice PMI del sector industrial colombiano, octubre de 2026
-imagenPie: El índice PMI de Davivienda y S&P Global señaló la mejora más
-  débil en las condiciones operativas de la industria colombiana desde abril.
+imagenPie: El índice PMI de Davivienda y S&P Global señaló la mejora más débil
+  en las condiciones operativas de la industria colombiana desde abril.
 imagenCredito: Davivienda - S&P Global
 tags: noticias
 ---
@@ -46,8 +46,6 @@ Cristancho atribuyó el freno a varios factores a la vez: **"el impacto del terr
 
 El PMI es un índice nacional: la encuesta no se desagrega por departamento, así que no hay forma de saber, con este dato, cómo le fue a la industria santandereana específicamente en octubre.
 
-Sí hay dos puntos de referencia ya documentados por este portal que ayudan a situar el momento. El **terremoto del 10 de agosto**, que Cristancho cita como uno de los factores detrás del freno industrial y la caída del empleo, llevó al Gobierno a declarar la emergencia también en Santander, como se explicó en la nota sobre el [decreto de emergencia](/noticias/santander-decreto-emergencia-terremoto-1348/). Y en el trimestre más reciente con cifras departamentales, abril-junio, la economía de Santander ya **creció por debajo del promedio nacional** (2,9% frente a 3,6%), según el [ITAED del DANE](/noticias/economia-santander-segundo-trimestre-2026-itaed/) — un indicador distinto al PMI, y de un trimestre anterior, pero que muestra al departamento quedándose rezagado frente al país incluso antes de esta desaceleración de octubre.
+Sí hay dos puntos de referencia ya documentados por este portal que ayudan a situar el momento. El **terremoto del 10 de agosto**, que Cristancho cita como uno de los factores detrás del freno industrial y la caída del empleo, llevó al Gobierno a declarar la emergencia también en Santander, como se explicó en la nota sobre el [decreto de emergencia](/noticias/santander-decreto-emergencia-terremoto-1348/). 
 
-*Fuente: Davivienda y S&P Global, comunicado de prensa "Índice Davivienda de Gestión de Compras (PMI) del sector industrial colombiano", con divulgación autorizada el 3 de noviembre de 2026 y datos recopilados entre el 12 y el 22 de octubre de 2026.*
-
-*[VERIFICAR: falta la imagen de portada, pendiente de reemplazar la ruta provisional del campo `imagen`. El comunicado no desagrega el dato por departamento ni por ciudad, así que el impacto específico en Santander queda pendiente de confirmar con fuentes regionales (Cámara de Comercio de Bucaramanga, Fenalco Santander) o con cifras departamentales del DANE cuando estén disponibles.]*
+Y en el trimestre más reciente con cifras departamentales, abril-junio, la economía de Santander ya **creció por debajo del promedio nacional** (2,9% frente a 3,6%), según el [ITAED del DANE](/noticias/economia-santander-segundo-trimestre-2026-itaed/) — un indicador distinto al PMI, y de un trimestre anterior, pero que muestra al departamento quedándose rezagado frente al país incluso antes de esta desaceleración de octubre.
