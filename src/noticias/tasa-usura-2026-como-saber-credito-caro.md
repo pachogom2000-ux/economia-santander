@@ -1,13 +1,12 @@
 ---
 layout: noticia.njk
 title: "Tasa de usura 2026: cómo saber si su crédito está caro"
-date: 2026-11-06T11:00:00.000-05:00
+date: 2026-11-06T06:57:00.000-05:00
 categoria: Educación financiera
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: La usura de noviembre quedó en 28,34% efectivo anual. Cómo convertir
-  la tasa que le cotizaron, con qué techo compararla y qué hacer si se la
-  pasaron.
+excerpt: La usura de noviembre quedó en 28,34% efectivo anual. Cómo convertir la
+  tasa que le cotizaron, con qué techo compararla y qué hacer si se la pasaron.
 autor: Francisco Gómez - Director
 imagen: /assets/uploads/tasa-usura-en-colombia.webp
 imagenAlt: Persona revisando el extracto de un crédito con una calculadora
