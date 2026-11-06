@@ -5,5 +5,6 @@ tipo: video
 descripcion: "Parceros House marca la diferencia, no es otro Airbnb, es un lugar
   donde los huéspedes pueden sentirse como en casa. "
 archivo: /assets/uploads/parceros-house.mp4
-audio: /assets/uploads/parceros-coliving-portada.webp
+audio: ""
+portada: /assets/uploads/parceros-coliving-portada.webp
 ---
