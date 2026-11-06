@@ -38,7 +38,7 @@ Estas son cifras que reporta la propia compañía; Economía Santander no tuvo a
 
 Parceros House opera **siete apartamentos** en Medellín y dice sostener una **ocupación del 70%** desde que abrió, en noviembre de 2023. El equipo, según la empresa, supera las **ocho personas**, todas vinculadas como empleadas.
 
-La compañía atribuye esa ocupación sostenida a que los huéspedes repiten: para los fundadores, la recurrencia es un indicador más relevante que la tasa de ocupación misma, aunque no reportaron una cifra de qué porcentaje de huéspedes vuelve.
+La compañía atribuye esa ocupación sostenida a que los huéspedes repiten: para los fundadores, la recurrencia es un indicador más relevante que la tasa de ocupación misma, aunque no reportaron una cifra de qué porcentaje de huéspedes vuelve. Si quiere seguirlos en sus redes sociales su instagram es [@parceros_house](https://www.instagram.com/parceros_house?mdxt=M2k5YmJrbTk2ODkw) y en Tik Tok aparece como [@parceroshouse.](https://www.tiktok.com/@parceroshouse?_r=1&_t=ZS-9BBB8hqhYAO)
 
 ## De Bucaramanga a Medellín, y después a otras ciudades
 
