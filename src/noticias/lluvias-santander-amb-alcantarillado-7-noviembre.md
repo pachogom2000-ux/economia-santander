@@ -10,7 +10,7 @@ excerpt: El colapso del alcantarillado inundó vías en Floridablanca y
   Bucaramanga, y hay caída de rocas en la vía al aeropuerto y entre Capitanejo y
   Málaga.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/lluvias-7-de-noviembre.webp
+imagen: /assets/uploads/via-bumang-bosconia.webp
 imagenAlt: Inundación por colapso de alcantarillado en Bucaramanga
 imagenTitle: Balance de lluvias en Santander, 7 de noviembre de 2026
 imagenPie: El colapso de alcantarillados en Floridablanca y Bucaramanga
