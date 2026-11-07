@@ -1,16 +1,16 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Lluvias en Santander: colapsa el alcantarillado en el AMB"
 date: 2026-11-07T07:00:00.000-05:00
 categoria: Agro
 chipTipo: recirc
 chipLabel: "Fuente: OGRD Santander"
 excerpt: El colapso del alcantarillado inundó vías en Floridablanca y
-  Bucaramanga, y hay caída de rocas en la vía al aeropuerto y entre
-  Capitanejo y Málaga.
+  Bucaramanga, y hay caída de rocas en la vía al aeropuerto y entre Capitanejo y
+  Málaga.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/PENDIENTE-lluvias-amb-7-noviembre.jpg
+imagen: /assets/uploads/lluvias-7-de-noviembre.webp
 imagenAlt: Inundación por colapso de alcantarillado en Bucaramanga
 imagenTitle: Balance de lluvias en Santander, 7 de noviembre de 2026
 imagenPie: El colapso de alcantarillados en Floridablanca y Bucaramanga
@@ -20,16 +20,18 @@ tags: noticias
 ---
 Santander amaneció este **sábado 7 de noviembre** con lluvias en el Magdalena Medio y afectaciones por el colapso de alcantarillados, inundaciones, caída de rocas y deslizamientos en el área metropolitana de Bucaramanga. Así lo reporta el balance de la **Oficina para la Gestión del Riesgo de Desastres (OGRD)** de la Gobernación de Santander.
 
+![Balance lluvias en Santander 7 de noviembre](/assets/uploads/balance-lluvias-7-de-noviembre.webp "OGRD Santander reporta afectaciones por lluvias este 7 de noviembre")
+
 ## ¿Qué pasó en el área metropolitana?
 
 <div class="tabla-wrap">
 
-| Municipio | Afectación |
-| --- | --- |
-| **Floridablanca** | Colapso del alcantarillado en Cañaveral, sobre la autopista Bucaramanga–Floridablanca |
-| **Bucaramanga** | Colapso del alcantarillado entre El Palenque y Café Madrid, con inundación hacia Centroabastos |
-| **Vía al aeropuerto** | Caída de rocas en el tramo de ascenso |
-| **Girón** | Deslizamientos en la vía hacia Zapatoca, altura del barrio Nuevo Girón |
+| Municipio             | Afectación                                                                                     |
+| --------------------- | ---------------------------------------------------------------------------------------------- |
+| **Floridablanca**     | Colapso del alcantarillado en Cañaveral, sobre la autopista Bucaramanga–Floridablanca          |
+| **Bucaramanga**       | Colapso del alcantarillado entre El Palenque y Café Madrid, con inundación hacia Centroabastos |
+| **Vía al aeropuerto** | Caída de rocas en el tramo de ascenso                                                          |
+| **Girón**             | Deslizamientos en la vía hacia Zapatoca, altura del barrio Nuevo Girón                         |
 
 </div>
 
@@ -55,5 +57,3 @@ El 21 de octubre, la OGRD ya había reportado [una persona desaparecida en Barbo
 La Gobernación de Santander mantiene el seguimiento a las condiciones meteorológicas en articulación con los consejos municipales de gestión del riesgo y los organismos de respuesta.
 
 *Fuente: Oficina para la Gestión del Riesgo de Desastres (OGRD) de la Gobernación de Santander, balance del 7 de noviembre de 2026.*
-
-*[VERIFICAR: falta la imagen de portada, pendiente de reemplazar la ruta provisional del campo `imagen`. El comunicado no precisa si hay personas afectadas, heridos o viviendas con daños estructurales en el área metropolitana; conviene confirmar con la OGRD si hay un balance humano además del de movilidad.]*
