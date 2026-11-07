@@ -1,20 +1,19 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Licencia de paternidad: pocos papás la piden en Colombia"
 date: 2026-11-07T07:00:00.000-05:00
 categoria: Empleo
 chipTipo: recirc
 chipLabel: "Fuente: comunicado de Henkel"
 excerpt: Menos de 50 papás piden la licencia por cada 100 bebés que nacen. En
-  Colombia dura solo dos semanas, frente a las 18 de la licencia de
-  maternidad.
+  Colombia dura solo dos semanas, frente a las 18 de la licencia de maternidad.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/PENDIENTE-licencia-paternidad-colombia.jpg
+imagen: /assets/uploads/papa-y-bebe-pixabay-publicdomainpictures.webp
 imagenAlt: Padre cargando a su bebé recién nacido
 imagenTitle: Brecha en el uso de la licencia de paternidad en Colombia
-imagenPie: En la mayoría de los países de la OCDE, menos de 50 hombres piden
-  la licencia parental por cada 100 bebés que nacen, según la OIT.
+imagenPie: En la mayoría de los países de la OCDE, menos de 50 hombres piden la
+  licencia parental por cada 100 bebés que nacen, según la OIT.
 imagenCredito: Henkel
 tags: noticias
 ---
@@ -30,11 +29,11 @@ La versión colombiana de ese estudio, hecha por **CINDE** y Equimundo con 500 p
 
 <div class="tabla-wrap">
 
-| País | Licencia de paternidad | Uso reportado |
-| --- | --- | --- |
-| **Colombia** | 14 días pagados | Menos de 50 por cada 100 nacimientos (promedio OCDE) |
-| **Estados Unidos** | No es obligatorio pagarla | 80% de los papás tomó algo de tiempo, pero la mitad no pasó de dos semanas |
-| **España** | 17 semanas pagadas, intransferibles | 282.811 papás la usaron en 2025, más que las 241.903 mamás |
+| País               | Licencia de paternidad              | Uso reportado                                                              |
+| ------------------ | ----------------------------------- | -------------------------------------------------------------------------- |
+| **Colombia**       | 14 días pagados                     | Menos de 50 por cada 100 nacimientos (promedio OCDE)                       |
+| **Estados Unidos** | No es obligatorio pagarla           | 80% de los papás tomó algo de tiempo, pero la mitad no pasó de dos semanas |
+| **España**         | 17 semanas pagadas, intransferibles | 282.811 papás la usaron en 2025, más que las 241.903 mamás                 |
 
 </div>
 
@@ -60,8 +59,6 @@ La licencia de paternidad colombiana es de dos semanas desde 2021, cuando la **L
 
 Ni el comunicado de Henkel ni los estudios que cita traen una cifra específica para Santander o Bucaramanga sobre el uso de la licencia de paternidad.
 
-Sí hay un dato que ayuda a dimensionar cuántos padres del área metropolitana podrían, en principio, acceder a ella: la informalidad laboral del área metropolitana de Bucaramanga fue de **42,2%** de los ocupados en el trimestre julio-septiembre de 2026, según [el reporte de desempleo que ya publicó este portal](/noticias/desempleo-bucaramanga-julio-septiembre-2026/) con base en el DANE. Es una cifra mejor que el promedio nacional —donde más de la mitad de los ocupados es informal—, pero de todas formas significa que más de cuatro de cada diez padres trabajadores del área metropolitana quedarían, como el 57% nacional que cita Henkel, por fuera del derecho a pedir la licencia.
+Sí hay un dato que ayuda a dimensionar cuántos padres del área metropolitana podrían, en principio, acceder a ella: la informalidad laboral del área metropolitana de Bucaramanga fue de **42,2%** de los ocupados en el trimestre julio-septiembre de 2026, según [el reporte de desempleo que ya publicó este portal](/noticias/desempleo-bucaramanga-julio-septiembre-2026/) con base en el DANE. 
 
-*Fuente: comunicado de prensa de Henkel, "Menos de 50 padres piden licencia por cada 100 bebés que nacen", noviembre de 2026, con cifras de la Organización Internacional del Trabajo (OIT), Equimundo, CINDE, DANE, ONU Mujeres, Promundo, New America, NORC, American Institute for Boys and Men y el Gobierno de España citadas en el propio comunicado.*
-
-*[VERIFICAR: falta la imagen de portada, pendiente de reemplazar la ruta provisional del campo `imagen`. Las cifras de uso del programa "Bebé Henkel a Bordo" (31 empleados, 19 hombres) son reportadas por la empresa y no fueron verificadas de forma independiente.]*
+Es una cifra mejor que el promedio nacional —donde más de la mitad de los ocupados es informal—, pero de todas formas significa que más de cuatro de cada diez padres trabajadores del área metropolitana quedarían, como el 57% nacional que cita Henkel, por fuera del derecho a pedir la licencia.
