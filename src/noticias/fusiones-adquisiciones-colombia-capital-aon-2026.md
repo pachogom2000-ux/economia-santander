@@ -1,20 +1,20 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Fusiones y adquisiciones: Colombia mueve 59% más capital"
 date: 2026-11-09T07:00:00.000-05:00
 categoria: Inversión
 chipTipo: recirc
 chipLabel: "Fuente: Aon"
 excerpt: Colombia tuvo menos operaciones de fusiones y adquisiciones hasta
-  septiembre, pero el capital movilizado subió 59%, a USD 11.462 millones,
-  dice Aon.
+  septiembre, pero el capital movilizado subió 59%, a USD 11.462 millones, dice
+  Aon.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/PENDIENTE-fusiones-adquisiciones-colombia.jpg
-imagenAlt: Reunión de negocios firmando un acuerdo corporativo
+imagen: /assets/uploads/dolar-pixabay-geralt.webp
+imagenAlt: "imagen relacionada a 59% más en adquisiciones en capital "
 imagenTitle: Mercado de fusiones y adquisiciones en Colombia, tercer trimestre de 2026
-imagenPie: El capital movilizado en fusiones y adquisiciones en Colombia
-  alcanzó los USD 11.462 millones entre enero y septiembre de 2026, según Aon.
+imagenPie: El capital movilizado en fusiones y adquisiciones en Colombia alcanzó
+  los USD 11.462 millones entre enero y septiembre de 2026, según Aon.
 imagenCredito: Aon
 tags: noticias
 ---
@@ -24,12 +24,12 @@ Colombia registró **164 operaciones** de fusiones y adquisiciones entre enero y
 
 <div class="tabla-wrap">
 
-| Tipo de operación | Transacciones | Valor |
-| --- | --- | --- |
-| M&A corporativo tradicional | 91 | USD 5.840 millones |
-| Venture Capital | 33 | USD 640 millones |
-| Adquisición de activos | 23 | USD 2.362 millones |
-| Private Equity | 17 | USD 2.621 millones |
+| Tipo de operación           | Transacciones | Valor              |
+| --------------------------- | ------------- | ------------------ |
+| M&A corporativo tradicional | 91            | USD 5.840 millones |
+| Venture Capital             | 33            | USD 640 millones   |
+| Adquisición de activos      | 23            | USD 2.362 millones |
+| Private Equity              | 17            | USD 2.621 millones |
 
 </div>
 
@@ -64,5 +64,3 @@ Ninguna de las operaciones destacadas por Aon en su reporte tiene activos en San
 Sí hay una coincidencia sectorial que vale la pena señalar: **energías renovables** y **petróleo, gas y combustibles** están entre los subsectores con más operaciones de M&A del país, justo las dos industrias donde Santander intenta atraer inversión. La Cámara de Comercio de Bucaramanga, a través de su [Clúster de Energía](/noticias/cluster-energia-santander-12-iniciativas-priorizadas/), prioriza proyectos de energía en el departamento, y el Gobierno departamental [promueve el fracking](/noticias/fracking-gobernador-santander-1-2-billones/) como fuente de regalías. Ninguna de esas iniciativas santandereanas figura todavía como una transacción cerrada en el radar de Aon, TTR Data o Datasite.
 
 *Fuente: Aon plc, en colaboración con TTR Data y Datasite, "Capital movilizado de fusiones y adquisiciones en Colombia aumentó 59% hasta septiembre", comunicado de prensa, noviembre de 2026.*
-
-*[VERIFICAR: falta la imagen de portada, pendiente de reemplazar la ruta provisional del campo `imagen`. El comunicado no precisa si alguna de las 164 operaciones registradas en Colombia involucra directamente a una empresa con sede en Santander; conviene confirmarlo con Aon, TTR Data o la Cámara de Comercio de Bucaramanga antes de descartarlo del todo.]*
