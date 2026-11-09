@@ -1,16 +1,17 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: Foro debatirá los retos del sector salud en Santander
 date: 2026-11-09T07:00:00.000-05:00
 categoria: Industria
 chipTipo: recirc
 chipLabel: "Fuente: Cámara de Comercio de Bucaramanga"
 excerpt: El sector salud de Santander, con 5.454 empresas y ventas por $9,72
-  billones en 2025, se reúne el 11 de noviembre en el 11.º Foro de Salud de la CCB.
+  billones en 2025, se reúne el 11 de noviembre en el 11.º Foro de Salud de la
+  CCB.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/copagos-salud.webp
-imagenAlt: Médico atiende a un paciente en Santander
+imagen: /assets/uploads/cluster-salud.webp
+imagenAlt: Poster de foro cluster de salud en Santander
 imagenTitle: 11.º Foro de Salud 2026 de la Cámara de Comercio de Bucaramanga
 imagenPie: El Clúster Salud de Santander reúne el 11 de noviembre a clínicas,
   empresas, academia y entidades públicas en CENFER.
