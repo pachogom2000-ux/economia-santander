@@ -1,19 +1,20 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Black Friday 2026: cómo comprar en línea sin caer en fraudes"
 date: 2026-11-09T07:00:00.000-05:00
 categoria: Finanzas personales
 chipTipo: recirc
 chipLabel: "Fuente: ACH Colombia"
 excerpt: El Black Friday será el 27 de noviembre. En el de 2025, PSE registró
-  más de 3,6 millones de pagos. Estas son las claves para comprar sin caer en fraudes.
+  más de 3,6 millones de pagos. Estas son las claves para comprar sin caer en
+  fraudes.
 autor: Francisco Gómez - Director
 imagen: /assets/uploads/celular-tookapic.webp
 imagenAlt: Persona revisa una compra en línea desde el celular
 imagenTitle: Compras seguras en línea durante el Black Friday 2026
-imagenPie: ACH Colombia recomienda entrar siempre a la página oficial del comercio
-  y revisar los datos del pago antes de autorizarlo.
+imagenPie: ACH Colombia recomienda entrar siempre a la página oficial del
+  comercio y revisar los datos del pago antes de autorizarlo.
 imagenCredito: Pixabay - Tookapic. Editada por Economía Santander.
 tags: noticias
 ---
