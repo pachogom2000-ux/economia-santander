@@ -1,0 +1,29 @@
+{# Tres notas del mismo tema al terminar el texto. Va DENTRO del <article>,
+   que ya es .wrap: por eso no lleva su propio .wrap (el padding lateral se
+   duplicaría). Los data-rel y data-pos alimentan el evento clic_relacionada
+   de GA4 (script al final de noticia.njk). #}
+{% if otras and otras.length %}
+<section class="section-block sigue-leyendo" aria-labelledby="sigue-titulo">
+  <div class="section-head">
+    <h2 id="sigue-titulo">Sigue leyendo</h2>
+    <span class="sub">Más sobre este tema</span>
+  </div>
+  <div class="sigue-grid">
+    {% for n in otras %}
+    <a class="sigue-card" href="{{ n.url }}" data-rel="final" data-pos="{{ loop.index }}">
+      <div class="sigue-foto">
+        {% if n.data.imagen %}
+        {# Miniatura de 116 px: pedía el original de hasta 4,5 MB. #}
+        <img src="{{ n.data.imagen }}" alt="" eleventy:widths="240,480" sizes="240px" loading="lazy" decoding="async">
+        {% else %}
+        <span class="sigue-foto-vacia" aria-hidden="true"></span>
+        {% endif %}
+        <span class="sigue-cat">{{ n.data.categoria }}</span>
+      </div>
+      <h3>{{ n.data.title }}</h3>
+      <p class="sigue-fecha">{{ n.data.date | readableDate }}</p>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}

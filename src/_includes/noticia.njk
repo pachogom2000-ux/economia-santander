@@ -95,12 +95,25 @@ ogType: article
   {% set adCierre = anunciosNota[3] %}
   {% endif %}
 
+  {# Notas relacionadas por tema (filtro relacionadasPorTema). La mejor va a
+     media lectura, junto al aviso del cuerpo, y las tres siguientes al final
+     del texto, sin repetir. Si la nota no admite el corte, las tres primeras
+     van al final. Prueba desde el 10 de noviembre de 2026 para subir las
+     páginas por sesión; se mide con el evento clic_relacionada de GA4. #}
+  {# La de media lectura evita las notas que el texto ya enlaza (sería ofrecer
+     dos veces el mismo clic); el bloque final sí puede repetirlas, porque los
+     enlaces dentro de un párrafo casi no se tocan y suelen ser las mejores. #}
+  {% set notaMedio = (collections.noticias | relacionadasPorTema(page.url, categoria, title, excerpt, 1, content))[0] if partible else null %}
+  {% set relacionadas = collections.noticias | relacionadasPorTema(page.url, categoria, title, excerpt, 4) %}
+  {% set otras = (relacionadas | sinUrl(notaMedio.url if notaMedio else "")).slice(0, 3) %}
+
   {% if lateral1 or lateral2 %}
   <div class="noticia-layout">
     <div class="noticia-cuerpo">
       {% if partible %}
       {{ partes[0] | safe }}
       {% set anuncio = adCuerpo %}{% set anuncioCompacto = true %}{% include "anuncio.njk" %}{% set anuncio = null %}
+      {% if notaMedio %}{% include "nota-interes.njk" %}{% endif %}
       {{ partes[1] | safe }}
       {% else %}
       {{ content | safe }}
@@ -116,12 +129,18 @@ ogType: article
     {% if partible %}
     {{ partes[0] | safe }}
     {% set anuncio = adCuerpo %}{% set anuncioCompacto = true %}{% include "anuncio.njk" %}{% set anuncio = null %}
+      {% if notaMedio %}{% include "nota-interes.njk" %}{% endif %}
     {{ partes[1] | safe }}
     {% else %}
     {{ content | safe }}
     {% endif %}
   </div>
   {% endif %}
+
+  {# Al terminar de leer, lo primero que se ve son tres notas del mismo tema.
+     Antes estaban debajo de los botones, de "Volver a la portada" y de un
+     aviso, y en el celular casi nadie llegaba hasta ellas. #}
+  {% include "sigue-leyendo.njk" %}
 
   {% include "compartir.njk" %}
 
@@ -136,39 +155,29 @@ ogType: article
 {% include "anuncio.njk" %}
 {% set anuncio = null %}
 
-{# Al terminar la lectura, tres notas más: primero de la misma categoría. #}
-{% set otras = collections.noticias | relacionadas(page.url, categoria, 3) %}
-{% if otras.length %}
-<section class="section-block wrap sigue-leyendo">
-  <div class="section-head">
-    <h2>Sigue leyendo</h2>
-    <span class="sub">Más de la economía de Santander</span>
-  </div>
-  <div class="sigue-grid">
-    {% for n in otras %}
-    <a class="sigue-card" href="{{ n.url }}">
-      <div class="sigue-foto">
-        {% if n.data.imagen %}
-        {# Miniatura de 116 px: pedía el original de hasta 4,5 MB. #}
-        <img src="{{ n.data.imagen }}" alt="" eleventy:widths="240,480" sizes="240px" loading="lazy" decoding="async">
-        {% else %}
-        <span class="sigue-foto-vacia" aria-hidden="true"></span>
-        {% endif %}
-        <span class="sigue-cat">{{ n.data.categoria }}</span>
-      </div>
-      <h3>{{ n.data.title }}</h3>
-      <p class="sigue-fecha">{{ n.data.date | readableDate }}</p>
-    </a>
-    {% endfor %}
-  </div>
-</section>
-{% endif %}
-
-{# Última posición de la nota: cierre, después de "Sigue leyendo". #}
+{# Última posición de la nota: cierre. #}
 {% set anuncio = adCierre %}
 {% set anuncioCompacto = true %}
 {% include "anuncio.njk" %}
 {% set anuncio = null %}
+
+{# Medición de la prueba de notas relacionadas (desde el 10 de noviembre de
+   2026). Cada clic en "Le puede interesar" o "Sigue leyendo" manda el evento
+   clic_relacionada con su ubicación (medio / final) y su posición. Si el
+   lector no aceptó la medición, gtag solo encola en dataLayer: el script de
+   Google no se carga y no sale nada. #}
+<script>
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[data-rel]');
+    if (!a || typeof window.gtag !== 'function') return;
+    window.gtag('event', 'clic_relacionada', {
+      ubicacion: a.getAttribute('data-rel'),
+      posicion: Number(a.getAttribute('data-pos')) || 0,
+      nota_destino: a.getAttribute('href'),
+      transport_type: 'beacon'
+    });
+  });
+</script>
 
 <script type="application/ld+json">
 {

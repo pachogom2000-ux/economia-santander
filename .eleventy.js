@@ -621,6 +621,76 @@ module.exports = function (eleventyConfig) {
     return mismas.concat(demas).slice(0, cuantas || 3);
   });
 
+  // Notas relacionadas POR TEMA, no solo por sección. Antes, quien leía sobre
+  // la cuenta AFC recibía las tres notas más nuevas de Finanzas personales,
+  // aunque hablaran de otra cosa, y casi nadie pasaba a una segunda nota.
+  // Puntaje: palabras compartidas en título (valen doble) y resumen, un punto
+  // extra por misma sección y un empujón que se apaga con los días para que,
+  // a igual tema, gane la más fresca. Sin ninguna palabra en común, la nota
+  // solo entra de relleno, por sección y fecha, como hacía el filtro anterior.
+  const VACIAS = new Set(("para como cual cuál cuales donde desde entre este esta estos estas " +
+    "pero sobre tras hasta según segun cuando cuanto cuánto porque sus una uno unos unas los las " +
+    "del con por que qué más mas muy sin hay año años ser son fue han hoy ante así santander " +
+    "bucaramanga colombia economía economia").split(/\s+/).map(normalizarBusqueda));
+  const palabrasClave = (texto) => new Set(
+    normalizarBusqueda(texto).split(/[^a-z0-9ñ]+/).filter((w) => w.length >= 4 && !VACIAS.has(w))
+  );
+  // Cada palabra pesa según qué tan rara es en el portal: "comprar" sale en
+  // muchas notas y casi no dice nada del tema; "pensión" o "UVR" sí. Sin este
+  // peso, la nota de la cuenta AFC recomendaba la de Black Friday por
+  // compartir "comprar". Se calcula una vez por colección.
+  const pesosPorLista = new WeakMap();
+  const pesosDe = (lista) => {
+    if (pesosPorLista.has(lista)) return pesosPorLista.get(lista);
+    const df = new Map();
+    for (const p of lista) {
+      for (const w of palabrasClave(`${p.data.title || ""} ${p.data.excerpt || ""}`)) {
+        df.set(w, (df.get(w) || 0) + 1);
+      }
+    }
+    const n = lista.length || 1;
+    const pesos = new Map();
+    for (const [w, c] of df) pesos.set(w, Math.log(n / c));
+    pesosPorLista.set(lista, pesos);
+    return pesos;
+  };
+  // Por debajo de este puntaje, coincidir en una sola palabra común no basta
+  // para llamar a una nota "del mismo tema": entra solo como relleno.
+  const TEMA_MINIMO = 5;
+  // `contenido`: el HTML de la nota. Las notas que el texto ya enlaza (el
+  // "Siga leyendo" escrito a mano, los enlaces internos) no se repiten en las
+  // tarjetas: ese clic ya está ofrecido y la tarjeta se desperdicia.
+  eleventyConfig.addFilter("relacionadasPorTema", (lista, urlActual, categoria, titulo, resumen, cuantas, contenido) => {
+    const yaEnlazadas = String(contenido || "");
+    const enTitulo = palabrasClave(titulo);
+    const enResumen = palabrasClave(resumen);
+    const cat = String(categoria || "").toLowerCase();
+    const ahora = Date.now();
+    const pesos = pesosDe(lista || []);
+    const puntuadas = (lista || [])
+      .filter((p) => p.url !== urlActual && !yaEnlazadas.includes(`href="${p.url}"`))
+      .map((p) => {
+        const suyas = palabrasClave(`${p.data.title || ""} ${p.data.excerpt || ""}`);
+        let tema = 0;
+        for (const w of suyas) {
+          const peso = pesos.get(w) || 0;
+          if (enTitulo.has(w)) tema += 2 * peso;
+          else if (enResumen.has(w)) tema += peso;
+        }
+        if (tema < TEMA_MINIMO) tema = 0;
+        const misma = String(p.data.categoria || "").toLowerCase() === cat ? 1 : 0;
+        const dias = Math.max(0, (ahora - new Date(p.date)) / 864e5);
+        const frescura = 1.5 * Math.exp(-dias / 30);
+        return { p, tema, puntaje: tema + misma + frescura, fecha: new Date(p.date) };
+      });
+    const conTema = puntuadas.filter((x) => x.tema > 0).sort((a, b) => b.puntaje - a.puntaje);
+    const relleno = puntuadas.filter((x) => x.tema === 0).sort((a, b) => b.puntaje - a.puntaje || b.fecha - a.fecha);
+    return conTema.concat(relleno).slice(0, cuantas || 3).map((x) => x.p);
+  });
+
+  // Quita de una lista de notas la que tenga esa URL.
+  eleventyConfig.addFilter("sinUrl", (lista, url) => (lista || []).filter((p) => p.url !== url));
+
   eleventyConfig.addGlobalData("eleventyComputed", {
     // Las fichas de multimedia resumen en `descripcion`, no en `excerpt`: sin
     // esto su meta descripción saldría con el texto genérico del portal.

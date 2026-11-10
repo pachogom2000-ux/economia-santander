@@ -2152,6 +2152,40 @@
     .sigue-cat { display: none; }
   }
 
+  /* Dentro del <article>, que ya es .wrap: menos aire arriba que en portada. */
+  .noticia-articulo .sigue-leyendo { margin-top: 36px; padding-bottom: 8px; }
+
+  /* "Le puede interesar": una nota a media lectura (nota-interes.njk) */
+  .nota-interes { margin: 26px 0; }
+  .nota-interes .nota-interes-enlace {
+    display: flex; align-items: center; gap: 14px;
+    padding: 12px 14px;
+    border: 1px solid var(--line); border-left: 4px solid var(--yellow);
+    border-radius: 8px; background: var(--bg-sunken);
+    text-decoration: none; color: var(--text);
+  }
+  .nota-interes .nota-interes-foto {
+    flex: 0 0 104px; aspect-ratio: 4 / 3; border-radius: 6px; overflow: hidden; display: block;
+  }
+  .nota-interes .nota-interes-foto picture { display: contents; }
+  .nota-interes .nota-interes-foto img {
+    width: 100%; height: 100%; object-fit: cover; display: block; margin: 0; border-radius: 0;
+  }
+  .nota-interes .nota-interes-texto { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+  .nota-interes .nota-interes-etiqueta {
+    font-family: var(--font-display); font-size: 11px; font-weight: 700;
+    letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent);
+  }
+  .nota-interes .nota-interes-titulo {
+    font-family: var(--font-display); font-size: 18px; font-weight: 600; line-height: 1.22;
+  }
+  .nota-interes .nota-interes-enlace:hover .nota-interes-titulo,
+  .nota-interes .nota-interes-enlace:focus-visible .nota-interes-titulo { color: var(--accent); }
+  @media (max-width: 640px) {
+    .nota-interes .nota-interes-foto { flex-basis: 84px; }
+    .nota-interes .nota-interes-titulo { font-size: 16px; }
+  }
+
   /* ==========================================================
      Página del dólar: convertidor, puntas y gráfica
      ========================================================== */

@@ -205,6 +205,17 @@ Está cableada pero **apagada**: `src/_data/publicidad.json` (editable en el CMS
 
 Decap está en `publish_mode: editorial_workflow`. Los guardados van a una rama con pull request, no directo a `main`. Redactar y revisar genera *deploy previews*, que no consumen créditos de Netlify; solo el paso final a "Listo" publica y cuesta un despliegue de producción.
 
+### Prueba de notas relacionadas (desde el 10 de noviembre de 2026)
+
+Objetivo: más páginas por sesión. Antes, "Sigue leyendo" iba debajo de compartir, de "Volver a la portada" y de un aviso, y elegía por sección y fecha.
+
+- **Relación por tema:** filtro `relacionadasPorTema` en `.eleventy.js`. Puntúa por palabras compartidas en título y resumen, pesadas por qué tan raras son en el portal, más misma sección y frescura.
+- **"Le puede interesar"** (`_includes/nota-interes.njk`): una nota a media lectura, justo después del aviso del cuerpo. Solo en notas que admiten el corte. No repite notas que el texto ya enlaza.
+- **"Sigue leyendo"** (`_includes/sigue-leyendo.njk`): ahora va dentro del artículo, justo después del texto.
+- **Medición:** evento `clic_relacionada` de GA4, con `ubicacion` (medio / final) y `posicion`.
+
+Se evalúa una semana. Si no sube la métrica, se revierte con `git revert` del commit "Prueba: notas relacionadas por tema…".
+
 ### Datos editables sin tocar código
 
 `src/_data/picoyplaca.json` guarda los dígitos de la franja superior y se edita desde el CMS, en "Datos del sitio". Medellín rota por semestres y Bucaramanga por trimestres: se añade la rotación nueva con su fecha de inicio y el sitio cambia solo ese día. No borres la anterior.

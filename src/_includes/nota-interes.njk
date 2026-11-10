@@ -1,0 +1,17 @@
+{# "Le puede interesar": una sola nota del mismo tema a media lectura, justo
+   después del aviso del cuerpo. Es un <aside> para que no se lea como parte
+   del texto. Va dentro de .noticia-cuerpo, donde `.noticia-cuerpo img` y los
+   márgenes de los párrafos mandan: por eso los estilos usan dos clases. #}
+<aside class="nota-interes" aria-label="Le puede interesar">
+  <a class="nota-interes-enlace" href="{{ notaMedio.url }}" data-rel="medio" data-pos="1">
+    {% if notaMedio.data.imagen %}
+    <span class="nota-interes-foto">
+      <img src="{{ notaMedio.data.imagen }}" alt="" eleventy:widths="240,480" sizes="120px" loading="lazy" decoding="async">
+    </span>
+    {% endif %}
+    <span class="nota-interes-texto">
+      <span class="nota-interes-etiqueta">Le puede interesar</span>
+      <span class="nota-interes-titulo">{{ notaMedio.data.title }}</span>
+    </span>
+  </a>
+</aside>
