@@ -3,7 +3,7 @@ layout: noticia.njk
 eleventyExcludeFromCollections: false
 title: "Inflación octubre de 6,30%: el dato clave para salario mínimo 2027"
 date: 2026-11-10T07:00:00.000-05:00
-categoria: Finanzas personales
+categoria: Empleo
 chipTipo: propio
 chipLabel: Redacción propia
 excerpt: Con un IPC de 6,30% en octubre de 2026 comienzan las matemáticas para
