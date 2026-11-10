@@ -1,13 +1,14 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
-title: "Salario mínimo 2027: qué sube si el alza es de 8%"
+eleventyExcludeFromCollections: false
+title: "Inflación octubre de 6,30%: el dato clave para salario mínimo 2027"
 date: 2026-11-10T07:00:00.000-05:00
 categoria: Finanzas personales
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: Con un alza de 8%, el mínimo de 2027 llegaría a $1.890.977. Estos son
-  los gastos que suben con el salario y los que suben con la inflación de 6,30%.
+excerpt: Con un IPC de 6,30% en octubre de 2026 comienzan las matemáticas para
+  definir el incremento del salario mínimo de 2027. Los gremios piden que el
+  aumento no supere el 9,5%.
 autor: Francisco Gómez - Director
 imagen: /assets/uploads/peso-colombiano.webp
 imagenAlt: Billetes de pesos colombianos, salario mínimo 2027
@@ -31,13 +32,13 @@ En la otra orilla, la CUT contempla pedir **38,5%**. El plazo para un acuerdo es
 
 <div class="tabla-wrap">
 
-| Concepto | 2026 | 2027 con 8% | 2027 con 9,5% |
-| --- | --- | --- | --- |
-| Salario mínimo mensual | $1.750.905 | **$1.890.977** | $1.917.241 |
-| Aumento mensual | — | **$140.072** | $166.336 |
-| Salario mínimo diario | $58.364 | **$63.033** | $63.908 |
-| Ganancia real frente a IPC nacional (6,30%) | — | **1,6%** | 3,0% |
-| Ganancia real frente a IPC Bucaramanga (7,15%) | — | **0,8%** | 2,2% |
+| Concepto                                       | 2026       | 2027 con 8%    | 2027 con 9,5% |
+| ---------------------------------------------- | ---------- | -------------- | ------------- |
+| Salario mínimo mensual                         | $1.750.905 | **$1.890.977** | $1.917.241    |
+| Aumento mensual                                | —          | **$140.072**   | $166.336      |
+| Salario mínimo diario                          | $58.364    | **$63.033**    | $63.908       |
+| Ganancia real frente a IPC nacional (6,30%)    | —          | **1,6%**       | 3,0%          |
+| Ganancia real frente a IPC Bucaramanga (7,15%) | —          | **0,8%**       | 2,2%          |
 
 </div>
 
@@ -53,16 +54,18 @@ Todo lo que la ley mide en salarios mínimos sube automáticamente el mismo porc
 
 <div class="tabla-wrap">
 
-| Multa general | Salarios diarios | 2026 | 2027 con 8% |
-| --- | --- | --- | --- |
-| Tipo 1 | 4 | $233.454 | **$252.130** |
-| Tipo 2 | 8 | $466.908 | **$504.261** |
-| Tipo 3 | 16 | $933.816 | **$1.008.521** |
-| Tipo 4 | 32 | $1.867.632 | **$2.017.042** |
+| Multa general | Salarios diarios | 2026       | 2027 con 8%    |
+| ------------- | ---------------- | ---------- | -------------- |
+| Tipo 1        | 4                | $233.454   | **$252.130**   |
+| Tipo 2        | 8                | $466.908   | **$504.261**   |
+| Tipo 3        | 16               | $933.816   | **$1.008.521** |
+| Tipo 4        | 32               | $1.867.632 | **$2.017.042** |
 
 </div>
 
-Las **multas de tránsito** ya no siguen ese camino. Aunque el Código de Tránsito las expresa en salarios diarios, desde 2026 se liquidan con la **Unidad de Valor Básico (UVB)**, que se reajusta con la inflación, según la [Secretaría de Movilidad de Bogotá](https://bogota.gov.co/mi-ciudad/movilidad/tarifas-de-servicios-de-movilidad-y-comparendos-en-bogota-2026).
+Las **multas de tránsito** ya no siguen ese camino. Aunque el Código de Tránsito las expresa en salarios diarios, desde 2026 se liquidan con la **Unidad de Valor Básico (UVB)**, que se reajusta con la inflación, según la [Secretaría de Movilidad de Bogotá](https://bogota.gov.co/mi-ciudad/movilidad/tarifas-de-servicios-de-movilidad-y-comparendos-en-bogota-2026). También siguen este valor las tarifas que rigen el SOAT para la prestación de servicios médicos. 
+
+Según un artículo publicado por Siigo, a partir de 2026, el Manual Tarifario SOAT queda indexado al 100 % en UVB. Esto significa que cada procedimiento, suministro o servicio hospitalario tiene un valor fijo en unidades básicas y ya no depende del salario mínimo. **Este cambio, definido en la Circular Externa 047 de 2025, es la norma técnica vigente para esta actualización.** Esta transición permite incrementos tarifarios más moderados y alineados con la inflación técnica, lo que facilita la planeación financiera y reduce distorsiones en los costos operativos.
 
 **Administración de conjuntos: vigilancia y aseo.** La tarifa mínima de vigilancia privada "está indexada directamente al salario mínimo", explicó Fedeseguridad a [La República](https://www.larepublica.co/economia/gremio-de-vigilancia-aclaro-que-sus-tarifas-estan-indexadas-al-salario-minimo-4305771). La fija la Superintendencia de Vigilancia y las asambleas de copropietarios no pueden pactar por debajo.
 
@@ -70,9 +73,9 @@ Un puesto de vigilancia de 24 horas quedó en **9,77 salarios mínimos** en 2026
 
 **Otros valores atados al mínimo:**
 
-- El **salario integral** mínimo, de 13 salarios mínimos: pasaría a **$24.582.701**.
-- La base de cotización mínima a seguridad social de trabajadores **independientes**, que es un salario mínimo.
-- El precio tope de la **vivienda de interés social (VIS)**, que se expresa en salarios mínimos: la misma vivienda VIS sube de precio en 2027.
+* El **salario integral** mínimo, de 13 salarios mínimos: pasaría a **$24.582.701**.
+* La base de cotización mínima a seguridad social de trabajadores **independientes**, que es un salario mínimo.
+* El precio tope de la **vivienda de interés social (VIS)**, que se expresa en salarios mínimos: la misma vivienda VIS sube de precio en 2027.
 
 ## ¿Qué gastos suben con la inflación?
 
