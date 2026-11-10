@@ -1,20 +1,19 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
-title: "Inflación de octubre en Bucaramanga: 7,15%, la segunda"
+eleventyExcludeFromCollections: false
+title: "Inflación de octubre en Bucaramanga: 7,15%, la segunda más alta"
 date: 2026-11-10T07:00:00.000-05:00
 categoria: Indicadores económicos
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: La inflación anual de Bucaramanga subió a 7,15% en octubre y pasó a
-  ser la segunda más alta del país, detrás de Armenia y por delante de
-  Medellín.
+excerpt: La inflación anual de Bucaramanga subió a 7,15% en octubre y pasó a ser
+  la segunda más alta del país, detrás de Armenia y por delante de Medellín.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/mercado-pixabay-vickyhevia.webp
-imagenAlt: Mercado en Bucaramanga con la segunda inflación más alta del país
+imagen: /assets/uploads/empleo-formal-bucaramanga-area-metropolitana-2026.jpg
+imagenAlt: Bucaramanga con la segunda inflación más alta del país
 imagenTitle: Inflación en Bucaramanga en octubre de 2026
-imagenPie: La inflación de Bucaramanga subió en octubre y le quitó a Medellín
-  el segundo puesto entre las ciudades con la inflación más alta del país.
+imagenPie: La inflación de Bucaramanga subió en octubre y le quitó a Medellín el
+  segundo puesto entre las ciudades con la inflación más alta del país.
 imagenCredito: Pixabay Vicky Hevia
 tags: noticias
 ---
