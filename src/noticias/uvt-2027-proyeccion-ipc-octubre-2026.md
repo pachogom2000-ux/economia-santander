@@ -1,16 +1,15 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "UVT 2027: ya se puede proyectar antes de la resolución"
 date: 2026-11-10T07:00:00.000-05:00
 categoria: Impuestos y regulación
 chipTipo: propio
 chipLabel: Redacción propia
 excerpt: La UVT de 2027 se proyecta en $55.684, un 6,32% más, según el IPC de
-  ingresos medios que certificó el DANE. La DIAN confirma el valor en
-  diciembre.
+  ingresos medios que certificó el DANE. La DIAN confirma el valor en diciembre.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/declaracion-impuestos-colombia.webp
+imagen: /assets/uploads/mujer-revisando-facturas-presupuesto-hogar.webp
 imagenAlt: Calculadora y formulario de declaración de renta de la DIAN
 imagenTitle: Proyección de la UVT 2027 con el IPC de octubre de 2026
 imagenPie: La variación del IPC de ingresos medios entre octubre de 2025 y
@@ -33,11 +32,11 @@ Ese mecanismo ya quedó documentado en la [guía sobre cuál UVT aplica en cada 
 
 <div class="tabla-wrap">
 
-| Dato | Valor |
-| --- | --- |
-| UVT 2026 | $52.374 |
-| Variación IPC ingresos medios (clase media), oct. 2025 – oct. 2026 | 6,32% |
-| **UVT 2027 proyectada** | **$55.684** |
+| Dato                                                               | Valor       |
+| ------------------------------------------------------------------ | ----------- |
+| UVT 2026                                                           | $52.374     |
+| Variación IPC ingresos medios (clase media), oct. 2025 – oct. 2026 | 6,32%       |
+| **UVT 2027 proyectada**                                            | **$55.684** |
 
 </div>
 
@@ -52,5 +51,3 @@ Porque buena parte de la planeación tributaria de 2027 —desde qué tanto pued
 Con todo, la cifra sigue siendo una **proyección**, no el valor oficial. La DIAN podría certificar un número con decimales distintos si el DANE ajusta el dato definitivo, y solo la resolución que publique la Dirección de la entidad —antes del 1 de enero de 2027, como exige la norma— fija el valor que de verdad aplicará.
 
 *Fuente: DANE, tabla de "IPC. Variación mensual, año corrido y anual, total y por niveles de ingreso", actualizada el 9 de noviembre de 2026; Estatuto Tributario, artículo 868 (modificado por la Ley 1111 de 2006). El cálculo de la UVT 2027 es de Economía Santander.*
-
-*[VERIFICAR: esta es una proyección con el dato de octubre disponible hoy; confirmar el valor final cuando la DIAN publique la resolución de la UVT 2027, previsiblemente a mediados de diciembre de 2026.]*
