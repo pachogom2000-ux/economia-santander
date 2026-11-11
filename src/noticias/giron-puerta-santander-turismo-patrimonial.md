@@ -1,16 +1,16 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: Girón será la Puerta a Santander el 13 y 14 de noviembre
 date: 2026-11-11T07:00:00.000-05:00
 categoria: Turismo y hotelería
 chipTipo: recirc
 chipLabel: "Fuente: Cámara de Comercio de Bucaramanga"
-excerpt: Girón recibe el 13 y 14 de noviembre La Puerta a Santander, con
-  turismo patrimonial, muestra empresarial y la edición 21 del premio a fachadas y
+excerpt: Girón recibe el 13 y 14 de noviembre La Puerta a Santander, con turismo
+  patrimonial, muestra empresarial y la edición 21 del premio a fachadas y
   puertas.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/turismo-santander.webp
+imagen: /assets/uploads/giron-puerta-santander.webp
 imagenAlt: Turismo patrimonial en Santander
 imagenTitle: La Puerta a Santander, Lugares que Enamoran, en Girón
 imagenPie: El Parque Las Nieves de Girón será la sede de La Puerta a Santander
