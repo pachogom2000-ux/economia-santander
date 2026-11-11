@@ -26,12 +26,14 @@ El objetivo declarado es posicionar a Girón como destino turístico por su arqu
 
 La agenda tiene cuatro partes:
 
-- Un **conversatorio de turismo patrimonial**.
-- Una **vitrina turística**.
-- Una **muestra empresarial y cultural**.
-- La entrega del **Reconocimiento a Fachadas, Puertas y Ventanas**.
+* Un **conversatorio de turismo patrimonial**.
+* Una **vitrina turística**.
+* Una **muestra empresarial y cultural**.
+* La entrega del **Reconocimiento a Fachadas, Puertas y Ventanas**.
 
 Entre los invitados están **Rodolfo Ulloa Vergara**, arquitecto restaurador; **Luis Alejandro Dávila**, exvicepresidente de Turismo de **ProColombia**; el creador de contenido **Viajando Empelota**; y la comediante santandereana **Lina Adarme**. Hablarán de conservación del patrimonio, oportunidades turísticas, marketing digital y cultura.
+
+![](/assets/uploads/programacion-giron-puerta-santander.jpeg)
 
 ## ¿Qué premia el reconocimiento a fachadas?
 
