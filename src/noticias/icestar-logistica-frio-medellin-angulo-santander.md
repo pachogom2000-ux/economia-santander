@@ -1,16 +1,15 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
-title: "IceStar supera US$20 millones en logística de frío"
+eleventyExcludeFromCollections: false
+title: Así se invirtió en un 'supercongelador' para Colombia
 date: 2026-11-11T07:00:00.000-05:00
 categoria: Industria
 chipTipo: recirc
 chipLabel: "Fuente: comunicado de IceStar"
 excerpt: IceStar invirtió más de US$5 millones en un nuevo centro de frío en
-  Medellín, mientras Santander pierde terreno como ruta de exportación
-  agrícola.
+  Medellín, mientras Santander pierde terreno como ruta de exportación agrícola.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/PENDIENTE-icestar-logistica-frio.jpg
+imagen: /assets/uploads/icestar-inversion.webp
 imagenAlt: Centro logístico de almacenamiento a temperatura controlada
 imagenTitle: IceStar, centro logístico de cadena de frío en Medellín
 imagenPie: IceStar invirtió más de US$5 millones en "Medellín II", su nuevo
@@ -34,6 +33,8 @@ Según Moura, Colombia reúne condiciones favorables para este tipo de servicio:
 
 El comunicado de IceStar no menciona a Santander, ni a Bucaramanga, en ningún punto. Toda la inversión que reporta la compañía —los US$20 millones acumulados desde 2023— está en Medellín.
 
+Lo cual no quiere decir que los empresarios de Santander no puedan beneficiarse de este nuevo 'supercongelador'. De hecho, lo productos perecederos podrán ser almancenados en este nuevo centro de frío y aprovechar los servicios de la compañía. 
+
 ## Qué significa para Santander
 
 Nada de esta inversión llega directamente al departamento. Pero la noticia sí importa para Santander, por dos razones que este portal ya documentó con cifras propias.
@@ -45,5 +46,3 @@ La segunda es más preocupante. En agosto de 2026, la **aduana de Bucaramanga** 
 Esa nota ya advertía que cada vez más empresas santandereanas tramitan su salida al exterior por otras aduanas del país. Inversiones como la de IceStar en Medellín —que atiende justo a los sectores de proteínas, frutas y vegetales que produce Santander— son, en parte, la infraestructura hacia la que ese comercio exterior santandereano termina dependiendo, mientras el departamento no desarrolla una capacidad de frío ni una aduana propia comparables.
 
 *Fuente: comunicado de prensa de IceStar, "IceStar supera los US$20 millones de inversión en Colombia tras ampliar su operación logística de frío", noviembre de 2026.*
-
-*[VERIFICAR: falta la imagen de portada, pendiente de reemplazar la ruta provisional del campo `imagen`. El comunicado no precisa si alguno de los clientes de IceStar en Medellín procesa o distribuye productos de origen santandereano; conviene confirmarlo directamente con la compañía antes de presentar esa conexión como un hecho verificado.]*
