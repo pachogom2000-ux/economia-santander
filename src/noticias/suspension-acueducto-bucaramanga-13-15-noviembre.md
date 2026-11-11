@@ -1,6 +1,6 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Sin agua en Bucaramanga: corte afecta a 70 mil usuarios"
 date: 2026-11-11T07:00:00.000-05:00
 categoria: Comercio y consumo
@@ -10,12 +10,11 @@ excerpt: El acueducto se suspende en Bucaramanga del 13 al 15 de noviembre por
   mantenimiento. Afecta a 70 mil usuarios del centro, norte, occidente y
   suroccidente.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/PENDIENTE-suspension-acueducto-bucaramanga.jpg
-imagenAlt: Tanque de almacenamiento de agua potable en Bucaramanga
+imagen: /assets/uploads/grifo-agua.webp
+imagenAlt: Almacenamiento de agua potable en Bucaramanga
 imagenTitle: Suspensión del acueducto en Bucaramanga, 13 al 15 de noviembre de 2026
-imagenPie: El mantenimiento del sistema de bombeo Bosconia-Morro y cinco
-  tanques dejará sin agua a cerca de 70 mil suscriptores durante el fin de
-  semana.
+imagenPie: El mantenimiento del sistema de bombeo Bosconia-Morro y cinco tanques
+  dejará sin agua a cerca de 70 mil suscriptores durante el fin de semana.
 imagenCredito: AMB S.A. ESP
 tags: noticias
 ---
@@ -31,16 +30,16 @@ La suspensión cubre el cuadrante entre la **carrera 22 y la escarpa occidental*
 
 <div class="tabla-wrap">
 
-| Distrito | Algunos barrios afectados |
-| --- | --- |
-| Estadio | Granada, La Feria, Comuneros, Centro, García Rovira, 23 de Junio |
-| Regadero | El Plan, La Esperanza, Regadero Norte, Villa Helena, Villa Rosa |
-| Colorados | Colorados, Villa Patricia, El Rosal, Campestre Norte |
-| Bienestar | Minuto de Dios, Barrio Kennedy, Hospital del Norte, Tejar Norte |
-| Ferrovías | Café Madrid, Ciudadela Café Madrid, Villa Alegría I y II |
-| Betania | Bavaria, San Ignacio Real, Betania |
-| Centro | Alfonso López, La Joya, García Rovira, Cárcel Modelo, Instituto de Medicina Legal |
-| Puerta del Sol y La Iglesia | Ciudadela Real de Minas, Mutis, Ciudad Bolívar, Metrópolis I, Planta Coca-Cola |
+| Distrito                    | Algunos barrios afectados                                                         |
+| --------------------------- | --------------------------------------------------------------------------------- |
+| Estadio                     | Granada, La Feria, Comuneros, Centro, García Rovira, 23 de Junio                  |
+| Regadero                    | El Plan, La Esperanza, Regadero Norte, Villa Helena, Villa Rosa                   |
+| Colorados                   | Colorados, Villa Patricia, El Rosal, Campestre Norte                              |
+| Bienestar                   | Minuto de Dios, Barrio Kennedy, Hospital del Norte, Tejar Norte                   |
+| Ferrovías                   | Café Madrid, Ciudadela Café Madrid, Villa Alegría I y II                          |
+| Betania                     | Bavaria, San Ignacio Real, Betania                                                |
+| Centro                      | Alfonso López, La Joya, García Rovira, Cárcel Modelo, Instituto de Medicina Legal |
+| Puerta del Sol y La Iglesia | Ciudadela Real de Minas, Mutis, Ciudad Bolívar, Metrópolis I, Planta Coca-Cola    |
 
 </div>
 
@@ -59,5 +58,3 @@ La empresa activará carrotanques para usuarios de atención especial en puntos 
 La empresa pide a los usuarios de los sectores afectados **aprovisionarse de agua con anticipación** y hacer un uso racional durante la suspensión, para reducir los inconvenientes del corte.
 
 *Fuente: AMB S.A. ESP, comunicado "Suspensión del servicio de Acueducto en los sectores centro, norte, occidente y suroccidente de Bucaramanga", 10 de noviembre de 2026.*
-
-*[VERIFICAR: falta la imagen de portada, pendiente de reemplazar la ruta provisional del campo `imagen`.]*
