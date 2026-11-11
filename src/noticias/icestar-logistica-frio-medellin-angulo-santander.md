@@ -6,8 +6,9 @@ date: 2026-11-11T07:00:00.000-05:00
 categoria: Industria
 chipTipo: recirc
 chipLabel: "Fuente: comunicado de IceStar"
-excerpt: IceStar invirtió más de US$5 millones en un nuevo centro de frío en
-  Medellín, mientras Santander pierde terreno como ruta de exportación agrícola.
+excerpt: "IceStar invirtió más de US$5 millones en un nuevo centro de frío en
+  Medellín, logrando superar una inversión de $20 millones acumulada en
+  Colombia. "
 autor: Francisco Gómez - Director
 imagen: /assets/uploads/icestar-inversion.webp
 imagenAlt: Centro logístico de almacenamiento a temperatura controlada
