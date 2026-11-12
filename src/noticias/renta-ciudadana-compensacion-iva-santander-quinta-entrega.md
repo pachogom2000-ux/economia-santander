@@ -1,7 +1,7 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
-title: "Renta Ciudadana: Santander recibe $14.335 millones"
+eleventyExcludeFromCollections: false
+title: "Renta Ciudadana: Santander beneficia a más de 33.000 hogares"
 date: 2026-11-12T07:00:00.000-05:00
 categoria: Finanzas personales
 chipTipo: recirc
@@ -10,7 +10,7 @@ excerpt: Prosperidad Social pagará la quinta entrega de Renta Ciudadana y
   compensación del IVA a 33.826 hogares de Santander, entre el 13 y el 28 de
   noviembre.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/PENDIENTE-renta-ciudadana-santander.jpg
+imagen: /assets/uploads/renta-ciudadada-archivo-prosperidad-social.webp
 imagenAlt: Persona revisando un pago de transferencia monetaria en el celular
 imagenTitle: Quinta entrega de Renta Ciudadana y compensación del IVA en Santander
 imagenPie: Prosperidad Social pagará la quinta entrega del ciclo a 33.826
@@ -55,5 +55,3 @@ Prosperidad Social no publicó, en este comunicado, un enlace para que cada hoga
 * Denuncias de corrupción: soytransparente@prosperidadsocial.gov.co
 
 *Fuente: Prosperidad Social, comunicado "En Santander, 33.826 hogares recibirán quinta entrega de Renta Ciudadana y compensación del IVA", 11 de noviembre de 2026.*
-
-*[VERIFICAR: el comunicado no separa cuántos hogares reciben Renta Ciudadana y cuántos la compensación del IVA, ni dentro de Santander cuáles municipios concentran los 33.826 hogares. Tampoco da la cifra nacional de hogares o pesos de esta quinta entrega, necesaria para calcular la participación real de Santander. El promedio de $423.800 por hogar es un cálculo propio sobre el total departamental, no un monto oficial por beneficiario. Falta también la imagen de portada, pendiente de reemplazar la ruta provisional del campo `imagen`.]*
