@@ -18,7 +18,7 @@ imagenPie: Café Yariguies compra el grano directamente a productores
 imagenCredito: Archivo particular
 tags: noticias
 ---
-Cada bolsa de **Café Yariguies** lleva impresa la fecha en que se tostó el grano. Es un detalle pequeño, pero dice mucho de quien la vende: **María Carolina Duarte Escalante** quiere que el cliente sepa que lo que lleva a la mesa salió hace poco del tostador, y de qué tierra viene.
+Cada bolsa de **Café Yariguíes** lleva impresa la fecha en que se tostó el grano. Es un detalle pequeño, pero dice mucho de quien la vende: **María Carolina Duarte Escalante** quiere que el cliente sepa que lo que lleva a la mesa salió hace poco del tostador, y de qué tierra viene.
 
 Esa tierra es Santander. El café se cultiva en zonas como el **Socorro** y se tuesta en **Piedecuesta**. El chocolate que vende al lado sale del trabajo de campesinos de **Rionegro**.
 
@@ -31,6 +31,8 @@ Cada bolsa se vende con cariño y dedicación al agro santandereano, los precios
 * Calidad exportación $45.000 molido o en grano. 
 
 También manejan Chocolate Rio Regional Premium 70% cacao 30% azúcar, presentación por 400 gramos por valor de $11.000. Sin azúcar 100% cacao presentación por 250 gramos, por valor de $18.000. Lo mejor, es a domicilio gratis en Bucaramanga y área metropolitana a partir de 2 unidades. Contacto: WhatsApp 315 284 4292.
+
+![Chocolate Rio de Rionegro Santander](/assets/uploads/chocolate-rio-rionegro.webp "Chocolate Rio de Rionegro Santander")
 
 ## ¿Cómo empezó?
 
