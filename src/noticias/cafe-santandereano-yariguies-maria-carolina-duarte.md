@@ -38,6 +38,8 @@ También manejan Chocolate Rio Regional Premium 70% cacao 30% azúcar, presentac
 
 La historia arrancó en **2022**. "Dios puso en mi camino a las personas indicadas y me permitió emprender una nueva etapa de vida", cuenta.
 
+![Carolina Duarte, emprendedora de Café Yariguíes 100% grano santandereano.](/assets/uploads/cafe-yariguies-2.webp "Carolina Duarte, emprendedora de Café Yariguíes 100% grano santandereano.")
+
 Ese año se vinculó a dos productos que ya existían y de los que hoy habla con orgullo: Café Yariguies y **Chocolate Río Regional Premium**. "Son dos expresiones de la riqueza agrícola y productiva de nuestra región", afirma.
 
 ## ¿Por qué se llama Yariguíes?
