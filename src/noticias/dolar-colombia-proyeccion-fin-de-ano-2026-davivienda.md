@@ -1,16 +1,15 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Dólar: lo que falta por moverlo antes de fin de año"
 date: 2026-11-12T07:00:00.000-05:00
 categoria: Indicadores económicos
 chipTipo: recirc
 chipLabel: "Fuente: Visión Davivienda"
-excerpt: Davivienda proyecta el dólar en $3.276 a cierre de 2026. El peso
-  fuerte ya llevó el déficit comercial a casi USD 20.000 millones en bienes,
-  en un año.
+excerpt: Davivienda proyecta el dólar en $3.276 a cierre de 2026. El peso fuerte
+  ya llevó el déficit comercial a casi USD 20.000 millones en bienes, en un año.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/PENDIENTE-dolar-proyeccion-fin-ano-2026.jpg
+imagen: /assets/uploads/dolar-septiembre.webp
 imagenAlt: Billetes de dólares y pesos colombianos
 imagenTitle: Proyección del dólar en Colombia para el cierre de 2026
 imagenPie: El equipo de Visión Davivienda proyecta la TRM en $3.263 para
@@ -30,7 +29,9 @@ El **oro no monetario** sí creció en volumen: las exportaciones de este produc
 
 ## El turismo tampoco ayuda
 
-La llegada de visitantes extranjeros a Colombia cayó **3,8%** entre enero y septiembre frente al mismo periodo de 2025. En Medellín, un destino tradicional, el retroceso fue de **6,2%**, con caídas puntuales de más de 12% en algunos meses. La ocupación hotelera nacional bajó de 52% a **49,2%** en agosto, con ingresos reales 11,8% menores y 6% menos personal ocupado. El informe atribuye la caída a la misma causa: un peso fuerte encarece, en términos relativos, los bienes y servicios colombianos para el visitante extranjero.
+La llegada de visitantes extranjeros a Colombia cayó **3,8%** entre enero y septiembre frente al mismo periodo de 2025. En Medellín, un destino tradicional, el retroceso fue de **6,2%**, con caídas puntuales de más de 12% en algunos meses. 
+
+La ocupación hotelera nacional bajó de 52% a **49,2%** en agosto, con ingresos reales 11,8% menores y 6% menos personal ocupado. El informe atribuye la caída a la misma causa: un peso fuerte encarece, en términos relativos, los bienes y servicios colombianos para el visitante extranjero.
 
 ## ¿Qué va a mover el dólar hasta fin de año?
 
@@ -57,11 +58,11 @@ Visión Davivienda identifica **$3.150** como una zona de acumulación estratég
 
 <div class="tabla-wrap">
 
-| Mes | TRM proyectada | Banda (95%) |
-| --- | --- | --- |
-| **Noviembre 2026** | **$3.263** | $3.121 – $3.437 |
-| Diciembre 2026 | $3.276 | $3.124 – $3.461 |
-| Enero 2027 | $3.285 | $3.134 – $3.471 |
+| Mes                | TRM proyectada | Banda (95%)     |
+| ------------------ | -------------- | --------------- |
+| **Noviembre 2026** | **$3.263**     | $3.121 – $3.437 |
+| Diciembre 2026     | $3.276         | $3.124 – $3.461 |
+| Enero 2027         | $3.285         | $3.134 – $3.471 |
 
 </div>
 
@@ -72,5 +73,3 @@ La conclusión del informe: pese a episodios transitorios de apreciación del pe
 El informe no trae una cifra específica para Santander, pero el mecanismo que describe —un peso fuerte que le pega al exportador— ya lo documentó este portal con un producto muy santandereano: el **café**. El precio que recibe el caficultor por su carga se mueve todos los días con la bolsa de Nueva York y con el dólar, según se explicó en la nota sobre el [costo de producción y recolección del café en Santander](/noticias/cafe-santander-costo-produccion-recoleccion/). Un dólar más barato significa, en la práctica, menos pesos por la misma carga vendida afuera, mientras los costos de producción en el campo siguen subiendo.
 
 *Fuente: Visión Davivienda, "La fortaleza del peso colombiano aumenta la presión sobre el sector externo", informe del 11 de noviembre de 2026, elaborado por la Dirección de Investigaciones Económicas y de Mercados Financieros de Banco Davivienda, con cifras de Bloomberg, DANE, Banco de la República, MINCIT y Superintendencia Financiera.*
-
-*[VERIFICAR: falta la imagen de portada, pendiente de reemplazar la ruta provisional del campo `imagen`. El informe es de carácter informativo, según su propio aviso legal, y no constituye una recomendación de inversión; esta nota no debe presentarse ni leerse como tal.]*
