@@ -1,16 +1,17 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
-title: "Café 100% santandereano: la apuesta de María Carolina Duarte"
+eleventyExcludeFromCollections: false
+title: "Café 100% santandereano: la apuesta de Carolina Duarte"
 date: 2026-11-12T07:00:00.000-05:00
 categoria: Emprendimiento y pymes
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: María Carolina Duarte vende Café Yariguies, tostado en Piedecuesta con
-  grano del Socorro, y chocolate de Rionegro. Su meta es llevar el campo a la mesa.
+excerpt: María Carolina Duarte vende Café Yariguíes, tostado en Piedecuesta con
+  grano del Socorro, y chocolate de Rionegro. Su meta es llevar el campo a la
+  mesa.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/recolector-de-cafe-en-un-cafetal.webp
-imagenAlt: Recolector de café en un cafetal de Santander
+imagen: /assets/uploads/cafe-yariguies.webp
+imagenAlt: El café Yariguíes rinde homenaje a la tierra santandereana
 imagenTitle: Café Yariguies, café 100% santandereano
 imagenPie: Café Yariguies compra el grano directamente a productores
   santandereanos y lo tuesta en pequeños lotes en Piedecuesta.
@@ -23,13 +24,21 @@ Esa tierra es Santander. El café se cultiva en zonas como el **Socorro** y se t
 
 "Siempre he llevado en mi corazón el deseo de hacer país a través de la comercialización de los productos de nuestra tierra", dice ella. Ese deseo hoy tiene nombre: **Santander Produce**.
 
+Cada bolsa se vende con cariño y dedicación al agro santandereano, los precios de este 100% puro café santandereano, tostado, presentación por 500 gramos son: 
+
+* Molido $22.000.   
+* En grano $25.000. 
+* Calidad exportación $45.000 molido o en grano. 
+
+También manejan Chocolate Rio Regional Premium 70% cacao 30% azúcar, presentación por 400 gramos por valor de $11.000. Sin azúcar 100% cacao presentación por 250 gramos, por valor de $18.000. Lo mejor, es a domicilio gratis en Bucaramanga y área metropolitana a partir de 2 unidades. Contacto: WhatsApp 315 284 4292.
+
 ## ¿Cómo empezó?
 
 La historia arrancó en **2022**. "Dios puso en mi camino a las personas indicadas y me permitió emprender una nueva etapa de vida", cuenta.
 
-Ese año se vinculó a dos productos que ya existían y de los que hoy habla con orgullo: Café Yariguies y **Chocolate Río Regional Premium**. "Son dos expresiones de la riqueza agrícola y productiva de nuestra región", dice.
+Ese año se vinculó a dos productos que ya existían y de los que hoy habla con orgullo: Café Yariguies y **Chocolate Río Regional Premium**. "Son dos expresiones de la riqueza agrícola y productiva de nuestra región", afirma.
 
-## ¿Por qué se llama Yariguies?
+## ¿Por qué se llama Yariguíes?
 
 El nombre rinde homenaje a los **yariguíes**, el pueblo indígena que habitó el occidente de Santander, en tierras que hoy son **Zapatoca, San Vicente de Chucurí, Betulia, Barrancabermeja y Puerto Wilches**.
 
