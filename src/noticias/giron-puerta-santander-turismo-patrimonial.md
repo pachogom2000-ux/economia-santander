@@ -33,7 +33,7 @@ La agenda tiene cuatro partes:
 
 Entre los invitados están **Rodolfo Ulloa Vergara**, arquitecto restaurador; **Luis Alejandro Dávila**, exvicepresidente de Turismo de **ProColombia**; el creador de contenido **Viajando Empelota**; y la comediante santandereana **Lina Adarme**. Hablarán de conservación del patrimonio, oportunidades turísticas, marketing digital y cultura.
 
-![](/assets/uploads/programacion-giron-puerta-santander.jpeg)
+![Programación de La Puerta a Santander en Girón: actividades del viernes 13 y el sábado 14 de noviembre de 2026](/assets/uploads/programacion-giron-puerta-santander.jpeg)
 
 ## ¿Qué premia el reconocimiento a fachadas?
 

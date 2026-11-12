@@ -36,7 +36,7 @@ El departamento amaneció con lluvias en cuatro municipios: **Puerto Wilches, Ba
 
 Para el resto de la jornada, el **IDEAM** prevé cielos parcialmente cubiertos, con probabilidad de lluvias hacia el final del día.
 
-![](/assets/uploads/pronostico-lluvias-ideam-30-octubre-2026.png)
+![Mapa del Ideam con el pronóstico de lluvias en Colombia para la tarde y la noche del 30 de octubre de 2026](/assets/uploads/pronostico-lluvias-ideam-30-octubre-2026.png)
 
 La OGRD pide especial atención en la provincia de **García Rovira**, ante la posibilidad de nuevas precipitaciones.
 

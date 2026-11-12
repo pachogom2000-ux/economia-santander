@@ -34,7 +34,7 @@ Según sus analistas: "el **Banco de la República incrementará su tasa de inte
 
 Para los economistas de Visión Davivienda, la **economía colombiana presenta claras señales de desaceleración** para el segundo semestre de 2026, motivada en un ajuste del gasto público, un consumo privado más débil, una base de comparación más alta y el efecto del terremoto presentado en agosto. 
 
-![](/assets/uploads/tasa-vision-davivienda.webp)
+![Proyección de la tasa de política monetaria hasta diciembre de 2027 según Visión Davivienda, la Encuesta del BanRep y la curva OIS](/assets/uploads/tasa-vision-davivienda.webp)
 
 Señalan que "l**a inflación continuó aumentando en septiembre,** situándose en 6.29%, 5 pbs más alta frente a la observada el mes anterior y esperamos que cierre 2026 en 6.91%. Las **expectativas de inflación se mantienen desancladas para el 2027**, principalmente, por el fenómeno de El Niño y por la indexación de los bienes y servicios de la economía.
 
