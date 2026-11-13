@@ -1,20 +1,20 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
-title: "CCB pide soluciones urgentes a crisis de salud en Santander"
+eleventyExcludeFromCollections: false
+title: CCB pide soluciones urgentes a crisis de salud en Santander
 date: 2026-11-13T07:00:00.000-05:00
 categoria: Industria
 chipTipo: recirc
 chipLabel: "Fuente: Cámara de Comercio de Bucaramanga"
 excerpt: La CCB pidió al Gobierno resolver los problemas estructurales del
-  sector salud en Santander, que factura cerca de $10 billones y genera
-  65.000 empleos.
+  sector salud en Santander, que factura cerca de $10 billones y genera 65.000
+  empleos.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/PENDIENTE-ccb-foro-salud-conclusion-2026.jpg
+imagen: /assets/uploads/11-foro-salud-santander.webp
 imagenAlt: Auditorio de empresarios y profesionales de la salud en un foro
 imagenTitle: Conclusión del 11.º Foro Salud 2026 de la Cámara de Comercio de Bucaramanga
-imagenPie: Más de 300 líderes empresariales, clínicos y académicos asistieron
-  al 11.º Foro Salud 2026 en Cenfer, Bucaramanga.
+imagenPie: Más de 300 líderes empresariales, clínicos y académicos asistieron al
+  11.º Foro Salud 2026 en Cenfer, Bucaramanga.
 imagenCredito: Cámara de Comercio de Bucaramanga
 tags: noticias
 ---
@@ -24,7 +24,7 @@ La **Cámara de Comercio de Bucaramanga (CCB)** le pidió al Gobierno Nacional s
 
 **"Es urgente sentarse con los diferentes actores y llegar a acuerdos que permitan resolver los problemas estructurales del sector, para que esta dinámica tan importante siga creciendo"**, dijo **Juan Carlos Rincón Liévano**, presidente ejecutivo de la CCB, al dirigirse al Gobierno Nacional.
 
-El comunicado no detalla cuáles son esos problemas estructurales ni a qué acuerdos específicos aspira la Cámara.
+Sobre estos problemas puntuales, el dirigente no hizo mención especial, sin embargo, Caracol Radio indicó que las deudas acumuladas de las EPS con las clínicas y las dificultades económicas que enfrenta la FOSCAL encendieron las alertas por el riesgo que representan para la continuidad de los servicios médicos en la región santandereana.
 
 ## ¿Qué tan grande es el sector salud en Santander?
 
