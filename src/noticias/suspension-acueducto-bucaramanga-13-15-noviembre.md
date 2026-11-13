@@ -1,8 +1,8 @@
 ---
 layout: noticia.njk
 eleventyExcludeFromCollections: false
-title: "Sin agua en Bucaramanga: corte afecta a 70 mil usuarios"
-date: 2026-11-11T07:00:00.000-05:00
+title: "Aliste el balde: 70 mil usuarios sin agua hoy en Bucaramanga"
+date: 2026-11-13T07:41:00.000-05:00
 categoria: Comercio y consumo
 chipTipo: recirc
 chipLabel: "Fuente: AMB S.A. ESP"
@@ -28,22 +28,14 @@ La empresa hará mantenimiento al **sistema de bombeo Bosconia-Morro**, ubicado 
 
 La suspensión cubre el cuadrante entre la **carrera 22 y la escarpa occidental**, y entre la **calle 45 y la escarpa norte**, además de los sectores norte, occidente y suroccidente. En total son siete distritos de servicio:
 
-<div class="tabla-wrap">
-
-| Distrito                    | Algunos barrios afectados                                                         |
-| --------------------------- | --------------------------------------------------------------------------------- |
-| Estadio                     | Granada, La Feria, Comuneros, Centro, García Rovira, 23 de Junio                  |
-| Regadero                    | El Plan, La Esperanza, Regadero Norte, Villa Helena, Villa Rosa                   |
-| Colorados                   | Colorados, Villa Patricia, El Rosal, Campestre Norte                              |
-| Bienestar                   | Minuto de Dios, Barrio Kennedy, Hospital del Norte, Tejar Norte                   |
-| Ferrovías                   | Café Madrid, Ciudadela Café Madrid, Villa Alegría I y II                          |
-| Betania                     | Bavaria, San Ignacio Real, Betania                                                |
-| Centro                      | Alfonso López, La Joya, García Rovira, Cárcel Modelo, Instituto de Medicina Legal |
-| Puerta del Sol y La Iglesia | Ciudadela Real de Minas, Mutis, Ciudad Bolívar, Metrópolis I, Planta Coca-Cola    |
-
-</div>
-
-La relación completa de barrios por distrito está en el comunicado oficial de AMB S.A. ESP.
+* **DISTRITO ESTADIO**: Gaitán, Girardot, Granada, La Feria, La Gloria, La Independencia, Modelo, Mutualidad, Nápoles, Nariño, Bosque Norte Alto y Bajo, Nueva Colombia, Pío XII, San Francisco, San Rafael, Santander, Villa Mercedes, Zarabanda, 23 de Junio, Comuneros, Centro, Chapinero, Transición, García Rovira, Regadero Norte, Olas II, El Cinal, San Cristóbal, Camilo Torres, La Cuyanita y la totalidad de las pilas públicas de la zona de escarpa.
+* **DISTRITO REGADERO**: El Plan, La Esperanza I, II y III, José María Córdoba, La Juventud, Lizcano I y II, Paisajes del Norte, Regadero Norte, Los Ángeles, Mirador, Olas Altas, Olas Bajas, San Cristóbal, Transición, Villa Helena, Villa María, Villa Rosa, Altos del Progreso.
+* **DISTRITO COLORADOS:** Colorados, Villa Patricia, Pablón Alto, La Torre, El Rosal, Rosa Alta, Los Palos, Limoncito, Getsemaní, Campestre Norte, Portal de los Ángeles, Barrio Nuevo, La Fortuna, Rosal Norte y El Nogal y pilas públicas del sector.
+* **DISTRITO BIENESTAR:** Colseguros Norte, Minuto de Dios, 23 de Junio, Altos del Kennedy, Altos del Progreso, Balcones del Kennedy, Barrio Kennedy, Miramar, Las Hamacas, María Paz, Miradores del Kennedy, Omaga I y II, Hospital del Norte, Tejar Norte.
+* **DISTRITO FERROVÍAS:** Campo Madrid, Café Madrid, Ciudadela café Madrid, Villas de San Ignacio, Claveriano, Balcones del Kennedy, San Valentín, Villa Alegría II, Olas Bajas, Villa Alegría I, Omaga, Mirador del Kennedy, Viveros de Provenza, Las Hamacas.
+* **DISTRITO BETANIA:** Bavaria, San Ignacio Real, Betania.
+* **DISTRITO CENTRO:** Campo Hermoso, Alfonso López, La Joya, San Miguel, Chorreras de Don Juan, García Rovira, Primero de Mayo, Centro, Santander, 23 de junio, Candiles, Pantanos I, II y III, Don Bosco, Villa Esmeralda, La Palma, Quinta Estrella, Urbanización Villa del Prado, Urbanización Los Búcaros, Cárcel Modelo, Hospital Psiquiátrico San Camilo y el Instituto Medicina Legal.
+* **DISTRITO PUERTA DEL SOL Y LA IGLESIA:** Ciudadela Real de Minas, Mutis, Ciudad Bolívar, Estoraques, Los Canelos, Prados del Mutis, Los Héroes, Monterredondo, Bucaramanga, San Gerardo I, Brisas del Mutis, Manzanares, Metrópolis I, Balconcitos, San Gerardo II, Punta Estrella, Conalvivienda, Centauros, Colombia, Bucaramanga, La Gran Ladera, El Angelino, Nueva Foresta, Ciudadela Verde y Planta Coca Cola.
 
 ## ¿Qué plan de contingencia hay?
 
