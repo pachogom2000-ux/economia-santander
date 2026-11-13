@@ -1,6 +1,6 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Licencia de conducción: cómo renovarla antes de enero"
 date: 2026-11-13T07:00:00.000-05:00
 categoria: Impuestos y regulación
@@ -10,15 +10,18 @@ excerpt: Más de 386.000 licencias de conducción vencen en Colombia entre
   noviembre y diciembre. OlimpIA explica los pasos y plazos para renovarla a
   tiempo.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/PENDIENTE-licencias-conduccion-vencimiento-2026.jpg
+imagen: /assets/uploads/conductor-carro.jpg
 imagenAlt: Conductor revisando la vigencia de su licencia de conducción
-imagenTitle: Vencimiento de licencias de conducción en Colombia, noviembre y diciembre de 2026
-imagenPie: Más de 386.000 licencias de conducción vencen en Colombia antes de
-  la temporada de viajes de fin de año, según OlimpIA.
-imagenCredito: OlimpIA
+imagenTitle: Vencimiento de licencias de conducción en Colombia, noviembre y
+  diciembre de 2026
+imagenPie: Más de 386.000 licencias de conducción vencen en Colombia antes de la
+  temporada de viajes de fin de año, según OlimpIA.
+imagenCredito: Pixabay
 tags: noticias
 ---
-Más de **386.000 licencias de conducción** llegan a su fecha de vencimiento entre **noviembre y diciembre**, justo antes de la temporada de viajes de fin de año, según cifras de **OlimpIA**, empresa de tecnología del Grupo Colpatria. La compañía opera **MiLicencia**, una de las plataformas que usan los Centros de Reconocimiento de Conductores (CRC) del país para agendar las citas del trámite.
+Más de **386.000 licencias de conducción** llegan a su fecha de vencimiento entre **noviembre y diciembre**, justo antes de la temporada de viajes de fin de año, según cifras de **OlimpIA**, empresa de tecnología del Grupo Colpatria. 
+
+La compañía opera **MiLicencia**, una de las plataformas que usan los Centros de Reconocimiento de Conductores (CRC) del país para agendar las citas del trámite.
 
 ## ¿Cómo saber si la licencia está vencida?
 
@@ -43,9 +46,9 @@ La vigencia depende de la edad del conductor y del tipo de servicio:
 <div class="tabla-wrap">
 
 | Tipo de licencia | Menores de 60 años | Entre 60 y 80 años | Mayores de 80 años |
-| ----------------- | ------------------- | -------------------- | --------------------- |
-| Particular         | 10 años              | 5 años                | 1 año                  |
-| Servicio público   | 3 años               | 1 año                 | 1 año                  |
+| ---------------- | ------------------ | ------------------ | ------------------ |
+| Particular       | 10 años            | 5 años             | 1 año              |
+| Servicio público | 3 años             | 1 año              | 1 año              |
 
 </div>
 
