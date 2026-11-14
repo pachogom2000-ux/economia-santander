@@ -1,20 +1,20 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Índice de Competitividad: Bucaramanga lidera el Nororiente"
 date: 2026-11-14T07:00:00.000-05:00
 categoria: Indicadores económicos
 chipTipo: recirc
 chipLabel: "Fuente: Cámara de Comercio de Bucaramanga"
-excerpt: Bucaramanga lidera el Índice de Competitividad Municipal 2025 entre
-  100 municipios del Nororiente, con 5,11 sobre 10, según la CCB.
-  Floridablanca es 13.
+excerpt: Bucaramanga lidera el Índice de Competitividad Municipal 2025 entre 100
+  municipios del Nororiente, con 5,11 sobre 10, según la CCB. Floridablanca es
+  13.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/PENDIENTE-indice-competitividad-municipal-2025.jpg
+imagen: /assets/uploads/panoramica-bucaramanga-archivoparticular-economiasantander.webp
 imagenAlt: Vista panorámica de Bucaramanga y su área metropolitana
 imagenTitle: Índice de Competitividad Municipal 2025 de la Cámara de Comercio de Bucaramanga
-imagenPie: Bucaramanga lidera el ranking del Índice de Competitividad
-  Municipal 2025 entre 100 municipios del Nororiente colombiano.
+imagenPie: Bucaramanga lidera el ranking del Índice de Competitividad Municipal
+  2025 entre 100 municipios del Nororiente colombiano.
 imagenCredito: Cámara de Comercio de Bucaramanga
 tags: noticias
 ---
@@ -32,12 +32,12 @@ El boletín de la CCB destaca en detalle a los cuatro municipios del área metro
 
 <div class="tabla-wrap">
 
-| Municipio | Puesto (de 100) | Puntaje | Pilar más fuerte | Pilar más débil |
-| --------- | ---------------- | ------- | ----------------- | ------------------ |
-| Bucaramanga | 1 | 5,11 | Instituciones (6,63) | — (no se reportó debilidad) |
-| Floridablanca | 13 | — | Instituciones (7,16) | Sistema financiero (2,67) |
-| Girón | 21 | 4,47 | Educación Básica y Media (5,15) | — (no se reportó debilidad) |
-| Piedecuesta | 26 | 4,42 | Instituciones (6,57) | Sistema financiero (2,51) |
+| Municipio     | Puesto (de 100) | Puntaje | Pilar más fuerte                | Pilar más débil             |
+| ------------- | --------------- | ------- | ------------------------------- | --------------------------- |
+| Bucaramanga   | 1               | 5,11    | Instituciones (6,63)            | — (no se reportó debilidad) |
+| Floridablanca | 13              | —       | Instituciones (7,16)            | Sistema financiero (2,67)   |
+| Girón         | 21              | 4,47    | Educación Básica y Media (5,15) | — (no se reportó debilidad) |
+| Piedecuesta   | 26              | 4,42    | Instituciones (6,57)            | Sistema financiero (2,51)   |
 
 </div>
 
@@ -55,8 +55,6 @@ Los dos municipios coinciden en su pilar más frágil: el **sistema financiero**
 
 Ese dato se cruza con otra cifra que ya publicó este portal: el área metropolitana de Bucaramanga registró **8.723 empresas canceladas en 2025**, un **46,2% más** que el año anterior, según el [Informe de Calidad de Vida 2026](/noticias/cierre-empresas-amb-2025-icv/). El ICM no desagrega ese indicador por municipio, pero sí confirma, desde otra fuente, que la dinámica empresarial es uno de los frentes más débiles de la región.
 
-## Lo que el boletín no dice
+De acuerdo con la Cámara de Comercio de Bucaramanga, los resultados del ICM 2025 evidencian la solidez del Área Metropolitana de Bucaramanga como núcleo de competitividad regional. 
 
-La CCB no publicó puntajes generales ni por pilar para los otros 96 municipios medidos, ni el detalle metodológico de cómo se pondera cada uno de los 92 indicadores dentro de los 7 pilares.
-
-*Fuente: Cámara de Comercio de Bucaramanga, boletín de prensa "La Cámara de Comercio de Bucaramanga socializó los resultados del Índice de Competitividad Municipal 2025", 13 de noviembre de 2026.*
+Bucaramanga lidera el ranking general, mientras que Floridablanca, Girón y Piedecuesta consolidan avances significativos en infraestructura, sostenibilidad y educación. "El desafío común radica en fortalecer la productividad empresarial, la innovación y la gestión ambiental como pilares para un desarrollo territorial equilibrado y sostenible", concluye el reporte.
