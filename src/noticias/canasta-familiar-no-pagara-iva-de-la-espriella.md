@@ -1,20 +1,20 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
-title: "Canasta familiar no pagará IVA, promete De la Espriella"
-date: 2026-11-16T08:30:00.000-05:00
+eleventyExcludeFromCollections: false
+title: Canasta familiar no pagará IVA, promete De la Espriella
+date: 2026-11-16T07:18:00.000-05:00
 categoria: Impuestos y regulación
 chipTipo: propio
 chipLabel: Redacción propia
-excerpt: De la Espriella prometió que la canasta familiar no pagará IVA del
-  19%, pero el texto radicado de la Ley de Rescate sí grava varios
-  alimentos.
+excerpt: De la Espriella prometió que la canasta familiar no pagará IVA del 19%,
+  pero el texto radicado de la Ley de Rescate sí grava varios alimentos.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/PENDIENTE-canasta-familiar-iva-de-la-espriella.jpg
+imagen: /assets/uploads/mercado-bucaramanga.webp
 imagenAlt: Canasta de alimentos básicos en un mercado colombiano
-imagenTitle: Promesa de De la Espriella sobre el IVA a la canasta familiar en la Ley de Rescate
-imagenPie: El presidente Abelardo De la Espriella aseguró, en su alocución
-  por los 100 días de Gobierno, que la canasta familiar no pagará IVA.
+imagenTitle: Promesa de De la Espriella sobre el IVA a la canasta familiar en la
+  Ley de Rescate
+imagenPie: El presidente Abelardo De la Espriella aseguró, en su alocución por
+  los 100 días de Gobierno, que la canasta familiar no pagará IVA.
 imagenCredito: Archivo particular
 tags: noticias
 ---
@@ -26,7 +26,9 @@ El presidente **Abelardo De la Espriella** aseguró, en su alocución del doming
 
 ## ¿Qué decía el proyecto antes de este anuncio?
 
-Las fuentes consultadas no coinciden en una sola lista de productos. Según **RCN Radio**, pasarían de excluidos a la tarifa general la miel, el tomate, la cebolla, el repollo, el pepino, otras hortalizas, el coco, el banano, los cítricos, las uvas y la sal, además de semillas y algunos abonos; se mantendrían sin cambio el pescado, los lácteos, el arroz, la papa, la yuca, los granos, el pan y el agua. Según **Publimetro**, citando a Caracol Radio, la lista de productos que subirían a 19% desde enero de 2028 incluye lentejas, fríjoles, garbanzos, tomate, cebolla, zanahoria, algunas frutas, café tostado, azúcar, harinas, pastas y chocolate de mesa, además de fertilizantes, abonos, semillas y plaguicidas.
+Las fuentes consultadas no coinciden en una sola lista de productos. Según **RCN Radio**, pasarían de excluidos a la tarifa general la miel, el tomate, la cebolla, el repollo, el pepino, otras hortalizas, el coco, el banano, los cítricos, las uvas y la sal, además de semillas y algunos abonos; se mantendrían sin cambio el pescado, los lácteos, el arroz, la papa, la yuca, los granos, el pan y el agua. 
+
+Según **Publimetro**, citando a Caracol Radio, la lista de productos que subirían a 19% desde enero de 2028 incluye lentejas, fríjoles, garbanzos, tomate, cebolla, zanahoria, algunas frutas, café tostado, azúcar, harinas, pastas y chocolate de mesa, además de fertilizantes, abonos, semillas y plaguicidas.
 
 Ninguna de las dos listas menciona el **cacao en grano crudo** ni el **café en grano sin tostar**, los dos puntos que esta nota ya había marcado como pendientes de verificar con Fedecacao por su peso en la economía de Santander.
 
