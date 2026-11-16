@@ -1,21 +1,20 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
-title: "Icetex condonará hasta 100% de intereses en mora"
+eleventyExcludeFromCollections: false
+title: Icetex condonará hasta 100% de intereses en mora
 date: 2026-11-16T07:00:00.000-05:00
 categoria: Finanzas personales
 chipTipo: recirc
 chipLabel: "Fuente: Icetex"
-excerpt: Icetex condonará hasta el 100% de los intereses vencidos a quienes
-  se pongan al día entre el 18 y el 30 de noviembre. Aplica a 77.910
-  beneficiarios.
+excerpt: Icetex condonará hasta el 100% de los intereses vencidos a quienes se
+  pongan al día entre el 18 y el 30 de noviembre. Aplica a 77.910 beneficiarios.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/PENDIENTE-icetex-condonacion-intereses-mora.jpg
+imagen: /assets/uploads/icetex-condonara-intereses.webp
 imagenAlt: Estudiante universitario revisando su crédito educativo
 imagenTitle: Condonación de intereses del Icetex para créditos en mora, noviembre de 2026
-imagenPie: Icetex condonará hasta el 100% de los intereses vencidos y
-  moratorios a beneficiarios en mora que se pongan al día entre el 18 y el
-  30 de noviembre de 2026.
+imagenPie: Icetex condonará hasta el 100% de los intereses vencidos y moratorios
+  a beneficiarios en mora que se pongan al día entre el 18 y el 30 de noviembre
+  de 2026.
 imagenCredito: Icetex
 tags: noticias
 ---
