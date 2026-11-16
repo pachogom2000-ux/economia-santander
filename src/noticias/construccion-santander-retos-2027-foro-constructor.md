@@ -1,6 +1,6 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Construcción en Santander: los cuatro retos para 2027"
 date: 2026-11-16T07:00:00.000-05:00
 categoria: Construcción
@@ -9,11 +9,11 @@ chipLabel: "Fuente: Cámara de Comercio de Bucaramanga"
 excerpt: El Foro Constructor marcó cuatro retos para 2027. Santander llega con
   24,2% menos área licenciada en el año, mientras el país creció 11,5% en 2026.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/panoramica-bucaramanga-archivoparticular-economiasantander.webp
-imagenAlt: Vista panorámica de Bucaramanga y su área metropolitana
+imagen: /assets/uploads/foro-construccion-2026.webp
+imagenAlt: "CCB realizó el 13° Foro Constructor "
 imagenTitle: Retos de la construcción en Santander para 2027
-imagenPie: El 13.º Foro Constructor de Santander reunió a más de 400 actores
-  de la cadena de la edificación y la infraestructura.
+imagenPie: El 13.º Foro Constructor de Santander reunió a más de 400 actores de
+  la cadena de la edificación y la infraestructura.
 imagenCredito: "Foto: Archivo particular/Economía Santander."
 tags: noticias
 ---
@@ -64,5 +64,3 @@ En 13 años, la iniciativa de la CCB ejecutó **12 proyectos** con una inversió
 En comercialización, el apoyo a ferias de vivienda permitió mover **77 proyectos**, con ventas por más de **$60.000 millones** y más de 32 empresas participantes. La rueda de negocios reunió a **40 empresas** en **280 citas**.
 
 "Llevamos casi 10 años de trabajo articulado con la Cámara de Comercio en pro del sector constructor, para fortalecer las capacidades de las empresas", dijo **Javier Peñaranda**, gerente de **Camacol Santander**.
-
-*Fuente: Cámara de Comercio de Bucaramanga, boletín de prensa del 13 de noviembre de 2026. Licencias de construcción: DANE, boletín técnico ELIC de agosto de 2026 (15 de octubre de 2026). Las demás cifras provienen de notas anteriores de este portal, con sus fuentes.*
