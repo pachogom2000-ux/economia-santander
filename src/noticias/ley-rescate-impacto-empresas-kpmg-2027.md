@@ -1,28 +1,25 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Ley de Rescate: así deben recalcular las empresas"
 date: 2026-11-17T07:00:00.000-05:00
 categoria: Impuestos y regulación
 chipTipo: recirc
 chipLabel: "Fuente: KPMG"
 excerpt: KPMG advierte que la Ley de Rescate baja la renta corporativa, pero
-  sube el costo de nómina y el IVA de varios servicios empresariales desde
-  2027.
+  sube el costo de nómina y el IVA de varios servicios empresariales desde 2027.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/PENDIENTE-ley-rescate-impacto-empresas-kpmg.jpg
+imagen: /assets/uploads/deducciones-renta.webp
 imagenAlt: Ejecutivos revisando el presupuesto empresarial de una compañía
 imagenTitle: Impacto de la Ley de Rescate Económico en las empresas, según KPMG
-imagenPie: KPMG advierte que la Ley de Rescate combina una menor tarifa de
-  renta con mayores costos de nómina e IVA para las empresas.
+imagenPie: KPMG advierte que la Ley de Rescate combina una menor tarifa de renta
+  con mayores costos de nómina e IVA para las empresas.
 imagenCredito: KPMG
 tags: noticias
 ---
 La tarifa general de renta para las sociedades bajaría de **35% a 33%** en 2027 y a **31%** desde 2028, según el **Proyecto de Ley 477 de 2026** de la **Ley de Rescate Económico**. Pero esa rebaja no se puede leer sola, advierte **KPMG**: el mismo proyecto reduce la exoneración de aportes a nómina y sube el IVA de varios bienes y servicios que las empresas compran para operar.
 
-## ¿Cuándo se radicó el proyecto? Aquí las fechas no cuadran
-
-Según KPMG, el proyecto se radicó el **29 de octubre** en la Cámara de Representantes, con **mensaje de urgencia**. Pero este portal, con base en un boletín de la ANDI, había fechado la radicación en la [primera semana de noviembre](/noticias/ley-rescate-espriella-reforma-tributaria-pendiente/), consistente con lo que había anticipado BBVA Research. Las dos fechas no coinciden, y ninguna de las fuentes consultadas por este portal ha confirmado la fecha exacta contra la Gaceta del Congreso.
+Según KPMG, el proyecto se radicó el **29 de octubre** en la Cámara de Representantes, con **mensaje de urgencia**. 
 
 ## Menor renta, pero más costo de nómina
 
