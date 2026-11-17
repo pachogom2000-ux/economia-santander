@@ -1,20 +1,19 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Ley de Rescate: así deben recalcular las empresas"
 date: 2026-11-17T07:00:00.000-05:00
 categoria: Impuestos y regulación
 chipTipo: recirc
 chipLabel: "Fuente: KPMG"
 excerpt: KPMG advierte que la Ley de Rescate baja la renta corporativa, pero
-  sube el costo de nómina y el IVA de varios servicios empresariales desde
-  2027.
+  sube el costo de nómina y el IVA de varios servicios empresariales desde 2027.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/PENDIENTE-ley-rescate-impacto-empresas-kpmg.jpg
+imagen: /assets/uploads/deducciones-renta.webp
 imagenAlt: Ejecutivos revisando el presupuesto empresarial de una compañía
 imagenTitle: Impacto de la Ley de Rescate Económico en las empresas, según KPMG
-imagenPie: KPMG advierte que la Ley de Rescate combina una menor tarifa de
-  renta con mayores costos de nómina e IVA para las empresas.
+imagenPie: KPMG advierte que la Ley de Rescate combina una menor tarifa de renta
+  con mayores costos de nómina e IVA para las empresas.
 imagenCredito: KPMG
 tags: noticias
 ---
