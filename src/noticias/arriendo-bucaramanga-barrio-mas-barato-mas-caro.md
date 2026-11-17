@@ -1,6 +1,6 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Arriendo en Bucaramanga: el barrio más barato y el más caro"
 date: 2026-11-17T07:00:00.000-05:00
 categoria: Finanzas personales
@@ -9,7 +9,7 @@ chipLabel: Redacción propia
 excerpt: Arrendar un apartamento en Bucaramanga cuesta $2.300.000 al mes en la
   mediana. En Girardot se piden $800.000 y en Antiguo Campestre, $4.874.000.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/arriendo-santander.webp
+imagen: /assets/uploads/arriendo-pixabay-mastersenaiper.webp
 imagenAlt: Pago de arriendo de vivienda en Bucaramanga
 imagenTitle: Arriendo de apartamentos en Bucaramanga por barrio y estrato
 imagenPie: La mediana de los apartamentos en arriendo publicados en Bucaramanga
