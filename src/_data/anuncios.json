@@ -3,6 +3,36 @@
     {
       "categorias": [
         "Portada",
+        "Finanzas personales",
+        "Educación financiera",
+        "Empleo",
+        "Glosario y guías",
+        "Impuestos y regulación",
+        "Nacional"
+      ],
+      "texto": "Tramitamos procesos de <strong>insolvencia de persona natural no comerciante</strong> para reorganizar todas sus deudas en un solo acuerdo de pago.",
+      "tema": "ad-hj",
+      "titular": "¿Las deudas no lo dejan respirar? Hay una salida legal",
+      "url": "https://wa.me/573006177706?text=Hola%2C%20vi%20su%20anuncio%20en%20Econom%C3%ADa%20Santander%20y%20quiero%20agendar%20una%20asesor%C3%ADa%20sobre%20insolvencia.",
+      "cta": "Agende asesoría personalizada gratuita vía WhatsApp",
+      "activo": true,
+      "imagen": "/assets/ad-hernandez-jaimes.jpg",
+      "logo": "/assets/logo-hernandez-jaimes.png",
+      "publico": [
+        "Pensionados",
+        "Rama Judicial",
+        "INPEC",
+        "Ejército",
+        "Policía",
+        "Docentes"
+      ],
+      "tipo": "estandar",
+      "id": "hernandez-jaimes",
+      "marca": "Hernández & Jaimes Abogados-Contadores Consultores"
+    },
+    {
+      "categorias": [
+        "Portada",
         "Inversión",
         "Educación financiera",
         "Empleo",

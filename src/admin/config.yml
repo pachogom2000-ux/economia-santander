@@ -424,7 +424,10 @@ collections:
                   - { label: "Cuero (marrón oscuro con ámbar)", value: "ad-ambar" }
                   - { label: "Café (tonos cálidos)", value: "ad-cafe" }
                   - { label: "Nocturno (azul con destellos)", value: "ad-piro" }
+                  - { label: "Firma (azul con dorado)", value: "ad-hj" }
               - { label: "Imagen de fondo", name: "imagen", widget: "image", required: false }
+              - { label: "Logo del anunciante", name: "logo", widget: "image", required: false, hint: "Opcional. Si se sube, reemplaza el nombre escrito de la marca en el aviso. PNG con fondo blanco o transparente." }
+              - { label: "Público (etiquetas)", name: "publico", widget: "list", required: false, hint: "Opcional. Etiquetas cortas debajo del texto. Ej: Pensionados, Policía." }
               - { label: "Enlace del anunciante", name: "url", widget: "string" }
               - { label: "Texto del botón", name: "cta", widget: "string" }
               - { label: "Botón secundario (solo cupón)", name: "ctaSecundario", widget: "string", required: false }

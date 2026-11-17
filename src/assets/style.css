@@ -682,6 +682,47 @@
     .ad-ambar:hover .ad-cta, .ad-ambar:hover .ad-media img { transform: none; }
   }
 
+  /* Logo del anunciante en lugar de la marca escrita, y etiquetas con el
+     público. Los usa cualquier tema; hoy solo Hernández & Jaimes. */
+  .ad-logo { display: inline-block; background: #fff; border-radius: 8px; padding: 8px 12px; margin-bottom: 12px; line-height: 0; }
+  .ad-logo picture { display: contents; }
+  .ad-unit .ad-logo img { display: block; height: 52px; width: auto; max-width: 100%; }
+  .ad-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; padding: 0; list-style: none; }
+  .ad-chips li { font-size: 11.5px; font-weight: 700; padding: 3px 9px; border-radius: 20px; }
+
+  /* Hernández & Jaimes — azul de la firma y dorado del logo, con la foto del
+     doctor Hernández en su despacho. La foto es vertical (1086×1448): el
+     encuadre la centra en el escritorio. */
+  .ad-hj {
+    background: linear-gradient(118deg, #0a1b29 0%, #17344b 60%, #23506f 100%);
+    color: #eef3f7;
+    container-type: inline-size;
+  }
+  .ad-hj .ad-tag { background: rgba(255,255,255,0.16); color: #fff; }
+  .ad-hj .ad-headline { color: #fff; }
+  .ad-hj .ad-text { color: rgba(238,243,247,0.88); }
+  .ad-hj .ad-text strong { color: #efe2b8; }
+  .ad-hj .ad-chips li { background: rgba(201,169,79,0.18); color: #efe2b8; border: 1px solid rgba(201,169,79,0.45); }
+  .ad-hj .ad-cta { background: #c9a94f; color: #0d2233; margin-top: 16px; transition: background 0.15s ease; }
+  .ad-hj:hover .ad-cta { background: #dcbe68; }
+  .ad-unit.ad-hj .ad-media { width: 48%; }
+  .ad-unit.ad-hj .ad-media img { object-position: 38% 52%; }
+  .ad-hj .ad-copy { max-width: 56%; }
+
+  /* Aviso angosto (celular o carril lateral): la foto pasa arriba como franja
+     completa y el texto ocupa todo el ancho debajo. */
+  @container (max-width: 560px) {
+    .ad-unit.ad-hj .ad-media {
+      position: relative; top: auto; right: auto; bottom: auto;
+      width: 100%; height: 150px; opacity: 1;
+    }
+    .ad-unit.ad-hj .ad-media img { -webkit-mask-image: none; mask-image: none; object-position: 35% 45%; }
+    .ad-hj .ad-copy { max-width: none; }
+    .ad-unit.ad-hj .ad-tag { background: rgba(13,34,51,0.78); }
+    .ad-unit.ad-hj .ad-logo img { height: 40px; }
+    .ad-unit.ad-hj.ad-compacto .ad-text { -webkit-line-clamp: 3; }
+  }
+
   @media (max-width: 640px) {
     .ad-body { padding: 20px; gap: 18px; }
     .ad-coupon { flex-basis: 100%; }

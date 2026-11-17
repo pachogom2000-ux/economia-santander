@@ -48,9 +48,16 @@
     {% endif %}
     <div class="ad-body">
       <div class="ad-copy">
+        {% if anuncio.logo %}
+        <span class="ad-logo"><img src="{{ anuncio.logo }}" alt="{{ anuncio.marca }}" loading="lazy" decoding="async"></span>
+        {% else %}
         <p class="ad-brand">{{ anuncio.marca }}</p>
+        {% endif %}
         <h3 class="ad-headline">{{ anuncio.titular }}</h3>
         <p class="ad-text">{{ anuncio.texto | safe }}</p>
+        {% if anuncio.publico and anuncio.publico.length %}
+        <ul class="ad-chips">{% for p in anuncio.publico %}<li>{{ p }}</li>{% endfor %}</ul>
+        {% endif %}
         <span class="ad-cta">{{ anuncio.cta }}</span>
       </div>
       {% if anuncio.sello %}
