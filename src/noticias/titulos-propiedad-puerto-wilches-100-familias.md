@@ -3,7 +3,7 @@ layout: noticia.njk
 eleventyExcludeFromCollections: false
 title: "Puerto Wilches: 100 familias reciben título de vivienda"
 date: 2026-11-17T07:00:00.000-05:00
-categoria: Impuestos y regulación
+categoria: Agro
 chipTipo: recirc
 chipLabel: "Fuente: Minvivienda"
 excerpt: Después de 10 años de espera, 100 familias de Puerto Wilches recibieron
