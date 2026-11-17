@@ -1,16 +1,15 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Puerto Wilches: 100 familias reciben título de vivienda"
 date: 2026-11-17T07:00:00.000-05:00
 categoria: Impuestos y regulación
 chipTipo: recirc
 chipLabel: "Fuente: Minvivienda"
-excerpt: Después de 10 años de espera, 100 familias de Puerto Wilches
-  recibieron el título de propiedad de su vivienda. Minvivienda ya
-  prioriza 80 predios más.
+excerpt: Después de 10 años de espera, 100 familias de Puerto Wilches recibieron
+  el título de propiedad de su vivienda. Minvivienda ya prioriza 80 predios más.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/PENDIENTE-titulos-propiedad-puerto-wilches.jpg
+imagen: /assets/uploads/puerto-wilches-minvivienda.webp
 imagenAlt: Familias de Puerto Wilches, Santander, celebrando la entrega de
   títulos de propiedad
 imagenTitle: Entrega de títulos de propiedad en el barrio Nuevo Terraplén de Puerto Wilches
@@ -42,5 +41,3 @@ No es el primer caso de formalización de predios que documenta este portal en e
 Puerto Wilches, además, venía apareciendo en la agenda económica de este portal casi siempre por el debate sobre [reactivar los pilotos de fracking](/noticias/fracking-puerto-wilches-bayon-reactivarlo/) en el municipio. Esta vez la noticia que llega del mismo municipio no tiene que ver con hidrocarburos, sino con la seguridad jurídica básica de 100 familias sobre la vivienda que ya habitaban.
 
 El comunicado no precisa cuántas familias en total viven sin título en Puerto Wilches, ni el costo del proceso de formalización.
-
-*Fuente: Ministerio de Vivienda, Ciudad y Territorio, boletín de prensa "Después de 10 años de espera, 100 familias de Puerto Wilches, Santander reciben los títulos de propiedad de sus viviendas", 14 de noviembre de 2026.*
