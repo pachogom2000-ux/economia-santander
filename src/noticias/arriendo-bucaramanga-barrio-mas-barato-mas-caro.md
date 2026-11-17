@@ -7,7 +7,7 @@ categoria: Finanzas personales
 chipTipo: propio
 chipLabel: Redacción propia
 excerpt: Arrendar un apartamento en Bucaramanga cuesta $2.300.000 al mes en la
-  mediana. En Girardot se piden $800.000; en Antiguo Campestre, $4.874.000.
+  mediana. En Girardot se piden $800.000 y en Antiguo Campestre, $4.874.000.
 autor: Francisco Gómez - Director
 imagen: /assets/uploads/arriendo-santander.webp
 imagenAlt: Pago de arriendo de vivienda en Bucaramanga
