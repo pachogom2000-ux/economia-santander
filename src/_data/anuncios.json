@@ -28,9 +28,24 @@
       "imagen": "/assets/ad-hernandez-jaimes.jpg",
       "tipo": "estandar",
       "id": "hernandez-jaimes",
-      "marca": "Hernández & Jaimes Abogados-Contadores Consultores",
-      "ctaSecundario": "Síganos en Instagram",
-      "urlSecundaria": "https://www.instagram.com/abogadoshyj/"
+      "marca": "Hernández & Jaimes Abogados-Contadores Consultores"
+    },
+    {
+      "categorias": [
+        "Comercio y consumo",
+        "Emprendimiento y pymes",
+        "Portada"
+      ],
+      "texto": "Calzado 100% en cuero para mujer, diseñado por <strong>Raisa Agámez</strong>. Envíos a todo el país.",
+      "tema": "ad-ambar",
+      "titular": "Cuero colombiano, diseño de autor",
+      "url": "https://wa.me/573175266589?text=Hola%20Raisa%2C%20vi%20el%20anuncio%20de%20%C3%81mbar%20Leather%20en%20Econom%C3%ADa%20Santander%20y%20quiero%20ver%20el%20cat%C3%A1logo.",
+      "cta": "Escribir por WhatsApp →",
+      "activo": true,
+      "imagen": "/assets/ad-ambar-ruth.png",
+      "tipo": "estandar",
+      "id": "ambar-leather",
+      "marca": "Ámbar Leather · Bucaramanga"
     },
     {
       "categorias": [
@@ -69,22 +84,6 @@
     },
     {
       "categorias": [
-        "Comercio y consumo",
-        "Emprendimiento y pymes"
-      ],
-      "texto": "Calzado 100% en cuero para mujer, diseñado por <strong>Raisa Agámez</strong>. Envíos a todo el país.",
-      "tema": "ad-ambar",
-      "titular": "Cuero colombiano, diseño de autor",
-      "url": "https://wa.me/573175266589?text=Hola%20Raisa%2C%20vi%20el%20anuncio%20de%20%C3%81mbar%20Leather%20en%20Econom%C3%ADa%20Santander%20y%20quiero%20ver%20el%20cat%C3%A1logo.",
-      "cta": "Escribir por WhatsApp →",
-      "activo": true,
-      "imagen": "/assets/ad-ambar-ruth.png",
-      "tipo": "estandar",
-      "id": "ambar-leather",
-      "marca": "Ámbar Leather · Bucaramanga"
-    },
-    {
-      "categorias": [
         "Portada",
         "Finanzas personales",
         "Educación financiera",
@@ -105,7 +104,6 @@
     },
     {
       "categorias": [
-        "Portada",
         "Inversión",
         "Industria",
         "Agro",
@@ -120,7 +118,7 @@
       "notaLateral": "Venta segura y asesorada",
       "url": "https://centraldepirotecnia.com",
       "cta": "Ver el catálogo →",
-      "activo": true,
+      "activo": false,
       "imagen": "/assets/ad-pirotecnia.jpg",
       "tipo": "estandar",
       "id": "pirotecnia",
