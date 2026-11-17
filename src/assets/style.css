@@ -690,6 +690,15 @@
   .ad-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; padding: 0; list-style: none; }
   .ad-chips li { font-size: 11.5px; font-weight: 700; padding: 3px 9px; border-radius: 20px; }
 
+  /* Aviso con dos botones (ver anuncio.njk): el principal cubre el cuerpo con
+     su ::after para que todo el aviso siga siendo clicable, y el secundario
+     queda encima de esa capa para recibir su propio clic. */
+  .ad-botones { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  .ad-dos .ad-principal { text-decoration: none; }
+  .ad-dos .ad-principal::after { content: ""; position: absolute; inset: 0; z-index: 1; }
+  .ad-dos .ad-secundario { position: relative; z-index: 2; text-decoration: none; background: transparent; border: 1.5px solid currentColor; }
+  .ad-dos .ad-secundario svg { width: 15px; height: 15px; }
+
   /* Hernández & Jaimes — azul de la firma y dorado del logo, con la foto del
      doctor Hernández en su despacho. La foto es vertical (1086×1448): el
      encuadre la centra en el escritorio. */
@@ -705,6 +714,9 @@
   .ad-hj .ad-chips li { background: rgba(201,169,79,0.18); color: #efe2b8; border: 1px solid rgba(201,169,79,0.45); }
   .ad-hj .ad-cta { background: #c9a94f; color: #0d2233; margin-top: 16px; transition: background 0.15s ease; }
   .ad-hj:hover .ad-cta { background: #dcbe68; }
+  .ad-hj .ad-botones .ad-cta { margin-top: 16px; }
+  .ad-hj .ad-cta.ad-secundario, .ad-hj:hover .ad-cta.ad-secundario { background: transparent; color: #efe2b8; border-color: rgba(239,226,184,0.6); }
+  .ad-hj .ad-cta.ad-secundario:hover { background: rgba(239,226,184,0.12); }
   .ad-unit.ad-hj .ad-media { width: 48%; }
   .ad-unit.ad-hj .ad-media img { object-position: 38% 52%; }
   .ad-hj .ad-copy { max-width: 56%; }

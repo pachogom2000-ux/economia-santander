@@ -430,7 +430,8 @@ collections:
               - { label: "Público (etiquetas)", name: "publico", widget: "list", required: false, hint: "Opcional. Etiquetas cortas debajo del texto. Ej: Pensionados, Policía." }
               - { label: "Enlace del anunciante", name: "url", widget: "string" }
               - { label: "Texto del botón", name: "cta", widget: "string" }
-              - { label: "Botón secundario (solo cupón)", name: "ctaSecundario", widget: "string", required: false }
+              - { label: "Botón secundario", name: "ctaSecundario", widget: "string", required: false, hint: "Opcional. Texto de un segundo botón, por ejemplo 'Síganos en Instagram'. En un aviso estándar solo aparece si también se llena el enlace de abajo." }
+              - { label: "Enlace del botón secundario", name: "urlSecundaria", widget: "string", required: false, hint: "Dirección completa, con https://. Ej: el perfil de Instagram del anunciante." }
               - { label: "Sitio (texto lateral)", name: "sitio", widget: "string", required: false }
               - { label: "Nota lateral", name: "notaLateral", widget: "string", required: false }
               - { label: "Etiqueta de la esquina", name: "etiqueta", widget: "string", required: false, hint: "Lo que dice el rótulo pequeño del aviso. Vacío pone 'Publicidad', que es lo correcto para un anunciante que paga. Solo se cambia en avisos propios del portal." }

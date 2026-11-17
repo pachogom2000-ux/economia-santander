@@ -28,7 +28,9 @@
       "imagen": "/assets/ad-hernandez-jaimes.jpg",
       "tipo": "estandar",
       "id": "hernandez-jaimes",
-      "marca": "Hernández & Jaimes Abogados-Contadores Consultores"
+      "marca": "Hernández & Jaimes Abogados-Contadores Consultores",
+      "ctaSecundario": "Síganos en Instagram",
+      "urlSecundaria": "https://www.instagram.com/abogadoshyj/"
     },
     {
       "categorias": [

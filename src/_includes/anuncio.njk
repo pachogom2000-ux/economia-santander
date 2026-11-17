@@ -39,7 +39,17 @@
   {# Un aviso propio apunta al mismo sitio: ni se abre en pestaña nueva ni
      lleva rel="sponsored", que es para enlaces pagados hacia terceros. #}
   {% set esPropio = anuncio.url and anuncio.url.startsWith("/") %}
-  <a class="ad-unit {{ anuncio.tema }}{% if anuncioCompacto %} ad-compacto{% endif %}" href="{{ anuncio.url }}"{% if not esPropio %} target="_blank" rel="noopener sponsored"{% endif %}>
+  {# Con segundo botón el aviso ya no puede ser un solo <a>: un enlace no va
+     dentro de otro. La caja pasa a <div> y cada botón es su propio enlace; el
+     principal estira su zona de clic a todo el cuerpo (.ad-principal::after),
+     así el resto del aviso sigue llevando al destino principal. #}
+  {% set dosBotones = anuncio.ctaSecundario and anuncio.urlSecundaria %}
+  {% set relExterno %}{% if not esPropio %} target="_blank" rel="noopener sponsored"{% endif %}{% endset %}
+  {% if dosBotones %}
+  <div class="ad-unit ad-dos {{ anuncio.tema }}{% if anuncioCompacto %} ad-compacto{% endif %}">
+  {% else %}
+  <a class="ad-unit {{ anuncio.tema }}{% if anuncioCompacto %} ad-compacto{% endif %}" href="{{ anuncio.url }}"{{ relExterno | safe }}>
+  {% endif %}
     <span class="ad-tag">{{ anuncio.etiqueta or "Publicidad" }}</span>
     {% if anuncio.imagen %}
     <div class="ad-media" aria-hidden="true">
@@ -58,7 +68,14 @@
         {% if anuncio.publico and anuncio.publico.length %}
         <ul class="ad-chips">{% for p in anuncio.publico %}<li>{{ p }}</li>{% endfor %}</ul>
         {% endif %}
+        {% if dosBotones %}
+        <div class="ad-botones">
+          <a class="ad-cta ad-principal" href="{{ anuncio.url }}"{{ relExterno | safe }}>{{ anuncio.cta }}</a>
+          <a class="ad-cta ad-secundario" href="{{ anuncio.urlSecundaria }}" target="_blank" rel="noopener sponsored">{{ anuncio.ctaSecundario }}</a>
+        </div>
+        {% else %}
         <span class="ad-cta">{{ anuncio.cta }}</span>
+        {% endif %}
       </div>
       {% if anuncio.sello %}
       <div class="ad-sello" aria-hidden="true">
@@ -73,7 +90,7 @@
       </div>
       {% endif %}
     </div>
-  </a>
+  {% if dosBotones %}</div>{% else %}</a>{% endif %}
   {% endif %}
 </div>
 {% endif %}
