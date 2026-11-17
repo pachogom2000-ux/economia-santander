@@ -21,7 +21,7 @@ Arrendar en Bucaramanga se volvió una tarea titánica para muchos de quienes to
 
 Un apartamento en arriendo se ofrece hoy en **$2.300.000 al mes**, en la mediana. Es **1,3 salarios mínimos**. Y la distancia entre barrios es enorme: en **Girardot** se piden **$800.000**; en **Antiguo Campestre**, **$4.874.000**. Seis veces más.
 
-Las cifras son de **Aptología**, un buscador inmobiliario que el 16 de noviembre de 2026 tenía **2.483 avisos** de apartamentos y apartaestudios en arriendo en Bucaramanga. [VERIFICAR: enlace a la página de Aptología]
+Las cifras son de [Aptología](https://www.aptologia.com/arriendo/bucaramanga), un buscador inmobiliario que el 16 de noviembre de 2026 tenía **2.483 avisos** de apartamentos y apartaestudios en arriendo en Bucaramanga.
 
 ## ¿Por qué sube el arriendo?
 
@@ -102,4 +102,4 @@ Depende de si renueva o firma de nuevo. Si renueva con el mismo propietario, el 
 
 Antes de firmar, revise si el valor del aviso incluye la administración. En varios avisos de Aptología el precio total suma el canon y la cuota: un apartamento de **$1.600.000** termina costando **$1.921.000** con los **$321.000** de administración.
 
-*Fuente: Aptología, avisos de apartamentos y apartaestudios en arriendo publicados en Bucaramanga, consultados el 16 de noviembre de 2026. Son precios pedidos en los avisos, no cánones pactados. Las medianas por barrio incluyen solo barrios con cinco avisos o más, y varios tienen menos de diez, así que pueden moverse con pocos avisos nuevos. Las equivalencias en salarios mínimos son cálculos de Economía Santander con el salario mínimo de 2026 ($1.750.905).*
+*Fuente: [Aptología](https://www.aptologia.com/arriendo/bucaramanga), avisos de apartamentos y apartaestudios en arriendo publicados en Bucaramanga, consultados el 16 de noviembre de 2026. Son precios pedidos en los avisos, no cánones pactados. Las medianas por barrio incluyen solo barrios con cinco avisos o más, y varios tienen menos de diez, así que pueden moverse con pocos avisos nuevos. Las equivalencias en salarios mínimos son cálculos de Economía Santander con el salario mínimo de 2026 ($1.750.905).*
