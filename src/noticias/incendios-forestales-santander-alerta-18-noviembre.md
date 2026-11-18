@@ -1,6 +1,6 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Incendios forestales: 14 municipios de Santander en alerta"
 date: 2026-11-18T09:01:00.000-05:00
 categoria: Agro
