@@ -1,7 +1,7 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
-title: "10 consejos para hablar inglés en poco tiempo"
+eleventyExcludeFromCollections: false
+title: 10 consejos para hablar inglés en poco tiempo
 date: 2026-11-18T07:00:00.000-05:00
 categoria: Glosario y guías
 chipTipo: propio
@@ -10,7 +10,7 @@ excerpt: Hablar inglés abre más oportunidades laborales y de estudio. Diez
   consejos que combinan apps gratis, práctica con IA y métodos con
   acompañamiento.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/PENDIENTE-10-consejos-hablar-ingles-poco-tiempo.jpg
+imagen: /assets/uploads/speak-english.webp
 imagenAlt: Persona estudiando inglés con el celular y un cuaderno
 imagenTitle: Diez consejos para aprender a hablar inglés en poco tiempo
 imagenPie: Combinar aplicaciones, práctica con inteligencia artificial y
@@ -59,7 +59,11 @@ Sin un punto de partida claro, es difícil saber si el esfuerzo está dando resu
 
 ## 10. Si necesita estructura y corrección constante, considere un programa guiado
 
-Para quien ya probó lo anterior y siente que le falta disciplina externa o retroalimentación profesional, existen programas pagos con acompañamiento personal. Uno de ellos es **Guided Accelerated Learning**, de **Talen Maxine Academy**, una academia de idiomas en línea cuyo fundador —residente en Estados Unidos— dice hablar más de diez idiomas, entre ellos francés, mandarín, japonés, alemán e italiano, además de inglés.
+Para quien ya probó lo anterior y siente que le falta disciplina externa o retroalimentación profesional, existen programas pagos con acompañamiento personal. Uno de ellos es **Guided Accelerated Learning**, de **Talen Maxine Academy**, una academia de idiomas en línea cuyo fundador —residente en Estados Unidos— habla más de diez idiomas, entre ellos francés, mandarín, japonés, alemán e italiano, además de inglés.
+
+![Imagen de Talen Maxine Academy](/assets/uploads/talen-maxine-academy.webp "Imagen de Talen Maxine Academy")
+
+"Cualquier persona **puede hablar inglés si le dedica tiempo**. Además, es una habilidad que nadie más puede hacer por medio de otra persona, requiere que sea uno mismo el que lo haga. Si se lo propone, le dedica tiempo y práctica, puede aprender el idioma en muy corto tiempo", señala Maxine, quien ha logrado con éxito que cientos de personas dominen esta lengua. 
 
 Según las preguntas frecuentes publicadas por la academia, el programa dura **12 semanas** (ampliables hasta 16 si hay aplazamientos acordados), exige un compromiso de **dos horas diarias** de estudio, incluye una **sesión privada semanal de 30 minutos** y pide el envío diario de evidencias (grabaciones de voz, escritos o actividades) para hacer seguimiento al progreso. Al terminar, el estudiante recibe un certificado. El costo es de **$6.300.000** para estudiantes en Colombia y **USD 1.800** para estudiantes fuera del país, según la misma fuente.
 
