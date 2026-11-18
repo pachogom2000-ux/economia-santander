@@ -1,20 +1,21 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
-title: "Cencosud instala paneles solares en Floridablanca"
+eleventyExcludeFromCollections: false
+title: Cencosud instala paneles solares en Floridablanca
 date: 2026-11-18T07:00:00.000-05:00
 categoria: Industria
 chipTipo: recirc
 chipLabel: "Fuente: comunicado de Cencosud"
-excerpt: Floridablanca es una de las 12 tiendas de Cencosud con paneles
-  solares en Colombia. Las plantas evitan 4.556 toneladas de CO₂ al año y
-  ahorran energía.
+excerpt: Floridablanca es una de las 12 tiendas de Cencosud con paneles solares
+  en Colombia. Las plantas evitan 4.556 toneladas de CO₂ al año y ahorran
+  energía.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/PENDIENTE-cencosud-paneles-solares-floridablanca.jpg
+imagen: /assets/uploads/cencosud-paneles-solares.webp
 imagenAlt: Paneles solares instalados sobre el parqueadero de un supermercado
-imagenTitle: Cencosud instala plantas solares fotovoltaicas en Floridablanca y otras ciudades
-imagenPie: Floridablanca es una de las siete ciudades colombianas donde
-  Cencosud puso en marcha plantas solares fotovoltaicas.
+imagenTitle: Cencosud instala plantas solares fotovoltaicas en Floridablanca y
+  otras ciudades
+imagenPie: Floridablanca es una de las siete ciudades colombianas donde Cencosud
+  puso en marcha plantas solares fotovoltaicas.
 imagenCredito: Cencosud
 tags: noticias
 ---
@@ -48,6 +49,8 @@ Cencosud opera más de 100 establecimientos en Colombia. La compañía dice que 
 
 El comunicado de Cencosud no conecta esta inversión con ninguna iniciativa departamental, pero llega en un momento en que Santander ya le apuesta institucionalmente al sector energético: en septiembre, el [Clúster de Energía de la Cámara de Comercio de Bucaramanga priorizó 12 iniciativas](/noticias/cluster-energia-santander-12-iniciativas-priorizadas/) para la región. No hay nada que indique que el proyecto de Cencosud se desprenda de ese proceso; son dos frentes distintos —uno de una cadena de retail nacional, otro del gremio local— que coinciden en apostarle a la energía renovable en el departamento.
 
-Vale la pena anotar, además, que Floridablanca es, según el [Índice de Competitividad Municipal 2025](/noticias/indice-competitividad-municipal-2025-bucaramanga-lidera/), el municipio del área metropolitana con el **peor puntaje en sostenibilidad ambiental** (3,90) entre los cuatro destacados en ese informe. El índice mide el entorno institucional del municipio, no las inversiones privadas como esta, así que no son cifras comparables directamente, pero sí es el mismo municipio donde ahora aterriza una inversión privada orientada justamente a ese frente.
+Vale la pena anotar, además, que Floridablanca es, según el [Índice de Competitividad Municipal 2025](/noticias/indice-competitividad-municipal-2025-bucaramanga-lidera/), el municipio del área metropolitana con el **peor puntaje en sostenibilidad ambiental** (3,90) entre los cuatro destacados en ese informe. 
+
+El índice mide el entorno institucional del municipio, no las inversiones privadas como esta, así que no son cifras comparables directamente, pero sí es el mismo municipio donde ahora aterriza una inversión privada orientada justamente a ese frente.
 
 *Fuente: Cencosud, comunicado de prensa "Cencosud fortalece su operación sostenible con 12 plantas solares distribuidas en ciudades colombianas", 12 de noviembre de 2026.*
