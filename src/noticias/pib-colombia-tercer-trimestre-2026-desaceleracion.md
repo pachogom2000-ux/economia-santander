@@ -1,20 +1,19 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
-title: "PIB de Colombia creció apenas 0,5% en el tercer trimestre"
+eleventyExcludeFromCollections: false
+title: PIB de Colombia creció apenas 0,5% en el tercer trimestre
 date: 2026-11-18T07:00:00.000-05:00
 categoria: Indicadores económicos
 chipTipo: recirc
 chipLabel: "Fuente: DANE"
-excerpt: El PIB de Colombia creció apenas 0,5% en el tercer trimestre, muy
-  por debajo de lo esperado. BBVA ve una desaceleración más allá del
-  terremoto.
+excerpt: El PIB de Colombia creció apenas 0,5% en el tercer trimestre, muy por
+  debajo de lo esperado. BBVA ve una desaceleración más allá del terremoto.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/PENDIENTE-pib-colombia-tercer-trimestre-2026.jpg
+imagen: /assets/uploads/recesion-pixabay-tungart7.webp
 imagenAlt: Gráfica de desaceleración económica de Colombia
 imagenTitle: PIB de Colombia en el tercer trimestre de 2026
-imagenPie: El PIB de Colombia creció 0,5% anual en el tercer trimestre de
-  2026, frente al 3,6% del trimestre anterior.
+imagenPie: El PIB de Colombia creció 0,5% anual en el tercer trimestre de 2026,
+  frente al 3,6% del trimestre anterior.
 imagenCredito: DANE
 tags: noticias
 ---
@@ -23,6 +22,8 @@ El **Producto Interno Bruto (PIB)** de Colombia creció **0,5%** en el tercer tr
 ## ¿Qué tan por debajo quedó de lo esperado?
 
 Bastante. **"Esta cifra es inferior a la mediana de las expectativas de los analistas y del Banco de la República (1,0%), de acuerdo con el sondeo de Bloomberg, y a nuestra proyección, que se ubicaba en 1,1%"**, señaló el equipo de Visión Davivienda.
+
+![PIB tercer trimestre 2026 Fuente DANE. ](/assets/uploads/dane-pib-iii-t-2026.jpg "PIB tercer trimestre 2026 Fuente DANE. ")
 
 ## ¿Qué explica el 0,5%?
 
@@ -62,6 +63,8 @@ BBVA Research le puso un sesgo a la baja a sus proyecciones de crecimiento: actu
 
 El dato departamental para Santander —el Indicador Trimestral de Actividad Económica Departamental (ITAED)— todavía no se ha publicado para el tercer trimestre. Cuando el DANE difundió el del segundo trimestre, lo hizo casi un mes después del dato nacional, según se contó en la nota sobre [la economía de Santander en el segundo trimestre](/noticias/economia-santander-segundo-trimestre-2026-itaed/), donde el departamento creció 2,9%, por debajo del 3,6% nacional de ese periodo.
 
-Dos hilos de este informe sí tocan directamente a Santander. El primero es el terremoto: el departamento fue uno de los **16 incluidos en la declaratoria de emergencia** del 10 de agosto, según [el Decreto 1348](/noticias/santander-decreto-emergencia-terremoto-1348/), aunque el reporte inicial la misma mañana del sismo fue sin daños graves. El segundo es el comercio exterior: mientras las exportaciones nacionales de bienes caían 3,2% en el trimestre, la aduana de Bucaramanga —uno de los canales por los que Santander tramita buena parte de sus exportaciones— [colapsó en agosto](/noticias/exportaciones-aduana-bucaramanga-colapso-agosto/), con una caída de 99,6% en el valor despachado por esa vía.
+Dos hilos de este informe sí tocan directamente a Santander. El primero es el terremoto: el departamento fue uno de los **16 incluidos en la declaratoria de emergencia** del 10 de agosto, según [el Decreto 1348](/noticias/santander-decreto-emergencia-terremoto-1348/), aunque el reporte inicial la misma mañana del sismo fue sin daños graves. 
+
+El segundo es el comercio exterior: mientras las exportaciones nacionales de bienes caían 3,2% en el trimestre, la aduana de Bucaramanga —uno de los canales por los que Santander tramita buena parte de sus exportaciones— [colapsó en agosto](/noticias/exportaciones-aduana-bucaramanga-colapso-agosto/), con una caída de 99,6% en el valor despachado por esa vía.
 
 *Fuentes: DANE, boletín técnico "Producto Interno Bruto (PIB), III trimestre 2026 preliminar", 17 de noviembre de 2026; Visión Davivienda, informe económico del 17 de noviembre de 2026; BBVA Research, "La desaceleración económica va más allá del terremoto", Mauricio Hernández-Monsalve, 17 de noviembre de 2026.*
