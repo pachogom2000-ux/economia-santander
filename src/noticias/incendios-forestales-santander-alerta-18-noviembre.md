@@ -2,15 +2,16 @@
 layout: noticia.njk
 eleventyExcludeFromCollections: true
 title: "Incendios forestales: 14 municipios de Santander en alerta"
-date: 2026-11-18T10:00:00.000-05:00
+date: 2026-11-18T09:01:00.000-05:00
 categoria: Agro
 chipTipo: recirc
 chipLabel: "Fuente: OGRD Santander"
 excerpt: Capitanejo, Macaravita, Onzaga y San Miguel están en alerta naranja por
-  incendios forestales. Otros 10 municipios de Santander, en amarilla, dice el IDEAM.
+  incendios forestales. Otros 10 municipios de Santander, en amarilla, dice el
+  IDEAM.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/alerta-incendios-santander-18-noviembre-2026.jpg
-imagenAlt: Tabla de alertas por incendios de cobertura vegetal en Santander del 18 de noviembre de 2026
+imagen: /assets/uploads/sol-riesgo-incendio.jpg
+imagenAlt: alertas incendio en Santander del 18 de noviembre de 2026
 imagenTitle: Alertas por incendios forestales en Santander, 18 de noviembre de 2026
 imagenPie: Cuatro municipios de Santander están en alerta naranja y diez en
   alerta amarilla por incendios de la cobertura vegetal.
