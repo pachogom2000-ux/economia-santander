@@ -1,6 +1,6 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Reclamo a Samsung: dos años para que le devolvieran su plata"
 date: 2026-11-18T07:00:00.000-05:00
 categoria: Comercio y consumo
@@ -9,7 +9,7 @@ chipLabel: Redacción propia
 excerpt: Harry Agámez compró un monitor defectuoso en la tienda de Samsung y
   tardó casi dos años en recuperar su plata. Así fue su proceso ante la SIC.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/ciberseguridad.webp
+imagen: /assets/uploads/caso-samsung.webp
 imagenAlt: Persona frente a un computador
 imagenTitle: Reclamo de un consumidor contra Samsung ante la SIC
 imagenPie: Harry Agámez reclamó durante casi dos años por un monitor defectuoso
@@ -21,11 +21,11 @@ En Colombia, quejarse contra una multinacional puede ser tedioso y exige esfuerz
 
 "Tenía un ruido permanente que yo no lo aguantaba ni usar 20 minutos", cuenta. Cuando pidió el cambio, la respuesta fue que el plazo para reclamar ya había pasado.
 
-Ese fue el inicio de un pleito que duró casi dos años. En otros mercados, como el de Estados Unidos, una devolución así suele resolverse en el mismo almacén donde se compró el producto: se cambia o se devuelve la plata. [VERIFICAR: comparación con Estados Unidos, sin fuente]
+Ese fue el inicio de un pleito que duró casi dos años. En otros mercados, como el de Estados Unidos, una devolución así suele resolverse en el mismo almacén donde se compró el producto: se cambia o se devuelve la plata. Al director de este portal, Francisco Gómez, le tocó comprobar esta experiencia en ese país en 2023, compró unas gafas en un almacén de marca y se arrepintió de la compra, a las 24 horas regresó al local diciendo que ya no le habían gustado, pese a que se las había probado y le devolvieron su dinero. 
 
 ## ¿Qué pasó con el monitor?
 
-En **noviembre de 2024**, Agámez compró un monitor **OLED** en la tienda en línea oficial de Samsung, con un cupón de primera compra de Black Friday, la misma temporada para la que este portal recogió [las claves para comprar en línea sin caer en fraudes](/noticias/black-friday-2026-compras-seguras-fraude-pse/). [VERIFICAR: modelo y precio del monitor]
+En **noviembre de 2024**, Agámez compró un monitor **OLED** en la tienda en línea oficial de Samsung, con un cupón de primera compra de Black Friday, la misma temporada para la que este portal recogió [las claves para comprar en línea sin caer en fraudes](/noticias/black-friday-2026-compras-seguras-fraude-pse/). 
 
 El equipo encendía bien, pero tenía *coil whine*: un zumbido eléctrico constante cada vez que se prendía. "Me cogía como a agitarme la oreja, como una tinnitus", dice.
 
@@ -79,12 +79,9 @@ Pero esos números miden las peticiones a la entidad, no los procesos judiciales
 
 ## Si a usted le pasa algo parecido
 
-- **Reclame por escrito y guarde todo.** Los chats, correos y radicados son la prueba de que reclamó dentro de la garantía. La empresa debe responder en **15 días hábiles**; si no lo hace, cuenta como indicio grave en su contra (artículo 58).
-- **No confunda retracto con garantía.** El retracto dura cinco días hábiles; la garantía de un producto nuevo, un año si no se fijó otro plazo.
-- **Si la falla se repite, puede pedir la devolución del dinero.** La elección es del consumidor, no de la empresa.
-- **El plazo para demandar** es de un año después de que vence la garantía.
+* **Reclame por escrito y guarde todo.** Los chats, correos y radicados son la prueba de que reclamó dentro de la garantía. La empresa debe responder en **15 días hábiles**; si no lo hace, cuenta como indicio grave en su contra (artículo 58).
+* **No confunda retracto con garantía.** El retracto dura cinco días hábiles; la garantía de un producto nuevo, un año si no se fijó otro plazo.
+* **Si la falla se repite, puede pedir la devolución del dinero.** La elección es del consumidor, no de la empresa.
+* **El plazo para demandar** es de un año después de que vence la garantía.
 
 *Fuentes: entrevista de Economía Santander con Harry Agámez, quien autorizó el uso de su nombre; Ley 1480 de 2011, artículos 8, 11, 47 y 58 ([Función Pública](https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=44306)); Superintendencia de Industria y Comercio, Informe trimestral PQRSFD, tercer trimestre de 2026 (23 de octubre de 2026). La conversión de 150 salarios mínimos a pesos es un cálculo de Economía Santander.*
-
-[VERIFICAR: pedir a Samsung Colombia su versión del caso antes de publicar.]
-[VERIFICAR: revisar el acta de conciliación y los correos de la SIC que Harry enviaría a Raisa; confirmar fechas exactas de la demanda, la audiencia y el pago.]
