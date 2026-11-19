@@ -1,16 +1,15 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Paro nacional: cierres viales en Bucaramanga hoy"
 date: 2026-11-19T05:00:00.000-05:00
 categoria: Comercio y consumo
 chipTipo: propio
 chipLabel: Redacción propia
 excerpt: Dos concentraciones desde las 5:30 a. m. y una movilización por la
-  carrera 27 bloquearán corredores clave en Bucaramanga hoy. Las rutas
-  alternas.
+  carrera 27 bloquearán corredores clave en Bucaramanga hoy. Las rutas alternas.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/PENDIENTE-paro-nacional-19-noviembre-bucaramanga.jpg
+imagen: /assets/uploads/paro-bucaramanga-19-de-noviembre.webp
 imagenAlt: Agente de tránsito dirigiendo el paso de manifestantes en Bucaramanga
 imagenTitle: Cierres viales en Bucaramanga por el paro nacional del 19 de noviembre
 imagenPie: La Dirección de Tránsito de Bucaramanga recomienda planear los
