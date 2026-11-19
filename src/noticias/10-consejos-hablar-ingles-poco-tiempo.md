@@ -59,7 +59,7 @@ Sin un punto de partida claro, es difícil saber si el esfuerzo está dando resu
 
 ## 10. Si necesita estructura y corrección constante, considere un programa guiado
 
-Para quien ya probó lo anterior y siente que le falta disciplina externa o retroalimentación profesional, existen programas pagos con acompañamiento personal. Uno de ellos es **Guided Accelerated Learning**, de **Talen Maxine Academy**, una academia de idiomas en línea cuyo fundador —residente en Estados Unidos— habla más de diez idiomas, entre ellos francés, mandarín, japonés, alemán e italiano, además de inglés.
+Para quien ya probó lo anterior y siente que le falta disciplina externa o retroalimentación profesional, existen programas pagos con acompañamiento personal. Uno de ellos es **[Guided Accelerated Learning](https://talen-maxine-proposal.vercel.app/aprendizaje-acelerado)**, de **Luis Rendón** | **Talen Maxine Academy**, una academia de idiomas en línea cuyo fundador —residente en Estados Unidos— habla más de diez idiomas, entre ellos francés, portugués, italiano, español, además de inglés.
 
 ![Imagen de Talen Maxine Academy](/assets/uploads/talen-maxine-academy.webp "Imagen de Talen Maxine Academy")
 
