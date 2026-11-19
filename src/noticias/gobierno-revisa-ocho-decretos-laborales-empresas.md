@@ -1,21 +1,21 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Ocho decretos laborales en revisión: qué cambia"
 date: 2026-11-19T07:00:00.000-05:00
 categoria: Impuestos y regulación
 chipTipo: recirc
 chipLabel: "Fuente: KPMG"
 excerpt: El Ministerio del Trabajo revisa ocho decretos sobre tercerización,
-  acoso laboral y pactos colectivos, que podrían cambiar para las empresas
-  en 2027.
+  acoso laboral y pactos colectivos, que podrían cambiar para las empresas en
+  2027.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/PENDIENTE-gobierno-revisa-decretos-laborales.jpg
+imagen: /assets/uploads/historia-laboral.webp
 imagenAlt: Reunión de recursos humanos revisando contratos laborales
 imagenTitle: Revisión de ocho decretos laborales por el Ministerio del Trabajo
-imagenPie: El Ministerio del Trabajo tiene en revisión ocho decretos
-  expedidos entre 2025 y 2026, sobre tercerización, acoso laboral, pactos
-  colectivos e inspección.
+imagenPie: El Ministerio del Trabajo tiene en revisión ocho decretos expedidos
+  entre 2025 y 2026, sobre tercerización, acoso laboral, pactos colectivos e
+  inspección.
 imagenCredito: Archivo particular
 tags: noticias
 ---
@@ -65,6 +65,8 @@ En agosto, el Ministerio ya había dejado sin efectos **11 circulares** expedida
 
 ## Qué significa para Santander
 
-Estos ocho decretos pesan, sobre todo, en empresas con esquemas formales de tercerización o pactos colectivos: compañías medianas y grandes, con planillas y contratistas documentados. En Santander, ese universo convive con una economía donde **8 de cada 10 micronegocios** son informales, según el Índice Multidimensional de Informalidad Empresarial (IMIE) 2025 del DANE, como se contó en la nota sobre [la informalidad empresarial en Bucaramanga](/noticias/bucaramanga-informalidad-empresarial-imie-2025-dane/). Para esa mayoría de negocios, sin outsourcing formal ni pactos colectivos registrados, estos cambios tienen poco que tocar; el impacto real recaería en las empresas más grandes y formalizadas del departamento, como las que sostienen al sector [construcción](/noticias/construccion-santander-retos-2027-foro-constructor/), con más de 51.000 empleos directos e indirectos.
+Estos ocho decretos pesan, sobre todo, en empresas con esquemas formales de tercerización o pactos colectivos: compañías medianas y grandes, con planillas y contratistas documentados. En Santander, ese universo convive con una economía donde **8 de cada 10 micronegocios** son informales, según el Índice Multidimensional de Informalidad Empresarial (IMIE) 2025 del DANE, como se contó en la nota sobre [la informalidad empresarial en Bucaramanga](/noticias/bucaramanga-informalidad-empresarial-imie-2025-dane/). 
+
+Para esa mayoría de negocios, sin outsourcing formal ni pactos colectivos registrados, estos cambios tienen poco que tocar; el impacto real recaería en las empresas más grandes y formalizadas del departamento, como las que sostienen al sector [construcción](/noticias/construccion-santander-retos-2027-foro-constructor/), con más de 51.000 empleos directos e indirectos.
 
 *Fuente: KPMG, análisis "Gobierno revisa ocho decretos laborales: tercerización, acoso y pactos colectivos podrían cambiar para las empresas", con declaraciones de María Camila Ortiz, noviembre de 2026.*
