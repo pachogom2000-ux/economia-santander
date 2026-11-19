@@ -7,7 +7,7 @@ categoria: Impuestos y regulación
 chipTipo: recirc
 chipLabel: "Fuente: Cadena"
 excerpt: No cobrar IVA o tener pocos clientes no lo libera de la factura
-  electrónica. Estos son los cinco mitos más comunes y quiénes están obligados.
+  electrónica. Estos son los cinco mitos más comunes y quiénes sí están obligados.
 autor: Francisco Gómez - Director
 imagen: /assets/uploads/facturacion-electronica-dian.webp
 imagenAlt: Persona haciendo compras en un supermercado en Colombia
