@@ -1,6 +1,6 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: "Embargo de salario: cuánto le pueden descontar"
 date: 2026-11-20T07:00:00.000-05:00
 categoria: Finanzas personales
