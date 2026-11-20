@@ -1,7 +1,7 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
-title: "Delitos contra empresas en Colombia suben 16,5%"
+eleventyExcludeFromCollections: false
+title: Delitos contra empresas en Colombia suben 16,5%
 date: 2026-11-20T07:00:00.000-05:00
 categoria: Comercio y consumo
 chipTipo: recirc
@@ -10,11 +10,11 @@ excerpt: ALTO Colombia registró 2.633 delitos contra empresas entre enero y
   julio, 16,5% más que en 2025, con pérdidas por más de $5.572 millones de
   pesos.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/PENDIENTE-alto-colombia-delitos-empresas-2026.jpg
-imagenAlt: Cámara de seguridad vigilando un local comercial
+imagen: /assets/uploads/ciberamenazas-2027.webp
+imagenAlt: Empresas en riesgo de ciberataque
 imagenTitle: Delitos contra empresas en Colombia y seminario de seguridad empresarial 2027
-imagenPie: ALTO Colombia registró 2.633 eventos delictivos contra empresas
-  entre enero y julio de 2026, un 16,5% más que el año anterior.
+imagenPie: ALTO Colombia registró 2.633 eventos delictivos contra empresas entre
+  enero y julio de 2026, un 16,5% más que el año anterior.
 imagenCredito: ALTO Colombia
 tags: noticias
 ---
@@ -54,5 +54,3 @@ Según su propia descripción, ALTO es una empresa de gestión de riesgos operac
 El comunicado no desagrega sus cifras por departamento ni por ciudad, así que no hay forma de saber cuántos de los 2.633 eventos o de los $5.572 millones en pérdidas corresponden a empresas santandereanas. Tampoco es una medición oficial de criminalidad: es el registro propio de ALTO sobre las empresas que hacen parte de su red de clientes.
 
 Lo que sí es relevante para el departamento es a quién golpea más ese tipo de delito: el hurto, que concentra el 90,7% de los casos, pega directo sobre el comercio. Y el comercio santandereano ya venía con una dinámica particular antes de este reporte: [vende más, pero emplea menos](/noticias/comercio-santander-julio-2026-ventas-empleo/) —el único departamento del país con el empleo comercial en terreno negativo, según la nota que ya publicó este portal—.
-
-*Fuente: ALTO Colombia, comunicado de prensa "ALTO Colombia convoca al sector empresarial para analizar las amenazas que pondrán a prueba la seguridad en 2027", 18 de noviembre de 2026, con declaraciones de Jorge Segura (ALTO Colombia) y Fenalco Nacional.*
