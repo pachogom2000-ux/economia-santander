@@ -1,20 +1,19 @@
 ---
 layout: noticia.njk
-eleventyExcludeFromCollections: true
-title: "Financiación de vivienda en Santander cae 15,1%"
+eleventyExcludeFromCollections: false
+title: Financiación de vivienda en Santander cae 15,1%
 date: 2026-11-20T07:00:00.000-05:00
 categoria: Construcción
 chipTipo: recirc
 chipLabel: "Fuente: DANE"
-excerpt: Los créditos de vivienda en Santander cayeron a $82.798 millones
-  en el tercer trimestre, 15,1% menos, más que la caída nacional, según
-  el DANE.
+excerpt: Los créditos de vivienda en Santander cayeron a $82.798 millones en el
+  tercer trimestre, 15,1% menos, más que la caída nacional, según el DANE.
 autor: Francisco Gómez - Director
-imagen: /assets/uploads/PENDIENTE-financiacion-vivienda-santander-2026.jpg
+imagen: /assets/uploads/firma-de-un-contrato-de-arrendamiento-de-vivienda.webp
 imagenAlt: Pareja revisando documentos de un crédito hipotecario
 imagenTitle: Financiación de vivienda en Santander, tercer trimestre de 2026
-imagenPie: Los créditos de vivienda en Santander cayeron 15,1% en el
-  tercer trimestre de 2026, por encima de la caída nacional.
+imagenPie: Los créditos de vivienda en Santander cayeron 15,1% en el tercer
+  trimestre de 2026, por encima de la caída nacional.
 imagenCredito: Archivo particular
 tags: noticias
 ---
