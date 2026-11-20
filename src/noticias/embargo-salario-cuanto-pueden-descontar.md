@@ -13,8 +13,6 @@ imagenCredito: "Foto: Economía Santander"
 guia: true
 tags: noticias
 ---
-> **BORRADOR · NO PUBLICAR.** Pendiente: 3 citas de Darwin Hernández (Hernández & Jaimes), confirmar los datos marcados [VERIFICAR] y subir la imagen destacada.
-
 El salario mínimo **no se puede embargar** por deudas comunes. De lo que el sueldo supere el mínimo, un juez solo puede ordenar retener **una quinta parte**, es decir, el 20%. Así lo fijan los artículos 154 y 155 del Código Sustantivo del Trabajo.
 
 La regla tiene excepciones y convive con otro descuento que pesa igual o más en la nómina de muchos servidores públicos, policías, militares y pensionados de Santander: la **libranza**.
@@ -25,7 +23,7 @@ La cuenta parte del salario mínimo. Esa porción queda protegida y lo que se em
 
 Un ejemplo: por cada $100.000 que el sueldo supere el salario mínimo, el embargo puede tomar como máximo **$20.000**. Quien gana exactamente el mínimo no puede ser embargado por una deuda con un banco o un almacén.
 
-> **[CITA DE DARWIN HERNÁNDEZ — pendiente]** Pregunta: ¿Qué errores ve con más frecuencia en los embargos que llegan a la nómina de servidores públicos?
+"Los errores más comunes son los de cálculo en los valores a descontar  en el momento de aplicar el embargo,  y en muchos casos fallas en la notificación al juzgado cuando el embargo no puede ser aplicado por capacidad del deudor", .  
 
 ## Las excepciones: cooperativas y cuota alimentaria
 
@@ -40,17 +38,17 @@ La libranza es un descuento que el trabajador autoriza para pagar un crédito. N
 
 Según el artículo 3 de la **Ley 1527 de 2012**, el descuento solo procede si el trabajador o pensionado sigue recibiendo **al menos el 50% de su salario o pensión neta**, después de los descuentos de ley. Cuando hay embargos y libranzas al mismo tiempo, el cálculo se complica y es frecuente que se pase ese límite.
 
-> **[CITA DE DARWIN HERNÁNDEZ — pendiente]** Pregunta: Si una persona descubre que entre embargos y libranzas le están dejando menos de lo que permite la ley, ¿qué debe hacer primero?
+> **\[CITA DE DARWIN HERNÁNDEZ — pendiente]** Pregunta: Si una persona descubre que entre embargos y libranzas le están dejando menos de lo que permite la ley, ¿qué debe hacer primero?
 
 ## ¿Y los pensionados?
 
-Las mesadas pensionales también tienen protección especial: por regla general no se pueden embargar, salvo por cuota alimentaria y deudas con cooperativas. **[VERIFICAR: Ley 100 de 1993, artículo 134, y límites vigentes]**
+Las mesadas pensionales también tienen protección especial: por regla general no se pueden embargar, salvo por cuota alimentaria y deudas con cooperativas. **\[VERIFICAR: Ley 100 de 1993, artículo 134, y límites vigentes]**
 
 ## Cuando los descuentos ya no dejan vivir
 
-Si los embargos y las libranzas se acumulan con varios acreedores, la **insolvencia de persona natural no comerciante** permite negociar todas las deudas en un solo acuerdo. La aceptación del trámite frena los nuevos procesos de cobro y suspende los que están en curso. **[VERIFICAR efectos vigentes tras la Ley 2445 de 2025]**
+Si los embargos y las libranzas se acumulan con varios acreedores, la **insolvencia de persona natural no comerciante** permite negociar todas las deudas en un solo acuerdo. La aceptación del trámite frena los nuevos procesos de cobro y suspende los que están en curso. **\[VERIFICAR efectos vigentes tras la Ley 2445 de 2025]**
 
-> **[CITA DE DARWIN HERNÁNDEZ — pendiente]** Pregunta: ¿En qué momento le recomienda a alguien con embargos pensar en la insolvencia en vez de seguir pagando como pueda?
+> **\[CITA DE DARWIN HERNÁNDEZ — pendiente]** Pregunta: ¿En qué momento le recomienda a alguien con embargos pensar en la insolvencia en vez de seguir pagando como pueda?
 
 ## Fuentes
 
